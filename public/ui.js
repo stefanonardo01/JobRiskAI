@@ -29,8 +29,16 @@ function getLocalizedJob(jobKey) {
     return { title: tr.title, description: tr.description, survivalNote: tr.survivalNote };
 }
 
-function fmt(lang) {
-    return lang === 'en' ? 'en-US' : (lang === 'it' ? 'it-IT' : lang);
+const LOCALE_MAP = { it: 'it-IT', en: 'en-US', es: 'es-ES', de: 'de-DE', fr: 'fr-FR' };
+function fmt(lang) { return LOCALE_MAP[lang] || 'it-IT'; }
+
+// Valuta corrente (sarà sostituito dal selettore nazione nel futuro)
+let currentCurrency = { symbol: '€', position: 'before' };
+function fmtCurrency(value, numFmt) {
+    const n = Math.round(value).toLocaleString(numFmt);
+    return currentCurrency.position === 'before'
+        ? currentCurrency.symbol + n
+        : n + ' ' + currentCurrency.symbol;
 }
 
 // ── Render: schede job ────────────────────────────────────
@@ -127,20 +135,20 @@ function calculateAll() {
     const numFmt = fmt(currentLang);
 
     // Costi
-    document.getElementById('humanTotal').textContent = '€' + Math.round(m.humanAnnual).toLocaleString(numFmt);
-    document.getElementById('aiTotal').textContent    = '€' + Math.round(m.aiAnnual).toLocaleString(numFmt);
+    document.getElementById('humanTotal').textContent = fmtCurrency(m.humanAnnual, numFmt);
+    document.getElementById('aiTotal').textContent    = fmtCurrency(m.aiAnnual, numFmt);
     document.getElementById('humanDaily').textContent = m.humanDaily.toLocaleString(numFmt);
     document.getElementById('aiDaily').textContent    = m.aiDaily.toLocaleString(numFmt);
 
     // Risparmi
-    document.getElementById('savings1').textContent = '€' + Math.round(m.savings1).toLocaleString(numFmt);
-    document.getElementById('savings5').textContent = '€' + Math.round(m.savings5).toLocaleString(numFmt);
+    document.getElementById('savings1').textContent = fmtCurrency(m.savings1, numFmt);
+    document.getElementById('savings5').textContent = fmtCurrency(m.savings5, numFmt);
     document.getElementById('roi').textContent      = m.roi.toLocaleString(numFmt) + '%';
 
     // Scenari
-    document.getElementById('scenario100').textContent  = '€' + Math.round(m.humanAnnual).toLocaleString(numFmt);
-    document.getElementById('scenario0').textContent    = '€' + Math.round(m.aiAnnual).toLocaleString(numFmt);
-    document.getElementById('scenarioHybrid').textContent = '€' + Math.round(m.hybridCost).toLocaleString(numFmt);
+    document.getElementById('scenario100').textContent    = fmtCurrency(m.humanAnnual, numFmt);
+    document.getElementById('scenario0').textContent      = fmtCurrency(m.aiAnnual, numFmt);
+    document.getElementById('scenarioHybrid').textContent = fmtCurrency(m.hybridCost, numFmt);
 
     // Barre confronto
     document.getElementById('barAI').style.width  = m.aiPercent + '%';
@@ -358,7 +366,7 @@ function renderJobComparison() {
     const rows = [
         { label: t.comparison_row_risk,     cells: cellPair(riskA, riskB, v => v + '%', false) },
         { label: t.comparison_row_year,     cells: cellPair(jobA.targetYear, jobB.targetYear, v => v, false) },
-        { label: t.comparison_row_cost,     cells: cellPair(jobA.defaultAiMonthly, jobB.defaultAiMonthly, v => '€' + Math.round(v).toLocaleString(numFmt) + t.per_month_suffix, false) },
+        { label: t.comparison_row_cost,     cells: cellPair(jobA.defaultAiMonthly, jobB.defaultAiMonthly, v => fmtCurrency(v, numFmt) + t.per_month_suffix, false) },
         { label: t.comparison_row_accuracy, cells: cellPair(jobA.aiAccuracy * 100, jobB.aiAccuracy * 100, v => v.toFixed(1) + '%', true) },
     ];
 

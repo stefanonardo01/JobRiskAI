@@ -206,58 +206,63 @@ function renderStars(rating) {
     return `${stars} ${rating.toFixed(1)}`;
 }
 
+// ── Helper per sostituire placeholder nelle traduzioni ────
+function tpl(str, vars) {
+    if (!str) return '';
+    return str.replace(/\{(\w+)\}/g, (_, k) => vars[k] !== undefined ? vars[k] : `{${k}}`);
+}
+
 // ── Strategia personalizzata ──────────────────────────────
 function renderStrategy(data) {
     const { ai_exposure_score, risk_level, missing_skills, recommended_roles } = data;
     const card     = document.getElementById('cvStrategyCard');
     const introEl  = document.getElementById('cvStrategyIntro');
     const timeline = document.getElementById('cvStrategyTimeline');
+    const t        = getT();
 
-    const skill1   = missing_skills?.[0] || 'competenze strategiche';
-    const skill2   = missing_skills?.[1] || missing_skills?.[0] || 'nuove competenze';
-    const role1    = recommended_roles?.[0] || 'ruoli a minor rischio';
+    const skill1   = missing_skills?.[0] || t.cva_fallback_skill1 || 'strategic skills';
+    const skill2   = missing_skills?.[1] || missing_skills?.[0] || t.cva_fallback_skill2 || 'new skills';
+    const role1    = recommended_roles?.[0] || t.cva_fallback_role1 || 'lower-risk roles';
+    const vars     = { score: ai_exposure_score, skill1, skill2, role1 };
 
-    // Intro personalizzata per livello di rischio
-    const intros = {
-        high:   `Con un punteggio di ${ai_exposure_score}/100, il tuo profilo è ad alto rischio di automazione — ma hai ancora tempo per agire. La chiave non è evitare l'AI: è diventare la persona che la supervisiona, la guida e risolve i problemi che lei non può. Ecco come affrontare i prossimi 3 mesi in modo strutturato, prima di investire in corsi e libri.`,
-        medium: `Con un punteggio di ${ai_exposure_score}/100, sei in una zona di transizione: i tuoi task più ripetitivi saranno automatizzati nei prossimi anni, ma il tuo ruolo non sparirà se ti muovi adesso. I prossimi 3 mesi sono il momento giusto per costruire il differenziale che ti renderà difficile da sostituire.`,
-        low:    `Con un punteggio di ${ai_exposure_score}/100, sei in una posizione relativamente protetta — ma "protetto" non significa "immobile". Le professioni a basso rischio restano tali solo se chi le esercita continua ad aggiornarsi. Usa i prossimi 3 mesi per consolidare il vantaggio e prepararti a un mercato che cambierà comunque.`,
-    };
-    introEl.textContent = intros[risk_level] || intros.medium;
+    // Intro localizzata per livello di rischio
+    const introKey = risk_level === 'high' ? 'cva_intro_high' : risk_level === 'low' ? 'cva_intro_low' : 'cva_intro_medium';
+    introEl.textContent = tpl(t[introKey] || t.cva_intro_medium, vars);
 
     // Steps della timeline
+    const step4Desc = risk_level === 'high' ? t.cva_step4_desc_high : t.cva_step4_desc_low;
     const steps = [
         {
             icon: '🔍',
             bg:   'rgba(99,102,241,0.12)',
             color:'var(--primary)',
-            label:'Subito — Settimana 1',
-            title:'Analizza i tuoi gap reali',
-            desc: `Hai già il tuo punteggio. Il passo successivo è essere onesto su cosa manca: "${skill1}" è la competenza critica emersa dal tuo CV. Prima di comprare qualsiasi corso, fai un audit rapido: quali task del tuo lavoro attuale potrebbero già essere automatizzati? Quelli sono i tuoi punti deboli.`,
+            label: t.cva_step1_label || 'Now — Week 1',
+            title: t.cva_step1_title || 'Analyze your real skill gaps',
+            desc:  tpl(t.cva_step1_desc || '', vars),
         },
         {
             icon: '🎓',
             bg:   'rgba(99,102,241,0.1)',
             color:'var(--primary)',
-            label:'Mese 1–2 — Formazione attiva',
-            title:`Acquisisci "${skill1}" con i corsi qui sotto`,
-            desc: `Non servono mesi di studio teorico: scegli uno dei corsi consigliati, fallo completamente e applica subito quello che impari al tuo lavoro. L'obiettivo di fine mese 2 è avere qualcosa di concreto da mostrare: un progetto, un certificato, un processo migliorato.`,
+            label: t.cva_step2_label || 'Month 1–2',
+            title: tpl(t.cva_step2_title || '', vars),
+            desc:  t.cva_step2_desc || '',
         },
         {
             icon: '📚',
             bg:   'rgba(245,158,11,0.12)',
             color:'#d97706',
-            label:'Mese 2–3 — Visione di lungo periodo',
-            title:'Leggi per capire dove sta andando il mercato',
-            desc: `I libri consigliati ti danno la mappa del territorio: cosa sta succedendo nel tuo settore, dove si sposta il valore, come si stanno posizionando i professionisti che sopravvivranno. Almeno 1 libro in questo periodo — non per "sapere di più", ma per prendere decisioni migliori su dove investire la tua carriera.`,
+            label: t.cva_step3_label || 'Month 2–3',
+            title: t.cva_step3_title || 'Read to understand where the market is heading',
+            desc:  t.cva_step3_desc || '',
         },
         {
             icon: '🚀',
             bg:   'rgba(16,185,129,0.1)',
             color:'var(--success)',
-            label:'Mese 3+ — Posizionamento',
-            title:`Considera la transizione verso "${role1}"`,
-            desc: `Con nuove competenze in tasca, aggiorna LinkedIn e il tuo CV con quello che hai imparato. Se ${risk_level === 'high' ? 'il rischio è alto, valuta seriamente' : 'vuoi accelerare,'} una transizione verso "${role1}" — ha un profilo di rischio AI significativamente più basso e valorizza molte delle tue competenze attuali. Non è un salto nel vuoto: è un passo laterale intelligente.`,
+            label: t.cva_step4_label || 'Month 3+',
+            title: tpl(t.cva_step4_title || '', vars),
+            desc:  tpl(step4Desc || '', vars),
         },
     ];
 
