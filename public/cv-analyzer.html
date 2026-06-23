@@ -388,12 +388,13 @@
             box-shadow: 0 4px 14px -6px rgba(245,158,11,0.25);
         }
         .cva-book-cover {
-            width: 60px;
-            min-width: 60px;
-            height: 84px;
-            border-radius: 6px;
+            width: 70px;
+            min-width: 70px;
+            height: 100px;
+            border-radius: 4px;
             overflow: hidden;
             flex-shrink: 0;
+            box-shadow: 2px 3px 8px rgba(0,0,0,0.25);
         }
         .cva-book-cover-img {
             width: 100%;
@@ -404,13 +405,28 @@
         .cva-book-cover-placeholder {
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #f59e0b, #d97706);
+            background: linear-gradient(160deg, #1e293b 0%, #334155 60%, #475569 100%);
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 700;
+            gap: 6px;
+            padding: 8px 4px;
+            box-sizing: border-box;
+        }
+        .cva-book-cover-placeholder::before {
+            content: '📖';
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+        .cva-book-cover-placeholder-letter {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2;
+            word-break: break-word;
+            padding: 0 2px;
             font-family: 'Space Grotesk', sans-serif;
         }
         .cva-book-info   { flex: 1; min-width: 0; }

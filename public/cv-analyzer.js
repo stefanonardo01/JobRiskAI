@@ -368,7 +368,10 @@ function buildBookEl(book) {
     cover.className = 'cva-book-cover';
     const placeholder = document.createElement('div');
     placeholder.className = 'cva-book-cover-placeholder';
-    placeholder.textContent = book.title.charAt(0).toUpperCase();
+    const placeholderText = document.createElement('div');
+    placeholderText.className = 'cva-book-cover-placeholder-letter';
+    placeholderText.textContent = book.title.length > 20 ? book.title.substring(0, 18) + '…' : book.title;
+    placeholder.appendChild(placeholderText);
     cover.appendChild(placeholder);
 
     // Tenta subito Open Library (non aspetta Google Books API)
