@@ -440,7 +440,7 @@ function buildClassificaPage() {
 
       <!-- Search -->
       <div style="margin-bottom:1.25rem;">
-        <input type="search" id="searchBox" placeholder="🔍 Cerca professione..." oninput="filterSearch(this.value)" style="width:100%;padding:0.65rem 1rem;border:1px solid var(--border);border-radius:10px;font-size:0.92rem;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'">
+        <input type="search" id="searchBox" placeholder="🔍 Cerca professione..." data-i18n-placeholder="cla_search_placeholder" oninput="filterSearch(this.value)" style="width:100%;padding:0.65rem 1rem;border:1px solid var(--border);border-radius:10px;font-size:0.92rem;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'">
       </div>
 
       <!-- Tabella -->

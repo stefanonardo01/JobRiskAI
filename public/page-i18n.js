@@ -48,7 +48,13 @@ export function applyTranslations(lang) {
         if (t[key] !== undefined) el.textContent = t[key];
     });
 
-    // 3. data-job-count standalone (fuori da testi tradotti)
+    // 3. data-i18n-placeholder — attributo placeholder (input/textarea)
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (t[key] !== undefined) el.placeholder = t[key];
+    });
+
+    // 4. data-job-count standalone (fuori da testi tradotti)
     document.querySelectorAll('[data-job-count]').forEach(el => {
         el.textContent = JOB_COUNT;
     });
