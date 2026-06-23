@@ -251,7 +251,15 @@ export const translations = {
         home_modal_calc_h4: "Esplora il calcolatore",
         home_modal_calc_p: "Confronta {jobCount} professioni: costo umano vs AI, punteggio di rischio, trend di mercato.",
         home_modal_cv_h4: "Analizza il tuo CV",
-        home_modal_cv_p: "Carica il tuo CV in PDF e ricevi il tuo punteggio personale in meno di un minuto."
+        home_modal_cv_p: "Carica il tuo CV in PDF e ricevi il tuo punteggio personale in meno di un minuto.",
+        home_nav_ranking: "Classifica",
+        cva_courses_title: "🎓 Aggiorna le competenze — Corsi online",
+        cva_courses_sub: "Selezionati in base alle skill mancanti del tuo profilo",
+        cva_books_title: "📚 Approfondisci — Letture consigliate",
+        cva_books_sub: "Acquistando tramite questi link supporti JobRiskAI gratuitamente",
+        cva_strategy_title: "🗺️ Il tuo piano per i prossimi 3 mesi",
+        cva_phase1_label: "📅 Fase 1 · Mese 1-2",
+        cva_phase2_label: "📅 Fase 2 · Mese 2-3"
     },
     en: {
         header_tagline: "AI replacement calculator for your job",
@@ -501,7 +509,15 @@ export const translations = {
         home_modal_calc_h4: "Explore the calculator",
         home_modal_calc_p: "Compare {jobCount} professions: human vs AI cost, risk score, market trends.",
         home_modal_cv_h4: "Analyze your CV",
-        home_modal_cv_p: "Upload your CV in PDF and receive your personal score in under a minute."
+        home_modal_cv_p: "Upload your CV in PDF and receive your personal score in under a minute.",
+        home_nav_ranking: "Rankings",
+        cva_courses_title: "🎓 Upskill — Online Courses",
+        cva_courses_sub: "Selected based on the missing skills in your profile",
+        cva_books_title: "📚 Go Deeper — Recommended Reading",
+        cva_books_sub: "Purchasing through these links supports JobRiskAI for free",
+        cva_strategy_title: "🗺️ Your plan for the next 3 months",
+        cva_phase1_label: "📅 Phase 1 · Month 1-2",
+        cva_phase2_label: "📅 Phase 2 · Month 2-3"
     },
     es: {
         header_tagline: "Calculadora de sustitución por IA para tu trabajo",
@@ -751,7 +767,15 @@ export const translations = {
         home_modal_calc_h4: "Explora la calculadora",
         home_modal_calc_p: "Compara {jobCount} profesiones: coste humano vs IA, puntuación de riesgo, tendencias de mercado.",
         home_modal_cv_h4: "Analiza tu CV",
-        home_modal_cv_p: "Sube tu CV en PDF y recibe tu puntuación personal en menos de un minuto."
+        home_modal_cv_p: "Sube tu CV en PDF y recibe tu puntuación personal en menos de un minuto.",
+        home_nav_ranking: "Clasificación",
+        cva_courses_title: "🎓 Actualiza tus competencias — Cursos online",
+        cva_courses_sub: "Seleccionados según las habilidades que faltan en tu perfil",
+        cva_books_title: "📚 Profundiza — Lecturas recomendadas",
+        cva_books_sub: "Comprando a través de estos enlaces apoyas JobRiskAI gratuitamente",
+        cva_strategy_title: "🗺️ Tu plan para los próximos 3 meses",
+        cva_phase1_label: "📅 Fase 1 · Mes 1-2",
+        cva_phase2_label: "📅 Fase 2 · Mes 2-3"
     },
     de: {
         header_tagline: "KI-Ersatzrechner für deinen Job",
@@ -1001,7 +1025,15 @@ export const translations = {
         home_modal_calc_h4: "Rechner erkunden",
         home_modal_calc_p: "{jobCount} Berufe vergleichen: Mensch- vs. KI-Kosten, Risiko-Score, Markttrends.",
         home_modal_cv_h4: "Lebenslauf analysieren",
-        home_modal_cv_p: "Lade deinen Lebenslauf als PDF hoch und erhalte deinen persönlichen Score in unter einer Minute."
+        home_modal_cv_p: "Lade deinen Lebenslauf als PDF hoch und erhalte deinen persönlichen Score in unter einer Minute.",
+        home_nav_ranking: "Rangliste",
+        cva_courses_title: "🎓 Kompetenzen aufbauen — Online-Kurse",
+        cva_courses_sub: "Basierend auf den fehlenden Fähigkeiten in deinem Profil ausgewählt",
+        cva_books_title: "📚 Tiefer einsteigen — Empfohlene Lektüre",
+        cva_books_sub: "Mit Käufen über diese Links unterstützt du JobRiskAI kostenlos",
+        cva_strategy_title: "🗺️ Dein Plan für die nächsten 3 Monate",
+        cva_phase1_label: "📅 Phase 1 · Monat 1-2",
+        cva_phase2_label: "📅 Phase 2 · Monat 2-3"
     },
     fr: {
         header_tagline: "Calculateur de remplacement par l'IA pour votre métier",
@@ -1251,7 +1283,15 @@ export const translations = {
         home_modal_calc_h4: "Explorer le calculateur",
         home_modal_calc_p: "Comparez {jobCount} professions : coût humain vs IA, score de risque, tendances du marché.",
         home_modal_cv_h4: "Analyser votre CV",
-        home_modal_cv_p: "Téléchargez votre CV en PDF et recevez votre score personnel en moins d'une minute."
+        home_modal_cv_p: "Téléchargez votre CV en PDF et recevez votre score personnel en moins d'une minute.",
+        home_nav_ranking: "Classement",
+        cva_courses_title: "🎓 Développez vos compétences — Cours en ligne",
+        cva_courses_sub: "Sélectionnés selon les compétences manquantes de votre profil",
+        cva_books_title: "📚 Approfondissez — Lectures recommandées",
+        cva_books_sub: "En achetant via ces liens, vous soutenez JobRiskAI gratuitement",
+        cva_strategy_title: "🗺️ Votre plan pour les 3 prochains mois",
+        cva_phase1_label: "📅 Phase 1 · Mois 1-2",
+        cva_phase2_label: "📅 Phase 2 · Mois 2-3"
     }
 };
 
