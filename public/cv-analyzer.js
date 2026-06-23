@@ -176,13 +176,19 @@ function amazonUrl(book) {
 }
 
 // ── Fetch metadati libro (Google Books API — cover + rating) ──
-async function fetchBookMeta(isbn13) {
-    if (!isbn13) return null;
-    try {
-        const r = await fetch(`https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn13}&maxResults=1`);
+async function fetchBookMeta(isbn13, title, author) {
+    async function queryBooks(q) {
+        const r = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(q)}&maxResults=1`);
         if (!r.ok) return null;
         const j = await r.json();
-        const v = j.items?.[0]?.volumeInfo;
+        return j.items?.[0]?.volumeInfo || null;
+    }
+    try {
+        // Prova prima per ISBN, poi per titolo+autore come fallback
+        let v = isbn13 ? await queryBooks(`isbn:${isbn13}`) : null;
+        if (!v?.imageLinks?.thumbnail && (title || author)) {
+            v = await queryBooks(`intitle:${title || ''} inauthor:${author || ''}`);
+        }
         if (!v) return null;
         return {
             thumbnail:   v.imageLinks?.thumbnail?.replace('http:', 'https:') || null,
@@ -409,7 +415,7 @@ async function renderBooks(books) {
     card.style.display = 'block';
 
     // Fetch tutti i metadati in parallelo
-    const metas = await Promise.all(items.map(i => fetchBookMeta(i.book.isbn13)));
+    const metas = await Promise.all(items.map(i => fetchBookMeta(i.book.isbn13, i.book.title, i.book.author)));
     items.forEach((item, idx) => { item.meta = metas[idx]; });
 
     // Ordina per popolarità reale (ratingsCount DESC) — più recensioni = più venduto
