@@ -70,7 +70,7 @@ async function extractTextFromPDF(file) {
 
 // ── Cache browser (SHA-256 + localStorage, TTL 45 giorni) ─
 const CACHE_TTL_MS  = 45 * 24 * 60 * 60 * 1000; // 45 giorni
-const CACHE_VERSION = '2';                         // incrementa per invalidare tutta la cache
+const CACHE_VERSION = '3';                         // incrementa per invalidare tutta la cache
 
 async function hashCVText(text) {
     const normalized = text.trim().toLowerCase().replace(/\s+/g, ' ').slice(0, 15000);
