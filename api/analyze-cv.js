@@ -42,7 +42,7 @@ Return exactly this JSON shape:
 IMPORTANT: Use the rubric above consistently. If analyzing the same CV twice, produce identical scores.
 
 ORDERING RULES (critical for revenue):
-- recommended_books: sort by purchase likelihood — put bestsellers and widely-known titles first (high Amazon sales rank, many reviews). Prefer books with 1000+ reviews on Amazon over niche titles.
+- recommended_books: ONLY suggest internationally famous bestsellers with 10,000+ reviews on Amazon (e.g. "Atomic Habits", "Deep Work", "The Lean Startup", "Zero to One", "Thinking Fast and Slow"). Never suggest niche, academic, or little-known books. The book must be easily findable on Google Books with a cover image.
 - recommended_courses: sort by enrollment popularity — put the most enrolled/highest-rated courses first. Prefer Coursera courses over LinkedIn Learning when quality is equivalent (Coursera has broader reach).
 - For books: pick only real published books with a valid ISBN-13 (13 digits, starts with 978 or 979). No invented titles. Verify the ISBN matches the exact title and author.
 
