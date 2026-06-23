@@ -340,7 +340,10 @@ function loadCover(coverDiv, book, googleThumbnail) {
         img.className = 'cva-book-cover-img';
         img.alt       = book.title;
         img.src       = src;
-        img.onload    = () => coverDiv.replaceChildren(img);
+        img.onload    = () => {
+            if (img.naturalWidth < 10) { onFail && onFail(); return; }
+            coverDiv.replaceChildren(img);
+        };
         img.onerror   = () => onFail ? onFail() : null;
     }
 
