@@ -406,12 +406,20 @@ function buildClassificaPage() {
 <body>
   <header role="banner">
     <div class="header-content">
-      <a href="/" style="display:inline-flex;align-items:center;gap:0.45rem;color:var(--primary);text-decoration:none;font-weight:600;font-size:0.88rem;background:rgba(99,102,241,0.07);border:1px solid rgba(99,102,241,0.22);border-radius:8px;padding:0.42rem 0.9rem;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
-        Home
-      </a>
-      <div class="header-info">Classifica rischio AI 2026</div>
-      <a href="/calcolatore.html" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">🎯 Calcolatore</a>
+      <a href="/" data-i18n="cla_back_home" style="display:inline-flex;align-items:center;gap:0.45rem;color:var(--primary);text-decoration:none;font-weight:600;font-size:0.88rem;background:rgba(99,102,241,0.07);border:1px solid rgba(99,102,241,0.22);border-radius:8px;padding:0.42rem 0.9rem;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">Home</a>
+      <div class="header-info" data-i18n="cla_header_info">Classifica rischio AI 2026</div>
+      <nav style="display:flex;align-items:center;gap:1rem;">
+        <a href="/calcolatore.html" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">🎯 Calcolatore</a>
+        <div class="lang-selector" role="group" aria-label="Seleziona lingua">
+          <select id="langSelect" aria-label="Lingua" style="background:white;color:var(--text-primary);border:1px solid var(--border);border-radius:8px;padding:0.4rem 0.6rem;font-size:0.9rem;cursor:pointer;">
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="fr">🇫🇷 Français</option>
+          </select>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -419,14 +427,14 @@ function buildClassificaPage() {
     <div class="cla-shell">
 
       <div style="margin-bottom:2.5rem;">
-        <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.25);color:var(--primary);padding:0.4rem 0.9rem;border-radius:999px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:1rem;">📊 Dati 2026</div>
-        <h1 style="font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;line-height:1.2;">I 105 lavori più a rischio AI in Italia</h1>
-        <p style="color:var(--text-secondary);font-size:1rem;line-height:1.6;max-width:620px;">Classifica completa delle professioni italiane per rischio di sostituzione da parte dell'intelligenza artificiale. Clicca su una professione per l'analisi dettagliata.</p>
+        <div data-i18n="cla_badge" style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.25);color:var(--primary);padding:0.4rem 0.9rem;border-radius:999px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:1rem;">📊 Dati 2026</div>
+        <h1 data-i18n="cla_title" style="font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;line-height:1.2;">I 105 lavori più a rischio AI in Italia</h1>
+        <p data-i18n="cla_subtitle" style="color:var(--text-secondary);font-size:1rem;line-height:1.6;max-width:620px;">Classifica completa delle professioni italiane per rischio di sostituzione da parte dell'intelligenza artificiale. Clicca su una professione per l'analisi dettagliata.</p>
       </div>
 
       <!-- Filtri categoria -->
       <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;" id="filterBtns">
-        <button class="filter-btn active" onclick="filterCat(this,'')">Tutte</button>
+        <button class="filter-btn active" data-i18n="cla_filter_all" onclick="filterCat(this,'')">Tutte</button>
         ${Object.keys(CATEGORIES).map(c => `<button class="filter-btn" onclick="filterCat(this,'${esc(c)}')">${esc(c)}</button>`).join('')}
       </div>
 
@@ -441,10 +449,10 @@ function buildClassificaPage() {
           <thead>
             <tr>
               <th style="width:36px;">#</th>
-              <th>Professione</th>
-              <th class="hide-mobile">Categoria</th>
-              <th>Rischio AI</th>
-              <th class="hide-mobile">Anno critico</th>
+              <th data-i18n="cla_col_profession">Professione</th>
+              <th class="hide-mobile" data-i18n="cla_col_category">Categoria</th>
+              <th data-i18n="cla_col_risk">Rischio AI</th>
+              <th class="hide-mobile" data-i18n="cla_col_year">Anno critico</th>
             </tr>
           </thead>
           <tbody id="jobTableBody">
@@ -453,13 +461,13 @@ function buildClassificaPage() {
         </table>
       </div>
 
-      <p style="text-align:center;color:var(--text-secondary);font-size:0.82rem;margin-top:1rem;" id="rowCount">105 professioni</p>
+      <p style="text-align:center;color:var(--text-secondary);font-size:0.82rem;margin-top:1rem;" id="rowCount">105 <span data-i18n="cla_count_suffix">professioni</span></p>
 
       <!-- CTA -->
       <div style="text-align:center;margin:3rem 0 1rem;">
-        <p style="color:var(--text-secondary);margin-bottom:1.25rem;">Vuoi sapere quanto sei personalmente a rischio?</p>
-        <a href="/calcolatore.html" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1rem 2rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;display:inline-block;margin:0.5rem;transition:transform 0.15s,box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px -8px rgba(99,102,241,0.5)'" onmouseout="this.style.transform='';this.style.boxShadow=''">🎯 Calcola il tuo rischio personale</a>
-        <a href="/cv-analyzer.html" style="background:white;color:var(--primary);border:2px solid var(--primary);padding:0.9rem 1.8rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;margin:0.5rem;" onmouseover="this.style.background='var(--primary)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='var(--primary)'">📄 Analizza il tuo CV</a>
+        <p data-i18n="cla_cta_sub" style="color:var(--text-secondary);margin-bottom:1.25rem;">Vuoi sapere quanto sei personalmente a rischio?</p>
+        <a href="/calcolatore.html" data-i18n="cla_cta_btn1" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1rem 2rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;display:inline-block;margin:0.5rem;transition:transform 0.15s,box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px -8px rgba(99,102,241,0.5)'" onmouseout="this.style.transform='';this.style.boxShadow=''">🎯 Calcola il tuo rischio personale</a>
+        <a href="/cv-analyzer.html" data-i18n="cla_cta_btn2" style="background:white;color:var(--primary);border:2px solid var(--primary);padding:0.9rem 1.8rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;margin:0.5rem;" onmouseover="this.style.background='var(--primary)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='var(--primary)'">📄 Analizza il tuo CV</a>
       </div>
 
     </div>
@@ -467,7 +475,7 @@ function buildClassificaPage() {
 
   <footer>
     <div class="footer-content">
-      <p class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni italiane</p>
+      <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
     </div>
   </footer>
@@ -492,9 +500,12 @@ function buildClassificaPage() {
         row.style.display = matchCat && matchQ ? '' : 'none';
         if (matchCat && matchQ) count++;
       });
-      document.getElementById('rowCount').textContent = count + ' professioni';
+      const suffix = (window.getT && window.getT().cla_count_suffix) || 'professioni';
+      document.getElementById('rowCount').textContent = count + ' ' + suffix;
     }
   </script>
+  <script src="/cookie-consent.js"></script>
+  <script type="module" src="/page-i18n.js"></script>
 </body>
 </html>`;
 }
