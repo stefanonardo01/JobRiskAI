@@ -1,0 +1,15 @@
+{
+  "name": "jobriskai-cv-analyzer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI CV analyzer - returns AI job-risk score with viral sharing features",
+  "scripts": {
+    "build": "node scripts/build-profession-pages.mjs && node_modules/.bin/tailwindcss -i tailwind.input.css -o public/tailwind.min.css --minify"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

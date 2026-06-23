@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Consent Mode v2 BASIC — DEFAULT (DENIED) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage':         'denied',
+        'analytics_storage':  'denied',
+        'ad_user_data':       'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update':    2000
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJT8W9JTQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HNJT8W9JTQ');
+    </script>
+
+    <title>Analizza il tuo CV con l'AI | JobRiskAI — Punteggio Rischio Gratuito</title>
+    <meta name="description" content="Carica il tuo CV in PDF e scopri il tuo punteggio di rischio AI in meno di un minuto. Competenze da acquisire, ruoli alternativi, insight personalizzato. Gratuito, senza registrazione.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://www.jobriskai.it/cv-analyzer.html">
+    <link rel="alternate" hreflang="it" href="https://www.jobriskai.it/cv-analyzer.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.jobriskai.it/cv-analyzer.html">
+
+    <meta property="og:title" content="Analizza il tuo CV | JobRiskAI">
+    <meta property="og:description" content="Carica il tuo CV in PDF e scopri il tuo punteggio di rischio AI in meno di un minuto.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jobriskai.it/cv-analyzer.html">
+    <meta property="og:image" content="https://www.jobriskai.it/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="JobRiskAI">
+    <meta property="og:locale" content="it_IT">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Analizza il tuo CV | JobRiskAI">
+    <meta name="twitter:description" content="Carica il tuo CV in PDF e scopri il tuo punteggio di rischio AI in meno di un minuto.">
+    <meta name="twitter:image" content="https://www.jobriskai.it/og-image.png">
+
+    <link rel="icon"             type="image/png" href="/favicon-48.png"  sizes="48x48">
+    <link rel="icon"             type="image/png" href="/favicon-512.png" sizes="512x512">
+    <link rel="apple-touch-icon"                  href="/favicon-192.png">
+    <link rel="shortcut icon"    type="image/png" href="/favicon-48.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "JobRiskAI — Analizzatore CV Rischio AI",
+      "url": "https://www.jobriskai.it/cv-analyzer.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Carica il tuo CV in PDF e ricevi in 48 secondi un punteggio di rischio AI da 0 a 100, le competenze mancanti per ridurre l'esposizione e i ruoli alternativi consigliati. Analisi gratuita via Gemini 2.5 Flash, senza registrazione.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@type": "Organization", "name": "JobRiskAI", "url": "https://www.jobriskai.it" },
+      "inLanguage": ["it","en","es","de","fr"],
+      "featureList": [
+        "Estrazione testo PDF nel browser (nessun dato salvato)",
+        "Punteggio esposizione AI da 0 a 100",
+        "3–6 competenze consigliate per ridurre il rischio",
+        "2–4 ruoli alternativi con minor rischio AI",
+        "Insight personalizzato sul profilo",
+        "Supporto multilingua: italiano, inglese, spagnolo, tedesco, francese"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Come si analizza il CV per il rischio AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Carica il tuo CV in formato PDF su JobRiskAI. Il testo viene estratto nel browser (zero dati salvati), poi inviato al modello Gemini 2.5 Flash che in circa 48 secondi restituisce: punteggio di esposizione AI 0–100, livello di rischio (basso/medio/alto), competenze mancanti per ridurre il rischio, ruoli adiacenti più sicuri e un insight personalizzato. Gratuito, senza registrazione."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto è accurata l'analisi del CV per il rischio AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'analisi usa Gemini 2.5 Flash con temperature=0, il che garantisce risultati stabili e ripetibili: lo stesso CV produce sempre lo stesso punteggio. Il modello valuta 5 dimensioni: ripetitività dei task, giudizio richiesto, dipendenza interpersonale, specializzazione di dominio e disponibilità di strumenti AI. L'analisi è indicativa e non sostituisce una valutazione professionale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I dati del CV vengono salvati?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Il testo del CV viene estratto direttamente nel browser tramite PDF.js. Solo il testo estratto (non il file originale) viene inviato all'API per l'analisi e non viene mai salvato su nessun server. Ogni analisi è stateless e completamente anonima."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali formati di CV sono accettati?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'analizzatore accetta solo file PDF (max 10 MB, fino a 10 pagine). Il PDF deve contenere testo selezionabile: i CV scansionati come immagine senza OCR non possono essere analizzati. Per ottenere i migliori risultati, usa un CV con almeno 200 parole di testo."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "JobRiskAI", "item": "https://www.jobriskai.it/" },
+        { "@type": "ListItem", "position": 2, "name": "Analizzatore CV Rischio AI", "item": "https://www.jobriskai.it/cv-analyzer.html" }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .cva-shell {
+            max-width: 760px;
+            margin: 3.5rem auto 5rem;
+            padding: 0 1.5rem;
+        }
+        .cva-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            color: var(--primary);
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .cva-title {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-size: 2.3rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 0.85rem;
+            line-height: 1.18;
+        }
+        .cva-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 2.25rem;
+            max-width: 560px;
+        }
+        .cva-upload {
+            background: white;
+            border: 2px dashed var(--border);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            margin-bottom: 1.75rem;
+        }
+        .cva-upload:hover {
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.03);
+            box-shadow: 0 8px 24px -10px rgba(99,102,241,0.25);
+        }
+        .cva-upload-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: rgba(99, 102, 241, 0.08);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .cva-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .cva-score-card {
+            background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(59,130,246,0.03) 100%);
+            border: 1px solid rgba(99,102,241,0.2);
+            border-radius: 18px;
+            padding: 2.25rem;
+            margin-bottom: 1.75rem;
+            text-align: center;
+        }
+        .cva-score-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .cva-tag {
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.22);
+            color: var(--primary-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+        .cva-role-item {
+            background: var(--cream-2);
+            border-left: 3px solid var(--info);
+            padding: 0.85rem 1.1rem;
+            border-radius: 8px;
+            color: var(--text-primary);
+        }
+        .cva-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 0.8rem 1.6rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        .cva-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -8px rgba(99,102,241,0.5); }
+        .cva-btn-linkedin {
+            background: #0A66C2;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.6rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: opacity 0.15s ease;
+        }
+        .cva-btn-linkedin:hover { opacity: 0.85; }
+        .cva-btn-ghost {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+            padding: 0.65rem 1.4rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        .cva-btn-ghost:hover { border-color: var(--text-secondary); color: var(--text-primary); }
+        @keyframes cva-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .cva-spinner { animation: cva-spin 1.6s linear infinite; }
+
+        /* ── Strategia ── */
+        .cva-strategy-intro {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.65;
+            margin-bottom: 1.5rem;
+        }
+        .cva-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            position: relative;
+        }
+        .cva-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 28px;
+            bottom: 28px;
+            width: 2px;
+            background: var(--border);
+        }
+        .cva-timeline-step {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 0.75rem 0;
+            position: relative;
+        }
+        .cva-timeline-dot {
+            width: 42px;
+            min-width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            border: 2px solid white;
+        }
+        .cva-timeline-body { flex: 1; padding-top: 0.2rem; }
+        .cva-timeline-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.15rem; }
+        .cva-timeline-title { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.3rem; }
+        .cva-timeline-desc  { font-size: 0.87rem; color: var(--text-secondary); line-height: 1.55; }
+
+        /* ── Piano 90 giorni ── */
+        .cva-plan-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.4rem;
+        }
+        .cva-plan-phase {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.65rem;
+            border-radius: 999px;
+            margin-bottom: 0.75rem;
+        }
+        .cva-plan-phase-1 { background: rgba(99,102,241,0.1); color: var(--primary); }
+        .cva-plan-phase-2 { background: rgba(245,158,11,0.12); color: #b45309; }
+
+        /* ── Corsi ── */
+        .cva-course-item {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.18s ease;
+            background: white;
+        }
+        .cva-course-item:hover {
+            border-color: var(--primary);
+            background: rgba(99,102,241,0.04);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px -6px rgba(99,102,241,0.2);
+        }
+        .cva-course-platform {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 0.2rem 0.55rem;
+            border-radius: 6px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .cva-platform-coursera { background: rgba(0,86,210,0.1); color: #0056d2; }
+        .cva-platform-linkedin { background: rgba(10,102,194,0.1); color: #0a66c2; }
+        .cva-course-title { font-size: 0.92rem; font-weight: 500; line-height: 1.3; flex: 1; }
+        .cva-course-cta   { font-size: 0.82rem; color: var(--primary); font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+
+        /* ── Libri ── */
+        .cva-book-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: white;
+            transition: all 0.18s ease;
+        }
+        .cva-book-item:hover {
+            border-color: #f59e0b;
+            background: rgba(245,158,11,0.03);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px -6px rgba(245,158,11,0.25);
+        }
+        .cva-book-cover {
+            width: 60px;
+            min-width: 60px;
+            height: 84px;
+            border-radius: 6px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .cva-book-cover-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .cva-book-cover-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .cva-book-info   { flex: 1; min-width: 0; }
+        .cva-book-title  { font-size: 0.93rem; font-weight: 600; line-height: 1.35; color: var(--text-primary); }
+        .cva-book-author { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; }
+        .cva-book-rating { font-size: 0.78rem; color: #d97706; margin-top: 0.3rem; display: none; }
+        .cva-book-buy-btn {
+            display: inline-block;
+            margin-top: 0.6rem;
+            background: #ff9900;
+            color: #111;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: background 0.15s ease, transform 0.15s ease;
+            white-space: nowrap;
+        }
+        .cva-book-buy-btn:hover { background: #e68a00; transform: translateY(-1px); }
+    </style>
+
+    <!-- ============================================================
+         STEP 2 · Google AdSense (async, rispetta consent state)
+         Senza ad_storage='granted' mostra solo annunci contestuali.
+         ============================================================ -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7370036887669558"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER — banner bianco sticky -->
+    <header role="banner">
+        <div class="header-content">
+            <a href="/" aria-label="Torna alla home" style="display:inline-flex; align-items:center; gap:0.45rem; color:var(--primary); text-decoration:none; font-weight:600; font-size:0.88rem; background:rgba(99,102,241,0.07); border:1px solid rgba(99,102,241,0.22); border-radius:8px; padding:0.42rem 0.9rem; white-space:nowrap;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
+                Home
+            </a>
+            <div class="header-info" data-i18n="cva_header_tagline">Analizza il tuo CV con l'AI</div>
+            <nav style="display:flex; align-items:center; gap:1rem;">
+                <div class="lang-selector" role="group" aria-label="Seleziona lingua">
+                    <select id="langSelect" aria-label="Lingua" style="background:white; color:var(--text-primary); border:1px solid var(--border); border-radius:8px; padding:0.4rem 0.6rem; font-size:0.9rem; cursor:pointer;">
+                        <option value="it">🇮🇹 Italiano</option>
+                        <option value="en">🇬🇧 English</option>
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="de">🇩🇪 Deutsch</option>
+                        <option value="fr">🇫🇷 Français</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="cva-shell">
+
+            <div class="cva-eyebrow">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                <span data-i18n="cva_eyebrow">Analisi del CV</span>
+            </div>
+            <h1 class="cva-title" data-i18n="cva_title">Scopri il tuo punteggio di rischio AI</h1>
+            <p class="cva-subtitle" data-i18n="cva_subtitle">Carica il tuo CV in PDF: l'estrazione del testo avviene nel tuo browser, il file non viene mai salvato. In meno di un minuto ricevi punteggio, competenze mancanti e ruoli consigliati.</p>
+
+            <!-- Upload Area -->
+            <div id="cvUploadArea" class="cva-upload">
+                <input type="file" id="cvFileInput" accept=".pdf" style="display: none;" />
+                <div class="cva-upload-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                </div>
+                <p style="color: var(--text-primary); margin-bottom: 0.35rem; font-weight: 600; font-size: 1.05rem;" data-i18n="cva_upload_drag">Trascina il tuo CV qui</p>
+                <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 0.85rem;" data-i18n="cva_upload_click">oppure clicca per selezionare un file PDF</p>
+                <p style="color: var(--text-secondary); font-size: 0.8rem;" data-i18n="cva_upload_limit">Massimo 10MB · il file rimane nel tuo browser</p>
+            </div>
+
+            <!-- Results Area -->
+            <div id="cvResultsArea" style="display: none;">
+                <!-- Loading -->
+                <div id="cvLoadingState" style="text-align: center; padding: 2.5rem 0; display: none;">
+                    <svg class="cva-spinner" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-bottom:1rem;"><circle cx="12" cy="12" r="9" stroke-opacity="0.2"/><path d="M12 3a9 9 0 0 1 9 9"/></svg>
+                    <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.35rem;" data-i18n="cva_loading_title">Analizzando il tuo CV...</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;" data-i18n="cva_loading_sub">Questo potrebbe richiedere qualche secondo</p>
+                </div>
+
+                <!-- Results Display -->
+                <div id="cvResultsDisplay" style="display: none;">
+                    <!-- Score Card -->
+                    <div class="cva-score-card">
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.6rem;" data-i18n="cva_score_label">Il tuo punteggio di rischio AI</p>
+                        <div class="cva-score-value"><span id="cvScoreValue">-</span><span style="font-size:1.4rem; color:var(--text-secondary); font-weight:500;">/100</span></div>
+                        <div id="cvRiskBadge" style="display: inline-block; padding: 0.45rem 1.1rem; border-radius: 999px; font-weight: 600; font-size: 0.9rem; margin-top: 0.85rem;"></div>
+                    </div>
+
+                    <!-- Comparison -->
+                    <div class="cva-card">
+                        <h3 style="color: var(--text-primary); margin-bottom: 1.1rem; font-size: 1rem; font-weight: 600;" data-i18n="cva_compare_title">Come stai rispetto agli altri?</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+                            <div style="text-align: center;">
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.35rem;">Top 10%</p>
+                                <p style="font-size: 1.6rem; font-weight: 700; color: var(--success);">35</p>
+                            </div>
+                            <div style="text-align: center; border-left: 1px solid var(--border); border-right: 1px solid var(--border);">
+                                <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.35rem; font-size: 0.85rem;" data-i18n="cva_compare_you">Tu</p>
+                                <p style="font-size: 1.6rem; font-weight: 700; color: var(--primary);" id="cvScoreComparison">-</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.35rem;" data-i18n="cva_compare_avg">Media</p>
+                                <p style="font-size: 1.6rem; font-weight: 700; color: var(--warning);">58</p>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; font-style: italic; text-align:center;" id="cvComparisonMessage"></p>
+                    </div>
+
+                    <!-- Missing Skills -->
+                    <div class="cva-card">
+                        <h3 style="color: var(--text-primary); margin-bottom: 1.1rem; font-size: 1rem; font-weight: 600;" data-i18n="cva_skills_title">Competenze mancanti</h3>
+                        <ul id="cvMissingSkillsList" style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem;"></ul>
+                    </div>
+
+                    <!-- Recommended Roles -->
+                    <div class="cva-card">
+                        <h3 style="color: var(--text-primary); margin-bottom: 1.1rem; font-size: 1rem; font-weight: 600;" data-i18n="cva_roles_title">Ruoli consigliati per il tuo profilo</h3>
+                        <ul id="cvRecommendedRolesList" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.6rem;"></ul>
+                    </div>
+
+                    <!-- Strategia personalizzata -->
+                    <div class="cva-card" id="cvStrategyCard" style="display:none; border-left: 3px solid var(--primary); background: rgba(99,102,241,0.02);">
+                        <h3 style="color: var(--text-primary); margin-bottom: 0.75rem; font-size: 1rem; font-weight: 600;">🗺️ Il tuo piano per i prossimi 3 mesi</h3>
+                        <p id="cvStrategyIntro" class="cva-strategy-intro"></p>
+                        <div id="cvStrategyTimeline" class="cva-timeline"></div>
+                    </div>
+
+                    <!-- Piano 90 giorni: Corsi -->
+                    <div class="cva-card" id="cvCoursesCard" style="display:none;">
+                        <div class="cva-plan-header">
+                            <span class="cva-plan-phase cva-plan-phase-1">📅 Fase 1 · Mese 1-2</span>
+                        </div>
+                        <h3 style="color: var(--text-primary); margin-bottom: 0.4rem; font-size: 1rem; font-weight: 600;" data-i18n="cva_courses_title">🎓 Aggiorna le competenze — Corsi online</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.83rem; margin-bottom: 1rem;" data-i18n="cva_courses_sub">Selezionati in base alle skill mancanti del tuo profilo</p>
+                        <div id="cvCoursesList" style="display: flex; flex-direction: column; gap: 0.6rem;"></div>
+                    </div>
+
+                    <!-- Piano 90 giorni: Libri -->
+                    <div class="cva-card" id="cvBooksCard" style="display:none;">
+                        <div class="cva-plan-header">
+                            <span class="cva-plan-phase cva-plan-phase-2">📅 Fase 2 · Mese 2-3</span>
+                        </div>
+                        <h3 style="color: var(--text-primary); margin-bottom: 0.4rem; font-size: 1rem; font-weight: 600;" data-i18n="cva_books_title">📚 Approfondisci — Letture consigliate</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.83rem; margin-bottom: 1rem;" data-i18n="cva_books_sub">Acquistando tramite questi link supporti JobRiskAI gratuitamente</p>
+                        <div id="cvBooksList" style="display: flex; flex-direction: column; gap: 0.75rem;"></div>
+                    </div>
+
+                    <!-- Insight -->
+                    <div class="cva-card" style="border-left: 3px solid var(--success); background: rgba(16,185,129,0.04);">
+                        <p style="color: var(--text-primary); margin: 0; line-height: 1.55;" id="cvInsightText"></p>
+                    </div>
+
+                    <!-- Share Buttons -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; margin: 1.75rem 0 1.25rem;">
+                        <button id="cvCopyButton" class="cva-btn" data-i18n="cva_btn_copy">📋 Copia il risultato</button>
+                        <button id="cvLinkedinButton" class="cva-btn-linkedin" data-i18n="cva_btn_linkedin">🔗 Condividi su LinkedIn</button>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button id="cvResetButton" onclick="resetCVAnalyzer()" class="cva-btn-ghost" data-i18n="cva_btn_reset">↻ Analizza un altro CV</button>
+                    </div>
+                </div>
+
+                <!-- Error State -->
+                <div id="cvErrorState" style="display: none; background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 16px; padding: 1.75rem; text-align: center;">
+                    <p style="color: var(--danger); font-weight: 600; margin-bottom: 0.5rem;" data-i18n="cva_error_title">Errore nell'analisi</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.1rem;" id="cvErrorMessage"></p>
+                    <button onclick="resetCVAnalyzer()" class="cva-btn" data-i18n="cva_btn_retry">Riprova</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text" data-i18n="cva_footer_tagline">JobRiskAI · Analisi gratuita, nessuna registrazione richiesta</p>
+            <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         STEP 3 · Cookie Banner UI (GDPR EU)
+         ============================================================ -->
+    <div id="cookieBanner" role="dialog" aria-label="Consenso cookie" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1C1A17; color:#F3EEE4; padding:1.25rem; box-shadow:0 -4px 20px rgba(0,0,0,0.25); z-index:9999; font-size:0.9rem; line-height:1.5;">
+        <div style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;">
+            <p style="margin:0; flex:1; min-width:240px;">🍪 Usiamo cookie per mostrare pubblicità personalizzata tramite Google AdSense. Leggi la <a href="/privacy-policy.html" style="color:#a5b4fc;">Privacy Policy</a>.</p>
+            <div style="display:flex; gap:0.75rem;">
+                <button id="cookieReject" style="background:transparent; border:1px solid rgba(255,255,255,0.3); color:#F3EEE4; padding:0.6rem 1.2rem; border-radius:999px; cursor:pointer; font-size:0.9rem;">Rifiuta</button>
+                <button id="cookieAccept" style="background:#6366f1; border:none; color:white; padding:0.6rem 1.2rem; border-radius:999px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
+
+    <!-- STEP 4 · Consent Mode handler -->
+    <script src="/cookie-consent.js"></script>
+    <script type="module" src="/cv-analyzer.js"></script>
+    <!-- i18n — applica traduzioni e gestisce selettore lingua -->
+    <script type="module" src="/page-i18n.js"></script>
+</body>
+</html>

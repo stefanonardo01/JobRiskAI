@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# AI/LLM crawlers — explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://www.jobriskai.it/sitemap.xml
+
+# LLM-readable site description
+# https://www.jobriskai.it/llms.txt
