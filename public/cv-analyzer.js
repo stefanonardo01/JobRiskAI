@@ -336,9 +336,8 @@ function renderCourses(courses) {
 }
 
 // ── Carica cover con fallback a cascata ────────────────────
-// Priorità: Open Library → Google Books thumbnail → placeholder
+// Priorità: Open Library → Google Books direct → Google Books API thumbnail → placeholder
 function loadCover(coverDiv, book, googleThumbnail) {
-    const placeholder = coverDiv.querySelector('.cva-book-cover-placeholder');
 
     function tryImg(src, onFail) {
         if (!src) { onFail && onFail(); return; }
@@ -356,8 +355,11 @@ function loadCover(coverDiv, book, googleThumbnail) {
     const openLibUrl = book.isbn13
         ? `https://covers.openlibrary.org/b/isbn/${book.isbn13}-M.jpg`
         : null;
+    const googleDirectUrl = book.isbn13
+        ? `https://books.google.com/books/content?vid=ISBN${book.isbn13}&printsec=frontcover&img=1&zoom=1&source=gbs_api`
+        : null;
 
-    tryImg(openLibUrl, () => tryImg(googleThumbnail, null));
+    tryImg(openLibUrl, () => tryImg(googleDirectUrl, () => tryImg(googleThumbnail, null)));
 }
 
 // ── Costruisce elemento DOM di un libro ───────────────────
