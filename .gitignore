@@ -3,5 +3,3 @@ scripts/generated-urls.json
 public/professione/
 public/classifica.html
 public/tailwind.min.css
-tailwind.config.js
-tailwind.input.css
