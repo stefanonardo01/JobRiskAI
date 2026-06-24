@@ -336,11 +336,7 @@ function renderRiskTrend(job, riskScore, targetYear) {
     dot.setAttribute('cx', (LEFT + plotW).toFixed(1));
     dot.setAttribute('cy', riskToY(100).toFixed(1));
 
-    // Etichette anno esterno (se presenti nel DOM)
-    const yearStartEl = document.getElementById('riskTrendYearStart');
-    const yearEndEl   = document.getElementById('riskTrendYearEnd');
-    if (yearStartEl) yearStartEl.textContent = currentYear;
-    if (yearEndEl)   yearEndEl.textContent   = targetYear;
+
 }
 
 // ── Render: confronto job ─────────────────────────────────
