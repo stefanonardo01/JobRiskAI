@@ -350,10 +350,10 @@ function buildClassificaPage() {
         </a>
       </td>
       <td style="padding:0.75rem 0.5rem;font-size:0.82rem;color:var(--text-secondary);">${esc(d.cat)}</td>
-      <td style="padding:0.75rem 0.5rem;">
+      <td class="risk-cell" data-base-risk="${d.pct}" style="padding:0.75rem 0.5rem;">
         <div style="display:flex;align-items:center;gap:0.5rem;">
-          <div style="width:60px;height:6px;background:var(--border);border-radius:999px;overflow:hidden;"><div style="width:${d.pct}%;height:100%;background:${riskColor(d.pct)};border-radius:999px;"></div></div>
-          <span style="font-weight:700;font-size:0.9rem;color:${riskColor(d.pct)};">${d.pct}%</span>
+          <div style="width:60px;height:6px;background:var(--border);border-radius:999px;overflow:hidden;"><div class="risk-bar" style="width:${d.pct}%;height:100%;background:${riskColor(d.pct)};border-radius:999px;"></div></div>
+          <span class="risk-pct" style="font-weight:700;font-size:0.9rem;color:${riskColor(d.pct)};">${d.pct}%</span>
         </div>
       </td>
       <td class="year-cell" data-base-year="${d.targetYear}" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">${d.targetYear}</td>
@@ -439,7 +439,7 @@ function buildClassificaPage() {
 
       <div style="margin-bottom:2rem;">
         <div data-i18n="cla_badge" style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.25);color:var(--primary);padding:0.4rem 0.9rem;border-radius:999px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:1rem;">📊 Dati 2026</div>
-        <h1 data-i18n="cla_title" style="font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;line-height:1.2;">I 105 lavori più a rischio AI in Italia</h1>
+        <h1 id="claTitle" data-i18n="cla_title" style="font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;line-height:1.2;">I 105 lavori più a rischio AI in Italia</h1>
         <p data-i18n="cla_subtitle" style="color:var(--text-secondary);font-size:1rem;line-height:1.6;max-width:620px;">Classifica completa delle professioni italiane per rischio di sostituzione da parte dell'intelligenza artificiale. Clicca su una professione per l'analisi dettagliata.</p>
       </div>
 
@@ -568,6 +568,14 @@ function buildClassificaPage() {
   <script type="module">
     import { COUNTRIES, getCountry } from '/country-data.js';
 
+    const ITALY_AI_INDEX = 0.85; // base di riferimento
+
+    function riskColor(pct) {
+      if (pct >= 70) return '#ef4444';
+      if (pct >= 40) return '#f59e0b';
+      return '#10b981';
+    }
+
     let currentCountry = (function() {
       try { const s = localStorage.getItem('site_country'); if (s && COUNTRIES[s]) return s; } catch(e) {}
       return 'it';
@@ -577,12 +585,35 @@ function buildClassificaPage() {
       if (!COUNTRIES[code]) return;
       currentCountry = code;
       try { localStorage.setItem('site_country', code); } catch(e) {}
-      const offset = getCountry(code).criticalYearOffset;
+      const c = getCountry(code);
+
+      // Anno critico
       document.querySelectorAll('.year-cell').forEach(td => {
-        td.textContent = parseInt(td.dataset.baseYear) + offset;
+        td.textContent = parseInt(td.dataset.baseYear) + c.criticalYearOffset;
       });
+
+      // Rischio % scalato per aiAdoptionIndex del paese
+      const ratio = c.aiAdoptionIndex / ITALY_AI_INDEX;
+      document.querySelectorAll('.risk-cell').forEach(td => {
+        const base = parseInt(td.dataset.baseRisk);
+        const adjusted = Math.min(Math.round(base * ratio), 99);
+        const bar  = td.querySelector('.risk-bar');
+        const span = td.querySelector('.risk-pct');
+        const color = riskColor(adjusted);
+        if (bar)  { bar.style.width = adjusted + '%'; bar.style.background = color; }
+        if (span) { span.textContent = adjusted + '%'; span.style.color = color; }
+      });
+
+      // Titolo pagina
+      const titleEl = document.getElementById('claTitle');
+      if (titleEl) {
+        const countryName = code === 'it' ? 'Italia' : c.name;
+        titleEl.textContent = 'I 105 lavori più a rischio AI in ' + countryName;
+      }
+
+      // Bandiera e select
       const flagEl = document.getElementById('countryFlagDisplay');
-      if (flagEl) flagEl.textContent = getCountry(code).flag;
+      if (flagEl) flagEl.textContent = c.flag;
       const sel = document.getElementById('countrySelect');
       if (sel) sel.value = code;
     }
