@@ -239,7 +239,27 @@
                 📊 <span data-i18n="home_nav_ranking">Classifica</span>
             </a>
             <div class="header-info" data-i18n="header_tagline">Calcolatore di sostituzione AI per il tuo lavoro</div>
-            <nav style="display:flex; align-items:center; gap:1rem;">
+            <nav style="display:flex; align-items:center; gap:0.75rem;">
+                <select id="countrySelect" aria-label="Paese" style="background:white; color:var(--text-primary); border:1px solid var(--border); border-radius:8px; padding:0.4rem 0.6rem; font-size:0.9rem; cursor:pointer;">
+                    <optgroup label="Europa">
+                        <option value="it">🇮🇹 Italia</option>
+                        <option value="de">🇩🇪 Deutschland</option>
+                        <option value="fr">🇫🇷 France</option>
+                        <option value="es">🇪🇸 España</option>
+                        <option value="nl">🇳🇱 Nederland</option>
+                        <option value="pl">🇵🇱 Polska</option>
+                        <option value="gb">🇬🇧 United Kingdom</option>
+                        <option value="ch">🇨🇭 Schweiz</option>
+                    </optgroup>
+                    <optgroup label="Americhe">
+                        <option value="us">🇺🇸 United States</option>
+                        <option value="br">🇧🇷 Brasil</option>
+                    </optgroup>
+                    <optgroup label="Asia-Pacifico">
+                        <option value="in">🇮🇳 India</option>
+                        <option value="au">🇦🇺 Australia</option>
+                    </optgroup>
+                </select>
                 <div class="lang-selector" role="group" aria-label="Seleziona lingua">
                     <select id="langSelect" aria-label="Lingua" style="background:white; color:var(--text-primary); border:1px solid var(--border); border-radius:8px; padding:0.4rem 0.6rem; font-size:0.9rem; cursor:pointer;">
                         <option value="it">🇮🇹 Italiano</option>

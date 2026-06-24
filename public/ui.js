@@ -6,6 +6,7 @@ import { translations, jobTranslations } from './translations.js';
 import { jobExtra, jobData }             from './jobs.js';
 import { computeMetrics, getRiskLevel, getRiskIcon } from './calculator.js';
 import { applyJobCount }                from './job-count.js';
+import { COUNTRIES, getCountry, scaleSalary } from './country-data.js';
 
 // ── Stato globale del modulo ──────────────────────────────
 let currentJob  = 'developer';
@@ -16,6 +17,13 @@ let currentLang = (function () {
     } catch (e) {}
     const browserLang = (navigator.language || 'it').slice(0, 2);
     return translations[browserLang] ? browserLang : 'it';
+})();
+let currentCountry = (function () {
+    try {
+        const saved = localStorage.getItem('site_country');
+        if (saved && COUNTRIES[saved]) return saved;
+    } catch (e) {}
+    return 'it';
 })();
 
 // ── Helpers ───────────────────────────────────────────────
@@ -32,8 +40,8 @@ function getLocalizedJob(jobKey) {
 const LOCALE_MAP = { it: 'it-IT', en: 'en-US', es: 'es-ES', de: 'de-DE', fr: 'fr-FR' };
 function fmt(lang) { return LOCALE_MAP[lang] || 'it-IT'; }
 
-// Valuta corrente (sarà sostituito dal selettore nazione nel futuro)
-let currentCurrency = { symbol: '€', position: 'before' };
+// Valuta corrente — aggiornata da selectCountry()
+let currentCurrency = getCountry(currentCountry).currency;
 function fmtCurrency(value, numFmt) {
     const n = Math.round(value).toLocaleString(numFmt);
     return currentCurrency.position === 'before'
@@ -115,10 +123,29 @@ function selectJob(job) {
     if (activeCard) activeCard.classList.add('active');
 
     const jobInfo = jobData[job];
-    document.getElementById('humanSalary').value    = jobInfo.defaultHumanSalary;
-    document.getElementById('humanExtra').value     = jobInfo.defaultHumanExtra;
+    document.getElementById('humanSalary').value    = scaleSalary(jobInfo.defaultHumanSalary, currentCountry);
+    document.getElementById('humanExtra').value     = scaleSalary(jobInfo.defaultHumanExtra,  currentCountry);
     document.getElementById('aiMonthlyCost').value  = jobInfo.defaultAiMonthly;
     document.getElementById('aiSetup').value        = jobInfo.defaultAiSetup;
+
+    calculateAll();
+}
+
+// ── Selezione paese ───────────────────────────────────────
+
+function selectCountry(code) {
+    if (!COUNTRIES[code]) return;
+    currentCountry  = code;
+    currentCurrency = getCountry(code).currency;
+    try { localStorage.setItem('site_country', code); } catch (e) {}
+
+    // Riscala stipendi del job corrente in base al nuovo paese
+    const jobInfo = jobData[currentJob];
+    document.getElementById('humanSalary').value = scaleSalary(jobInfo.defaultHumanSalary, code);
+    document.getElementById('humanExtra').value  = scaleSalary(jobInfo.defaultHumanExtra,  code);
+
+    const sel = document.getElementById('countrySelect');
+    if (sel) sel.value = code;
 
     calculateAll();
 }
@@ -389,6 +416,12 @@ const langSelect = document.getElementById('langSelect');
 if (langSelect) {
     langSelect.value = currentLang;
     langSelect.addEventListener('change', function () { applyLanguage(this.value); });
+}
+
+const countrySelect = document.getElementById('countrySelect');
+if (countrySelect) {
+    countrySelect.value = currentCountry;
+    countrySelect.addEventListener('change', function () { selectCountry(this.value); });
 }
 
 document.getElementById('compareSelectA').addEventListener('change', renderJobComparison);
