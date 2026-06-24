@@ -445,14 +445,8 @@ if (countryConfirm) {
 function flashConfirmBtn() {
     const btn = document.getElementById('countryConfirm');
     if (!btn) return;
-    const span = btn.querySelector('span');
-    const origText = span ? span.textContent : '';
     btn.style.background = '#16a34a';
-    if (span) span.textContent = '✓ ' + origText;
-    setTimeout(() => {
-        btn.style.background = '#4f46e5';
-        if (span) span.textContent = origText;
-    }, 1200);
+    setTimeout(() => { btn.style.background = '#4f46e5'; }, 900);
 }
 
 document.getElementById('compareSelectA').addEventListener('change', renderJobComparison);
