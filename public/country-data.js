@@ -125,6 +125,28 @@ export const COUNTRIES = {
         // stipendi tech molto superiori alla media (comp totale inclusa equity)
     },
 
+    ca: {
+        name: 'Canada',
+        localName: 'Canada',
+        flag: '🇨🇦',
+        currency: { symbol: 'C$', code: 'CAD', position: 'before', locale: 'en-CA' },
+        salaryMultiplier: 1.45,
+        aiAdoptionIndex: 1.15,
+        criticalYearOffset: -1,
+        // Forte ecosistema AI (Toronto, Montreal); stipendi tech alti ma sotto USA
+    },
+
+    mx: {
+        name: 'Messico',
+        localName: 'México',
+        flag: '🇲🇽',
+        currency: { symbol: 'MX$', code: 'MXN', position: 'before', locale: 'es-MX' },
+        salaryMultiplier: 0.32,
+        aiAdoptionIndex: 0.70,
+        criticalYearOffset: 2,
+        // Mercato in crescita; nearshoring tech in espansione verso US
+    },
+
     br: {
         name: 'Brasile',
         localName: 'Brasil',
@@ -159,6 +181,76 @@ export const COUNTRIES = {
         criticalYearOffset: -1,
         // Mercato tech solido; stipendi elevati sostenuti da scarsità di talenti
     },
+
+    jp: {
+        name: 'Giappone',
+        localName: '日本',
+        flag: '🇯🇵',
+        currency: { symbol: '¥', code: 'JPY', position: 'before', locale: 'ja-JP' },
+        salaryMultiplier: 1.05,
+        aiAdoptionIndex: 1.00,
+        criticalYearOffset: 0,
+        // Forte robotica e manifattura AI; stipendi tecnici in crescita ma ancora sotto Europa
+    },
+
+    sg: {
+        name: 'Singapore',
+        localName: 'Singapore',
+        flag: '🇸🇬',
+        currency: { symbol: 'S$', code: 'SGD', position: 'before', locale: 'en-SG' },
+        salaryMultiplier: 1.90,
+        aiAdoptionIndex: 1.25,
+        criticalYearOffset: -2,
+        // Hub finanziario e tech dell'Asia; tra i salari tech più alti al mondo
+    },
+
+    // ── Medio Oriente ─────────────────────────────────────────
+
+    ae: {
+        name: 'Emirati Arabi',
+        localName: 'الإمارات',
+        flag: '🇦🇪',
+        currency: { symbol: 'AED', code: 'AED', position: 'after', locale: 'ar-AE' },
+        salaryMultiplier: 1.55,
+        aiAdoptionIndex: 1.10,
+        criticalYearOffset: -1,
+        // Dubai hub internazionale; zero tasse sul reddito, alto potere d'acquisto
+    },
+
+    // ── Europa — Extra ────────────────────────────────────────
+
+    se: {
+        name: 'Svezia',
+        localName: 'Sverige',
+        flag: '🇸🇪',
+        currency: { symbol: 'kr', code: 'SEK', position: 'after', locale: 'sv-SE' },
+        salaryMultiplier: 1.40,
+        aiAdoptionIndex: 1.15,
+        criticalYearOffset: -1,
+        // Forte ecosistema startup (Spotify, Klarna); alta qualità della vita
+    },
+
+    no: {
+        name: 'Norvegia',
+        localName: 'Norge',
+        flag: '🇳🇴',
+        currency: { symbol: 'kr', code: 'NOK', position: 'after', locale: 'nb-NO' },
+        salaryMultiplier: 1.75,
+        aiAdoptionIndex: 1.10,
+        criticalYearOffset: -1,
+        // Ricchezza petrolifera; tra i salari più alti d'Europa con alto costo della vita
+    },
+
+    pt: {
+        name: 'Portogallo',
+        localName: 'Portugal',
+        flag: '🇵🇹',
+        currency: { symbol: '€', code: 'EUR', position: 'before', locale: 'pt-PT' },
+        salaryMultiplier: 0.70,
+        aiAdoptionIndex: 0.80,
+        criticalYearOffset: 1,
+        // Hub per remote workers e nomadi digitali; stipendi locali bassi ma costo vita contenuto
+    },
 };
 
 // Paese di default (applicato se nessuna preferenza salvata)
@@ -168,15 +260,15 @@ export const DEFAULT_COUNTRY = 'it';
 export const COUNTRY_GROUPS = [
     {
         label: 'Europa',
-        countries: ['it', 'de', 'fr', 'es', 'nl', 'pl', 'gb', 'ch'],
+        countries: ['it', 'de', 'fr', 'es', 'pt', 'nl', 'pl', 'gb', 'ch', 'se', 'no'],
     },
     {
         label: 'Americhe',
-        countries: ['us', 'br'],
+        countries: ['us', 'ca', 'mx', 'br'],
     },
     {
-        label: 'Asia-Pacifico',
-        countries: ['in', 'au'],
+        label: 'Asia-Pacifico & ME',
+        countries: ['au', 'sg', 'jp', 'in', 'ae'],
     },
 ];
 
