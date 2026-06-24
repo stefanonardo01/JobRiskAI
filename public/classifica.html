@@ -150,6 +150,28 @@
         </div>
       </div>
 
+      <!-- Come vengono calcolati i rischi -->
+      <details style="margin-bottom:1.75rem;" id="methodologyBox">
+        <summary style="cursor:pointer; display:inline-flex; align-items:center; gap:0.5rem; font-size:0.85rem; font-weight:600; color:#4f46e5; list-style:none; padding:0.5rem 0.9rem; background:rgba(99,102,241,0.06); border:1px solid rgba(99,102,241,0.2); border-radius:999px; user-select:none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Come vengono calcolati i rischi per nazione?
+        </summary>
+        <div style="margin-top:0.75rem; padding:1.25rem 1.5rem; background:rgba(255,255,255,0.97); border:1.5px solid rgba(99,102,241,0.18); border-radius:14px; font-size:0.88rem; color:#374151; line-height:1.7;">
+          <p style="margin:0 0 0.75rem 0;">I valori base di rischio (%) e anno critico sono calcolati per l'<strong>Italia</strong>. Quando selezioni un altro paese, vengono applicati due adattamenti:</p>
+          <div style="display:flex; flex-direction:column; gap:0.6rem;">
+            <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="font-size:1.1rem; flex-shrink:0;">📈</span>
+              <div><strong>Rischio %</strong> — scalato in base all'<em>indice di adozione AI</em> del paese rispetto all'Italia (base 0.85). Paesi con forte ecosistema AI (es. USA 1.35, Singapore 1.25) mostrano rischi più alti; paesi con adozione più lenta (es. Brasile 0.65, Messico 0.70) mostrano rischi più contenuti.</div>
+            </div>
+            <div style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="font-size:1.1rem; flex-shrink:0;">📅</span>
+              <div><strong>Anno critico</strong> — anticipato o posticipato in base alla maturità del mercato locale. Ad esempio, negli USA l'anno critico arriva ~2 anni prima rispetto all'Italia; in Polonia o Brasile ~2–3 anni dopo.</div>
+            </div>
+          </div>
+          <p style="margin:0.75rem 0 0 0; color:#6b7280; font-size:0.82rem;">I dati si basano su stime comparative OECD/Eurostat 2024 e report sull'adozione AI per settore.</p>
+        </div>
+      </details>
+
       <!-- Filtri categoria -->
       <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;" id="filterBtns">
         <button class="filter-btn active" data-i18n="cla_filter_all" onclick="filterCat(this,'')">Tutte</button>
