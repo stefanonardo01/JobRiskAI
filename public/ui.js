@@ -6,7 +6,7 @@ import { translations, jobTranslations } from './translations.js';
 import { jobExtra, jobData }             from './jobs.js';
 import { computeMetrics, getRiskLevel, getRiskIcon } from './calculator.js';
 import { applyJobCount }                from './job-count.js';
-import { COUNTRIES, getCountry, scaleSalary } from './country-data.js';
+import { COUNTRIES, getCountry, scaleSalary, adjustTargetYear } from './country-data.js';
 
 // ── Stato globale del modulo ──────────────────────────────
 let currentJob  = 'developer';
@@ -186,6 +186,7 @@ function calculateAll() {
     const t            = translations[currentLang] || translations.it;
     const localizedJob = getLocalizedJob(currentJob);
     const riskScore    = Math.round(job.riskFactor * 100);
+    const targetYear   = adjustTargetYear(job.targetYear, currentCountry);
 
     document.getElementById('riskValue').textContent = riskScore + '%';
 
@@ -195,14 +196,14 @@ function calculateAll() {
     else                      { riskLevel = 'low';    riskPrefix = t.risk_low_prefix;    }
 
     document.getElementById('riskValue').className     = 'risk-value ' + riskLevel;
-    document.getElementById('riskText').textContent    = `${riskPrefix} ${job.targetYear}`;
-    document.getElementById('riskSubtext').textContent = `${t.within_year} ${job.targetYear}, ${localizedJob.survivalNote}`;
+    document.getElementById('riskText').textContent    = `${riskPrefix} ${targetYear}`;
+    document.getElementById('riskSubtext').textContent = `${t.within_year} ${targetYear}, ${localizedJob.survivalNote}`;
 
     // Testi dinamici basati sull'anno
-    document.getElementById('scenariTitle').textContent      = `${t.scenarios_at} ${job.targetYear}`;
-    document.getElementById('insightYear').textContent       = `${t.within_year} ${job.targetYear}, ${localizedJob.survivalNote}`;
+    document.getElementById('scenariTitle').textContent      = `${t.scenarios_at} ${targetYear}`;
+    document.getElementById('insightYear').textContent       = `${t.within_year} ${targetYear}, ${localizedJob.survivalNote}`;
     document.getElementById('insightAccuracy').textContent   = `${t.insight_accuracy_prefix} (${(job.aiAccuracy * 100).toFixed(1)}% vs ${(job.humanAccuracy * 100).toFixed(0)}%)`;
-    document.getElementById('insightSurvival').textContent   = `${t.insight_survival_prefix} ${job.targetYear}`;
+    document.getElementById('insightSurvival').textContent   = `${t.insight_survival_prefix} ${targetYear}`;
     document.getElementById('insightCostDiff').textContent   = ` ${t.insight_cost_diff_prefix} ${m.costDiffPercent}% ${t.insight_cost_diff_suffix}`;
     document.getElementById('humanAccuracyText').textContent = `${t.accuracy_label} ${(job.humanAccuracy * 100).toFixed(0)}% | ${t.errors_label} ${(100 - job.humanAccuracy * 100).toFixed(0)}%`;
     document.getElementById('aiAccuracyText').innerHTML      = `${t.ai_accuracy_label} ${(job.aiAccuracy * 100).toFixed(1)}% | ${t.ai_errors_label} &lt;${(100 - job.aiAccuracy * 100).toFixed(1)}%`;
@@ -216,7 +217,7 @@ function calculateAll() {
 
     renderTaskAnalysis(job);
     renderSurvivalPlan(job, riskScore);
-    renderRiskTrend(job, riskScore);
+    renderRiskTrend(job, riskScore, targetYear);
 }
 
 // ── Render: task analysis ─────────────────────────────────
@@ -258,14 +259,13 @@ function renderSurvivalPlan(job, riskScore) {
 
 // ── Render: grafico trend rischio (SVG) ───────────────────
 
-function renderRiskTrend(job, riskScore) {
+function renderRiskTrend(job, riskScore, targetYear) {
     const svg  = document.getElementById('riskTrendSvg');
     const line = document.getElementById('riskTrendLine');
     const dot  = document.getElementById('riskTrendDot');
     if (!svg || !line || !dot) return;
 
     const currentYear = new Date().getFullYear();
-    const targetYear  = job.targetYear;
     const totalSpan   = Math.max(targetYear - currentYear, 1);
 
     // Layout — deve corrispondere al viewBox="0 0 640 190" nell'HTML
@@ -392,7 +392,7 @@ function renderJobComparison() {
 
     const rows = [
         { label: t.comparison_row_risk,     cells: cellPair(riskA, riskB, v => v + '%', false) },
-        { label: t.comparison_row_year,     cells: cellPair(jobA.targetYear, jobB.targetYear, v => v, false) },
+        { label: t.comparison_row_year,     cells: cellPair(adjustTargetYear(jobA.targetYear, currentCountry), adjustTargetYear(jobB.targetYear, currentCountry), v => v, false) },
         { label: t.comparison_row_cost,     cells: cellPair(jobA.defaultAiMonthly, jobB.defaultAiMonthly, v => fmtCurrency(v, numFmt) + t.per_month_suffix, false) },
         { label: t.comparison_row_accuracy, cells: cellPair(jobA.aiAccuracy * 100, jobB.aiAccuracy * 100, v => v.toFixed(1) + '%', true) },
     ];
