@@ -240,26 +240,6 @@
             </a>
             <div class="header-info" data-i18n="header_tagline">Calcolatore di sostituzione AI per il tuo lavoro</div>
             <nav style="display:flex; align-items:center; gap:0.75rem;">
-                <select id="countrySelect" aria-label="Paese" style="background:white; color:var(--text-primary); border:1px solid var(--border); border-radius:8px; padding:0.4rem 0.6rem; font-size:0.9rem; cursor:pointer;">
-                    <optgroup label="Europa">
-                        <option value="it">🇮🇹 Italia</option>
-                        <option value="de">🇩🇪 Deutschland</option>
-                        <option value="fr">🇫🇷 France</option>
-                        <option value="es">🇪🇸 España</option>
-                        <option value="nl">🇳🇱 Nederland</option>
-                        <option value="pl">🇵🇱 Polska</option>
-                        <option value="gb">🇬🇧 United Kingdom</option>
-                        <option value="ch">🇨🇭 Schweiz</option>
-                    </optgroup>
-                    <optgroup label="Americhe">
-                        <option value="us">🇺🇸 United States</option>
-                        <option value="br">🇧🇷 Brasil</option>
-                    </optgroup>
-                    <optgroup label="Asia-Pacifico">
-                        <option value="in">🇮🇳 India</option>
-                        <option value="au">🇦🇺 Australia</option>
-                    </optgroup>
-                </select>
                 <div class="lang-selector" role="group" aria-label="Seleziona lingua">
                     <select id="langSelect" aria-label="Lingua" style="background:white; color:var(--text-primary); border:1px solid var(--border); border-radius:8px; padding:0.4rem 0.6rem; font-size:0.9rem; cursor:pointer;">
                         <option value="it">🇮🇹 Italiano</option>
@@ -303,6 +283,38 @@
                 </div>
             </div>
         </section>
+
+        <!-- COUNTRY SELECTOR BANNER -->
+        <div style="max-width:860px; margin:0 auto 2.5rem; padding:0 1.5rem;">
+            <div style="background:rgba(99,102,241,0.12); border:1.5px solid rgba(99,102,241,0.40); border-radius:16px; padding:1.25rem 1.75rem; display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+                <div id="countryFlagDisplay" style="font-size:2.6rem; line-height:1; flex-shrink:0;">🇮🇹</div>
+                <div style="flex:1; min-width:180px;">
+                    <div style="font-size:0.72rem; font-weight:700; color:rgba(165,167,255,0.9); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.35rem;" data-i18n="country_selector_label">Stai calcolando per</div>
+                    <select id="countrySelect" aria-label="Paese" style="background:transparent; color:white; border:none; font-size:1.15rem; font-weight:700; cursor:pointer; padding:0; width:100%; outline:none; appearance:none; -webkit-appearance:none;">
+                        <optgroup label="Europa">
+                            <option value="it" style="background:#1a1a2e; color:white;">🇮🇹 Italia</option>
+                            <option value="de" style="background:#1a1a2e; color:white;">🇩🇪 Deutschland</option>
+                            <option value="fr" style="background:#1a1a2e; color:white;">🇫🇷 France</option>
+                            <option value="es" style="background:#1a1a2e; color:white;">🇪🇸 España</option>
+                            <option value="nl" style="background:#1a1a2e; color:white;">🇳🇱 Nederland</option>
+                            <option value="pl" style="background:#1a1a2e; color:white;">🇵🇱 Polska</option>
+                            <option value="gb" style="background:#1a1a2e; color:white;">🇬🇧 United Kingdom</option>
+                            <option value="ch" style="background:#1a1a2e; color:white;">🇨🇭 Schweiz</option>
+                        </optgroup>
+                        <optgroup label="Americhe">
+                            <option value="us" style="background:#1a1a2e; color:white;">🇺🇸 United States</option>
+                            <option value="br" style="background:#1a1a2e; color:white;">🇧🇷 Brasil</option>
+                        </optgroup>
+                        <optgroup label="Asia-Pacifico">
+                            <option value="in" style="background:#1a1a2e; color:white;">🇮🇳 India</option>
+                            <option value="au" style="background:#1a1a2e; color:white;">🇦🇺 Australia</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(165,167,255,0.7)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                <div style="font-size:0.82rem; color:rgba(255,255,255,0.45); max-width:230px; line-height:1.5; flex-shrink:0;" data-i18n="country_selector_hint">Stipendi, valuta e anno critico si adattano automaticamente</div>
+            </div>
+        </div>
 
         <!-- JOB SELECTOR SECTION -->
         <section class="job-selector" id="jobs" aria-labelledby="job-selector-title">

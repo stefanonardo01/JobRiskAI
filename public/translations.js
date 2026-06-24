@@ -4,6 +4,8 @@
 
 export const translations = {
     it: {
+        country_selector_label: "Stai calcolando per",
+        country_selector_hint: "Stipendi, valuta e anno critico si adattano automaticamente",
         header_tagline: "Calcolatore di sostituzione AI per il tuo lavoro",
         hero_badge: "Calcolatore gratuito",
         hero_title: "Quanto resisterà il tuo lavoro all'intelligenza artificiale?",
@@ -297,6 +299,8 @@ export const translations = {
         cva_step4_desc_low: "Con nuove competenze in tasca, aggiorna LinkedIn e il tuo CV. Se vuoi accelerare, una transizione verso '{role1}' potrebbe avere senso: ha un profilo di rischio AI più basso e valorizza molte delle tue competenze attuali."
     },
     en: {
+        country_selector_label: "Calculating for",
+        country_selector_hint: "Salaries, currency and critical year adjust automatically",
         header_tagline: "AI replacement calculator for your job",
         hero_badge: "Free calculator",
         hero_title: "How long will your job survive artificial intelligence?",
@@ -590,6 +594,8 @@ export const translations = {
         cva_step4_desc_low: "With new skills under your belt, update your LinkedIn and CV. If you want to accelerate, a transition to '{role1}' could make sense: it has a lower AI risk profile and leverages many of your current skills."
     },
     es: {
+        country_selector_label: "Calculando para",
+        country_selector_hint: "Salarios, moneda y año crítico se adaptan automáticamente",
         header_tagline: "Calculadora de sustitución por IA para tu trabajo",
         hero_badge: "Calculadora gratuita",
         hero_title: "¿Cuánto resistirá tu trabajo a la inteligencia artificial?",
@@ -883,6 +889,8 @@ export const translations = {
         cva_step4_desc_low: "Con nuevas habilidades, actualiza tu LinkedIn y CV. Si quieres acelerar, una transición hacia '{role1}' podría tener sentido: tiene un perfil de riesgo de IA más bajo y aprovecha muchas de tus habilidades actuales."
     },
     de: {
+        country_selector_label: "Berechnung für",
+        country_selector_hint: "Gehälter, Währung und kritisches Jahr passen sich automatisch an",
         header_tagline: "KI-Ersatzrechner für deinen Job",
         hero_badge: "Kostenloser Rechner",
         hero_title: "Wie lange wird dein Job der künstlichen Intelligenz standhalten?",
@@ -1176,6 +1184,8 @@ export const translations = {
         cva_step4_desc_low: "Mit neuen Fähigkeiten aktualisiere LinkedIn und deinen Lebenslauf. Wenn du beschleunigen möchtest, könnte ein Übergang zu '{role1}' sinnvoll sein: Es hat ein niedrigeres KI-Risikoprofil und nutzt viele deiner aktuellen Fähigkeiten."
     },
     fr: {
+        country_selector_label: "Calcul pour",
+        country_selector_hint: "Salaires, devise et année critique s'adaptent automatiquement",
         header_tagline: "Calculateur de remplacement par l'IA pour votre métier",
         hero_badge: "Calculateur gratuit",
         hero_title: "Combien de temps votre métier résistera-t-il à l'intelligence artificielle ?",

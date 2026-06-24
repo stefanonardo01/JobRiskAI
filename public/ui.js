@@ -147,6 +147,9 @@ function selectCountry(code) {
     const sel = document.getElementById('countrySelect');
     if (sel) sel.value = code;
 
+    const flagEl = document.getElementById('countryFlagDisplay');
+    if (flagEl) flagEl.textContent = getCountry(code).flag;
+
     calculateAll();
 }
 
