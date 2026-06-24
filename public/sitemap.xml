@@ -31,16 +31,23 @@
 
   <url>
     <loc>https://www.jobriskai.it/privacy-policy.html</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
 
   <url>
     <loc>https://www.jobriskai.it/termini-servizio.html</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.jobriskai.it/chi-siamo.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <!-- Classifica — pagina backlink bait -->

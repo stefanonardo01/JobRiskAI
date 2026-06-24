@@ -328,6 +328,12 @@ function buildProfessionPage(key) {
     <div class="footer-content">
       <p class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni italiane</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica.html" style="color:var(--text-secondary);">Classifica completa</a> · <a href="/calcolatore.html" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer.html" style="color:var(--text-secondary);">Analisi CV</a></p>
+      <nav aria-label="Footer links" style="margin-top:0.5rem;">
+        <a href="/privacy-policy.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
+        <a href="/termini-servizio.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
+        <a href="/chi-siamo.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
+        <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
+      </nav>
     </div>
   </footer>
 </body>
@@ -552,6 +558,12 @@ function buildClassificaPage() {
     <div class="footer-content">
       <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
+      <nav aria-label="Footer links" style="margin-top:0.5rem;">
+        <a href="/privacy-policy.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
+        <a href="/termini-servizio.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
+        <a href="/chi-siamo.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
+        <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
+      </nav>
     </div>
   </footer>
 
