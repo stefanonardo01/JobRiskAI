@@ -422,14 +422,37 @@ if (langSelect) {
 }
 
 const countrySelect = document.getElementById('countrySelect');
-if (countrySelect) countrySelect.value = currentCountry;
+if (countrySelect) {
+    countrySelect.value = currentCountry;
+    // Aggiorna immediatamente al cambio dropdown (senza attendere il bottone)
+    countrySelect.addEventListener('change', function () {
+        selectCountry(this.value);
+        flashConfirmBtn();
+    });
+}
 
 const countryConfirm = document.getElementById('countryConfirm');
 if (countryConfirm) {
     countryConfirm.addEventListener('click', function () {
         const sel = document.getElementById('countrySelect');
-        if (sel) selectCountry(sel.value);
+        if (sel) {
+            selectCountry(sel.value);
+            flashConfirmBtn();
+        }
     });
+}
+
+function flashConfirmBtn() {
+    const btn = document.getElementById('countryConfirm');
+    if (!btn) return;
+    const span = btn.querySelector('span');
+    const origText = span ? span.textContent : '';
+    btn.style.background = '#16a34a';
+    if (span) span.textContent = '✓ ' + origText;
+    setTimeout(() => {
+        btn.style.background = '#4f46e5';
+        if (span) span.textContent = origText;
+    }, 1200);
 }
 
 document.getElementById('compareSelectA').addEventListener('change', renderJobComparison);
