@@ -99,55 +99,61 @@
     </div>
   </header>
 
-  <!-- COUNTRY SELECTOR BANNER -->
-  <div style="max-width:900px; margin:1.5rem auto 0; padding:0 1.5rem;">
-    <div style="background:rgba(255,255,255,0.96); border:1.5px solid rgba(99,102,241,0.30); border-radius:16px; padding:1rem 1.5rem; display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
-      <div id="countryFlagDisplay" style="font-size:2rem; line-height:1; flex-shrink:0;">🇮🇹</div>
-      <div style="flex:1; min-width:160px;">
-        <div style="font-size:0.70rem; font-weight:700; color:#4f46e5; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.4rem;" data-i18n="country_selector_label">Stai calcolando per</div>
-        <div style="position:relative; display:flex; align-items:center; background:#f5f3ff; border:1.5px solid #a5b4fc; border-radius:10px; padding:0.5rem 2.5rem 0.5rem 0.9rem; cursor:pointer;" onmouseover="this.style.borderColor='#6366f1'" onmouseout="this.style.borderColor='#a5b4fc'">
-          <select id="countrySelect" aria-label="Paese" style="background:transparent; color:#111827; border:none; font-size:1rem; font-weight:700; cursor:pointer; padding:0; outline:none; appearance:none; -webkit-appearance:none; width:100%; min-width:140px;">
-            <optgroup label="Europa">
-              <option value="it">🇮🇹 Italia</option>
-              <option value="de">🇩🇪 Deutschland</option>
-              <option value="fr">🇫🇷 France</option>
-              <option value="es">🇪🇸 España</option>
-              <option value="pt">🇵🇹 Portugal</option>
-              <option value="nl">🇳🇱 Nederland</option>
-              <option value="pl">🇵🇱 Polska</option>
-              <option value="gb">🇬🇧 United Kingdom</option>
-              <option value="ch">🇨🇭 Schweiz</option>
-              <option value="se">🇸🇪 Sverige</option>
-              <option value="no">🇳🇴 Norge</option>
-            </optgroup>
-            <optgroup label="Americhe">
-              <option value="us">🇺🇸 United States</option>
-              <option value="ca">🇨🇦 Canada</option>
-              <option value="mx">🇲🇽 México</option>
-              <option value="br">🇧🇷 Brasil</option>
-            </optgroup>
-            <optgroup label="Asia-Pacifico &amp; ME">
-              <option value="au">🇦🇺 Australia</option>
-              <option value="sg">🇸🇬 Singapore</option>
-              <option value="jp">🇯🇵 Japan</option>
-              <option value="in">🇮🇳 India</option>
-              <option value="ae">🇦🇪 UAE / Dubai</option>
-            </optgroup>
-          </select>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; right:0.65rem; pointer-events:none;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-        </div>
-      </div>
-      <div style="font-size:0.78rem; color:#6b7280; max-width:200px; line-height:1.4;" data-i18n="country_selector_hint">L'anno critico si adatta automaticamente al paese selezionato</div>
-    </div>
-  </div>
-
   <main role="main">
     <div class="cla-shell">
 
-      <div style="margin-bottom:2.5rem;">
+      <div style="margin-bottom:2rem;">
         <div data-i18n="cla_badge" style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.25);color:var(--primary);padding:0.4rem 0.9rem;border-radius:999px;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;text-transform:uppercase;margin-bottom:1rem;">📊 Dati 2026</div>
         <h1 data-i18n="cla_title" style="font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;line-height:1.2;">I 105 lavori più a rischio AI in Italia</h1>
         <p data-i18n="cla_subtitle" style="color:var(--text-secondary);font-size:1rem;line-height:1.6;max-width:620px;">Classifica completa delle professioni italiane per rischio di sostituzione da parte dell'intelligenza artificiale. Clicca su una professione per l'analisi dettagliata.</p>
+      </div>
+
+      <!-- COUNTRY SELECTOR BANNER -->
+      <div style="margin-bottom:2rem;">
+        <div style="background:rgba(255,255,255,0.96); border:1.5px solid rgba(99,102,241,0.30); border-radius:16px; padding:1.25rem 1.75rem; display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+          <div id="countryFlagDisplay" style="font-size:2.6rem; line-height:1; flex-shrink:0;">🇮🇹</div>
+          <div style="flex:1; min-width:180px;">
+            <div style="font-size:0.72rem; font-weight:700; color:#4f46e5; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.5rem;" data-i18n="country_selector_label">Stai calcolando per</div>
+            <div style="position:relative; display:flex; align-items:center; background:#f5f3ff; border:1.5px solid #a5b4fc; border-radius:10px; padding:0.55rem 2.5rem 0.55rem 0.9rem; cursor:pointer; transition:border-color 0.15s;" onmouseover="this.style.borderColor='#6366f1'" onmouseout="this.style.borderColor='#a5b4fc'">
+              <select id="countrySelect" aria-label="Paese" style="background:transparent; color:#111827; border:none; font-size:1.1rem; font-weight:700; cursor:pointer; padding:0; outline:none; appearance:none; -webkit-appearance:none; width:100%; min-width:140px;">
+                <optgroup label="Europa">
+                  <option value="it">🇮🇹 Italia</option>
+                  <option value="de">🇩🇪 Deutschland</option>
+                  <option value="fr">🇫🇷 France</option>
+                  <option value="es">🇪🇸 España</option>
+                  <option value="pt">🇵🇹 Portugal</option>
+                  <option value="nl">🇳🇱 Nederland</option>
+                  <option value="pl">🇵🇱 Polska</option>
+                  <option value="gb">🇬🇧 United Kingdom</option>
+                  <option value="ch">🇨🇭 Schweiz</option>
+                  <option value="se">🇸🇪 Sverige</option>
+                  <option value="no">🇳🇴 Norge</option>
+                </optgroup>
+                <optgroup label="Americhe">
+                  <option value="us">🇺🇸 United States</option>
+                  <option value="ca">🇨🇦 Canada</option>
+                  <option value="mx">🇲🇽 México</option>
+                  <option value="br">🇧🇷 Brasil</option>
+                </optgroup>
+                <optgroup label="Asia-Pacifico &amp; ME">
+                  <option value="au">🇦🇺 Australia</option>
+                  <option value="sg">🇸🇬 Singapore</option>
+                  <option value="jp">🇯🇵 Japan</option>
+                  <option value="in">🇮🇳 India</option>
+                  <option value="ae">🇦🇪 UAE / Dubai</option>
+                </optgroup>
+              </select>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; right:0.65rem; pointer-events:none;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.5rem; flex-shrink:0; align-items:flex-start;">
+            <button id="countryConfirm" aria-label="Aggiorna classifica per il paese selezionato" style="background:#4f46e5; color:white; border:none; border-radius:10px; padding:0.6rem 1.3rem; font-size:0.95rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:0.5rem; transition:background 0.15s; white-space:nowrap;" onmouseover="this.style.background='#4338ca'" onmouseout="this.style.background='#4f46e5'">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="country_confirm_btn">Aggiorna</span>
+            </button>
+            <div style="font-size:0.78rem; color:#6b7280; max-width:180px; line-height:1.4;" data-i18n="country_selector_hint">L'anno critico si adatta al paese selezionato</div>
+          </div>
+        </div>
       </div>
 
       <!-- Filtri categoria -->
@@ -2027,13 +2033,31 @@
       });
       const flagEl = document.getElementById('countryFlagDisplay');
       if (flagEl) flagEl.textContent = getCountry(code).flag;
+      const sel = document.getElementById('countrySelect');
+      if (sel) sel.value = code;
+    }
+
+    function flashBtn() {
+      const btn = document.getElementById('countryConfirm');
+      if (!btn) return;
+      btn.style.background = '#16a34a';
+      setTimeout(() => { btn.style.background = '#4f46e5'; }, 900);
     }
 
     const sel = document.getElementById('countrySelect');
     if (sel) {
       sel.value = currentCountry;
-      sel.addEventListener('change', function() { applyCountry(this.value); });
+      sel.addEventListener('change', function() { applyCountry(this.value); flashBtn(); });
     }
+
+    const btn = document.getElementById('countryConfirm');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        const s = document.getElementById('countrySelect');
+        if (s) { applyCountry(s.value); flashBtn(); }
+      });
+    }
+
     applyCountry(currentCountry);
   </script>
 </body>
