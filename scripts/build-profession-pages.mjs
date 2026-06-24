@@ -356,7 +356,7 @@ function buildClassificaPage() {
           <span style="font-weight:700;font-size:0.9rem;color:${riskColor(d.pct)};">${d.pct}%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">${d.targetYear}</td>
+      <td class="year-cell" data-base-year="${d.targetYear}" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">${d.targetYear}</td>
     </tr>`).join('');
 
   const faqJsonLd = JSON.stringify({
@@ -433,6 +433,48 @@ function buildClassificaPage() {
       </nav>
     </div>
   </header>
+
+  <!-- COUNTRY SELECTOR BANNER -->
+  <div style="max-width:900px; margin:1.5rem auto 0; padding:0 1.5rem;">
+    <div style="background:rgba(255,255,255,0.96); border:1.5px solid rgba(99,102,241,0.30); border-radius:16px; padding:1rem 1.5rem; display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
+      <div id="countryFlagDisplay" style="font-size:2rem; line-height:1; flex-shrink:0;">🇮🇹</div>
+      <div style="flex:1; min-width:160px;">
+        <div style="font-size:0.70rem; font-weight:700; color:#4f46e5; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.4rem;" data-i18n="country_selector_label">Stai calcolando per</div>
+        <div style="position:relative; display:flex; align-items:center; background:#f5f3ff; border:1.5px solid #a5b4fc; border-radius:10px; padding:0.5rem 2.5rem 0.5rem 0.9rem; cursor:pointer;" onmouseover="this.style.borderColor='#6366f1'" onmouseout="this.style.borderColor='#a5b4fc'">
+          <select id="countrySelect" aria-label="Paese" style="background:transparent; color:#111827; border:none; font-size:1rem; font-weight:700; cursor:pointer; padding:0; outline:none; appearance:none; -webkit-appearance:none; width:100%; min-width:140px;">
+            <optgroup label="Europa">
+              <option value="it">🇮🇹 Italia</option>
+              <option value="de">🇩🇪 Deutschland</option>
+              <option value="fr">🇫🇷 France</option>
+              <option value="es">🇪🇸 España</option>
+              <option value="pt">🇵🇹 Portugal</option>
+              <option value="nl">🇳🇱 Nederland</option>
+              <option value="pl">🇵🇱 Polska</option>
+              <option value="gb">🇬🇧 United Kingdom</option>
+              <option value="ch">🇨🇭 Schweiz</option>
+              <option value="se">🇸🇪 Sverige</option>
+              <option value="no">🇳🇴 Norge</option>
+            </optgroup>
+            <optgroup label="Americhe">
+              <option value="us">🇺🇸 United States</option>
+              <option value="ca">🇨🇦 Canada</option>
+              <option value="mx">🇲🇽 México</option>
+              <option value="br">🇧🇷 Brasil</option>
+            </optgroup>
+            <optgroup label="Asia-Pacifico &amp; ME">
+              <option value="au">🇦🇺 Australia</option>
+              <option value="sg">🇸🇬 Singapore</option>
+              <option value="jp">🇯🇵 Japan</option>
+              <option value="in">🇮🇳 India</option>
+              <option value="ae">🇦🇪 UAE / Dubai</option>
+            </optgroup>
+          </select>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; right:0.65rem; pointer-events:none;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+      <div style="font-size:0.78rem; color:#6b7280; max-width:200px; line-height:1.4;" data-i18n="country_selector_hint">L'anno critico si adatta automaticamente al paese selezionato</div>
+    </div>
+  </div>
 
   <main role="main">
     <div class="cla-shell">
@@ -517,6 +559,33 @@ function buildClassificaPage() {
   </script>
   <script src="/cookie-consent.js"></script>
   <script type="module" src="/page-i18n.js"></script>
+  <script type="module">
+    import { COUNTRIES, getCountry } from '/country-data.js';
+
+    let currentCountry = (function() {
+      try { const s = localStorage.getItem('site_country'); if (s && COUNTRIES[s]) return s; } catch(e) {}
+      return 'it';
+    })();
+
+    function applyCountry(code) {
+      if (!COUNTRIES[code]) return;
+      currentCountry = code;
+      try { localStorage.setItem('site_country', code); } catch(e) {}
+      const offset = getCountry(code).criticalYearOffset;
+      document.querySelectorAll('.year-cell').forEach(td => {
+        td.textContent = parseInt(td.dataset.baseYear) + offset;
+      });
+      const flagEl = document.getElementById('countryFlagDisplay');
+      if (flagEl) flagEl.textContent = getCountry(code).flag;
+    }
+
+    const sel = document.getElementById('countrySelect');
+    if (sel) {
+      sel.value = currentCountry;
+      sel.addEventListener('change', function() { applyCountry(this.value); });
+    }
+    applyCountry(currentCountry);
+  </script>
 </body>
 </html>`;
 }

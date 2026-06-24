@@ -99,6 +99,48 @@
     </div>
   </header>
 
+  <!-- COUNTRY SELECTOR BANNER -->
+  <div style="max-width:900px; margin:1.5rem auto 0; padding:0 1.5rem;">
+    <div style="background:rgba(255,255,255,0.96); border:1.5px solid rgba(99,102,241,0.30); border-radius:16px; padding:1rem 1.5rem; display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
+      <div id="countryFlagDisplay" style="font-size:2rem; line-height:1; flex-shrink:0;">🇮🇹</div>
+      <div style="flex:1; min-width:160px;">
+        <div style="font-size:0.70rem; font-weight:700; color:#4f46e5; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.4rem;" data-i18n="country_selector_label">Stai calcolando per</div>
+        <div style="position:relative; display:flex; align-items:center; background:#f5f3ff; border:1.5px solid #a5b4fc; border-radius:10px; padding:0.5rem 2.5rem 0.5rem 0.9rem; cursor:pointer;" onmouseover="this.style.borderColor='#6366f1'" onmouseout="this.style.borderColor='#a5b4fc'">
+          <select id="countrySelect" aria-label="Paese" style="background:transparent; color:#111827; border:none; font-size:1rem; font-weight:700; cursor:pointer; padding:0; outline:none; appearance:none; -webkit-appearance:none; width:100%; min-width:140px;">
+            <optgroup label="Europa">
+              <option value="it">🇮🇹 Italia</option>
+              <option value="de">🇩🇪 Deutschland</option>
+              <option value="fr">🇫🇷 France</option>
+              <option value="es">🇪🇸 España</option>
+              <option value="pt">🇵🇹 Portugal</option>
+              <option value="nl">🇳🇱 Nederland</option>
+              <option value="pl">🇵🇱 Polska</option>
+              <option value="gb">🇬🇧 United Kingdom</option>
+              <option value="ch">🇨🇭 Schweiz</option>
+              <option value="se">🇸🇪 Sverige</option>
+              <option value="no">🇳🇴 Norge</option>
+            </optgroup>
+            <optgroup label="Americhe">
+              <option value="us">🇺🇸 United States</option>
+              <option value="ca">🇨🇦 Canada</option>
+              <option value="mx">🇲🇽 México</option>
+              <option value="br">🇧🇷 Brasil</option>
+            </optgroup>
+            <optgroup label="Asia-Pacifico &amp; ME">
+              <option value="au">🇦🇺 Australia</option>
+              <option value="sg">🇸🇬 Singapore</option>
+              <option value="jp">🇯🇵 Japan</option>
+              <option value="in">🇮🇳 India</option>
+              <option value="ae">🇦🇪 UAE / Dubai</option>
+            </optgroup>
+          </select>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; right:0.65rem; pointer-events:none;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+      <div style="font-size:0.78rem; color:#6b7280; max-width:200px; line-height:1.4;" data-i18n="country_selector_hint">L'anno critico si adatta automaticamente al paese selezionato</div>
+    </div>
+  </div>
+
   <main role="main">
     <div class="cla-shell">
 
@@ -148,7 +190,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">92%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2027</td>
+      <td class="year-cell" data-base-year="2027" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2027</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">2</td>
@@ -165,7 +207,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">85%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
+      <td class="year-cell" data-base-year="2029" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">3</td>
@@ -182,7 +224,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">80%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
+      <td class="year-cell" data-base-year="2029" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">4</td>
@@ -199,7 +241,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">80%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
+      <td class="year-cell" data-base-year="2029" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">5</td>
@@ -216,7 +258,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">78%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
+      <td class="year-cell" data-base-year="2029" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">6</td>
@@ -233,7 +275,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">78%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2028</td>
+      <td class="year-cell" data-base-year="2028" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2028</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">7</td>
@@ -250,7 +292,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">75%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">8</td>
@@ -267,7 +309,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">75%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
+      <td class="year-cell" data-base-year="2029" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2029</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">9</td>
@@ -284,7 +326,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">72%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">10</td>
@@ -301,7 +343,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#ef4444;">70%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">11</td>
@@ -318,7 +360,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">68%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">12</td>
@@ -335,7 +377,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">68%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">13</td>
@@ -352,7 +394,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">68%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">14</td>
@@ -369,7 +411,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">68%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">15</td>
@@ -386,7 +428,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">65%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">16</td>
@@ -403,7 +445,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">65%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">17</td>
@@ -420,7 +462,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">65%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
+      <td class="year-cell" data-base-year="2030" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2030</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">18</td>
@@ -437,7 +479,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">65%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">19</td>
@@ -454,7 +496,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">63%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">20</td>
@@ -471,7 +513,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">62%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">21</td>
@@ -488,7 +530,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">62%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">22</td>
@@ -505,7 +547,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">62%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">23</td>
@@ -522,7 +564,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">62%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">24</td>
@@ -539,7 +581,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">62%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">25</td>
@@ -556,7 +598,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">60%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">26</td>
@@ -573,7 +615,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">60%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">27</td>
@@ -590,7 +632,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">60%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">28</td>
@@ -607,7 +649,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">58%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">29</td>
@@ -624,7 +666,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">58%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">30</td>
@@ -641,7 +683,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">58%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">31</td>
@@ -658,7 +700,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">58%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">32</td>
@@ -675,7 +717,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">58%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">33</td>
@@ -692,7 +734,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">34</td>
@@ -709,7 +751,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
+      <td class="year-cell" data-base-year="2031" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2031</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">35</td>
@@ -726,7 +768,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">36</td>
@@ -743,7 +785,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">37</td>
@@ -760,7 +802,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">38</td>
@@ -777,7 +819,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">39</td>
@@ -794,7 +836,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">55%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">40</td>
@@ -811,7 +853,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">52%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">41</td>
@@ -828,7 +870,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">52%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">42</td>
@@ -845,7 +887,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">52%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">43</td>
@@ -862,7 +904,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">52%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">44</td>
@@ -879,7 +921,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">52%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">45</td>
@@ -896,7 +938,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">50%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">46</td>
@@ -913,7 +955,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">50%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">47</td>
@@ -930,7 +972,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">50%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">48</td>
@@ -947,7 +989,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">50%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">49</td>
@@ -964,7 +1006,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">48%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
+      <td class="year-cell" data-base-year="2032" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2032</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">50</td>
@@ -981,7 +1023,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">48%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">51</td>
@@ -998,7 +1040,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">48%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">52</td>
@@ -1015,7 +1057,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">48%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">53</td>
@@ -1032,7 +1074,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">45%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
+      <td class="year-cell" data-base-year="2033" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2033</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">54</td>
@@ -1049,7 +1091,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">45%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">55</td>
@@ -1066,7 +1108,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">45%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">56</td>
@@ -1083,7 +1125,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">42%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">57</td>
@@ -1100,7 +1142,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">40%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">58</td>
@@ -1117,7 +1159,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#f59e0b;">40%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">59</td>
@@ -1134,7 +1176,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">38%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">60</td>
@@ -1151,7 +1193,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">38%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">61</td>
@@ -1168,7 +1210,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">38%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">62</td>
@@ -1185,7 +1227,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">38%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">63</td>
@@ -1202,7 +1244,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">38%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">64</td>
@@ -1219,7 +1261,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">38%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">65</td>
@@ -1236,7 +1278,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">35%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">66</td>
@@ -1253,7 +1295,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">35%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">67</td>
@@ -1270,7 +1312,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">35%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
+      <td class="year-cell" data-base-year="2034" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2034</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">68</td>
@@ -1287,7 +1329,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">35%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">69</td>
@@ -1304,7 +1346,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">35%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
+      <td class="year-cell" data-base-year="2035" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2035</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">70</td>
@@ -1321,7 +1363,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">32%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">71</td>
@@ -1338,7 +1380,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">32%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">72</td>
@@ -1355,7 +1397,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">32%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">73</td>
@@ -1372,7 +1414,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">32%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">74</td>
@@ -1389,7 +1431,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">75</td>
@@ -1406,7 +1448,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">76</td>
@@ -1423,7 +1465,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">77</td>
@@ -1440,7 +1482,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">78</td>
@@ -1457,7 +1499,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">79</td>
@@ -1474,7 +1516,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">80</td>
@@ -1491,7 +1533,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">30%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
+      <td class="year-cell" data-base-year="2036" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2036</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">81</td>
@@ -1508,7 +1550,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">28%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">82</td>
@@ -1525,7 +1567,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">28%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">83</td>
@@ -1542,7 +1584,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">28%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">84</td>
@@ -1559,7 +1601,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">25%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">85</td>
@@ -1576,7 +1618,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">25%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">86</td>
@@ -1593,7 +1635,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">25%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">87</td>
@@ -1610,7 +1652,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">25%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">88</td>
@@ -1627,7 +1669,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">22%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">89</td>
@@ -1644,7 +1686,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">22%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
+      <td class="year-cell" data-base-year="2037" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2037</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">90</td>
@@ -1661,7 +1703,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">22%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
+      <td class="year-cell" data-base-year="2039" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">91</td>
@@ -1678,7 +1720,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">22%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">92</td>
@@ -1695,7 +1737,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">22%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
+      <td class="year-cell" data-base-year="2039" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">93</td>
@@ -1712,7 +1754,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">22%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
+      <td class="year-cell" data-base-year="2039" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">94</td>
@@ -1729,7 +1771,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">20%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
+      <td class="year-cell" data-base-year="2039" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">95</td>
@@ -1746,7 +1788,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">20%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">96</td>
@@ -1763,7 +1805,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">20%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
+      <td class="year-cell" data-base-year="2040" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">97</td>
@@ -1780,7 +1822,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">18%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
+      <td class="year-cell" data-base-year="2038" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2038</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">98</td>
@@ -1797,7 +1839,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">18%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
+      <td class="year-cell" data-base-year="2040" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">99</td>
@@ -1814,7 +1856,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">18%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
+      <td class="year-cell" data-base-year="2039" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2039</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">100</td>
@@ -1831,7 +1873,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">15%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
+      <td class="year-cell" data-base-year="2040" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">101</td>
@@ -1848,7 +1890,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">15%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2041</td>
+      <td class="year-cell" data-base-year="2041" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2041</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">102</td>
@@ -1865,7 +1907,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">12%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2042</td>
+      <td class="year-cell" data-base-year="2042" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2042</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">103</td>
@@ -1882,7 +1924,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">10%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
+      <td class="year-cell" data-base-year="2040" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2040</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">104</td>
@@ -1899,7 +1941,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">8%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2045</td>
+      <td class="year-cell" data-base-year="2045" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2045</td>
     </tr>
     <tr>
       <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">105</td>
@@ -1916,7 +1958,7 @@
           <span style="font-weight:700;font-size:0.9rem;color:#10b981;">8%</span>
         </div>
       </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2045</td>
+      <td class="year-cell" data-base-year="2045" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">2045</td>
     </tr>
           </tbody>
         </table>
@@ -1967,5 +2009,32 @@
   </script>
   <script src="/cookie-consent.js"></script>
   <script type="module" src="/page-i18n.js"></script>
+  <script type="module">
+    import { COUNTRIES, getCountry } from '/country-data.js';
+
+    let currentCountry = (function() {
+      try { const s = localStorage.getItem('site_country'); if (s && COUNTRIES[s]) return s; } catch(e) {}
+      return 'it';
+    })();
+
+    function applyCountry(code) {
+      if (!COUNTRIES[code]) return;
+      currentCountry = code;
+      try { localStorage.setItem('site_country', code); } catch(e) {}
+      const offset = getCountry(code).criticalYearOffset;
+      document.querySelectorAll('.year-cell').forEach(td => {
+        td.textContent = parseInt(td.dataset.baseYear) + offset;
+      });
+      const flagEl = document.getElementById('countryFlagDisplay');
+      if (flagEl) flagEl.textContent = getCountry(code).flag;
+    }
+
+    const sel = document.getElementById('countrySelect');
+    if (sel) {
+      sel.value = currentCountry;
+      sel.addEventListener('change', function() { applyCountry(this.value); });
+    }
+    applyCountry(currentCountry);
+  </script>
 </body>
 </html>
