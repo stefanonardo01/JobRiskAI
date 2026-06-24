@@ -422,9 +422,14 @@ if (langSelect) {
 }
 
 const countrySelect = document.getElementById('countrySelect');
-if (countrySelect) {
-    countrySelect.value = currentCountry;
-    countrySelect.addEventListener('change', function () { selectCountry(this.value); });
+if (countrySelect) countrySelect.value = currentCountry;
+
+const countryConfirm = document.getElementById('countryConfirm');
+if (countryConfirm) {
+    countryConfirm.addEventListener('click', function () {
+        const sel = document.getElementById('countrySelect');
+        if (sel) selectCountry(sel.value);
+    });
 }
 
 document.getElementById('compareSelectA').addEventListener('change', renderJobComparison);

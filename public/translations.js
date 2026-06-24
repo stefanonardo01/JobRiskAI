@@ -6,6 +6,7 @@ export const translations = {
     it: {
         country_selector_label: "Stai calcolando per",
         country_selector_hint: "Stipendi, valuta e anno critico si adattano automaticamente",
+        country_confirm_btn: "Aggiorna",
         header_tagline: "Calcolatore di sostituzione AI per il tuo lavoro",
         hero_badge: "Calcolatore gratuito",
         hero_title: "Quanto resisterà il tuo lavoro all'intelligenza artificiale?",
@@ -301,6 +302,7 @@ export const translations = {
     en: {
         country_selector_label: "Calculating for",
         country_selector_hint: "Salaries, currency and critical year adjust automatically",
+        country_confirm_btn: "Update",
         header_tagline: "AI replacement calculator for your job",
         hero_badge: "Free calculator",
         hero_title: "How long will your job survive artificial intelligence?",
@@ -596,6 +598,7 @@ export const translations = {
     es: {
         country_selector_label: "Calculando para",
         country_selector_hint: "Salarios, moneda y año crítico se adaptan automáticamente",
+        country_confirm_btn: "Actualizar",
         header_tagline: "Calculadora de sustitución por IA para tu trabajo",
         hero_badge: "Calculadora gratuita",
         hero_title: "¿Cuánto resistirá tu trabajo a la inteligencia artificial?",
@@ -891,6 +894,7 @@ export const translations = {
     de: {
         country_selector_label: "Berechnung für",
         country_selector_hint: "Gehälter, Währung und kritisches Jahr passen sich automatisch an",
+        country_confirm_btn: "Aktualisieren",
         header_tagline: "KI-Ersatzrechner für deinen Job",
         hero_badge: "Kostenloser Rechner",
         hero_title: "Wie lange wird dein Job der künstlichen Intelligenz standhalten?",
@@ -1186,6 +1190,7 @@ export const translations = {
     fr: {
         country_selector_label: "Calcul pour",
         country_selector_hint: "Salaires, devise et année critique s'adaptent automatiquement",
+        country_confirm_btn: "Actualiser",
         header_tagline: "Calculateur de remplacement par l'IA pour votre métier",
         hero_badge: "Calculateur gratuit",
         hero_title: "Combien de temps votre métier résistera-t-il à l'intelligence artificielle ?",
