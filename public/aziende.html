@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage':         'denied',
+      'analytics_storage':  'denied',
+      'ad_user_data':       'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update':    2000
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJT8W9JTQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HNJT8W9JTQ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobRiskAI per Aziende — Analisi AI Readiness per il tuo organico</title>
+  <meta name="description" content="Scopri quanto è esposta la tua azienda all'AI. Analizza tutti i ruoli aziendali, ottieni un AI Readiness Score per reparto e un piano d'azione concreto.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.jobriskai.it/aziende">
+  <meta property="og:title" content="JobRiskAI per Aziende — Quanto è esposta la tua azienda all'AI?">
+  <meta property="og:description" content="Dashboard di rischio AI per PMI e grandi aziende. Analisi dei reparti, AI Readiness Score, report PDF e roadmap di intervento.">
+  <meta property="og:url" content="https://www.jobriskai.it/aziende">
+  <meta property="og:image" content="https://www.jobriskai.it/og-image.png">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --indigo: #6366f1;
+      --indigo-dk: #4338ca;
+      --indigo-lite: #eef2ff;
+      --ink: #0f172a;
+      --ink2: #475569;
+      --surface: #ffffff;
+      --bg: #f8f9ff;
+      --border: #e2e8f0;
+      --red: #ef4444;
+      --orange: #f97316;
+      --green: #22c55e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ── Nav ── */
+    .nav {
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+      padding: 0.85rem 2rem;
+    }
+    .nav-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .nav-logo img { height: 32px; }
+    .nav-badge {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
+      background: var(--indigo); color: white; padding: 0.18rem 0.55rem;
+      border-radius: 999px; text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    .nav-link {
+      font-size: 0.85rem; font-weight: 600; color: var(--indigo);
+      text-decoration: none;
+      background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.22);
+      border-radius: 8px; padding: 0.38rem 0.85rem;
+      transition: background 0.15s;
+    }
+    .nav-link:hover { background: rgba(99,102,241,0.14); }
+    .nav-cta {
+      font-size: 0.85rem; font-weight: 700; color: white;
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
+      border-radius: 8px; padding: 0.42rem 1.1rem;
+      transition: opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.88; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      background: linear-gradient(160deg, #eef2ff 0%, #f8f9ff 55%, #eff6ff 100%);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.03em;
+      color: var(--indigo); background: var(--indigo-lite);
+      border: 1.5px solid rgba(99,102,241,0.3);
+      border-radius: 999px; padding: 0.32rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 700; line-height: 1.15;
+      color: var(--ink); margin-bottom: 1.25rem;
+      max-width: 780px; margin-left: auto; margin-right: auto;
+    }
+    .hero h1 span { color: var(--indigo); }
+    .hero p {
+      font-size: 1.12rem; color: var(--ink2);
+      max-width: 600px; margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
+      color: white; font-weight: 700; font-size: 1rem;
+      padding: 0.9rem 2rem; border-radius: 999px;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 20px rgba(99,102,241,0.35);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(99,102,241,0.4); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: white; color: var(--indigo); font-weight: 700; font-size: 1rem;
+      padding: 0.9rem 2rem; border-radius: 999px;
+      text-decoration: none; border: 2px solid var(--indigo);
+      transition: background 0.15s;
+    }
+    .btn-secondary:hover { background: var(--indigo-lite); }
+
+    /* ── Score preview ── */
+    .score-preview {
+      margin: 4rem auto 0; max-width: 860px;
+      background: white; border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 48px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .score-preview-bar {
+      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
+      padding: 0.75rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .score-preview-bar span { color: rgba(255,255,255,0.8); font-size: 0.82rem; font-weight: 600; }
+    .score-preview-bar strong { color: white; font-size: 0.88rem; }
+    .score-preview-body { padding: 1.75rem 2rem; }
+    .score-preview-header {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;
+    }
+    .score-preview-header h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+    }
+    .readiness-pill {
+      display: flex; align-items: center; gap: 0.5rem;
+      background: #fef3c7; border: 1.5px solid #f59e0b;
+      border-radius: 999px; padding: 0.3rem 0.9rem;
+      font-weight: 700; font-size: 0.88rem; color: #92400e;
+    }
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+    }
+    .dept-card {
+      background: #f8f9ff; border: 1px solid var(--border);
+      border-radius: 12px; padding: 1rem;
+    }
+    .dept-card .dept-name { font-size: 0.82rem; font-weight: 600; color: var(--ink2); margin-bottom: 0.5rem; }
+    .dept-card .dept-score { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .dept-card .dept-bar { height: 6px; border-radius: 3px; background: #e2e8f0; overflow: hidden; }
+    .dept-card .dept-bar-fill { height: 100%; border-radius: 3px; }
+    .score-preview-footer {
+      margin-top: 1.25rem; padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;
+    }
+    .score-preview-footer p { font-size: 0.82rem; color: var(--ink2); }
+    .blur-cta {
+      display: flex; align-items: center; gap: 0.5rem;
+      position: relative;
+    }
+    .blur-cta::before {
+      content: '🔒 Report completo disponibile dal piano Business';
+      position: absolute; right: 0;
+      font-size: 0.78rem; font-weight: 600; color: var(--indigo);
+      white-space: nowrap;
+    }
+
+    /* ── Section wrapper ── */
+    .section { padding: 5rem 2rem; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--indigo);
+      background: var(--indigo-lite); border-radius: 999px;
+      padding: 0.25rem 0.85rem; margin-bottom: 1rem;
+    }
+    .section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700; color: var(--ink);
+      margin-bottom: 1rem; max-width: 640px;
+    }
+    .section .lead {
+      font-size: 1.05rem; color: var(--ink2);
+      max-width: 580px; line-height: 1.7; margin-bottom: 3rem;
+    }
+
+    /* ── Features ── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: white; border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .feature-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .feature-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: var(--indigo-lite);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 1rem;
+    }
+    .feature-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;
+    }
+    .feature-card p { font-size: 0.9rem; color: var(--ink2); line-height: 1.65; }
+
+    /* ── How it works ── */
+    .how-bg { background: linear-gradient(160deg, #f0f4ff 0%, #f8f9ff 100%); }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .step {
+      background: white; border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.75rem;
+      position: relative;
+    }
+    .step-num {
+      width: 36px; height: 36px; border-radius: 999px;
+      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
+      color: white; font-weight: 800; font-size: 0.9rem;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .step p { font-size: 0.88rem; color: var(--ink2); line-height: 1.65; }
+
+    /* ── Pricing ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem; align-items: start;
+    }
+    .pricing-card {
+      background: white; border: 1.5px solid var(--border);
+      border-radius: 20px; padding: 2rem 1.75rem;
+      position: relative;
+      transition: box-shadow 0.2s;
+    }
+    .pricing-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+    .pricing-card.featured {
+      border-color: var(--indigo);
+      box-shadow: 0 8px 36px rgba(99,102,241,0.18);
+    }
+    .featured-badge {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
+      color: white; font-size: 0.72rem; font-weight: 700;
+      padding: 0.28rem 1rem; border-radius: 999px;
+      white-space: nowrap; letter-spacing: 0.03em;
+    }
+    .plan-name { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink2); margin-bottom: 0.5rem; }
+    .plan-price {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.4rem; font-weight: 700; color: var(--ink);
+      line-height: 1; margin-bottom: 0.25rem;
+    }
+    .plan-price sup { font-size: 1.1rem; vertical-align: super; }
+    .plan-price sub { font-size: 0.9rem; color: var(--ink2); font-weight: 400; }
+    .plan-target { font-size: 0.82rem; color: var(--ink2); margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .plan-features { list-style: none; margin-bottom: 1.75rem; }
+    .plan-features li {
+      font-size: 0.88rem; color: var(--ink);
+      display: flex; align-items: flex-start; gap: 0.55rem;
+      margin-bottom: 0.65rem; line-height: 1.5;
+    }
+    .plan-features li::before { content: '✓'; color: var(--indigo); font-weight: 800; flex-shrink: 0; }
+    .plan-features li.off { color: var(--ink2); }
+    .plan-features li.off::before { content: '–'; color: #cbd5e1; }
+    .plan-btn {
+      display: block; text-align: center;
+      padding: 0.75rem; border-radius: 999px;
+      font-weight: 700; font-size: 0.9rem;
+      text-decoration: none; transition: all 0.15s;
+    }
+    .plan-btn-outline {
+      border: 2px solid var(--indigo); color: var(--indigo); background: white;
+    }
+    .plan-btn-outline:hover { background: var(--indigo-lite); }
+    .plan-btn-filled {
+      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
+      color: white; border: none;
+      box-shadow: 0 4px 16px rgba(99,102,241,0.3);
+    }
+    .plan-btn-filled:hover { opacity: 0.9; transform: translateY(-1px); }
+    .plan-btn-ghost {
+      border: 2px solid var(--border); color: var(--ink2); background: white;
+    }
+    .plan-btn-ghost:hover { border-color: var(--indigo); color: var(--indigo); }
+
+    /* ── Social proof / numbers ── */
+    .numbers-bg { background: linear-gradient(135deg, var(--indigo) 0%, var(--indigo-dk) 100%); }
+    .numbers-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2rem; text-align: center;
+    }
+    .number-item .num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem; font-weight: 700; color: white; line-height: 1;
+    }
+    .number-item .lbl { font-size: 0.88rem; color: rgba(255,255,255,0.75); margin-top: 0.4rem; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem 0; text-align: left;
+      font-size: 0.95rem; font-weight: 600; color: var(--ink);
+      font-family: inherit;
+    }
+    .faq-q svg { flex-shrink: 0; transition: transform 0.2s; }
+    .faq-q.open svg { transform: rotate(45deg); }
+    .faq-a { font-size: 0.9rem; color: var(--ink2); line-height: 1.7; padding-bottom: 1.25rem; display: none; }
+    .faq-a.open { display: block; }
+
+    /* ── CTA final ── */
+    .cta-final {
+      background: linear-gradient(160deg, #1e1b4b 0%, #312e81 100%);
+      padding: 5rem 2rem; text-align: center;
+    }
+    .cta-final h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; color: white; margin-bottom: 1rem;
+      max-width: 640px; margin-left: auto; margin-right: auto;
+    }
+    .cta-final p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2.5rem; }
+    .cta-final .btn-primary { box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+
+    /* ── Footer ── */
+    footer {
+      background: white; border-top: 1px solid var(--border);
+      padding: 2rem 2rem; font-size: 0.82rem;
+    }
+    .footer-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+    .footer-links a { color: #6b7280; text-decoration: none; }
+    .footer-links a:hover { color: var(--indigo); }
+    footer .copy { color: #9ca3af; }
+
+    @media (max-width: 640px) {
+      .hero { padding: 3.5rem 1.25rem 3rem; }
+      .section { padding: 3.5rem 1.25rem; }
+      .score-preview-body { padding: 1.25rem; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "JobRiskAI per Aziende",
+    "description": "Analisi dell'esposizione AI per aziende italiane. AI Readiness Score, dashboard per reparto, report PDF e roadmap di intervento.",
+    "url": "https://www.jobriskai.it/aziende",
+    "publisher": { "@type": "Organization", "name": "JobRiskAI", "url": "https://www.jobriskai.it" }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ── Nav ──────────────────────────────────────────────────────────────── -->
+<nav class="nav" role="banner">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="/logo.png" alt="JobRiskAI">
+      <span class="nav-badge">B2B</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="/">🏠 Home</a>
+      <a class="nav-link" href="/classifica">📊 Classifica</a>
+      <a class="nav-link" href="/blog">📖 Blog</a>
+      <a class="nav-cta" href="#contatto">Richiedi demo →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    JobRiskAI per Aziende
+  </div>
+  <h1>Quanto è esposta la tua azienda <span>all'intelligenza artificiale?</span></h1>
+  <p>Analizza ogni ruolo del tuo organico, ottieni un <strong>AI Readiness Score</strong> per reparto e una roadmap concreta per ridurre il rischio — o sfruttarlo come vantaggio competitivo.</p>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="#contatto">🚀 Richiedi una demo gratuita</a>
+    <a class="btn-secondary" href="#pricing">Vedi i piani →</a>
+  </div>
+
+  <!-- Mock dashboard preview -->
+  <div class="score-preview">
+    <div class="score-preview-bar">
+      <span>Azienda demo: <strong>TechCorp S.r.l.</strong></span>
+      <span>62 ruoli analizzati · 5 reparti</span>
+    </div>
+    <div class="score-preview-body">
+      <div class="score-preview-header">
+        <h3>AI Readiness Score aziendale</h3>
+        <div class="readiness-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Score: 58/100 — Esposizione media
+        </div>
+      </div>
+      <div class="dept-grid">
+        <div class="dept-card">
+          <div class="dept-name">Amministrazione</div>
+          <div class="dept-score" style="color:#ef4444;">82%</div>
+          <div class="dept-bar"><div class="dept-bar-fill" style="width:82%;background:#ef4444;"></div></div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name">Commerciale</div>
+          <div class="dept-score" style="color:#f97316;">64%</div>
+          <div class="dept-bar"><div class="dept-bar-fill" style="width:64%;background:#f97316;"></div></div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name">IT & Sviluppo</div>
+          <div class="dept-score" style="color:#eab308;">45%</div>
+          <div class="dept-bar"><div class="dept-bar-fill" style="width:45%;background:#eab308;"></div></div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name">Risorse Umane</div>
+          <div class="dept-score" style="color:#f97316;">58%</div>
+          <div class="dept-bar"><div class="dept-bar-fill" style="width:58%;background:#f97316;"></div></div>
+        </div>
+        <div class="dept-card">
+          <div class="dept-name">Produzione</div>
+          <div class="dept-score" style="color:#22c55e;">28%</div>
+          <div class="dept-bar"><div class="dept-bar-fill" style="width:28%;background:#22c55e;"></div></div>
+        </div>
+      </div>
+      <div class="score-preview-footer">
+        <p>📊 Analisi basata su ISTAT · McKinsey · Deloitte · Oxford Economics 2026</p>
+        <span style="font-size:0.78rem;font-weight:600;color:var(--indigo);">🔒 Report PDF completo disponibile dal piano Business</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Numbers ───────────────────────────────────────────────────────────── -->
+<section class="section numbers-bg" style="padding:3.5rem 2rem;">
+  <div class="section-inner">
+    <div class="numbers-grid">
+      <div class="number-item"><div class="num">105+</div><div class="lbl">professioni nel database</div></div>
+      <div class="number-item"><div class="num">5</div><div class="lbl">lingue supportate</div></div>
+      <div class="number-item"><div class="num">2026</div><div class="lbl">dati aggiornati</div></div>
+      <div class="number-item"><div class="num">3</div><div class="lbl">fonti scientifiche per ruolo</div></div>
+      <div class="number-item"><div class="num">PDF</div><div class="lbl">report scaricabile</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ─────────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="section-inner">
+    <span class="section-label">Cosa include</span>
+    <h2>Tutto quello che serve per capire l'impatto dell'AI sulla tua organizzazione</h2>
+    <p class="lead">Non un semplice calcolatore, ma una piattaforma di analisi continuativa che evolve con l'AI.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Analisi di tutti i ruoli aziendali</h3>
+        <p>Carica l'organigramma in CSV o inserisci i ruoli manualmente. Ogni posizione viene mappata sul nostro database di 105+ professioni con punteggio di rischio AI.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Dashboard per reparto</h3>
+        <p>Visualizza l'esposizione all'AI aggregata per area aziendale: Amministrazione, IT, Commerciale, HR, Produzione. Identifica i reparti critici in un colpo d'occhio.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>AI Readiness Score</h3>
+        <p>Un punteggio da 0 a 100 per l'intera azienda, aggiornato mensilmente. Benchmark contro il settore e roadmap con le azioni prioritarie per migliorarlo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Competenze da sviluppare per ruolo</h3>
+        <p>Per ogni posizione a rischio, un piano di upskilling specifico: corsi consigliati, competenze chiave, timeline. Non "imparate l'AI" ma azioni concrete e misurabili.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <h3>Analisi ROI e costi</h3>
+        <p>Stima il potenziale risparmio (o costo) dell'automazione per ruolo. Confronta il costo di un agente AI con quello del personale attuale per ogni funzione.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📄</div>
+        <h3>Report PDF con grafici</h3>
+        <p>Un documento professionale da condividere con CDA, HR e management: executive summary, grafici per reparto, priorità di intervento e piano a 12 mesi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── How it works ──────────────────────────────────────────────────────── -->
+<section class="section how-bg">
+  <div class="section-inner">
+    <span class="section-label">Come funziona</span>
+    <h2>Da zero al tuo AI Readiness Score in meno di 10 minuti</h2>
+    <p class="lead">Nessun IT coinvolto, nessuna integrazione complessa. Solo dati concreti e azioni immediate.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Carica l'organigramma</h3>
+        <p>Importa i ruoli aziendali tramite file CSV o inseriscili manualmente. Supportiamo qualsiasi struttura organizzativa.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Analisi automatica</h3>
+        <p>Il nostro modello mappa ogni ruolo sul database, calcola il punteggio di rischio AI e identifica i task automatizzabili.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Dashboard interattiva</h3>
+        <p>Esplora i risultati per reparto, filtra per livello di rischio, confronta con il benchmark di settore.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Report e roadmap</h3>
+        <p>Scarica il report PDF, condividi la dashboard con il management e ricevi aggiornamenti mensili all'evolvere dell'AI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Pricing ───────────────────────────────────────────────────────────── -->
+<section class="section" id="pricing">
+  <div class="section-inner">
+    <span class="section-label">Piani</span>
+    <h2>Prezzi trasparenti, valore immediato</h2>
+    <p class="lead">Inizia gratis con un'analisi fino a 5 ruoli. Passa al piano Business per l'organizzazione completa.</p>
+    <div class="pricing-grid">
+
+      <!-- Gratuito -->
+      <div class="pricing-card">
+        <div class="plan-name">Gratuito</div>
+        <div class="plan-price"><sup>€</sup>0</div>
+        <div class="plan-target">Per privati e prime esplorazioni</div>
+        <ul class="plan-features">
+          <li>Analisi fino a 5 ruoli</li>
+          <li>Punteggio di rischio per ruolo</li>
+          <li>Anno critico stimato</li>
+          <li class="off">Dashboard per reparto</li>
+          <li class="off">AI Readiness Score aziendale</li>
+          <li class="off">Report PDF</li>
+          <li class="off">Monitoraggio periodico</li>
+        </ul>
+        <a class="plan-btn plan-btn-outline" href="/classifica">Inizia gratis</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="pricing-card">
+        <div class="plan-name">Pro</div>
+        <div class="plan-price"><sup>€</sup>14<sub>/mese</sub></div>
+        <div class="plan-target">Per professionisti e freelance</div>
+        <ul class="plan-features">
+          <li>Analisi illimitata di ruoli</li>
+          <li>Piano di upskilling personalizzato</li>
+          <li>Confronto con benchmark di settore</li>
+          <li>Analisi CV avanzata</li>
+          <li class="off">Dashboard aziendale per reparto</li>
+          <li class="off">Report PDF aziendale</li>
+          <li class="off">Monitoraggio periodico</li>
+        </ul>
+        <a class="plan-btn plan-btn-outline" href="#contatto">Prossimamente</a>
+      </div>
+
+      <!-- Business (featured) -->
+      <div class="pricing-card featured">
+        <span class="featured-badge">⭐ Più richiesto</span>
+        <div class="plan-name">Business</div>
+        <div class="plan-price"><sup>€</sup>199<sub>/mese</sub></div>
+        <div class="plan-target">Per PMI — fino a 200 ruoli</div>
+        <ul class="plan-features">
+          <li>Tutto di Pro</li>
+          <li>Dashboard per reparto</li>
+          <li>AI Readiness Score aziendale</li>
+          <li>Analisi ROI e costi per ruolo</li>
+          <li>Report PDF con grafici</li>
+          <li>Aggiornamenti mensili</li>
+          <li>Supporto prioritario via email</li>
+        </ul>
+        <a class="plan-btn plan-btn-filled" href="#contatto">Richiedi demo</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price" style="font-size:1.6rem;">Su preventivo</div>
+        <div class="plan-target">Per grandi aziende e gruppi</div>
+        <ul class="plan-features">
+          <li>Tutto di Business</li>
+          <li>Ruoli illimitati</li>
+          <li>Integrazione HR systems (CSV/API)</li>
+          <li>Dashboard white-label</li>
+          <li>Report personalizzato con logo</li>
+          <li>Account manager dedicato</li>
+          <li>SLA e contratto personalizzato</li>
+        </ul>
+        <a class="plan-btn plan-btn-ghost" href="#contatto">Contattaci</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────────────────────── -->
+<section class="section how-bg">
+  <div class="section-inner" style="text-align:center; margin-bottom:3rem;">
+    <span class="section-label">FAQ</span>
+    <h2 style="margin:0 auto 1rem;">Domande frequenti</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Come viene calcolato il rischio AI per ogni ruolo?
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a">Il punteggio combina tre variabili: la ripetitività dei task del ruolo, il costo comparativo tra personale umano e agente AI, e la velocità di adozione tecnologica nel settore. I dati sono aggiornati al 2026 e basati su ricerche ISTAT, McKinsey, Deloitte e Oxford Economics.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Quanti ruoli posso analizzare nel piano gratuito?
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a">Il piano gratuito permette l'analisi di fino a 5 ruoli, con punteggio di rischio e anno critico stimato. Per l'analisi completa dell'organico, la dashboard per reparto e il report PDF è necessario il piano Business.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Come si carica l'organigramma?
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a">Accettiamo file CSV con colonne: Nome ruolo, Reparto, Numero di persone (opzionale). Non è richiesto nessun dato personale sui dipendenti — solo i titoli delle posizioni. Puoi anche inserire i ruoli manualmente uno a uno.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Con quale frequenza vengono aggiornati i dati?
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a">I modelli vengono aggiornati mensilmente per recepire i nuovi sviluppi dell'AI (rilascio di nuovi modelli, nuove automazioni, cambiamenti normativi come l'EU AI Act). I clienti Business e Enterprise ricevono notifica automatica ad ogni aggiornamento significativo.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        I dati aziendali sono al sicuro?
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a">Sì. Non raccogliamo dati personali dei dipendenti — solo i titoli dei ruoli aziendali. I dati caricati non vengono condivisi con terze parti e sono trattati in conformità al GDPR. Per i piani Enterprise è disponibile un DPA (Data Processing Agreement) personalizzato.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Offrite consulenza oltre all'analisi?
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a">I piani Enterprise includono sessioni di consulenza con i nostri esperti per interpretare i risultati, definire le priorità di intervento e costruire un piano di AI readiness su misura. Per i piani Business è disponibile come add-on opzionale.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA contatto ──────────────────────────────────────────────────────── -->
+<section class="cta-final" id="contatto">
+  <h2>Prenota una demo gratuita di 30 minuti</h2>
+  <p>Ti mostriamo come analizzare la tua azienda, reparto per reparto, e cosa fare concretamente con i risultati.</p>
+  <a class="btn-primary" href="mailto:hello@jobriskai.it?subject=Demo%20JobRiskAI%20Aziende&body=Ciao%2C%20vorrei%20prenotare%20una%20demo%20per%20la%20versione%20azienda%20di%20JobRiskAI.%0A%0ASettore%3A%20%0ANumero%20dipendenti%3A%20%0AAzienda%3A%20">
+    📩 Scrivici — risponderemo entro 24h
+  </a>
+  <p style="margin-top:1.5rem; font-size:0.82rem; color:rgba(255,255,255,0.5);">Nessun impegno. Demo gratuita. Risposta garantita in 24h.</p>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div style="display:flex;align-items:center;gap:0.5rem;">
+      <img src="/logo.png" alt="JobRiskAI" style="height:24px;">
+      <span class="copy">© 2026 JobRiskAI</span>
+    </div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/classifica">Classifica</a>
+      <a href="/blog">Blog</a>
+      <a href="/cv-analyzer">Analisi CV</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/termini-servizio">Termini di Servizio</a>
+      <a href="/chi-siamo">Chi Siamo</a>
+      <a href="mailto:hello@jobriskai.it">Contatti</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-q').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+  // Open clicked (if it was closed)
+  if (!isOpen) {
+    btn.classList.add('open');
+    answer.classList.add('open');
+  }
+}
+</script>
+
+</body>
+</html>
