@@ -240,6 +240,8 @@ export const translations = {
         home_cta2_h2: "Scopri il tuo punteggio in <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">meno di un minuto</span>",
         home_cta2_p: "Carica il tuo CV o scegli una professione dal catalogo. Nessuna registrazione richiesta.",
 
+        home_search_placeholder: "Scrivi la tua professione...",
+        home_search_btn: "Scopri il rischio",
         home_examples_label: "Esempi reali",
         home_examples_cta: "E il tuo lavoro? →",
         home_hero_h1: "Il tuo lavoro esisterà ancora tra 5 anni?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Scoprilo</span> gratis in un minuto.",
@@ -542,6 +544,8 @@ export const translations = {
         home_cta2_h2: "Discover your score in <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">less than a minute</span>",
         home_cta2_p: "Upload your CV or choose a profession from the catalog. No registration required.",
 
+        home_search_placeholder: "Type your profession...",
+        home_search_btn: "Discover your risk",
         home_examples_label: "Real examples",
         home_examples_cta: "What about yours? →",
         home_hero_h1: "Will your job still exist in 5 years?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Find out</span> free in one minute.",
@@ -844,6 +848,8 @@ export const translations = {
         home_cta2_h2: "Descubre tu puntuación en <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">menos de un minuto</span>",
         home_cta2_p: "Sube tu CV o elige una profesión del catálogo. Sin registro requerido.",
 
+        home_search_placeholder: "Escribe tu profesión...",
+        home_search_btn: "Descubre tu riesgo",
         home_examples_label: "Ejemplos reales",
         home_examples_cta: "¿Y el tuyo? →",
         home_hero_h1: "¿Tu trabajo existirá en 5 años?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Descúbrelo</span> gratis en un minuto.",
@@ -1146,6 +1152,8 @@ export const translations = {
         home_cta2_h2: "Entdecke deinen Score in <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">weniger als einer Minute</span>",
         home_cta2_p: "Lade deinen Lebenslauf hoch oder wähle einen Beruf aus dem Katalog. Keine Registrierung erforderlich.",
 
+        home_search_placeholder: "Deinen Beruf eingeben...",
+        home_search_btn: "Risiko entdecken",
         home_examples_label: "Echte Beispiele",
         home_examples_cta: "Und deiner? →",
         home_hero_h1: "Wird es deinen Job in 5 Jahren noch geben?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Finde es</span> kostenlos in einer Minute heraus.",
@@ -1448,6 +1456,8 @@ export const translations = {
         home_cta2_h2: "Découvrez votre score en <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">moins d'une minute</span>",
         home_cta2_p: "Téléchargez votre CV ou choisissez une profession dans le catalogue. Aucune inscription requise.",
 
+        home_search_placeholder: "Écrivez votre métier...",
+        home_search_btn: "Découvrir le risque",
         home_examples_label: "Exemples réels",
         home_examples_cta: "Et le vôtre ? →",
         home_hero_h1: "Votre métier existera-t-il encore dans 5 ans ?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Découvrez-le</span> gratuitement en une minute.",

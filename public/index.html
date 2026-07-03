@@ -396,9 +396,33 @@
       <span class="font-accent font-medium text-[var(--indigo-dk)]">Scoprilo</span> gratis in un minuto.
     </h1>
 
-    <p class="text-[var(--ink-2)] text-[17px] leading-relaxed max-w-[560px] mx-auto mb-9">
+    <p class="text-[var(--ink-2)] text-[17px] leading-relaxed max-w-[560px] mx-auto mb-8">
       <span data-i18n="home_hero_p">L'AI sta già cambiando migliaia di professioni. Cerca la tua o carica il CV — ti diciamo quanto sei esposto e cosa puoi fare adesso.</span>
     </p>
+
+    <!-- Hero search bar -->
+    <div class="relative max-w-[520px] mx-auto mb-5" id="hero-search-wrap">
+      <div class="flex items-stretch bg-white border-2 border-[var(--border)] rounded-2xl shadow-lift overflow-visible focus-within:border-[var(--indigo-dk)] transition-colors">
+        <input
+          id="heroSearch"
+          type="text"
+          autocomplete="off"
+          spellcheck="false"
+          data-i18n-placeholder="home_search_placeholder"
+          placeholder="Scrivi la tua professione..."
+          class="flex-1 bg-transparent text-[15.5px] text-[var(--ink-0)] placeholder-[var(--ink-3)] px-5 py-4 outline-none min-w-0"
+        >
+        <button
+          id="heroSearchBtn"
+          type="button"
+          class="btn-primary shrink-0 text-white font-semibold text-[14px] px-5 py-3 m-1.5 rounded-xl"
+        >
+          <span data-i18n="home_search_btn">Scopri il rischio</span>
+        </button>
+      </div>
+      <!-- Autocomplete dropdown -->
+      <ul id="heroSearchDropdown" class="hidden absolute left-0 right-0 top-[calc(100%+6px)] bg-white border border-[var(--border)] rounded-2xl shadow-lift z-50 overflow-hidden max-h-[280px] overflow-y-auto text-left"></ul>
+    </div>
 
     <div class="flex flex-wrap items-center justify-center gap-3">
       <a href="/calcolatore" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3 rounded-full inline-flex items-center gap-2">
@@ -1025,6 +1049,204 @@
     if(e.key === 'Escape') closeStartModal();
   });
 </script>
+
+    <!-- Hero search bar: autocomplete + redirect -->
+    <script>
+    (function() {
+      const JOBS = [
+        {slug:'ai-engineer',title:'AI Engineer'},
+        {slug:'ai-director',title:'AI Director'},
+        {slug:'data-engineer',title:'Data Engineer'},
+        {slug:'backend-developer',title:'Back-End Developer'},
+        {slug:'frontend-developer',title:'Front-End Developer'},
+        {slug:'fullstack-developer',title:'Full-Stack Developer'},
+        {slug:'cloud-engineer',title:'Cloud Engineer'},
+        {slug:'cloud-consultant',title:'Cloud Consultant'},
+        {slug:'soc-analyst',title:'SOC Analyst'},
+        {slug:'cyber-security-engineer',title:'Cyber Security Engineer'},
+        {slug:'data-scientist',title:'Data Scientist'},
+        {slug:'devops-engineer',title:'DevOps Engineer'},
+        {slug:'solutions-consultant',title:'Solutions Consultant / IT Architect'},
+        {slug:'scrum-master',title:'Scrum Master / Agile Coach'},
+        {slug:'it-project-manager',title:'IT Project Manager'},
+        {slug:'ml-engineer',title:'Machine Learning Engineer'},
+        {slug:'product-owner',title:'Product Owner'},
+        {slug:'sysadmin',title:'System Administrator'},
+        {slug:'qa-engineer',title:'QA Engineer / Software Tester'},
+        {slug:'network-engineer',title:'Network Engineer'},
+        {slug:'it-consultant',title:'IT Consultant / Business Analyst'},
+        {slug:'developer',title:'Junior Developer'},
+        {slug:'bdr',title:'Business Development Representative'},
+        {slug:'sdr',title:'Sales Development Representative'},
+        {slug:'account-manager',title:'Account Manager'},
+        {slug:'key-account-manager',title:'Key Account Manager'},
+        {slug:'sales-manager',title:'Sales Manager'},
+        {slug:'technical-sales',title:'Technical Sales'},
+        {slug:'customer-success-manager',title:'Customer Success Manager'},
+        {slug:'store-manager',title:'Store Manager'},
+        {slug:'sales-executive',title:'Sales Account Executive'},
+        {slug:'sales-director',title:'Sales Director / Direttore Commerciale'},
+        {slug:'addetto-vendite',title:'Addetto alle Vendite / Retail'},
+        {slug:'commerciale-estero',title:'Commerciale Estero / Export Manager'},
+        {slug:'digital-marketing-specialist',title:'Digital Marketing Specialist'},
+        {slug:'seo-specialist',title:'SEO/SEM Specialist'},
+        {slug:'growth-hacker',title:'Growth Hacker'},
+        {slug:'content-creator',title:'Content Creator'},
+        {slug:'brand-manager',title:'Brand Manager'},
+        {slug:'ecommerce-manager',title:'E-commerce Manager'},
+        {slug:'marketing-manager',title:'Marketing Manager'},
+        {slug:'pr-specialist',title:'PR Specialist / Media Relations'},
+        {slug:'social-media',title:'Social Media Manager'},
+        {slug:'copywriter',title:'Copywriter'},
+        {slug:'cfo',title:'CFO / Direttore Finanziario'},
+        {slug:'auditor',title:'Auditor / Internal Auditor'},
+        {slug:'credit-collector',title:'Credit Collector / Recupero Crediti'},
+        {slug:'office-manager',title:'Office Manager'},
+        {slug:'impiegato-amm',title:'Impiegato Amministrativo'},
+        {slug:'ceo',title:'CEO / General Manager'},
+        {slug:'executive-assistant',title:'Executive Assistant'},
+        {slug:'data-entry',title:'Data Entry Clerk'},
+        {slug:'contabile',title:'Contabile'},
+        {slug:'data-analyst',title:'Analista Dati'},
+        {slug:'cost-controller',title:'Cost Controller'},
+        {slug:'project-planner',title:'Project Planner'},
+        {slug:'cost-estimator',title:'Cost Estimator'},
+        {slug:'project-controller',title:'Project Controller'},
+        {slug:'project-manager',title:'Project Manager'},
+        {slug:'controller-gestione',title:'Controller di Gestione'},
+        {slug:'tax-advisor',title:'Fiscalista / Tax Advisor'},
+        {slug:'management-consultant',title:'Consulente di Direzione'},
+        {slug:'financial-analyst',title:'Financial Analyst'},
+        {slug:'risk-manager',title:'Risk Manager'},
+        {slug:'legal-counsel',title:'Legal Counsel'},
+        {slug:'procurement-manager',title:'Procurement Manager'},
+        {slug:'supply-chain-specialist',title:'Supply Chain Specialist'},
+        {slug:'process-engineer',title:'Process / Performance Engineer'},
+        {slug:'logistics-manager',title:'Logistics Manager'},
+        {slug:'operations-manager',title:'Operations Manager'},
+        {slug:'production-planner',title:'Production Planner / Pianificatore'},
+        {slug:'plant-manager',title:'Plant Manager / Responsabile di Stabilimento'},
+        {slug:'automation-engineer',title:'Automation Engineer'},
+        {slug:'qa-manager',title:'Quality Manager / Responsabile Qualità'},
+        {slug:'buyer',title:'Buyer / Responsabile Acquisti'},
+        {slug:'talent-acquisition',title:'Talent Acquisition Specialist'},
+        {slug:'hr-generalist',title:'HR Generalist'},
+        {slug:'hr-business-partner',title:'HR Business Partner'},
+        {slug:'hr-manager',title:'Responsabile HR'},
+        {slug:'customer-service',title:'Customer Service'},
+        {slug:'receptionist',title:'Receptionist / Front Office'},
+        {slug:'paralegal',title:'Paralegal / Assistente Legale'},
+        {slug:'infermiere',title:'Infermiere'},
+        {slug:'sustainability-specialist',title:'Sustainability / ESG Specialist'},
+        {slug:'hse-specialist',title:'HSE Specialist'},
+        {slug:'medical-science-liaison',title:'Medical Science Liaison (MSL)'},
+        {slug:'clinical-research-associate',title:'Clinical Research Associate (CRA)'},
+        {slug:'informatore-scientifico',title:'Informatore Scientifico del Farmaco'},
+        {slug:'regulatory-affairs',title:'Regulatory Affairs Specialist'},
+        {slug:'rd-specialist',title:'R&D Specialist / Ricercatore'},
+        {slug:'grafico',title:'Graphic Designer'},
+        {slug:'traduttore',title:'Traduttore'},
+        {slug:'ux-ui-designer',title:'UX/UI Designer'},
+        {slug:'video-editor',title:'Video Editor / Motion Designer'},
+        {slug:'art-director',title:'Art Director'},
+        {slug:'fotografo',title:'Fotografo'},
+        {slug:'illustratore',title:'Illustratore'},
+        {slug:'sound-designer',title:'Sound Designer / Audio Engineer'},
+        {slug:'insegnante',title:'Insegnante'},
+        {slug:'docente-universitario',title:'Docente Universitario / Ricercatore'},
+        {slug:'formatore-aziendale',title:'Formatore Aziendale / Corporate Trainer'},
+        {slug:'instructional-designer',title:'Instructional Designer'},
+        {slug:'tutor-online',title:'Tutor / Docente Online'},
+        {slug:'dirigente-scolastico',title:'Dirigente Scolastico / Preside'},
+        {slug:'educatore-infanzia',title:'Educatore (Asilo / Prima Infanzia)'},
+      ];
+
+      const norm = s => s.toLowerCase().replace(/[\/\-\.]/g,' ').trim();
+
+      function search(q) {
+        if (!q) return [];
+        const nq = norm(q);
+        const words = nq.split(/\s+/);
+        return JOBS
+          .map(j => {
+            const nt = norm(j.title);
+            let score = 0;
+            if (nt.startsWith(nq)) score = 100;
+            else if (nt.includes(nq)) score = 80;
+            else if (words.every(w => nt.includes(w))) score = 60;
+            else if (words.some(w => nt.includes(w))) score = 30;
+            return { ...j, score };
+          })
+          .filter(j => j.score > 0)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 6);
+      }
+
+      function goTo(slug) {
+        window.location.href = '/professione/' + slug;
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const input = document.getElementById('heroSearch');
+        const btn   = document.getElementById('heroSearchBtn');
+        const drop  = document.getElementById('heroSearchDropdown');
+        if (!input) return;
+
+        let selected = -1;
+        let results  = [];
+
+        function showDrop(items) {
+          results = items;
+          selected = -1;
+          if (!items.length) { drop.classList.add('hidden'); return; }
+          drop.innerHTML = items.map((j, i) =>
+            `<li data-i="${i}" class="px-4 py-3 text-[14px] text-[var(--ink-1)] cursor-pointer hover:bg-[var(--sand-lt)] border-b border-[var(--border-soft)] last:border-0 flex items-center gap-2">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="shrink-0 text-[var(--ink-3)]"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              ${j.title}
+            </li>`
+          ).join('');
+          drop.classList.remove('hidden');
+          drop.querySelectorAll('li').forEach(li => {
+            li.addEventListener('mousedown', e => {
+              e.preventDefault();
+              goTo(results[+li.dataset.i].slug);
+            });
+          });
+        }
+
+        function setActive(idx) {
+          const items = drop.querySelectorAll('li');
+          items.forEach((li, i) => li.classList.toggle('bg-[var(--sand-lt)]', i === idx));
+        }
+
+        input.addEventListener('input', () => showDrop(search(input.value)));
+
+        input.addEventListener('keydown', e => {
+          if (e.key === 'ArrowDown') { e.preventDefault(); selected = Math.min(selected+1, results.length-1); setActive(selected); }
+          else if (e.key === 'ArrowUp') { e.preventDefault(); selected = Math.max(selected-1, 0); setActive(selected); }
+          else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (selected >= 0 && results[selected]) goTo(results[selected].slug);
+            else if (results[0]) goTo(results[0].slug);
+            else if (input.value.trim()) window.location.href = '/classifica';
+          }
+          else if (e.key === 'Escape') { drop.classList.add('hidden'); selected = -1; }
+        });
+
+        btn.addEventListener('click', () => {
+          if (results[0]) goTo(results[0].slug);
+          else if (input.value.trim()) window.location.href = '/classifica';
+          else window.location.href = '/calcolatore';
+        });
+
+        document.addEventListener('click', e => {
+          if (!document.getElementById('hero-search-wrap').contains(e.target)) {
+            drop.classList.add('hidden');
+          }
+        });
+      });
+    })();
+    </script>
 
     <!-- i18n — applica traduzioni e gestisce selettore lingua -->
     <script type="module" src="/page-i18n.js"></script>
