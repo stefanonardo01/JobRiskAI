@@ -408,6 +408,264 @@ const articles = [
     `,
   },
 
+  {
+    slug: 'claude-4-anthropic-cosa-cambia-per-il-lavoro',
+    title: 'Claude 4 di Anthropic: cosa cambia per il tuo lavoro',
+    metaDesc: 'Anthropic ha rilasciato Claude 4 (Opus e Sonnet): analisi delle nuove capacità e dell\'impatto concreto su avvocati, sviluppatori, commercialisti, giornalisti e altre professioni.',
+    date: '2026-07-01',
+    readMin: 7,
+    category: 'Novità AI',
+    intro: 'Anthropic ha rilasciato Claude 4, con Opus 4 e Sonnet 4 tra i modelli più potenti disponibili. Non è solo un aggiornamento tecnico: le nuove capacità cambiano concretamente quali task professionali possono essere delegati a un AI.',
+    content: `
+      <h2>Cosa sono Claude Opus 4 e Claude Sonnet 4</h2>
+      <p>Anthropic è la società AI fondata da ex-ricercatori di OpenAI, con un focus dichiarato sulla sicurezza dei sistemi AI. La famiglia Claude 4 include tre modelli: <strong>Opus 4</strong> (il più potente, per task complessi), <strong>Sonnet 4</strong> (il bilanciamento tra capacità e velocità, usato dalla maggior parte delle applicazioni) e <strong>Haiku 4.5</strong> (veloce e leggero, per task semplici ad alto volume).</p>
+      <p>Claude è accessibile tramite claude.ai, l'API Anthropic e applicazioni come Claude Code (per sviluppatori) e Cowork (per professionisti non tecnici).</p>
+
+      <h2>Le capacità che cambiano il lavoro</h2>
+      <p>Rispetto alle versioni precedenti, Claude 4 porta miglioramenti significativi in quattro aree rilevanti per i professionisti:</p>
+      <ul>
+        <li><strong>Ragionamento su documenti lunghi:</strong> Claude 4 gestisce context window molto estesi, leggendo e sintetizzando contratti, perizie, relazioni mediche o codice di centinaia di pagine in un'unica sessione.</li>
+        <li><strong>Scrittura professionale di alta qualità:</strong> Testi legali, analisi finanziarie, articoli tecnici — la qualità è arrivata a un livello in cui l'editing umano è necessario solo per validazione, non per riscrittura.</li>
+        <li><strong>Coding avanzato:</strong> Claude Code (basato su Sonnet 4) scrive, debugga e refactora codice autonomamente. Molte aziende lo usano già come sviluppatore junior autonomo.</li>
+        <li><strong>Uso di strumenti esterni (computer use):</strong> Claude può navigare web, compilare form, interagire con software — eseguendo workflow completi senza supervisione umana.</li>
+      </ul>
+
+      <h2>Impatto professione per professione</h2>
+
+      <h3>Avvocato (rischio: <a href="/professione/avvocato" style="color:var(--primary,#6366f1);">42%</a>)</h3>
+      <p>Claude 4 Opus legge e analizza fascicoli processuali completi, produce bozze di atti, identifica i punti deboli nelle memorie avversarie. La ricerca giurisprudenziale, che occupava ore di un legale junior, ora richiede minuti. <strong>Chi si specializza in strategia processuale e relazione con il cliente usa Claude per il lavoro di preparazione e si concentra su ciò che vale di più.</strong></p>
+
+      <h3>Sviluppatore software (rischio: <a href="/professione/developer" style="color:var(--primary,#6366f1);">varia per specializzazione</a>)</h3>
+      <p>L'impatto è già massiccio. Claude Code scrive codice funzionante per task standard. Le stime attuali: un developer senior con Claude Code produce output pari a 2-3 developer senza. Questo non significa licenziamenti immediati — significa che le aziende assumono meno developer junior e chiedono di più a quelli esistenti. <strong>Chi non usa Claude Code entro 6 mesi sarà significativamente meno competitivo.</strong></p>
+
+      <h3>Commercialista / Contabile (rischio: <a href="/professione/commercialista" style="color:var(--primary,#6366f1);">72%</a>)</h3>
+      <p>Claude 4 integrato con i software gestionali gestisce già la contabilità ordinaria, le dichiarazioni standard e la comunicazione con l'Agenzia delle Entrate. Chi fa solo dichiarazioni dei redditi standard è già in difficoltà. <strong>La mossa giusta: usare Claude per la parte meccanica e concentrarsi sulla consulenza strategica.</strong></p>
+
+      <h3>Giornalista / Copywriter (rischio: <a href="/professione/giornalista" style="color:var(--primary,#6366f1);">62%</a>)</h3>
+      <p>Claude 4 scrive articoli di qualità da note di intervista, comunicati stampa, dati. La velocità di produzione di contenuti standard è aumentata di 10-20x. <strong>Il valore si sposta sulla fonte, l'esclusiva, l'angolo originale — non sulla scrittura in sé.</strong> Chi ha fonti e punto di vista unico è al sicuro. Chi riscriveva comunicati non lo è.</p>
+
+      <h3>Medico / Professionista sanitario (rischio: 18-65% a seconda della specializzazione)</h3>
+      <p>Claude 4 Opus raggiunge o supera il 90° percentile dei medici nei test di diagnosi differenziale. Ma la responsabilità medica e la relazione con il paziente restano umane. <strong>Il medico che usa Claude come "secondo parere" immediato su ogni caso migliora la qualità delle sue decisioni — e aumenta il suo valore.</strong></p>
+
+      <h2>Come usare Claude 4 adesso</h2>
+      <p>Il modo più rapido per iniziare è <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--primary,#6366f1);">claude.ai</a> (gratuito con limitazioni, piano Pro a circa 20€/mese). Per uso professionale intensivo, Claude Pro o Team è l'investimento con il ROI più alto per la maggior parte dei lavoratori della conoscenza.</p>
+      <p>Consiglio pratico: identifica i 3 task che ti consumano più tempo nella settimana. Sperimenta Claude su ognuno per 2 ore. Tieni un file con i prompt che funzionano. Dopo un mese hai già recuperato l'investimento.</p>
+
+      <p>Per capire quanto è esposta la tua professione specifica all'AI: <a href="/classifica" style="color:var(--primary,#6366f1);">sfoglia tutte le professioni</a> o <a href="/cv-analyzer" style="color:var(--primary,#6366f1);">analizza il tuo CV</a>.</p>
+    `,
+  },
+
+  {
+    slug: 'chatgpt-vs-claude-vs-gemini-quale-usare-per-lavoro',
+    title: 'ChatGPT vs Claude vs Gemini: quale AI usare per il lavoro nel 2026',
+    metaDesc: 'Confronto pratico tra ChatGPT (OpenAI), Claude (Anthropic) e Gemini (Google) per uso professionale. Qual è il migliore per scrivere, analizzare, programmare e ricercare?',
+    date: '2026-07-03',
+    readMin: 8,
+    category: 'Confronti AI',
+    intro: 'Nel 2026 ci sono tre grandi AI per uso professionale: ChatGPT di OpenAI, Claude di Anthropic e Gemini di Google. Non esiste "il migliore" in assoluto — esiste quello giusto per il tuo specifico caso d\'uso. Ecco la guida pratica.',
+    content: `
+      <h2>Il contesto: tre modelli, tre filosofie</h2>
+      <p>Ogni grande player AI ha una storia e una filosofia diversa che si riflette nei prodotti:</p>
+      <ul>
+        <li><strong>OpenAI / ChatGPT:</strong> il pioniere, il più conosciuto, il più integrato in strumenti di terze parti. Punta sulla velocità di rilascio e sull'ecosistema di plugin.</li>
+        <li><strong>Anthropic / Claude:</strong> fondata da ex-ricercatori OpenAI con focus sulla sicurezza AI. Tende a produrre testi più precisi, meno inclini ad "allucinare", con un approccio più cauto e rigoroso.</li>
+        <li><strong>Google / Gemini:</strong> integrato nell'ecosistema Google (Docs, Gmail, Search). Punto di forza: accesso a dati aggiornati tramite ricerca web in tempo reale.</li>
+      </ul>
+
+      <h2>Confronto per caso d'uso professionale</h2>
+
+      <h3>Scrittura professionale (relazioni, email, contratti, report)</h3>
+      <p><strong>Vincitore: Claude Sonnet 4</strong></p>
+      <p>Claude tende a produrre testi più precisi, con meno ripetizioni e con uno stile più calibrato. È particolarmente forte nella scrittura in italiano — a differenza di alcuni modelli che producono italiano "tradotto dall'inglese". Ottimo per avvocati, consulenti, giornalisti.</p>
+
+      <h3>Coding e sviluppo software</h3>
+      <p><strong>Vincitore: Claude (via Claude Code) per progetti complessi; GPT-4o per integrazione con Cursor/Copilot</strong></p>
+      <p>Claude Code (basato su Sonnet 4) è diventato lo standard de facto per lo sviluppo autonomo. Gestisce codebase grandi, mantiene il contesto dell'intera applicazione, scrive test. GitHub Copilot (basato su OpenAI) è ancora molto usato per completamento in-editor.</p>
+
+      <h3>Ricerca e fact-checking</h3>
+      <p><strong>Vincitore: Gemini con Google Search o Perplexity</strong></p>
+      <p>Quando hai bisogno di informazioni aggiornate al giorno stesso — prezzi, notizie, dati recenti — Gemini con accesso a Google Search è imbattibile. Claude e ChatGPT hanno knowledge cutoff e allucinano più facilmente su fatti recenti.</p>
+
+      <h3>Analisi di documenti lunghi</h3>
+      <p><strong>Vincitore: Claude Opus 4</strong></p>
+      <p>La gestione di documenti molto lunghi (contratti di 100 pagine, report annuali, cartelle cliniche) è il punto di forza di Claude. Il context window molto ampio e la capacità di mantenere coerenza su documenti complessi è superiore agli altri.</p>
+
+      <h3>Brainstorming e creatività</h3>
+      <p><strong>Vincitore: ChatGPT-4o o Claude, dipende dal gusto</strong></p>
+      <p>Per idee creative, entrambi funzionano bene. ChatGPT tende a essere più "esuberante" e vario, Claude più strutturato e preciso. Per copy pubblicitario e naming: ChatGPT. Per concept strategici e analisi: Claude.</p>
+
+      <h3>Integrazione con strumenti esistenti</h3>
+      <p><strong>Vincitore: ChatGPT (ecosistema) o Gemini (Google Workspace)</strong></p>
+      <p>Se usi Google Workspace (Docs, Gmail, Sheets), Gemini è già integrato. Se usi molti strumenti di terze parti (Zapier, Make, CRM, project management), ChatGPT ha il maggior numero di integrazioni native.</p>
+
+      <h2>La mia raccomandazione per profilo</h2>
+
+      <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+        <thead><tr style="border-bottom:2px solid var(--border,#e5e7eb);">
+          <th style="text-align:left;padding:0.6rem 0.5rem;font-weight:600;">Profilo</th>
+          <th style="text-align:left;padding:0.6rem 0.5rem;font-weight:600;">Tool principale</th>
+          <th style="text-align:left;padding:0.6rem 0.5rem;font-weight:600;">Motivo</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border,#e5e7eb);">
+            <td style="padding:0.6rem 0.5rem;">Avvocato / Consulente</td>
+            <td style="padding:0.6rem 0.5rem;font-weight:600;color:var(--primary,#6366f1);">Claude</td>
+            <td style="padding:0.6rem 0.5rem;color:#6b7280;">Precisione, documenti lunghi, meno allucinazioni</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border,#e5e7eb);">
+            <td style="padding:0.6rem 0.5rem;">Developer</td>
+            <td style="padding:0.6rem 0.5rem;font-weight:600;color:var(--primary,#6366f1);">Claude Code</td>
+            <td style="padding:0.6rem 0.5rem;color:#6b7280;">Sviluppo autonomo su codebase grandi</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border,#e5e7eb);">
+            <td style="padding:0.6rem 0.5rem;">Marketer / Copywriter</td>
+            <td style="padding:0.6rem 0.5rem;font-weight:600;color:var(--primary,#6366f1);">ChatGPT-4o</td>
+            <td style="padding:0.6rem 0.5rem;color:#6b7280;">Creatività, varietà, ecosistema plugin</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border,#e5e7eb);">
+            <td style="padding:0.6rem 0.5rem;">Ricercatore / Giornalista</td>
+            <td style="padding:0.6rem 0.5rem;font-weight:600;color:var(--primary,#6366f1);">Gemini / Perplexity</td>
+            <td style="padding:0.6rem 0.5rem;color:#6b7280;">Dati aggiornati, fonti citate</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border,#e5e7eb);">
+            <td style="padding:0.6rem 0.5rem;">Manager / Analista</td>
+            <td style="padding:0.6rem 0.5rem;font-weight:600;color:var(--primary,#6366f1);">Claude o ChatGPT</td>
+            <td style="padding:0.6rem 0.5rem;color:#6b7280;">Dipende dall'ecosistema aziendale</td>
+          </tr>
+          <tr>
+            <td style="padding:0.6rem 0.5rem;">Utente Google Workspace</td>
+            <td style="padding:0.6rem 0.5rem;font-weight:600;color:var(--primary,#6366f1);">Gemini</td>
+            <td style="padding:0.6rem 0.5rem;color:#6b7280;">Integrazione nativa in Docs, Gmail, Sheets</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Il consiglio pratico: usane due</h2>
+      <p>I professionisti più efficaci non usano un solo strumento AI. La combinazione più comune nel 2026: <strong>Claude per la produzione di contenuti di qualità e l'analisi di documenti</strong> + <strong>Perplexity o Gemini per la ricerca aggiornata</strong>. Il costo combinato è 20-40€/mese — meno di un pranzo di lavoro, con un impatto sulla produttività che si misura in ore risparmiate ogni settimana.</p>
+
+      <p>Sei curioso di sapere quanto AI cambierà la tua professione? <a href="/classifica" style="color:var(--primary,#6366f1);">Scopri il rischio del tuo lavoro</a>.</p>
+    `,
+  },
+
+  {
+    slug: 'ai-act-europeo-cosa-cambia-per-lavoratori',
+    title: 'AI Act europeo: cosa cambia concretamente per lavoratori e aziende',
+    metaDesc: 'L\'AI Act dell\'Unione Europea è la prima grande legge sull\'intelligenza artificiale al mondo. Cosa significa per chi lavora, per chi assume e per le aziende che usano AI.',
+    date: '2026-06-28',
+    readMin: 8,
+    category: 'Normativa',
+    intro: 'L\'AI Act europeo è entrato in vigore nel 2024 ed è in applicazione progressiva fino al 2027. È la prima legge al mondo che regola l\'intelligenza artificiale in modo sistematico. Ecco cosa significa concretamente per il mercato del lavoro italiano.',
+    content: `
+      <h2>Cos'è l'AI Act in parole semplici</h2>
+      <p>L'AI Act (Regolamento UE 2024/1689) classifica i sistemi AI in base al <strong>livello di rischio</strong> che presentano per le persone:</p>
+      <ul>
+        <li><strong>Rischio inaccettabile (vietati):</strong> sorveglianza di massa biometrica, sistemi di social scoring, manipolazione subliminale. Vietati immediatamente.</li>
+        <li><strong>Alto rischio:</strong> AI usati in selezione del personale, valutazione delle prestazioni, credito, medicina, giustizia. Soggetti a requisiti stringenti: trasparenza, supervisione umana, audit.</li>
+        <li><strong>Rischio limitato:</strong> chatbot, generatori di contenuti. Obbligo di disclosure (l'utente deve sapere che parla con un AI).</li>
+        <li><strong>Rischio minimo:</strong> spam filter, AI nei videogiochi. Nessun obbligo specifico.</li>
+      </ul>
+
+      <h2>Cosa cambia per chi cerca lavoro</h2>
+      <p>Uno degli impatti più diretti: i sistemi AI usati nella <strong>selezione del personale</strong> rientrano nella categoria "alto rischio". Questo significa che:</p>
+      <ul>
+        <li>I candidati hanno diritto a sapere se il loro CV è stato screened da un AI</li>
+        <li>Le aziende devono garantire supervisione umana sulle decisioni di assunzione AI-assisted</li>
+        <li>I sistemi non possono fare discriminazioni per genere, etnia, età</li>
+        <li>I candidati scartati da sistemi AI possono richiedere spiegazioni</li>
+      </ul>
+      <p>In pratica: se hai mandato CV e non hai avuto risposta, potrebbe essere stato un AI a scartarti. Hai il diritto di saperlo e di chiedere spiegazioni.</p>
+
+      <h2>Cosa cambia per chi è già dipendente</h2>
+      <p>Anche i sistemi di <strong>valutazione delle prestazioni lavorative</strong> tramite AI rientrano nell'alto rischio. Questo riguarda i sistemi di scoring dei call center, il monitoraggio della produttività nei magazzini Amazon-style, le valutazioni automatiche dei driver Uber e Glovo.</p>
+      <p>Le aziende devono:</p>
+      <ul>
+        <li>Informare i lavoratori che vengono monitorati da AI</li>
+        <li>Garantire che le decisioni significative (licenziamenti, promozioni) abbiano supervisione umana</li>
+        <li>Permettere ai lavoratori di contestare le decisioni AI-assisted</li>
+      </ul>
+
+      <h2>Le nuove professioni nate dall'AI Act</h2>
+      <p>Ogni grande legge crea nuove professioni. L'AI Act ne crea diverse:</p>
+      <ul>
+        <li><strong>AI Compliance Officer:</strong> gestisce la conformità dei sistemi AI aziendali alla normativa. Stipendio: 60.000-100.000€. Domanda in forte crescita.</li>
+        <li><strong>AI Auditor:</strong> verifica che i sistemi AI rispettino i requisiti normativi. Richiesta da banche, assicurazioni, aziende sanitarie.</li>
+        <li><strong>Avvocato specializzato in AI Law:</strong> già oggi tra i profili legali più richiesti. Vedi <a href="/professione/avvocato" style="color:var(--primary,#6366f1);">il rischio AI per gli avvocati</a>.</li>
+        <li><strong>AI Risk Manager:</strong> identifica e mitiga i rischi legati all'uso di AI in azienda.</li>
+      </ul>
+
+      <h2>Cosa devono fare le aziende italiane</h2>
+      <p>Le PMI italiane che usano AI per HR, credito o servizi ai clienti hanno obbligo di:</p>
+      <ol>
+        <li>Mappare tutti i sistemi AI usati e classificarli per livello di rischio</li>
+        <li>Per i sistemi ad alto rischio: registrarli nel database EU, documentare il funzionamento, garantire supervisione umana</li>
+        <li>Formare i dipendenti che interagiscono con sistemi AI ad alto rischio</li>
+        <li>Nominare un responsabile della conformità AI (per aziende oltre certe soglie)</li>
+      </ol>
+      <p>Le sanzioni per non conformità arrivano fino al 7% del fatturato globale annuo — più severe di quelle GDPR.</p>
+
+      <h2>Il lato positivo: protezione crescente per i lavoratori</h2>
+      <p>Al di là della burocrazia, l'AI Act crea una protezione reale: l'AI non potrà licenziarti senza supervisione umana, non potrà scartare il tuo CV senza che tu possa contestarlo, non potrà monitorarti in modo invasivo senza che tu lo sappia.</p>
+      <p>In un mercato del lavoro sempre più permeato dall'AI, avere diritti chiari su come questi sistemi influenzano la tua carriera è un cambiamento significativo.</p>
+
+      <p>Scopri come l'AI sta già cambiando la tua professione: <a href="/classifica" style="color:var(--primary,#6366f1);">analizza il rischio del tuo lavoro</a>.</p>
+    `,
+  },
+
+  {
+    slug: 'cursor-github-copilot-il-programmatore-esiste-ancora',
+    title: 'Cursor e GitHub Copilot: il programmatore ha ancora un futuro?',
+    metaDesc: 'Cursor, GitHub Copilot, Claude Code, Devin: gli strumenti AI per sviluppatori stanno cambiando radicalmente la professione. Il developer è ancora necessario nel 2026?',
+    date: '2026-07-04',
+    readMin: 9,
+    category: 'Tech & AI',
+    intro: 'Nel 2026 un developer con Cursor o Claude Code produce codice 3-5x più velocemente di uno senza. Devin e sistemi simili completano task autonomamente. Cosa significa per chi fa o vuole fare il programmatore?',
+    content: `
+      <h2>Lo scenario attuale: cosa fanno questi strumenti</h2>
+      <p>Fino al 2022, gli strumenti AI per sviluppatori erano glorificati autocomplete. Nel 2026 la situazione è radicalmente diversa:</p>
+      <ul>
+        <li><strong>GitHub Copilot:</strong> integrato nell'editor (VS Code, JetBrains), suggerisce linee e blocchi di codice in tempo reale. Usato da oltre 1 milione di developer.</li>
+        <li><strong>Cursor:</strong> editor AI-first che riscrive, refactora e modifica interi file o cartelle con istruzioni in linguaggio naturale. "Aggiungi autenticazione OAuth a questa app" → lo fa.</li>
+        <li><strong>Claude Code:</strong> agente che opera da terminale, legge l'intera codebase, scrive feature complete, esegue test, corregge bug autonomamente. Usato da Anthropic internamente.</li>
+        <li><strong>Devin e sistemi simili:</strong> agenti autonomi che ricevono un task ("costruisci un'app per prenotazioni"), pianificano, scrivono codice, lo testano e lo deployano — con supervisione umana minima.</li>
+      </ul>
+
+      <h2>I numeri: quanto cambiano la produttività</h2>
+      <p>Studi interni di varie aziende tech mostrano:</p>
+      <ul>
+        <li>Developer con Copilot completano task il 55% più velocemente (studio GitHub/Microsoft)</li>
+        <li>Developer con Cursor o Claude Code su task complessi: 3-5x più veloci su task standard</li>
+        <li>Il numero di righe di codice scritte manualmente è calato dell'80% nei team che usano AI aggressivamente</li>
+      </ul>
+      <p>La conseguenza pratica: una startup può lanciare un MVP con 1 developer dove prima ne servivano 3-4. Le grandi aziende rallentano le assunzioni di junior developer.</p>
+
+      <h2>Chi è a rischio e chi no</h2>
+
+      <h3>Developer junior / entry-level — rischio alto</h3>
+      <p>I task tipici del junior (implementare feature standard, correggere bug di tipo noto, scrivere test) sono esattamente quelli che l'AI fa meglio. L'ingresso nel mercato per chi inizia adesso è significativamente più difficile. <strong>Chi non impara a usare l'AI come amplificatore della propria produttività ha difficoltà competitive.</strong></p>
+
+      <h3>Developer senior / software architect — rischio medio-basso</h3>
+      <p>L'AI fa il lavoro di esecuzione, ma non sa cosa costruire e perché. Le decisioni architetturali, la comprensione dei requisiti di business, la gestione del debito tecnico, la leadership tecnica del team — tutto questo rimane umano. Un senior developer che usa AI è più produttivo che mai. Vedi il rischio per <a href="/professione/backend-developer" style="color:var(--primary,#6366f1);">Backend Developer</a> e <a href="/professione/frontend-developer" style="color:var(--primary,#6366f1);">Frontend Developer</a>.</p>
+
+      <h3>Specialisti di dominio (ML Engineer, Security, DevOps) — rischio basso</h3>
+      <p>L'AI genera codice, ma non capisce a fondo i sistemi di deployment, la sicurezza, i modelli ML. Chi ha expertise verticale profonda in questi ambiti è tra i profili più ricercati. <a href="/professione/cyber-security-engineer" style="color:var(--primary,#6366f1);">Cyber Security Engineer</a>: rischio solo 32%.</p>
+
+      <h2>Come deve cambiare il developer nel 2026</h2>
+      <p>I developer che si adattano con successo stanno sviluppando un nuovo skill set:</p>
+      <ol>
+        <li><strong>Prompt engineering per il codice:</strong> saper descrivere precisamente cosa vuoi che l'AI costruisca è diventato fondamentale quanto saper scrivere codice.</li>
+        <li><strong>Code review di AI-generated code:</strong> l'AI sbaglia — in modo sottile. Chi sa leggere e validare codice AI ha un valore enorme.</li>
+        <li><strong>System thinking:</strong> capire l'architettura complessiva, non i singoli file. L'AI gestisce i dettagli, l'umano gestisce la visione.</li>
+        <li><strong>Conoscenza del dominio:</strong> un developer che capisce la finanza, la medicina o il diritto (oltre al codice) vale enormemente più di chi conosce solo il codice.</li>
+      </ol>
+
+      <h2>La domanda chiave: conviene ancora studiare programmazione?</h2>
+      <p>Sì, ma con una premessa diversa. Non si studia a programmare per "scrivere codice" — si studia per <em>capire come funzionano i sistemi software</em> e per poter dirigere e validare ciò che l'AI costruisce. È la stessa differenza tra un architetto che usa CAD e uno che disegna a mano: l'architetto con CAD è 10x più produttivo, ma deve ancora sapere cosa sta progettando.</p>
+      <p>Il percorso consigliato nel 2026: basi solide di informatica + specializzazione in un dominio verticale + padronanza degli strumenti AI. Chi ha questo mix è tra i profili più richiesti e meglio pagati del mercato.</p>
+
+      <p>Sei uno sviluppatore? <a href="/professione/ai-engineer" style="color:var(--primary,#6366f1);">Scopri il rischio AI per la tua specializzazione</a> o <a href="/cv-analyzer" style="color:var(--primary,#6366f1);">analizza il tuo CV</a>.</p>
+    `,
+  },
+
 ];
 
 // ── Template articolo ─────────────────────────────────────────────────────────
@@ -481,7 +739,16 @@ function buildArticle(art) {
         Home
       </a>
       <div class="header-info">Blog — AI e Lavoro</div>
-      <a href="/blog" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📖 Tutti gli articoli</a>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="/blog" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📖 Tutti gli articoli</a>
+        <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:var(--ink-1,#1e293b);border:1px solid var(--border-soft,#e2e8f0);border-radius:8px;padding:0.3rem 0.45rem;font-size:0.8rem;cursor:pointer;font-family:inherit;outline:none;">
+          <option value="it">🇮🇹 IT</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+        </select>
+      </div>
     </div>
   </header>
 
@@ -546,6 +813,8 @@ function buildArticle(art) {
       </nav>
     </div>
   </footer>
+  <script src="/translations.js"></script>
+  <script src="/page-i18n.js"></script>
 </body>
 </html>`;
 }
@@ -605,7 +874,16 @@ function buildIndex() {
         Home
       </a>
       <div class="header-info">Blog — AI e Futuro del Lavoro</div>
-      <a href="/classifica" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📊 Classifica professioni</a>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="/classifica" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📊 Classifica professioni</a>
+        <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:var(--ink-1,#1e293b);border:1px solid var(--border-soft,#e2e8f0);border-radius:8px;padding:0.3rem 0.45rem;font-size:0.8rem;cursor:pointer;font-family:inherit;outline:none;">
+          <option value="it">🇮🇹 IT</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+        </select>
+      </div>
     </div>
   </header>
 
@@ -640,6 +918,8 @@ function buildIndex() {
       </nav>
     </div>
   </footer>
+  <script src="/translations.js"></script>
+  <script src="/page-i18n.js"></script>
 </body>
 </html>`;
 }

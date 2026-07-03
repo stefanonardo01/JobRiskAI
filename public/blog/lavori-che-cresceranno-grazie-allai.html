@@ -90,7 +90,16 @@
         Home
       </a>
       <div class="header-info">Blog — AI e Lavoro</div>
-      <a href="/blog" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📖 Tutti gli articoli</a>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <a href="/blog" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📖 Tutti gli articoli</a>
+        <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:var(--ink-1,#1e293b);border:1px solid var(--border-soft,#e2e8f0);border-radius:8px;padding:0.3rem 0.45rem;font-size:0.8rem;cursor:pointer;font-family:inherit;outline:none;">
+          <option value="it">🇮🇹 IT</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+        </select>
+      </div>
     </div>
   </header>
 
@@ -219,5 +228,7 @@
       </nav>
     </div>
   </footer>
+  <script src="/translations.js"></script>
+  <script src="/page-i18n.js"></script>
 </body>
 </html>
