@@ -738,9 +738,9 @@ function buildArticle(art) {
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
         Home
       </a>
-      <div class="header-info">Blog — AI e Lavoro</div>
+      <div class="header-info" data-i18n="blog_header_article">Blog — AI e Lavoro</div>
       <div style="display:flex;align-items:center;gap:0.75rem;">
-        <a href="/blog" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📖 Tutti gli articoli</a>
+        <a href="/blog" data-i18n="blog_all_articles" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📖 Tutti gli articoli</a>
         <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:var(--ink-1,#1e293b);border:1px solid var(--border-soft,#e2e8f0);border-radius:8px;padding:0.3rem 0.45rem;font-size:0.8rem;cursor:pointer;font-family:inherit;outline:none;">
           <option value="it">🇮🇹 IT</option>
           <option value="en">🇬🇧 EN</option>
@@ -772,7 +772,7 @@ function buildArticle(art) {
           <span>·</span>
           <span>📅 ${dateFormatted}</span>
           <span>·</span>
-          <span>⏱️ ${art.readMin} min di lettura</span>
+          <span>⏱️ ${art.readMin} <span data-i18n="blog_min_read">min di lettura</span></span>
         </div>
       </div>
 
@@ -781,14 +781,14 @@ function buildArticle(art) {
       </article>
 
       <div class="blog-cta">
-        <p style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
-        <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>
-        <a href="/classifica" style="display:inline-block;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:0.85rem 1.75rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;margin:0.3rem;">📋 Sfoglia tutte le professioni</a>
-        <a href="/cv-analyzer" style="display:inline-block;background:white;color:var(--primary);border:2px solid var(--primary);padding:0.8rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.92rem;margin:0.3rem;">📄 Analizza il tuo CV</a>
+        <p data-i18n="blog_cta_title" style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
+        <p data-i18n="blog_cta_sub" style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>
+        <a href="/classifica" data-i18n="blog_cta_btn1" style="display:inline-block;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:0.85rem 1.75rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;margin:0.3rem;">📋 Sfoglia tutte le professioni</a>
+        <a href="/cv-analyzer" data-i18n="blog_cta_btn2" style="display:inline-block;background:white;color:var(--primary);border:2px solid var(--primary);padding:0.8rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.92rem;margin:0.3rem;">📄 Analizza il tuo CV</a>
       </div>
 
       <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
-        <p style="font-size:0.9rem;font-weight:600;color:var(--text-primary);margin-bottom:1rem;">Altri articoli</p>
+        <p data-i18n="blog_related" style="font-size:0.9rem;font-weight:600;color:var(--text-primary);margin-bottom:1rem;">Altri articoli</p>
         <div style="display:grid;gap:0.75rem;">
           ${articles.filter(a => a.slug !== art.slug).slice(0,3).map(a => `
           <a href="/blog/${a.slug}" style="display:block;padding:0.9rem 1rem;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text-primary);background:white;transition:border-color 0.15s;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)'">
@@ -803,11 +803,11 @@ function buildArticle(art) {
 
   <footer>
     <div class="footer-content">
-      <p class="footer-text">JobRiskAI · Blog su AI e futuro del lavoro</p>
+      <p data-i18n="blog_footer" class="footer-text">JobRiskAI · Blog su AI e futuro del lavoro</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/blog" style="color:var(--text-secondary);">Blog</a> · <a href="/classifica" style="color:var(--text-secondary);">Classifica</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
-        <a href="/privacy-policy" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Privacy Policy</a>
-        <a href="/termini-servizio" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Termini di Servizio</a>
+        <a href="/privacy-policy" data-i18n="footer_links_privacy" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Privacy Policy</a>
+        <a href="/termini-servizio" data-i18n="footer_links_terms" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Termini di Servizio</a>
         <a href="/chi-siamo" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Chi Siamo</a>
         <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary);font-size:0.8rem;">Contatti</a>
       </nav>
@@ -873,9 +873,9 @@ function buildIndex() {
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/></svg>
         Home
       </a>
-      <div class="header-info">Blog — AI e Futuro del Lavoro</div>
+      <div class="header-info" data-i18n="blog_index_header">Blog — AI e Futuro del Lavoro</div>
       <div style="display:flex;align-items:center;gap:0.75rem;">
-        <a href="/classifica" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📊 Classifica professioni</a>
+        <a href="/classifica" data-i18n="blog_index_ranking" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📊 Classifica professioni</a>
         <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:var(--ink-1,#1e293b);border:1px solid var(--border-soft,#e2e8f0);border-radius:8px;padding:0.3rem 0.45rem;font-size:0.8rem;cursor:pointer;font-family:inherit;outline:none;">
           <option value="it">🇮🇹 IT</option>
           <option value="en">🇬🇧 EN</option>
@@ -896,8 +896,8 @@ function buildIndex() {
         <span style="color:var(--text-primary);font-weight:500;">Blog</span>
       </nav>
 
-      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Blog: AI e Futuro del Lavoro</h1>
-      <p style="color:var(--text-secondary);font-size:1rem;margin-bottom:2.5rem;">Guide pratiche, analisi e dati per capire come l'intelligenza artificiale sta trasformando le professioni italiane.</p>
+      <h1 data-i18n="blog_index_title" style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Blog: AI e Futuro del Lavoro</h1>
+      <p data-i18n="blog_index_sub" style="color:var(--text-secondary);font-size:1rem;margin-bottom:2.5rem;">Guide pratiche, analisi e dati per capire come l'intelligenza artificiale sta trasformando le professioni italiane.</p>
 
       <div style="display:grid;gap:1.25rem;">
         ${cards}
@@ -908,11 +908,11 @@ function buildIndex() {
 
   <footer>
     <div class="footer-content">
-      <p class="footer-text">JobRiskAI · Blog su AI e futuro del lavoro</p>
+      <p data-i18n="blog_footer" class="footer-text">JobRiskAI · Blog su AI e futuro del lavoro</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica" style="color:var(--text-secondary);">Classifica</a> · <a href="/calcolatore" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
-        <a href="/privacy-policy" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Privacy Policy</a>
-        <a href="/termini-servizio" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Termini di Servizio</a>
+        <a href="/privacy-policy" data-i18n="footer_links_privacy" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Privacy Policy</a>
+        <a href="/termini-servizio" data-i18n="footer_links_terms" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Termini di Servizio</a>
         <a href="/chi-siamo" style="color:var(--text-secondary);font-size:0.8rem;margin-right:1rem;">Chi Siamo</a>
         <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary);font-size:0.8rem;">Contatti</a>
       </nav>

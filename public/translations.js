@@ -305,7 +305,20 @@ export const translations = {
         cva_step4_label: "Mese 3+ — Posizionamento",
         cva_step4_title: "Considera la transizione verso '{role1}'",
         cva_step4_desc_high: "Con nuove competenze in tasca, aggiorna LinkedIn e il tuo CV. Il rischio è alto — valuta seriamente una transizione verso '{role1}': ha un profilo di rischio AI significativamente più basso e valorizza molte delle tue competenze attuali. Non è un salto nel vuoto: è un passo laterale intelligente.",
-        cva_step4_desc_low: "Con nuove competenze in tasca, aggiorna LinkedIn e il tuo CV. Se vuoi accelerare, una transizione verso '{role1}' potrebbe avere senso: ha un profilo di rischio AI più basso e valorizza molte delle tue competenze attuali."
+        cva_step4_desc_low: "Con nuove competenze in tasca, aggiorna LinkedIn e il tuo CV. Se vuoi accelerare, una transizione verso '{role1}' potrebbe avere senso: ha un profilo di rischio AI più basso e valorizza molte delle tue competenze attuali.",
+        blog_header_article: "Blog — AI e Lavoro",
+        blog_all_articles: "📖 Tutti gli articoli",
+        blog_min_read: "min di lettura",
+        blog_cta_title: "Il tuo lavoro è a rischio AI?",
+        blog_cta_sub: "Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.",
+        blog_cta_btn1: "📋 Sfoglia tutte le professioni",
+        blog_cta_btn2: "📄 Analizza il tuo CV",
+        blog_related: "Altri articoli",
+        blog_index_header: "Blog — AI e Futuro del Lavoro",
+        blog_index_ranking: "📊 Classifica professioni",
+        blog_index_title: "Blog: AI e Futuro del Lavoro",
+        blog_index_sub: "Guide pratiche, analisi e dati per capire come l'intelligenza artificiale sta trasformando le professioni italiane.",
+        blog_footer: "JobRiskAI · Blog su AI e futuro del lavoro"
     },
     en: {
         country_selector_label: "Calculating for",
@@ -609,7 +622,20 @@ export const translations = {
         cva_step4_label: "Month 3+ — Positioning",
         cva_step4_title: "Consider transitioning to '{role1}'",
         cva_step4_desc_high: "With new skills under your belt, update your LinkedIn and CV. The risk is high — seriously consider transitioning to '{role1}': it has a significantly lower AI risk profile and leverages many of your current skills. It's not a leap in the dark: it's an intelligent lateral move.",
-        cva_step4_desc_low: "With new skills under your belt, update your LinkedIn and CV. If you want to accelerate, a transition to '{role1}' could make sense: it has a lower AI risk profile and leverages many of your current skills."
+        cva_step4_desc_low: "With new skills under your belt, update your LinkedIn and CV. If you want to accelerate, a transition to '{role1}' could make sense: it has a lower AI risk profile and leverages many of your current skills.",
+        blog_header_article: "Blog — AI & Work",
+        blog_all_articles: "📖 All articles",
+        blog_min_read: "min read",
+        blog_cta_title: "Is your job at risk from AI?",
+        blog_cta_sub: "Find out for free in less than a minute — search your profession or analyze your CV.",
+        blog_cta_btn1: "📋 Browse all professions",
+        blog_cta_btn2: "📄 Analyze your CV",
+        blog_related: "More articles",
+        blog_index_header: "Blog — AI & the Future of Work",
+        blog_index_ranking: "📊 Profession rankings",
+        blog_index_title: "Blog: AI & the Future of Work",
+        blog_index_sub: "Practical guides, analysis and data to understand how artificial intelligence is transforming professions.",
+        blog_footer: "JobRiskAI · Blog on AI and the future of work"
     },
     es: {
         country_selector_label: "Calculando para",
@@ -913,7 +939,20 @@ export const translations = {
         cva_step4_label: "Mes 3+ — Posicionamiento",
         cva_step4_title: "Considera la transición hacia '{role1}'",
         cva_step4_desc_high: "Con nuevas habilidades, actualiza tu LinkedIn y CV. El riesgo es alto — considera seriamente la transición hacia '{role1}': tiene un perfil de riesgo de IA significativamente más bajo y aprovecha muchas de tus habilidades actuales. No es un salto al vacío: es un movimiento lateral inteligente.",
-        cva_step4_desc_low: "Con nuevas habilidades, actualiza tu LinkedIn y CV. Si quieres acelerar, una transición hacia '{role1}' podría tener sentido: tiene un perfil de riesgo de IA más bajo y aprovecha muchas de tus habilidades actuales."
+        cva_step4_desc_low: "Con nuevas habilidades, actualiza tu LinkedIn y CV. Si quieres acelerar, una transición hacia '{role1}' podría tener sentido: tiene un perfil de riesgo de IA más bajo y aprovecha muchas de tus habilidades actuales.",
+        blog_header_article: "Blog — IA y Trabajo",
+        blog_all_articles: "📖 Todos los artículos",
+        blog_min_read: "min de lectura",
+        blog_cta_title: "¿Tu trabajo está en riesgo por la IA?",
+        blog_cta_sub: "Descúbrelo gratis en menos de un minuto — busca tu profesión o analiza tu CV.",
+        blog_cta_btn1: "📋 Ver todas las profesiones",
+        blog_cta_btn2: "📄 Analizar mi CV",
+        blog_related: "Más artículos",
+        blog_index_header: "Blog — IA y el Futuro del Trabajo",
+        blog_index_ranking: "📊 Clasificación de profesiones",
+        blog_index_title: "Blog: IA y el Futuro del Trabajo",
+        blog_index_sub: "Guías prácticas, análisis y datos para entender cómo la inteligencia artificial está transformando las profesiones.",
+        blog_footer: "JobRiskAI · Blog sobre IA y el futuro del trabajo"
     },
     de: {
         country_selector_label: "Berechnung für",
@@ -1217,7 +1256,20 @@ export const translations = {
         cva_step4_label: "Monat 3+ — Positionierung",
         cva_step4_title: "Erwäge den Übergang zu '{role1}'",
         cva_step4_desc_high: "Mit neuen Fähigkeiten aktualisiere LinkedIn und deinen Lebenslauf. Das Risiko ist hoch — erwäge ernsthaft einen Übergang zu '{role1}': Es hat ein deutlich niedrigeres KI-Risikoprofil und nutzt viele deiner aktuellen Fähigkeiten. Es ist kein Sprung ins Dunkle: Es ist ein intelligenter Seitenschritt.",
-        cva_step4_desc_low: "Mit neuen Fähigkeiten aktualisiere LinkedIn und deinen Lebenslauf. Wenn du beschleunigen möchtest, könnte ein Übergang zu '{role1}' sinnvoll sein: Es hat ein niedrigeres KI-Risikoprofil und nutzt viele deiner aktuellen Fähigkeiten."
+        cva_step4_desc_low: "Mit neuen Fähigkeiten aktualisiere LinkedIn und deinen Lebenslauf. Wenn du beschleunigen möchtest, könnte ein Übergang zu '{role1}' sinnvoll sein: Es hat ein niedrigeres KI-Risikoprofil und nutzt viele deiner aktuellen Fähigkeiten.",
+        blog_header_article: "Blog — KI & Arbeit",
+        blog_all_articles: "📖 Alle Artikel",
+        blog_min_read: "Min. Lesezeit",
+        blog_cta_title: "Ist dein Job durch KI gefährdet?",
+        blog_cta_sub: "Finde es kostenlos in weniger als einer Minute heraus — suche deinen Beruf oder analysiere deinen Lebenslauf.",
+        blog_cta_btn1: "📋 Alle Berufe durchsuchen",
+        blog_cta_btn2: "📄 Lebenslauf analysieren",
+        blog_related: "Weitere Artikel",
+        blog_index_header: "Blog — KI & die Zukunft der Arbeit",
+        blog_index_ranking: "📊 Berufsranking",
+        blog_index_title: "Blog: KI & die Zukunft der Arbeit",
+        blog_index_sub: "Praxisleitfäden, Analysen und Daten, um zu verstehen, wie künstliche Intelligenz die Berufe verändert.",
+        blog_footer: "JobRiskAI · Blog über KI und die Zukunft der Arbeit"
     },
     fr: {
         country_selector_label: "Calcul pour",
@@ -1521,7 +1573,20 @@ export const translations = {
         cva_step4_label: "Mois 3+ — Positionnement",
         cva_step4_title: "Envisagez la transition vers '{role1}'",
         cva_step4_desc_high: "Avec de nouvelles compétences, mettez à jour LinkedIn et votre CV. Le risque est élevé — envisagez sérieusement une transition vers '{role1}' : il a un profil de risque IA significativement plus faible et valorise beaucoup de vos compétences actuelles. Ce n'est pas un saut dans le vide : c'est un mouvement latéral intelligent.",
-        cva_step4_desc_low: "Avec de nouvelles compétences, mettez à jour LinkedIn et votre CV. Si vous souhaitez accélérer, une transition vers '{role1}' pourrait avoir du sens : il a un profil de risque IA plus faible et valorise beaucoup de vos compétences actuelles."
+        cva_step4_desc_low: "Avec de nouvelles compétences, mettez à jour LinkedIn et votre CV. Si vous souhaitez accélérer, une transition vers '{role1}' pourrait avoir du sens : il a un profil de risque IA plus faible et valorise beaucoup de vos compétences actuelles.",
+        blog_header_article: "Blog — IA & Travail",
+        blog_all_articles: "📖 Tous les articles",
+        blog_min_read: "min de lecture",
+        blog_cta_title: "Votre emploi est-il menacé par l'IA ?",
+        blog_cta_sub: "Découvrez-le gratuitement en moins d'une minute — cherchez votre métier ou analysez votre CV.",
+        blog_cta_btn1: "📋 Voir toutes les professions",
+        blog_cta_btn2: "📄 Analyser mon CV",
+        blog_related: "Autres articles",
+        blog_index_header: "Blog — IA & l'Avenir du Travail",
+        blog_index_ranking: "📊 Classement des métiers",
+        blog_index_title: "Blog : IA & l'Avenir du Travail",
+        blog_index_sub: "Guides pratiques, analyses et données pour comprendre comment l'intelligence artificielle transforme les professions.",
+        blog_footer: "JobRiskAI · Blog sur l'IA et l'avenir du travail"
     }
 };
 
