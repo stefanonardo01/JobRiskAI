@@ -240,6 +240,8 @@ export const translations = {
         home_cta2_h2: "Scopri il tuo punteggio in <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">meno di un minuto</span>",
         home_cta2_p: "Carica il tuo CV o scegli una professione dal catalogo. Nessuna registrazione richiesta.",
 
+        home_examples_label: "Esempi reali",
+        home_examples_cta: "E il tuo lavoro? →",
         home_hero_h1: "Il tuo lavoro esisterà ancora tra 5 anni?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Scoprilo</span> gratis in un minuto.",
         home_method_label: "Metodologia & Trasparenza",
         home_method_h2: "Come funziona il nostro modello di rischio",
@@ -540,6 +542,8 @@ export const translations = {
         home_cta2_h2: "Discover your score in <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">less than a minute</span>",
         home_cta2_p: "Upload your CV or choose a profession from the catalog. No registration required.",
 
+        home_examples_label: "Real examples",
+        home_examples_cta: "What about yours? →",
         home_hero_h1: "Will your job still exist in 5 years?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Find out</span> free in one minute.",
         home_method_label: "Methodology & Transparency",
         home_method_h2: "How our risk model works",
@@ -840,6 +844,8 @@ export const translations = {
         home_cta2_h2: "Descubre tu puntuación en <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">menos de un minuto</span>",
         home_cta2_p: "Sube tu CV o elige una profesión del catálogo. Sin registro requerido.",
 
+        home_examples_label: "Ejemplos reales",
+        home_examples_cta: "¿Y el tuyo? →",
         home_hero_h1: "¿Tu trabajo existirá en 5 años?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Descúbrelo</span> gratis en un minuto.",
         home_method_label: "Metodología & Transparencia",
         home_method_h2: "Cómo funciona nuestro modelo de riesgo",
@@ -1140,6 +1146,8 @@ export const translations = {
         home_cta2_h2: "Entdecke deinen Score in <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">weniger als einer Minute</span>",
         home_cta2_p: "Lade deinen Lebenslauf hoch oder wähle einen Beruf aus dem Katalog. Keine Registrierung erforderlich.",
 
+        home_examples_label: "Echte Beispiele",
+        home_examples_cta: "Und deiner? →",
         home_hero_h1: "Wird es deinen Job in 5 Jahren noch geben?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Finde es</span> kostenlos in einer Minute heraus.",
         home_method_label: "Methodik & Transparenz",
         home_method_h2: "Wie unser Risikomodell funktioniert",
@@ -1440,6 +1448,8 @@ export const translations = {
         home_cta2_h2: "Découvrez votre score en <span class=\"font-accent font-medium text-[var(--indigo-dk)]\">moins d'une minute</span>",
         home_cta2_p: "Téléchargez votre CV ou choisissez une profession dans le catalogue. Aucune inscription requise.",
 
+        home_examples_label: "Exemples réels",
+        home_examples_cta: "Et le vôtre ? →",
         home_hero_h1: "Votre métier existera-t-il encore dans 5 ans ?<br class=\"hidden sm:block\"><span class=\"font-accent font-medium text-[var(--indigo-dk)]\">Découvrez-le</span> gratuitement en une minute.",
         home_method_label: "Méthodologie & Transparence",
         home_method_h2: "Comment fonctionne notre modèle de risque",
