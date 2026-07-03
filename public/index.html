@@ -401,12 +401,11 @@
     </p>
 
     <div class="flex flex-wrap items-center justify-center gap-3">
-      <button onclick="openStartModal()" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3 rounded-full inline-flex items-center gap-1.5">
-        <span data-i18n="home_cta_start">Inizia gratis</span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
-      </button>
-      <a href="#come-funziona" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-medium text-[14.5px] px-6 py-3 rounded-full" data-i18n="home_cta_how">
-        Guarda come funziona
+      <a href="/calcolatore" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3 rounded-full inline-flex items-center gap-2">
+        🎯 <span data-i18n="home_cta_calc">Calcola il tuo rischio</span>
+      </a>
+      <a href="/cv-analyzer" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-medium text-[14.5px] px-6 py-3 rounded-full inline-flex items-center gap-2">
+        📄 <span data-i18n="home_cta_cv">Analizza il tuo CV</span>
       </a>
     </div>
   </div>
@@ -768,10 +767,14 @@
       <h2 class="font-display text-[2rem] font-semibold tracking-tight mb-4 text-[var(--ink-0)]" data-i18n="home_cta2_h2">Scopri il tuo punteggio in <span class="font-accent font-medium text-[var(--indigo-dk)]">meno di un minuto</span>
       </h2>
       <p class="text-[var(--ink-2)] text-[16px] max-w-xl mx-auto mb-8 leading-relaxed" data-i18n="home_cta2_p">Carica il tuo CV o scegli una professione dal catalogo. Nessuna registrazione richiesta.</p>
-      <button onclick="openStartModal()" class="btn-primary inline-flex items-center gap-1.5 text-white font-semibold text-[15px] px-7 py-3.5 rounded-full">
-        Inizia gratis
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
-      </button>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="/calcolatore" class="btn-primary inline-flex items-center gap-2 text-white font-semibold text-[15px] px-7 py-3.5 rounded-full">
+          🎯 <span data-i18n="home_cta_calc">Calcola il tuo rischio</span>
+        </a>
+        <a href="/cv-analyzer" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-semibold text-[15px] px-7 py-3.5 rounded-full inline-flex items-center gap-2">
+          📄 <span data-i18n="home_cta_cv">Analizza il tuo CV</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
