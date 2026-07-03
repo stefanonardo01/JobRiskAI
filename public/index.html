@@ -97,7 +97,7 @@
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.jobriskai.it/calcolatore.html?job={search_term_string}"
+      "urlTemplate": "https://www.jobriskai.it/calcolatore?job={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -111,7 +111,7 @@
   "@type": "Dataset",
   "name": "Rischio di sostituzione AI per professioni italiane 2026",
   "description": "Dataset con punteggio di rischio AI (0–100), anno critico di sostituzione stimato, costo umano annuo, costo agente AI SaaS mensile e accuratezza comparata per 105 professioni italiane. Dati aggiornati al 2026.",
-  "url": "https://www.jobriskai.it/calcolatore.html",
+  "url": "https://www.jobriskai.it/calcolatore",
   "creator": {
     "@type": "Organization",
     "name": "JobRiskAI",
@@ -233,7 +233,7 @@
       "name": "Come analizzare il proprio CV per il rischio AI?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Su JobRiskAI è possibile caricare il proprio CV in formato PDF alla pagina /cv-analyzer.html. Il testo viene estratto direttamente nel browser (nessun dato viene salvato), poi analizzato dal modello Gemini 2.5 Flash che restituisce in circa 48 secondi: un punteggio di esposizione AI da 0 a 100, il livello di rischio (basso/medio/alto), 3–6 competenze mancanti per ridurre il rischio, e 2–4 ruoli adiacenti con minor esposizione all'automazione. L'analisi è gratuita e non richiede registrazione."
+        "text": "Su JobRiskAI è possibile caricare il proprio CV in formato PDF alla pagina /cv-analyzer. Il testo viene estratto direttamente nel browser (nessun dato viene salvato), poi analizzato dal modello Gemini 2.5 Flash che restituisce in circa 48 secondi: un punteggio di esposizione AI da 0 a 100, il livello di rischio (basso/medio/alto), 3–6 competenze mancanti per ridurre il rischio, e 2–4 ruoli adiacenti con minor esposizione all'automazione. L'analisi è gratuita e non richiede registrazione."
       }
     }
   ]
@@ -258,7 +258,7 @@
       "@type": "HowToStep",
       "position": 1,
       "name": "Scegli professione o carica CV",
-      "text": "Vai su jobriskai.it/calcolatore.html e seleziona una delle 105 professioni disponibili, oppure carica il tuo CV in PDF su jobriskai.it/cv-analyzer.html per un'analisi personalizzata."
+      "text": "Vai su jobriskai.it/calcolatore e seleziona una delle 105 professioni disponibili, oppure carica il tuo CV in PDF su jobriskai.it/cv-analyzer per un'analisi personalizzata."
     },
     {
       "@type": "HowToStep",
@@ -367,7 +367,7 @@
     <div class="hidden md:flex items-center gap-6 text-[13.5px] text-[var(--ink-1)] font-medium">
       <a href="#funzionalita" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_features">Funzionalità</a>
       <a href="#come-funziona" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_how">Come funziona</a>
-      <a href="/classifica.html" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_ranking">Classifica</a>
+      <a href="/classifica" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_ranking">Classifica</a>
       <a href="#faq" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_faq">FAQ</a>
       <a href="#contatti" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_contact">Contatti</a>
     </div>
@@ -892,7 +892,7 @@
   <p><strong>Quale professione è più a rischio di sostituzione AI in Italia nel 2026?</strong> Il Contabile con rischio 82% e anno critico 2029, seguito da Customer Service (80%) e SOC Analyst Tier 1 (78%).</p>
   <p><strong>Quale professione è meno a rischio di sostituzione AI?</strong> L'Educatore di Prima Infanzia con rischio 8% e anno critico 2045, seguito dall'Infermiere (12%) e dall'AI Director (10%).</p>
   <p><strong>Come ridurre il rischio AI nel proprio lavoro?</strong> Specializzarsi in attività che richiedono giudizio complesso, relazioni umane dirette, creatività strategica e supervisione di sistemi AI. Ogni professione su JobRiskAI ha un piano di sopravvivenza con competenze specifiche consigliate.</p>
-  <p><strong>Dove analizzare il proprio CV per rischio AI?</strong> Su jobriskai.it/cv-analyzer.html è possibile caricare il proprio CV in PDF e ricevere un punteggio personale di esposizione AI in circa 48 secondi, con competenze mancanti e ruoli consigliati.</p>
+  <p><strong>Dove analizzare il proprio CV per rischio AI?</strong> Su jobriskai.it/cv-analyzer è possibile caricare il proprio CV in PDF e ricevere un punteggio personale di esposizione AI in circa 48 secondi, con competenze mancanti e ruoli consigliati.</p>
 </div>
 
 <footer id="contatti" class="px-6 py-10 border-t border-[var(--border-soft)]">
@@ -902,9 +902,9 @@
       <span class="text-[var(--ink-3)] text-[13px]">© 2026</span>
     </div>
     <div class="flex items-center gap-6 text-[13px] text-[var(--ink-3)]">
-      <a href="/privacy-policy.html" class="hover:text-[var(--ink-1)] transition-colors">Privacy Policy</a>
-      <a href="/termini-servizio.html" class="hover:text-[var(--ink-1)] transition-colors">Termini</a>
-      <a href="/chi-siamo.html" class="hover:text-[var(--ink-1)] transition-colors">Chi Siamo</a>
+      <a href="/privacy-policy" class="hover:text-[var(--ink-1)] transition-colors">Privacy Policy</a>
+      <a href="/termini-servizio" class="hover:text-[var(--ink-1)] transition-colors">Termini</a>
+      <a href="/chi-siamo" class="hover:text-[var(--ink-1)] transition-colors">Chi Siamo</a>
       <a href="mailto:hello@jobriskai.it" class="hover:text-[var(--ink-1)] transition-colors">hello@jobriskai.it</a>
     </div>
   </div>
@@ -923,7 +923,7 @@
 
     <div class="grid sm:grid-cols-2 gap-4">
 
-      <a href="/calcolatore.html" class="card p-5 text-left hover:shadow-soft transition-shadow group block">
+      <a href="/calcolatore" class="card p-5 text-left hover:shadow-soft transition-shadow group block">
         <div class="w-11 h-11 rounded-xl bg-[#EEF0FF] flex items-center justify-center mb-3.5">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-dk)" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="6" width="3" height="12"/></svg>
         </div>
@@ -934,7 +934,7 @@
         <p class="text-[var(--ink-2)] text-[13.5px] leading-relaxed" data-i18n="home_modal_calc_p">Confronta {jobCount} professioni: costo umano vs AI, punteggio di rischio, trend di mercato.</p>
       </a>
 
-      <a href="/cv-analyzer.html" class="card p-5 text-left hover:shadow-soft transition-shadow group block">
+      <a href="/cv-analyzer" class="card p-5 text-left hover:shadow-soft transition-shadow group block">
         <div class="w-11 h-11 rounded-xl bg-green-50 flex items-center justify-center mb-3.5">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
         </div>

@@ -142,7 +142,7 @@ function buildProfessionPage(key) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'JobRiskAI', item: 'https://www.jobriskai.it/' },
-      { '@type': 'ListItem', position: 2, name: 'Professioni', item: 'https://www.jobriskai.it/classifica.html' },
+      { '@type': 'ListItem', position: 2, name: 'Professioni', item: 'https://www.jobriskai.it/classifica' },
       { '@type': 'ListItem', position: 3, name: title, item: `https://www.jobriskai.it/professione/${sl}` },
     ],
   }, null, 2);
@@ -228,7 +228,7 @@ function buildProfessionPage(key) {
         Home
       </a>
       <div class="header-info">Rischio AI per professione</div>
-      <a href="/classifica.html" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📊 Classifica completa</a>
+      <a href="/classifica" style="font-size:0.85rem;color:var(--primary);text-decoration:none;font-weight:600;">📊 Classifica completa</a>
     </div>
   </header>
 
@@ -239,7 +239,7 @@ function buildProfessionPage(key) {
       <nav style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:1.5rem;">
         <a href="/" style="color:var(--text-secondary);text-decoration:none;">JobRiskAI</a>
         <span style="margin:0 0.4rem;">›</span>
-        <a href="/classifica.html" style="color:var(--text-secondary);text-decoration:none;">Professioni</a>
+        <a href="/classifica" style="color:var(--text-secondary);text-decoration:none;">Professioni</a>
         <span style="margin:0 0.4rem;">›</span>
         <span style="color:var(--text-primary);font-weight:500;">${esc(title)}</span>
       </nav>
@@ -311,7 +311,7 @@ function buildProfessionPage(key) {
       <div style="text-align:center;margin:2.5rem 0;">
         <p style="color:var(--text-secondary);margin-bottom:1.25rem;font-size:0.95rem;">Calcola il rischio personalizzato in base al tuo stipendio e alla tua situazione</p>
         <a href="/calcolatore.html?job=${key}" class="prof-cta">🎯 Calcola il tuo rischio personalizzato</a>
-        <a href="/cv-analyzer.html" class="prof-cta-ghost">📄 Analizza il tuo CV</a>
+        <a href="/cv-analyzer" class="prof-cta-ghost">📄 Analizza il tuo CV</a>
       </div>
 
       ${related.length > 0 ? `
@@ -327,11 +327,11 @@ function buildProfessionPage(key) {
   <footer>
     <div class="footer-content">
       <p class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni italiane</p>
-      <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica.html" style="color:var(--text-secondary);">Classifica completa</a> · <a href="/calcolatore.html" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer.html" style="color:var(--text-secondary);">Analisi CV</a></p>
+      <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica" style="color:var(--text-secondary);">Classifica completa</a> · <a href="/calcolatore" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
-        <a href="/privacy-policy.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
-        <a href="/termini-servizio.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
-        <a href="/chi-siamo.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
+        <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
+        <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
+        <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
         <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
       </nav>
     </div>
@@ -384,15 +384,15 @@ function buildClassificaPage() {
   <title>I 105 lavori più a rischio AI in Italia [2026] | Classifica JobRiskAI</title>
   <meta name="description" content="Classifica completa dei 105 lavori italiani per rischio di sostituzione AI. Dal Data Entry Clerk (92%) al CEO (8%). Scopri dove si colloca la tua professione e quando l'AI arriverà.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <link rel="canonical" href="https://www.jobriskai.it/classifica.html">
+  <link rel="canonical" href="https://www.jobriskai.it/classifica">
   <meta property="og:title" content="I 105 lavori più a rischio AI in Italia [2026] | JobRiskAI">
   <meta property="og:description" content="Classifica completa: dal Data Entry Clerk (92%) al CEO (8%). Scopri il rischio AI di ogni professione italiana.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.jobriskai.it/classifica.html">
+  <meta property="og:url" content="https://www.jobriskai.it/classifica">
   <meta property="og:image" content="https://www.jobriskai.it/og-image.png">
   <meta property="og:site_name" content="JobRiskAI">
   <script type="application/ld+json">${faqJsonLd}</script>
-  <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'JobRiskAI', item: 'https://www.jobriskai.it/' }, { '@type': 'ListItem', position: 2, name: 'Classifica professioni a rischio AI', item: 'https://www.jobriskai.it/classifica.html' }] })}</script>
+  <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'JobRiskAI', item: 'https://www.jobriskai.it/' }, { '@type': 'ListItem', position: 2, name: 'Classifica professioni a rischio AI', item: 'https://www.jobriskai.it/classifica' }] })}</script>
   <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -419,10 +419,10 @@ function buildClassificaPage() {
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         Home
       </a>
-      <a href="/calcolatore.html" style="display:inline-flex; align-items:center; gap:0.45rem; color:var(--primary); text-decoration:none; font-weight:600; font-size:0.88rem; background:rgba(99,102,241,0.07); border:1px solid rgba(99,102,241,0.22); border-radius:8px; padding:0.42rem 0.9rem; white-space:nowrap; flex-shrink:0;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">
+      <a href="/calcolatore" style="display:inline-flex; align-items:center; gap:0.45rem; color:var(--primary); text-decoration:none; font-weight:600; font-size:0.88rem; background:rgba(99,102,241,0.07); border:1px solid rgba(99,102,241,0.22); border-radius:8px; padding:0.42rem 0.9rem; white-space:nowrap; flex-shrink:0;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">
         🎯 <span data-i18n="cla_nav_calculator">Calcolatore</span>
       </a>
-      <a href="/cv-analyzer.html" style="display:inline-flex; align-items:center; gap:0.45rem; color:var(--primary); text-decoration:none; font-weight:600; font-size:0.88rem; background:rgba(99,102,241,0.07); border:1px solid rgba(99,102,241,0.22); border-radius:8px; padding:0.42rem 0.9rem; white-space:nowrap; flex-shrink:0;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">
+      <a href="/cv-analyzer" style="display:inline-flex; align-items:center; gap:0.45rem; color:var(--primary); text-decoration:none; font-weight:600; font-size:0.88rem; background:rgba(99,102,241,0.07); border:1px solid rgba(99,102,241,0.22); border-radius:8px; padding:0.42rem 0.9rem; white-space:nowrap; flex-shrink:0;" onmouseover="this.style.background='rgba(99,102,241,0.14)'" onmouseout="this.style.background='rgba(99,102,241,0.07)'">
         📄 <span data-i18n="nav_cv_analyzer">Analisi CV</span>
       </a>
       <div class="header-info" data-i18n="cla_header_info">Classifica rischio AI 2026</div>
@@ -547,8 +547,8 @@ function buildClassificaPage() {
       <!-- CTA -->
       <div style="text-align:center;margin:3rem 0 1rem;">
         <p data-i18n="cla_cta_sub" style="color:var(--text-secondary);margin-bottom:1.25rem;">Vuoi sapere quanto sei personalmente a rischio?</p>
-        <a href="/calcolatore.html" data-i18n="cla_cta_btn1" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1rem 2rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;display:inline-block;margin:0.5rem;transition:transform 0.15s,box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px -8px rgba(99,102,241,0.5)'" onmouseout="this.style.transform='';this.style.boxShadow=''">🎯 Calcola il tuo rischio personale</a>
-        <a href="/cv-analyzer.html" data-i18n="cla_cta_btn2" style="background:white;color:var(--primary);border:2px solid var(--primary);padding:0.9rem 1.8rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;margin:0.5rem;" onmouseover="this.style.background='var(--primary)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='var(--primary)'">📄 Analizza il tuo CV</a>
+        <a href="/calcolatore" data-i18n="cla_cta_btn1" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:1rem 2rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;display:inline-block;margin:0.5rem;transition:transform 0.15s,box-shadow 0.15s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px -8px rgba(99,102,241,0.5)'" onmouseout="this.style.transform='';this.style.boxShadow=''">🎯 Calcola il tuo rischio personale</a>
+        <a href="/cv-analyzer" data-i18n="cla_cta_btn2" style="background:white;color:var(--primary);border:2px solid var(--primary);padding:0.9rem 1.8rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;display:inline-block;margin:0.5rem;" onmouseover="this.style.background='var(--primary)';this.style.color='white'" onmouseout="this.style.background='white';this.style.color='var(--primary)'">📄 Analizza il tuo CV</a>
       </div>
 
     </div>
@@ -559,9 +559,9 @@ function buildClassificaPage() {
       <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
-        <a href="/privacy-policy.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
-        <a href="/termini-servizio.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
-        <a href="/chi-siamo.html" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
+        <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
+        <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
+        <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
         <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
       </nav>
     </div>
@@ -675,7 +675,7 @@ for (const key of Object.keys(jobData)) {
 }
 
 writeFileSync(join(ROOT, 'public/classifica.html'), buildClassificaPage(), 'utf8');
-urls.push('https://www.jobriskai.it/classifica.html');
+urls.push('https://www.jobriskai.it/classifica');
 
 // Scrivi urls.json per il sitemap
 writeFileSync(join(ROOT, 'scripts/generated-urls.json'), JSON.stringify(urls, null, 2), 'utf8');
