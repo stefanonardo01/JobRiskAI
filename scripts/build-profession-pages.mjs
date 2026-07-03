@@ -309,8 +309,8 @@ function buildProfessionPage(key) {
 
       <!-- CTA -->
       <div style="text-align:center;margin:2.5rem 0;">
-        <p style="color:var(--text-secondary);margin-bottom:1.25rem;font-size:0.95rem;">Calcola il rischio personalizzato in base al tuo stipendio e alla tua situazione</p>
-        <a href="/calcolatore.html?job=${key}" class="prof-cta">🎯 Calcola il tuo rischio personalizzato</a>
+        <p style="color:var(--text-secondary);margin-bottom:1.25rem;font-size:0.95rem;">Scopri come si posiziona questo lavoro rispetto agli altri — o analizza il tuo CV per un punteggio personale.</p>
+        <a href="/classifica" class="prof-cta">🔍 Confronta con gli altri lavori</a>
         <a href="/cv-analyzer" class="prof-cta-ghost">📄 Analizza il tuo CV</a>
       </div>
 
