@@ -4,7 +4,7 @@
   "private": true,
   "description": "AI CV analyzer - returns AI job-risk score with viral sharing features",
   "scripts": {
-    "build": "node scripts/build-profession-pages.mjs && node scripts/build-seo-pages.mjs && node_modules/.bin/tailwindcss -i tailwind.input.css -o public/tailwind.min.css --minify"
+    "build": "node scripts/build-profession-pages.mjs && node scripts/build-seo-pages.mjs && node scripts/build-blog.mjs && node_modules/.bin/tailwindcss -i tailwind.input.css -o public/tailwind.min.css --minify"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0"
