@@ -257,7 +257,7 @@ function buildPage(p) {
       <div style="background:linear-gradient(135deg,rgba(99,102,241,0.08),rgba(59,130,246,0.04));border:1px solid rgba(99,102,241,0.2);border-radius:16px;padding:2rem;text-align:center;margin-bottom:1.5rem;">
         <p style="font-weight:600;color:var(--text-primary);margin-bottom:0.5rem;font-size:1.05rem;">Hai il lavoro di ${esc(title)}?</p>
         <p style="color:var(--text-secondary);margin-bottom:1.5rem;font-size:0.92rem;">Calcola il rischio personalizzato con il tuo stipendio reale — scopri quando l'AI diventerà più conveniente della tua figura professionale.</p>
-        <a href="/calcolatore" class="prof-cta">🎯 Calcola il tuo rischio personalizzato</a>
+        <a href="/classifica" class="prof-cta">🔍 Confronta con gli altri lavori</a>
         <a href="/cv-analyzer" class="prof-cta-ghost">📄 Analizza il tuo CV</a>
       </div>
 
