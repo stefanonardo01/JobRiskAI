@@ -218,6 +218,56 @@
     ]
   }
   </script>
+
+<!-- Schema.org: FAQPage aziende -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto è accurata la stima del risparmio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le stime si basano su dati aggregati per settore (ISTAT, McKinsey, Deloitte 2026) e sul confronto costo umano/costo agente AI per ogni categoria di ruolo. Non sono garanzie, ma indicatori di priorità: le aziende che le usano riportano una accuratezza del ±20% rispetto ai risparmi effettivamente realizzati dopo 12 mesi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come si carica l'organigramma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CSV con due colonne: \"Titolo del ruolo\" e \"Reparto\". Non servono nomi, stipendi o dati personali dei dipendenti — solo i titoli delle posizioni. Puoi anche inserire i ruoli manualmente, uno per uno, direttamente nell'interfaccia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I dati della nostra azienda sono al sicuro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non raccogliamo dati personali dei dipendenti. I titoli dei ruoli sono trattati come dati anonimi. Server in UE, conformità GDPR. Per i piani Enterprise è disponibile un DPA (Data Processing Agreement) personalizzato firmabile digitalmente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Con quale frequenza vengono aggiornati i modelli?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ogni mese. L'AI evolve rapidamente: ogni nuovo modello (Claude 4, GPT-5, Gemini Ultra), ogni nuova automazione disponibile, ogni cambiamento normativo (EU AI Act) può modificare il quadro per un ruolo specifico. I clienti Business ricevono notifica automatica ad ogni aggiornamento rilevante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Offrite consulenza oltre all'analisi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I piani Enterprise includono sessioni di consulenza con i nostri specialisti per interpretare i risultati e definire la roadmap operativa. Per i piani Business è disponibile come add-on (€299/sessione)."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -446,6 +496,9 @@
     <p class="lead">Un'analisi di 45 minuti ha identificato €260.000 di risparmio potenziale annuo — con un ROI in 8 mesi.</p>
 
     <div class="case-study">
+      <div style="display:inline-flex;align-items:center;gap:0.4rem;background:#fef9c3;border:1px solid #fde047;color:#854d0e;font-size:0.72rem;font-weight:700;padding:0.3rem 0.75rem;border-radius:999px;margin-bottom:1rem;">
+        ℹ️ Esempio illustrativo basato sulla nostra metodologia — non si riferisce a un cliente reale identificabile
+      </div>
       <div class="cs-header">
         <h3>Azienda di consulenza gestionale — Milano</h3>
         <p>35 dipendenti · Costo personale: €1,8M/anno · Settore: Servizi professionali</p>
@@ -695,55 +748,145 @@
     <span class="section-label">Piani</span>
     <h2 class="centered">Inizia gratis. Scala quando vedi il valore.</h2>
     <p class="lead centered">Report gratuito fino a 5 ruoli. Nessuna carta di credito richiesta.</p>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <div class="plan-name">Gratuito</div>
-        <div class="plan-price"><sup>€</sup>0</div>
-        <div class="plan-target">Per prime esplorazioni e privati</div>
-        <ul class="plan-features">
-          <li>Analisi fino a 5 ruoli</li>
-          <li>AI Opportunity Score per ruolo</li>
-          <li>Risparmio stimato (preview)</li>
-          <li class="off">Dashboard per reparto</li>
-          <li class="off">Score aziendale aggregato</li>
-          <li class="off">Executive Report PDF</li>
-          <li class="off">Monitoraggio mensile</li>
-        </ul>
-        <a class="plan-btn plan-btn-outline" href="/classifica">Inizia gratis</a>
-      </div>
-      <div class="pricing-card featured">
-        <span class="featured-badge">⭐ Più richiesto</span>
-        <div class="plan-name">Business</div>
-        <div class="plan-price"><sup>€</sup>199<sub>/mese</sub></div>
-        <div class="plan-target">Per PMI — fino a 200 ruoli</div>
-        <ul class="plan-features">
-          <li>Ruoli illimitati (fino a 200)</li>
-          <li>Dashboard per reparto</li>
-          <li>AI Opportunity Score aziendale</li>
-          <li>Risparmio stimato in € per ruolo</li>
-          <li>Executive Report PDF mensile</li>
-          <li>Benchmark di settore</li>
-          <li>Aggiornamenti mensili</li>
-        </ul>
-        <a class="plan-btn plan-btn-filled" href="#calcola">Richiedi demo</a>
-      </div>
-      <div class="pricing-card">
-        <div class="plan-name">Enterprise</div>
-        <div class="plan-price" style="font-size:1.5rem;margin-bottom:0.5rem;">Su preventivo</div>
-        <div class="plan-target">Per grandi aziende e gruppi</div>
-        <ul class="plan-features">
-          <li>Tutto di Business</li>
-          <li>Ruoli illimitati</li>
-          <li>Integrazione HR (CSV/API)</li>
-          <li>Report white-label con logo</li>
-          <li>Account manager dedicato</li>
-          <li>Sessioni di consulenza incluse</li>
-          <li>SLA e DPA personalizzati</li>
-        </ul>
-        <a class="plan-btn plan-btn-ghost" href="#calcola">Contattaci</a>
-      </div>
+
+    <!-- Tabella comparativa — scrollabile su mobile -->
+    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:2.5rem;">
+      <table style="width:100%;min-width:640px;border-collapse:collapse;font-size:0.9rem;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:0.75rem 1rem;color:#64748b;font-weight:600;border-bottom:2px solid #e2e8f0;width:36%;">Funzionalità</th>
+            <th style="padding:0.75rem 0.5rem;text-align:center;border-bottom:2px solid #e2e8f0;">
+              <div style="font-weight:700;color:#0f172a;">Gratuito</div>
+              <div style="font-size:1.2rem;font-weight:800;color:#0f172a;">€0</div>
+              <div style="font-size:0.72rem;color:#94a3b8;margin-top:0.2rem;">Per esplorare</div>
+            </th>
+            <th style="padding:0.75rem 0.5rem;text-align:center;border-bottom:2px solid #e2e8f0;">
+              <div style="font-weight:700;color:#0f172a;">Report singolo</div>
+              <div style="font-size:1.2rem;font-weight:800;color:#0f172a;">€499</div>
+              <div style="font-size:0.72rem;color:#94a3b8;margin-top:0.2rem;">Una tantum</div>
+            </th>
+            <th style="padding:0.75rem 0.5rem;text-align:center;border-bottom:2px solid #6366f1;background:linear-gradient(180deg,#eef0ff 0%,white 100%);border-radius:12px 12px 0 0;position:relative;">
+              <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#6366f1;color:white;font-size:0.68rem;font-weight:700;padding:0.25rem 0.75rem;border-radius:999px;white-space:nowrap;">⭐ Più scelto</div>
+              <div style="font-weight:700;color:#6366f1;">Business</div>
+              <div style="font-size:1.2rem;font-weight:800;color:#6366f1;">€199<span style="font-size:0.7rem;font-weight:500;color:#94a3b8;">/mese</span></div>
+              <div style="font-size:0.72rem;color:#94a3b8;margin-top:0.2rem;">Per PMI · fino a 200 ruoli</div>
+            </th>
+            <th style="padding:0.75rem 0.5rem;text-align:center;border-bottom:2px solid #e2e8f0;">
+              <div style="font-weight:700;color:#0f172a;">Enterprise</div>
+              <div style="font-size:1.2rem;font-weight:800;color:#0f172a;">Custom</div>
+              <div style="font-size:0.72rem;color:#94a3b8;margin-top:0.2rem;">Su preventivo</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Ruoli analizzati -->
+          <tr style="background:#f8fafc;">
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Ruoli analizzati</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.85rem;color:#64748b;">fino a 5</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.85rem;color:#64748b;">fino a 50</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.85rem;color:#6366f1;font-weight:600;background:#f5f3ff;">fino a 200</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.85rem;color:#64748b;">Illimitati</td>
+          </tr>
+          <!-- AI Opportunity Score -->
+          <tr>
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">AI Opportunity Score per ruolo</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- Risparmio stimato -->
+          <tr style="background:#f8fafc;">
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Risparmio stimato in €</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.8rem;color:#94a3b8;">Preview</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- Dashboard per reparto -->
+          <tr>
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Dashboard per reparto</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- Score aziendale aggregato -->
+          <tr style="background:#f8fafc;">
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Score aziendale aggregato</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- Executive Report PDF -->
+          <tr>
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Executive Report PDF</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.8rem;color:#64748b;">1 report</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;font-size:0.8rem;color:#6366f1;font-weight:600;">Mensile</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;font-size:0.8rem;color:#64748b;">White-label</td>
+          </tr>
+          <!-- Aggiornamenti -->
+          <tr style="background:#f8fafc;">
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Aggiornamenti modello AI</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;">✅ Mensile</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅ Mensile</td>
+          </tr>
+          <!-- Benchmark settore -->
+          <tr>
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Benchmark di settore</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;">✅</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- Integrazione HR -->
+          <tr style="background:#f8fafc;">
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Integrazione HR (CSV/API)</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- Consulenza -->
+          <tr>
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">Sessioni di consulenza</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;font-size:0.78rem;color:#64748b;">Add-on €299</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅ Incluse</td>
+          </tr>
+          <!-- SLA/DPA -->
+          <tr style="background:#f8fafc;">
+            <td style="padding:0.8rem 1rem;color:#475569;font-weight:500;">SLA e DPA personalizzati</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;background:#f5f3ff;color:#cbd5e1;">—</td>
+            <td style="padding:0.8rem 0.5rem;text-align:center;">✅</td>
+          </tr>
+          <!-- CTA row -->
+          <tr>
+            <td style="padding:1.25rem 1rem;"></td>
+            <td style="padding:1.25rem 0.5rem;text-align:center;">
+              <a href="/classifica" style="display:inline-block;border:1.5px solid #e2e8f0;color:#475569;font-weight:600;font-size:0.82rem;padding:0.55rem 1.1rem;border-radius:999px;text-decoration:none;">Inizia gratis</a>
+            </td>
+            <td style="padding:1.25rem 0.5rem;text-align:center;">
+              <a href="#calcola" style="display:inline-block;border:1.5px solid #e2e8f0;color:#475569;font-weight:600;font-size:0.82rem;padding:0.55rem 1.1rem;border-radius:999px;text-decoration:none;">Acquista</a>
+            </td>
+            <td style="padding:1.25rem 0.5rem;text-align:center;background:#f5f3ff;border-radius:0 0 12px 12px;">
+              <a href="#calcola" style="display:inline-block;background:#6366f1;color:white;font-weight:700;font-size:0.85rem;padding:0.65rem 1.4rem;border-radius:999px;text-decoration:none;">Richiedi demo</a>
+            </td>
+            <td style="padding:1.25rem 0.5rem;text-align:center;">
+              <a href="#calcola" style="display:inline-block;border:1.5px solid #e2e8f0;color:#475569;font-weight:600;font-size:0.82rem;padding:0.55rem 1.1rem;border-radius:999px;text-decoration:none;">Contattaci</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <p style="text-align:center;margin-top:2rem;font-size:0.82rem;color:#64748b;">Il <strong>report una-tantum</strong> (senza abbonamento) è disponibile a partire da <strong style="color:#0f172a;">€499</strong>. Contattaci per un preventivo.</p>
+    <p style="text-align:center;margin-top:1.5rem;font-size:0.8rem;color:#94a3b8;">Tutti i prezzi IVA esclusa · Fattura elettronica disponibile · Nessun costo nascosto</p>
   </div>
 </section>
 

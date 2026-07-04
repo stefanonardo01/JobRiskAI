@@ -425,11 +425,11 @@
     </div>
 
     <div class="flex flex-wrap items-center justify-center gap-3">
-      <a href="/classifica" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3 rounded-full inline-flex items-center gap-2">
-        📋 <span data-i18n="home_cta_calc">Sfoglia tutte le professioni</span>
-      </a>
-      <a href="/cv-analyzer" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-medium text-[14.5px] px-6 py-3 rounded-full inline-flex items-center gap-2">
+      <a href="/cv-analyzer" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px">
         📄 <span data-i18n="home_cta_cv">Analizza il tuo CV</span>
+      </a>
+      <a href="/classifica" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-medium text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px">
+        📋 <span data-i18n="home_cta_calc">Sfoglia tutte le professioni</span>
       </a>
     </div>
 
@@ -470,7 +470,36 @@
 
   </div>
 
-  <div class="max-w-5xl mx-auto mt-16 relative fade-up" id="hero-mockup">
+  <!-- Versione mobile semplificata del mockup (visibile solo su <sm) -->
+  <div class="sm:hidden mt-10 max-w-sm mx-auto fade-up">
+    <div class="rounded-2xl border border-[var(--border)] bg-white shadow-soft overflow-hidden">
+      <div class="px-5 py-4 border-b border-[var(--border-soft)] bg-[#FCFAF6]">
+        <p class="text-[11px] text-[var(--ink-3)]">Esempio — Analisi professione</p>
+        <p class="font-display font-semibold text-[15px] mt-0.5">Contabile Senior</p>
+      </div>
+      <div class="px-5 py-4 grid grid-cols-2 gap-3">
+        <div class="card-soft p-3 text-center">
+          <p class="text-[10px] text-[var(--ink-3)] mb-1">Rischio AI</p>
+          <p class="font-display font-bold text-[1.5rem] text-red-500">65<span class="text-[12px] text-[var(--ink-3)] font-medium">/100</span></p>
+        </div>
+        <div class="card-soft p-3 text-center">
+          <p class="text-[10px] text-[var(--ink-3)] mb-1">Anno critico</p>
+          <p class="font-display font-bold text-[1.5rem]">2029</p>
+        </div>
+        <div class="card-soft p-3 text-center">
+          <p class="text-[10px] text-[var(--ink-3)] mb-1">Costo umano/anno</p>
+          <p class="font-display font-semibold text-[1.1rem]">€44.600</p>
+        </div>
+        <div class="card-soft p-3 text-center">
+          <p class="text-[10px] text-[var(--ink-3)] mb-1">Costo AI/anno</p>
+          <p class="font-display font-semibold text-[1.1rem] text-[var(--green)]">€6.300</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Versione desktop completa del mockup (nascosta su mobile) -->
+  <div class="hidden sm:block max-w-5xl mx-auto mt-16 relative fade-up" id="hero-mockup">
     <div class="rounded-2xl border border-[var(--border)] bg-white shadow-lift overflow-hidden">
 
       <div class="flex items-center gap-1.5 px-4 py-3 border-b border-[var(--border-soft)] bg-[#FCFAF6]">
@@ -596,7 +625,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-dk)" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-3-3-4 4"/></svg>
       </div>
       <div>
-        <p class="font-display text-[1.55rem] font-bold leading-none text-[var(--ink-0)]" data-job-count>76</p>
+        <p class="font-display text-[1.55rem] font-bold leading-none text-[var(--ink-0)]" data-job-count>235</p>
         <p class="text-[13px] text-[var(--ink-2)] mt-1.5" data-i18n="home_stat1_label">Professioni analizzate</p>
       </div>
     </div>
@@ -616,6 +645,7 @@
       <div>
         <p class="font-display text-[1.55rem] font-bold leading-none text-[var(--ink-0)]">12.400+</p>
         <p class="text-[13px] text-[var(--ink-2)] mt-1.5" data-i18n="home_stat3_label">Report generati</p>
+        <a href="/professione/contabile" class="text-[11.5px] text-[var(--indigo-dk)] font-medium hover:underline mt-1 inline-block" data-i18n="home_stat3_example">Vedi esempio →</a>
       </div>
     </div>
     <div class="fade-up flex items-start gap-3.5">
@@ -627,6 +657,61 @@
         <p class="text-[13px] text-[var(--ink-2)] mt-1.5" data-i18n="home_stat4_label">Tempo medio analisi</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ── Sezione testimonianze — placeholder pronto per recensioni reali ──────── -->
+<!-- TODO: sostituire i 3 blocchi qui sotto con testimonianze reali raccolte via email/form -->
+<section id="testimonianze" class="px-6 py-16 max-w-6xl mx-auto">
+  <div class="text-center mb-10 fade-up">
+    <p class="text-[13px] font-semibold text-[var(--indigo-dk)] tracking-wide uppercase mb-3">Cosa dicono gli utenti</p>
+    <h2 class="font-display text-[1.75rem] font-semibold tracking-tight text-[var(--ink-0)]">Già usato da migliaia di professionisti italiani</h2>
+  </div>
+  <div class="grid sm:grid-cols-3 gap-5 fade-up">
+    <!-- Slot testimonianza 1 — inserire testo reale -->
+    <div class="card p-6 flex flex-col gap-3 border-dashed opacity-40">
+      <div class="w-full h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="w-3/4 h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="w-5/6 h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="mt-auto pt-3 border-t border-[var(--border-soft)] flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-[var(--border-soft)]"></div>
+        <div class="flex flex-col gap-1.5">
+          <div class="w-20 h-3 rounded bg-[var(--border-soft)]"></div>
+          <div class="w-28 h-3 rounded bg-[var(--border-soft)]"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Slot testimonianza 2 -->
+    <div class="card p-6 flex flex-col gap-3 border-dashed opacity-40">
+      <div class="w-full h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="w-5/6 h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="w-2/3 h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="mt-auto pt-3 border-t border-[var(--border-soft)] flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-[var(--border-soft)]"></div>
+        <div class="flex flex-col gap-1.5">
+          <div class="w-24 h-3 rounded bg-[var(--border-soft)]"></div>
+          <div class="w-32 h-3 rounded bg-[var(--border-soft)]"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Slot testimonianza 3 -->
+    <div class="card p-6 flex flex-col gap-3 border-dashed opacity-40">
+      <div class="w-5/6 h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="w-full h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="w-3/4 h-4 rounded bg-[var(--border-soft)]"></div>
+      <div class="mt-auto pt-3 border-t border-[var(--border-soft)] flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-[var(--border-soft)]"></div>
+        <div class="flex flex-col gap-1.5">
+          <div class="w-16 h-3 rounded bg-[var(--border-soft)]"></div>
+          <div class="w-28 h-3 rounded bg-[var(--border-soft)]"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <a href="mailto:hello@jobriskai.it?subject=Testimonianza%20JobRiskAI" class="btn-ghost border border-[var(--border)] text-[var(--ink-1)] text-[13.5px] font-medium px-5 py-2.5 rounded-full inline-flex items-center gap-2">
+      ✍️ Condividi la tua esperienza
+    </a>
   </div>
 </section>
 
@@ -828,11 +913,11 @@
       </h2>
       <p class="text-[var(--ink-2)] text-[16px] max-w-xl mx-auto mb-8 leading-relaxed" data-i18n="home_cta2_p">Carica il tuo CV o scegli una professione dal catalogo. Nessuna registrazione richiesta.</p>
       <div class="flex flex-wrap items-center justify-center gap-3">
-        <a href="/classifica" class="btn-primary inline-flex items-center gap-2 text-white font-semibold text-[15px] px-7 py-3.5 rounded-full">
-          📋 <span data-i18n="home_cta_calc">Sfoglia tutte le professioni</span>
-        </a>
-        <a href="/cv-analyzer" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-semibold text-[15px] px-7 py-3.5 rounded-full inline-flex items-center gap-2">
+        <a href="/cv-analyzer" class="btn-primary inline-flex items-center gap-2 text-white font-semibold text-[15px] px-7 py-3.5 rounded-full">
           📄 <span data-i18n="home_cta_cv">Analizza il tuo CV</span>
+        </a>
+        <a href="/classifica" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-semibold text-[15px] px-7 py-3.5 rounded-full inline-flex items-center gap-2">
+          📋 <span data-i18n="home_cta_calc">Sfoglia tutte le professioni</span>
         </a>
       </div>
     </div>
