@@ -596,7 +596,7 @@ export const translations = {
         cla_cta_sub: "Want to know how personally at risk you are?",
         cla_cta_btn1: "🎯 Calculate your personal risk",
         cla_cta_btn2: "📄 Analyze your CV",
-        cla_footer: "JobRiskAI · Free AI risk analysis for 105 professions",
+        cla_footer: "JobRiskAI · Free AI risk analysis for 235 professions",
         cva_courses_title: "🎓 Upskill — Online Courses",
         cva_courses_sub: "Selected based on the missing skills in your profile",
         cva_books_title: "📚 Go Deeper — Recommended Reading",
