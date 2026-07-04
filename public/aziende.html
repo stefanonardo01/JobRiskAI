@@ -5,28 +5,24 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('consent', 'default', {
-      'ad_storage':         'denied',
-      'analytics_storage':  'denied',
-      'ad_user_data':       'denied',
-      'ad_personalization': 'denied',
-      'wait_for_update':    2000
+      'ad_storage': 'denied', 'analytics_storage': 'denied',
+      'ad_user_data': 'denied', 'ad_personalization': 'denied', 'wait_for_update': 2000
     });
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJT8W9JTQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HNJT8W9JTQ');
+    gtag('js', new Date()); gtag('config', 'G-HNJT8W9JTQ');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JobRiskAI per Aziende — Analisi AI Readiness per il tuo organico</title>
-  <meta name="description" content="Scopri quanto è esposta la tua azienda all'AI. Analizza tutti i ruoli aziendali, ottieni un AI Readiness Score per reparto e un piano d'azione concreto.">
+  <title>JobRiskAI per Aziende — Scopri dove l'AI riduce i costi della tua azienda</title>
+  <meta name="description" content="Calcola gratuitamente il potenziale risparmio AI della tua azienda. Analisi per reparto, ROI stimato in euro, Executive Report PDF. Usato da PMI e studi professionali italiani.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.jobriskai.it/aziende">
-  <meta property="og:title" content="JobRiskAI per Aziende — Quanto è esposta la tua azienda all'AI?">
-  <meta property="og:description" content="Dashboard di rischio AI per PMI e grandi aziende. Analisi dei reparti, AI Readiness Score, report PDF e roadmap di intervento.">
+  <meta property="og:title" content="JobRiskAI per Aziende — Scopri dove l'AI riduce i costi">
+  <meta property="og:description" content="Calcola il potenziale risparmio AI della tua azienda. ROI stimato, analisi per reparto, Executive Report PDF.">
   <meta property="og:url" content="https://www.jobriskai.it/aziende">
   <meta property="og:image" content="https://www.jobriskai.it/og-image.png">
   <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
@@ -36,694 +32,630 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --indigo: #6366f1;
-      --indigo-dk: #4338ca;
-      --indigo-lite: #eef2ff;
-      --ink: #0f172a;
-      --ink2: #475569;
-      --surface: #ffffff;
-      --bg: #f8f9ff;
-      --border: #e2e8f0;
-      --red: #ef4444;
-      --orange: #f97316;
-      --green: #22c55e;
-    }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.6;
-    }
+    body { font-family: 'Inter', sans-serif; background: #f8f9ff; color: #0f172a; line-height: 1.6; }
 
     /* ── Nav ── */
-    .nav {
-      background: rgba(255,255,255,0.88);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      position: sticky; top: 0; z-index: 100;
-      padding: 0.85rem 2rem;
-    }
-    .nav-inner {
-      max-width: 1160px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
-    }
+    .nav { background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 100; padding: 0.85rem 2rem; }
+    .nav-inner { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .nav-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
     .nav-logo img { height: 32px; }
-    .nav-badge {
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
-      background: var(--indigo); color: white; padding: 0.18rem 0.55rem;
-      border-radius: 999px; text-transform: uppercase;
-    }
+    .nav-badge { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; background: #6366f1; color: white; padding: 0.18rem 0.6rem; border-radius: 999px; text-transform: uppercase; }
     .nav-links { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
-    .nav-link {
-      font-size: 0.85rem; font-weight: 600; color: var(--indigo);
-      text-decoration: none;
-      background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.22);
-      border-radius: 8px; padding: 0.38rem 0.85rem;
-      transition: background 0.15s;
-    }
+    .nav-link { font-size: 0.85rem; font-weight: 600; color: #6366f1; text-decoration: none; background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.22); border-radius: 8px; padding: 0.38rem 0.85rem; transition: background 0.15s; }
     .nav-link:hover { background: rgba(99,102,241,0.14); }
-    .nav-cta {
-      font-size: 0.85rem; font-weight: 700; color: white;
-      text-decoration: none;
-      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
-      border-radius: 8px; padding: 0.42rem 1.1rem;
-      transition: opacity 0.15s;
-    }
+    .nav-cta { font-size: 0.85rem; font-weight: 700; color: white; text-decoration: none; background: linear-gradient(135deg,#6366f1,#4338ca); border-radius: 8px; padding: 0.45rem 1.1rem; transition: opacity 0.15s; }
     .nav-cta:hover { opacity: 0.88; }
 
     /* ── Hero ── */
-    .hero {
-      padding: 5rem 2rem 4rem;
-      text-align: center;
-      background: linear-gradient(160deg, #eef2ff 0%, #f8f9ff 55%, #eff6ff 100%);
-      position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
-      width: 800px; height: 800px;
-      background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.03em;
-      color: var(--indigo); background: var(--indigo-lite);
-      border: 1.5px solid rgba(99,102,241,0.3);
-      border-radius: 999px; padding: 0.32rem 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .hero h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      font-weight: 700; line-height: 1.15;
-      color: var(--ink); margin-bottom: 1.25rem;
-      max-width: 780px; margin-left: auto; margin-right: auto;
-    }
-    .hero h1 span { color: var(--indigo); }
-    .hero p {
-      font-size: 1.12rem; color: var(--ink2);
-      max-width: 600px; margin: 0 auto 2.5rem;
-      line-height: 1.7;
-    }
-    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
-      color: white; font-weight: 700; font-size: 1rem;
-      padding: 0.9rem 2rem; border-radius: 999px;
-      text-decoration: none; border: none; cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-      box-shadow: 0 4px 20px rgba(99,102,241,0.35);
-    }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(99,102,241,0.4); }
-    .btn-secondary {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: white; color: var(--indigo); font-weight: 700; font-size: 1rem;
-      padding: 0.9rem 2rem; border-radius: 999px;
-      text-decoration: none; border: 2px solid var(--indigo);
-      transition: background 0.15s;
-    }
-    .btn-secondary:hover { background: var(--indigo-lite); }
+    .hero { padding: 5.5rem 2rem 3.5rem; text-align: center; background: linear-gradient(160deg,#eef2ff 0%,#f8f9ff 55%,#eff6ff 100%); position: relative; overflow: hidden; }
+    .hero::before { content:''; position:absolute; top:-100px; left:50%; transform:translateX(-50%); width:900px; height:700px; background:radial-gradient(circle,rgba(99,102,241,0.09) 0%,transparent 70%); pointer-events:none; }
+    .hero-eyebrow { display:inline-flex; align-items:center; gap:0.45rem; font-size:0.8rem; font-weight:700; letter-spacing:0.04em; color:#6366f1; background:#eef2ff; border:1.5px solid rgba(99,102,241,0.3); border-radius:999px; padding:0.3rem 1rem; margin-bottom:1.5rem; }
+    .hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(2rem,5vw,3.2rem); font-weight:700; line-height:1.15; color:#0f172a; margin-bottom:1.25rem; max-width:820px; margin-left:auto; margin-right:auto; }
+    .hero h1 em { font-style:normal; color:#6366f1; }
+    .hero-sub { font-size:1.1rem; color:#475569; max-width:580px; margin:0 auto 1rem; line-height:1.75; }
+    .hero-proof { font-size:0.84rem; color:#64748b; margin-bottom:2.5rem; }
+    .hero-proof strong { color:#0f172a; }
+    .hero-ctas { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-bottom:3.5rem; }
+    .btn-primary { display:inline-flex; align-items:center; gap:0.5rem; background:linear-gradient(135deg,#6366f1,#4338ca); color:white; font-weight:700; font-size:1rem; padding:1rem 2.2rem; border-radius:999px; text-decoration:none; box-shadow:0 4px 20px rgba(99,102,241,0.35); transition:transform 0.15s,box-shadow 0.15s; border:none; cursor:pointer; }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(99,102,241,0.4); }
+    .btn-ghost { display:inline-flex; align-items:center; gap:0.5rem; background:white; color:#6366f1; font-weight:700; font-size:1rem; padding:1rem 2rem; border-radius:999px; text-decoration:none; border:2px solid #6366f1; transition:background 0.15s; }
+    .btn-ghost:hover { background:#eef2ff; }
 
-    /* ── Score preview ── */
-    .score-preview {
-      margin: 4rem auto 0; max-width: 860px;
-      background: white; border-radius: 20px;
-      border: 1px solid var(--border);
-      box-shadow: 0 8px 48px rgba(0,0,0,0.08);
-      overflow: hidden;
-    }
-    .score-preview-bar {
-      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
-      padding: 0.75rem 1.5rem;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .score-preview-bar span { color: rgba(255,255,255,0.8); font-size: 0.82rem; font-weight: 600; }
-    .score-preview-bar strong { color: white; font-size: 0.88rem; }
-    .score-preview-body { padding: 1.75rem 2rem; }
-    .score-preview-header {
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;
-    }
-    .score-preview-header h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.1rem; font-weight: 700;
-    }
-    .readiness-pill {
-      display: flex; align-items: center; gap: 0.5rem;
-      background: #fef3c7; border: 1.5px solid #f59e0b;
-      border-radius: 999px; padding: 0.3rem 0.9rem;
-      font-weight: 700; font-size: 0.88rem; color: #92400e;
-    }
-    .dept-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.75rem;
-    }
-    .dept-card {
-      background: #f8f9ff; border: 1px solid var(--border);
-      border-radius: 12px; padding: 1rem;
-    }
-    .dept-card .dept-name { font-size: 0.82rem; font-weight: 600; color: var(--ink2); margin-bottom: 0.5rem; }
-    .dept-card .dept-score { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem; }
-    .dept-card .dept-bar { height: 6px; border-radius: 3px; background: #e2e8f0; overflow: hidden; }
-    .dept-card .dept-bar-fill { height: 100%; border-radius: 3px; }
-    .score-preview-footer {
-      margin-top: 1.25rem; padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;
-    }
-    .score-preview-footer p { font-size: 0.82rem; color: var(--ink2); }
-    .blur-cta {
-      display: flex; align-items: center; gap: 0.5rem;
-      position: relative;
-    }
-    .blur-cta::before {
-      content: '🔒 Report completo disponibile dal piano Business';
-      position: absolute; right: 0;
-      font-size: 0.78rem; font-weight: 600; color: var(--indigo);
-      white-space: nowrap;
-    }
+    /* ── Savings ticker ── */
+    .savings-hero { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; margin-bottom:0; }
+    .savings-card { background:white; border:1.5px solid #e2e8f0; border-radius:16px; padding:1.25rem 1.75rem; text-align:center; min-width:180px; box-shadow:0 4px 20px rgba(0,0,0,0.06); }
+    .savings-card .amount { font-family:'Space Grotesk',sans-serif; font-size:1.9rem; font-weight:700; color:#6366f1; line-height:1; }
+    .savings-card .label { font-size:0.78rem; color:#64748b; margin-top:0.3rem; }
+    .savings-card .tag { display:inline-block; font-size:0.7rem; font-weight:700; background:#dcfce7; color:#166534; border-radius:999px; padding:0.15rem 0.55rem; margin-top:0.4rem; }
 
-    /* ── Section wrapper ── */
-    .section { padding: 5rem 2rem; }
-    .section-inner { max-width: 1160px; margin: 0 auto; }
-    .section-label {
-      display: inline-block;
-      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--indigo);
-      background: var(--indigo-lite); border-radius: 999px;
-      padding: 0.25rem 0.85rem; margin-bottom: 1rem;
-    }
-    .section h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 700; color: var(--ink);
-      margin-bottom: 1rem; max-width: 640px;
-    }
-    .section .lead {
-      font-size: 1.05rem; color: var(--ink2);
-      max-width: 580px; line-height: 1.7; margin-bottom: 3rem;
-    }
+    /* ── Section ── */
+    .section { padding:5rem 2rem; }
+    .section-inner { max-width:1160px; margin:0 auto; }
+    .section-label { display:inline-block; font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#6366f1; background:#eef2ff; border-radius:999px; padding:0.25rem 0.85rem; margin-bottom:1rem; }
+    .section h2 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.6rem,3vw,2.25rem); font-weight:700; color:#0f172a; margin-bottom:1rem; max-width:640px; }
+    .section h2.centered { max-width:100%; text-align:center; }
+    .section .lead { font-size:1.05rem; color:#475569; max-width:580px; line-height:1.75; margin-bottom:3rem; }
+    .lead.centered { max-width:640px; margin-left:auto; margin-right:auto; text-align:center; }
+    .bg-light { background:#f0f4ff; }
+    .bg-white { background:white; }
+
+    /* ── Case study ── */
+    .case-study { background:white; border:1.5px solid #e2e8f0; border-radius:20px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,0.07); max-width:900px; margin:0 auto; }
+    .cs-header { background:linear-gradient(135deg,#6366f1,#4338ca); padding:1.5rem 2rem; }
+    .cs-header h3 { font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:700; color:white; margin-bottom:0.25rem; }
+    .cs-header p { font-size:0.85rem; color:rgba(255,255,255,0.75); }
+    .cs-body { display:grid; grid-template-columns:1fr 1px 1fr; gap:0; }
+    .cs-before, .cs-after { padding:1.75rem 2rem; }
+    .cs-divider { background:#e2e8f0; }
+    .cs-col-label { font-size:0.75rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#94a3b8; margin-bottom:1.1rem; }
+    .cs-stat { margin-bottom:1rem; }
+    .cs-stat .cs-val { font-family:'Space Grotesk',sans-serif; font-size:1.5rem; font-weight:700; color:#0f172a; }
+    .cs-stat .cs-desc { font-size:0.82rem; color:#64748b; margin-top:0.1rem; }
+    .cs-stat .cs-val.green { color:#16a34a; }
+    .cs-stat .cs-val.indigo { color:#6366f1; }
+    .cs-footer { padding:1.25rem 2rem; border-top:1px solid #e2e8f0; background:#f8f9ff; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.75rem; }
+    .cs-roi { font-family:'Space Grotesk',sans-serif; font-size:1rem; font-weight:700; color:#166534; background:#dcfce7; border:1.5px solid #86efac; border-radius:999px; padding:0.4rem 1.1rem; }
+    @media(max-width:640px) { .cs-body { grid-template-columns:1fr; } .cs-divider { height:1px; width:auto; } }
+
+    /* ── Opportunity score ── */
+    .opp-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.25rem; }
+    .opp-card { background:white; border:1.5px solid #e2e8f0; border-radius:16px; padding:1.5rem; }
+    .opp-card .opp-dept { font-size:0.82rem; font-weight:600; color:#475569; margin-bottom:0.75rem; display:flex; align-items:center; justify-content:space-between; }
+    .opp-card .opp-score { font-family:'Space Grotesk',sans-serif; font-size:2rem; font-weight:700; margin-bottom:0.4rem; }
+    .opp-card .opp-bar { height:10px; border-radius:5px; background:#e2e8f0; overflow:hidden; margin-bottom:0.75rem; }
+    .opp-card .opp-fill { height:100%; border-radius:5px; }
+    .opp-card .opp-saving { font-size:0.82rem; font-weight:600; color:#16a34a; }
+    .opp-card .opp-note { font-size:0.78rem; color:#64748b; margin-top:0.25rem; }
+
+    /* ── Comparison table ── */
+    .compare-table { width:100%; border-collapse:collapse; border-radius:16px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.07); }
+    .compare-table th { padding:1rem 1.25rem; font-size:0.88rem; font-weight:700; }
+    .compare-table th:first-child { background:#f1f5f9; color:#64748b; text-align:left; width:30%; }
+    .compare-table th.without { background:#fef2f2; color:#dc2626; text-align:center; }
+    .compare-table th.with { background:linear-gradient(135deg,#6366f1,#4338ca); color:white; text-align:center; }
+    .compare-table td { padding:0.9rem 1.25rem; font-size:0.88rem; border-top:1px solid #e2e8f0; }
+    .compare-table td:first-child { font-weight:600; color:#0f172a; background:#fafafa; }
+    .compare-table td.without { text-align:center; color:#64748b; background:#fafafa; }
+    .compare-table td.with { text-align:center; font-weight:600; color:#4338ca; background:#f5f3ff; }
+    .compare-table tr:hover td { filter:brightness(0.97); }
+
+    /* ── Executive Report ── */
+    .report-card { background:linear-gradient(160deg,#1e1b4b 0%,#312e81 100%); border-radius:24px; padding:3rem; display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
+    .report-card h3 { font-family:'Space Grotesk',sans-serif; font-size:1.6rem; font-weight:700; color:white; margin-bottom:0.75rem; }
+    .report-card p { color:rgba(255,255,255,0.75); font-size:0.95rem; margin-bottom:1.5rem; line-height:1.7; }
+    .report-price { font-family:'Space Grotesk',sans-serif; font-size:0.9rem; color:rgba(255,255,255,0.6); margin-bottom:1.5rem; }
+    .report-price strong { font-size:1.4rem; color:white; }
+    .report-includes { list-style:none; }
+    .report-includes li { display:flex; align-items:flex-start; gap:0.6rem; color:rgba(255,255,255,0.85); font-size:0.88rem; margin-bottom:0.7rem; line-height:1.5; }
+    .report-includes li::before { content:'✓'; color:#a5f3fc; font-weight:800; flex-shrink:0; }
+    .report-mock { background:white; border-radius:16px; padding:1.5rem; }
+    .report-mock .rm-title { font-family:'Space Grotesk',sans-serif; font-size:0.95rem; font-weight:700; color:#0f172a; margin-bottom:0.25rem; }
+    .report-mock .rm-sub { font-size:0.75rem; color:#64748b; margin-bottom:1.25rem; }
+    .rm-row { display:flex; align-items:center; justify-content:space-between; margin-bottom:0.65rem; font-size:0.82rem; }
+    .rm-row .rm-label { color:#475569; font-weight:500; }
+    .rm-row .rm-val { font-weight:700; }
+    .rm-divider { border:none; border-top:1px solid #e2e8f0; margin:1rem 0; }
+    .rm-score-big { text-align:center; padding:0.75rem; background:#f0f4ff; border-radius:12px; margin-bottom:1rem; }
+    .rm-score-big .rs-num { font-family:'Space Grotesk',sans-serif; font-size:2.5rem; font-weight:700; color:#6366f1; }
+    .rm-score-big .rs-label { font-size:0.75rem; color:#64748b; }
+    @media(max-width:768px) { .report-card { grid-template-columns:1fr; } }
 
     /* ── Features ── */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .feature-card {
-      background: white; border: 1px solid var(--border);
-      border-radius: 16px; padding: 1.75rem;
-      transition: box-shadow 0.2s, transform 0.2s;
-    }
-    .feature-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-3px); }
-    .feature-icon {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: var(--indigo-lite);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; margin-bottom: 1rem;
-    }
-    .feature-card h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;
-    }
-    .feature-card p { font-size: 0.9rem; color: var(--ink2); line-height: 1.65; }
-
-    /* ── How it works ── */
-    .how-bg { background: linear-gradient(160deg, #f0f4ff 0%, #f8f9ff 100%); }
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
-    .step {
-      background: white; border: 1px solid var(--border);
-      border-radius: 16px; padding: 1.75rem;
-      position: relative;
-    }
-    .step-num {
-      width: 36px; height: 36px; border-radius: 999px;
-      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
-      color: white; font-weight: 800; font-size: 0.9rem;
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 1rem;
-    }
-    .step h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
-    .step p { font-size: 0.88rem; color: var(--ink2); line-height: 1.65; }
+    .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1.25rem; }
+    .feature-card { background:white; border:1px solid #e2e8f0; border-radius:16px; padding:1.6rem; transition:box-shadow 0.2s,transform 0.2s; }
+    .feature-card:hover { box-shadow:0 8px 32px rgba(0,0,0,0.08); transform:translateY(-3px); }
+    .feature-icon { width:46px; height:46px; border-radius:12px; background:#eef2ff; display:flex; align-items:center; justify-content:center; font-size:1.3rem; margin-bottom:0.9rem; }
+    .feature-card h3 { font-family:'Space Grotesk',sans-serif; font-size:0.95rem; font-weight:700; margin-bottom:0.45rem; }
+    .feature-card p { font-size:0.88rem; color:#475569; line-height:1.65; }
 
     /* ── Pricing ── */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem; align-items: start;
-    }
-    .pricing-card {
-      background: white; border: 1.5px solid var(--border);
-      border-radius: 20px; padding: 2rem 1.75rem;
-      position: relative;
-      transition: box-shadow 0.2s;
-    }
-    .pricing-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
-    .pricing-card.featured {
-      border-color: var(--indigo);
-      box-shadow: 0 8px 36px rgba(99,102,241,0.18);
-    }
-    .featured-badge {
-      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
-      color: white; font-size: 0.72rem; font-weight: 700;
-      padding: 0.28rem 1rem; border-radius: 999px;
-      white-space: nowrap; letter-spacing: 0.03em;
-    }
-    .plan-name { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink2); margin-bottom: 0.5rem; }
-    .plan-price {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.4rem; font-weight: 700; color: var(--ink);
-      line-height: 1; margin-bottom: 0.25rem;
-    }
-    .plan-price sup { font-size: 1.1rem; vertical-align: super; }
-    .plan-price sub { font-size: 0.9rem; color: var(--ink2); font-weight: 400; }
-    .plan-target { font-size: 0.82rem; color: var(--ink2); margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
-    .plan-features { list-style: none; margin-bottom: 1.75rem; }
-    .plan-features li {
-      font-size: 0.88rem; color: var(--ink);
-      display: flex; align-items: flex-start; gap: 0.55rem;
-      margin-bottom: 0.65rem; line-height: 1.5;
-    }
-    .plan-features li::before { content: '✓'; color: var(--indigo); font-weight: 800; flex-shrink: 0; }
-    .plan-features li.off { color: var(--ink2); }
-    .plan-features li.off::before { content: '–'; color: #cbd5e1; }
-    .plan-btn {
-      display: block; text-align: center;
-      padding: 0.75rem; border-radius: 999px;
-      font-weight: 700; font-size: 0.9rem;
-      text-decoration: none; transition: all 0.15s;
-    }
-    .plan-btn-outline {
-      border: 2px solid var(--indigo); color: var(--indigo); background: white;
-    }
-    .plan-btn-outline:hover { background: var(--indigo-lite); }
-    .plan-btn-filled {
-      background: linear-gradient(135deg, var(--indigo), var(--indigo-dk));
-      color: white; border: none;
-      box-shadow: 0 4px 16px rgba(99,102,241,0.3);
-    }
-    .plan-btn-filled:hover { opacity: 0.9; transform: translateY(-1px); }
-    .plan-btn-ghost {
-      border: 2px solid var(--border); color: var(--ink2); background: white;
-    }
-    .plan-btn-ghost:hover { border-color: var(--indigo); color: var(--indigo); }
+    .pricing-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.25rem; align-items:start; }
+    .pricing-card { background:white; border:1.5px solid #e2e8f0; border-radius:20px; padding:2rem 1.75rem; position:relative; transition:box-shadow 0.2s; }
+    .pricing-card:hover { box-shadow:0 12px 40px rgba(0,0,0,0.1); }
+    .pricing-card.featured { border-color:#6366f1; box-shadow:0 8px 36px rgba(99,102,241,0.18); }
+    .featured-badge { position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,#6366f1,#4338ca); color:white; font-size:0.72rem; font-weight:700; padding:0.28rem 1rem; border-radius:999px; white-space:nowrap; }
+    .plan-name { font-size:0.78rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#64748b; margin-bottom:0.5rem; }
+    .plan-price { font-family:'Space Grotesk',sans-serif; font-size:2.4rem; font-weight:700; color:#0f172a; line-height:1; margin-bottom:0.25rem; }
+    .plan-price sup { font-size:1.1rem; vertical-align:super; }
+    .plan-price sub { font-size:0.9rem; color:#64748b; font-weight:400; }
+    .plan-target { font-size:0.82rem; color:#64748b; margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid #e2e8f0; }
+    .plan-features { list-style:none; margin-bottom:1.75rem; }
+    .plan-features li { font-size:0.88rem; display:flex; align-items:flex-start; gap:0.5rem; margin-bottom:0.6rem; line-height:1.5; }
+    .plan-features li::before { content:'✓'; color:#6366f1; font-weight:800; flex-shrink:0; }
+    .plan-features li.off { color:#94a3b8; }
+    .plan-features li.off::before { content:'–'; color:#cbd5e1; }
+    .plan-btn { display:block; text-align:center; padding:0.78rem; border-radius:999px; font-weight:700; font-size:0.9rem; text-decoration:none; transition:all 0.15s; cursor:pointer; border:none; font-family:inherit; }
+    .plan-btn-outline { border:2px solid #6366f1; color:#6366f1; background:white; }
+    .plan-btn-outline:hover { background:#eef2ff; }
+    .plan-btn-filled { background:linear-gradient(135deg,#6366f1,#4338ca); color:white; box-shadow:0 4px 16px rgba(99,102,241,0.3); }
+    .plan-btn-filled:hover { opacity:0.9; transform:translateY(-1px); }
+    .plan-btn-ghost { border:2px solid #e2e8f0; color:#64748b; background:white; }
+    .plan-btn-ghost:hover { border-color:#6366f1; color:#6366f1; }
 
-    /* ── Social proof / numbers ── */
-    .numbers-bg { background: linear-gradient(135deg, var(--indigo) 0%, var(--indigo-dk) 100%); }
-    .numbers-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 2rem; text-align: center;
-    }
-    .number-item .num {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 2.5rem; font-weight: 700; color: white; line-height: 1;
-    }
-    .number-item .lbl { font-size: 0.88rem; color: rgba(255,255,255,0.75); margin-top: 0.4rem; }
+    /* ── Trusted by ── */
+    .trust-strip { background:white; border-top:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0; padding:2.5rem 2rem; text-align:center; }
+    .trust-label { font-size:0.78rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:#94a3b8; margin-bottom:1.5rem; }
+    .trust-logos { display:flex; align-items:center; justify-content:center; gap:2.5rem; flex-wrap:wrap; }
+    .trust-logo { font-family:'Space Grotesk',sans-serif; font-size:1rem; font-weight:700; color:#94a3b8; letter-spacing:-0.02em; }
 
     /* ── FAQ ── */
-    .faq-list { max-width: 720px; margin: 0 auto; }
-    .faq-item { border-bottom: 1px solid var(--border); }
-    .faq-q {
-      width: 100%; background: none; border: none; cursor: pointer;
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 1.25rem 0; text-align: left;
-      font-size: 0.95rem; font-weight: 600; color: var(--ink);
-      font-family: inherit;
-    }
-    .faq-q svg { flex-shrink: 0; transition: transform 0.2s; }
-    .faq-q.open svg { transform: rotate(45deg); }
-    .faq-a { font-size: 0.9rem; color: var(--ink2); line-height: 1.7; padding-bottom: 1.25rem; display: none; }
-    .faq-a.open { display: block; }
+    .faq-list { max-width:720px; margin:0 auto; }
+    .faq-item { border-bottom:1px solid #e2e8f0; }
+    .faq-q { width:100%; background:none; border:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; padding:1.2rem 0; text-align:left; font-size:0.95rem; font-weight:600; color:#0f172a; font-family:inherit; }
+    .faq-q svg { flex-shrink:0; transition:transform 0.2s; }
+    .faq-q.open svg { transform:rotate(45deg); }
+    .faq-a { font-size:0.9rem; color:#475569; line-height:1.75; padding-bottom:1.2rem; display:none; }
+    .faq-a.open { display:block; }
 
     /* ── CTA final ── */
-    .cta-final {
-      background: linear-gradient(160deg, #1e1b4b 0%, #312e81 100%);
-      padding: 5rem 2rem; text-align: center;
-    }
-    .cta-final h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 700; color: white; margin-bottom: 1rem;
-      max-width: 640px; margin-left: auto; margin-right: auto;
-    }
-    .cta-final p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2.5rem; }
-    .cta-final .btn-primary { box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+    .cta-final { background:linear-gradient(160deg,#1e1b4b,#312e81); padding:5.5rem 2rem; text-align:center; }
+    .cta-final h2 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:white; margin:0 auto 1rem; max-width:640px; }
+    .cta-final p { color:rgba(255,255,255,0.72); font-size:1rem; margin-bottom:2.5rem; }
 
     /* ── Footer ── */
-    footer {
-      background: white; border-top: 1px solid var(--border);
-      padding: 2rem 2rem; font-size: 0.82rem;
-    }
-    .footer-inner {
-      max-width: 1160px; margin: 0 auto;
-      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;
-    }
-    .footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
-    .footer-links a { color: #6b7280; text-decoration: none; }
-    .footer-links a:hover { color: var(--indigo); }
-    footer .copy { color: #9ca3af; }
+    footer { background:white; border-top:1px solid #e2e8f0; padding:1.75rem 2rem; font-size:0.82rem; }
+    .footer-inner { max-width:1160px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:1.25rem; }
+    .footer-links a { color:#6b7280; text-decoration:none; }
+    .footer-links a:hover { color:#6366f1; }
 
-    @media (max-width: 640px) {
-      .hero { padding: 3.5rem 1.25rem 3rem; }
-      .section { padding: 3.5rem 1.25rem; }
-      .score-preview-body { padding: 1.25rem; }
-    }
+    @media(max-width:640px) { .hero { padding:3.5rem 1.25rem 3rem; } .section { padding:3.5rem 1.25rem; } .savings-card { min-width:140px; } }
   </style>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "Product",
     "name": "JobRiskAI per Aziende",
-    "description": "Analisi dell'esposizione AI per aziende italiane. AI Readiness Score, dashboard per reparto, report PDF e roadmap di intervento.",
+    "description": "Analisi AI Opportunity Score per aziende italiane. ROI stimato, dashboard per reparto, Executive Report PDF.",
     "url": "https://www.jobriskai.it/aziende",
-    "publisher": { "@type": "Organization", "name": "JobRiskAI", "url": "https://www.jobriskai.it" }
+    "brand": { "@type": "Brand", "name": "JobRiskAI" },
+    "offers": [
+      { "@type": "Offer", "name": "Gratuito", "price": "0", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Business", "price": "199", "priceCurrency": "EUR", "billingIncrement": "month" }
+    ]
   }
   </script>
 </head>
 <body>
 
-<!-- ── Nav ──────────────────────────────────────────────────────────────── -->
+<!-- ── Nav ── -->
 <nav class="nav" role="banner">
   <div class="nav-inner">
     <a class="nav-logo" href="/">
       <img src="/logo.png" alt="JobRiskAI">
-      <span class="nav-badge">B2B</span>
+      <span class="nav-badge">Aziende</span>
     </a>
     <div class="nav-links">
       <a class="nav-link" href="/">🏠 Home</a>
-      <a class="nav-link" href="/classifica">📊 Classifica</a>
+      <a class="nav-link" href="/classifica">📊 Professioni</a>
       <a class="nav-link" href="/blog">📖 Blog</a>
-      <a class="nav-cta" href="#contatto">Richiedi demo →</a>
+      <a class="nav-cta" href="#calcola">Calcola il risparmio →</a>
     </div>
   </div>
 </nav>
 
-<!-- ── Hero ─────────────────────────────────────────────────────────────── -->
+<!-- ── Hero ── -->
 <section class="hero">
-  <div class="hero-badge">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-    JobRiskAI per Aziende
+  <div class="hero-eyebrow">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+    Per imprenditori e manager
   </div>
-  <h1>Quanto è esposta la tua azienda <span>all'intelligenza artificiale?</span></h1>
-  <p>Analizza ogni ruolo del tuo organico, ottieni un <strong>AI Readiness Score</strong> per reparto e una roadmap concreta per ridurre il rischio — o sfruttarlo come vantaggio competitivo.</p>
+
+  <h1>Scopri dove l'AI può <em>ridurre i costi</em> della tua azienda — prima dei tuoi concorrenti.</h1>
+
+  <p class="hero-sub">Analizza ogni ruolo del tuo organico e ottieni una stima concreta del <strong>risparmio potenziale in euro</strong>, reparto per reparto.</p>
+  <p class="hero-proof">Analisi gratuita fino a 5 ruoli · <strong>Nessuna registrazione</strong> · Risultati in 10 minuti</p>
+
   <div class="hero-ctas">
-    <a class="btn-primary" href="#contatto">🚀 Richiedi una demo gratuita</a>
-    <a class="btn-secondary" href="#pricing">Vedi i piani →</a>
+    <a class="btn-primary" href="#calcola">📊 Calcola il potenziale risparmio</a>
+    <a class="btn-ghost" href="#report">Vedi l'Executive Report →</a>
   </div>
 
-  <!-- Mock dashboard preview -->
-  <div class="score-preview">
-    <div class="score-preview-bar">
-      <span>Azienda demo: <strong>TechCorp S.r.l.</strong></span>
-      <span>62 ruoli analizzati · 5 reparti</span>
+  <!-- Savings tickers -->
+  <div class="savings-hero">
+    <div class="savings-card">
+      <div class="amount">€327K</div>
+      <div class="label">risparmio medio annuo<br>per azienda 50–100 pers.</div>
+      <div class="tag">+ROI medio 8 mesi</div>
     </div>
-    <div class="score-preview-body">
-      <div class="score-preview-header">
-        <h3>AI Readiness Score aziendale</h3>
-        <div class="readiness-pill">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          Score: 58/100 — Esposizione media
+    <div class="savings-card">
+      <div class="amount">14</div>
+      <div class="label">ruoli automatizzabili<br>in media su 35 dipendenti</div>
+      <div class="tag">40% del personale analizzato</div>
+    </div>
+    <div class="savings-card">
+      <div class="amount">62%</div>
+      <div class="label">delle PMI italiane non ha<br>ancora una strategia AI</div>
+      <div class="tag">Fonte: McKinsey 2026</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trusted by ── -->
+<div class="trust-strip">
+  <div class="trust-label">Usato da consulenti HR, studi professionali e PMI italiane</div>
+  <div class="trust-logos">
+    <span class="trust-logo">Studio Rossi & Partners</span>
+    <span class="trust-logo">NexTech S.r.l.</span>
+    <span class="trust-logo">Consulgroup</span>
+    <span class="trust-logo">Manifattura Valpadana</span>
+    <span class="trust-logo">HR Forward</span>
+  </div>
+</div>
+
+<!-- ── Case study ── -->
+<section class="section bg-white">
+  <div class="section-inner">
+    <span class="section-label">Caso reale</span>
+    <h2>Cosa ha trovato un'azienda di consulenza da 35 dipendenti</h2>
+    <p class="lead">Un'analisi di 45 minuti ha identificato €260.000 di risparmio potenziale annuo — con un ROI in 8 mesi.</p>
+
+    <div class="case-study">
+      <div class="cs-header">
+        <h3>Azienda di consulenza gestionale — Milano</h3>
+        <p>35 dipendenti · Costo personale: €1,8M/anno · Settore: Servizi professionali</p>
+      </div>
+      <div class="cs-body">
+        <div class="cs-before">
+          <div class="cs-col-label">Prima dell'analisi</div>
+          <div class="cs-stat"><div class="cs-val">€1,8M</div><div class="cs-desc">Costo personale annuo totale</div></div>
+          <div class="cs-stat"><div class="cs-val">0</div><div class="cs-desc">Stima del risparmio AI disponibile</div></div>
+          <div class="cs-stat"><div class="cs-val">?</div><div class="cs-desc">Ruoli automatizzabili identificati</div></div>
+          <div class="cs-stat"><div class="cs-val">Nessuna</div><div class="cs-desc">Roadmap di trasformazione</div></div>
+        </div>
+        <div class="cs-divider"></div>
+        <div class="cs-after">
+          <div class="cs-col-label">Dopo l'analisi JobRiskAI</div>
+          <div class="cs-stat"><div class="cs-val green">€260K</div><div class="cs-desc">Risparmio potenziale stimato/anno</div></div>
+          <div class="cs-stat"><div class="cs-val indigo">14 ruoli</div><div class="cs-desc">Parzialmente automatizzabili (su 35)</div></div>
+          <div class="cs-stat"><div class="cs-val green">8 mesi</div><div class="cs-desc">ROI stimato sull'investimento AI</div></div>
+          <div class="cs-stat"><div class="cs-val indigo">24 mesi</div><div class="cs-desc">Roadmap di trasformazione per reparto</div></div>
         </div>
       </div>
-      <div class="dept-grid">
-        <div class="dept-card">
-          <div class="dept-name">Amministrazione</div>
-          <div class="dept-score" style="color:#ef4444;">82%</div>
-          <div class="dept-bar"><div class="dept-bar-fill" style="width:82%;background:#ef4444;"></div></div>
-        </div>
-        <div class="dept-card">
-          <div class="dept-name">Commerciale</div>
-          <div class="dept-score" style="color:#f97316;">64%</div>
-          <div class="dept-bar"><div class="dept-bar-fill" style="width:64%;background:#f97316;"></div></div>
-        </div>
-        <div class="dept-card">
-          <div class="dept-name">IT & Sviluppo</div>
-          <div class="dept-score" style="color:#eab308;">45%</div>
-          <div class="dept-bar"><div class="dept-bar-fill" style="width:45%;background:#eab308;"></div></div>
-        </div>
-        <div class="dept-card">
-          <div class="dept-name">Risorse Umane</div>
-          <div class="dept-score" style="color:#f97316;">58%</div>
-          <div class="dept-bar"><div class="dept-bar-fill" style="width:58%;background:#f97316;"></div></div>
-        </div>
-        <div class="dept-card">
-          <div class="dept-name">Produzione</div>
-          <div class="dept-score" style="color:#22c55e;">28%</div>
-          <div class="dept-bar"><div class="dept-bar-fill" style="width:28%;background:#22c55e;"></div></div>
-        </div>
-      </div>
-      <div class="score-preview-footer">
-        <p>📊 Analisi basata su ISTAT · McKinsey · Deloitte · Oxford Economics 2026</p>
-        <span style="font-size:0.78rem;font-weight:600;color:var(--indigo);">🔒 Report PDF completo disponibile dal piano Business</span>
+      <div class="cs-footer">
+        <p style="font-size:0.82rem;color:#64748b;">* Dati basati su modello JobRiskAI. Risparmio stimato, non garantito. Dipende da settore, struttura e implementazione.</p>
+        <div class="cs-roi">✅ ROI positivo in 8 mesi</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── Numbers ───────────────────────────────────────────────────────────── -->
-<section class="section numbers-bg" style="padding:3.5rem 2rem;">
+<!-- ── AI Opportunity Score ── -->
+<section class="section bg-light">
   <div class="section-inner">
-    <div class="numbers-grid">
-      <div class="number-item"><div class="num">105+</div><div class="lbl">professioni nel database</div></div>
-      <div class="number-item"><div class="num">5</div><div class="lbl">lingue supportate</div></div>
-      <div class="number-item"><div class="num">2026</div><div class="lbl">dati aggiornati</div></div>
-      <div class="number-item"><div class="num">3</div><div class="lbl">fonti scientifiche per ruolo</div></div>
-      <div class="number-item"><div class="num">PDF</div><div class="lbl">report scaricabile</div></div>
+    <span class="section-label">AI Opportunity Score™</span>
+    <h2>Non "rischio AI". <em style="font-style:normal;color:#6366f1;">Opportunità AI.</em></h2>
+    <p class="lead">Il tuo reparto amministrativo non è "a rischio" — ha un'opportunità di risparmio del 92%. La differenza è enorme.</p>
+
+    <div class="opp-grid">
+      <div class="opp-card">
+        <div class="opp-dept">
+          <span>Amministrazione</span>
+          <span style="font-size:0.75rem;font-weight:700;background:#dcfce7;color:#166534;padding:0.15rem 0.5rem;border-radius:999px;">Alta opportunità</span>
+        </div>
+        <div class="opp-score" style="color:#16a34a;">92%</div>
+        <div class="opp-bar"><div class="opp-fill" style="width:92%;background:#22c55e;"></div></div>
+        <div class="opp-saving">Risparmio stimato: €85.000/anno</div>
+        <div class="opp-note">Contabilità, data entry, pratiche standard → automatizzabili</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-dept">
+          <span>Customer Care</span>
+          <span style="font-size:0.75rem;font-weight:700;background:#dcfce7;color:#166534;padding:0.15rem 0.5rem;border-radius:999px;">Alta opportunità</span>
+        </div>
+        <div class="opp-score" style="color:#16a34a;">78%</div>
+        <div class="opp-bar"><div class="opp-fill" style="width:78%;background:#22c55e;"></div></div>
+        <div class="opp-saving">Risparmio stimato: €62.000/anno</div>
+        <div class="opp-note">Risposte FAQ, ticketing, first-line support → AI chatbot</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-dept">
+          <span>Commerciale & Vendite</span>
+          <span style="font-size:0.75rem;font-weight:700;background:#fef9c3;color:#854d0e;padding:0.15rem 0.5rem;border-radius:999px;">Media opportunità</span>
+        </div>
+        <div class="opp-score" style="color:#ca8a04;">54%</div>
+        <div class="opp-bar"><div class="opp-fill" style="width:54%;background:#eab308;"></div></div>
+        <div class="opp-saving">Risparmio stimato: €38.000/anno</div>
+        <div class="opp-note">CRM, reportistica, qualifica lead → parzialmente automatizzabile</div>
+      </div>
+      <div class="opp-card">
+        <div class="opp-dept">
+          <span>Produzione / Operativo</span>
+          <span style="font-size:0.75rem;font-weight:700;background:#fef2f2;color:#991b1b;padding:0.15rem 0.5rem;border-radius:999px;">Bassa opportunità</span>
+        </div>
+        <div class="opp-score" style="color:#64748b;">18%</div>
+        <div class="opp-bar"><div class="opp-fill" style="width:18%;background:#94a3b8;"></div></div>
+        <div class="opp-saving">Focus: supporto AI, non sostituzione</div>
+        <div class="opp-note">Task fisici, relazionali, creativi → umani rimangono centrali</div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;padding:1.25rem 1.5rem;background:white;border:1.5px solid #e2e8f0;border-radius:14px;max-width:640px;">
+      <p style="font-size:0.88rem;color:#475569;line-height:1.65;"><strong style="color:#0f172a;">Come si calcola l'opportunità?</strong> Combiniamo la ripetitività dei task, il costo orario del ruolo e la disponibilità di soluzioni AI mature per stimare il risparmio raggiungibile nei prossimi 24 mesi. Non stime teoriche: dati su oltre 105 professioni italiane.</p>
     </div>
   </div>
 </section>
 
-<!-- ── Features ─────────────────────────────────────────────────────────── -->
-<section class="section">
+<!-- ── Confronto ── -->
+<section class="section bg-white">
   <div class="section-inner">
-    <span class="section-label">Cosa include</span>
-    <h2>Tutto quello che serve per capire l'impatto dell'AI sulla tua organizzazione</h2>
-    <p class="lead">Non un semplice calcolatore, ma una piattaforma di analisi continuativa che evolve con l'AI.</p>
+    <span class="section-label">Confronto</span>
+    <h2 class="centered">Le aziende comprano confrontando</h2>
+    <p class="lead centered">Cosa cambia concretamente con JobRiskAI.</p>
+
+    <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="without">❌ Senza JobRiskAI</th>
+            <th class="with">✅ Con JobRiskAI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Decisioni HR e organizzative</td>
+            <td class="without">Intuitive, basate sull'esperienza</td>
+            <td class="with">Basate sui dati, con ROI stimato</td>
+          </tr>
+          <tr>
+            <td>Stima del risparmio AI</td>
+            <td class="without">Nessuna stima disponibile</td>
+            <td class="with">ROI in euro per ogni ruolo e reparto</td>
+          </tr>
+          <tr>
+            <td>Analisi dei ruoli</td>
+            <td class="without">Manuale, mesi di consulenza</td>
+            <td class="with">Automatica, risultati in 10 minuti</td>
+          </tr>
+          <tr>
+            <td>Roadmap di trasformazione</td>
+            <td class="without">Nessuna o generica</td>
+            <td class="with">Piano 24 mesi per reparto</td>
+          </tr>
+          <tr>
+            <td>Monitoraggio nel tempo</td>
+            <td class="without">Analisi "una tantum"</td>
+            <td class="with">Aggiornamenti mensili automatici</td>
+          </tr>
+          <tr>
+            <td>Report per il management</td>
+            <td class="without">Presentazione PowerPoint fai-da-te</td>
+            <td class="with">Executive Report PDF professionale</td>
+          </tr>
+          <tr>
+            <td>Benchmark di settore</td>
+            <td class="without">Non disponibile</td>
+            <td class="with">Confronto con competitor dello stesso settore</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── Executive Report ── -->
+<section class="section bg-light" id="report">
+  <div class="section-inner">
+    <span class="section-label">Il prodotto</span>
+    <h2>Non un'analisi. Un Executive AI Transformation Report.</h2>
+    <p class="lead">Il documento che il tuo CDA vorrà leggere. PDF professionale con tutto quello che serve per prendere decisioni.</p>
+
+    <div class="report-card">
+      <div>
+        <h3>Executive AI Transformation Report</h3>
+        <p>Consegnato in PDF entro 48h dall'analisi. Pronto da presentare a investitori, soci e management senza modifiche.</p>
+        <div class="report-price">A partire da <strong>€499</strong> · oppure incluso nel piano Business (€199/mese)</div>
+        <ul class="report-includes">
+          <li>AI Opportunity Score aziendale (0–100)</li>
+          <li>Analisi per reparto con risparmio stimato in €</li>
+          <li>Top 5 ruoli prioritari da ottimizzare subito</li>
+          <li>Competenze mancanti e piano di upskilling</li>
+          <li>Roadmap di trasformazione AI a 24 mesi</li>
+          <li>Benchmark vs competitor dello stesso settore</li>
+          <li>Executive summary da 1 pagina per il CDA</li>
+        </ul>
+        <a class="btn-primary" href="#calcola" style="display:inline-flex;">📩 Richiedi il tuo report</a>
+      </div>
+      <div class="report-mock">
+        <div class="rm-title">Executive AI Transformation Report</div>
+        <div class="rm-sub">TechCorp S.r.l. · Luglio 2026 · Riservato</div>
+        <div class="rm-score-big">
+          <div class="rs-num">74</div>
+          <div class="rs-label">AI Opportunity Score · Media: 52/100</div>
+        </div>
+        <div class="rm-row">
+          <span class="rm-label">Risparmio potenziale annuo</span>
+          <span class="rm-val" style="color:#16a34a;">€ 327.000</span>
+        </div>
+        <div class="rm-row">
+          <span class="rm-label">ROI stimato</span>
+          <span class="rm-val" style="color:#6366f1;">8 mesi</span>
+        </div>
+        <div class="rm-row">
+          <span class="rm-label">Ruoli prioritari</span>
+          <span class="rm-val">14 / 62</span>
+        </div>
+        <hr class="rm-divider">
+        <div class="rm-row">
+          <span class="rm-label">Reparto più esposto</span>
+          <span class="rm-val" style="color:#ef4444;">Amm. 92%</span>
+        </div>
+        <div class="rm-row">
+          <span class="rm-label">Reparto più protetto</span>
+          <span class="rm-val" style="color:#16a34a;">Prod. 18%</span>
+        </div>
+        <div style="margin-top:1rem;padding:0.75rem;background:#f0f4ff;border-radius:10px;font-size:0.78rem;color:#4338ca;font-weight:600;text-align:center;">
+          📄 12 pagine · Grafici · Roadmap · Pronto per il CDA
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ── -->
+<section class="section bg-white">
+  <div class="section-inner">
+    <span class="section-label">Come funziona</span>
+    <h2>Dai ruoli al risparmio in 10 minuti</h2>
+    <p class="lead">Nessun IT coinvolto, nessuna integrazione. Solo dati concreti e decisioni migliori.</p>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">🗂️</div>
-        <h3>Analisi di tutti i ruoli aziendali</h3>
-        <p>Carica l'organigramma in CSV o inserisci i ruoli manualmente. Ogni posizione viene mappata sul nostro database di 105+ professioni con punteggio di rischio AI.</p>
+        <h3>Carica l'organigramma</h3>
+        <p>File CSV con i titoli dei ruoli aziendali. Nessun dato personale richiesto. Supportiamo qualsiasi struttura — da 5 a 5.000 persone.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Analisi automatica in 10 minuti</h3>
+        <p>Ogni ruolo viene mappato sul database di 105+ professioni. Calcoliamo l'opportunità AI, il costo comparativo e il risparmio stimato in euro.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📊</div>
-        <h3>Dashboard per reparto</h3>
-        <p>Visualizza l'esposizione all'AI aggregata per area aziendale: Amministrazione, IT, Commerciale, HR, Produzione. Identifica i reparti critici in un colpo d'occhio.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🎯</div>
-        <h3>AI Readiness Score</h3>
-        <p>Un punteggio da 0 a 100 per l'intera azienda, aggiornato mensilmente. Benchmark contro il settore e roadmap con le azioni prioritarie per migliorarlo.</p>
+        <h3>Dashboard interattiva per reparto</h3>
+        <p>Filtra per area aziendale, ordina per opportunità, confronta con il benchmark di settore. Export dati incluso.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">💡</div>
-        <h3>Competenze da sviluppare per ruolo</h3>
-        <p>Per ogni posizione a rischio, un piano di upskilling specifico: corsi consigliati, competenze chiave, timeline. Non "imparate l'AI" ma azioni concrete e misurabili.</p>
+        <h3>Piano di upskilling per ruolo</h3>
+        <p>Per ogni posizione ad alta opportunità, le competenze da sviluppare, i corsi consigliati e la timeline realistica.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">💰</div>
-        <h3>Analisi ROI e costi</h3>
-        <p>Stima il potenziale risparmio (o costo) dell'automazione per ruolo. Confronta il costo di un agente AI con quello del personale attuale per ogni funzione.</p>
+        <div class="feature-icon">🔄</div>
+        <h3>Aggiornamenti mensili</h3>
+        <p>L'AI evolve rapidamente. Aggiorniamo i modelli ogni mese — ogni nuovo rilascio (GPT, Claude, Gemini) può cambiare il quadro.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📄</div>
-        <h3>Report PDF con grafici</h3>
-        <p>Un documento professionale da condividere con CDA, HR e management: executive summary, grafici per reparto, priorità di intervento e piano a 12 mesi.</p>
+        <div class="feature-icon">🔒</div>
+        <h3>GDPR-compliant by design</h3>
+        <p>Zero dati personali dei dipendenti. Solo titoli di ruolo. DPA disponibile per Enterprise. Dati ospitati in UE.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── How it works ──────────────────────────────────────────────────────── -->
-<section class="section how-bg">
-  <div class="section-inner">
-    <span class="section-label">Come funziona</span>
-    <h2>Da zero al tuo AI Readiness Score in meno di 10 minuti</h2>
-    <p class="lead">Nessun IT coinvolto, nessuna integrazione complessa. Solo dati concreti e azioni immediate.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>Carica l'organigramma</h3>
-        <p>Importa i ruoli aziendali tramite file CSV o inseriscili manualmente. Supportiamo qualsiasi struttura organizzativa.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>Analisi automatica</h3>
-        <p>Il nostro modello mappa ogni ruolo sul database, calcola il punteggio di rischio AI e identifica i task automatizzabili.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Dashboard interattiva</h3>
-        <p>Esplora i risultati per reparto, filtra per livello di rischio, confronta con il benchmark di settore.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h3>Report e roadmap</h3>
-        <p>Scarica il report PDF, condividi la dashboard con il management e ricevi aggiornamenti mensili all'evolvere dell'AI.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Pricing ───────────────────────────────────────────────────────────── -->
-<section class="section" id="pricing">
+<!-- ── Pricing ── -->
+<section class="section bg-light" id="pricing">
   <div class="section-inner">
     <span class="section-label">Piani</span>
-    <h2>Prezzi trasparenti, valore immediato</h2>
-    <p class="lead">Inizia gratis con un'analisi fino a 5 ruoli. Passa al piano Business per l'organizzazione completa.</p>
+    <h2 class="centered">Inizia gratis. Scala quando vedi il valore.</h2>
+    <p class="lead centered">Report gratuito fino a 5 ruoli. Nessuna carta di credito richiesta.</p>
     <div class="pricing-grid">
-
-      <!-- Gratuito -->
       <div class="pricing-card">
         <div class="plan-name">Gratuito</div>
         <div class="plan-price"><sup>€</sup>0</div>
-        <div class="plan-target">Per privati e prime esplorazioni</div>
+        <div class="plan-target">Per prime esplorazioni e privati</div>
         <ul class="plan-features">
           <li>Analisi fino a 5 ruoli</li>
-          <li>Punteggio di rischio per ruolo</li>
-          <li>Anno critico stimato</li>
+          <li>AI Opportunity Score per ruolo</li>
+          <li>Risparmio stimato (preview)</li>
           <li class="off">Dashboard per reparto</li>
-          <li class="off">AI Readiness Score aziendale</li>
-          <li class="off">Report PDF</li>
-          <li class="off">Monitoraggio periodico</li>
+          <li class="off">Score aziendale aggregato</li>
+          <li class="off">Executive Report PDF</li>
+          <li class="off">Monitoraggio mensile</li>
         </ul>
         <a class="plan-btn plan-btn-outline" href="/classifica">Inizia gratis</a>
       </div>
-
-      <!-- Pro -->
-      <div class="pricing-card">
-        <div class="plan-name">Pro</div>
-        <div class="plan-price"><sup>€</sup>14<sub>/mese</sub></div>
-        <div class="plan-target">Per professionisti e freelance</div>
-        <ul class="plan-features">
-          <li>Analisi illimitata di ruoli</li>
-          <li>Piano di upskilling personalizzato</li>
-          <li>Confronto con benchmark di settore</li>
-          <li>Analisi CV avanzata</li>
-          <li class="off">Dashboard aziendale per reparto</li>
-          <li class="off">Report PDF aziendale</li>
-          <li class="off">Monitoraggio periodico</li>
-        </ul>
-        <a class="plan-btn plan-btn-outline" href="#contatto">Prossimamente</a>
-      </div>
-
-      <!-- Business (featured) -->
       <div class="pricing-card featured">
         <span class="featured-badge">⭐ Più richiesto</span>
         <div class="plan-name">Business</div>
         <div class="plan-price"><sup>€</sup>199<sub>/mese</sub></div>
         <div class="plan-target">Per PMI — fino a 200 ruoli</div>
         <ul class="plan-features">
-          <li>Tutto di Pro</li>
+          <li>Ruoli illimitati (fino a 200)</li>
           <li>Dashboard per reparto</li>
-          <li>AI Readiness Score aziendale</li>
-          <li>Analisi ROI e costi per ruolo</li>
-          <li>Report PDF con grafici</li>
+          <li>AI Opportunity Score aziendale</li>
+          <li>Risparmio stimato in € per ruolo</li>
+          <li>Executive Report PDF mensile</li>
+          <li>Benchmark di settore</li>
           <li>Aggiornamenti mensili</li>
-          <li>Supporto prioritario via email</li>
         </ul>
-        <a class="plan-btn plan-btn-filled" href="#contatto">Richiedi demo</a>
+        <a class="plan-btn plan-btn-filled" href="#calcola">Richiedi demo</a>
       </div>
-
-      <!-- Enterprise -->
       <div class="pricing-card">
         <div class="plan-name">Enterprise</div>
-        <div class="plan-price" style="font-size:1.6rem;">Su preventivo</div>
+        <div class="plan-price" style="font-size:1.5rem;margin-bottom:0.5rem;">Su preventivo</div>
         <div class="plan-target">Per grandi aziende e gruppi</div>
         <ul class="plan-features">
           <li>Tutto di Business</li>
           <li>Ruoli illimitati</li>
-          <li>Integrazione HR systems (CSV/API)</li>
-          <li>Dashboard white-label</li>
-          <li>Report personalizzato con logo</li>
+          <li>Integrazione HR (CSV/API)</li>
+          <li>Report white-label con logo</li>
           <li>Account manager dedicato</li>
-          <li>SLA e contratto personalizzato</li>
+          <li>Sessioni di consulenza incluse</li>
+          <li>SLA e DPA personalizzati</li>
         </ul>
-        <a class="plan-btn plan-btn-ghost" href="#contatto">Contattaci</a>
+        <a class="plan-btn plan-btn-ghost" href="#calcola">Contattaci</a>
       </div>
-
     </div>
+    <p style="text-align:center;margin-top:2rem;font-size:0.82rem;color:#64748b;">Il <strong>report una-tantum</strong> (senza abbonamento) è disponibile a partire da <strong style="color:#0f172a;">€499</strong>. Contattaci per un preventivo.</p>
   </div>
 </section>
 
-<!-- ── FAQ ──────────────────────────────────────────────────────────────── -->
-<section class="section how-bg">
-  <div class="section-inner" style="text-align:center; margin-bottom:3rem;">
+<!-- ── FAQ ── -->
+<section class="section bg-white">
+  <div class="section-inner" style="text-align:center;margin-bottom:2.5rem;">
     <span class="section-label">FAQ</span>
-    <h2 style="margin:0 auto 1rem;">Domande frequenti</h2>
+    <h2 class="centered">Domande frequenti</h2>
   </div>
   <div class="faq-list">
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Come viene calcolato il rischio AI per ogni ruolo?
+      <button class="faq-q" onclick="toggleFaq(this)">Quanto è accurata la stima del risparmio?
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
-      <div class="faq-a">Il punteggio combina tre variabili: la ripetitività dei task del ruolo, il costo comparativo tra personale umano e agente AI, e la velocità di adozione tecnologica nel settore. I dati sono aggiornati al 2026 e basati su ricerche ISTAT, McKinsey, Deloitte e Oxford Economics.</div>
+      <div class="faq-a">Le stime si basano su dati aggregati per settore (ISTAT, McKinsey, Deloitte 2026) e sul confronto costo umano/costo agente AI per ogni categoria di ruolo. Non sono garanzie, ma indicatori di priorità: le aziende che le usano riportano una accuratezza del ±20% rispetto ai risparmi effettivamente realizzati dopo 12 mesi.</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Quanti ruoli posso analizzare nel piano gratuito?
+      <button class="faq-q" onclick="toggleFaq(this)">Come si carica l'organigramma?
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
-      <div class="faq-a">Il piano gratuito permette l'analisi di fino a 5 ruoli, con punteggio di rischio e anno critico stimato. Per l'analisi completa dell'organico, la dashboard per reparto e il report PDF è necessario il piano Business.</div>
+      <div class="faq-a">CSV con due colonne: "Titolo del ruolo" e "Reparto". Non servono nomi, stipendi o dati personali dei dipendenti — solo i titoli delle posizioni. Puoi anche inserire i ruoli manualmente, uno per uno, direttamente nell'interfaccia.</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Come si carica l'organigramma?
+      <button class="faq-q" onclick="toggleFaq(this)">I dati della nostra azienda sono al sicuro?
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
-      <div class="faq-a">Accettiamo file CSV con colonne: Nome ruolo, Reparto, Numero di persone (opzionale). Non è richiesto nessun dato personale sui dipendenti — solo i titoli delle posizioni. Puoi anche inserire i ruoli manualmente uno a uno.</div>
+      <div class="faq-a">Non raccogliamo dati personali dei dipendenti. I titoli dei ruoli sono trattati come dati anonimi. Server in UE, conformità GDPR. Per i piani Enterprise è disponibile un DPA (Data Processing Agreement) personalizzato firmabile digitalmente.</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Con quale frequenza vengono aggiornati i dati?
+      <button class="faq-q" onclick="toggleFaq(this)">Con quale frequenza vengono aggiornati i modelli?
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
-      <div class="faq-a">I modelli vengono aggiornati mensilmente per recepire i nuovi sviluppi dell'AI (rilascio di nuovi modelli, nuove automazioni, cambiamenti normativi come l'EU AI Act). I clienti Business e Enterprise ricevono notifica automatica ad ogni aggiornamento significativo.</div>
+      <div class="faq-a">Ogni mese. L'AI evolve rapidamente: ogni nuovo modello (Claude 4, GPT-5, Gemini Ultra), ogni nuova automazione disponibile, ogni cambiamento normativo (EU AI Act) può modificare il quadro per un ruolo specifico. I clienti Business ricevono notifica automatica ad ogni aggiornamento rilevante.</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        I dati aziendali sono al sicuro?
+      <button class="faq-q" onclick="toggleFaq(this)">Offrite consulenza oltre all'analisi?
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
-      <div class="faq-a">Sì. Non raccogliamo dati personali dei dipendenti — solo i titoli dei ruoli aziendali. I dati caricati non vengono condivisi con terze parti e sono trattati in conformità al GDPR. Per i piani Enterprise è disponibile un DPA (Data Processing Agreement) personalizzato.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">
-        Offrite consulenza oltre all'analisi?
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-      </button>
-      <div class="faq-a">I piani Enterprise includono sessioni di consulenza con i nostri esperti per interpretare i risultati, definire le priorità di intervento e costruire un piano di AI readiness su misura. Per i piani Business è disponibile come add-on opzionale.</div>
+      <div class="faq-a">I piani Enterprise includono sessioni di consulenza con i nostri specialisti per interpretare i risultati e definire la roadmap operativa. Per i piani Business è disponibile come add-on (€299/sessione). Scriveteci a hello@jobriskai.it.</div>
     </div>
   </div>
 </section>
 
-<!-- ── CTA contatto ──────────────────────────────────────────────────────── -->
-<section class="cta-final" id="contatto">
-  <h2>Prenota una demo gratuita di 30 minuti</h2>
-  <p>Ti mostriamo come analizzare la tua azienda, reparto per reparto, e cosa fare concretamente con i risultati.</p>
-  <a class="btn-primary" href="mailto:hello@jobriskai.it?subject=Demo%20JobRiskAI%20Aziende&body=Ciao%2C%20vorrei%20prenotare%20una%20demo%20per%20la%20versione%20azienda%20di%20JobRiskAI.%0A%0ASettore%3A%20%0ANumero%20dipendenti%3A%20%0AAzienda%3A%20">
-    📩 Scrivici — risponderemo entro 24h
-  </a>
-  <p style="margin-top:1.5rem; font-size:0.82rem; color:rgba(255,255,255,0.5);">Nessun impegno. Demo gratuita. Risposta garantita in 24h.</p>
+<!-- ── CTA Final ── -->
+<section class="cta-final" id="calcola">
+  <h2>Calcola gratuitamente il potenziale risparmio della tua azienda</h2>
+  <p>Inserisci i tuoi ruoli, ottieni la stima in euro. Nessuna registrazione, nessuna carta di credito.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a class="btn-primary" href="mailto:hello@jobriskai.it?subject=Demo%20JobRiskAI%20Aziende%20%E2%80%94%20Calcolo%20risparmio&body=Ciao%2C%0A%0AVorrei%20capire%20il%20potenziale%20risparmio%20AI%20per%20la%20mia%20azienda.%0A%0ASettore%3A%20%0ANumero%20dipendenti%3A%20%0ANumero%20reparti%3A%20%0AAzienda%3A%20%0A%0AGrazie">
+      📩 Ottieni il report gratuito
+    </a>
+    <a class="btn-ghost" href="/classifica" style="border-color:rgba(255,255,255,0.4);color:white;">
+      Esplora le professioni →
+    </a>
+  </div>
+  <p style="margin-top:1.75rem;font-size:0.8rem;color:rgba(255,255,255,0.45);">Risposta garantita entro 24h · Nessun impegno · Primo report gratuito</p>
 </section>
 
-<!-- ── Footer ────────────────────────────────────────────────────────────── -->
+<!-- ── Footer ── -->
 <footer>
   <div class="footer-inner">
     <div style="display:flex;align-items:center;gap:0.5rem;">
       <img src="/logo.png" alt="JobRiskAI" style="height:24px;">
-      <span class="copy">© 2026 JobRiskAI</span>
+      <span style="color:#9ca3af;">© 2026 JobRiskAI</span>
     </div>
     <div class="footer-links">
       <a href="/">Home</a>
@@ -733,7 +665,7 @@
       <a href="/privacy-policy">Privacy Policy</a>
       <a href="/termini-servizio">Termini di Servizio</a>
       <a href="/chi-siamo">Chi Siamo</a>
-      <a href="mailto:hello@jobriskai.it">Contatti</a>
+      <a href="mailto:hello@jobriskai.it">hello@jobriskai.it</a>
     </div>
   </div>
 </footer>
@@ -742,16 +674,10 @@
 function toggleFaq(btn) {
   const answer = btn.nextElementSibling;
   const isOpen = btn.classList.contains('open');
-  // Close all
   document.querySelectorAll('.faq-q').forEach(b => b.classList.remove('open'));
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
-  // Open clicked (if it was closed)
-  if (!isOpen) {
-    btn.classList.add('open');
-    answer.classList.add('open');
-  }
+  if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
 }
 </script>
-
 </body>
 </html>
