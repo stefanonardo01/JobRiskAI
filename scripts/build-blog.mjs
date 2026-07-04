@@ -1338,7 +1338,7 @@ function buildArticle(art) {
     description: art.metaDesc,
     datePublished: art.date,
     dateModified: art.date,
-    author: { '@type': 'Person', name: au.name, jobTitle: au.role, url: au.linkedin },
+    author: { '@type': 'Person', name: au.name, jobTitle: au.role },
     publisher: { '@type': 'Organization', name: 'JobRiskAI', logo: { '@type': 'ImageObject', url: 'https://www.jobriskai.it/logo.png' } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.jobriskai.it/blog/${art.slug}` },
     image: 'https://www.jobriskai.it/og-image.png',
@@ -1434,10 +1434,6 @@ function buildArticle(art) {
             <div style="font-size:0.88rem;font-weight:600;color:var(--text-primary);">${esc(au.name)}</div>
             <div style="font-size:0.78rem;color:var(--text-secondary);">${esc(au.role)} · ${dateFormatted} · ${art.readMin} min di lettura</div>
           </div>
-          <a href="${au.linkedin}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.3rem;font-size:0.76rem;color:#0A66C2;font-weight:600;text-decoration:none;padding:0.3rem 0.65rem;border:1px solid #0A66C2;border-radius:999px;flex-shrink:0;" onmouseover="this.style.background='#0A66C2';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#0A66C2'">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
         </div>
       </div>
 
@@ -1460,10 +1456,6 @@ function buildArticle(art) {
           <div style="font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:0.2rem;">${esc(au.name)}</div>
           <div style="font-size:0.8rem;color:${au.color};font-weight:600;margin-bottom:0.6rem;">${esc(au.role)}</div>
           <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.65;margin:0 0 0.75rem;">${esc(au.bio)}</p>
-          <a href="${au.linkedin}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.8rem;color:#0A66C2;font-weight:600;text-decoration:none;">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            Segui su LinkedIn
-          </a>
         </div>
       </div>
 
