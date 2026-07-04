@@ -16,7 +16,7 @@ function esc(s) {
 // ── Autori ────────────────────────────────────────────────────────────────────
 const AUTHORS = {
   marco: {
-    name:    'Marco Ferretti',
+    name:    'Marco F.',
     initials:'MF',
     color:   '#6366f1',
     role:    'Economista del lavoro',
@@ -24,7 +24,7 @@ const AUTHORS = {
     linkedin: 'https://www.linkedin.com/in/marco-ferretti-economia',
   },
   giulia: {
-    name:    'Giulia Marchetti',
+    name:    'Giulia M.',
     initials:'GM',
     color:   '#0ea5e9',
     role:    'Giornalista tech e divulgatrice',
@@ -32,7 +32,7 @@ const AUTHORS = {
     linkedin: 'https://www.linkedin.com/in/giulia-marchetti-tech',
   },
   davide: {
-    name:    'Davide Conti',
+    name:    'Davide C.',
     initials:'DC',
     color:   '#10b981',
     role:    'Data scientist e ricercatore',
