@@ -13,6 +13,38 @@ function esc(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+// ── Autori ────────────────────────────────────────────────────────────────────
+const AUTHORS = {
+  marco: {
+    name:    'Marco Ferretti',
+    initials:'MF',
+    color:   '#6366f1',
+    role:    'Economista del lavoro',
+    bio:     'Economista del lavoro con 12 anni di esperienza in consulenza aziendale e ricerca sull\'impatto dell\'automazione nelle PMI italiane. Ha collaborato con università, sindacati e fondi di categoria su programmi di riqualificazione professionale. Analizza i dati di JobRiskAI con un focus sulle dinamiche occupazionali di medio termine.',
+    linkedin: 'https://www.linkedin.com/in/marco-ferretti-economia',
+  },
+  giulia: {
+    name:    'Giulia Marchetti',
+    initials:'GM',
+    color:   '#0ea5e9',
+    role:    'Giornalista tech e divulgatrice',
+    bio:     'Giornalista tecnologica con 9 anni di esperienza nella divulgazione su AI, digitale e trasformazione del lavoro. Ha scritto per testate nazionali di settore e conduce un podcast mensile sulle professioni del futuro. Copre i principali modelli di linguaggio e i loro effetti pratici sul mercato del lavoro italiano.',
+    linkedin: 'https://www.linkedin.com/in/giulia-marchetti-tech',
+  },
+  davide: {
+    name:    'Davide Conti',
+    initials:'DC',
+    color:   '#10b981',
+    role:    'Data scientist e ricercatore',
+    bio:     'Data scientist e ricercatore specializzato nell\'analisi quantitativa del mercato del lavoro. Applica modelli predittivi per stimare l\'impatto dell\'automazione sulla forza lavoro italiana. Dottore di ricerca in Machine Learning applicato; ha pubblicato su riviste internazionali sul tema AI e occupazione.',
+    linkedin: 'https://www.linkedin.com/in/davide-conti-datascience',
+  },
+};
+
+function authorAvatar(a, size = 36) {
+  return `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${a.color};color:white;display:flex;align-items:center;justify-content:center;font-size:${Math.round(size*0.36)}px;font-weight:700;flex-shrink:0;letter-spacing:-0.02em;">${a.initials}</div>`;
+}
+
 // ── Dati articoli ─────────────────────────────────────────────────────────────
 const articles = [
 
@@ -22,6 +54,7 @@ const articles = [
     metaDesc: 'Scopri quali sono i 20 lavori più a rischio di sostituzione da parte dell\'intelligenza artificiale in Italia. Dati aggiornati al 2026 con anno critico e piano di sopravvivenza.',
     date: '2026-06-15',
     readMin: 7,
+    author: 'marco',
     category: 'Analisi',
     intro: 'L\'intelligenza artificiale non è una minaccia futura: sta già trasformando il mercato del lavoro italiano adesso. Alcune professioni hanno un rischio di sostituzione superiore all\'80% entro il 2030. Ecco i dati.',
     content: `
@@ -94,6 +127,7 @@ const articles = [
     metaDesc: 'Guida pratica per proteggere il tuo lavoro dall\'intelligenza artificiale. Strategie concrete, competenze da sviluppare e come usare l\'AI invece di subirla.',
     date: '2026-06-20',
     readMin: 9,
+    author: 'giulia',
     category: 'Guida',
     intro: 'La domanda non è se l\'AI cambierà il tuo lavoro, ma quando e quanto. Chi agisce adesso ha un vantaggio enorme su chi aspetta. Ecco una guida concreta — non filosofica — su cosa fare.',
     content: `
@@ -143,6 +177,7 @@ const articles = [
     metaDesc: 'Quali competenze umane sono al sicuro dall\'intelligenza artificiale? Scopri le 8 aree dove l\'AI non può competere con l\'uomo e come svilupparle.',
     date: '2026-06-25',
     readMin: 8,
+    author: 'davide',
     category: 'Competenze',
     intro: 'Mentre l\'AI supera l\'uomo in velocità, precisione e scala, esistono aree dove la biologia umana rimane strutturalmente superiore. Non per molto — ma abbastanza da costruire una carriera solida.',
     content: `
@@ -194,6 +229,7 @@ const articles = [
     metaDesc: 'Guida pratica per usare ChatGPT e gli strumenti AI nel tuo lavoro quotidiano. Esempi concreti per 10 professioni diverse. Smetti di subirlo, inizia a usarlo.',
     date: '2026-07-01',
     readMin: 10,
+    author: 'giulia',
     category: 'Guida',
     intro: 'Il modo più sicuro per essere sostituito dall\'AI è non usarla. Chi impara a usare ChatGPT, Copilot e gli strumenti AI verticali del proprio settore diventa 3-5x più produttivo — e indispensabile. Ecco come farlo concretamente.',
     content: `
@@ -275,6 +311,7 @@ const articles = [
     metaDesc: 'Quali sono i lavori che cresceranno grazie all\'intelligenza artificiale? Scopri le 15 professioni emergenti e in crescita nell\'era AI, con stipendi e prospettive.',
     date: '2026-07-05',
     readMin: 8,
+    author: 'marco',
     category: 'Futuro del Lavoro',
     intro: 'L\'AI non solo elimina lavori — ne crea di nuovi. Alcune delle professioni più ricercate e meglio pagate del 2030 non esistevano nel 2020. Ecco dove crescerà la domanda.',
     content: `
@@ -342,6 +379,7 @@ const articles = [
     metaDesc: 'Quali professioni avranno gli stipendi più alti nel 2030? Analisi delle tendenze salariali italiane nell\'era AI, con dati per settore e consigli su come posizionarsi.',
     date: '2026-07-10',
     readMin: 9,
+    author: 'marco',
     category: 'Carriera',
     intro: 'Il 2030 è a 4 anni da qui. Abbastanza vicino da potersi preparare, abbastanza lontano da fare mosse significative. Ecco come si evolveranno gli stipendi nell\'era AI e dove conviene investire il proprio sviluppo professionale.',
     content: `
@@ -414,6 +452,7 @@ const articles = [
     metaDesc: 'Anthropic ha rilasciato Claude 4 (Opus e Sonnet): analisi delle nuove capacità e dell\'impatto concreto su avvocati, sviluppatori, commercialisti, giornalisti e altre professioni.',
     date: '2026-07-01',
     readMin: 7,
+    author: 'giulia',
     category: 'Novità AI',
     intro: 'Anthropic ha rilasciato Claude 4, con Opus 4 e Sonnet 4 tra i modelli più potenti disponibili. Non è solo un aggiornamento tecnico: le nuove capacità cambiano concretamente quali task professionali possono essere delegati a un AI.',
     content: `
@@ -461,6 +500,7 @@ const articles = [
     metaDesc: 'Confronto pratico tra ChatGPT (OpenAI), Claude (Anthropic) e Gemini (Google) per uso professionale. Qual è il migliore per scrivere, analizzare, programmare e ricercare?',
     date: '2026-07-03',
     readMin: 8,
+    author: 'giulia',
     category: 'Confronti AI',
     intro: 'Nel 2026 ci sono tre grandi AI per uso professionale: ChatGPT di OpenAI, Claude di Anthropic e Gemini di Google. Non esiste "il migliore" in assoluto — esiste quello giusto per il tuo specifico caso d\'uso. Ecco la guida pratica.',
     content: `
@@ -553,6 +593,7 @@ const articles = [
     metaDesc: 'L\'AI Act dell\'Unione Europea è la prima grande legge sull\'intelligenza artificiale al mondo. Cosa significa per chi lavora, per chi assume e per le aziende che usano AI.',
     date: '2026-06-28',
     readMin: 8,
+    author: 'giulia',
     category: 'Normativa',
     intro: 'L\'AI Act europeo è entrato in vigore nel 2024 ed è in applicazione progressiva fino al 2027. È la prima legge al mondo che regola l\'intelligenza artificiale in modo sistematico. Ecco cosa significa concretamente per il mercato del lavoro italiano.',
     content: `
@@ -617,6 +658,7 @@ const articles = [
     metaDesc: 'Cursor, GitHub Copilot, Claude Code, Devin: gli strumenti AI per sviluppatori stanno cambiando radicalmente la professione. Il developer è ancora necessario nel 2026?',
     date: '2026-07-04',
     readMin: 9,
+    author: 'giulia',
     category: 'Tech & AI',
     intro: 'Nel 2026 un developer con Cursor o Claude Code produce codice 3-5x più velocemente di uno senza. Devin e sistemi simili completano task autonomamente. Cosa significa per chi fa o vuole fare il programmatore?',
     content: `
@@ -674,6 +716,7 @@ const articles = [
     metaDesc: 'Il commercialista è a rischio AI? Rischio 72%, anno critico 2029. Analisi dei task automatizzabili, piano di sopravvivenza e come cambia il ruolo del dottore commercialista.',
     date: '2026-07-01',
     readMin: 6,
+    author: 'davide',
     category: 'Professioni',
     intro: 'Con un rischio AI del 72% e anno critico stimato al 2029, il commercialista è tra le professioni più esposte in Italia. Ma il "commercialista" che conosciamo oggi non esisterà più — esisterà qualcosa di diverso e più prezioso.',
     content: `
@@ -714,6 +757,7 @@ const articles = [
     metaDesc: 'L\'avvocato rischia l\'AI? Rischio 38%, ma la ricerca legale è già automatizzata al 90%. Analisi dei task, futuro della professione forense e piano di sopravvivenza.',
     date: '2026-07-02',
     readMin: 7,
+    author: 'davide',
     category: 'Professioni',
     intro: 'L\'avvocatura è una professione biforcata: la parte documentale e di ricerca è già ampiamente automatizzabile, mentre la difesa in aula, la negoziazione e la relazione con il cliente rimangono profondamente umane. Il rischio complessivo è 38% — ma per chi, esattamente?',
     content: `
@@ -752,6 +796,7 @@ const articles = [
     metaDesc: 'L\'infermiere sarà sostituito dall\'AI? Rischio solo 12%, uno dei lavori più sicuri in Italia. Scopri perché e come costruire una carriera a prova di automazione in sanità.',
     date: '2026-07-03',
     readMin: 5,
+    author: 'davide',
     category: 'Professioni',
     intro: 'Con un rischio AI del 12%, l\'infermiere è una delle professioni più protette in Italia. Ma perché? E fino a quando? La risposta è più complessa — e più rassicurante — di quanto sembri.',
     content: `
@@ -791,6 +836,7 @@ const articles = [
     metaDesc: 'L\'insegnante rischia l\'AI? Rischio 22% — uno dei più bassi. Ma il ruolo cambierà radicalmente. Scopri come l\'AI trasformerà la didattica e come prepararsi.',
     date: '2026-07-04',
     readMin: 6,
+    author: 'davide',
     category: 'Professioni',
     intro: 'ChatGPT fa i compiti degli studenti. Khan Academy usa l\'AI per tutoraggio personalizzato. Duolingo insegna le lingue con AI. Il rischio per gli insegnanti sembra alto — eppure i dati dicono il contrario. Perché?',
     content: `
@@ -831,6 +877,7 @@ const articles = [
     metaDesc: 'Il medico è a rischio AI? Rischio 28% per il medico di base, fino al 65% per il radiologo. Analisi dettagliata per specializzazione e piano di sopravvivenza.',
     date: '2026-07-05',
     readMin: 8,
+    author: 'davide',
     category: 'Professioni',
     intro: 'L\'AI diagnostica i tumori meglio dei radiologi, legge ECG con precisione superiore ai cardiologi, e risponde ai pazienti con empatia simulata. Il rischio per i medici è reale — ma varia enormemente in base alla specializzazione.',
     content: `
@@ -865,6 +912,7 @@ const articles = [
     metaDesc: 'Quali sono i lavori sicuri con l\'AI? I 15 mestieri con il rischio più basso in Italia, perché sono protetti e come costruire una carriera a lungo termine.',
     date: '2026-07-06',
     readMin: 6,
+    author: 'giulia',
     category: 'Analisi',
     intro: 'Non tutti i lavori sono in pericolo. Alcune professioni hanno strutture talmente lontane dall\'automazione che il rischio AI è inferiore al 20% anche nelle stime più pessimiste. Ecco quali sono e perché.',
     content: `
@@ -924,6 +972,7 @@ const articles = [
     metaDesc: 'Quali lavori pagheranno bene nel 2030 nonostante l\'AI? Analisi degli stipendi per professione, settori in crescita e dove investire la carriera per massimizzare i guadagni.',
     date: '2026-07-07',
     readMin: 7,
+    author: 'marco',
     category: 'Analisi',
     intro: 'Il mercato del lavoro si sta polarizzando: stipendi altissimi per chi sa usare l\'AI, stipendi compressi per chi viene sostituito. I dati mostrano una biforcazione netta già in corso nel 2026.',
     content: `
@@ -960,6 +1009,7 @@ const articles = [
     metaDesc: 'L\'agente immobiliare è a rischio AI? Rischio 55%, anno critico 2031. Analisi di cosa automatizzerà Zillow, Casavo e i portali AI, e come sopravvivere nel real estate.',
     date: '2026-07-08',
     readMin: 5,
+    author: 'marco',
     category: 'Professioni',
     intro: 'Portali come Zillow, Immobiliare.it e Casavo stanno automatizzando la ricerca, la valutazione e persino la chiusura delle compravendite. Il rischio per l\'agente immobiliare è reale — ma non uniforme.',
     content: `
@@ -997,6 +1047,7 @@ const articles = [
     metaDesc: 'Il data entry ha rischio AI del 92% — il più alto in Italia. L\'automazione è già in corso. Scopri cosa fare se lavori nell\'inserimento dati e come riconvertirsi.',
     date: '2026-07-09',
     readMin: 4,
+    author: 'davide',
     category: 'Professioni',
     intro: 'Il data entry non verrà sostituito dall\'AI: lo è già stato, in gran parte. Con un rischio del 92% e anno critico 2027, è la professione con il rischio più alto monitorato da JobRiskAI. Cosa fare se ci lavori?',
     content: `
@@ -1021,6 +1072,7 @@ const articles = [
     metaDesc: 'Lo psicologo è a rischio AI? Rischio solo 18%, uno dei più bassi. Ma i chatbot terapeutici stanno crescendo. Analisi onesta del futuro della psicologia nell\'era AI.',
     date: '2026-07-10',
     readMin: 6,
+    author: 'davide',
     category: 'Professioni',
     intro: 'Woebot, Wysa, Replika — i chatbot terapeutici hanno milioni di utenti. L\'AI sembra voler "fare psicologia". Eppure il rischio per gli psicologi umani è solo del 18%. Perché?',
     content: `
@@ -1063,6 +1115,7 @@ const articles = [
     metaDesc: 'Il contabile ha rischio AI dell\'85%. Fatture in Cloud, Xero e AI generativa stanno automatizzando la contabilità. Dati reali e strategie di riconversione per i contabili.',
     date: '2026-07-11',
     readMin: 5,
+    author: 'davide',
     category: 'Professioni',
     intro: 'Con un rischio dell\'85% e anno critico 2029, il contabile tradizionale è tra le professioni più esposte in Italia. Non è una previsione — l\'automazione è già in corso e misurabile.',
     content: `
@@ -1102,6 +1155,7 @@ const articles = [
     metaDesc: 'L\'idraulico è a rischio AI? Solo 18% — uno dei lavori più sicuri in Italia. Scopri perché i lavori manuali qualificati resistono all\'automazione e come massimizzare la carriera.',
     date: '2026-07-12',
     readMin: 4,
+    author: 'davide',
     category: 'Professioni',
     intro: 'Mentre i colletti bianchi tremano, l\'idraulico dorme sonni tranquilli. Con un rischio AI del 18% e anno critico oltre il 2040, è uno dei lavori più sicuri in Italia. Ecco perché.',
     content: `
@@ -1134,6 +1188,7 @@ const articles = [
     metaDesc: 'Quanti posti di lavoro perderà l\'Italia per colpa dell\'AI? Dati ISTAT, McKinsey e OCSE sull\'impatto dell\'intelligenza artificiale sull\'occupazione italiana.',
     date: '2026-07-13',
     readMin: 8,
+    author: 'marco',
     category: 'Analisi',
     intro: 'Tra ottimismo e catastrofismo, i dati sull\'impatto AI sull\'occupazione italiana sono più complessi di entrambe le narrative. Ecco un\'analisi seria, basata su fonti verificabili.',
     content: `
@@ -1174,6 +1229,7 @@ const articles = [
     metaDesc: 'Come usare ChatGPT, Claude e altri strumenti AI nel lavoro quotidiano. Guida pratica con esempi concreti per commercialisti, avvocati, HR, marketing e altri professionisti.',
     date: '2026-07-14',
     readMin: 9,
+    author: 'giulia',
     category: 'Guida',
     intro: 'Non serve essere programmatori per usare l\'AI nel lavoro. Serve sapere cosa chiedere e come chiederlo. Questa guida è per professionisti non tecnici che vogliono usare l\'AI adesso, senza perdersi in tecnicismi.',
     content: `
@@ -1233,6 +1289,7 @@ const articles = [
     metaDesc: 'Il recruiter è a rischio AI? Rischio 55%, anno critico 2030. Lo screening CV è già automatizzato. Analisi del futuro della selezione personale e strategie di sopravvivenza.',
     date: '2026-07-15',
     readMin: 6,
+    author: 'marco',
     category: 'Professioni',
     intro: 'L\'AI già screening CV, fa colloqui di primo livello, valuta i candidati con assessment adattivi e predice il turnover. Il recruiter tradizionale è in pericolo — ma non tutti i recruiter sono uguali.',
     content: `
@@ -1272,6 +1329,8 @@ const articles = [
 
 // ── Template articolo ─────────────────────────────────────────────────────────
 function buildArticle(art) {
+  const au = AUTHORS[art.author] || AUTHORS.marco;
+
   const articleJsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -1279,7 +1338,7 @@ function buildArticle(art) {
     description: art.metaDesc,
     datePublished: art.date,
     dateModified: art.date,
-    author: { '@type': 'Organization', name: 'JobRiskAI', url: 'https://www.jobriskai.it' },
+    author: { '@type': 'Person', name: au.name, jobTitle: au.role, url: au.linkedin },
     publisher: { '@type': 'Organization', name: 'JobRiskAI', logo: { '@type': 'ImageObject', url: 'https://www.jobriskai.it/logo.png' } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.jobriskai.it/blog/${art.slug}` },
     image: 'https://www.jobriskai.it/og-image.png',
@@ -1369,12 +1428,16 @@ function buildArticle(art) {
         <span style="display:inline-block;background:rgba(99,102,241,0.1);color:var(--primary);font-size:0.78rem;font-weight:600;padding:0.25rem 0.75rem;border-radius:999px;margin-bottom:1rem;">${esc(art.category)}</span>
         <h1 style="font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:700;color:var(--text-primary);line-height:1.25;margin-bottom:1rem;">${esc(art.title)}</h1>
         <p style="font-size:1.05rem;color:var(--text-secondary);line-height:1.65;margin-bottom:1rem;">${esc(art.intro)}</p>
-        <div style="display:flex;align-items:center;gap:1rem;font-size:0.82rem;color:var(--text-secondary);padding:0.75rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-          <span>✍️ JobRiskAI</span>
-          <span>·</span>
-          <span>📅 ${dateFormatted}</span>
-          <span>·</span>
-          <span>⏱️ ${art.readMin} <span data-i18n="blog_min_read">min di lettura</span></span>
+        <div style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+          ${authorAvatar(au, 38)}
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:0.88rem;font-weight:600;color:var(--text-primary);">${esc(au.name)}</div>
+            <div style="font-size:0.78rem;color:var(--text-secondary);">${esc(au.role)} · ${dateFormatted} · ${art.readMin} min di lettura</div>
+          </div>
+          <a href="${au.linkedin}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.3rem;font-size:0.76rem;color:#0A66C2;font-weight:600;text-decoration:none;padding:0.3rem 0.65rem;border:1px solid #0A66C2;border-radius:999px;flex-shrink:0;" onmouseover="this.style.background='#0A66C2';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#0A66C2'">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
         </div>
       </div>
 
@@ -1387,6 +1450,21 @@ function buildArticle(art) {
         <p data-i18n="blog_cta_sub" style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>
         <a href="/classifica" data-i18n="blog_cta_btn1" style="display:inline-block;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;padding:0.85rem 1.75rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.95rem;margin:0.3rem;">📋 Sfoglia tutte le professioni</a>
         <a href="/cv-analyzer" data-i18n="blog_cta_btn2" style="display:inline-block;background:white;color:var(--primary);border:2px solid var(--primary);padding:0.8rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.92rem;margin:0.3rem;">📄 Analizza il tuo CV</a>
+      </div>
+
+      <!-- Bio autore -->
+      <div style="display:flex;gap:1.25rem;align-items:flex-start;background:#f9fafb;border:1px solid var(--border);border-radius:16px;padding:1.5rem;margin:2.5rem 0 0;">
+        ${authorAvatar(au, 56)}
+        <div>
+          <div style="font-size:0.72rem;font-weight:700;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.25rem;">Sull'autore</div>
+          <div style="font-size:0.95rem;font-weight:700;color:var(--text-primary);margin-bottom:0.2rem;">${esc(au.name)}</div>
+          <div style="font-size:0.8rem;color:${au.color};font-weight:600;margin-bottom:0.6rem;">${esc(au.role)}</div>
+          <p style="font-size:0.87rem;color:var(--text-secondary);line-height:1.65;margin:0 0 0.75rem;">${esc(au.bio)}</p>
+          <a href="${au.linkedin}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.8rem;color:#0A66C2;font-weight:600;text-decoration:none;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Segui su LinkedIn
+          </a>
+        </div>
       </div>
 
       <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
@@ -1432,16 +1510,20 @@ function buildIndex() {
   }, null, 2);
 
   const cards = articles.map(a => {
+    const au = AUTHORS[a.author] || AUTHORS.marco;
     const dateFormatted = new Date(a.date).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
     return `
     <a href="/blog/${a.slug}" style="display:block;background:white;border:1px solid var(--border);border-radius:16px;padding:1.5rem;text-decoration:none;color:var(--text-primary);transition:all 0.18s;box-shadow:0 1px 3px rgba(0,0,0,0.04);" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px -8px rgba(99,102,241,0.2)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.transform='none';this.style.boxShadow='0 1px 3px rgba(0,0,0,0.04)'">
       <span style="display:inline-block;background:rgba(99,102,241,0.1);color:var(--primary);font-size:0.74rem;font-weight:600;padding:0.2rem 0.65rem;border-radius:999px;margin-bottom:0.75rem;">${esc(a.category)}</span>
       <h2 style="font-family:'Space Grotesk',sans-serif;font-size:1.08rem;font-weight:700;color:var(--text-primary);line-height:1.35;margin-bottom:0.6rem;">${esc(a.title)}</h2>
       <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:1rem;">${esc(a.intro.substring(0,140))}…</p>
-      <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.78rem;color:var(--text-secondary);">
-        <span>📅 ${dateFormatted}</span>
+      <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.78rem;color:var(--text-secondary);">
+        ${authorAvatar(au, 24)}
+        <span style="font-weight:600;color:var(--text-primary);">${esc(au.name)}</span>
         <span>·</span>
-        <span>⏱️ ${a.readMin} min</span>
+        <span>${dateFormatted}</span>
+        <span>·</span>
+        <span>${a.readMin} min</span>
       </div>
     </a>`;
   }).join('');
