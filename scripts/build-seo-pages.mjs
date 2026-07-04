@@ -7,6 +7,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { seoProfessions } from './professions-seo-data.mjs';
+import { seoProfessions2 } from './professions-seo-data-2.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT      = join(__dirname, '..');
@@ -58,6 +59,35 @@ function riskLabel(pct) {
   return 'Basso rischio';
 }
 
+// ── Articoli blog correlati per categoria ────────────────────────────────────
+const BLOG_BY_CATEGORY = {
+  default: [
+    { slug: 'le-20-professioni-piu-a-rischio-ai', title: '🔴 Le 20 professioni più a rischio AI in Italia' },
+    { slug: 'come-difendere-il-lavoro-dallai', title: '🛡️ Come difendere il tuo lavoro dall\'AI' },
+    { slug: 'competenze-che-lai-non-sostituira', title: '💡 Le competenze che l\'AI non sostituirà mai' },
+  ],
+  IT: [
+    { slug: 'cursor-github-copilot-il-programmatore-esiste-ancora', title: '💻 Cursor e Copilot: il programmatore esiste ancora?' },
+    { slug: 'claude-4-anthropic-cosa-cambia-per-il-lavoro', title: '🤖 Claude 4: cosa cambia per il lavoro?' },
+    { slug: 'chatgpt-vs-claude-vs-gemini-quale-usare-per-lavoro', title: '🤝 ChatGPT vs Claude vs Gemini: quale usare?' },
+  ],
+  Sanità: [
+    { slug: 'le-20-professioni-piu-a-rischio-ai', title: '🔴 Le 20 professioni più a rischio AI' },
+    { slug: 'lavori-che-cresceranno-grazie-allai', title: '📈 I lavori che cresceranno grazie all\'AI' },
+    { slug: 'come-difendere-il-lavoro-dallai', title: '🛡️ Come difendere il tuo lavoro dall\'AI' },
+  ],
+  Finanza: [
+    { slug: 'professioni-che-pagheranno-di-piu-nel-2030', title: '💰 Professioni che pagheranno di più nel 2030' },
+    { slug: 'le-20-professioni-piu-a-rischio-ai', title: '🔴 Le 20 professioni più a rischio AI' },
+    { slug: 'come-usare-chatgpt-per-non-perdere-il-lavoro', title: '🤖 Come usare ChatGPT per non perdere il lavoro' },
+  ],
+  Legale: [
+    { slug: 'ai-act-europeo-cosa-cambia-per-lavoratori', title: '⚖️ AI Act europeo: cosa cambia per i lavoratori?' },
+    { slug: 'le-20-professioni-piu-a-rischio-ai', title: '🔴 Le 20 professioni più a rischio AI' },
+    { slug: 'competenze-che-lai-non-sostituira', title: '💡 Le competenze che l\'AI non sostituirà mai' },
+  ],
+};
+
 // ── Costruisci una pagina ─────────────────────────────────────────────────────
 function buildPage(p) {
   const { slug, title, icon, category, risk, year, description, tasks, skills, related, survivalNote } = p;
@@ -78,8 +108,9 @@ function buildPage(p) {
   ).join('');
 
   // Professioni correlate: prima cerca tra le SEO, poi tra le esistenti
+  const allSeo = [...seoProfessions, ...seoProfessions2];
   const relatedCards = (related || []).slice(0, 4).map(rslug => {
-    const rSeo = seoProfessions.find(x => x.slug === rslug);
+    const rSeo = allSeo.find(x => x.slug === rslug);
     if (rSeo) {
       return `<a href="/professione/${esc(rslug)}" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);background:white;transition:all 0.18s;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
         <span style="font-size:1.3rem;">${rSeo.icon||'💼'}</span>
@@ -261,12 +292,34 @@ function buildPage(p) {
         <a href="/cv-analyzer" class="prof-cta-ghost">📄 Analizza il tuo CV</a>
       </div>
 
+      <!-- Share buttons -->
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.jobriskai.it%2Fprofessione%2F${slug}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.55rem 1.1rem;border-radius:999px;font-size:0.85rem;font-weight:600;text-decoration:none;background:#0A66C2;color:white;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          Condividi su LinkedIn
+        </a>
+        <a href="https://api.whatsapp.com/send?text=Il+${encodeURIComponent(title)}+ha+un+rischio+AI+del+${risk}%25+entro+il+${year}.+Scopri+il+tuo+rischio+gratis%3A+https%3A%2F%2Fwww.jobriskai.it%2Fprofessione%2F${slug}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.55rem 1.1rem;border-radius:999px;font-size:0.85rem;font-weight:600;text-decoration:none;background:#25D366;color:white;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Condividi su WhatsApp
+        </a>
+      </div>
+
       <!-- Professioni correlate -->
       ${relatedCards ? `
       <div class="prof-card">
         <h2>🔗 Professioni simili — ${esc(category)}</h2>
         <div class="prof-related">${relatedCards}</div>
       </div>` : ''}
+
+      <!-- Articoli correlati -->
+      <div class="prof-card">
+        <h2>📖 Approfondisci — Articoli correlati</h2>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          ${(BLOG_BY_CATEGORY[category] || BLOG_BY_CATEGORY.default).map(a =>
+            `<a href="/blog/${a.slug}" style="display:block;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);font-size:0.9rem;font-weight:500;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--primary)';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">${esc(a.title)}</a>`
+          ).join('')}
+        </div>
+      </div>
 
       <!-- FAQ -->
       <div class="prof-card">
@@ -309,7 +362,7 @@ let generated = 0;
 let skipped   = 0;
 const newSlugs = [];
 
-for (const prof of seoProfessions) {
+for (const prof of [...seoProfessions, ...seoProfessions2]) {
   if (EXISTING_SLUGS.has(prof.slug)) {
     console.log(`⏭️  Skip (già esistente): ${prof.slug}`);
     skipped++;

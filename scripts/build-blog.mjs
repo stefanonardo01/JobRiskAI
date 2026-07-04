@@ -666,6 +666,608 @@ const articles = [
     `,
   },
 
+  // ── NUOVI ARTICOLI LONG-TAIL ──────────────────────────────────────────────
+
+  {
+    slug: 'commercialista-rischio-ai-2026',
+    title: 'Il Commercialista sarà sostituito dall\'AI? Rischio e futuro (2026)',
+    metaDesc: 'Il commercialista è a rischio AI? Rischio 72%, anno critico 2029. Analisi dei task automatizzabili, piano di sopravvivenza e come cambia il ruolo del dottore commercialista.',
+    date: '2026-07-01',
+    readMin: 6,
+    category: 'Professioni',
+    intro: 'Con un rischio AI del 72% e anno critico stimato al 2029, il commercialista è tra le professioni più esposte in Italia. Ma il "commercialista" che conosciamo oggi non esisterà più — esisterà qualcosa di diverso e più prezioso.',
+    content: `
+      <h2>Cosa farà l'AI al posto del commercialista</h2>
+      <p>La parte operativa del lavoro contabile è già in forte automazione. Software come <strong>Fatture in Cloud, TeamSystem e Zucchetti</strong> automatizzano dichiarazioni, F24, liquidazioni IVA e riconciliazioni bancarie. L'AI generativa aggiunge la capacità di interpretare normativa e rispondere a domande fiscali standard.</p>
+      <p>I task più a rischio entro il 2029:</p>
+      <ul>
+        <li>Dichiarazioni fiscali standard (730, Redditi PF, Redditi SP) → rischio 92%</li>
+        <li>Riconciliazioni bancarie e prima nota → rischio 95%</li>
+        <li>Calcolo imposte e versamenti → rischio 88%</li>
+        <li>Redazione bilanci di esercizio ordinari → rischio 80%</li>
+        <li>Adempimenti periodici (IVA, F24) → rischio 90%</li>
+      </ul>
+
+      <h2>Cosa NON farà l'AI al posto del commercialista</h2>
+      <p>Esistono aree dove il commercialista umano ha un vantaggio strutturale che l'AI non potrà colmare nel breve periodo:</p>
+      <ul>
+        <li><strong>Pianificazione fiscale su operazioni straordinarie</strong> (fusioni, scissioni, cessioni d'azienda): richiedono giudizio strategico su scenari incerti</li>
+        <li><strong>Gestione del contenzioso tributario</strong>: l'AI può fare ricerca giurisprudenziale ma non può rappresentare il cliente</li>
+        <li><strong>Consulenza su holding e strutture patrimoniali complesse</strong></li>
+        <li><strong>Relazione fiduciaria con l'imprenditore</strong>: il commercialista è spesso il primo consulente di fiducia dell'imprenditore su decisioni aziendali</li>
+        <li><strong>Fiscalità internazionale e transfer pricing</strong></li>
+      </ul>
+
+      <h2>Il piano di sopravvivenza per il commercialista</h2>
+      <p>La trasformazione deve avvenire adesso, non nel 2028. Chi aspetta troverà un mercato già occupato dai "nuovi commercialisti digitali".</p>
+      <p><strong>Fase 1 — Automatizza tu per primo (2026-2027):</strong> Adotta strumenti AI nel tuo studio per gestire il 10x dei clienti con lo stesso team. Abbassa i prezzi per la parte operativa, aumenta quelli per la consulenza.</p>
+      <p><strong>Fase 2 — Specializzazione (2027-2028):</strong> Scegli una nicchia ad alto valore: fiscalità internazionale, startup e venture capital, holding familiari, real estate tax, o settore immobiliare.</p>
+      <p><strong>Fase 3 — Consulenza strategica (2028+):</strong> Diventa il "CFO esterno" delle PMI — non solo gestisci la contabilità ma guidi le decisioni finanziarie con dati in tempo reale.</p>
+
+      <p>→ <a href="/professione/commercialista" style="color:var(--primary,#6366f1);">Vedi l'analisi completa del rischio AI per il commercialista</a></p>
+    `,
+  },
+
+  {
+    slug: 'avvocato-rischio-ai-2026',
+    title: 'L\'Avvocato sarà sostituito dall\'AI? Analisi completa 2026',
+    metaDesc: 'L\'avvocato rischia l\'AI? Rischio 38%, ma la ricerca legale è già automatizzata al 90%. Analisi dei task, futuro della professione forense e piano di sopravvivenza.',
+    date: '2026-07-02',
+    readMin: 7,
+    category: 'Professioni',
+    intro: 'L\'avvocatura è una professione biforcata: la parte documentale e di ricerca è già ampiamente automatizzabile, mentre la difesa in aula, la negoziazione e la relazione con il cliente rimangono profondamente umane. Il rischio complessivo è 38% — ma per chi, esattamente?',
+    content: `
+      <h2>L'AI nel diritto: lo stato dell'arte nel 2026</h2>
+      <p>Strumenti come <strong>Harvey AI, Luminance e Kira Systems</strong> stanno trasformando i grandi studi legali. Questi tool analizzano migliaia di contratti in minuti, trovano clausole rischiose, comparano giurisprudenza e redigono bozze di atti standard. Negli USA, studi come Allen & Overy e Linklaters hanno già ridotto del 30-40% il tempo degli junior associate su queste attività.</p>
+
+      <h2>Task ad alto rischio per l'avvocato</h2>
+      <ul>
+        <li><strong>Ricerca giurisprudenziale e dottrinale</strong> → rischio 90%</li>
+        <li><strong>Redazione contratti standard</strong> (NDA, compravendita, locazione) → rischio 82%</li>
+        <li><strong>Due diligence documentale</strong> → rischio 88%</li>
+        <li><strong>Atti processuali standard</strong> (ricorsi, memorie su questioni note) → rischio 65%</li>
+      </ul>
+
+      <h2>Task a basso rischio — il futuro dell'avvocato</h2>
+      <ul>
+        <li><strong>Difesa in udienza e cross-examination</strong> → rischio 8%</li>
+        <li><strong>Strategia processuale in cause complesse</strong> → rischio 15%</li>
+        <li><strong>Negoziazione e mediazione</strong> → rischio 20%</li>
+        <li><strong>Relazione fiduciaria con il cliente</strong> → rischio 5%</li>
+        <li><strong>Consulenza su operazioni straordinarie</strong> (M&A, ristrutturazioni) → rischio 22%</li>
+      </ul>
+
+      <h2>Chi rischia di più: il junior associate</h2>
+      <p>Il paradosso dell'AI nel diritto è che colpisce <em>dal basso</em>: i junior associate dei grandi studi che passavano ore a fare ricerca e document review sono i più esposti. I soci anziani con relazioni consolidate sono i più protetti. Questo accelera la compressione della carriera legale tradizionale.</p>
+
+      <h2>Il piano di sopravvivenza</h2>
+      <p>La risposta dell'avvocato intelligente all'AI non è difendersi, ma usarla per fare 5x il lavoro. Chi impara a dirigere gli strumenti AI oggi costruisce un vantaggio competitivo enorme. La specializzazione rimane la difesa migliore: diritto penale informatico, AI Act e regolamentazione tech, diritto tributario internazionale sono aree dove la domanda supera l'offerta.</p>
+      <p>→ <a href="/professione/avvocato" style="color:var(--primary,#6366f1);">Analisi completa rischio AI per avvocati</a></p>
+    `,
+  },
+
+  {
+    slug: 'infermiere-rischio-ai',
+    title: 'L\'Infermiere è a rischio AI? La verità nel 2026',
+    metaDesc: 'L\'infermiere sarà sostituito dall\'AI? Rischio solo 12%, uno dei lavori più sicuri in Italia. Scopri perché e come costruire una carriera a prova di automazione in sanità.',
+    date: '2026-07-03',
+    readMin: 5,
+    category: 'Professioni',
+    intro: 'Con un rischio AI del 12%, l\'infermiere è una delle professioni più protette in Italia. Ma perché? E fino a quando? La risposta è più complessa — e più rassicurante — di quanto sembri.',
+    content: `
+      <h2>Perché l'AI non può sostituire l'infermiere</h2>
+      <p>L'automazione eccelle nei task ripetitivi, prevedibili e basati su dati strutturati. Il lavoro infermieristico è l'opposto: ogni paziente è diverso, le situazioni cambiano ogni minuto, e la componente fisica e relazionale è centrale. Un robot può portare farmaci — non può tenere la mano di un paziente che ha paura.</p>
+      <p>I motivi strutturali per cui il rischio rimane basso:</p>
+      <ul>
+        <li><strong>Destrezza fisica in ambienti non strutturati:</strong> girare un paziente immobile, inserire un catetere, gestire una crisi epilettica richiedono capacità motorie fini che la robotica non ha ancora replicato in modo affidabile</li>
+        <li><strong>Giudizio clinico in situazioni di emergenza:</strong> la capacità di riconoscere un deterioramento clinico sottile richiede esperienza contestuale irriproducibile</li>
+        <li><strong>Presenza terapeutica:</strong> la sola presenza umana ha effetti misurabili sui parametri vitali dei pazienti</li>
+        <li><strong>Comunicazione con famiglie in crisi:</strong> nessun AI può gestire la comunicazione di una prognosi infausta</li>
+      </ul>
+
+      <h2>Cosa cambierà comunque nel lavoro infermieristico</h2>
+      <p>Anche se il rischio di sostituzione è basso, il ruolo cambierà:</p>
+      <ul>
+        <li><strong>Monitoraggio parametri vitali</strong> → sempre più automatizzato da sensori IoT e AI predittiva. L'infermiere non starà a guardare il monitor ma riceverà alert sull'anomalia</li>
+        <li><strong>Documentazione clinica</strong> → dettatura vocale + AI che compila la cartella. Risparmio di 30-40 minuti per turno</li>
+        <li><strong>Supporto decisionale</strong> → AI suggerisce protocolli, allerta su interazioni farmacologiche, predice rischio cadute</li>
+      </ul>
+      <p>Il risultato: l'infermiere del 2030 avrà più tempo per il paziente, non meno. L'AI si occupa della burocrazia, l'umano si occupa della cura.</p>
+
+      <h2>Come costruire una carriera infermieristica a prova di futuro</h2>
+      <ul>
+        <li>Specializzarsi in terapia intensiva, oncologia o sale operatorie — le aree con più complessità e minore automatizzabilità</li>
+        <li>Conseguire la laurea magistrale e accedere ai ruoli di coordinamento e gestione</li>
+        <li>Diventare infermiere di pratica avanzata (IPA) — figura riconosciuta che assume competenze mediche</li>
+        <li>Acquisire competenze in health informatics per gestire i nuovi sistemi AI clinici</li>
+      </ul>
+      <p>→ <a href="/professione/infermiere" style="color:var(--primary,#6366f1);">Analisi completa rischio AI per infermieri</a></p>
+    `,
+  },
+
+  {
+    slug: 'insegnante-rischio-ai',
+    title: 'L\'Insegnante sarà sostituito dall\'AI? Rischio e opportunità nel 2026',
+    metaDesc: 'L\'insegnante rischia l\'AI? Rischio 22% — uno dei più bassi. Ma il ruolo cambierà radicalmente. Scopri come l\'AI trasformerà la didattica e come prepararsi.',
+    date: '2026-07-04',
+    readMin: 6,
+    category: 'Professioni',
+    intro: 'ChatGPT fa i compiti degli studenti. Khan Academy usa l\'AI per tutoraggio personalizzato. Duolingo insegna le lingue con AI. Il rischio per gli insegnanti sembra alto — eppure i dati dicono il contrario. Perché?',
+    content: `
+      <h2>Perché il 22% di rischio sembra basso</h2>
+      <p>La scuola non è solo trasmissione di contenuti. Se fosse così, i libri avrebbero sostituito gli insegnanti nel 1450, le enciclopedie nel 1900, YouTube nel 2010. L'AI è uno strumento più potente di tutti i precedenti — ma il ruolo del docente è qualcosa di diverso.</p>
+      <p>L'insegnante svolge funzioni che l'AI non può replicare:</p>
+      <ul>
+        <li><strong>Funzione di socializzazione:</strong> la classe è dove si imparano le norme sociali, la collaborazione, il conflitto costruttivo</li>
+        <li><strong>Presenza adulta di riferimento:</strong> per molti studenti l'insegnante è l'unico adulto equilibrato e disponibile nella loro vita</li>
+        <li><strong>Motivazione contestuale:</strong> capire perché uno studente non rende richiede lettura del contesto familiare, sociale, emotivo</li>
+        <li><strong>Gestione della classe:</strong> la dinamica di gruppo in 25 studenti è imprevedibile e richiede adattamento continuo</li>
+      </ul>
+
+      <h2>Cosa l'AI farà meglio dell'insegnante</h2>
+      <p>Essere onesti è importante. L'AI è già superiore all'insegnante in alcune attività:</p>
+      <ul>
+        <li><strong>Spiegazione personalizzata dei contenuti:</strong> un AI tutor può adattarsi al ritmo, allo stile di apprendimento e alle lacune specifiche di ogni studente</li>
+        <li><strong>Esercitazione e feedback immediato:</strong> 1000 esercizi di matematica corretti in tempo reale, con spiegazione dell'errore</li>
+        <li><strong>Disponibilità 24/7:</strong> nessun insegnante può rispondere alle domande dello studente alle 23:00</li>
+        <li><strong>Preparazione di materiali didattici:</strong> quiz, presentazioni, schede — attività che rubano ore al docente</li>
+      </ul>
+
+      <h2>L'insegnante del 2030: un nuovo ruolo</h2>
+      <p>Il docente del futuro non spiegherà contenuti — quelli li spiegherà l'AI meglio di lui. Il suo ruolo sarà:</p>
+      <ul>
+        <li><strong>Facilitatore del pensiero critico:</strong> guidare gli studenti a valutare, sintetizzare e contestualizzare ciò che l'AI produce</li>
+        <li><strong>Coach motivazionale:</strong> mantenere alta l'attenzione, la curiosità e la resilienza degli studenti</li>
+        <li><strong>Costruttore di comunità:</strong> creare il senso di appartenenza e le dinamiche positive di gruppo</li>
+        <li><strong>Esperto di AI educativa:</strong> saper scegliere, integrare e valutare gli strumenti AI per l'apprendimento</li>
+      </ul>
+      <p>→ <a href="/professione/insegnante" style="color:var(--primary,#6366f1);">Analisi completa rischio AI per insegnanti</a> · <a href="/blog/competenze-che-lai-non-sostituira" style="color:var(--primary,#6366f1);">Le competenze che l'AI non sostituirà</a></p>
+    `,
+  },
+
+  {
+    slug: 'medico-rischio-ai',
+    title: 'Il Medico sarà sostituito dall\'AI? Analisi del rischio 2026',
+    metaDesc: 'Il medico è a rischio AI? Rischio 28% per il medico di base, fino al 65% per il radiologo. Analisi dettagliata per specializzazione e piano di sopravvivenza.',
+    date: '2026-07-05',
+    readMin: 8,
+    category: 'Professioni',
+    intro: 'L\'AI diagnostica i tumori meglio dei radiologi, legge ECG con precisione superiore ai cardiologi, e risponde ai pazienti con empatia simulata. Il rischio per i medici è reale — ma varia enormemente in base alla specializzazione.',
+    content: `
+      <h2>Non esiste "il medico a rischio AI" — dipende dalla specializzazione</h2>
+      <p>Il rischio AI non è uguale per tutti i medici. Un radiologo che interpreta TAC ha un rischio del 65%. Un chirurgo plastico che opera ha un rischio del 18%. Un medico di base che fa diagnosi differenziali complesse è al 28%. La variabile chiave è: quanto del tuo lavoro è interpretazione di dati vs. presenza fisica e giudizio contestuale?</p>
+
+      <h2>Le specializzazioni più a rischio</h2>
+      <ul>
+        <li><strong>Radiologo (65%):</strong> l'AI di Google DeepMind e di Siemens Healthineers già supera i radiologi umani nel rilevare tumori polmonari e retinopatia diabetica. Anno critico: 2029.</li>
+        <li><strong>Patologo (60%):</strong> l'analisi istopatologica digitale con AI è già superiore alla performance umana su molti tipi di tumore.</li>
+        <li><strong>Dermatologo (52%):</strong> la diagnosi AI di melanoma ha raggiunto la performance del dermatologo esperto. Rimane essenziale per la biopsia e il trattamento.</li>
+        <li><strong>Medico di base (28%):</strong> il triage e la gestione di patologie comuni è automatizzabile, ma la medicina di base è ricca di complessità sociale e contestuale.</li>
+      </ul>
+
+      <h2>Le specializzazioni più protette</h2>
+      <ul>
+        <li><strong>Chirurgo (20%):</strong> la chirurgia robotica avanza, ma la decisione chirurgica e la gestione delle complicanze rimangono umane</li>
+        <li><strong>Psichiatra (18%):</strong> la relazione terapeutica e il giudizio sulla pericolosità sono irreplicabili</li>
+        <li><strong>Medico d'urgenza (15%):</strong> caos, imprevisti, decisioni in secondi — il dominio meno favorevole all'AI</li>
+        <li><strong>Medico palliativista (8%):</strong> il fine vita richiede umanità, non algoritmi</li>
+      </ul>
+
+      <h2>Come l'AI cambierà la medicina (senza sostituirla)</h2>
+      <p>Il modello futuro non è "AI vs. medico" ma "medico + AI". Studi dimostrano che un radiologo che usa AI supera sia il radiologo da solo che l'AI da sola. Il medico del futuro sarà un <strong>orchestratore di sistemi AI</strong> — capisce cosa l'AI vede e cosa non vede, decide quando fidarsi e quando no, gestisce i casi che l'AI non sa gestire.</p>
+      <p>→ <a href="/professione/medico-base" style="color:var(--primary,#6366f1);">Rischio AI per il medico di base</a> · <a href="/professione/radiologo" style="color:var(--primary,#6366f1);">Rischio AI per il radiologo</a></p>
+    `,
+  },
+
+  {
+    slug: 'lavori-sicuri-con-lai',
+    title: 'I 15 lavori più sicuri con l\'AI in Italia nel 2026',
+    metaDesc: 'Quali sono i lavori sicuri con l\'AI? I 15 mestieri con il rischio più basso in Italia, perché sono protetti e come costruire una carriera a lungo termine.',
+    date: '2026-07-06',
+    readMin: 6,
+    category: 'Analisi',
+    intro: 'Non tutti i lavori sono in pericolo. Alcune professioni hanno strutture talmente lontane dall\'automazione che il rischio AI è inferiore al 20% anche nelle stime più pessimiste. Ecco quali sono e perché.',
+    content: `
+      <h2>Perché alcuni lavori sono strutturalmente protetti dall'AI</h2>
+      <p>I lavori a basso rischio condividono almeno due di queste caratteristiche:</p>
+      <ul>
+        <li><strong>Alta componente fisica in ambienti non strutturati:</strong> un idraulico lavora in bagni diversi ogni giorno, con tubi vecchi di epoche diverse e problemi sempre nuovi</li>
+        <li><strong>Giudizio contestuale e adattamento continuo:</strong> un pompiere non sa mai cosa trova dietro la porta</li>
+        <li><strong>Relazione umana come nucleo del servizio:</strong> uno psicologo senza presenza umana non è più uno psicologo</li>
+        <li><strong>Creatività autentica e visione artistica:</strong> un regista o un musicista creano cultura, non solo contenuti</li>
+      </ul>
+
+      <h2>I 15 lavori più sicuri in Italia</h2>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.92rem;">
+          <thead><tr style="border-bottom:2px solid var(--border,#e5e7eb);">
+            <th style="text-align:left;padding:0.6rem 0.5rem;font-weight:600;color:#6b7280;">Professione</th>
+            <th style="text-align:left;padding:0.6rem 0.5rem;font-weight:600;color:#6b7280;">Rischio AI</th>
+            <th style="text-align:left;padding:0.6rem 0.5rem;font-weight:600;color:#6b7280;">Anno critico</th>
+          </tr></thead>
+          <tbody>
+            ${[
+              ['Idraulico','18%','2040+','/professione/idraulico'],
+              ['Psicologo','18%','2038','/professione/psicologo'],
+              ['Pompiere','10%','2042+','/professione/pompiere'],
+              ['Infermiere','12%','2040+','/professione/infermiere'],
+              ['Chef / Cuoco creativo','18%','2040+','/professione/chef'],
+              ['Chirurgo','20%','2038','/professione/chirurgo'],
+              ['Personal Trainer','22%','2037','/professione/personal-trainer'],
+              ['Allenatore sportivo','20%','2038','/professione/allenatore'],
+              ['Insegnante','22%','2036','/professione/insegnante'],
+              ['Fisioterapista','22%','2037','/professione/fisioterapista'],
+              ['Logopedista','18%','2038','/professione/logopedista'],
+              ['Assistente Sociale','22%','2037','/professione/assistente-sociale'],
+              ['Regista','20%','2037','/professione/regista'],
+              ['Musicista','22%','2038','/professione/musicista'],
+              ['Elettricista','22%','2038','/professione/elettricista'],
+            ].map(([nome,risk,anno,url]) => `
+            <tr style="border-bottom:1px solid var(--border,#e5e7eb);">
+              <td style="padding:0.65rem 0.5rem;"><a href="${url}" style="color:var(--primary,#6366f1);font-weight:600;text-decoration:none;">${nome}</a></td>
+              <td style="padding:0.65rem 0.5rem;font-weight:700;color:#10b981;">${risk}</td>
+              <td style="padding:0.65rem 0.5rem;color:#6b7280;">${anno}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Lavoro sicuro non significa lavoro immutabile</h2>
+      <p>Anche gli idraulici useranno AI per diagnosticare guasti da remoto. Anche gli psicologi useranno strumenti digitali per il monitoraggio tra le sessioni. La sicurezza non significa che il lavoro non cambierà — significa che la presenza umana resterà centrale e non sostituibile.</p>
+      <p>→ <a href="/classifica" style="color:var(--primary,#6366f1);">Vedi la classifica completa di tutte le professioni</a></p>
+    `,
+  },
+
+  {
+    slug: 'stipendi-futuro-ai-2030',
+    title: 'Quali stipendi sopravvivranno all\'AI nel 2030? I dati',
+    metaDesc: 'Quali lavori pagheranno bene nel 2030 nonostante l\'AI? Analisi degli stipendi per professione, settori in crescita e dove investire la carriera per massimizzare i guadagni.',
+    date: '2026-07-07',
+    readMin: 7,
+    category: 'Analisi',
+    intro: 'Il mercato del lavoro si sta polarizzando: stipendi altissimi per chi sa usare l\'AI, stipendi compressi per chi viene sostituito. I dati mostrano una biforcazione netta già in corso nel 2026.',
+    content: `
+      <h2>La polarizzazione salariale in corso</h2>
+      <p>Il fenomeno è misurabile. Secondo dati LinkedIn e Indeed del 2026, i ruoli che richiedono competenze AI hanno visto un aumento salariale medio del 23% in 18 mesi. I ruoli ad alto rischio di automazione hanno visto stipendi stagnanti o in calo reale del 8-12% (considerando l'inflazione).</p>
+      <p>Non è una previsione — è già in corso.</p>
+
+      <h2>I ruoli con gli stipendi più in crescita</h2>
+      <ul>
+        <li><strong>AI Engineer / ML Engineer:</strong> da €45K a €95K+ in Italia, con picchi a €150K+ per senior con 5+ anni. Domanda che supera l'offerta del 340%.</li>
+        <li><strong>Prompt Engineer / AI Product Manager:</strong> ruolo emergente, €55-85K. Chi sa "parlare" con i sistemi AI in modo produttivo è raro.</li>
+        <li><strong>Cybersecurity specialist:</strong> gli attacchi AI-powered richiedono difensori AI-powered. €50-90K, in forte crescita.</li>
+        <li><strong>Growth Hacker con AI:</strong> chi sa usare AI per automazione marketing e acquisizione clienti vale 2-3x il marketer tradizionale.</li>
+        <li><strong>Data Scientist senior:</strong> la domanda rimane alta, ma si polarizza: i junior sono compressi dall'AI, i senior che guidano decisioni valgono di più.</li>
+      </ul>
+
+      <h2>I ruoli con stipendi in compressione</h2>
+      <ul>
+        <li><strong>Junior copywriter/content writer:</strong> il contenuto AI è abbondante e gratuito. I writer senza specializzazione di nicchia vedono tariffe in calo del 30-50%.</li>
+        <li><strong>Operatori di call center:</strong> i chatbot gestiscono l'80% dei ticket standard. I sopravvissuti fanno solo escalation complesse, a stipendi più alti ma con meno posti.</li>
+        <li><strong>Analisti finanziari junior:</strong> la modellistica standard è già automatizzata. Solo i senior che interpretano e consigliano mantengono alti stipendi.</li>
+        <li><strong>Traduttori generalisti:</strong> il mercato della traduzione standard è crollato. Sopravvive chi fa localizzazione creativa, audiovisivo e settori tecnici specializzati.</li>
+      </ul>
+
+      <h2>La regola degli stipendi a prova di AI</h2>
+      <p>Lo stipendio dipende da quanto sei vicino alla creazione di valore e lontano dall'esecuzione di task standardizzati. La formula per il 2030: <strong>stipendio = valore creato / sostituibilità</strong>. Chi crea valore unico e difficile da automatizzare — che sia una relazione di fiducia, una competenza rarissima o la capacità di guidare sistemi AI — sarà ben remunerato. Chi esegue task replicabili vedrà il suo stipendio compresso.</p>
+      <p>→ <a href="/blog/professioni-che-pagheranno-di-piu-nel-2030" style="color:var(--primary,#6366f1);">Scopri le professioni che pagheranno di più nel 2030</a></p>
+    `,
+  },
+
+  {
+    slug: 'agente-immobiliare-rischio-ai',
+    title: 'L\'Agente Immobiliare sarà sostituito dall\'AI? Rischio 55%',
+    metaDesc: 'L\'agente immobiliare è a rischio AI? Rischio 55%, anno critico 2031. Analisi di cosa automatizzerà Zillow, Casavo e i portali AI, e come sopravvivere nel real estate.',
+    date: '2026-07-08',
+    readMin: 5,
+    category: 'Professioni',
+    intro: 'Portali come Zillow, Immobiliare.it e Casavo stanno automatizzando la ricerca, la valutazione e persino la chiusura delle compravendite. Il rischio per l\'agente immobiliare è reale — ma non uniforme.',
+    content: `
+      <h2>Cosa sta automatizzando il real estate AI</h2>
+      <ul>
+        <li><strong>Valutazione AVM (Automated Valuation Model):</strong> algoritmi come quello di Casavo valutano un immobile in secondi con precisione comparabile all'agenzia tradizionale. Rischio: 85%</li>
+        <li><strong>Ricerca immobili per il cliente:</strong> i portali AI filtrano, consigliano e abbinano acquirente-immobile. Rischio: 80%</li>
+        <li><strong>Gestione documentale:</strong> rogiti, visure, APE — tutto digitalizzabile. Rischio: 90%</li>
+        <li><strong>Prima risposta alle lead:</strong> chatbot qualificano le lead 24/7. Rischio: 82%</li>
+      </ul>
+
+      <h2>Cosa rimane umano</h2>
+      <ul>
+        <li><strong>Negoziazione complessa:</strong> una trattativa su un immobile da €2M tra parti con interessi opposti non si automatizza</li>
+        <li><strong>Gestione dell'emotività:</strong> comprare casa è la decisione più emotiva della vita di una famiglia</li>
+        <li><strong>Network e accesso a immobili fuori mercato:</strong> le opportunità migliori non sono sui portali</li>
+        <li><strong>Consulenza su mercati di nicchia:</strong> luxury real estate, commercial real estate, immobili di pregio storico</li>
+      </ul>
+
+      <h2>Il piano di sopravvivenza per l'agente immobiliare</h2>
+      <p>L'agenzia tradizionale generalista è in declino strutturale. Sopravviverà chi:</p>
+      <ul>
+        <li>Si specializza in un segmento (luxury, commercial, distressed assets)</li>
+        <li>Costruisce un personal brand digitale forte con content sul mercato locale</li>
+        <li>Diventa consulente patrimoniale e non solo "intermediario di immobili"</li>
+        <li>Usa l'AI per fare 10x il lavoro operativo e concentrarsi sulla relazione</li>
+      </ul>
+      <p>→ <a href="/professione/agente-immobiliare" style="color:var(--primary,#6366f1);">Analisi completa rischio AI per agenti immobiliari</a></p>
+    `,
+  },
+
+  {
+    slug: 'data-entry-sostituito-ai',
+    title: 'Il Data Entry è già stato sostituito dall\'AI: cosa fare ora',
+    metaDesc: 'Il data entry ha rischio AI del 92% — il più alto in Italia. L\'automazione è già in corso. Scopri cosa fare se lavori nell\'inserimento dati e come riconvertirsi.',
+    date: '2026-07-09',
+    readMin: 4,
+    category: 'Professioni',
+    intro: 'Il data entry non verrà sostituito dall\'AI: lo è già stato, in gran parte. Con un rischio del 92% e anno critico 2027, è la professione con il rischio più alto monitorato da JobRiskAI. Cosa fare se ci lavori?',
+    content: `
+      <h2>La situazione attuale: non è una previsione, è il presente</h2>
+      <p>Nel 2026, l'OCR avanzato, i Large Language Model e le RPA (Robotic Process Automation) gestiscono già l'inserimento di fatture, moduli, dati da PDF e form digitali con accuracy superiore al 99%. Strumenti come UiPath, Automation Anywhere e Microsoft Power Automate sono stati adottati da migliaia di aziende italiane, proprio per eliminare i ruoli di data entry.</p>
+      <p>Il mercato lo conferma: le offerte di lavoro per "data entry" in Italia sono calate del 42% in 2 anni su Indeed e LinkedIn.</p>
+
+      <h2>Se lavori nel data entry oggi, hai tre opzioni</h2>
+      <p><strong>Opzione 1 — Specializzarsi nella gestione dei sistemi che ti stanno sostituendo.</strong> Le RPA e i sistemi OCR richiedono configurazione, manutenzione e gestione delle eccezioni. Chi sa usare UiPath o Power Automate vale molto più di un data entry clerk. Corso base: 3-6 mesi. Aumento stipendio: 40-80%.</p>
+      <p><strong>Opzione 2 — Spostarsi verso ruoli ibridi.</strong> La gestione dati richiede ancora umani per le eccezioni complesse, la verifica qualità e la comunicazione con i dipartimenti. Il ruolo di "Data Quality Analyst" o "Process Automation Specialist" è il naturale passaggio.</p>
+      <p><strong>Opzione 3 — Cambio settore verso ruoli fisici o relazionali.</strong> Se la riconversione tecnologica non fa per te, spostarsi verso ruoli che l'AI non può fare (cura alla persona, artigianato, servizi locali) è una strada legittima e spesso più soddisfacente.</p>
+
+      <h2>La finestra temporale è stretta</h2>
+      <p>Anno critico 2027 significa che nei prossimi 12 mesi l'automazione accelererà ulteriormente. Chi agisce adesso ha ancora tempo di riposizionarsi. Chi aspetta 2 anni troverà un mercato del lavoro che non riconosce più il suo profilo.</p>
+      <p>→ <a href="/professione/data-entry" style="color:var(--primary,#6366f1);">Analisi completa data entry</a> · <a href="/cv-analyzer" style="color:var(--primary,#6366f1);">Analizza il tuo CV</a></p>
+    `,
+  },
+
+  {
+    slug: 'psicologo-rischio-ai',
+    title: 'Lo Psicologo sarà sostituito dall\'AI? Rischio 18% — Ecco perché',
+    metaDesc: 'Lo psicologo è a rischio AI? Rischio solo 18%, uno dei più bassi. Ma i chatbot terapeutici stanno crescendo. Analisi onesta del futuro della psicologia nell\'era AI.',
+    date: '2026-07-10',
+    readMin: 6,
+    category: 'Professioni',
+    intro: 'Woebot, Wysa, Replika — i chatbot terapeutici hanno milioni di utenti. L\'AI sembra voler "fare psicologia". Eppure il rischio per gli psicologi umani è solo del 18%. Perché?',
+    content: `
+      <h2>I chatbot terapeutici: minaccia reale o complemento?</h2>
+      <p>I chatbot terapeutici stanno crescendo rapidamente, specialmente per:</p>
+      <ul>
+        <li>Supporto tra le sessioni (journaling guidato, esercizi CBT)</li>
+        <li>Triage: identificare chi ha bisogno di supporto professionale urgente</li>
+        <li>Psicoeducazione: spiegare ansia, depressione, tecniche di regolazione emotiva</li>
+        <li>Popolazioni che non possono permettersi la terapia o hanno barriere di accesso</li>
+      </ul>
+      <p>In questi ambiti, l'AI è un'integrazione potente — e può portare supporto mentale a milioni di persone che oggi non ce l'hanno. Ma non è psicoterapia.</p>
+
+      <h2>Perché la psicoterapia rimane umana</h2>
+      <p>La ricerca clinica è chiara: i fattori terapeutici più potenti sono <strong>la relazione terapeutica</strong> (alleanza terapeutica), la <strong>rottura e riparazione</strong> di quella relazione, e la <strong>presenza di un testimone umano</strong> alla sofferenza. Nessun AI ha questi tre elementi.</p>
+      <p>Più in dettaglio:</p>
+      <ul>
+        <li><strong>La transferenza e controtransferta:</strong> fenomeni che avvengono solo in relazioni umane reali</li>
+        <li><strong>Il giudizio clinico sulla pericolosità:</strong> valutare il rischio suicidario richiede lettura di segnali sottili che l'AI non può cogliere in modo affidabile</li>
+        <li><strong>Le crisi:</strong> un episodio dissociativo in seduta richiede una risposta umana immediata e contestuale</li>
+        <li><strong>La testimonianza del dolore:</strong> essere visti e compresi da un altro essere umano ha un effetto terapeutico irriproducibile</li>
+      </ul>
+
+      <h2>Come cambierà il ruolo dello psicologo</h2>
+      <p>Lo psicologo del 2030 userà strumenti AI per:</p>
+      <ul>
+        <li>Monitorare i pazienti tra le sessioni (app di symptom tracking)</li>
+        <li>Analizzare pattern nel diario emotivo del paziente</li>
+        <li>Supervisionare decine di pazienti "in terapia con AI" per casi leggeri</li>
+        <li>Concentrare le sessioni umane sui casi più complessi</li>
+      </ul>
+      <p>Il rischio non è la sostituzione ma la <em>devalutazione tariffaria</em> delle prestazioni standard. Specializzarsi in patologie complesse (trauma, disturbi di personalità, psicosi) è la risposta giusta.</p>
+      <p>→ <a href="/professione/psicologo" style="color:var(--primary,#6366f1);">Analisi completa rischio AI per psicologi</a></p>
+    `,
+  },
+
+  {
+    slug: 'ai-sostituisce-contabile',
+    title: 'L\'AI sta già sostituendo il Contabile: dati e alternative',
+    metaDesc: 'Il contabile ha rischio AI dell\'85%. Fatture in Cloud, Xero e AI generativa stanno automatizzando la contabilità. Dati reali e strategie di riconversione per i contabili.',
+    date: '2026-07-11',
+    readMin: 5,
+    category: 'Professioni',
+    intro: 'Con un rischio dell\'85% e anno critico 2029, il contabile tradizionale è tra le professioni più esposte in Italia. Non è una previsione — l\'automazione è già in corso e misurabile.',
+    content: `
+      <h2>Quanto è avanzata l'automazione contabile nel 2026</h2>
+      <p>I numeri parlano chiaro. Secondo i dati del Consiglio Nazionale dei Dottori Commercialisti:</p>
+      <ul>
+        <li>Il 78% delle fatture italiane viene già gestito in modo semi-automatico</li>
+        <li>Software come Fatture in Cloud, TeamSystem GO! e Wolters Kluwer gestiscono automaticamente prima nota, riconciliazioni e liquidazioni IVA</li>
+        <li>L'AI generativa (GPT-4, Claude) risponde correttamente all'85% delle domande fiscali standard</li>
+        <li>Le offerte di lavoro per "impiegato contabile" sono calate del 38% in 3 anni</li>
+      </ul>
+
+      <h2>I task già automatizzati</h2>
+      <ul>
+        <li>Registrazione fatture attive e passive → 95% automatizzato</li>
+        <li>Riconciliazione bancaria → 90% automatizzato</li>
+        <li>Calcolo e liquidazione IVA → 88% automatizzato</li>
+        <li>Gestione F24 e scadenziari → 85% automatizzato</li>
+        <li>Prima nota → 80% automatizzato</li>
+      </ul>
+
+      <h2>Cosa rimane e dove andare</h2>
+      <p>I task che rimangono richiedono giudizio contabile avanzato: gestione delle eccezioni, contabilità in settori complessi (cantieri, commesse, valuta estera), analisi di bilancio strategica, gestione crisi finanziaria d'impresa.</p>
+      <p><strong>Percorso di riconversione consigliato:</strong></p>
+      <ul>
+        <li><strong>Breve termine (6-12 mesi):</strong> masterizzare uno o più software di gestione AI-powered (TeamSystem, Zucchetti). Diventare il "controller" che supervisiona i sistemi automatizzati.</li>
+        <li><strong>Medio termine (1-2 anni):</strong> acquisire competenze di analisi finanziaria (Excel avanzato, Power BI, Python base). Spostarsi da "chi registra" a "chi analizza".</li>
+        <li><strong>Lungo termine (2-4 anni):</strong> diventare CFO part-time per PMI o specializzarsi in settori complessi dove la contabilità manuale è ancora necessaria (edilizia, agricoltura, internazionale).</li>
+      </ul>
+      <p>→ <a href="/professione/contabile" style="color:var(--primary,#6366f1);">Analisi completa contabile</a> · <a href="/blog/commercialista-rischio-ai-2026" style="color:var(--primary,#6366f1);">Rischio AI per il commercialista</a></p>
+    `,
+  },
+
+  {
+    slug: 'idraulico-rischio-ai',
+    title: 'L\'Idraulico sarà sostituito dall\'AI? Perché il rischio è solo 18%',
+    metaDesc: 'L\'idraulico è a rischio AI? Solo 18% — uno dei lavori più sicuri in Italia. Scopri perché i lavori manuali qualificati resistono all\'automazione e come massimizzare la carriera.',
+    date: '2026-07-12',
+    readMin: 4,
+    category: 'Professioni',
+    intro: 'Mentre i colletti bianchi tremano, l\'idraulico dorme sonni tranquilli. Con un rischio AI del 18% e anno critico oltre il 2040, è uno dei lavori più sicuri in Italia. Ecco perché.',
+    content: `
+      <h2>Perché i robot non possono fare l'idraulico</h2>
+      <p>L'AI e la robotica hanno fatto progressi enormi nei task cognitivi e in ambienti strutturati (fabbriche, magazzini). Ma il lavoro dell'idraulico è strutturalmente ostile all'automazione:</p>
+      <ul>
+        <li><strong>Ambienti non strutturati e imprevedibili:</strong> ogni bagno, ogni cantina, ogni impianto è diverso. Il robot deve essere riprogrammato ogni volta.</li>
+        <li><strong>Destrezza in spazi ristretti:</strong> lavorare sotto il lavandino, in intercapedini da 30cm, con tubi arrugginiti di 40 anni fa richiede adattamento fisico continuo</li>
+        <li><strong>Diagnostica contestuale:</strong> capire perché c'è una perdita richiede esperienza sensoriale (sentire, toccare, annusare) che i sensori attuali non replicano</li>
+        <li><strong>Costo del robot vs. tariffa oraria:</strong> un robot idraulico costerebbe centinaia di migliaia di euro per fare quello che un idraulico fa a €40/ora</li>
+      </ul>
+
+      <h2>Come cambierà il lavoro dell'idraulico</h2>
+      <p>Anche se non sarà sostituito, l'idraulico del 2030 userebbe l'AI come strumento:</p>
+      <ul>
+        <li>Diagnosi remota: il cliente manda video e foto, l'AI aiuta a fare un pre-diagnosi e preventivo</li>
+        <li>Gestione del business: preventivi automatici, fatturazione, scheduling ottimizzato</li>
+        <li>Aggiornamento normativo: l'AI tiene traccia degli aggiornamenti su norme idrauliche, sicurezza e certificazioni</li>
+      </ul>
+
+      <h2>L'opportunità imprenditoriale</h2>
+      <p>Il vero vantaggio dell'idraulico nei prossimi anni non è solo sopravvivere all'AI — è prosperare mentre altri settori si distruggono. La domanda di artigiani qualificati in Italia supera già l'offerta. Chi costruisce un'impresa (anche piccola, anche da solo) con gestione digitale del business, recensioni, brand locale e tariffe premium può guadagnare molto più di molti "professionisti" ad alto rischio AI.</p>
+      <p>→ <a href="/professione/idraulico" style="color:var(--primary,#6366f1);">Analisi completa rischio AI per idraulici</a> · <a href="/blog/lavori-sicuri-con-lai" style="color:var(--primary,#6366f1);">I 15 lavori più sicuri con l'AI</a></p>
+    `,
+  },
+
+  {
+    slug: 'intelligenza-artificiale-impatto-occupazione-italia',
+    title: 'Impatto dell\'AI sull\'occupazione in Italia: i dati 2026',
+    metaDesc: 'Quanti posti di lavoro perderà l\'Italia per colpa dell\'AI? Dati ISTAT, McKinsey e OCSE sull\'impatto dell\'intelligenza artificiale sull\'occupazione italiana.',
+    date: '2026-07-13',
+    readMin: 8,
+    category: 'Analisi',
+    intro: 'Tra ottimismo e catastrofismo, i dati sull\'impatto AI sull\'occupazione italiana sono più complessi di entrambe le narrative. Ecco un\'analisi seria, basata su fonti verificabili.',
+    content: `
+      <h2>Cosa dicono davvero i dati</h2>
+      <p>Le stime variano enormemente — e non per incompetenza dei ricercatori, ma perché dipendono dalle assunzioni di partenza:</p>
+      <ul>
+        <li><strong>McKinsey Global Institute (2024):</strong> il 30% dei task lavorativi in Italia può essere automatizzato entro il 2030 con la tecnologia attuale. Non il 30% dei lavori — il 30% dei task.</li>
+        <li><strong>OCSE:</strong> il 14% dei lavori nei paesi sviluppati è ad "alto rischio" di automazione (>70% dei task automatizzabili). In Italia la stima sale al 18% per la struttura produttiva.</li>
+        <li><strong>Goldman Sachs (2023):</strong> 300 milioni di posti di lavoro "equivalenti" a livello globale potrebbero essere automatizzati da AI generativa — ma con creazione di nuovi ruoli.</li>
+        <li><strong>ISTAT (2025):</strong> già 1,2 milioni di lavoratori italiani svolgono mansioni con alta probabilità di automazione entro il 2030.</li>
+      </ul>
+
+      <h2>L'Italia ha un problema strutturale specifico</h2>
+      <p>Il mercato del lavoro italiano è esposto all'automazione più della media europea per due motivi:</p>
+      <ul>
+        <li><strong>Alta concentrazione di lavoro amministrativo e impiegatizio:</strong> il settore terziario italiano è ricco di ruoli di back-office, impiego pubblico e lavoro documentale — tutti ad alto rischio</li>
+        <li><strong>Bassa adozione di AI nelle PMI:</strong> le piccole imprese italiane (99% del tessuto produttivo) investono poco in digitale — il che le espone sia alla perdita di competitività che all'automazione tardiva ma brusca</li>
+      </ul>
+
+      <h2>I lavori che verranno creati dall'AI in Italia</h2>
+      <p>Ogni rivoluzione tecnologica distrugge e crea lavoro. L'AI non è diversa. Le aree di creazione occupazionale:</p>
+      <ul>
+        <li><strong>AI deployment e implementation:</strong> qualcuno deve installare, configurare e mantenere questi sistemi nelle aziende</li>
+        <li><strong>AI training e supervisione:</strong> i modelli AI hanno bisogno di feedback umano per migliorare</li>
+        <li><strong>Nuovi servizi abilitati dall'AI:</strong> come il Web ha creato e-commerce, social media marketing e sviluppo app, l'AI creerà categorie di servizi oggi non esistenti</li>
+        <li><strong>Professioni di cura e relazione:</strong> con meno bisogno di lavoro cognitivo routinario, la domanda di lavoro umano si sposta verso ciò che gli umani fanno meglio</li>
+      </ul>
+
+      <h2>La vera domanda: chi ne pagherà il costo?</h2>
+      <p>La transizione non sarà indolore. I lavoratori a basse qualifiche nei ruoli ad alto rischio non possono "riqualificarsi" facilmente — specialmente se hanno 50 anni, un mutuo, e nessuna rete di sicurezza. Il costo sociale della transizione dipenderà dalle politiche pubbliche: sussidi di riqualificazione, reddito di transizione, investimento in formazione continua.</p>
+      <p>→ <a href="/classifica" style="color:var(--primary,#6366f1);">Scopri il rischio AI della tua professione</a> · <a href="/blog/come-difendere-il-lavoro-dallai" style="color:var(--primary,#6366f1);">Come difendere il tuo lavoro dall'AI</a></p>
+    `,
+  },
+
+  {
+    slug: 'come-usare-ai-lavoro-guida-pratica',
+    title: 'Come usare l\'AI nel lavoro: la guida pratica per non-tecnici (2026)',
+    metaDesc: 'Come usare ChatGPT, Claude e altri strumenti AI nel lavoro quotidiano. Guida pratica con esempi concreti per commercialisti, avvocati, HR, marketing e altri professionisti.',
+    date: '2026-07-14',
+    readMin: 9,
+    category: 'Guida',
+    intro: 'Non serve essere programmatori per usare l\'AI nel lavoro. Serve sapere cosa chiedere e come chiederlo. Questa guida è per professionisti non tecnici che vogliono usare l\'AI adesso, senza perdersi in tecnicismi.',
+    content: `
+      <h2>Il principio fondamentale: l'AI è un collaboratore, non uno strumento</h2>
+      <p>Chi ottiene risultati mediocri dall'AI lo tratta come un motore di ricerca ("dimmi cos'è X") o come un esecutore ("fai Y"). Chi ottiene risultati straordinari lo tratta come un collaboratore esperto a cui fornisce contesto, obiettivo e vincoli.</p>
+      <p>La differenza tra un prompt mediocre e uno eccellente non è la lunghezza — è la qualità del contesto e la chiarezza dell'obiettivo.</p>
+
+      <h2>Per commercialisti e contabili</h2>
+      <p><strong>Usa AI per:</strong></p>
+      <ul>
+        <li>Riassumere circolari dell'Agenzia delle Entrate lunghe 40 pagine in 5 punti chiave</li>
+        <li>Bozze di risposta a quesiti fiscali standard dei clienti</li>
+        <li>Preparare checklist per situazioni ricorrenti (successioni, apertura SRL, ecc.)</li>
+        <li>Trovare precedenti normativi su situazioni specifiche</li>
+      </ul>
+      <p><strong>Esempio di prompt efficace:</strong> "Sono un commercialista. Il mio cliente ha ricevuto un avviso di accertamento per l'anno 2022 riguardante costi non inerenti. L'importo contestato è €45.000. Aiutami a preparare le prime domande da fare al cliente per capire la situazione e una bozza di risposta iniziale all'Agenzia."</p>
+
+      <h2>Per avvocati</h2>
+      <p><strong>Usa AI per:</strong></p>
+      <ul>
+        <li>Ricerca giurisprudenziale: "Trovami sentenze della Cassazione degli ultimi 3 anni su [tema specifico]"</li>
+        <li>Bozze di contratti standard (NDA, accordi di riservatezza, lettere di incarico)</li>
+        <li>Sintesi di fascicoli processuali lunghi</li>
+        <li>Preparare argomenti per l'udienza su entrambi i lati (per anticipare le obiezioni)</li>
+      </ul>
+
+      <h2>Per professionisti HR</h2>
+      <ul>
+        <li>Stesura job description ottimizzate per SEO e candidate attraction</li>
+        <li>Domande di colloquio comportamentali per ruoli specifici</li>
+        <li>Analisi dei feedback di uscita per trovare pattern</li>
+        <li>Bozze di policy aziendali (smart working, AI usage policy, ecc.)</li>
+      </ul>
+
+      <h2>Per professionisti del marketing</h2>
+      <ul>
+        <li>Generazione di varianti A/B di headline e copy</li>
+        <li>Analisi SWOT di competitor da informazioni pubbliche</li>
+        <li>Piani editoriali mensili per social media</li>
+        <li>Traduzione e adattamento locale di contenuti</li>
+      </ul>
+
+      <h2>Le regole d'oro dell'AI nel lavoro</h2>
+      <ol>
+        <li><strong>Mai inserire dati riservati di clienti</strong> nei modelli AI pubblici (ChatGPT, Claude gratuiti). Usa versioni API con data privacy guarantee o strumenti on-premise.</li>
+        <li><strong>Verifica sempre i risultati.</strong> L'AI sbaglia — in modo sicuro e convincente. Tratta ogni output come una bozza da rivedere, non come una risposta definitiva.</li>
+        <li><strong>Dai sempre contesto.</strong> Più l'AI sa del tuo contesto professionale, più le risposte sono utili.</li>
+        <li><strong>Itera.</strong> Se la prima risposta non va bene, non ricominciare — chiedi all'AI di migliorarla specificando cosa non va.</li>
+      </ol>
+      <p>→ <a href="/blog/come-usare-chatgpt-per-non-perdere-il-lavoro" style="color:var(--primary,#6366f1);">Come usare ChatGPT per non perdere il lavoro</a></p>
+    `,
+  },
+
+  {
+    slug: 'recruiter-ai-futuro-selezione-personale',
+    title: 'Il Recruiter sarà sostituito dall\'AI? Il futuro della selezione del personale',
+    metaDesc: 'Il recruiter è a rischio AI? Rischio 55%, anno critico 2030. Lo screening CV è già automatizzato. Analisi del futuro della selezione personale e strategie di sopravvivenza.',
+    date: '2026-07-15',
+    readMin: 6,
+    category: 'Professioni',
+    intro: 'L\'AI già screening CV, fa colloqui di primo livello, valuta i candidati con assessment adattivi e predice il turnover. Il recruiter tradizionale è in pericolo — ma non tutti i recruiter sono uguali.',
+    content: `
+      <h2>Cosa fa già l'AI nel recruitment nel 2026</h2>
+      <ul>
+        <li><strong>Screening CV:</strong> strumenti come Workday AI, Greenhouse e HireVue analizzano migliaia di CV in minuti, classificano i candidati e segnalano i migliori match. Accuratezza comparabile o superiore al recruiter umano su criteri oggettivi.</li>
+        <li><strong>Colloqui video analitici:</strong> HireVue analizza espressioni facciali, tono di voce e contenuto delle risposte. Già usato da Unilever, Vodafone, Deutsche Bank.</li>
+        <li><strong>Assessment adattivi:</strong> test di personalità e cognitive ability somministrati e interpretati automaticamente</li>
+        <li><strong>Sourcing passivo:</strong> l'AI scansiona LinkedIn, GitHub, Behance e altri network per trovare candidati non in ricerca attiva</li>
+        <li><strong>Gestione comunicazioni:</strong> chatbot gestiscono le FAQ dei candidati 24/7</li>
+      </ul>
+
+      <h2>Il grande rischio: i recruiter junior</h2>
+      <p>Lo screening manuale di CV, i colloqui telefonici di primo livello, la pubblicazione di annunci, la gestione delle risposte ai candidati — queste attività occupano la maggior parte del tempo di un recruiter junior. Sono tutte già automatizzabili.</p>
+
+      <h2>I recruiter che sopravvivono</h2>
+      <p>Esistono tre tipologie di recruiter ad alto valore che l'AI non può sostituire:</p>
+      <ul>
+        <li><strong>L'executive headhunter:</strong> trovare e convincere un CFO passivo a lasciare un'azienda che lo paga bene richiede relazioni, credibilità e persuasione umana</li>
+        <li><strong>Il recruiter specializzato in settori di nicchia:</strong> chi conosce profondamente la community dei developer blockchain, dei cardiochirurghi o dei top chef sa valutare candidati che l'AI non sa leggere</li>
+        <li><strong>L'employer brand strategist:</strong> costruire la reputazione dell'azienda come datore di lavoro è un lavoro creativo e relazionale</li>
+      </ul>
+
+      <h2>Il piano di sopravvivenza</h2>
+      <p>Se fai recruiting, il momento di agire è adesso. Le mosse da fare:</p>
+      <ul>
+        <li>Imparare a usare gli strumenti AI (Workday AI, Greenhouse, HireVue) — chi li sa usare sostituisce chi non li sa usare</li>
+        <li>Spostarsi sull'executive search e sulle nicchie specializzate</li>
+        <li>Sviluppare competenze in employer branding e talent strategy</li>
+        <li>Costruire un network professionale forte nel proprio settore di specializzazione</li>
+      </ul>
+      <p>→ <a href="/professione/talent-acquisition" style="color:var(--primary,#6366f1);">Rischio AI per talent acquisition</a> · <a href="/professione/hr-manager" style="color:var(--primary,#6366f1);">Rischio AI per HR manager</a></p>
+    `,
+  },
+
 ];
 
 // ── Template articolo ─────────────────────────────────────────────────────────
