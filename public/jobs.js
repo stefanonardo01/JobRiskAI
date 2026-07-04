@@ -5483,8 +5483,8 @@ export const jobData = {
                 survivalNote: "la cucina industriale sarà automatizzata; il ristorante del futuro vende esperienza e identità, non solo cibo",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 4500,
+                defaultAiSetup: 18000,
                 description: "Lo Chef sarà sostituito dall'AI? Analisi del rischio automazione per la professione culinaria."
             },
             pasticcere: {
@@ -5497,8 +5497,8 @@ export const jobData = {
                 survivalNote: "il dolce industriale è già automatizzato; l'artigiano vive di qualità, identità e racconto",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 4200,
+                defaultAiSetup: 16000,
                 description: "Il Pasticcere sarà sostituito dall'AI? Analisi del rischio automazione per la pasticceria artigianale."
             },
             barista: {
@@ -5525,8 +5525,8 @@ export const jobData = {
                 survivalNote: "i lavori di cura personale richiedono contatto fisico e fiducia; l'AI supporterà la consulenza visiva, non il servizio",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 3800,
+                defaultAiSetup: 14000,
                 description: "Il Parrucchiere sarà sostituito dall'AI? Analisi del rischio automazione per la professione."
             },
             estetista: {
@@ -5539,8 +5539,8 @@ export const jobData = {
                 survivalNote: "il servizio estetico è profondamente umano e basato sulla fiducia; differenziarsi con tecnologie avanzate e approccio scientifico",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 3500,
+                defaultAiSetup: 12000,
                 description: "L'Estetista sarà sostituita dall'AI? Analisi del rischio automazione per il settore estetico."
             },
             personal_trainer: {
@@ -5553,8 +5553,8 @@ export const jobData = {
                 survivalNote: "le app AI personalizzano gli allenamenti; il PT vive di motivazione, contatto umano e gestione della complessità atletica",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 3200,
+                defaultAiSetup: 10000,
                 description: "Il Personal Trainer sarà sostituito dall'AI? Analisi del rischio automazione per il fitness."
             },
             vigile_urbano: {
@@ -5693,8 +5693,8 @@ export const jobData = {
                 survivalNote: "l'AI analizzerà i dati; l'allenatore rimarrà per motivare, gestire l'umano e prendere decisioni in contesti ad alta pressione",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 3000,
+                defaultAiSetup: 10000,
                 description: "L'Allenatore Sportivo sarà sostituito dall'AI? Analisi del rischio automazione per il coaching."
             },
             attore: {
@@ -6015,8 +6015,8 @@ export const jobData = {
                 survivalNote: "sviluppare competenze in pedagogia inclusiva e diventare facilitatori dell'apprendimento con l'AI come strumento",
                 defaultHumanSalary: 24000,
                 defaultHumanExtra: 7200,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 2500,
+                defaultAiSetup: 7000,
                 description: "L'insegnante di scuola primaria sarà sostituito dall'AI? Analisi del rischio per maestri e maestre d'Italia."
             },
             professore_liceo: {
@@ -6029,8 +6029,8 @@ export const jobData = {
                 survivalNote: "diventare facilitatori del pensiero critico piuttosto che trasmettitori di contenuti, che l'AI gestirà sempre meglio",
                 defaultHumanSalary: 24000,
                 defaultHumanExtra: 7200,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 2800,
+                defaultAiSetup: 8000,
                 description: "Il professore di liceo sarà sostituito dall'AI? Rischio automazione per docenti di italiano, matematica, storia, scienze."
             },
             educatore_asilo_nido: {
@@ -6043,8 +6043,8 @@ export const jobData = {
                 survivalNote: "professione strutturalmente protetta dalla necessità di presenza fisica e cura. Sviluppare specializzazione in sviluppo atipico",
                 defaultHumanSalary: 24000,
                 defaultHumanExtra: 7200,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 3000,
+                defaultAiSetup: 9000,
                 description: "L'educatore di asilo nido rischia l'automazione? Analisi del futuro per chi lavora con i bambini 0-3 anni."
             },
             tutor_specializzato: {
@@ -6057,8 +6057,8 @@ export const jobData = {
                 survivalNote: "specializzarsi in DSA complessi e ADHD dove la componente relazionale e motivazionale è insostituibile",
                 defaultHumanSalary: 24000,
                 defaultHumanExtra: 7200,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 2200,
+                defaultAiSetup: 6000,
                 description: "Il tutor per DSA e bisogni educativi speciali sarà sostituito dall'AI? Rischio e opportunità per tutor e mediatori didattici."
             },
             avvocato_penalista: {
@@ -6561,8 +6561,8 @@ export const jobData = {
                 survivalNote: "la cucina creativa è strutturalmente umana. Costruire un brand personale e puntare su esperienze gastronomiche uniche",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 4200,
+                defaultAiSetup: 16000,
                 description: "Il cuoco e il pizzaiolo saranno sostituiti dai robot? Analisi del rischio per chef e pizzaioli in Italia."
             },
             pasticcere_artigiano: {
@@ -6575,8 +6575,8 @@ export const jobData = {
                 survivalNote: "puntare su alta pasticceria artistica e costruire un brand digitale riconoscibile per resistere alla standardizzazione",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 4000,
+                defaultAiSetup: 15000,
                 description: "Il pasticcere artigiano sarà sostituito dai robot e dall'AI? Analisi del futuro per chi lavora nella pasticceria di alta qualità."
             },
             guida_turistica: {
@@ -6631,8 +6631,8 @@ export const jobData = {
                 survivalNote: "professione fortemente relazionale e creativa. Puntare su destination wedding di lusso e eventi aziendali premium",
                 defaultHumanSalary: 22000,
                 defaultHumanExtra: 6600,
-                defaultAiMonthly: 1800,
-                defaultAiSetup: 4000,
+                defaultAiMonthly: 2800,
+                defaultAiSetup: 8000,
                 description: "Il wedding planner sarà sostituito dall'AI? Analisi del rischio per organizzatori di matrimoni ed eventi in Italia."
             },
             dirigente_pa: {
