@@ -1473,7 +1473,2005 @@ export const jobExtra = {
             "Usare l'AI per verifica documentazione, concentrandosi sul campo",
             "Costruire competenze normative su regulatory affairs avanzato"
         ]
-    }
+    },
+
+    avvocato: {
+        tasks: [
+            { name: "Ricerca giurisprudenza e normativa", risk: 92 },
+            { name: "Redazione contratti standard", risk: 85 },
+            { name: "Revisione e due diligence documenti", risk: 80 },
+            { name: "Gestione pratiche burocratiche", risk: 75 },
+            { name: "Strategia processuale e difesa", risk: 18 },
+            { name: "Consulenza legale strategica", risk: 15 },
+            { name: "Negoziazione e mediazione", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in diritto complesso (penale, internazionale, IP)",
+            "Capacità di persuasione e retorica in aula",
+            "Competenze in AI Law e regolamentazione algoritmica",
+            "Costruire fiducia e relazione con clienti in momenti critici"
+        ]
+    },
+    notaio: {
+        tasks: [
+            { name: "Redazione atti standard (rogiti, compravendite)", risk: 82 },
+            { name: "Verifiche catastali e ipotecarie", risk: 90 },
+            { name: "Autenticazione documenti", risk: 65 },
+            { name: "Consulenza successoria e patrimoniale", risk: 30 },
+            { name: "Rogito con presenza fisica delle parti", risk: 20 }
+        ],
+        survivalPlan: [
+            "Consulenza patrimoniale e successoria complessa",
+            "Specializzazione in operazioni straordinarie (M&A, trust)",
+            "Competenze in diritto internazionale privato",
+            "Gestione di situazioni familiari delicate"
+        ]
+    },
+    commercialista: {
+        tasks: [
+            { name: "Dichiarazioni fiscali e contabilità ordinaria", risk: 95 },
+            { name: "Elaborazione buste paga", risk: 92 },
+            { name: "Adempimenti IVA e F24", risk: 90 },
+            { name: "Bilanci e reportistica standard", risk: 85 },
+            { name: "Consulenza fiscale strategica", risk: 28 },
+            { name: "Pianificazione patrimoniale", risk: 25 },
+            { name: "Gestione crisi aziendali e procedure concorsuali", risk: 22 }
+        ],
+        survivalPlan: [
+            "Consulenza fiscale strategica per PMI e holding",
+            "Specializzazione in operazioni straordinarie (M&A, scissioni)",
+            "Gestione crisi aziendali e procedure concorsuali",
+            "Pianificazione patrimoniale e successoria complessa"
+        ]
+    },
+    consulente_del_lavoro: {
+        tasks: [
+            { name: "Elaborazione buste paga", risk: 95 },
+            { name: "Adempimenti previdenziali (INPS, INAIL)", risk: 92 },
+            { name: "Gestione assunzioni e cessazioni standard", risk: 85 },
+            { name: "Consulenza contrattuale e sindacale", risk: 35 },
+            { name: "Gestione controversie di lavoro", risk: 25 }
+        ],
+        survivalPlan: [
+            "Consulenza in ristrutturazioni aziendali e contratti collettivi",
+            "Gestione controversie e contenziosi del lavoro",
+            "Specializzazione in welfare aziendale e benefit",
+            "Conoscenza approfondita dei contratti collettivi di settore"
+        ]
+    },
+    magistrato: {
+        tasks: [
+            { name: "Ricerca precedenti giurisprudenziali", risk: 88 },
+            { name: "Redazione bozze di sentenza su casi standard", risk: 60 },
+            { name: "Analisi fascicoli e documentazione", risk: 72 },
+            { name: "Valutazione prove e testimonianze", risk: 15 },
+            { name: "Deliberazione e sentenza definitiva", risk: 8 },
+            { name: "Udienza e gestione dibattimentale", risk: 12 }
+        ],
+        survivalPlan: [
+            "Specializzazione in diritto europeo e internazionale",
+            "Gestione di casi ad alta complessità fattuale",
+            "Competenze in diritto dell'AI e reati informatici",
+            "Capacità di valutazione delle prove in contesti tecnologici"
+        ]
+    },
+    medico_base: {
+        tasks: [
+            { name: "Diagnosi di patologie comuni tramite sintomi", risk: 78 },
+            { name: "Prescrizione farmaci per condizioni standard", risk: 70 },
+            { name: "Analisi referti ed esami diagnostici", risk: 82 },
+            { name: "Relazione terapeutica e ascolto del paziente", risk: 10 },
+            { name: "Gestione pazienti cronici complessi", risk: 22 },
+            { name: "Decisioni terapeutiche in casi atipici", risk: 18 }
+        ],
+        survivalPlan: [
+            "Sviluppare l'ascolto empatico e la relazione di cura",
+            "Specializzazione in medicina preventiva e longevità",
+            "Competenze in medicina personalizzata e genomica",
+            "Supervisione e interpretazione critica dei sistemi AI diagnostici"
+        ]
+    },
+    chirurgo: {
+        tasks: [
+            { name: "Pianificazione preoperatoria e analisi imaging", risk: 80 },
+            { name: "Chirurgia robotica assistita (supervisione)", risk: 35 },
+            { name: "Interventi laparoscopici standard", risk: 40 },
+            { name: "Chirurgia d'urgenza e decisionale", risk: 12 },
+            { name: "Gestione complicanze intraoperatorie", risk: 8 },
+            { name: "Relazione col paziente e consenso informato", risk: 5 }
+        ],
+        survivalPlan: [
+            "Specializzazione in chirurgia robotica e mininvasiva",
+            "Competenze in chirurgia d'urgenza e trauma",
+            "Interpretazione critica dei sistemi di supporto AI",
+            "Sviluppo di nuove tecniche chirurgiche"
+        ]
+    },
+    dentista: {
+        tasks: [
+            { name: "Diagnosi carie e patologie orali da imaging", risk: 85 },
+            { name: "Pianificazione trattamenti ortodontici", risk: 70 },
+            { name: "Pulizia dentale (igienista)", risk: 35 },
+            { name: "Interventi chirurgici orali", risk: 18 },
+            { name: "Gestione del paziente ansioso", risk: 8 },
+            { name: "Estetica dentale e relazione col paziente", risk: 12 }
+        ],
+        survivalPlan: [
+            "Specializzazione in implantologia e chirurgia orale complessa",
+            "Competenze in odontoiatria estetica avanzata",
+            "Supervisione sistemi AI di diagnosi radiologica",
+            "Gestione di pazienti con patologie sistemiche"
+        ]
+    },
+    fisioterapista: {
+        tasks: [
+            { name: "Valutazione posturale e analisi del movimento", risk: 65 },
+            { name: "Pianificazione del percorso riabilitativo", risk: 55 },
+            { name: "Trattamento manuale (massaggio, mobilizzazione)", risk: 12 },
+            { name: "Educazione terapeutica del paziente", risk: 15 },
+            { name: "Riabilitazione neuromotoria", risk: 18 }
+        ],
+        survivalPlan: [
+            "Specializzazione in riabilitazione neurologica",
+            "Competenze in terapia manuale avanzata (osteopatia, PNF)",
+            "Approccio biopsicosociale al dolore cronico",
+            "Integrazione di wearable e biofeedback nella terapia"
+        ]
+    },
+    psicologo: {
+        tasks: [
+            { name: "Assessment psicologico e test standardizzati", risk: 70 },
+            { name: "Documentazione e note cliniche", risk: 75 },
+            { name: "Ricerca bibliografica e diagnosi DSM", risk: 80 },
+            { name: "Relazione terapeutica e alleanza clinica", risk: 5 },
+            { name: "Psicoterapia e intervento in crisi", risk: 8 },
+            { name: "Lavoro con traumi e situazioni complesse", risk: 6 }
+        ],
+        survivalPlan: [
+            "Specializzazione in trauma, EMDR e terapie di terza generazione",
+            "Psicologia forense e neuropsicologia clinica",
+            "Supervisione e formazione di altri terapeuti",
+            "Integrazione critica degli strumenti AI nel percorso terapeutico"
+        ]
+    },
+    farmacista: {
+        tasks: [
+            { name: "Dispensazione farmaci con ricetta standard", risk: 88 },
+            { name: "Verifica interazioni farmacologiche", risk: 82 },
+            { name: "Gestione magazzino e ordini", risk: 90 },
+            { name: "Consulenza su farmaci OTC", risk: 60 },
+            { name: "Consulenza personalizzata su patologie croniche", risk: 25 },
+            { name: "Preparazioni galeniche magistrali", risk: 30 }
+        ],
+        survivalPlan: [
+            "Specializzazione in farmacia clinica e oncologica",
+            "Consulenza personalizzata per politerapi e pazienti fragili",
+            "Competenze in nutraceutica e medicina integrativa",
+            "Gestione farmacia come hub di salute di prossimità"
+        ]
+    },
+    veterinario: {
+        tasks: [
+            { name: "Diagnosi da sintomi e anamnesi standard", risk: 72 },
+            { name: "Analisi referti ed esami", risk: 78 },
+            { name: "Interventi chirurgici veterinari", risk: 20 },
+            { name: "Gestione del paziente animale", risk: 8 },
+            { name: "Relazione con il proprietario dell'animale", risk: 6 },
+            { name: "Medicina d'urgenza veterinaria", risk: 12 }
+        ],
+        survivalPlan: [
+            "Specializzazione in chirurgia e oncologia veterinaria",
+            "Medicina d'urgenza e terapia intensiva animale",
+            "Competenze in diagnostica per immagini avanzata",
+            "Medicina degli animali esotici o selvatici"
+        ]
+    },
+    nutrizionista: {
+        tasks: [
+            { name: "Calcolo piani alimentari standard", risk: 90 },
+            { name: "Analisi composizione corporea", risk: 75 },
+            { name: "Educazione alimentare di base", risk: 70 },
+            { name: "Gestione disturbi alimentari complessi", risk: 15 },
+            { name: "Supporto psicologico al cambiamento", risk: 12 },
+            { name: "Nutrizione clinica per patologie rare", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in nutrizione clinica oncologica e renale",
+            "Trattamento dei disturbi del comportamento alimentare",
+            "Approccio integrato psico-nutrizionale",
+            "Nutrizione sportiva di alto livello e biorisonanza"
+        ]
+    },
+    radiologo: {
+        tasks: [
+            { name: "Refertazione radiografie standard (polmone, osso)", risk: 92 },
+            { name: "Analisi TC e RM per patologie comuni", risk: 85 },
+            { name: "Screening mammografico", risk: 90 },
+            { name: "Interventistica radiologica complessa", risk: 18 },
+            { name: "Supervisione e validazione AI diagnostica", risk: 30 },
+            { name: "Radiologia d'urgenza e trauma", risk: 22 }
+        ],
+        survivalPlan: [
+            "Radiologia interventistica (procedure minimamente invasive)",
+            "Supervisione e audit dei sistemi AI diagnostici",
+            "Specializzazione in imaging molecolare e ibrido (PET/CT)",
+            "Competenze in ricerca e sviluppo di nuovi protocolli diagnostici"
+        ]
+    },
+    osteopata: {
+        tasks: [
+            { name: "Anamnesi e valutazione funzionale", risk: 55 },
+            { name: "Diagnosi osteopatica", risk: 40 },
+            { name: "Manipolazioni articolari e cranio-sacrali", risk: 8 },
+            { name: "Tecniche di tessuto molle", risk: 10 },
+            { name: "Educazione posturale", risk: 45 }
+        ],
+        survivalPlan: [
+            "Integrazione con medicina funzionale e nutrizione",
+            "Specializzazione in osteopatia pediatrica e viscerale",
+            "Approccio integrato corpo-mente",
+            "Ricerca e pubblicazione scientifica in osteopatia"
+        ]
+    },
+    logopedista: {
+        tasks: [
+            { name: "Valutazione e assessment del linguaggio", risk: 65 },
+            { name: "Esercizi di riabilitazione fonologica standard", risk: 50 },
+            { name: "Documentazione e note cliniche", risk: 80 },
+            { name: "Terapia per disturbi complessi (disfagia, afasia)", risk: 12 },
+            { name: "Lavoro con bambini e famiglie", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in disfagia e deglutizione",
+            "Riabilitazione post-ictus e neurologica",
+            "Logopedia per DSA e bambini con bisogni speciali",
+            "Integrazione di tecnologie AAC nella terapia"
+        ]
+    },
+    oss: {
+        tasks: [
+            { name: "Documentazione assistenziale", risk: 65 },
+            { name: "Monitoraggio parametri vitali (con dispositivi)", risk: 55 },
+            { name: "Assistenza igienica e mobilizzazione", risk: 10 },
+            { name: "Supporto emotivo e relazione con il paziente", risk: 5 },
+            { name: "Assistenza a pazienti non autosufficienti", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in assistenza demenze e Alzheimer",
+            "Competenze in cure palliative e fine vita",
+            "Formazione in gestione dello stress e prevenzione burnout",
+            "Coordinamento con équipe multidisciplinari"
+        ]
+    },
+    ingegnere_civile: {
+        tasks: [
+            { name: "Calcoli strutturali standard e dimensionamento", risk: 82 },
+            { name: "Produzione elaborati e tavole CAD/BIM", risk: 78 },
+            { name: "Computi metrici estimativi", risk: 85 },
+            { name: "Progettazione di strutture complesse e innovative", risk: 20 },
+            { name: "Supervisione cantiere e gestione rischi", risk: 18 },
+            { name: "Collaudi e certificazioni di responsabilità", risk: 15 }
+        ],
+        survivalPlan: [
+            "Specializzazione in ingegneria sismica avanzata",
+            "Competenze in BIM management e digital twin",
+            "Progettazione sostenibile e materiali innovativi",
+            "Gestione grandi infrastrutture e project management"
+        ]
+    },
+    architetto: {
+        tasks: [
+            { name: "Produzione elaborati tecnici e tavole BIM", risk: 80 },
+            { name: "Rendering e visualizzazioni 3D", risk: 85 },
+            { name: "Computi e specifiche tecniche standard", risk: 78 },
+            { name: "Concept design e visione creativa", risk: 20 },
+            { name: "Relazione con il cliente e ascolto delle esigenze", risk: 10 },
+            { name: "Progettazione su contesti storici e vincolati", risk: 18 }
+        ],
+        survivalPlan: [
+            "Progettazione bioclimatica e architettura sostenibile",
+            "Specializzazione in restauro e patrimonio culturale",
+            "Direzione artistica e branding degli spazi",
+            "Competenze in parametric design e computational architecture"
+        ]
+    },
+    geometra: {
+        tasks: [
+            { name: "Rilievi topografici e catastali", risk: 82 },
+            { name: "Pratiche catastali e DOCFA", risk: 90 },
+            { name: "Computi metrici e preventivi standard", risk: 88 },
+            { name: "Progettazione edilizia semplice (abitativo)", risk: 70 },
+            { name: "Direzione lavori e rapporto con il cantiere", risk: 28 },
+            { name: "Consulenza su sanatorie e condoni", risk: 35 }
+        ],
+        survivalPlan: [
+            "Specializzazione in efficienza energetica e APE",
+            "Competenze in topografia digitale e droni",
+            "BIM per il settore edilizio residenziale",
+            "Gestione pratiche complesse (Superbonus, sisma-bonus)"
+        ]
+    },
+    topografo: {
+        tasks: [
+            { name: "Rilievi GPS e fotogrammetria con droni", risk: 75 },
+            { name: "Elaborazione dati GIS", risk: 80 },
+            { name: "Aggiornamenti catastali e mappe", risk: 85 },
+            { name: "Rilievi in contesti complessi (sotterranei, storici)", risk: 30 },
+            { name: "Perizie e consulenze tecniche", risk: 28 }
+        ],
+        survivalPlan: [
+            "Specializzazione in LiDAR e scansioni 3D",
+            "Competenze in GIS avanzato e analisi spaziale",
+            "Rilievi subacquei e in ambienti estremi",
+            "Consulenza per pianificazione territoriale"
+        ]
+    },
+    ingegnere_meccanico: {
+        tasks: [
+            { name: "Calcoli e simulazioni FEM standard", risk: 85 },
+            { name: "Progettazione CAD di componenti standard", risk: 78 },
+            { name: "Documentazione tecnica e distinte materiali", risk: 82 },
+            { name: "Progettazione di sistemi complessi e innovativi", risk: 22 },
+            { name: "Problem solving su guasti e malfunzionamenti", risk: 18 },
+            { name: "Testing e validazione su campo", risk: 25 }
+        ],
+        survivalPlan: [
+            "Specializzazione in meccatronica e robotica",
+            "Competenze in additive manufacturing (stampa 3D)",
+            "Ingegneria dei sistemi e system engineering",
+            "Sviluppo prodotto con metodologie agile e rapid prototyping"
+        ]
+    },
+    urbanista: {
+        tasks: [
+            { name: "Analisi dati territoriali e demografici", risk: 80 },
+            { name: "Produzione cartografie e GIS", risk: 78 },
+            { name: "Redazione varianti PRG standard", risk: 65 },
+            { name: "Progettazione partecipata e mediazione con stakeholder", risk: 15 },
+            { name: "Pianificazione strategica urbana", risk: 20 }
+        ],
+        survivalPlan: [
+            "Smart city design e urban data analytics",
+            "Pianificazione per resilienza climatica",
+            "Partecipazione pubblica e co-design urbano",
+            "Specializzazione in rigenerazione urbana e brownfield"
+        ]
+    },
+    ingegnere_ambientale: {
+        tasks: [
+            { name: "Analisi dati ambientali e modellazione", risk: 80 },
+            { name: "Redazione studi VIA e VAS standard", risk: 72 },
+            { name: "Monitoraggio ambientale con sensori IoT", risk: 65 },
+            { name: "Progettazione interventi di bonifica complessi", risk: 22 },
+            { name: "Consulenza normativa e interazione con enti", risk: 28 }
+        ],
+        survivalPlan: [
+            "Specializzazione in economia circolare e LCA",
+            "Competenze in carbon accounting e ESG reporting",
+            "Progettazione Nature Based Solutions",
+            "Gestione di procedure autorizzative complesse (AIA, VIA)"
+        ]
+    },
+    agente_immobiliare: {
+        tasks: [
+            { name: "Ricerca e matching immobili-acquirenti", risk: 88 },
+            { name: "Redazione annunci e schede immobili", risk: 85 },
+            { name: "Valutazione immobili standard (AVR)", risk: 80 },
+            { name: "Negoziazione e gestione trattativa", risk: 22 },
+            { name: "Relazione di fiducia con acquirenti e venditori", risk: 12 },
+            { name: "Gestione situazioni complesse (eredità, divorzi)", risk: 18 }
+        ],
+        survivalPlan: [
+            "Specializzazione in immobili di lusso o commerciali",
+            "Competenze in home staging e marketing immobiliare avanzato",
+            "Gestione portafogli di investimento immobiliare",
+            "Consulenza per investitori e fondi immobiliari"
+        ]
+    },
+    perito_immobiliare: {
+        tasks: [
+            { name: "Valutazione AVM (modelli automatici)", risk: 92 },
+            { name: "Redazione perizie standard per banche", risk: 82 },
+            { name: "Analisi comparative di mercato", risk: 88 },
+            { name: "Perizia su immobili atipici e di lusso", risk: 30 },
+            { name: "Perizia per contenzioso e tribunale", risk: 22 }
+        ],
+        survivalPlan: [
+            "Specializzazione in immobili storici e di pregio",
+            "Perizie per contenziosi e procedure esecutive",
+            "Valutazione di portafogli NPL e crediti immobiliari",
+            "Competenze in analisi di investimento immobiliare"
+        ]
+    },
+    consulente_finanziario: {
+        tasks: [
+            { name: "Analisi portafoglio e asset allocation standard", risk: 88 },
+            { name: "Pianificazione finanziaria base", risk: 82 },
+            { name: "Reportistica e compliance standard", risk: 90 },
+            { name: "Consulenza patrimoniale complessa (successione, trust)", risk: 22 },
+            { name: "Gestione emotiva del cliente in momenti di crisi", risk: 8 },
+            { name: "Consulenza su operazioni straordinarie", risk: 18 }
+        ],
+        survivalPlan: [
+            "Specializzazione in pianificazione patrimoniale e successoria",
+            "Consulenza su ESG e investimenti sostenibili",
+            "Gestione emotiva e behavioral finance",
+            "Competenze in family office e patrimoni complessi"
+        ]
+    },
+    agente_assicurativo: {
+        tasks: [
+            { name: "Quotazione polizze standard (auto, casa)", risk: 95 },
+            { name: "Gestione sinistri semplici", risk: 88 },
+            { name: "Rinnovi e gestione portafoglio base", risk: 85 },
+            { name: "Consulenza assicurativa complessa (vita, previdenza)", risk: 25 },
+            { name: "Gestione clienti business e rischi aziendali", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in risk management aziendale",
+            "Consulenza su polizze vita e previdenza complementare",
+            "Competenze in liability e D&O per aziende",
+            "Gestione sinistri complessi e contenzioso"
+        ]
+    },
+    revisore_contabile: {
+        tasks: [
+            { name: "Analisi transazioni e riconciliazioni", risk: 95 },
+            { name: "Verifica bilanci e conformità standard", risk: 90 },
+            { name: "Campionamento e test di dettaglio", risk: 85 },
+            { name: "Valutazione rischi di frode e irregolarità", risk: 30 },
+            { name: "Relazione con management e audit committee", risk: 15 },
+            { name: "Giudizio professionale su stime contabili", risk: 22 }
+        ],
+        survivalPlan: [
+            "Specializzazione in forensic accounting e anti-frode",
+            "Audit di sistemi AI e algoritmi",
+            "Consulenza su governance e internal audit avanzato",
+            "Competenze in cybersecurity audit"
+        ]
+    },
+    giornalista: {
+        tasks: [
+            { name: "Redazione notizie da comunicati e dati (automated journalism)", risk: 92 },
+            { name: "Trascrizione interviste", risk: 95 },
+            { name: "Ricerca e verifica fonti", risk: 70 },
+            { name: "Reportage investigativo e d'inchiesta", risk: 12 },
+            { name: "Analisi e commento critico", risk: 20 },
+            { name: "Costruzione di fonti e relazioni", risk: 8 }
+        ],
+        survivalPlan: [
+            "Giornalismo investigativo e data journalism",
+            "Competenze in verifica delle fonti (fact-checking AI)",
+            "Specializzazione in nicchie di expertise profonda",
+            "Sviluppare audience propria e personal brand editoriale"
+        ]
+    },
+    scrittore: {
+        tasks: [
+            { name: "Scrittura di contenuti brevi e schematici", risk: 88 },
+            { name: "Traduzioni e adattamenti", risk: 82 },
+            { name: "Ghostwriting standard", risk: 72 },
+            { name: "Narrativa letteraria con voce originale", risk: 20 },
+            { name: "Saggistica con ricerca profonda", risk: 22 },
+            { name: "Scrittura per contesti culturali specifici", risk: 18 }
+        ],
+        survivalPlan: [
+            "Sviluppare voce letteraria irriproducibile",
+            "Scrittura ibrida uomo-AI (prompt engineering creativo)",
+            "Specializzazione in generi di nicchia",
+            "Costruire relazione diretta con i lettori (newsletter, community)"
+        ]
+    },
+    sceneggiatore: {
+        tasks: [
+            { name: "Struttura narrativa e outline di soggetti", risk: 75 },
+            { name: "Dialoghi standard e adattamenti", risk: 70 },
+            { name: "Scrittura di sequel e franchise", risk: 65 },
+            { name: "Storie originali con profondità emotiva", risk: 18 },
+            { name: "Adattamenti letterari complessi", risk: 22 },
+            { name: "Lavoro di script editing e polish", risk: 55 }
+        ],
+        survivalPlan: [
+            "Scrittura per nuovi formati (serie evento, podcast narrativo)",
+            "Competenze in regia e produzione per writer-director",
+            "Specializzazione in documentario e giornalismo cinematografico",
+            "Costruire IP proprie e produrre in modo indipendente"
+        ]
+    },
+    doppiatore: {
+        tasks: [
+            { name: "Doppiaggio di contenuti brevi (spot, tutorial)", risk: 90 },
+            { name: "Voice-over per documentari standard", risk: 82 },
+            { name: "Doppiaggio serie TV/film con attori famosi (clone vocal)", risk: 65 },
+            { name: "Recitazione vocale con interpretazione profonda", risk: 18 },
+            { name: "Doppiaggio di videogiochi con performance complesse", risk: 25 }
+        ],
+        survivalPlan: [
+            "Specializzazione in recitazione vocale teatrale e letteraria",
+            "Competenze in regia del suono e sound design",
+            "Sviluppare personal brand vocale riconoscibile",
+            "Formazione su supervisione e direzione voci AI"
+        ]
+    },
+    idraulico: {
+        tasks: [
+            { name: "Preventivi e ordini materiali", risk: 60 },
+            { name: "Installazione impianti standard", risk: 20 },
+            { name: "Riparazione guasti e diagnostica", risk: 15 },
+            { name: "Interventi in emergenza", risk: 8 },
+            { name: "Lavori in spazi difficili", risk: 5 }
+        ],
+        survivalPlan: [
+            "Specializzazione in impianti geotermici e pompe di calore",
+            "Competenze in domotica e building automation",
+            "Installazione impianti solari termici",
+            "Specializzazione in energy audit degli impianti"
+        ]
+    },
+    elettricista: {
+        tasks: [
+            { name: "Preventivi e documentazione", risk: 65 },
+            { name: "Installazione impianti civili standard", risk: 22 },
+            { name: "Risoluzione guasti e troubleshooting", risk: 15 },
+            { name: "Impianti fotovoltaici e accumulo", risk: 20 },
+            { name: "Cablaggi industriali complessi", risk: 18 }
+        ],
+        survivalPlan: [
+            "Specializzazione in fotovoltaico e storage energetico",
+            "Domotica e building automation (KNX, Zigbee)",
+            "Impianti elettrici per veicoli elettrici (EV charging)",
+            "Progettazione illuminotecnica"
+        ]
+    },
+    falegname: {
+        tasks: [
+            { name: "Progettazione CAD di mobili standard", risk: 80 },
+            { name: "Taglio CNC di componenti standard", risk: 55 },
+            { name: "Posa e assemblaggio in cantiere", risk: 15 },
+            { name: "Lavori personalizzati e su misura", risk: 10 },
+            { name: "Restauro mobili antichi", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in artigianato di lusso e su misura",
+            "Restauro e conservazione del legno antico",
+            "Utilizzo di CNC e tecnologie digitali per design personalizzato",
+            "Sostenibilità e uso di materiali certificati"
+        ]
+    },
+    meccanico: {
+        tasks: [
+            { name: "Diagnosi elettronica con OBD standard", risk: 72 },
+            { name: "Tagliandi e manutenzione ordinaria", risk: 45 },
+            { name: "Sostituzione componenti standard", risk: 30 },
+            { name: "Diagnosi guasti complessi e atipici", risk: 12 },
+            { name: "Riparazione veicoli elettrici e sistemi ADAS", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in veicoli elettrici (EV, PHEV)",
+            "Diagnosi avanzata sistemi ADAS e guida autonoma",
+            "Competenze in bus e veicoli commerciali pesanti",
+            "Gestione autofficina con software gestionali avanzati"
+        ]
+    },
+    chef: {
+        tasks: [
+            { name: "Creazione ricette e menu standard", risk: 65 },
+            { name: "Gestione scorte e ordinazione ingredienti", risk: 75 },
+            { name: "Cottura automatizzata (forni programmabili, robot)", risk: 40 },
+            { name: "Cucina creativa e alta gastronomia", risk: 10 },
+            { name: "Gestione brigata e leadership in cucina", risk: 12 },
+            { name: "Relazione con clienti e identità culinaria", risk: 8 }
+        ],
+        survivalPlan: [
+            "Sviluppare identità culinaria e stile riconoscibile",
+            "Competenze in fermentazione, tecniche avanzate, cucina scientifica",
+            "Personal branding e presenza digitale",
+            "Specializzazione in cucina vegetale, allergie, salute"
+        ]
+    },
+    pasticcere: {
+        tasks: [
+            { name: "Produzione prodotti standard e su ricetta fissa", risk: 60 },
+            { name: "Gestione ordinativi e magazzino", risk: 72 },
+            { name: "Decorazioni semplici e standard", risk: 45 },
+            { name: "Creazione di nuove ricette e prodotti", risk: 12 },
+            { name: "Decorazioni artistiche e sculture in zucchero", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in pasticceria da ristorazione e dessert d'autore",
+            "Tecniche avanzate (temperaggio, isomalt, gelatina artistica)",
+            "Personal branding e presenza sui social",
+            "Sviluppare linee proprie e vendita diretta"
+        ]
+    },
+    barista: {
+        tasks: [
+            { name: "Preparazione caffè e bevande standard", risk: 72 },
+            { name: "Gestione cassa e ordini", risk: 80 },
+            { name: "Aperitivi e cocktail standard", risk: 55 },
+            { name: "Mixologia creativa e cocktail competition", risk: 12 },
+            { name: "Relazione con i clienti abituali", risk: 5 },
+            { name: "Gestione atmosfera del locale", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in specialty coffee e caffetteria d'autore",
+            "Mixologia avanzata e cocktail pairing",
+            "Gestione e apertura di un locale proprio",
+            "Competenze in coffee roasting e selezione origini"
+        ]
+    },
+    parrucchiere: {
+        tasks: [
+            { name: "Gestione appuntamenti e cassa", risk: 80 },
+            { name: "Consulenza colore e stile (assistita da AI)", risk: 55 },
+            { name: "Taglio e styling", risk: 10 },
+            { name: "Trattamenti chimici (colorazioni, permanenti)", risk: 15 },
+            { name: "Relazione con il cliente", risk: 5 }
+        ],
+        survivalPlan: [
+            "Specializzazione in colorazione avanzata (balayage, tecnica giapponese)",
+            "Barberia di lusso e cura della barba",
+            "Personal branding su Instagram/TikTok",
+            "Formazione e apertura di accademia"
+        ]
+    },
+    estetista: {
+        tasks: [
+            { name: "Prenotazioni e gestione agenda", risk: 85 },
+            { name: "Consulenza prodotti skincare (AI-assisted)", risk: 60 },
+            { name: "Trattamenti manuali (massaggi, pulizia viso)", risk: 10 },
+            { name: "Tecniche laser e luce pulsata", risk: 20 },
+            { name: "Relazione di fiducia e fidelizzazione cliente", risk: 5 }
+        ],
+        survivalPlan: [
+            "Specializzazione in dermocosmetologia e trattamenti medical-grade",
+            "Tecnologie estetiche avanzate (radiofrequenza, HIFU)",
+            "Nutrizione della pelle e approccio olistico",
+            "Gestione di centro estetico avanzato"
+        ]
+    },
+    personal_trainer: {
+        tasks: [
+            { name: "Creazione schede allenamento standard", risk: 85 },
+            { name: "Monitoraggio progressi con app e wearable", risk: 75 },
+            { name: "Coaching motivazionale in presenza", risk: 12 },
+            { name: "Riabilitazione motoria post-infortunio", risk: 18 },
+            { name: "Preparazione atletica d'élite", risk: 15 }
+        ],
+        survivalPlan: [
+            "Specializzazione in preparazione atletica per sport specifici",
+            "Riabilitazione funzionale e movement therapy",
+            "Nutrizione sportiva e supplementazione",
+            "Costruire community online e programmi digitali"
+        ]
+    },
+    vigile_urbano: {
+        tasks: [
+            { name: "Rilevamento infrazioni con telecamere e sensori", risk: 88 },
+            { name: "Gestione pratiche e atti amministrativi", risk: 82 },
+            { name: "Pattugliamento preventivo e deterrenza", risk: 25 },
+            { name: "Gestione emergenze e incidenti stradali", risk: 18 },
+            { name: "Mediazione conflitti e ordine pubblico", risk: 12 }
+        ],
+        survivalPlan: [
+            "Specializzazione in polizia giudiziaria",
+            "Gestione emergenze e protezione civile",
+            "Mediazione e risoluzione dei conflitti di comunità",
+            "Competenze in cybercrime e reati digitali"
+        ]
+    },
+    pompiere: {
+        tasks: [
+            { name: "Pianificazione interventi e logistica", risk: 60 },
+            { name: "Analisi rischi e scenari incidentali", risk: 55 },
+            { name: "Intervento in incendi e soccorso tecnico", risk: 8 },
+            { name: "Soccorso in ambienti confinati e USAR", risk: 5 },
+            { name: "Gestione emergenze chimico-biologiche", risk: 10 }
+        ],
+        survivalPlan: [
+            "Specializzazione USAR (Urban Search and Rescue)",
+            "Competenze in emergenze NBCR (nucleare, biologico, chimico, radiologico)",
+            "Comandante di unità operativa",
+            "Formazione e prevenzione incendi in ambienti industriali"
+        ]
+    },
+    funzionario_pubblico: {
+        tasks: [
+            { name: "Istruzione pratiche e atti amministrativi standard", risk: 90 },
+            { name: "Gestione documentale e protocollo", risk: 88 },
+            { name: "Risposta a richieste di accesso e informazioni", risk: 82 },
+            { name: "Decisioni discrezionali su casi complessi", risk: 22 },
+            { name: "Coordinamento inter-istituzionale", risk: 18 }
+        ],
+        survivalPlan: [
+            "Specializzazione in procurement pubblico e appalti",
+            "Project management per fondi PNRR ed europei",
+            "Digitalizzazione dei processi pubblici",
+            "Competenze in diritto amministrativo avanzato"
+        ]
+    },
+    autista_camion: {
+        tasks: [
+            { name: "Guida su autostrade e percorsi standard", risk: 85 },
+            { name: "Navigazione e ottimizzazione rotte", risk: 90 },
+            { name: "Gestione documentazione trasporti", risk: 88 },
+            { name: "Consegne last-mile in ambiente urbano complesso", risk: 35 },
+            { name: "Gestione emergenze meccaniche e stradali", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in trasporti eccezionali e carichi speciali",
+            "Competenze in logistica internazionale e dogane",
+            "Gestione flotte e coordinamento operativo",
+            "Transizione verso supervisione di veicoli autonomi"
+        ]
+    },
+    pilota: {
+        tasks: [
+            { name: "Volo di crociera standard (già automatizzato al 95%)", risk: 85 },
+            { name: "Procedure di routine e checklist", risk: 75 },
+            { name: "Gestione emergenze in volo", risk: 8 },
+            { name: "Decisioni in condizioni meteo avverse", risk: 10 },
+            { name: "Comunicazioni ATC complesse", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in velivoli di nuova generazione",
+            "Competenze in human factors e CRM avanzato",
+            "Formazione su sistemi di automazione avanzata",
+            "Percorso verso ruoli di Chief Pilot o Safety Manager"
+        ]
+    },
+    magazziniere: {
+        tasks: [
+            { name: "Picking e packing standard", risk: 90 },
+            { name: "Gestione inventario e conteggi", risk: 92 },
+            { name: "Ricezione e verifica merce", risk: 82 },
+            { name: "Gestione eccezioni e danni", risk: 28 },
+            { name: "Coordinamento con fornitori e trasportatori", risk: 30 }
+        ],
+        survivalPlan: [
+            "Competenze in WMS (Warehouse Management System)",
+            "Supervisione robot AMR e sistemi automatizzati",
+            "Specializzazione in logistica farmaceutica o food-grade",
+            "Competenze in supply chain management"
+        ]
+    },
+    agronomo: {
+        tasks: [
+            { name: "Analisi del suolo e piani fertilizzazione standard", risk: 80 },
+            { name: "Monitoraggio colture con droni e sensori", risk: 72 },
+            { name: "Redazione PAC e domande contributi", risk: 82 },
+            { name: "Consulenza su gestione aziendale agricola", risk: 28 },
+            { name: "Sviluppo nuove pratiche colturali e ricerca", risk: 22 }
+        ],
+        survivalPlan: [
+            "Precision farming e agricoltura di precisione",
+            "Agroecologia e agricoltura biologica certificata",
+            "Carbon farming e crediti di carbonio agricoli",
+            "Consulenza per filiere corte e valorizzazione prodotti"
+        ]
+    },
+    agricoltore: {
+        tasks: [
+            { name: "Lavorazioni meccanizzate standard", risk: 72 },
+            { name: "Gestione irrigazione e fertilizzazione", risk: 75 },
+            { name: "Raccolta meccanizzata", risk: 65 },
+            { name: "Gestione aziendale e filiera", risk: 25 },
+            { name: "Selezione varietale e sperimentazione", risk: 20 },
+            { name: "Agricoltura di precisione e adattamento climatico", risk: 22 }
+        ],
+        survivalPlan: [
+            "Agricoltura di precisione (droni, sensori IoT)",
+            "Diversificazione in agriturismo e vendita diretta",
+            "Coltivazioni di nicchia e biologico certificato",
+            "Accesso a fondi europei (PSR, PNRR Agri)"
+        ]
+    },
+    enologo: {
+        tasks: [
+            { name: "Analisi chimiche e microbiologiche del vino", risk: 82 },
+            { name: "Monitoraggio fermentazione con sensori", risk: 75 },
+            { name: "Schede tecniche e documentazione", risk: 78 },
+            { name: "Creazione nuovi blend e stile aziendale", risk: 12 },
+            { name: "Degustazione critica e valutazione qualità", risk: 15 }
+        ],
+        survivalPlan: [
+            "Specializzazione in viticultura biodinamica e naturale",
+            "Competenze in enoturismo e marketing del vino",
+            "Consulenza per cantina boutique e cru",
+            "Export e comunicazione internazionale del vino"
+        ]
+    },
+    allenatore: {
+        tasks: [
+            { name: "Analisi video e performance analytics", risk: 82 },
+            { name: "Pianificazione allenamenti standard", risk: 72 },
+            { name: "Scouting avversari", risk: 80 },
+            { name: "Motivazione e leadership del gruppo", risk: 8 },
+            { name: "Gestione dinamiche di squadra e conflitti", risk: 6 },
+            { name: "Decision making tattico in partita", risk: 12 }
+        ],
+        survivalPlan: [
+            "Specializzazione in sport analytics e data-driven coaching",
+            "Competenze in psicologia dello sport",
+            "Gestione dello spogliatoio e leadership situazionale",
+            "Formazione in metodologie innovative di allenamento"
+        ]
+    },
+    attore: {
+        tasks: [
+            { name: "Doppiaggio e voice acting standard", risk: 72 },
+            { name: "Comparse e ruoli minori in CGI", risk: 65 },
+            { name: "Recitazione per spot pubblicitari standard", risk: 55 },
+            { name: "Performance teatrale live", risk: 8 },
+            { name: "Interpretazione di ruoli complessi e drammatici", risk: 10 },
+            { name: "Presenza e carisma scenico", risk: 5 }
+        ],
+        survivalPlan: [
+            "Specializzazione in teatro fisico e danza-teatro",
+            "Regia e direzione artistica",
+            "Produzione indipendente e content creation",
+            "Competenze in motion capture e performance digitale"
+        ]
+    },
+    regista: {
+        tasks: [
+            { name: "Editing assistito e color correction standard", risk: 78 },
+            { name: "VFX e post-produzione standard", risk: 72 },
+            { name: "Storyboard e pre-visualizzazione", risk: 70 },
+            { name: "Direzione attori e costruzione performance", risk: 8 },
+            { name: "Visione creativa e punto di vista", risk: 6 },
+            { name: "Gestione del set e decision making", risk: 10 }
+        ],
+        survivalPlan: [
+            "Produzione indipendente con budget ridotti (AI accelera la post)",
+            "Specializzazione in documentario e giornalismo cinematografico",
+            "Sviluppare IP proprie e produrre serie internazionali",
+            "Competenze in XR e esperienze immersive"
+        ]
+    },
+    musicista: {
+        tasks: [
+            { name: "Composizione di musica funzionale (jingle, background)", risk: 88 },
+            { name: "Produzione musicale digitale standard", risk: 72 },
+            { name: "Arrangiamenti e orchestrazioni di servizio", risk: 75 },
+            { name: "Esecuzione live e performance", risk: 10 },
+            { name: "Composizione con voce artistica originale", risk: 12 },
+            { name: "Insegnamento musicale", risk: 22 }
+        ],
+        survivalPlan: [
+            "Sviluppare genere e identità sonora irriproducibile",
+            "Competenze in live electronics e performance audiovisiva",
+            "Musica per videogiochi e mondi virtuali",
+            "Costruire community di fan diretta (Patreon, Bandcamp)"
+        ]
+    },
+    cantante: {
+        tasks: [
+            { name: "Registrazione in studio per prodotti commerciali", risk: 70 },
+            { name: "Jingle e voice-over cantato", risk: 80 },
+            { name: "Cori e voci di supporto", risk: 72 },
+            { name: "Performance live e concerto", risk: 8 },
+            { name: "Identità artistica e fanbase", risk: 5 }
+        ],
+        survivalPlan: [
+            "Sviluppare stile vocale unico e riconoscibile",
+            "Songwriting e composizione propria",
+            "Live performance e costruzione di fanbase",
+            "Sfruttamento diritti e royalties come asset"
+        ]
+    },
+    assistente_sociale: {
+        tasks: [
+            { name: "Gestione documentazione e pratiche", risk: 78 },
+            { name: "Valutazione del bisogno con strumenti standardizzati", risk: 60 },
+            { name: "Intervento in situazioni di crisi familiare", risk: 8 },
+            { name: "Tutela minori e lavoro con famiglie vulnerabili", risk: 5 },
+            { name: "Coordinamento con rete dei servizi", risk: 12 }
+        ],
+        survivalPlan: [
+            "Specializzazione in tutela minori e protezione legale",
+            "Lavoro con adulti in situazione di dipendenza",
+            "Progettazione di servizi di welfare di comunità",
+            "Competenze in mediazione familiare e penale"
+        ]
+    },
+    educatore_sociale: {
+        tasks: [
+            { name: "Documentazione educativa e pei/pef", risk: 72 },
+            { name: "Pianificazione attività e laboratori", risk: 55 },
+            { name: "Relazione educativa individuale", risk: 6 },
+            { name: "Lavoro di comunità e co-progettazione", risk: 10 },
+            { name: "Gestione crisi e situazioni difficili", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in educazione in carcere e giustizia minorile",
+            "Competenze in dipendenze e riduzione del danno",
+            "Coordinamento di équipe multidisciplinari",
+            "Project management per progetti europei sociali"
+        ]
+    },
+    stilista: {
+        tasks: [
+            { name: "Trend forecasting e analisi tendenze", risk: 80 },
+            { name: "Sviluppo pattern e modellistica standard", risk: 68 },
+            { name: "Generazione bozzetti e concept base", risk: 72 },
+            { name: "Design con identità creativa originale", risk: 15 },
+            { name: "Direzione artistica collection", risk: 12 },
+            { name: "Relazione con artigiani e tessutai", risk: 10 }
+        ],
+        survivalPlan: [
+            "Specializzazione in lusso e haute couture",
+            "Competenze in sustainable fashion e materiali innovativi",
+            "Direzione creativa e brand building",
+            "Artigianato digitale e stampanti 3D per moda"
+        ]
+    },
+    sommelier: {
+        tasks: [
+            { name: "Abbinamento cibo-vino standard", risk: 78 },
+            { name: "Gestione cantina e ordini", risk: 72 },
+            { name: "Degustazione descrittiva per schede", risk: 65 },
+            { name: "Esperienza di servizio e narrazione del vino", risk: 10 },
+            { name: "Consulenza per grandi cantine e aziende", risk: 20 }
+        ],
+        survivalPlan: [
+            "Consulenza per aziende vinicole e investitori",
+            "Enoturismo e ospitalità di lusso",
+            "Competenze in wine marketing e comunicazione",
+            "Specializzazione in vini naturali e biodinamici"
+        ]
+    },
+    criminologo: {
+        tasks: [
+            { name: "Analisi profilo del criminale su dati standard", risk: 78 },
+            { name: "Ricerca statistica su fenomeni criminali", risk: 82 },
+            { name: "Redazione perizie psicologiche standard", risk: 60 },
+            { name: "Analisi forense di scene complesse e atipiche", risk: 20 },
+            { name: "Testimonianza in tribunale e consulenza legale", risk: 15 }
+        ],
+        survivalPlan: [
+            "Specializzazione in criminalità organizzata e terrorism",
+            "Cybercriminologia e analisi reati digitali",
+            "Consulenza per enti pubblici e intelligence",
+            "Ricerca accademica e pubblicazione scientifica"
+        ]
+    },
+    psicologo_scolastico: {
+        tasks: [
+            { name: "Somministrazione test standardizzati", risk: 72 },
+            { name: "Documentazione e relazioni", risk: 78 },
+            { name: "Sportello di ascolto individuale", risk: 8 },
+            { name: "Intervento su DSA e BES", risk: 20 },
+            { name: "Mediazione conflitti tra studenti", risk: 10 }
+        ],
+        survivalPlan: [
+            "Specializzazione in neuropsicologia dell'apprendimento",
+            "Intervento precoce su disturbi emotivo-relazionali",
+            "Competenze in mindfulness e psicologia positiva scolastica",
+            "Formazione docenti e genitori"
+        ]
+    },
+    lobbista: {
+        tasks: [
+            { name: "Monitoring normativo e regulatory watch", risk: 85 },
+            { name: "Redazione position paper e note tecniche", risk: 75 },
+            { name: "Analisi del processo legislativo", risk: 78 },
+            { name: "Relazioni con istituzioni e stakeholder chiave", risk: 8 },
+            { name: "Negoziazione e costruzione di coalizioni", risk: 6 }
+        ],
+        survivalPlan: [
+            "Specializzazione in regolamentazione AI e tech policy",
+            "Competenze in EU affairs e lobbying a Bruxelles",
+            "Gestione di coalizioni multi-stakeholder",
+            "Comunicazione pubblica e posizionamento politico"
+        ]
+    },
+    redattore: {
+        tasks: [
+            { name: "Revisione grammaticale e sintattica", risk: 95 },
+            { name: "Redazione notizie da fonti e comunicati", risk: 90 },
+            { name: "SEO e ottimizzazione contenuti web", risk: 85 },
+            { name: "Editing letterario e valorizzazione voce d'autore", risk: 18 },
+            { name: "Content strategy e direzione editoriale", risk: 20 }
+        ],
+        survivalPlan: [
+            "Editing letterario per narrativa e saggistica d'autore",
+            "Direzione editoriale e sviluppo di brand editoriali",
+            "Competenze in content strategy e audience building",
+            "Specializzazione in traduzione editoriale letteraria"
+        ]
+    },
+    panettiere: {
+        tasks: [
+            { name: "Produzione pane industriale e standard", risk: 82 },
+            { name: "Gestione forni e processi produttivi", risk: 70 },
+            { name: "Gestione magazzino e ordini", risk: 78 },
+            { name: "Lievitazioni naturali e pani di alta qualità", risk: 15 },
+            { name: "Relazione con clienti abituali", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione in lievitazione naturale (pasta madre)",
+            "Pani di grano antico e prodotti tipici locali",
+            "Personal branding e racconto del mestiere sui social",
+            "Apertura di panificio artigianale con vendita diretta"
+        ]
+    },
+    cameriere: {
+        tasks: [
+            { name: "Presa ordini con tablet/sistemi digitali", risk: 75 },
+            { name: "Gestione cassa e pagamenti", risk: 82 },
+            { name: "Servizio standard in ristorante fast casual", risk: 55 },
+            { name: "Servizio di alta sala e fine dining", risk: 12 },
+            { name: "Sommellerie e wine pairing", risk: 18 },
+            { name: "Esperienza del cliente e storytelling del piatto", risk: 8 }
+        ],
+        survivalPlan: [
+            "Specializzazione nel servizio di alta sala e fine dining",
+            "Formazione in sommellerie e abbinamento",
+            "Gestione di banquet e catering di lusso",
+            "Carriera verso maître e direttore di sala"
+        ]
+    },
+    medico_specialista: {
+        tasks: [
+            { name: "Diagnosi differenziale complessa", risk: 25 },
+            { name: "Interpretazione esami strumentali", risk: 55 },
+            { name: "Terapia farmacologica standard", risk: 40 },
+            { name: "Relazione paziente e comunicazione diagnosi", risk: 8 },
+            { name: "Chirurgia e procedure invasive", risk: 20 },
+            { name: "Ricerca clinica e sperimentazioni", risk: 30 }
+        ],
+        survivalPlan: [
+            "Specializzazione ultra-settoriale",
+            "Comunicazione empatica con pazienti gravi",
+            "Capacità decisionale in urgenza",
+            "Ricerca clinica applicata"
+        ]
+    },
+    infermiere_specializzato: {
+        tasks: [
+            { name: "Monitoraggio parametri vitali", risk: 45 },
+            { name: "Somministrazione farmaci", risk: 30 },
+            { name: "Cura e nursing quotidiano", risk: 12 },
+            { name: "Supporto emotivo pazienti e famiglie", risk: 5 },
+            { name: "Gestione emergenze", risk: 10 },
+            { name: "Coordinamento team sanitario", risk: 20 }
+        ],
+        survivalPlan: [
+            "Specializzazione in terapia intensiva o oncologia",
+            "Leadership clinica",
+            "Gestione crisi e urgenze",
+            "Formazione colleghi"
+        ]
+    },
+    tecnico_radiologia: {
+        tasks: [
+            { name: "Acquisizione immagini diagnostiche", risk: 40 },
+            { name: "Controllo qualità immagini", risk: 55 },
+            { name: "Preparazione pazienti", risk: 20 },
+            { name: "Gestione apparecchiature", risk: 35 },
+            { name: "Collaborazione con radiologo", risk: 25 }
+        ],
+        survivalPlan: [
+            "Specializzazione in imaging avanzato (PET, RM 3T)",
+            "Competenze in radioterapia",
+            "Gestione pazienti fragili",
+            "Manutenzione e calibrazione avanzata"
+        ]
+    },
+    biologo: {
+        tasks: [
+            { name: "Analisi di laboratorio standard", risk: 72 },
+            { name: "Ricerca scientifica applicata", risk: 35 },
+            { name: "Consulenza nutrizionale e genetica", risk: 22 },
+            { name: "Controllo qualità alimentare", risk: 55 },
+            { name: "Elaborazione dati biologici", risk: 65 }
+        ],
+        survivalPlan: [
+            "Bioinformatica e analisi dati genomici",
+            "Specializzazione in biologia molecolare",
+            "Ricerca e pubblicazione scientifica",
+            "Consulenza genetica avanzata"
+        ]
+    },
+    ottico: {
+        tasks: [
+            { name: "Test della vista standard", risk: 65 },
+            { name: "Adattamento lenti e occhiali", risk: 40 },
+            { name: "Consulenza visiva personalizzata", risk: 22 },
+            { name: "Controllo salute oculare", risk: 35 },
+            { name: "Gestione negozio e clienti", risk: 30 }
+        ],
+        survivalPlan: [
+            "Optometria avanzata e terapia visiva",
+            "Specializzazione in lenti a contatto",
+            "Contatto umano e consulenza estetica",
+            "Gestione patologie visive borderline"
+        ]
+    },
+    logopedista_pediatrico: {
+        tasks: [
+            { name: "Valutazione disturbi comunicativi", risk: 30 },
+            { name: "Terapia logopedica individuale", risk: 12 },
+            { name: "Collaborazione con famiglie e scuole", risk: 8 },
+            { name: "Stesura piani terapeutici", risk: 40 },
+            { name: "Monitoraggio progressi", risk: 35 }
+        ],
+        survivalPlan: [
+            "Specializzazione in DSA e autismo",
+            "CAA (Comunicazione Aumentativa Alternativa)",
+            "Lavoro multidisciplinare",
+            "Formazione genitori e insegnanti"
+        ]
+    },
+    tecnico_laboratorio: {
+        tasks: [
+            { name: "Analisi campioni biologici standard", risk: 88 },
+            { name: "Calibrazione strumenti", risk: 55 },
+            { name: "Controllo qualità analisi", risk: 70 },
+            { name: "Reportistica risultati", risk: 80 },
+            { name: "Gestione urgenze laboratorio", risk: 30 }
+        ],
+        survivalPlan: [
+            "Bioinformatica e gestione dati genomici",
+            "Specializzazione in microbiologia clinica",
+            "Competenze in point-of-care testing",
+            "Supervisione sistemi automatizzati"
+        ]
+    },
+    dietista: {
+        tasks: [
+            { name: "Elaborazione piani alimentari standard", risk: 60 },
+            { name: "Consulenza nutrizionale personalizzata", risk: 25 },
+            { name: "Educazione alimentare pazienti", risk: 18 },
+            { name: "Gestione pazienti con patologie", risk: 20 },
+            { name: "Collaborazione con team medico", risk: 15 }
+        ],
+        survivalPlan: [
+            "Nutrizione clinica in patologie complesse",
+            "Psicologia dell'alimentazione",
+            "Nutrizione sportiva avanzata",
+            "Ricerca in scienze dell'alimentazione"
+        ]
+    },
+    insegnante_scuola_primaria: {
+        tasks: [
+            { name: "Spiegazione contenuti didattici", risk: 35 },
+            { name: "Gestione classe e disciplina", risk: 8 },
+            { name: "Supporto emotivo e relazionale", risk: 5 },
+            { name: "Valutazione apprendimento", risk: 40 },
+            { name: "Inclusione alunni con bisogni speciali", risk: 10 },
+            { name: "Collaborazione con famiglie", risk: 8 }
+        ],
+        survivalPlan: [
+            "Pedagogia inclusiva e differenziata",
+            "Gestione BES e DSA",
+            "Uso didattico degli strumenti AI",
+            "Leadership educativa e mentorat"
+        ]
+    },
+    professore_liceo: {
+        tasks: [
+            { name: "Spiegazione frontale contenuti", risk: 45 },
+            { name: "Preparazione materiali didattici", risk: 60 },
+            { name: "Correzione compiti standard", risk: 70 },
+            { name: "Orientamento e mentoring studenti", risk: 10 },
+            { name: "Valutazione critica e formativa", risk: 20 },
+            { name: "Gestione dinamiche di classe", risk: 8 }
+        ],
+        survivalPlan: [
+            "Metodologie didattiche innovative (flipped classroom)",
+            "Coaching e mentoring giovanile",
+            "Uso pedagogico dell'AI in classe",
+            "Specializzazione in materie STEM o umanistiche rare"
+        ]
+    },
+    educatore_asilo_nido: {
+        tasks: [
+            { name: "Cura e accudimento quotidiano", risk: 5 },
+            { name: "Stimolazione sviluppo cognitivo", risk: 15 },
+            { name: "Comunicazione con genitori", risk: 8 },
+            { name: "Osservazione e documentazione sviluppo", risk: 35 },
+            { name: "Gestione routine quotidiana", risk: 12 }
+        ],
+        survivalPlan: [
+            "Pedagogia prima infanzia (approccio Pikler, Montessori)",
+            "Gestione difficoltà comportamentali precoci",
+            "Comunicazione con famiglie in crisi",
+            "Osservazione sviluppo atipico"
+        ]
+    },
+    tutor_specializzato: {
+        tasks: [
+            { name: "Supporto allo studio individuale", risk: 45 },
+            { name: "Tecniche compensative e dispensative", risk: 30 },
+            { name: "Relazione motivazionale con studente", risk: 10 },
+            { name: "Collaborazione con famiglia e scuola", risk: 12 },
+            { name: "Elaborazione strategie personalizzate", risk: 35 }
+        ],
+        survivalPlan: [
+            "Certificazione in DSA e ADHD",
+            "Coaching motivazionale",
+            "Tecnologie assistive avanzate",
+            "Mediazione familiare scolastica"
+        ]
+    },
+    avvocato_penalista: {
+        tasks: [
+            { name: "Ricerca giurisprudenza penale", risk: 85 },
+            { name: "Redazione atti difensivi standard", risk: 70 },
+            { name: "Strategia processuale e orale", risk: 15 },
+            { name: "Difesa in udienza e cross-examination", risk: 10 },
+            { name: "Negoziazione patteggiamenti", risk: 22 },
+            { name: "Assistenza al detenuto", risk: 8 }
+        ],
+        survivalPlan: [
+            "Oratoria processuale e persuasione",
+            "Psicologia forense applicata",
+            "Specializzazione in criminalità economica o informatica",
+            "Networking con magistratura"
+        ]
+    },
+    consulente_del_lavoro_senior: {
+        tasks: [
+            { name: "Elaborazione paghe e cedolini", risk: 92 },
+            { name: "Gestione adempimenti contributivi", risk: 88 },
+            { name: "Consulenza contrattuale standard", risk: 65 },
+            { name: "Gestione vertenze e contenzioso", risk: 32 },
+            { name: "Consulenza strategica HR", risk: 25 },
+            { name: "Relazione con ispettorato", risk: 30 }
+        ],
+        survivalPlan: [
+            "Diritto del lavoro complesso (mobbing, licenziamenti difficili)",
+            "Gestione ristrutturazioni aziendali",
+            "Consulenza su welfare aziendale",
+            "Negoziazione sindacale"
+        ]
+    },
+    mediatore_civile: {
+        tasks: [
+            { name: "Conduzione sessioni di mediazione", risk: 20 },
+            { name: "Gestione conflitti interpersonali", risk: 12 },
+            { name: "Redazione verbali di accordo", risk: 65 },
+            { name: "Analisi posizioni delle parti", risk: 45 },
+            { name: "Facilitazione comunicazione", risk: 10 }
+        ],
+        survivalPlan: [
+            "Tecniche avanzate di mediazione (trasformativa, narrativa)",
+            "Psicologia del conflitto",
+            "Mediazione penale e scolastica",
+            "Formazione di nuovi mediatori"
+        ]
+    },
+    compliance_officer: {
+        tasks: [
+            { name: "Monitoraggio normativa applicabile", risk: 80 },
+            { name: "Audit e controlli standard", risk: 72 },
+            { name: "Formazione dipendenti su normativa", risk: 55 },
+            { name: "Gestione whistleblowing e segnalazioni", risk: 30 },
+            { name: "Consulenza strategica compliance", risk: 25 },
+            { name: "Rapporti con autorità di vigilanza", risk: 22 }
+        ],
+        survivalPlan: [
+            "Specializzazione GDPR e AI Act",
+            "Compliance in settori regolamentati (finanza, farmaceutico)",
+            "ESG e sostenibilità",
+            "Gestione crisis compliance"
+        ]
+    },
+    notaio_digitale: {
+        tasks: [
+            { name: "Autenticazione atti su blockchain", risk: 60 },
+            { name: "Smart contract e atti digitali", risk: 50 },
+            { name: "Consulenza su asset digitali", risk: 28 },
+            { name: "Rogito tradizionale", risk: 35 },
+            { name: "Consulenza successoria digitale", risk: 22 }
+        ],
+        survivalPlan: [
+            "Diritto delle tecnologie e blockchain",
+            "Smart contract e asset digitali",
+            "Successione di asset digitali (crypto, NFT)",
+            "Consulenza corporate su tokenizzazione"
+        ]
+    },
+    ingegnere_elettrico: {
+        tasks: [
+            { name: "Progettazione impianti elettrici standard", risk: 55 },
+            { name: "Calcoli e dimensionamento", risk: 65 },
+            { name: "Supervisione cantieri", risk: 25 },
+            { name: "Progettazione sistemi di energia rinnovabile", risk: 30 },
+            { name: "Collaudo e messa in servizio", risk: 22 }
+        ],
+        survivalPlan: [
+            "Energie rinnovabili e grid integration",
+            "Power electronics e sistemi di accumulo",
+            "Normativa CEI e IEC avanzata",
+            "BIM MEP e progettazione integrata"
+        ]
+    },
+    ingegnere_informatico: {
+        tasks: [
+            { name: "Progettazione architetture software", risk: 40 },
+            { name: "Sviluppo codice standard", risk: 55 },
+            { name: "Sicurezza informatica", risk: 28 },
+            { name: "Integrazione sistemi complessi", risk: 30 },
+            { name: "Ricerca e innovazione", risk: 22 },
+            { name: "Team leadership tecnica", risk: 15 }
+        ],
+        survivalPlan: [
+            "AI engineering e MLOps",
+            "Cybersecurity e zero-trust architecture",
+            "Architettura cloud-native",
+            "Gestione team tecnici distribuiti"
+        ]
+    },
+    ingegnere_biomedico: {
+        tasks: [
+            { name: "Progettazione dispositivi medici", risk: 30 },
+            { name: "Test e validazione apparecchiature", risk: 45 },
+            { name: "Manutenzione tecnologie ospedaliere", risk: 35 },
+            { name: "Ricerca e sviluppo", risk: 25 },
+            { name: "Regolamentazione MDR e FDA", risk: 40 }
+        ],
+        survivalPlan: [
+            "AI medicale e dispositivi intelligenti",
+            "Regulatory Affairs MDR/FDA",
+            "Wearable e digital health",
+            "Ricerca clinica applicata a dispositivi"
+        ]
+    },
+    tecnico_informatico: {
+        tasks: [
+            { name: "Risoluzione problemi hardware comuni", risk: 55 },
+            { name: "Supporto software e troubleshooting", risk: 72 },
+            { name: "Installazione e configurazione", risk: 65 },
+            { name: "Gestione ticket helpdesk", risk: 80 },
+            { name: "Sicurezza endpoint", risk: 40 }
+        ],
+        survivalPlan: [
+            "Cybersecurity e gestione incidenti",
+            "Cloud administration (Azure, AWS)",
+            "Automazione IT (PowerShell, Ansible)",
+            "Gestione infrastrutture critiche"
+        ]
+    },
+    geometra_catasto: {
+        tasks: [
+            { name: "Pratiche catastali e visure", risk: 90 },
+            { name: "Successioni e volture catastali", risk: 85 },
+            { name: "Planimetrie catastali", risk: 75 },
+            { name: "Accatastamenti nuovi immobili", risk: 60 },
+            { name: "Consulenza tecnica perizie", risk: 35 }
+        ],
+        survivalPlan: [
+            "Specializzazione in estimo e valutazioni immobiliari",
+            "BIM e modellazione 3D",
+            "Efficienza energetica e certificazioni",
+            "Project management edilizio"
+        ]
+    },
+    perito_industriale: {
+        tasks: [
+            { name: "Perizie tecniche standard", risk: 65 },
+            { name: "Collaudi e certificazioni", risk: 55 },
+            { name: "Progettazione impianti semplici", risk: 50 },
+            { name: "Consulenza tecnica in tribunale", risk: 28 },
+            { name: "Direzione lavori", risk: 32 }
+        ],
+        survivalPlan: [
+            "Specializzazione in industria 4.0",
+            "Certificazione macchine e sicurezza",
+            "CTU (Consulente Tecnico d'Ufficio)",
+            "Valutazione danni e sinistri industriali"
+        ]
+    },
+    analista_credito: {
+        tasks: [
+            { name: "Analisi bilanci e rating aziendali", risk: 88 },
+            { name: "Istruttoria pratiche fido standard", risk: 92 },
+            { name: "Monitoraggio portafoglio crediti", risk: 80 },
+            { name: "Valutazione crediti in sofferenza", risk: 55 },
+            { name: "Strutturazione operazioni complesse", risk: 30 }
+        ],
+        survivalPlan: [
+            "Structured finance e operazioni complesse",
+            "ESG credit analysis",
+            "Gestione portafogli NPL",
+            "Relazione con imprenditori e CFO"
+        ]
+    },
+    consulente_fiscale: {
+        tasks: [
+            { name: "Dichiarazioni fiscali standard", risk: 92 },
+            { name: "Calcolo imposte e adempimenti", risk: 88 },
+            { name: "Pianificazione fiscale ordinaria", risk: 65 },
+            { name: "Consulenza su operazioni straordinarie", risk: 28 },
+            { name: "Contenzioso tributario", risk: 30 },
+            { name: "Fiscalità internazionale", risk: 38 }
+        ],
+        survivalPlan: [
+            "Fiscalità internazionale e transfer pricing",
+            "Pianificazione patrimoniale complessa",
+            "Contenzioso tributario avanzato",
+            "Consulenza M&A fiscale"
+        ]
+    },
+    actuario: {
+        tasks: [
+            { name: "Modelli attuariali standard", risk: 70 },
+            { name: "Pricing prodotti assicurativi", risk: 65 },
+            { name: "Reserving e solvibilità", risk: 60 },
+            { name: "Modelli di rischio innovativi", risk: 35 },
+            { name: "Consulenza strategica", risk: 22 }
+        ],
+        survivalPlan: [
+            "Machine learning applicato all'attuariato",
+            "Modelli climatici e cat risk",
+            "ESG e rischio di transizione",
+            "Governance dei modelli AI"
+        ]
+    },
+    private_banker: {
+        tasks: [
+            { name: "Asset allocation standard", risk: 65 },
+            { name: "Reporting portafogli", risk: 80 },
+            { name: "Consulenza patrimoniale personalizzata", risk: 22 },
+            { name: "Pianificazione successoria", risk: 25 },
+            { name: "Relazione clienti UHNW", risk: 8 },
+            { name: "Strutturazione operazioni complesse", risk: 30 }
+        ],
+        survivalPlan: [
+            "Pianificazione patrimoniale multijurisdizionale",
+            "Gestione family office",
+            "ESG e impact investing",
+            "Fiducia e networking con UHNW"
+        ]
+    },
+    assicuratore: {
+        tasks: [
+            { name: "Quotazione polizze standard", risk: 90 },
+            { name: "Gestione sinistri semplici", risk: 82 },
+            { name: "Consulenza su prodotti complessi", risk: 35 },
+            { name: "Fidelizzazione clienti", risk: 20 },
+            { name: "Acquisizione nuovi clienti", risk: 40 }
+        ],
+        survivalPlan: [
+            "Specializzazione in protezione patrimoniale complessa",
+            "Risk management aziendale",
+            "Benefits e welfare aziendale",
+            "Relazione con clienti in momenti critici (sinistri gravi)"
+        ]
+    },
+    pubblicitario: {
+        tasks: [
+            { name: "Generazione concept visivi", risk: 70 },
+            { name: "Copywriting pubblicitario", risk: 65 },
+            { name: "Direzione artistica campagne", risk: 35 },
+            { name: "Strategia creativa di marca", risk: 22 },
+            { name: "Relazione con clienti e brief", risk: 18 }
+        ],
+        survivalPlan: [
+            "Direzione creativa strategica",
+            "Brand storytelling e narrativa",
+            "Integrazione creativa AI-umano",
+            "Cultural insight e creatività culturale"
+        ]
+    },
+    ufficio_stampa: {
+        tasks: [
+            { name: "Redazione comunicati stampa", risk: 75 },
+            { name: "Rassegna stampa e monitoraggio", risk: 88 },
+            { name: "Gestione crisi comunicativa", risk: 18 },
+            { name: "Relazione con giornalisti", risk: 15 },
+            { name: "Pianificazione campagne PR", risk: 35 }
+        ],
+        survivalPlan: [
+            "Crisis communication avanzata",
+            "Influencer e creator relations",
+            "Comunicazione istituzionale e lobbying",
+            "Media training e portavoce"
+        ]
+    },
+    giornalista_investigativo: {
+        tasks: [
+            { name: "Ricerca fonti e documentazione", risk: 55 },
+            { name: "Analisi dati pubblici (data journalism)", risk: 60 },
+            { name: "Interviste e raccolta testimonianze", risk: 12 },
+            { name: "Scrittura inchieste approfondite", risk: 30 },
+            { name: "Protezione fonti e sicurezza", risk: 8 }
+        ],
+        survivalPlan: [
+            "Data journalism e analisi open data",
+            "OSINT e tecniche investigative digitali",
+            "Diritto di accesso agli atti",
+            "Sicurezza operativa per giornalisti"
+        ]
+    },
+    podcaster: {
+        tasks: [
+            { name: "Registrazione e produzione audio", risk: 55 },
+            { name: "Montaggio e post-produzione", risk: 65 },
+            { name: "Scrittura scalette e ricerca", risk: 50 },
+            { name: "Conduzione e interviste", risk: 20 },
+            { name: "Community management", risk: 25 }
+        ],
+        survivalPlan: [
+            "Specializzazione in nicchie verticali",
+            "Monetizzazione avanzata (membership, live)",
+            "Distribuzione cross-platform",
+            "Storytelling audio narrativo"
+        ]
+    },
+    fotografo_commerciale: {
+        tasks: [
+            { name: "Fotografia prodotto e e-commerce", risk: 82 },
+            { name: "Foto stock e archivio", risk: 88 },
+            { name: "Fotografia pubblicitaria", risk: 65 },
+            { name: "Ritrattistica e eventi", risk: 28 },
+            { name: "Direzione artistica set", risk: 30 }
+        ],
+        survivalPlan: [
+            "Fotografia fine-art e autoriale",
+            "Direzione creativa su set complessi",
+            "Fotografia documentaria e reportage",
+            "Specializzazione wedding o architettura di lusso"
+        ]
+    },
+    recruiter: {
+        tasks: [
+            { name: "Screening CV e preselezione", risk: 90 },
+            { name: "Pubblicazione offerte di lavoro", risk: 85 },
+            { name: "Colloqui strutturati di primo livello", risk: 60 },
+            { name: "Assessment e valutazione candidati", risk: 40 },
+            { name: "Headhunting senior e executive", risk: 20 },
+            { name: "Employer branding", risk: 35 }
+        ],
+        survivalPlan: [
+            "Executive search e headhunting senior",
+            "Employer branding e candidate experience",
+            "Assessment psicologici avanzati",
+            "Negoziazione e gestione offerte complesse"
+        ]
+    },
+    hr_analytics: {
+        tasks: [
+            { name: "Analisi dati HR e reportistica", risk: 70 },
+            { name: "Dashboard e KPI workforce", risk: 65 },
+            { name: "Modelli predittivi turnover", risk: 55 },
+            { name: "Consulenza strategica people analytics", risk: 25 },
+            { name: "Change management data-driven", risk: 20 }
+        ],
+        survivalPlan: [
+            "ML applicato alle HR",
+            "Compensation analytics",
+            "Workforce planning strategico",
+            "Comunicazione insight ai C-level"
+        ]
+    },
+    coach_aziendale: {
+        tasks: [
+            { name: "Sessioni di coaching individuale", risk: 15 },
+            { name: "Programmi di leadership development", risk: 20 },
+            { name: "Assessment e profiling", risk: 40 },
+            { name: "Facilitazione team e workshop", risk: 18 },
+            { name: "Relazione fiduciaria con coachee", risk: 5 }
+        ],
+        survivalPlan: [
+            "Certificazione ICF PCC o MCC",
+            "Coaching per C-suite e board",
+            "Team coaching e facilitazione sistemica",
+            "Integrazione AI nel percorso di sviluppo"
+        ]
+    },
+    venditore_porta_a_porta: {
+        tasks: [
+            { name: "Acquisizione clienti da freddo", risk: 55 },
+            { name: "Presentazione prodotti standard", risk: 70 },
+            { name: "Gestione obiezioni", risk: 45 },
+            { name: "Chiusura trattative", risk: 40 },
+            { name: "Fidelizzazione clienti", risk: 25 }
+        ],
+        survivalPlan: [
+            "Vendita consultiva e soluzioni complesse",
+            "Specializzazione B2B enterprise",
+            "Account management strategico",
+            "Negoziazione contratti pluriennali"
+        ]
+    },
+    buyer_moda: {
+        tasks: [
+            { name: "Analisi trend e previsioni vendita", risk: 70 },
+            { name: "Selezione campionario", risk: 45 },
+            { name: "Negoziazione con fornitori", risk: 30 },
+            { name: "Gestione ordini e riassortimento", risk: 75 },
+            { name: "Valutazione estetica collezioni", risk: 25 }
+        ],
+        survivalPlan: [
+            "Sostenibilità e supply chain etica",
+            "Trend forecasting avanzato",
+            "Mercati emergenti e sourcing globale",
+            "Brand identity e selezione curatoriale"
+        ]
+    },
+    agente_commerciale: {
+        tasks: [
+            { name: "Gestione portafoglio clienti esistenti", risk: 55 },
+            { name: "Acquisizione nuovi clienti", risk: 60 },
+            { name: "Presentazione prodotti e offerte", risk: 65 },
+            { name: "Raccolta ordini", risk: 82 },
+            { name: "Risoluzione reclami e assistenza", risk: 40 }
+        ],
+        survivalPlan: [
+            "Key account management strategico",
+            "Vendita soluzioni complesse B2B",
+            "Specializzazione settoriale verticale",
+            "Negoziazione contratti quadro"
+        ]
+    },
+    web_designer: {
+        tasks: [
+            { name: "Creazione layout e UI standard", risk: 80 },
+            { name: "Prototipazione wireframe", risk: 72 },
+            { name: "Sviluppo grafico per web", risk: 70 },
+            { name: "Design system e componenti", risk: 55 },
+            { name: "Direzione creativa digitale", risk: 25 }
+        ],
+        survivalPlan: [
+            "UX research e user testing",
+            "Motion design e micro-interazioni",
+            "Direzione creativa e brand design",
+            "Design per accessibilità (WCAG)"
+        ]
+    },
+    social_media_manager: {
+        tasks: [
+            { name: "Creazione contenuti standard", risk: 80 },
+            { name: "Pianificazione editoriale", risk: 72 },
+            { name: "Gestione community base", risk: 55 },
+            { name: "Analisi e reporting metriche", risk: 75 },
+            { name: "Strategia social complessa", risk: 28 },
+            { name: "Crisis management social", risk: 18 }
+        ],
+        survivalPlan: [
+            "Strategia social B2B avanzata",
+            "Influencer marketing e creator economy",
+            "Crisis communication digitale",
+            "Social commerce e conversione"
+        ]
+    },
+    e_commerce_specialist: {
+        tasks: [
+            { name: "Gestione catalogo e schede prodotto", risk: 85 },
+            { name: "Ottimizzazione campagne advertising", risk: 70 },
+            { name: "Analisi performance e conversione", risk: 65 },
+            { name: "Strategia marketplace (Amazon, etc.)", risk: 45 },
+            { name: "Esperienza cliente e retention", risk: 30 }
+        ],
+        survivalPlan: [
+            "Strategia omnichannel avanzata",
+            "Internazionalizzazione e mercati esteri",
+            "D2C e brand building digitale",
+            "Data-driven merchandising"
+        ]
+    },
+    data_engineer_senior: {
+        tasks: [
+            { name: "Sviluppo pipeline ETL standard", risk: 55 },
+            { name: "Progettazione architetture dati", risk: 30 },
+            { name: "Data quality e governance", risk: 38 },
+            { name: "Ottimizzazione query e performance", risk: 50 },
+            { name: "Integrazione sorgenti dati eterogenee", risk: 35 }
+        ],
+        survivalPlan: [
+            "Architetture data mesh e lakehouse",
+            "Real-time streaming (Kafka, Flink)",
+            "Data governance e compliance",
+            "MLOps e feature engineering"
+        ]
+    },
+    cybersecurity_analyst: {
+        tasks: [
+            { name: "Monitoraggio SOC e alert triage", risk: 60 },
+            { name: "Analisi malware e threat intelligence", risk: 40 },
+            { name: "Penetration testing", risk: 30 },
+            { name: "Incident response", risk: 22 },
+            { name: "Consulenza strategica security", risk: 18 }
+        ],
+        survivalPlan: [
+            "Red teaming e offensive security",
+            "AI security e prompt injection",
+            "Cloud security e zero trust",
+            "Compliance NIS2 e DORA"
+        ]
+    },
+    falegname_artigiano: {
+        tasks: [
+            { name: "Produzione in serie su CNC", risk: 55 },
+            { name: "Lavorazioni artigianali su misura", risk: 15 },
+            { name: "Restauro mobili d'epoca", risk: 10 },
+            { name: "Progettazione su misura con cliente", risk: 20 },
+            { name: "Finitura e verniciatura manuale", risk: 18 }
+        ],
+        survivalPlan: [
+            "Restauro mobili storici e antichi",
+            "Intaglio e tecniche decorative tradizionali",
+            "Progettazione su misura con BIM",
+            "Formazione e trasmissione del mestiere"
+        ]
+    },
+    sarto: {
+        tasks: [
+            { name: "Confezione capi standard", risk: 50 },
+            { name: "Modellistica per produzione", risk: 62 },
+            { name: "Alta sartoria su misura", risk: 12 },
+            { name: "Alterazioni e riparazioni", risk: 22 },
+            { name: "Consulenza stile e fitting", risk: 15 }
+        ],
+        survivalPlan: [
+            "Alta sartoria e taglio sartoriale",
+            "Modellistica digitale (CLO 3D)",
+            "Sostenibilità e upcycling",
+            "Specializzazione su misura lusso"
+        ]
+    },
+    orafo: {
+        tasks: [
+            { name: "Produzione gioielli in serie", risk: 55 },
+            { name: "Oreficeria artigianale", risk: 18 },
+            { name: "Riparazioni e restauri", risk: 22 },
+            { name: "Progettazione pezzi unici", risk: 20 },
+            { name: "Valutazione e perizia preziosi", risk: 32 }
+        ],
+        survivalPlan: [
+            "Design gioielleria e 3D jewelry design",
+            "Gemologia e valutazione pietre",
+            "Tecniche orafe tradizionali (cera persa, fusione)",
+            "Brand e retail di nicchia"
+        ]
+    },
+    cuoco_pizzaiolo: {
+        tasks: [
+            { name: "Preparazioni semplici e standardizzate", risk: 45 },
+            { name: "Pizza napoletana artigianale", risk: 12 },
+            { name: "Cucina di livello creativo", risk: 10 },
+            { name: "Gestione brigata di cucina", risk: 15 },
+            { name: "Menu engineering e innovazione", risk: 20 }
+        ],
+        survivalPlan: [
+            "Cucina creativa e fine dining",
+            "Fermentazione e tecniche avanzate",
+            "Gestione food cost e brigata",
+            "Brand chef e comunicazione"
+        ]
+    },
+    pasticcere_artigiano: {
+        tasks: [
+            { name: "Produzione di massa standardizzata", risk: 58 },
+            { name: "Pasticceria artigianale fine", risk: 18 },
+            { name: "Creazioni artistiche e torte personalizzate", risk: 12 },
+            { name: "Sviluppo nuove ricette", risk: 20 },
+            { name: "Gestione laboratorio", risk: 30 }
+        ],
+        survivalPlan: [
+            "Cioccolateria e lavorazione zucchero artistico",
+            "Innovazione con ingredienti insoliti",
+            "Brand e comunicazione digitale",
+            "Formazione e scuola di pasticceria"
+        ]
+    },
+    guida_turistica: {
+        tasks: [
+            { name: "Tour standard su percorsi fissi", risk: 55 },
+            { name: "Spiegazione storica e artistica", risk: 48 },
+            { name: "Gestione gruppi in situazioni impreviste", risk: 15 },
+            { name: "Esperienza immersiva e narrativa", risk: 20 },
+            { name: "Tour specializzati e tematici", risk: 22 }
+        ],
+        survivalPlan: [
+            "Guide specializzate (food tour, dark tourism, luxury)",
+            "Lingue rare",
+            "Storytelling esperienziale avanzato",
+            "Certificazioni per musei e siti UNESCO"
+        ]
+    },
+    receptionist_hotel: {
+        tasks: [
+            { name: "Check-in/check-out standard", risk: 88 },
+            { name: "Gestione prenotazioni", risk: 82 },
+            { name: "Risposta richieste base clienti", risk: 75 },
+            { name: "Gestione reclami complessi", risk: 25 },
+            { name: "Concierge e raccomandazioni locali", risk: 35 },
+            { name: "Upselling servizi", risk: 55 }
+        ],
+        survivalPlan: [
+            "Revenue management e yield",
+            "Guest experience di lusso",
+            "Lingue rare (cinese, arabo, russo)",
+            "Gestione clienti VIP e UHNW"
+        ]
+    },
+    travel_planner: {
+        tasks: [
+            { name: "Prenotazione viaggi standard", risk: 92 },
+            { name: "Ricerca e comparazione prezzi", risk: 88 },
+            { name: "Pianificazione itinerari base", risk: 75 },
+            { name: "Viaggi di lusso e su misura", risk: 25 },
+            { name: "Gestione emergenze in viaggio", risk: 18 },
+            { name: "Destinazioni rare e off-the-beaten-path", risk: 30 }
+        ],
+        survivalPlan: [
+            "Specializzazione luxury e honeymoon travel",
+            "Destinazioni di nicchia (Antartide, Bhutan)",
+            "Corporate travel management",
+            "Crisis management in travel"
+        ]
+    },
+    wedding_planner: {
+        tasks: [
+            { name: "Coordinamento fornitori standard", risk: 50 },
+            { name: "Gestione budget e preventivi", risk: 60 },
+            { name: "Direzione artistica evento", risk: 22 },
+            { name: "Gestione imprevisti il giorno dell'evento", risk: 8 },
+            { name: "Relazione con sposi e famiglie", risk: 10 }
+        ],
+        survivalPlan: [
+            "Destination wedding internazionale",
+            "Luxury events e clientela UHNW",
+            "Sostenibilità eventi",
+            "Design esperienziale avanzato"
+        ]
+    },
+    dirigente_pa: {
+        tasks: [
+            { name: "Gestione iter burocratici standard", risk: 70 },
+            { name: "Firma atti e provvedimenti", risk: 55 },
+            { name: "Coordinamento uffici e team", risk: 28 },
+            { name: "Gestione relazioni politiche e istituzionali", risk: 15 },
+            { name: "Pianificazione strategica ente", risk: 22 }
+        ],
+        survivalPlan: [
+            "Digital transformation PA",
+            "Project management PNRR",
+            "Open government e partecipazione",
+            "Leadership istituzionale complessa"
+        ]
+    },
+    assistente_amministrativo_pa: {
+        tasks: [
+            { name: "Gestione pratiche e archiviazione", risk: 92 },
+            { name: "Trascrizione e redazione atti standard", risk: 88 },
+            { name: "Risposta utenti e front office", risk: 72 },
+            { name: "Gestione protocollo", risk: 85 },
+            { name: "Supporto al dirigente", risk: 45 }
+        ],
+        survivalPlan: [
+            "Digital transformation e PA digitale",
+            "Gestione progetti europei",
+            "Comunicazione istituzionale",
+            "Specializzazione normativa settoriale"
+        ]
+    },
+    preparatore_atletico: {
+        tasks: [
+            { name: "Programmazione allenamenti standard", risk: 55 },
+            { name: "Analisi performance e dati biometrici", risk: 60 },
+            { name: "Lavoro individuale su atleta", risk: 18 },
+            { name: "Gestione infortuni e riabilitazione", risk: 20 },
+            { name: "Motivazione e psicologia sportiva", risk: 12 }
+        ],
+        survivalPlan: [
+            "Sport science e analisi dati biometrici avanzata",
+            "Prevenzione infortuni con AI",
+            "Coaching psicologico e mental training",
+            "Sport di squadra ad alto livello"
+        ]
+    },
+    istruttore_fitness: {
+        tasks: [
+            { name: "Schede allenamento standard", risk: 80 },
+            { name: "Corsi di gruppo fissi", risk: 55 },
+            { name: "Personal training live", risk: 22 },
+            { name: "Online coaching personalizzato", risk: 35 },
+            { name: "Nutrizione e stile di vita", risk: 45 }
+        ],
+        survivalPlan: [
+            "Coaching olistico (fitness + nutrizione + mindset)",
+            "Specializzazione (riabilitazione, anziani, preparazione gare)",
+            "Personal brand e community",
+            "Online coaching su scala"
+        ]
+    },
+    chimico: {
+        tasks: [
+            { name: "Analisi chimiche di routine", risk: 80 },
+            { name: "Controllo qualità standard", risk: 75 },
+            { name: "Ricerca e sviluppo nuovi composti", risk: 30 },
+            { name: "Sintesi e scale-up processi", risk: 35 },
+            { name: "Pubblicazione scientifica", risk: 38 }
+        ],
+        survivalPlan: [
+            "Cheminformatica e drug discovery AI",
+            "Green chemistry e sostenibilità",
+            "Regulatory Affairs (REACH, ICH)",
+            "Ricerca multidisciplinare biochimica-farmaceutica"
+        ]
+    },
+    fisico: {
+        tasks: [
+            { name: "Analisi dati sperimentali", risk: 65 },
+            { name: "Simulazioni computazionali", risk: 55 },
+            { name: "Formulazione teorie e ipotesi", risk: 20 },
+            { name: "Progettazione esperimenti", risk: 25 },
+            { name: "Pubblicazione e revisione tra pari", risk: 35 }
+        ],
+        survivalPlan: [
+            "Fisica computazionale e AI",
+            "Quantum computing",
+            "Intersecazione fisica-biologia (biofisica)",
+            "Trasferimento tecnologico e brevetti"
+        ]
+    },
+    psicologo_clinico: {
+        tasks: [
+            { name: "Terapia individuale strutturata (CBT standard)", risk: 30 },
+            { name: "Assessment e diagnosi psicologica", risk: 35 },
+            { name: "Psicoterapia relazionale e umanistica", risk: 8 },
+            { name: "Gestione crisi e urgenze psichiatriche", risk: 10 },
+            { name: "Supervisione e formazione colleghi", risk: 15 }
+        ],
+        survivalPlan: [
+            "Specializzazione in trauma e EMDR",
+            "Psicologia forense",
+            "Supervisione clinica",
+            "Integrazione etica degli strumenti digitali"
+        ]
+    },
+    esperto_energia: {
+        tasks: [
+            { name: "Audit energetici standard", risk: 60 },
+            { name: "Monitoraggio consumi", risk: 70 },
+            { name: "Progettazione impianti rinnovabili", risk: 40 },
+            { name: "Consulenza strategica energetica", risk: 25 },
+            { name: "Gestione incentivi e pratiche GSE", risk: 55 }
+        ],
+        survivalPlan: [
+            "Comunità Energetiche Rinnovabili (CER)",
+            "Accumulo e gestione rete",
+            "Finanza green e project finance",
+            "Normativa energetica europea avanzata"
+        ]
+    },
+    geologo: {
+        tasks: [
+            { name: "Campionamento e analisi laboratorio", risk: 55 },
+            { name: "Modellazione rischio idrogeologico", risk: 45 },
+            { name: "Rilievi in campo", risk: 25 },
+            { name: "Consulenza tecnica e perizie", risk: 30 },
+            { name: "Indagini geotecniche", risk: 40 }
+        ],
+        survivalPlan: [
+            "Remote sensing e GIS avanzato",
+            "Rischio sismico e microzonazione",
+            "Geologia ambientale e bonifica",
+            "Consulenza tecnica per contenziosi"
+        ]
+    },
+    agronomo_consulente: {
+        tasks: [
+            { name: "Piani di concimazione standard", risk: 72 },
+            { name: "Analisi terreno e fitopatie", risk: 60 },
+            { name: "Gestione pratiche PAC e PSR", risk: 75 },
+            { name: "Consulenza su coltivazioni biologiche", risk: 30 },
+            { name: "Progettazione agronomica avanzata", risk: 28 }
+        ],
+        survivalPlan: [
+            "Agricoltura di precisione e AI farm",
+            "Certificazioni biologiche e biodinamiche",
+            "Carbon farming e crediti CO2",
+            "Consulenza su nuove colture e vertical farming"
+        ]
+    },
+
 };
 
 
@@ -2955,5 +4953,1827 @@ export const jobData = {
                 defaultAiMonthly: 240,
                 defaultAiSetup: 950,
                 description: 'Monitoraggio studi clinici, compliance al protocollo, relazione con centri sperimentali'
-            }
+            },
+
+            avvocato: {
+                title: "Avvocato",
+                icon: "⚖️",
+                humanAccuracy: 0.79,
+                aiAccuracy: 0.48,
+                riskFactor: 0.42,
+                targetYear: 2034,
+                survivalNote: "specializzarsi in contenzioso complesso e consulenza strategica, dove il giudizio umano è insostituibile",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Analisi completa del rischio AI per gli Avvocati: quali attività legali saranno automatizzate e come evolverà la professione forense."
+            },
+            notaio: {
+                title: "Notaio",
+                icon: "📜",
+                humanAccuracy: 0.72,
+                aiAccuracy: 0.60,
+                riskFactor: 0.55,
+                targetYear: 2031,
+                survivalNote: "spostarsi verso consulenza patrimoniale e operazioni complesse dove la certificazione umana rimane essenziale",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Notaio sarà sostituito dall'AI? Analisi del rischio automazione per la professione notarile in Italia."
+            },
+            commercialista: {
+                title: "Commercialista / Dottore Commercialista",
+                icon: "🧾",
+                humanAccuracy: 0.64,
+                aiAccuracy: 0.75,
+                riskFactor: 0.72,
+                targetYear: 2029,
+                survivalNote: "abbandonare la contabilità ordinaria (già automatizzata) e puntare su consulenza strategica ad alto valore aggiunto",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "Rischio AI per il Commercialista: analisi dei task automatizzabili e piano di sopravvivenza professionale."
+            },
+            consulente_del_lavoro: {
+                title: "Consulente del Lavoro",
+                icon: "👔",
+                humanAccuracy: 0.66,
+                aiAccuracy: 0.71,
+                riskFactor: 0.68,
+                targetYear: 2030,
+                survivalNote: "spostarsi verso consulenza strategica HR e gestione delle relazioni sindacali, abbandonando la parte amministrativa",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Consulente del Lavoro sarà sostituito dall'AI? Analisi rischio automazione per questa professione."
+            },
+            magistrato: {
+                title: "Magistrato / Giudice",
+                icon: "🏛️",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2037,
+                survivalNote: "il ruolo di giudice rimane fondamentalmente umano per ragioni costituzionali; l'AI sarà un supporto, non un sostituto",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'AI potrà sostituire il Magistrato? Analisi del rischio automazione per la magistratura italiana."
+            },
+            medico_base: {
+                title: "Medico di Base / MMG",
+                icon: "🩺",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2034,
+                survivalNote: "la relazione medico-paziente e la gestione della complessità clinica rimarranno umane; l'AI supporterà la diagnostica",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Medico di Base sarà sostituito dall'AI? Analisi del rischio automazione per la medicina generale."
+            },
+            chirurgo: {
+                title: "Chirurgo",
+                icon: "🔬",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2036,
+                survivalNote: "la responsabilità chirurgica e la gestione dell'imprevisto rimangono umane; l'AI è un assistente, non un sostituto",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'AI sostituirà il Chirurgo? Analisi del rischio automazione per la chirurgia."
+            },
+            dentista: {
+                title: "Dentista / Odontoiatra",
+                icon: "🦷",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2035,
+                survivalNote: "le competenze manuali specializzate e la relazione con il paziente rimangono centrali; la diagnostica sarà potenziata dall'AI",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Dentista sarà sostituito dall'AI? Rischio automazione per la professione odontoiatrica."
+            },
+            fisioterapista: {
+                title: "Fisioterapista",
+                icon: "💪",
+                humanAccuracy: 0.89,
+                aiAccuracy: 0.30,
+                riskFactor: 0.22,
+                targetYear: 2038,
+                survivalNote: "il contatto manuale e la relazione terapeutica sono difficilmente automatizzabili; specializzarsi in riabilitazione complessa",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Fisioterapista sarà sostituito dall'AI? Analisi del rischio automazione per la fisioterapia."
+            },
+            psicologo: {
+                title: "Psicologo / Psicoterapeuta",
+                icon: "🧠",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2039,
+                survivalNote: "la relazione terapeutica è il cuore della psicoterapia e non è automatizzabile; l'AI supporterà la parte diagnostica e amministrativa",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Lo Psicologo sarà sostituito dall'AI? Analisi del rischio automazione per psicologi e psicoterapeuti."
+            },
+            farmacista: {
+                title: "Farmacista",
+                icon: "💊",
+                humanAccuracy: 0.72,
+                aiAccuracy: 0.60,
+                riskFactor: 0.55,
+                targetYear: 2031,
+                survivalNote: "la farmacia automatizzata arriverà; differenziarsi con consulenza clinica avanzata e ruolo di punto di salute di quartiere",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Farmacista sarà sostituito dall'AI? Analisi del rischio automazione per la farmacia."
+            },
+            veterinario: {
+                title: "Veterinario",
+                icon: "🐾",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2035,
+                survivalNote: "le competenze chirurgiche e la gestione dell'animale richiedono presenza fisica; differenziarsi in specializzazioni rare",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Veterinario sarà sostituito dall'AI? Analisi del rischio automazione per la professione veterinaria."
+            },
+            nutrizionista: {
+                title: "Nutrizionista / Dietista",
+                icon: "🥗",
+                humanAccuracy: 0.76,
+                aiAccuracy: 0.53,
+                riskFactor: 0.48,
+                targetYear: 2032,
+                survivalNote: "spostarsi verso nutrizione clinica specialistica e supporto psicologico; gli algoritmi sostituiranno i piani base",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Nutrizionista sarà sostituito dall'AI? Analisi del rischio automazione per la nutrizione clinica."
+            },
+            radiologo: {
+                title: "Radiologo / Medico Radiologo",
+                icon: "📡",
+                humanAccuracy: 0.68,
+                aiAccuracy: 0.69,
+                riskFactor: 0.65,
+                targetYear: 2029,
+                survivalNote: "la refertazione standard sarà dominata dall'AI; il futuro è nella radiologia interventistica e nella supervisione dell'AI",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Radiologo sarà sostituito dall'AI? L'imaging diagnostico è tra i settori più impattati dall'intelligenza artificiale."
+            },
+            osteopata: {
+                title: "Osteopata",
+                icon: "🙌",
+                humanAccuracy: 0.90,
+                aiAccuracy: 0.28,
+                riskFactor: 0.20,
+                targetYear: 2038,
+                survivalNote: "il contatto manuale e la valutazione olistica del paziente sono difficilmente replicabili dall'AI",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Osteopata sarà sostituito dall'AI? Analisi del rischio automazione per l'osteopatia."
+            },
+            logopedista: {
+                title: "Logopedista",
+                icon: "🗣️",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2037,
+                survivalNote: "la relazione terapeutica con il paziente e la famiglia è centrale; l'AI supporterà gli esercizi, non sostituirà il terapeuta",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Logopedista sarà sostituito dall'AI? Analisi del rischio automazione per la logopedia."
+            },
+            oss: {
+                title: "OSS – Operatore Socio Sanitario",
+                icon: "❤️",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2040,
+                survivalNote: "il lavoro di cura fisica e relazionale con persone fragili è profondamente umano e difficilmente automatizzabile",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'OSS sarà sostituito dall'AI? Analisi del rischio automazione per gli operatori socio-sanitari."
+            },
+            ingegnere_civile: {
+                title: "Ingegnere Civile / Strutturale",
+                icon: "🏗️",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2034,
+                survivalNote: "la responsabilità professionale e la progettazione innovativa restano umane; automatizzare le parti ripetitive per concentrarsi sul valore aggiunto",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Ingegnere Civile sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria strutturale."
+            },
+            architetto: {
+                title: "Architetto",
+                icon: "🏛️",
+                humanAccuracy: 0.78,
+                aiAccuracy: 0.51,
+                riskFactor: 0.45,
+                targetYear: 2032,
+                survivalNote: "la creatività, il giudizio estetico e la relazione col cliente restano umani; l'AI accelera la parte tecnica e produttiva",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Architetto sarà sostituito dall'AI? Analisi del rischio automazione per la professione architettonica."
+            },
+            geometra: {
+                title: "Geometra / Perito Edile",
+                icon: "📐",
+                humanAccuracy: 0.68,
+                aiAccuracy: 0.69,
+                riskFactor: 0.65,
+                targetYear: 2030,
+                survivalNote: "le pratiche burocratiche saranno automatizzate; differenziarsi con consulenza tecnica complessa e gestione degli incentivi edilizi",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Geometra sarà sostituito dall'AI? Analisi del rischio automazione per la professione di geometra."
+            },
+            topografo: {
+                title: "Topografo / Geodeta",
+                icon: "🗺️",
+                humanAccuracy: 0.71,
+                aiAccuracy: 0.62,
+                riskFactor: 0.58,
+                targetYear: 2031,
+                survivalNote: "la parte di acquisizione dati sarà automatizzata da droni e sensori; il valore aggiunto è nell'interpretazione e consulenza",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Topografo sarà sostituito dall'AI? Analisi del rischio automazione per la topografia."
+            },
+            ingegnere_meccanico: {
+                title: "Ingegnere Meccanico",
+                icon: "⚙️",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2033,
+                survivalNote: "la simulazione e il design generativo AI accelerano il lavoro; il valore è nell'innovazione e nella validazione fisica",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Ingegnere Meccanico sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria meccanica."
+            },
+            urbanista: {
+                title: "Urbanista / Pianificatore Territoriale",
+                icon: "🏙️",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2034,
+                survivalNote: "l'analisi dati sarà automatizzata; il valore sta nella visione strategica e nella mediazione tra interessi diversi",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Urbanista sarà sostituito dall'AI? Analisi del rischio automazione per la pianificazione urbana."
+            },
+            ingegnere_ambientale: {
+                title: "Ingegnere Ambientale / Ecologico",
+                icon: "🌿",
+                humanAccuracy: 0.82,
+                aiAccuracy: 0.42,
+                riskFactor: 0.35,
+                targetYear: 2034,
+                survivalNote: "la domanda di competenze ESG cresce; differenziarsi in consulenza su transizione ecologica e rendicontazione di sostenibilità",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Ingegnere Ambientale sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria ambientale."
+            },
+            agente_immobiliare: {
+                title: "Agente Immobiliare",
+                icon: "🏠",
+                humanAccuracy: 0.72,
+                aiAccuracy: 0.60,
+                riskFactor: 0.55,
+                targetYear: 2031,
+                survivalNote: "il portale ha già tolto il potere dell'informazione; il futuro è nella consulenza di alto valore e nella gestione di operazioni complesse",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "L'Agente Immobiliare sarà sostituito dall'AI? Analisi del rischio automazione per il settore immobiliare."
+            },
+            perito_immobiliare: {
+                title: "Perito Immobiliare / Valutatore",
+                icon: "📋",
+                humanAccuracy: 0.65,
+                aiAccuracy: 0.73,
+                riskFactor: 0.70,
+                targetYear: 2029,
+                survivalNote: "le perizie standard saranno automatizzate; differenziarsi in immobili atipici, contenziosi e valutazioni complesse",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "Il Perito Immobiliare sarà sostituito dall'AI? Analisi del rischio automazione per la valutazione immobiliare."
+            },
+            consulente_finanziario: {
+                title: "Consulente Finanziario / Financial Planner",
+                icon: "📊",
+                humanAccuracy: 0.71,
+                aiAccuracy: 0.62,
+                riskFactor: 0.58,
+                targetYear: 2031,
+                survivalNote: "i robo-advisor gestiscono già portafogli standard; il futuro è nella consulenza patrimoniale olistica e nella relazione di fiducia a lungo termine",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Consulente Finanziario sarà sostituito dall'AI? Analisi del rischio automazione per la consulenza finanziaria."
+            },
+            agente_assicurativo: {
+                title: "Agente Assicurativo",
+                icon: "🛡️",
+                humanAccuracy: 0.64,
+                aiAccuracy: 0.75,
+                riskFactor: 0.72,
+                targetYear: 2029,
+                survivalNote: "le polizze standard si vendono online; differenziarsi con consulenza su rischi complessi e protezione patrimoniale",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "L'Agente Assicurativo sarà sostituito dall'AI? Analisi del rischio automazione per il settore assicurativo."
+            },
+            revisore_contabile: {
+                title: "Revisore Contabile / Auditor",
+                icon: "🔍",
+                humanAccuracy: 0.63,
+                aiAccuracy: 0.78,
+                riskFactor: 0.75,
+                targetYear: 2028,
+                survivalNote: "il campionamento al 100% fatto dall'AI rende l'auditor tradizionale obsoleto; specializzarsi in forensic e audit di sistemi tecnologici",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "Il Revisore Contabile sarà sostituito dall'AI? Analisi del rischio automazione per la revisione legale."
+            },
+            giornalista: {
+                title: "Giornalista",
+                icon: "📰",
+                humanAccuracy: 0.69,
+                aiAccuracy: 0.66,
+                riskFactor: 0.62,
+                targetYear: 2030,
+                survivalNote: "le notizie di cronaca standard saranno scritte dall'AI; il futuro è nell'inchiesta, nell'analisi e nella costruzione di fiducia con i lettori",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Giornalista sarà sostituito dall'AI? Analisi del rischio automazione per il giornalismo."
+            },
+            scrittore: {
+                title: "Scrittore / Autore",
+                icon: "✍️",
+                humanAccuracy: 0.79,
+                aiAccuracy: 0.48,
+                riskFactor: 0.42,
+                targetYear: 2034,
+                survivalNote: "la scrittura di servizio sarà AI; l'autore vive di voce autentica, punto di vista e comunità di lettori",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Lo Scrittore sarà sostituito dall'AI? Analisi del rischio automazione per la scrittura creativa."
+            },
+            sceneggiatore: {
+                title: "Sceneggiatore / Screenwriter",
+                icon: "🎬",
+                humanAccuracy: 0.78,
+                aiAccuracy: 0.51,
+                riskFactor: 0.45,
+                targetYear: 2033,
+                survivalNote: "i format derivativi saranno generati dall'AI; differenziarsi con originalità, point of view e padronanza del mestiere visivo",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Lo Sceneggiatore sarà sostituito dall'AI? Analisi del rischio automazione per la scrittura cinematografica."
+            },
+            doppiatore: {
+                title: "Doppiatore / Voice Actor",
+                icon: "🎙️",
+                humanAccuracy: 0.68,
+                aiAccuracy: 0.69,
+                riskFactor: 0.65,
+                targetYear: 2030,
+                survivalNote: "i cloni vocali AI sono già realtà; differenziarsi con performance uniche e costruire diritti sulla propria voce",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Doppiatore sarà sostituito dall'AI? L'AI vocale è una delle aree di impatto più rapide."
+            },
+            idraulico: {
+                title: "Idraulico / Termoidraulico",
+                icon: "🔧",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2040,
+                survivalNote: "i lavori manuali fisici in ambienti variabili sono difficilissimi da automatizzare; specializzarsi in tecnologie green aumenta il valore",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Idraulico sarà sostituito dall'AI? Analisi del rischio automazione per la professione idraulica."
+            },
+            elettricista: {
+                title: "Elettricista",
+                icon: "⚡",
+                humanAccuracy: 0.89,
+                aiAccuracy: 0.30,
+                riskFactor: 0.22,
+                targetYear: 2038,
+                survivalNote: "la domanda di elettricisti qualificati crescerà con l'elettrificazione; specializzarsi in energie rinnovabili e domotica è la mossa giusta",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Elettricista sarà sostituito dall'AI? Analisi del rischio automazione per gli impianti elettrici."
+            },
+            falegname: {
+                title: "Falegname / Carpentiere",
+                icon: "🪵",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2037,
+                survivalNote: "la produzione in serie è già automatizzata; l'artigiano del futuro è un designer-maker che usa il digitale per creare oggetti unici",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Falegname sarà sostituito dall'AI? Analisi del rischio automazione per la falegnameria."
+            },
+            meccanico: {
+                title: "Meccanico Autoriparatore",
+                icon: "🔩",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2036,
+                survivalNote: "i veicoli elettrici richiedono nuove competenze; chi si forma ora su EV ha un vantaggio enorme rispetto a chi resta sul termico",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Meccanico sarà sostituito dall'AI? Analisi del rischio automazione per la riparazione auto."
+            },
+            chef: {
+                title: "Chef / Cuoco",
+                icon: "👨‍🍳",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2036,
+                survivalNote: "la cucina industriale sarà automatizzata; il ristorante del futuro vende esperienza e identità, non solo cibo",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Lo Chef sarà sostituito dall'AI? Analisi del rischio automazione per la professione culinaria."
+            },
+            pasticcere: {
+                title: "Pasticcere / Gelatiere",
+                icon: "🍰",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2037,
+                survivalNote: "il dolce industriale è già automatizzato; l'artigiano vive di qualità, identità e racconto",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Pasticcere sarà sostituito dall'AI? Analisi del rischio automazione per la pasticceria artigianale."
+            },
+            barista: {
+                title: "Barista / Bartender",
+                icon: "☕",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2034,
+                survivalNote: "il bar automatizzato esiste già; il futuro è nel locale che vende esperienza, cura e identità, non solo caffè",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Barista sarà sostituito dall'AI? Analisi del rischio automazione per la professione di barista."
+            },
+            parrucchiere: {
+                title: "Parrucchiere / Barbiere",
+                icon: "✂️",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2040,
+                survivalNote: "i lavori di cura personale richiedono contatto fisico e fiducia; l'AI supporterà la consulenza visiva, non il servizio",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Parrucchiere sarà sostituito dall'AI? Analisi del rischio automazione per la professione."
+            },
+            estetista: {
+                title: "Estetista / Cosmetologa",
+                icon: "💅",
+                humanAccuracy: 0.90,
+                aiAccuracy: 0.28,
+                riskFactor: 0.20,
+                targetYear: 2039,
+                survivalNote: "il servizio estetico è profondamente umano e basato sulla fiducia; differenziarsi con tecnologie avanzate e approccio scientifico",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Estetista sarà sostituita dall'AI? Analisi del rischio automazione per il settore estetico."
+            },
+            personal_trainer: {
+                title: "Personal Trainer",
+                icon: "🏋️",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2037,
+                survivalNote: "le app AI personalizzano gli allenamenti; il PT vive di motivazione, contatto umano e gestione della complessità atletica",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Personal Trainer sarà sostituito dall'AI? Analisi del rischio automazione per il fitness."
+            },
+            vigile_urbano: {
+                title: "Vigile Urbano / Agente Polizia Locale",
+                icon: "🚔",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2035,
+                survivalNote: "il controllo automatizzato aumenterà; il ruolo del vigile si sposta verso mediazione, emergenze e presenza rassicurante",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Vigile Urbano sarà sostituito dall'AI? Analisi del rischio automazione per la polizia locale."
+            },
+            pompiere: {
+                title: "Vigile del Fuoco / Pompiere",
+                icon: "🚒",
+                humanAccuracy: 0.93,
+                aiAccuracy: 0.24,
+                riskFactor: 0.15,
+                targetYear: 2041,
+                survivalNote: "l'intervento fisico in ambienti dinamici e pericolosi rimane profondamente umano; i droni supporteranno ma non sostituiranno",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Pompiere sarà sostituito dall'AI? Analisi del rischio automazione per i Vigili del Fuoco."
+            },
+            funzionario_pubblico: {
+                title: "Funzionario Pubblico / Impiegato PA",
+                icon: "🏛️",
+                humanAccuracy: 0.68,
+                aiAccuracy: 0.69,
+                riskFactor: 0.65,
+                targetYear: 2030,
+                survivalNote: "la burocrazia ripetitiva sarà automatizzata; il futuro è nella gestione di progetti complessi e nell'innovazione della PA",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Funzionario Pubblico sarà sostituito dall'AI? Analisi del rischio automazione per la PA."
+            },
+            autista_camion: {
+                title: "Autista di Camion / Trasportatore",
+                icon: "🚛",
+                humanAccuracy: 0.63,
+                aiAccuracy: 0.78,
+                riskFactor: 0.75,
+                targetYear: 2029,
+                survivalNote: "la guida autonoma su autostrade è già realtà; il futuro è nella supervisione di flotte autonomous e nella logistica complessa",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "L'Autista di Camion sarà sostituito dall'AI? Analisi del rischio automazione per il trasporto merci."
+            },
+            pilota: {
+                title: "Pilota di Linea / Comandante",
+                icon: "✈️",
+                humanAccuracy: 0.89,
+                aiAccuracy: 0.30,
+                riskFactor: 0.22,
+                targetYear: 2038,
+                survivalNote: "la certificazione e la responsabilità legale mantengono l'uomo a bordo; ma i due piloti potrebbero diventare uno con copilota AI",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Pilota di Linea sarà sostituito dall'AI? Analisi del rischio automazione per l'aviazione."
+            },
+            magazziniere: {
+                title: "Magazziniere / Addetto Logistica",
+                icon: "📦",
+                humanAccuracy: 0.61,
+                aiAccuracy: 0.80,
+                riskFactor: 0.78,
+                targetYear: 2028,
+                survivalNote: "i magazzini automatizzati di Amazon sono il futuro; riqualificarsi in supervisione dei sistemi robotici e gestione delle eccezioni",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "Il Magazziniere sarà sostituito dall'AI? Analisi del rischio automazione per la logistica di magazzino."
+            },
+            agronomo: {
+                title: "Agronomo / Consulente Agricolo",
+                icon: "🌾",
+                humanAccuracy: 0.79,
+                aiAccuracy: 0.48,
+                riskFactor: 0.42,
+                targetYear: 2033,
+                survivalNote: "i sensori e l'AI ottimizzeranno la coltivazione; l'agronomo del futuro è un consulente di strategia aziendale agricola",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Agronomo sarà sostituito dall'AI? Analisi del rischio automazione per la consulenza agronomica."
+            },
+            agricoltore: {
+                title: "Agricoltore / Imprenditore Agricolo",
+                icon: "🚜",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2034,
+                survivalNote: "l'automazione aumenta la produttività ma riduce il bisogno di manodopera; il futuro è nell'imprenditoria agricola innovativa",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Agricoltore sarà sostituito dall'AI? Analisi del rischio automazione per l'agricoltura."
+            },
+            enologo: {
+                title: "Enologo / Tecnico Vinicolo",
+                icon: "🍷",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2036,
+                survivalNote: "l'analisi è automatizzabile; la creatività del blend e l'identità di un vino sono profondamente umane",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Enologo sarà sostituito dall'AI? Analisi del rischio automazione per la professione enologica."
+            },
+            allenatore: {
+                title: "Allenatore Sportivo / Coach",
+                icon: "🏆",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2039,
+                survivalNote: "l'AI analizzerà i dati; l'allenatore rimarrà per motivare, gestire l'umano e prendere decisioni in contesti ad alta pressione",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Allenatore Sportivo sarà sostituito dall'AI? Analisi del rischio automazione per il coaching."
+            },
+            attore: {
+                title: "Attore / Performer",
+                icon: "🎭",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2035,
+                survivalNote: "i figuranti digitali esisteranno; l'attore vive di presenza e carisma irriproducibili dall'AI",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'Attore sarà sostituito dall'AI? Analisi del rischio automazione per la professione attorale."
+            },
+            regista: {
+                title: "Regista Cinematografico / TV",
+                icon: "🎥",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2036,
+                survivalNote: "l'AI abbatte i costi di produzione; il regista con visione propria avrà più strumenti, non meno lavoro",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Regista sarà sostituito dall'AI? Analisi del rischio automazione per la regia."
+            },
+            musicista: {
+                title: "Musicista / Strumentista",
+                icon: "🎵",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2037,
+                survivalNote: "la musica funzionale è già AI; l'artista vive di identità, performance e relazione con il pubblico",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il Musicista sarà sostituito dall'AI? Analisi del rischio automazione per la professione musicale."
+            },
+            cantante: {
+                title: "Cantante / Vocalist",
+                icon: "🎤",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2036,
+                survivalNote: "i cloni vocali esistono già; il cantante vive sul palco, nella presenza e nell'identità che gli algoritmi non possono replicare",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Cantante sarà sostituito dall'AI? Analisi del rischio automazione per i cantanti."
+            },
+            assistente_sociale: {
+                title: "Assistente Sociale",
+                icon: "🤝",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2039,
+                survivalNote: "il lavoro con le persone vulnerabili è profondamente umano; l'AI gestirà la documentazione, non la relazione",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Assistente Sociale sarà sostituito dall'AI? Analisi del rischio automazione per il lavoro sociale."
+            },
+            educatore_sociale: {
+                title: "Educatore Professionale / Sociale",
+                icon: "🌱",
+                humanAccuracy: 0.93,
+                aiAccuracy: 0.24,
+                riskFactor: 0.15,
+                targetYear: 2040,
+                survivalNote: "la relazione educativa con persone in difficoltà è il cuore del lavoro sociale e non è automatizzabile",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'Educatore Sociale sarà sostituito dall'AI? Analisi del rischio automazione per l'educazione sociale."
+            },
+            stilista: {
+                title: "Stilista / Fashion Designer",
+                icon: "👗",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2034,
+                survivalNote: "l'AI genera mood board e varianti infiniti; il designer vive di punto di vista originale e capacità di creare desiderio",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Lo Stilista sarà sostituito dall'AI? Analisi del rischio automazione per la moda."
+            },
+            sommelier: {
+                title: "Sommelier / Enotecnico",
+                icon: "🍾",
+                humanAccuracy: 0.82,
+                aiAccuracy: 0.42,
+                riskFactor: 0.35,
+                targetYear: 2035,
+                survivalNote: "l'AI può analizzare un vino; il sommelier vende emozione, storia e un'esperienza di ospitalità irripetibile",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Sommelier sarà sostituito dall'AI? Analisi del rischio automazione per la professione del vino."
+            },
+            criminologo: {
+                title: "Criminologo / Analista Forense",
+                icon: "🔍",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2033,
+                survivalNote: "l'analisi predittiva AI supporta la criminologia; il giudizio su casi complessi e atipici resta umano",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Criminologo sarà sostituito dall'AI? Analisi del rischio automazione per la criminologia."
+            },
+            psicologo_scolastico: {
+                title: "Psicologo Scolastico",
+                icon: "📚",
+                humanAccuracy: 0.89,
+                aiAccuracy: 0.30,
+                riskFactor: 0.22,
+                targetYear: 2037,
+                survivalNote: "la relazione di ascolto con bambini e adolescenti è insostituibile; l'AI aiuterà la diagnosi, non il sostegno",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Lo Psicologo Scolastico sarà sostituito dall'AI? Analisi del rischio automazione."
+            },
+            lobbista: {
+                title: "Lobbista / Public Affairs Manager",
+                icon: "🏛️",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2035,
+                survivalNote: "le relazioni personali e la fiducia con i decisori politici sono il cuore del lobbying e non sono automatizzabili",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Lobbista sarà sostituito dall'AI? Analisi del rischio automazione per il public affairs."
+            },
+            redattore: {
+                title: "Redattore / Editor",
+                icon: "📝",
+                humanAccuracy: 0.66,
+                aiAccuracy: 0.71,
+                riskFactor: 0.68,
+                targetYear: 2029,
+                survivalNote: "la revisione standard è già AI; il redattore del futuro è un curatore editoriale con gusto e visione",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il Redattore sarà sostituito dall'AI? Analisi del rischio automazione per l'editing."
+            },
+            panettiere: {
+                title: "Panettiere / Fornaio",
+                icon: "🍞",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2036,
+                survivalNote: "il pane industriale è già automatizzato; il futuro è nel panificio artigianale che vende qualità, storia e comunità",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Panettiere sarà sostituito dall'AI? Analisi del rischio automazione per la panificazione."
+            },
+            cameriere: {
+                title: "Cameriere / Personale di Sala",
+                icon: "🍽️",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2033,
+                survivalNote: "il servizio automatizzato arriva nel fast food; nel fine dining il cameriere è parte dell'esperienza e non è sostituibile",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il Cameriere sarà sostituito dall'AI? Analisi del rischio automazione per la ristorazione."
+            },
+            medico_specialista: {
+                title: "Medico Specialista",
+                icon: "🏥",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2036,
+                survivalNote: "specializzarsi in branche con alta componente relazionale e decisionale come oncologia, psichiatria e medicina palliativa",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il medico specialista sarà sostituito dall'AI? Analisi del rischio automazione per internisti, cardiologi, neurologi e altre specializzazioni mediche."
+            },
+            infermiere_specializzato: {
+                title: "Infermiere Specializzato",
+                icon: "💉",
+                humanAccuracy: 0.93,
+                aiAccuracy: 0.23,
+                riskFactor: 0.14,
+                targetYear: 2040,
+                survivalNote: "specializzarsi in terapia intensiva o oncologia dove la presenza umana è strutturalmente insostituibile",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Rischio AI per infermieri specializzati in terapia intensiva, oncologia, pediatria. Analisi task e piano di carriera."
+            },
+            tecnico_radiologia: {
+                title: "Tecnico di Radiologia",
+                icon: "🔬",
+                humanAccuracy: 0.74,
+                aiAccuracy: 0.57,
+                riskFactor: 0.52,
+                targetYear: 2030,
+                survivalNote: "specializzarsi in radioterapia oncologica e imaging avanzato, dove la componente umana rimane centrale",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il tecnico di radiologia rischierà il posto con l'AI? Analisi completa del rischio automazione per TSRM."
+            },
+            biologo: {
+                title: "Biologo",
+                icon: "🧬",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2033,
+                survivalNote: "orientarsi verso bioinformatica e genomica, dove l'AI è strumento di lavoro e non sostituto",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Rischio AI per biologi: analisi di laboratorio, ricerca e consulenza nutrizionale. Chi sopravvive all'automazione?"
+            },
+            ottico: {
+                title: "Ottico Optometrista",
+                icon: "👓",
+                humanAccuracy: 0.78,
+                aiAccuracy: 0.50,
+                riskFactor: 0.44,
+                targetYear: 2032,
+                survivalNote: "puntare su optometria clinica e terapia visiva, aree poco automatizzabili a breve termine",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'ottico sarà sostituito dall'AI? Rischio automazione per optometristi e ottici in Italia."
+            },
+            logopedista_pediatrico: {
+                title: "Logopedista Pediatrico",
+                icon: "🗣️",
+                humanAccuracy: 0.92,
+                aiAccuracy: 0.24,
+                riskFactor: 0.16,
+                targetYear: 2038,
+                survivalNote: "specializzarsi in età evolutiva e disturbi complessi, dove la relazione terapeutica umana è il cuore del trattamento",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Rischio AI per logopedisti specializzati in età evolutiva: balbuzie, DSA, autismo. Analisi completa."
+            },
+            tecnico_laboratorio: {
+                title: "Tecnico di Laboratorio",
+                icon: "🧪",
+                humanAccuracy: 0.68,
+                aiAccuracy: 0.69,
+                riskFactor: 0.65,
+                targetYear: 2028,
+                survivalNote: "spostarsi verso supervisione sistemi automatizzati e specializzazione in analisi genomiche avanzate",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il tecnico di laboratorio clinico sarà automatizzato dall'AI? Analisi del rischio per analisti clinici e biomedici."
+            },
+            dietista: {
+                title: "Dietista",
+                icon: "🥗",
+                humanAccuracy: 0.82,
+                aiAccuracy: 0.42,
+                riskFactor: 0.35,
+                targetYear: 2033,
+                survivalNote: "specializzarsi in nutrizione clinica e terapia nutrizionale per patologie croniche, dove serve competenza medica integrativa",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Dietista e nutrizionista: differenze, rischio AI e futuro della professione. Chi rischia di più tra le due figure?"
+            },
+            insegnante_scuola_primaria: {
+                title: "Insegnante Scuola Primaria",
+                icon: "📚",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2038,
+                survivalNote: "sviluppare competenze in pedagogia inclusiva e diventare facilitatori dell'apprendimento con l'AI come strumento",
+                defaultHumanSalary: 24000,
+                defaultHumanExtra: 7200,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'insegnante di scuola primaria sarà sostituito dall'AI? Analisi del rischio per maestri e maestre d'Italia."
+            },
+            professore_liceo: {
+                title: "Professore di Liceo",
+                icon: "🏫",
+                humanAccuracy: 0.89,
+                aiAccuracy: 0.30,
+                riskFactor: 0.22,
+                targetYear: 2036,
+                survivalNote: "diventare facilitatori del pensiero critico piuttosto che trasmettitori di contenuti, che l'AI gestirà sempre meglio",
+                defaultHumanSalary: 24000,
+                defaultHumanExtra: 7200,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il professore di liceo sarà sostituito dall'AI? Rischio automazione per docenti di italiano, matematica, storia, scienze."
+            },
+            educatore_asilo_nido: {
+                title: "Educatore Asilo Nido",
+                icon: "🧸",
+                humanAccuracy: 0.95,
+                aiAccuracy: 0.19,
+                riskFactor: 0.10,
+                targetYear: 2042,
+                survivalNote: "professione strutturalmente protetta dalla necessità di presenza fisica e cura. Sviluppare specializzazione in sviluppo atipico",
+                defaultHumanSalary: 24000,
+                defaultHumanExtra: 7200,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'educatore di asilo nido rischia l'automazione? Analisi del futuro per chi lavora con i bambini 0-3 anni."
+            },
+            tutor_specializzato: {
+                title: "Tutor Specializzato DSA",
+                icon: "🎯",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2035,
+                survivalNote: "specializzarsi in DSA complessi e ADHD dove la componente relazionale e motivazionale è insostituibile",
+                defaultHumanSalary: 24000,
+                defaultHumanExtra: 7200,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il tutor per DSA e bisogni educativi speciali sarà sostituito dall'AI? Rischio e opportunità per tutor e mediatori didattici."
+            },
+            avvocato_penalista: {
+                title: "Avvocato Penalista",
+                icon: "⚖️",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2035,
+                survivalNote: "la difesa in aula rimane profondamente umana. Specializzarsi in diritto penale informatico e criminalità finanziaria",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il penalista è a rischio AI? Analisi del futuro della difesa penale in Italia nell'era dell'intelligenza artificiale."
+            },
+            consulente_del_lavoro_senior: {
+                title: "Consulente del Lavoro Senior",
+                icon: "📋",
+                humanAccuracy: 0.71,
+                aiAccuracy: 0.62,
+                riskFactor: 0.58,
+                targetYear: 2030,
+                survivalNote: "abbandonare la parte operativa (già automatizzata) e spostarsi su consulenza strategica HR e gestione vertenze complesse",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il consulente del lavoro senior rischia l'AI? Analisi approfondita di chi gestisce paghe, contratti e vertenze."
+            },
+            mediatore_civile: {
+                title: "Mediatore Civile",
+                icon: "🤝",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2036,
+                survivalNote: "professione protetta dalla natura relazionale. Specializzarsi in mediazione familiare e penale",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "La mediazione civile sarà automatizzata dall'AI? Analisi del rischio per mediatori professionali in Italia."
+            },
+            compliance_officer: {
+                title: "Compliance Officer",
+                icon: "🔍",
+                humanAccuracy: 0.76,
+                aiAccuracy: 0.53,
+                riskFactor: 0.48,
+                targetYear: 2031,
+                survivalNote: "specializzarsi in AI Act, ESG compliance e normative emergenti dove l'expertise umano è ancora raro",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il compliance officer sarà sostituito dall'AI? Analisi del rischio per chi si occupa di conformità aziendale."
+            },
+            notaio_digitale: {
+                title: "Notaio Digitale / Blockchain Notary",
+                icon: "🔐",
+                humanAccuracy: 0.79,
+                aiAccuracy: 0.48,
+                riskFactor: 0.42,
+                targetYear: 2032,
+                survivalNote: "diventare il punto di riferimento per la legalizzazione di asset digitali, un mercato in forte crescita",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Come cambierà il notariato con blockchain e firma digitale? Rischio e opportunità per i notai nell'era digitale."
+            },
+            ingegnere_elettrico: {
+                title: "Ingegnere Elettrico",
+                icon: "⚡",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2034,
+                survivalNote: "specializzarsi in rinnovabili, sistemi di accumulo e microgrids — settori in forte crescita con alta domanda",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'ingegnere elettrico sarà sostituito dall'AI? Analisi del rischio per elettrotecnici e ingegneri elettrici in Italia."
+            },
+            ingegnere_informatico: {
+                title: "Ingegnere Informatico",
+                icon: "💻",
+                humanAccuracy: 0.82,
+                aiAccuracy: 0.42,
+                riskFactor: 0.35,
+                targetYear: 2033,
+                survivalNote: "spostarsi verso architettura di sistemi AI, cybersecurity e MLOps — le aree più richieste dei prossimi anni",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'ingegnere informatico rischia l'AI? Analisi del futuro per chi progetta sistemi software e hardware complessi."
+            },
+            ingegnere_biomedico: {
+                title: "Ingegnere Biomedico",
+                icon: "🫀",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2035,
+                survivalNote: "puntare su AI medicale, dispositivi wearable e navigare il complesso framework regolatorio MDR",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Ingegnere biomedico: rischio AI e futuro professionale. Chi progetta dispositivi medici nell'era dell'intelligenza artificiale."
+            },
+            tecnico_informatico: {
+                title: "Tecnico Informatico / IT Support",
+                icon: "🖥️",
+                humanAccuracy: 0.69,
+                aiAccuracy: 0.66,
+                riskFactor: 0.62,
+                targetYear: 2029,
+                survivalNote: "spostarsi da supporto reattivo a gestione proattiva della sicurezza e automazione infrastruttura",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il tecnico informatico di supporto sarà sostituito dall'AI? Analisi del rischio per helpdesk e IT support specialist."
+            },
+            geometra_catasto: {
+                title: "Geometra Catastale",
+                icon: "📐",
+                humanAccuracy: 0.66,
+                aiAccuracy: 0.71,
+                riskFactor: 0.68,
+                targetYear: 2028,
+                survivalNote: "abbandonare le pratiche catastali (già in forte automazione) e spostarsi su valutazioni, efficienza energetica e BIM",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il geometra catastale sarà automatizzato dall'AI? Rischio elevato per chi si occupa di pratiche catastali e successioni."
+            },
+            perito_industriale: {
+                title: "Perito Industriale",
+                icon: "🔧",
+                humanAccuracy: 0.76,
+                aiAccuracy: 0.53,
+                riskFactor: 0.48,
+                targetYear: 2031,
+                survivalNote: "diventare CTU del tribunale e specializzarsi in perizie su impianti industriali complessi e sinistri",
+                defaultHumanSalary: 36000,
+                defaultHumanExtra: 10800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il perito industriale rischia la sostituzione AI? Analisi del futuro per periti meccanici, elettrici e chimici."
+            },
+            analista_credito: {
+                title: "Analista del Credito",
+                icon: "💳",
+                humanAccuracy: 0.64,
+                aiAccuracy: 0.75,
+                riskFactor: 0.72,
+                targetYear: 2028,
+                survivalNote: "spostarsi su operazioni strutturate, M&A lending e gestione NPL dove il giudizio umano è ancora determinante",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "L'analista del credito bancario sarà sostituito dall'AI? Rischio molto elevato per chi valuta affidabilità e rating aziendali."
+            },
+            consulente_fiscale: {
+                title: "Consulente Fiscale / Tax Consultant",
+                icon: "💰",
+                humanAccuracy: 0.70,
+                aiAccuracy: 0.64,
+                riskFactor: 0.60,
+                targetYear: 2029,
+                survivalNote: "spostarsi su fiscalità internazionale, transfer pricing e pianificazione patrimoniale complessa",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il consulente fiscale sarà sostituito dall'AI? Rischio e opportunità per chi si occupa di fiscalità d'impresa e personale."
+            },
+            actuario: {
+                title: "Attuario",
+                icon: "📈",
+                humanAccuracy: 0.78,
+                aiAccuracy: 0.51,
+                riskFactor: 0.45,
+                targetYear: 2031,
+                survivalNote: "diventare ponte tra modellistica tradizionale e AI, con focus su rischi emergenti (clima, cyber, pandemia)",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'attuario sarà automatizzato dall'AI? Analisi del rischio per chi costruisce modelli statistici in assicurazioni e finanza."
+            },
+            private_banker: {
+                title: "Private Banker / Wealth Manager",
+                icon: "🏦",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2033,
+                survivalNote: "la fiducia con clienti UHNW non è replicabile dall'AI. Specializzarsi in family office e pianificazione intergenerazionale",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il private banker sarà sostituito dai robo-advisor AI? Analisi del futuro per chi gestisce grandi patrimoni."
+            },
+            assicuratore: {
+                title: "Agente di Assicurazione",
+                icon: "🛡️",
+                humanAccuracy: 0.68,
+                aiAccuracy: 0.69,
+                riskFactor: 0.65,
+                targetYear: 2029,
+                survivalNote: "spostarsi da vendita prodotti a consulenza risk management per PMI e protezione patrimoniale complessa",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "L'agente assicurativo sarà sostituito dall'AI? Analisi del rischio elevato per chi vende polizze vita, auto e danni."
+            },
+            pubblicitario: {
+                title: "Pubblicitario / Art Director",
+                icon: "🎨",
+                humanAccuracy: 0.72,
+                aiAccuracy: 0.60,
+                riskFactor: 0.55,
+                targetYear: 2030,
+                survivalNote: "diventare direttore creativo strategico: l'AI genera esecuzioni, gli umani definiscono la visione e l'identità di marca",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il pubblicitario e art director sarà sostituito dall'AI generativa? Rischio e futuro per chi crea campagne advertising."
+            },
+            ufficio_stampa: {
+                title: "Addetto Ufficio Stampa / PR",
+                icon: "📰",
+                humanAccuracy: 0.75,
+                aiAccuracy: 0.55,
+                riskFactor: 0.50,
+                targetYear: 2031,
+                survivalNote: "spostarsi su crisis communication e relazioni istituzionali, dove la fiducia personale è insostituibile",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "L'addetto stampa e il PR manager rischiano con l'AI? Analisi del futuro per chi gestisce relazioni con i media."
+            },
+            giornalista_investigativo: {
+                title: "Giornalista Investigativo",
+                icon: "🔍",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2036,
+                survivalNote: "il giornalismo investigativo ha un futuro solido: le fonti umane, la protezione delle fonti e l'etica non sono automatizzabili",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il giornalismo investigativo sarà sostituito dall'AI? Analisi del rischio per chi fa inchieste e giornalismo di approfondimento."
+            },
+            podcaster: {
+                title: "Podcaster / Audio Content Creator",
+                icon: "🎙️",
+                humanAccuracy: 0.79,
+                aiAccuracy: 0.48,
+                riskFactor: 0.42,
+                targetYear: 2032,
+                survivalNote: "specializzarsi in nicchie verticali con community forte: la voce e la personalità autentiche restano differenzianti",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il podcaster sarà sostituito dall'AI? Rischio e opportunità per chi crea contenuti audio in Italia."
+            },
+            fotografo_commerciale: {
+                title: "Fotografo Commerciale",
+                icon: "📷",
+                humanAccuracy: 0.71,
+                aiAccuracy: 0.62,
+                riskFactor: 0.58,
+                targetYear: 2029,
+                survivalNote: "spostarsi da fotografia commerciale (già in crisi) a documentaristica, fine-art e direzione creativa su produzioni complesse",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il fotografo commerciale sarà sostituito dall'AI generativa? Rischio elevato per la fotografia di prodotto, stock e advertising."
+            },
+            recruiter: {
+                title: "Recruiter / Talent Scout",
+                icon: "👥",
+                humanAccuracy: 0.72,
+                aiAccuracy: 0.60,
+                riskFactor: 0.55,
+                targetYear: 2030,
+                survivalNote: "spostarsi da selezione operativa (già automatizzata) a executive search e costruzione employer brand",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il recruiter sarà sostituito dall'AI? Analisi del rischio per chi seleziona personale, fa screening CV e gestisce colloqui."
+            },
+            hr_analytics: {
+                title: "HR Analytics Specialist",
+                icon: "📊",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2032,
+                survivalNote: "diventare traduttore tra dati HR e decisioni strategiche: l'AI genera i modelli, serve chi li interpreta e li porta al board",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'HR analytics specialist sarà sostituito dall'AI? Profilo emergente tra i più richiesti e tra i più a rischio di automazione."
+            },
+            coach_aziendale: {
+                title: "Coach Aziendale / Executive Coach",
+                icon: "🧭",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2038,
+                survivalNote: "professione protetta dalla relazione fiduciaria e dalla presenza umana. Acquisire certificazione ICF avanzata",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il coach aziendale sarà sostituito dall'AI? Analisi del rischio per executive coach e business coach professionisti."
+            },
+            venditore_porta_a_porta: {
+                title: "Venditore Porta a Porta / Field Sales",
+                icon: "🚪",
+                humanAccuracy: 0.70,
+                aiAccuracy: 0.64,
+                riskFactor: 0.60,
+                targetYear: 2029,
+                survivalNote: "spostarsi dalla vendita a volume verso vendita consultiva B2B enterprise con cicli di vendita lunghi",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il venditore porta a porta sarà sostituito dall'AI e dall'e-commerce? Analisi del rischio per la vendita diretta."
+            },
+            buyer_moda: {
+                title: "Buyer Moda / Fashion Buyer",
+                icon: "👗",
+                humanAccuracy: 0.74,
+                aiAccuracy: 0.57,
+                riskFactor: 0.52,
+                targetYear: 2030,
+                survivalNote: "spostarsi su curaziole editoriale e sostenibilità, dove il gusto umano e l'etica restano differenzianti",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il buyer di moda sarà sostituito dall'AI? Rischio e futuro per chi seleziona collezioni e gestisce gli acquisti retail fashion."
+            },
+            agente_commerciale: {
+                title: "Agente Commerciale / Rappresentante",
+                icon: "💼",
+                humanAccuracy: 0.71,
+                aiAccuracy: 0.62,
+                riskFactor: 0.58,
+                targetYear: 2029,
+                survivalNote: "diventare key account manager su clienti strategici: meno clienti, più valore per relazione",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "L'agente commerciale sarà sostituito dall'AI? Analisi del rischio per rappresentanti e agenti di commercio in Italia."
+            },
+            web_designer: {
+                title: "Web Designer",
+                icon: "🎨",
+                humanAccuracy: 0.69,
+                aiAccuracy: 0.66,
+                riskFactor: 0.62,
+                targetYear: 2028,
+                survivalNote: "spostarsi da esecuzione grafica (AI la gestirà) a UX research, design system strategico e direzione creativa",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il web designer sarà sostituito dall'AI? Rischio elevato per chi progetta siti web e interfacce grafiche."
+            },
+            social_media_manager: {
+                title: "Social Media Manager",
+                icon: "📱",
+                humanAccuracy: 0.70,
+                aiAccuracy: 0.64,
+                riskFactor: 0.60,
+                targetYear: 2029,
+                survivalNote: "spostarsi da creazione contenuti (AI la gestirà) a strategia, partnership creator e gestione crisi social",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il social media manager sarà sostituito dall'AI? Analisi del rischio per chi gestisce profili aziendali sui social."
+            },
+            e_commerce_specialist: {
+                title: "E-commerce Specialist",
+                icon: "🛒",
+                humanAccuracy: 0.72,
+                aiAccuracy: 0.60,
+                riskFactor: 0.55,
+                targetYear: 2030,
+                survivalNote: "spostarsi da operatività (automatizzata) a strategia omnichannel e internazionalizzazione",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "L'e-commerce specialist sarà sostituito dall'AI? Analisi del rischio per chi gestisce negozi online e marketplace."
+            },
+            data_engineer_senior: {
+                title: "Data Engineer Senior",
+                icon: "🔄",
+                humanAccuracy: 0.84,
+                aiAccuracy: 0.39,
+                riskFactor: 0.32,
+                targetYear: 2034,
+                survivalNote: "spostarsi su architettura data mesh, real-time streaming e governance dati — aree con alta domanda",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il data engineer senior sarà sostituito dall'AI? Analisi del rischio per chi costruisce pipeline dati e infrastrutture analytics."
+            },
+            cybersecurity_analyst: {
+                title: "Analista di Cybersecurity",
+                icon: "🔒",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.33,
+                riskFactor: 0.25,
+                targetYear: 2036,
+                survivalNote: "settore in crescita strutturale: gli attacchi AI-powered richiedono difensori umani esperti. Focus su red team e AI security",
+                defaultHumanSalary: 38000,
+                defaultHumanExtra: 11400,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il cybersecurity analyst sarà sostituito dall'AI? Analisi del rischio per chi protegge le aziende dagli attacchi informatici."
+            },
+            falegname_artigiano: {
+                title: "Falegname Artigiano / Ebanista",
+                icon: "🪑",
+                humanAccuracy: 0.89,
+                aiAccuracy: 0.30,
+                riskFactor: 0.22,
+                targetYear: 2038,
+                survivalNote: "l'artigianato di alta qualità è strutturalmente protetto: puntare su pezzi unici, restauro e made in Italy autentico",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il falegname artigiano sarà sostituito dall'AI e dalla robotica? Analisi del rischio per ebanisti e mobilieri d'arte."
+            },
+            sarto: {
+                title: "Sarto / Modellista",
+                icon: "✂️",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2035,
+                survivalNote: "l'alta sartoria su misura è insostituibile: puntare sul lusso e sul made in Italy con clientela premium",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il sarto e modellista sarà sostituito dall'AI? Analisi del rischio per chi lavora nell'alta moda e sartoria su misura."
+            },
+            orafo: {
+                title: "Orafo / Gioielliere",
+                icon: "💎",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2036,
+                survivalNote: "puntare su pezzi unici, collaborazioni con designer e certificazione gemologica per perizie",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "L'orafo artigiano sarà sostituito dall'AI e dalla stampa 3D? Analisi del rischio per gioiellieri e orafi italiani."
+            },
+            cuoco_pizzaiolo: {
+                title: "Cuoco / Pizzaiolo",
+                icon: "🍕",
+                humanAccuracy: 0.88,
+                aiAccuracy: 0.32,
+                riskFactor: 0.24,
+                targetYear: 2037,
+                survivalNote: "la cucina creativa è strutturalmente umana. Costruire un brand personale e puntare su esperienze gastronomiche uniche",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il cuoco e il pizzaiolo saranno sostituiti dai robot? Analisi del rischio per chef e pizzaioli in Italia."
+            },
+            pasticcere_artigiano: {
+                title: "Pasticcere Artigiano",
+                icon: "🍰",
+                humanAccuracy: 0.87,
+                aiAccuracy: 0.33,
+                riskFactor: 0.26,
+                targetYear: 2036,
+                survivalNote: "puntare su alta pasticceria artistica e costruire un brand digitale riconoscibile per resistere alla standardizzazione",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il pasticcere artigiano sarà sostituito dai robot e dall'AI? Analisi del futuro per chi lavora nella pasticceria di alta qualità."
+            },
+            guida_turistica: {
+                title: "Guida Turistica",
+                icon: "🗺️",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2033,
+                survivalNote: "specializzarsi in esperienze di nicchia (enogastronomia, arte contemporanea, siti minori) che l'AI non può replicare",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "La guida turistica sarà sostituita dall'AI e dalle audioguide intelligenti? Analisi del rischio per guide autorizzate in Italia."
+            },
+            receptionist_hotel: {
+                title: "Receptionist Hotel / Front Office",
+                icon: "🏨",
+                humanAccuracy: 0.66,
+                aiAccuracy: 0.71,
+                riskFactor: 0.68,
+                targetYear: 2028,
+                survivalNote: "spostarsi su luxury hospitality, revenue management o concierge di alto livello per hotel 5 stelle",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "Il receptionist di hotel sarà sostituito dall'AI e dai check-in automatici? Rischio elevato per il front office alberghiero."
+            },
+            travel_planner: {
+                title: "Travel Planner / Agente di Viaggio",
+                icon: "✈️",
+                humanAccuracy: 0.69,
+                aiAccuracy: 0.66,
+                riskFactor: 0.62,
+                targetYear: 2029,
+                survivalNote: "spostarsi su luxury travel e destinazioni ultra-specializzate dove la competenza umana crea valore insostituibile",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 450,
+                defaultAiSetup: 1500,
+                description: "L'agente di viaggio sarà sostituito dall'AI? Analisi del rischio per chi pianifica viaggi e vacanze su misura."
+            },
+            wedding_planner: {
+                title: "Wedding Planner / Event Manager",
+                icon: "💒",
+                humanAccuracy: 0.86,
+                aiAccuracy: 0.35,
+                riskFactor: 0.28,
+                targetYear: 2036,
+                survivalNote: "professione fortemente relazionale e creativa. Puntare su destination wedding di lusso e eventi aziendali premium",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Il wedding planner sarà sostituito dall'AI? Analisi del rischio per organizzatori di matrimoni ed eventi in Italia."
+            },
+            dirigente_pa: {
+                title: "Dirigente Pubblica Amministrazione",
+                icon: "🏛️",
+                humanAccuracy: 0.78,
+                aiAccuracy: 0.51,
+                riskFactor: 0.45,
+                targetYear: 2031,
+                survivalNote: "specializzarsi nella digitalizzazione della PA e nel project management PNRR, dove la domanda è elevata",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il dirigente della Pubblica Amministrazione rischia l'AI? Analisi del rischio per chi guida enti locali, ministeri e aziende pubbliche."
+            },
+            assistente_amministrativo_pa: {
+                title: "Assistente Amministrativo PA",
+                icon: "📁",
+                humanAccuracy: 0.61,
+                aiAccuracy: 0.80,
+                riskFactor: 0.78,
+                targetYear: 2027,
+                survivalNote: "sviluppare competenze digitali avanzate e spostarsi su ruoli di supporto alla trasformazione digitale della PA",
+                defaultHumanSalary: 28000,
+                defaultHumanExtra: 8400,
+                defaultAiMonthly: 250,
+                defaultAiSetup: 800,
+                description: "L'assistente amministrativo della PA sarà automatizzato dall'AI? Rischio molto elevato per i ruoli impiegatizi nell'ente pubblico."
+            },
+            preparatore_atletico: {
+                title: "Preparatore Atletico",
+                icon: "🏋️",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2035,
+                survivalNote: "integrare l'AI come strumento di analisi mantenendo la relazione diretta atleta-preparatore come core del lavoro",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il preparatore atletico sarà sostituito dall'AI e dai wearable? Analisi del rischio per chi allena atleti professionisti."
+            },
+            istruttore_fitness: {
+                title: "Istruttore Fitness / Personal Trainer Online",
+                icon: "💪",
+                humanAccuracy: 0.79,
+                aiAccuracy: 0.48,
+                riskFactor: 0.42,
+                targetYear: 2032,
+                survivalNote: "costruire un personal brand digitale forte e specializzarsi in nicchie (over 60, post-infortunio, performance atleti amatoriali)",
+                defaultHumanSalary: 22000,
+                defaultHumanExtra: 6600,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'istruttore di fitness e il personal trainer online saranno sostituiti dall'AI? Analisi del rischio per chi lavora in palestra."
+            },
+            chimico: {
+                title: "Chimico / Ricercatore Chimico",
+                icon: "⚗️",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2032,
+                survivalNote: "specializzarsi in cheminformatica e drug discovery assistita dall'AI, dove la chimici resta insostituibile come guida",
+                defaultHumanSalary: 34000,
+                defaultHumanExtra: 10200,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il chimico sarà sostituito dall'AI? Analisi del rischio per chi lavora in laboratorio, R&D farmaceutico e controllo qualità."
+            },
+            fisico: {
+                title: "Fisico / Ricercatore di Fisica",
+                icon: "⚛️",
+                humanAccuracy: 0.85,
+                aiAccuracy: 0.37,
+                riskFactor: 0.30,
+                targetYear: 2035,
+                survivalNote: "diventare ponte tra fisica e AI (quantum ML, AI per la scoperta scientifica) dove la domanda è in forte crescita",
+                defaultHumanSalary: 34000,
+                defaultHumanExtra: 10200,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il fisico sarà sostituito dall'AI? Analisi del rischio per ricercatori di fisica teorica, sperimentale e applicata."
+            },
+            psicologo_clinico: {
+                title: "Psicologo Clinico",
+                icon: "🧠",
+                humanAccuracy: 0.91,
+                aiAccuracy: 0.26,
+                riskFactor: 0.18,
+                targetYear: 2038,
+                survivalNote: "la relazione terapeutica è profondamente umana. Specializzarsi in trauma, disturbi complessi e psicologia forense",
+                defaultHumanSalary: 32000,
+                defaultHumanExtra: 9600,
+                defaultAiMonthly: 1800,
+                defaultAiSetup: 4000,
+                description: "Lo psicologo clinico sarà sostituito dall'AI e dai chatbot terapeutici? Analisi del rischio per chi esercita la psicoterapia."
+            },
+            esperto_energia: {
+                title: "Esperto di Energia / Energy Manager",
+                icon: "🌱",
+                humanAccuracy: 0.81,
+                aiAccuracy: 0.44,
+                riskFactor: 0.38,
+                targetYear: 2032,
+                survivalNote: "specializzarsi in comunità energetiche rinnovabili e storage: settore in forte crescita con pochi esperti disponibili",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'energy manager sarà sostituito dall'AI? Analisi del rischio per chi gestisce efficienza energetica e transizione verde."
+            },
+            geologo: {
+                title: "Geologo",
+                icon: "🏔️",
+                humanAccuracy: 0.82,
+                aiAccuracy: 0.42,
+                riskFactor: 0.35,
+                targetYear: 2033,
+                survivalNote: "specializzarsi in rischio idrogeologico e sismico, tematiche con crescente domanda nella pianificazione territoriale",
+                defaultHumanSalary: 30000,
+                defaultHumanExtra: 9000,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "Il geologo sarà sostituito dall'AI? Analisi del rischio per geologi ambientali, di progetto e di rischio idrogeologico."
+            },
+            agronomo_consulente: {
+                title: "Agronomo Consulente",
+                icon: "🌾",
+                humanAccuracy: 0.80,
+                aiAccuracy: 0.46,
+                riskFactor: 0.40,
+                targetYear: 2032,
+                survivalNote: "diventare esperto di agricoltura di precisione e carbon farming: due mercati in forte crescita nei prossimi 10 anni",
+                defaultHumanSalary: 26000,
+                defaultHumanExtra: 7800,
+                defaultAiMonthly: 900,
+                defaultAiSetup: 2500,
+                description: "L'agronomo consulente sarà sostituito dall'AI e dall'agricoltura di precisione? Analisi del rischio per agronomi liberi professionisti."
+            },
+
 };
