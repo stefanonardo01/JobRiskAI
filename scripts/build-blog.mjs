@@ -1,7 +1,7 @@
 // scripts/build-blog.mjs
 // Genera public/blog/index.html + public/blog/[slug].html per ogni articolo.
 
-import { writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -1415,8 +1415,7 @@ function buildArticle(art) {
       </nav>
     </div>
   </footer>
-  <script src="/translations.js"></script>
-  <script src="/page-i18n.js"></script>
+  <script type="module" src="/page-i18n.js"></script>
 </body>
 </html>`;
 }
@@ -1520,8 +1519,7 @@ function buildIndex() {
       </nav>
     </div>
   </footer>
-  <script src="/translations.js"></script>
-  <script src="/page-i18n.js"></script>
+  <script type="module" src="/page-i18n.js"></script>
 </body>
 </html>`;
 }
@@ -1538,7 +1536,6 @@ for (const art of articles) {
 }
 
 // Aggiorna sitemap
-import { readFileSync } from 'fs';
 const sitemapPath = join(ROOT, 'public/sitemap.xml');
 let sitemap = readFileSync(sitemapPath, 'utf8');
 const today = new Date().toISOString().split('T')[0];

@@ -1,5 +1,5 @@
 // scripts/build-profession-pages.mjs
-// Genera public/professione/[slug].html per ogni professione (105 pagine).
+// Genera public/professione/[slug].html per ogni professione (235 pagine).
 // Genera anche public/classifica.html — ranking completo per backlink.
 // Eseguire con: node scripts/build-profession-pages.mjs
 
@@ -49,7 +49,7 @@ const CATEGORIES = {
                            'medico_base','chirurgo','dentista','fisioterapista','psicologo','farmacista','veterinario','nutrizionista','radiologo','osteopata','logopedista','oss',
                            'medico_specialista','infermiere_specializzato','tecnico_radiologia','biologo','ottico','logopedista_pediatrico','tecnico_laboratorio','dietista','psicologo_clinico'],
   'Creatività':           ['grafico','traduttore','ux_ui_designer','video_editor','art_director','fotografo','illustratore','sound_designer',
-                           'giornalista','scrittore','sceneggiatore','doppiatore','attore','regista','musicista','cantante','stilista','redattore','fotografo_commerciale','giornalista_investigativo'],
+                           'scrittore','sceneggiatore','stilista','redattore','fotografo_commerciale','giornalista_investigativo'],
   'Istruzione':           ['insegnante','docente_universitario','formatore_aziendale','instructional_designer','tutor_online','dirigente_scolastico','educatore_infanzia',
                            'insegnante_scuola_primaria','professore_liceo','educatore_asilo_nido','tutor_specializzato','psicologo_scolastico'],
   'Legale & PA':          ['avvocato','notaio','magistrato','consulente_del_lavoro','criminologo','lobbista',
@@ -64,10 +64,10 @@ const CATEGORIES = {
   'Servizi & Turismo':    ['personal_trainer','allenatore','assistente_sociale','educatore_sociale','pompiere',
                            'guida_turistica','receptionist_hotel','travel_planner','wedding_planner',
                            'preparatore_atletico','istruttore_fitness'],
-  'Agricoltura & Ambiente':['agronomo','agricoltore','ingegnere_ambientale',
+  'Agricoltura & Ambiente':['agronomo','agricoltore',
                             'esperto_energia','geologo','agronomo_consulente'],
   'Ricerca & Scienza':    ['chimico','fisico'],
-  'Media & Spettacolo':   ['attore','regista','musicista','cantante'],
+  'Media & Spettacolo':   ['giornalista','doppiatore','attore','regista','musicista','cantante'],
 };
 
 function categoryOf(key) {
@@ -604,7 +604,7 @@ function buildClassificaPage() {
 
   <footer>
     <div class="footer-content">
-      <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 105 professioni</p>
+      <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 235 professioni</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
         <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>

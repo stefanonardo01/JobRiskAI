@@ -1,9 +1,9 @@
 // scripts/build-seo-pages.mjs
-// Genera pagine SEO per ~70 professioni aggiuntive (non nel calcolatore principale).
-// Output: public/professione/[slug].html — stessa directory delle 105 pagine esistenti.
+// Genera pagine SEO aggiuntive per professioni non presenti nel calcolatore principale.
+// Output: public/professione/[slug].html — stessa directory delle pagine principali.
 // Eseguire con: node scripts/build-seo-pages.mjs
 
-import { writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { seoProfessions } from './professions-seo-data.mjs';
@@ -13,32 +13,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT      = join(__dirname, '..');
 const outDir    = join(ROOT, 'public/professione');
 
-// ── Slug delle 105 professioni già esistenti (non sovrascrivere) ──────────────
-const EXISTING_SLUGS = new Set([
-  'ai-engineer','ai-director','data-engineer','backend-developer','frontend-developer',
-  'fullstack-developer','cloud-engineer','cloud-consultant','soc-analyst','cyber-security-engineer',
-  'data-scientist','devops-engineer','solutions-consultant','scrum-master','it-project-manager',
-  'ml-engineer','product-owner','sysadmin','qa-engineer','network-engineer','it-consultant',
-  'developer','bdr','sdr','account-manager','key-account-manager','sales-manager',
-  'technical-sales','customer-success-manager','store-manager','digital-marketing-specialist',
-  'seo-specialist','growth-hacker','content-creator','brand-manager','ecommerce-manager',
-  'contabile','copywriter','social-media','customer-service','hr-manager','data-analyst',
-  'insegnante','grafico','traduttore','ux-ui-designer','video-editor','art-director',
-  'fotografo','illustratore','sound-designer','docente-universitario','formatore-aziendale',
-  'instructional-designer','tutor-online','dirigente-scolastico','educatore-infanzia',
-  'product-owner','sysadmin','qa-engineer','network-engineer','it-consultant',
-  'sales-executive','sales-director','addetto-vendite','commerciale-estero','marketing-manager',
-  'pr-specialist','cfo','auditor','credit-collector','office-manager','impiegato-amm','ceo',
-  'executive-assistant','data-entry','cost-controller','project-planner','cost-estimator',
-  'project-controller','project-manager','controller-gestione','tax-advisor',
-  'management-consultant','financial-analyst','risk-manager','legal-counsel',
-  'procurement-manager','supply-chain-specialist','process-engineer','logistics-manager',
-  'operations-manager','production-planner','plant-manager','automation-engineer',
-  'qa-manager','buyer','talent-acquisition','hr-generalist','hr-business-partner',
-  'receptionist','paralegal','infermiere','sustainability-specialist','hse-specialist',
-  'medical-science-liaison','clinical-research-associate','informatore-scientifico',
-  'regulatory-affairs','rd-specialist',
-]);
+// Non sovrascrivere le pagine già generate da build-profession-pages.mjs:
+// si usa existsSync() sull'output file invece di una lista statica fragile.
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function esc(s) {
@@ -363,12 +339,12 @@ let skipped   = 0;
 const newSlugs = [];
 
 for (const prof of [...seoProfessions, ...seoProfessions2]) {
-  if (EXISTING_SLUGS.has(prof.slug)) {
-    console.log(`⏭️  Skip (già esistente): ${prof.slug}`);
+  const outPath = join(outDir, `${prof.slug}.html`);
+  if (existsSync(outPath)) {
+    // Già generata da build-profession-pages.mjs — non sovrascrivere
     skipped++;
     continue;
   }
-  const outPath = join(outDir, `${prof.slug}.html`);
   writeFileSync(outPath, buildPage(prof), 'utf8');
   newSlugs.push(`https://www.jobriskai.it/professione/${prof.slug}`);
   generated++;
@@ -379,20 +355,26 @@ console.log(`⏭️  Saltate (già esistenti): ${skipped}`);
 console.log(`📄 Nuovi slug:`);
 newSlugs.forEach(s => console.log('  ', s));
 
-// Aggiorna sitemap.xml aggiungendo le nuove URL
-import { readFileSync } from 'fs';
-const sitemapPath = join(ROOT, 'public/sitemap.xml');
-let sitemap = readFileSync(sitemapPath, 'utf8');
-const today = new Date().toISOString().split('T')[0];
-
-const newEntries = newSlugs.map(url => `
+// Aggiorna sitemap.xml — aggiunge solo URL non già presenti
+if (newSlugs.length > 0) {
+  const sitemapPath = join(ROOT, 'public/sitemap.xml');
+  let sitemap = readFileSync(sitemapPath, 'utf8');
+  const today = new Date().toISOString().split('T')[0];
+  // Estrai URL già presenti per evitare duplicati
+  const existingLocs = new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]));
+  const trulyNew = newSlugs.filter(url => !existingLocs.has(url));
+  if (trulyNew.length > 0) {
+    const entries = trulyNew.map(url => `
   <url>
     <loc>${url}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`).join('');
-
-sitemap = sitemap.replace('</urlset>', newEntries + '\n</urlset>');
-writeFileSync(sitemapPath, sitemap, 'utf8');
-console.log(`\n🗺️  Sitemap aggiornata con ${newSlugs.length} nuove URL.`);
+    sitemap = sitemap.replace('</urlset>', entries + '\n</urlset>');
+    writeFileSync(sitemapPath, sitemap, 'utf8');
+    console.log(`\n🗺️  Sitemap aggiornata con ${trulyNew.length} nuove URL.`);
+  } else {
+    console.log(`\n🗺️  Sitemap già aggiornata — nessuna nuova URL da aggiungere.`);
+  }
+}
