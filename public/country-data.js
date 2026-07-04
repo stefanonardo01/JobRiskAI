@@ -251,6 +251,94 @@ export const COUNTRIES = {
         criticalYearOffset: 1,
         // Hub per remote workers e nomadi digitali; stipendi locali bassi ma costo vita contenuto
     },
+
+    be: {
+        name: 'Belgio',
+        localName: 'Belgique / België',
+        flag: '🇧🇪',
+        currency: { symbol: '€', code: 'EUR', position: 'before', locale: 'fr-BE' },
+        salaryMultiplier: 1.28,
+        aiAdoptionIndex: 1.00,
+        criticalYearOffset: -1,
+        // Sede UE e NATO; hub istituzionale e tech con forte settore farmaceutico
+    },
+
+    at: {
+        name: 'Austria',
+        localName: 'Österreich',
+        flag: '🇦🇹',
+        currency: { symbol: '€', code: 'EUR', position: 'before', locale: 'de-AT' },
+        salaryMultiplier: 1.38,
+        aiAdoptionIndex: 1.05,
+        criticalYearOffset: -1,
+        // Economia solida; stipendi alti con forte settore manifatturiero e turistico
+    },
+
+    dk: {
+        name: 'Danimarca',
+        localName: 'Danmark',
+        flag: '🇩🇰',
+        currency: { symbol: 'kr', code: 'DKK', position: 'after', locale: 'da-DK' },
+        salaryMultiplier: 1.62,
+        aiAdoptionIndex: 1.15,
+        criticalYearOffset: -1,
+        // Tra i salari più alti in Europa; forte ecosistema green-tech e life science
+    },
+
+    fi: {
+        name: 'Finlandia',
+        localName: 'Suomi',
+        flag: '🇫🇮',
+        currency: { symbol: '€', code: 'EUR', position: 'before', locale: 'fi-FI' },
+        salaryMultiplier: 1.29,
+        aiAdoptionIndex: 1.10,
+        criticalYearOffset: -1,
+        // Forte ecosistema tech e startup (Nokia heritage, Supercell); alta digitalizzazione PA
+    },
+
+    ie: {
+        name: 'Irlanda',
+        localName: 'Ireland',
+        flag: '🇮🇪',
+        currency: { symbol: '€', code: 'EUR', position: 'before', locale: 'en-IE' },
+        salaryMultiplier: 1.55,
+        aiAdoptionIndex: 1.15,
+        criticalYearOffset: -1,
+        // Hub europeo di Google, Meta, Apple, Microsoft; tra i salari tech più alti in UE
+    },
+
+    ro: {
+        name: 'Romania',
+        localName: 'România',
+        flag: '🇷🇴',
+        currency: { symbol: 'lei', code: 'RON', position: 'after', locale: 'ro-RO' },
+        salaryMultiplier: 0.40,
+        aiAdoptionIndex: 0.70,
+        criticalYearOffset: 2,
+        // Mercato outsourcing IT in crescita; Cluj e Iași hub tech emergenti
+    },
+
+    cz: {
+        name: 'Repubblica Ceca',
+        localName: 'Česká republika',
+        flag: '🇨🇿',
+        currency: { symbol: 'Kč', code: 'CZK', position: 'after', locale: 'cs-CZ' },
+        salaryMultiplier: 0.64,
+        aiAdoptionIndex: 0.80,
+        criticalYearOffset: 1,
+        // Praga hub tech europeo; stipendi in rapida crescita nel settore IT
+    },
+
+    gr: {
+        name: 'Grecia',
+        localName: 'Ελλάδα',
+        flag: '🇬🇷',
+        currency: { symbol: '€', code: 'EUR', position: 'before', locale: 'el-GR' },
+        salaryMultiplier: 0.57,
+        aiAdoptionIndex: 0.75,
+        criticalYearOffset: 2,
+        // Mercato in ripresa post-crisi; crescente hub di nomadi digitali (Atene)
+    },
 };
 
 // Paese di default (applicato se nessuna preferenza salvata)
@@ -260,7 +348,7 @@ export const DEFAULT_COUNTRY = 'it';
 export const COUNTRY_GROUPS = [
     {
         label: 'Europa',
-        countries: ['it', 'de', 'fr', 'es', 'pt', 'nl', 'pl', 'gb', 'ch', 'se', 'no'],
+        countries: ['it', 'de', 'fr', 'es', 'pt', 'nl', 'be', 'at', 'pl', 'ro', 'cz', 'gb', 'ch', 'se', 'dk', 'no', 'fi', 'ie', 'gr'],
     },
     {
         label: 'Americhe',
