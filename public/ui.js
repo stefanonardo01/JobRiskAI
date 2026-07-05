@@ -420,29 +420,9 @@ if (langSelect) {
 const countrySelect = document.getElementById('countrySelect');
 if (countrySelect) {
     countrySelect.value = currentCountry;
-    // Aggiorna immediatamente al cambio dropdown (senza attendere il bottone)
     countrySelect.addEventListener('change', function () {
         selectCountry(this.value);
-        flashConfirmBtn();
     });
-}
-
-const countryConfirm = document.getElementById('countryConfirm');
-if (countryConfirm) {
-    countryConfirm.addEventListener('click', function () {
-        const sel = document.getElementById('countrySelect');
-        if (sel) {
-            selectCountry(sel.value);
-            flashConfirmBtn();
-        }
-    });
-}
-
-function flashConfirmBtn() {
-    const btn = document.getElementById('countryConfirm');
-    if (!btn) return;
-    btn.style.background = '#16a34a';
-    setTimeout(() => { btn.style.background = '#4f46e5'; }, 900);
 }
 
 document.getElementById('compareSelectA').addEventListener('change', renderJobComparison);
