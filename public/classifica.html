@@ -66,10 +66,6 @@
     .filter-btn { background: white; border: 1px solid var(--border); border-radius: 999px; padding: 0.4rem 0.9rem; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.15s; color: var(--text-secondary); }
     .filter-btn.active, .filter-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
     @media (max-width: 600px) { .hide-mobile { display: none; } }
-  </style>
-</head>
-<body>
-  <style>
     .sh { background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--border,#E7E0D2); padding: 0 2rem; position: sticky; top: 0; z-index: 200; backdrop-filter: blur(14px); height: 60px; display: flex; align-items: center; }
     .sh-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
     .sh-links { display: flex; align-items: center; gap: 0.4rem; }
@@ -79,19 +75,20 @@
     .sh-links a.sh-cta:hover { background: #4338ca; }
     .sh-lang select { background: white; border: 1px solid var(--border,#E7E0D2); border-radius: 8px; padding: 0.45rem 0.5rem; font-size: 0.82rem; cursor: pointer; min-height: 44px; color: var(--text-primary,#1C1A17); }
     .sh-burger { display: none; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; border-radius: 8px; flex-shrink: 0; }
-    .sh-burger span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; margin: 3px 0; transition: all 0.2s; }
+    .sh-burger span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; margin: 3px 0; }
     .sh-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 199; }
     .sh-drawer-inner { background: white; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
     .sh-drawer-inner a { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; border-radius: 10px; color: #374151; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: background 0.15s; min-height: 48px; }
     .sh-drawer-inner a:hover { background: #f3f4f6; }
     .sh-drawer-inner a.sh-cta { background: var(--primary,#6366f1); color: white; margin-top: 0.5rem; }
-    .sh-drawer-inner a.sh-cta:hover { background: #4338ca; }
     @media (max-width: 768px) {
       .sh { padding: 0 1rem; }
-      .sh-links { display: none; }
-      .sh-burger { display: flex; }
+      .sh-links { display: none !important; }
+      .sh-burger { display: flex !important; }
     }
   </style>
+</head>
+<body>
   <header class="sh" role="banner">
     <div class="sh-inner">
       <a href="/" aria-label="JobRiskAI Home" style="display:inline-block;line-height:0;flex-shrink:0;">
