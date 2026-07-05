@@ -340,6 +340,13 @@ function buildProfessionPage(key) {
         <a href="/cv-analyzer" class="prof-cta-ghost">📄 Analizza il tuo CV</a>
       </div>
 
+      <!-- Link metodologia -->
+      <div style="text-align:center;margin:0 0 2rem;">
+        <a href="/metodologia" style="display:inline-flex;align-items:center;gap:0.4rem;color:#6366f1;font-size:0.85rem;font-weight:600;text-decoration:none;padding:0.45rem 1rem;border:1px solid rgba(99,102,241,0.3);border-radius:999px;background:rgba(99,102,241,0.05);transition:all 0.15s;" onmouseover="this.style.background='rgba(99,102,241,0.12)'" onmouseout="this.style.background='rgba(99,102,241,0.05)'">
+          🔬 Come calcoliamo questo punteggio →
+        </a>
+      </div>
+
       <!-- Share buttons -->
       <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
         <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.jobriskai.it%2Fprofessione%2F${sl}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.55rem 1.1rem;border-radius:999px;font-size:0.85rem;font-weight:600;text-decoration:none;background:#0A66C2;color:white;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
@@ -377,6 +384,7 @@ function buildProfessionPage(key) {
       <p class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 235 professioni italiane</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica" style="color:var(--text-secondary);">Classifica completa</a> · <a href="/calcolatore" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
+        <a href="/metodologia" style="color:#6366f1; font-size:0.8rem; margin-right:1rem; font-weight:600;">Metodologia</a>
         <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
         <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
         <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
@@ -646,6 +654,7 @@ function buildClassificaPage() {
       <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 235 professioni</p>
       <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
       <nav aria-label="Footer links" style="margin-top:0.5rem;">
+        <a href="/metodologia" style="color:#6366f1; font-size:0.8rem; margin-right:1rem; font-weight:600;">Metodologia</a>
         <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
         <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
         <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
