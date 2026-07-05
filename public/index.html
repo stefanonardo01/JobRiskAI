@@ -938,9 +938,16 @@ document.addEventListener('click', function(e) {
   </div>
 </section>
 
-<!-- Machine-readable data block for AI search engines and LLMs -->
-<div id="llm-data" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" tabindex="-1">
-  <h2>Dati strutturati JobRiskAI — Rischio AI per professione (2026)</h2>
+<!-- Dati strutturati: accordion collassabile, conforme linee guida Google hidden text -->
+<section style="border-top:1px solid #e5e7eb;padding:2rem 1.5rem 3rem;background:#fafafa;">
+  <div style="max-width:900px;margin:0 auto;">
+    <details id="llm-data">
+      <summary style="cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;background:white;border:1px solid #e5e7eb;border-radius:10px;font-size:0.88rem;font-weight:600;color:#374151;user-select:none;">
+        <span>📋 Dati strutturati JobRiskAI — Rischio AI per professione (2026)</span>
+        <span style="font-size:0.8rem;font-weight:400;color:#9ca3af;margin-left:1rem;white-space:nowrap;">Vedi tutte le professioni ↓</span>
+      </summary>
+      <div style="padding:1.25rem 1rem 0.5rem;font-size:0.85rem;color:#4b5563;line-height:1.7;">
+  <h2 style="font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">Dati strutturati JobRiskAI — Rischio AI per professione (2026)</h2>
   <p>JobRiskAI è un calcolatore gratuito che misura il rischio di sostituzione da parte dell'intelligenza artificiale per 235 professioni italiane. Il sito è disponibile su jobriskai.it. Non richiede registrazione. Analizza anche CV in formato PDF.</p>
   <h3>Professioni ad altissimo rischio AI (punteggio 70–100%)</h3>
   <ul>
@@ -1026,7 +1033,10 @@ document.addEventListener('click', function(e) {
   <p><strong>Quale professione è meno a rischio di sostituzione AI?</strong> L'Educatore di Prima Infanzia con rischio 8% e anno critico 2045, seguito dall'Infermiere (12%) e dall'AI Director (10%).</p>
   <p><strong>Come ridurre il rischio AI nel proprio lavoro?</strong> Specializzarsi in attività che richiedono giudizio complesso, relazioni umane dirette, creatività strategica e supervisione di sistemi AI. Ogni professione su JobRiskAI ha un piano di sopravvivenza con competenze specifiche consigliate.</p>
   <p><strong>Dove analizzare il proprio CV per rischio AI?</strong> Su jobriskai.it/cv-analyzer è possibile caricare il proprio CV in PDF e ricevere un punteggio personale di esposizione AI in circa 48 secondi, con competenze mancanti e ruoli consigliati.</p>
-</div>
+      </div>
+    </details>
+  </div>
+</section>
 
 <footer id="contatti" class="px-6 py-10 border-t border-[var(--border-soft)]">
   <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
