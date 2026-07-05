@@ -128,6 +128,37 @@ function buildProfessionPage(key) {
 
   const tasks      = ex?.tasks        || [];
   const survival   = ex?.survivalPlan || [];
+  const changelog  = ex?.changelog    || [];
+
+  // ── Data ultimo aggiornamento ──────────────────────────────
+  const rawDate    = d.lastUpdated || '2026-07-05';
+  const lastUpdFmt = (() => {
+    try {
+      const dt = new Date(rawDate + 'T00:00:00Z');
+      return dt.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+    } catch { return rawDate; }
+  })();
+
+  // ── HTML sezione changelog ─────────────────────────────────
+  const changelogRows = changelog.length > 0
+    ? changelog.map(entry => {
+        const scoreDisplay = entry.score !== null && entry.score !== undefined
+          ? `<span style="display:inline-flex;align-items:center;gap:0.3rem;font-weight:700;color:${riskColor(entry.score)};">${entry.score}%</span>`
+          : `<span style="color:#9ca3af;font-size:0.8rem;">—</span>`;
+        const entryDate = (() => {
+          try {
+            const dt = new Date(entry.date + 'T00:00:00Z');
+            return dt.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+          } catch { return entry.date; }
+        })();
+        return `
+              <div style="display:grid;grid-template-columns:140px 48px 1fr;gap:0.5rem 1rem;align-items:start;padding:0.65rem 0;border-bottom:1px solid #f3f4f6;">
+                <span style="font-size:0.82rem;color:#6b7280;white-space:nowrap;">${esc(entryDate)}</span>
+                <div style="text-align:center;">${scoreDisplay}</div>
+                <span style="font-size:0.85rem;color:#374151;line-height:1.5;">${esc(entry.note)}</span>
+              </div>`;
+      }).join('')
+    : `<p style="font-size:0.85rem;color:#9ca3af;padding:0.5rem 0;">Nessuna variazione registrata — primo aggiornamento il ${lastUpdFmt}.</p>`;
 
   // FAQ JSON-LD
   const faqItems = [
@@ -293,8 +324,14 @@ function buildProfessionPage(key) {
           </div>
         </div>
 
-        <div style="display:inline-block;padding:0.5rem 1.2rem;border-radius:999px;font-weight:700;font-size:0.9rem;background:${riskColor(pct)}22;color:${riskColor(pct)};border:1px solid ${riskColor(pct)}44;margin-bottom:1.5rem;">
-          ${riskLabel(pct)}
+        <div style="display:flex;align-items:center;justify-content:center;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <div style="display:inline-block;padding:0.5rem 1.2rem;border-radius:999px;font-weight:700;font-size:0.9rem;background:${riskColor(pct)}22;color:${riskColor(pct)};border:1px solid ${riskColor(pct)}44;">
+            ${riskLabel(pct)}
+          </div>
+          <a href="#changelog" style="display:inline-flex;align-items:center;gap:0.35rem;padding:0.4rem 0.9rem;border-radius:999px;font-size:0.78rem;font-weight:500;color:#6b7280;background:#f9fafb;border:1px solid #e5e7eb;text-decoration:none;transition:all 0.15s;" title="Storico variazioni punteggio" onmouseover="this.style.borderColor='#6366f1';this.style.color='#6366f1'" onmouseout="this.style.borderColor='#e5e7eb';this.style.color='#6b7280'">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            Aggiornato: ${lastUpdFmt}
+          </a>
         </div>
 
         ${d.survivalNote ? `<p style="color:var(--text-secondary);font-size:0.88rem;font-style:italic;max-width:520px;margin:0 auto;">💡 ${esc(d.survivalNote.charAt(0).toUpperCase() + d.survivalNote.slice(1))}.</p>` : ''}
@@ -375,6 +412,43 @@ function buildProfessionPage(key) {
           <a href="/blog/competenze-che-lai-non-sostituira" style="display:block;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);font-size:0.9rem;font-weight:500;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--primary)';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">💡 Le competenze che l'AI non sostituirà mai</a>
         </div>
       </div>
+
+      <!-- ── CHANGELOG ─────────────────────────────────────── -->
+      <details id="changelog" style="background:white;border:1.5px solid #e5e7eb;border-radius:14px;overflow:hidden;margin-bottom:1.5rem;">
+        <summary style="display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer;user-select:none;list-style:none;gap:1rem;" onclick="">
+          <div style="display:flex;align-items:center;gap:0.6rem;">
+            <span style="font-size:1rem;">🕐</span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-size:0.95rem;font-weight:700;color:#1f2937;">Changelog — Storico variazioni punteggio</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.75rem;flex-shrink:0;">
+            <span style="font-size:0.78rem;color:#9ca3af;">Ultimo agg.: ${lastUpdFmt}</span>
+            <svg class="cl-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5" style="transition:transform 0.2s;flex-shrink:0;"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </summary>
+        <div style="padding:0 1.25rem 1.25rem;">
+          <div style="display:grid;grid-template-columns:140px 48px 1fr;gap:0 1rem;padding:0.4rem 0 0.5rem;border-bottom:2px solid #f3f4f6;margin-bottom:0.25rem;">
+            <span style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#9ca3af;">Data</span>
+            <span style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#9ca3af;text-align:center;">Score</span>
+            <span style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#9ca3af;">Nota</span>
+          </div>
+          ${changelogRows}
+          <p style="font-size:0.78rem;color:#9ca3af;margin-top:0.9rem;padding-top:0.75rem;border-top:1px solid #f3f4f6;">
+            Il changelog viene aggiornato ad ogni revisione semestrale del dataset. <a href="/metodologia" style="color:#6366f1;">Come funziona il calcolo →</a>
+          </p>
+        </div>
+      </details>
+      <script>
+        (function(){
+          var d = document.getElementById('changelog');
+          if (!d) return;
+          d.addEventListener('toggle', function(){
+            var arrow = d.querySelector('.cl-arrow');
+            if (arrow) arrow.style.transform = d.open ? 'rotate(180deg)' : '';
+          });
+          // Apri automaticamente se URL contiene #changelog
+          if (window.location.hash === '#changelog') d.open = true;
+        })();
+      </script>
 
     </div>
   </main>

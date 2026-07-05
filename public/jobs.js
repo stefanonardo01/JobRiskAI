@@ -16,6 +16,9 @@ export const jobExtra = {
             "Sviluppare competenze di MLOps e affidabilità dei modelli in produzione",
             "Imparare a valutare criticamente output e limiti dei modelli AI",
             "Costruire competenze trasversali su etica, sicurezza e governance dell'AI"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ai_director: {
@@ -30,6 +33,9 @@ export const jobExtra = {
             "Costruire una rete di relazioni con vendor, board e stakeholder chiave",
             "Mantenere una visione aggiornata sull'evoluzione tecnologica del settore",
             "Specializzarsi in governance, etica e compliance dell'intelligenza artificiale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     data_engineer: {
@@ -44,6 +50,9 @@ export const jobExtra = {
             "Sviluppare competenze di data governance e qualità a livello enterprise",
             "Imparare a supervisionare pipeline generate automaticamente dall'AI",
             "Costruire competenze trasversali su sicurezza e privacy dei dati"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     backend_developer: {
@@ -58,6 +67,9 @@ export const jobExtra = {
             "Specializzarsi in sistemi ad alta affidabilità e scalabilità",
             "Imparare a usare l'AI come acceleratore di sviluppo, non come sostituto",
             "Sviluppare competenze di sicurezza applicativa e performance tuning"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     frontend_developer: {
@@ -72,6 +84,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di accessibilità e design system",
             "Imparare a guidare strumenti di generazione UI basati su AI",
             "Costruire competenze trasversali su performance e architettura frontend"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     fullstack_developer: {
@@ -86,6 +101,9 @@ export const jobExtra = {
             "Specializzarsi in domini verticali complessi (fintech, sanità, ecc.)",
             "Imparare a orchestrare strumenti AI su tutto il ciclo di sviluppo",
             "Sviluppare competenze di mentoring e revisione tecnica del team"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cloud_engineer: {
@@ -100,6 +118,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di FinOps e ottimizzazione costi",
             "Imparare a supervisionare automazioni IaC generate dall'AI",
             "Costruire competenze di sicurezza cloud e compliance normativa"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cloud_consultant: {
@@ -114,6 +135,9 @@ export const jobExtra = {
             "Sviluppare competenze di negoziazione e relazione con i decisori",
             "Imparare a usare l'AI per accelerare analisi e proposte tecniche",
             "Costruire una reputazione di settore tramite case study e referenze"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     soc_analyst: {
@@ -128,6 +152,9 @@ export const jobExtra = {
             "Sviluppare competenze di incident response su attacchi complessi",
             "Imparare a supervisionare e validare l'output dei sistemi AI SOC",
             "Costruire competenze di forensics e analisi malware avanzata"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cyber_security_engineer: {
@@ -142,6 +169,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di incident response e forensics",
             "Imparare a orchestrare strumenti AI di difesa automatizzata",
             "Costruire competenze di compliance, governance e gestione del rischio"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     data_scientist: {
@@ -156,6 +186,9 @@ export const jobExtra = {
             "Sviluppare competenze di comunicazione e storytelling con i dati",
             "Imparare a validare criticamente modelli generati automaticamente",
             "Costruire competenze di dominio verticale (es. sanità, finanza, retail)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     devops_engineer: {
@@ -170,6 +203,9 @@ export const jobExtra = {
             "Sviluppare competenze di site reliability engineering (SRE)",
             "Imparare a supervisionare pipeline e automazioni generate dall'AI",
             "Costruire competenze di sicurezza integrata (DevSecOps)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     solutions_consultant: {
@@ -184,6 +220,9 @@ export const jobExtra = {
             "Sviluppare competenze di comunicazione con stakeholder non tecnici",
             "Imparare a usare l'AI per accelerare valutazioni e documentazione",
             "Costruire una visione strategica trasversale su più tecnologie"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     scrum_master: {
@@ -198,6 +237,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di facilitazione e gestione conflitti",
             "Imparare a usare strumenti AI per automatizzare reportistica e metriche",
             "Costruire competenze di change management su larga scala"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     it_project_manager: {
@@ -212,6 +254,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di negoziazione e gestione stakeholder",
             "Imparare a usare l'AI per pianificazione e reportistica automatizzata",
             "Costruire competenze di leadership in contesti di crisi e cambiamento"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     bdr: {
@@ -226,6 +271,9 @@ export const jobExtra = {
             "Sviluppare competenze di networking e relazione diretta",
             "Imparare a supervisionare e perfezionare campagne di outreach AI",
             "Passare a ruoli di Account Executive o Sales Development Manager"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sdr: {
@@ -240,6 +288,9 @@ export const jobExtra = {
             "Sviluppare competenze di ascolto attivo e diagnosi dei bisogni del cliente",
             "Imparare a supervisionare e ottimizzare agenti AI di outreach",
             "Costruire un percorso di crescita verso ruoli di Account Executive"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     account_manager: {
@@ -254,6 +305,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di negoziazione e relazione",
             "Imparare a usare l'AI per automatizzare reportistica e monitoraggio",
             "Costruire una rete di fiducia con i decision maker dei clienti chiave"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     key_account_manager: {
@@ -268,6 +322,9 @@ export const jobExtra = {
             "Sviluppare una rete di relazioni dirette con i decision maker C-level",
             "Imparare a usare l'AI per analisi predittiva degli account",
             "Costruire competenze di consulenza strategica per il cliente"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sales_manager: {
@@ -282,6 +339,9 @@ export const jobExtra = {
             "Sviluppare competenze di definizione strategica e visione di mercato",
             "Imparare a usare l'AI per forecasting e analisi delle performance",
             "Costruire competenze di gestione del cambiamento organizzativo"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     technical_sales: {
@@ -296,6 +356,9 @@ export const jobExtra = {
             "Sviluppare competenze di consulenza ingegneristica avanzata",
             "Imparare a usare l'AI per generare documentazione e demo standard",
             "Costruire una reputazione di esperto di settore verticale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     customer_success_manager: {
@@ -310,6 +373,9 @@ export const jobExtra = {
             "Sviluppare competenze di empatia e gestione delle relazioni a rischio",
             "Imparare a usare l'AI per monitorare proattivamente la salute degli account",
             "Costruire competenze di consulenza su adozione e crescita del prodotto"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     store_manager: {
@@ -324,6 +390,9 @@ export const jobExtra = {
             "Sviluppare competenze di leadership e formazione del team",
             "Imparare a usare l'AI per ottimizzare inventario e turni",
             "Costruire competenze di visual merchandising e local marketing"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     digital_marketing_specialist: {
@@ -338,6 +407,9 @@ export const jobExtra = {
             "Sviluppare competenze avanzate di analisi dati e attribuzione",
             "Imparare a supervisionare e ottimizzare campagne gestite dall'AI",
             "Costruire competenze di marketing automation e personalizzazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     seo_specialist: {
@@ -352,6 +424,9 @@ export const jobExtra = {
             "Sviluppare competenze di strategia SEO a livello enterprise",
             "Imparare a supervisionare strumenti AI di ottimizzazione contenuti",
             "Costruire competenze di analisi dati e attribuzione cross-canale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     growth_hacker: {
@@ -366,6 +441,9 @@ export const jobExtra = {
             "Sviluppare competenze di creatività negli esperimenti di marketing",
             "Imparare a usare l'AI per automatizzare test e analisi dati",
             "Costruire competenze trasversali su prodotto, dati e business"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     content_creator: {
@@ -380,6 +458,9 @@ export const jobExtra = {
             "Sviluppare un legame diretto e autentico con la community",
             "Imparare a usare l'AI come acceleratore di produzione, non sostituto",
             "Specializzarsi in formati innovativi e storytelling distintivo"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     brand_manager: {
@@ -394,6 +475,9 @@ export const jobExtra = {
             "Sviluppare competenze di storytelling e narrazione strategica",
             "Imparare a usare l'AI per analisi di mercato e ricerche rapide",
             "Costruire una visione di lungo periodo per il posizionamento del brand"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ecommerce_manager: {
@@ -408,6 +492,9 @@ export const jobExtra = {
             "Sviluppare competenze di analisi predittiva e pricing dinamico",
             "Imparare a supervisionare automazioni AI su funnel e logistica",
             "Costruire competenze di gestione del cliente end-to-end"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     contabile: {
@@ -422,6 +509,9 @@ export const jobExtra = {
             "Imparare a supervisionare e validare l'output degli strumenti AI",
             "Sviluppare competenze di relazione diretta con i clienti",
             "Offrire pianificazione finanziaria invece di sola compilazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     copywriter: {
@@ -436,6 +526,9 @@ export const jobExtra = {
             "Imparare a guidare e correggere l'output di strumenti AI generativi",
             "Sviluppare una voce editoriale riconoscibile e personale",
             "Offrire strategia di contenuto, non solo scrittura"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     developer: {
@@ -450,6 +543,9 @@ export const jobExtra = {
             "Imparare a usare l'AI come acceleratore, non come sostituto",
             "Sviluppare competenze di code review e mentoring",
             "Specializzarsi in domini complessi (sicurezza, performance, scalabilità)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     social_media: {
@@ -464,6 +560,9 @@ export const jobExtra = {
             "Sviluppare e proteggere la voce di marca in modo strategico",
             "Imparare ad analizzare dati e trend invece di solo pubblicare",
             "Costruire relazioni dirette con community e influencer"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     customer_service: {
@@ -478,6 +577,9 @@ export const jobExtra = {
             "Sviluppare competenze di de-escalation emotiva con clienti difficili",
             "Imparare a supervisionare chatbot e flussi automatizzati",
             "Offrire consulenza personalizzata oltre il supporto standard"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     hr_manager: {
@@ -492,6 +594,9 @@ export const jobExtra = {
             "Sviluppare competenze di valutazione del potenziale umano",
             "Imparare a usare l'AI per screening, lasciando a sé le decisioni finali",
             "Diventare punto di riferimento per cultura e benessere aziendale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     data_analyst: {
@@ -506,6 +611,9 @@ export const jobExtra = {
             "Sviluppare competenze di comunicazione dei dati al management",
             "Imparare a validare e correggere modelli predittivi AI",
             "Collegare i dati alle decisioni di business reali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     insegnante: {
@@ -520,6 +628,9 @@ export const jobExtra = {
             "Usare l'AI per preparare materiali, risparmiando tempo per gli studenti",
             "Sviluppare competenze di gestione di classi eterogenee",
             "Specializzarsi in supporto a studenti con bisogni educativi speciali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     grafico: {
@@ -534,6 +645,9 @@ export const jobExtra = {
             "Sviluppare un proprio stile distintivo difficile da replicare",
             "Imparare a usare l'AI come strumento di ideazione rapida",
             "Offrire consulenza di identità visiva, non solo esecuzione grafica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     traduttore: {
@@ -548,6 +662,9 @@ export const jobExtra = {
             "Sviluppare competenze di localizzazione culturale profonda",
             "Imparare il post-editing professionale di traduzioni AI",
             "Offrire consulenza linguistica per contenuti legali o sensibili"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     docente_universitario: {
@@ -562,6 +679,9 @@ export const jobExtra = {
             "Sviluppare competenze di supervisione di ricercatori e dottorandi",
             "Usare l'AI per revisione letteratura e analisi dati, liberando tempo per la ricerca",
             "Costruire una rete internazionale di collaborazioni accademiche"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     formatore_aziendale: {
@@ -576,6 +696,9 @@ export const jobExtra = {
             "Sviluppare competenze di facilitazione e gestione dell'aula avanzate",
             "Usare l'AI per creare contenuti, concentrandosi sull'erogazione live",
             "Costruire competenze di learning design per programmi di alto impatto"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     instructional_designer: {
@@ -590,6 +713,9 @@ export const jobExtra = {
             "Sviluppare competenze di learning analytics e misurazione dell'impatto",
             "Usare l'AI per produzione contenuti, concentrandosi sull'architettura didattica",
             "Costruire competenze di instructional design per contesti regolamentati"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     tutor_online: {
@@ -604,6 +730,9 @@ export const jobExtra = {
             "Sviluppare competenze di tutoring ad alto valore in discipline complesse",
             "Usare l'AI per feedback su esercizi, concentrandosi sulla relazione",
             "Costruire competenze in area BES/DSA per supporto specializzato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     dirigente_scolastico: {
@@ -618,6 +747,9 @@ export const jobExtra = {
             "Sviluppare visione strategica per l'innovazione didattica della scuola",
             "Usare l'AI per burocrazia, liberando tempo per la leadership",
             "Costruire reti con enti locali, aziende e università del territorio"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     educatore_infanzia: {
@@ -632,6 +764,9 @@ export const jobExtra = {
             "Sviluppare competenze di osservazione e documentazione pedagogica",
             "Usare l'AI per comunicazioni alle famiglie e pianificazione",
             "Specializzarsi in supporto a bambini con bisogni speciali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ml_engineer: {
@@ -646,6 +781,9 @@ export const jobExtra = {
             "Sviluppare competenze su LLM fine-tuning e architetture avanzate",
             "Imparare a valutare e correggere bias nei modelli AI",
             "Costruire competenze trasversali tra ML engineering e business impact"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     product_owner: {
@@ -660,6 +798,9 @@ export const jobExtra = {
             "Sviluppare competenze di product discovery e customer research",
             "Imparare a usare l'AI per analisi dati prodotto e priorizzazione",
             "Costruire competenze di leadership influenzale senza autorità diretta"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sysadmin: {
@@ -674,6 +815,9 @@ export const jobExtra = {
             "Specializzarsi in sicurezza dei sistemi e gestione delle identità",
             "Imparare Infrastructure as Code e automazione con Ansible/Terraform",
             "Sviluppare competenze di gestione di ambienti ibridi on-prem/cloud"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     qa_engineer: {
@@ -688,6 +832,9 @@ export const jobExtra = {
             "Sviluppare competenze di test automation con AI-assisted tools",
             "Imparare security testing e performance testing avanzato",
             "Spostarsi verso ruoli di Quality Engineering o SDET"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     network_engineer: {
@@ -702,6 +849,9 @@ export const jobExtra = {
             "Sviluppare competenze su SD-WAN, SASE e reti cloud-native",
             "Imparare a gestire reti con strumenti AIOps e automazione",
             "Costruire competenze trasversali tra networking e sicurezza informatica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     it_consultant: {
@@ -716,6 +866,9 @@ export const jobExtra = {
             "Sviluppare competenze di facilitazione e stakeholder management",
             "Imparare a usare l'AI per accelerare analisi e documentazione",
             "Costruire expertise verticale su un dominio specifico"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sales_executive: {
@@ -730,6 +883,9 @@ export const jobExtra = {
             "Sviluppare competenze di consultative selling e solution selling",
             "Imparare a usare l'AI per ricerca prospect e personalizzazione outreach",
             "Costruire una rete professionale solida nel settore di riferimento"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sales_director: {
@@ -744,6 +900,9 @@ export const jobExtra = {
             "Sviluppare visione strategica su mercati, segmenti e pricing",
             "Usare l'AI per analisi predittiva della pipeline e coaching del team",
             "Costruire relazioni dirette con i clienti enterprise più strategici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     addetto_vendite: {
@@ -758,6 +917,9 @@ export const jobExtra = {
             "Sviluppare competenze di visual merchandising e customer experience",
             "Imparare strumenti digitali di vendita assistita e loyalty",
             "Costruire competenze di store management per percorsi di crescita"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     commerciale_estero: {
@@ -772,6 +934,9 @@ export const jobExtra = {
             "Sviluppare competenze di negoziazione cross-cultural",
             "Imparare a usare l'AI per ricerca mercati e analisi competitor",
             "Costruire una rete di partner consolidata nei mercati chiave"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     marketing_manager: {
@@ -786,6 +951,9 @@ export const jobExtra = {
             "Sviluppare competenze di marketing data-driven e customer insight",
             "Imparare a orchestrare strumenti AI per automazione e personalizzazione",
             "Costruire competenze di leadership e gestione di team creativi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     pr_specialist: {
@@ -800,6 +968,9 @@ export const jobExtra = {
             "Sviluppare relazioni solide e personali con i giornalisti chiave",
             "Imparare a usare l'AI per monitoring e sentiment analysis",
             "Costruire competenze di storytelling strategico e thought leadership"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cfo: {
@@ -814,6 +985,9 @@ export const jobExtra = {
             "Sviluppare expertise in M&A, capital markets e pianificazione strategica",
             "Usare l'AI per automazione reporting, liberando tempo per la strategia",
             "Costruire competenze di gestione del rischio in contesti di incertezza"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     auditor: {
@@ -828,6 +1002,9 @@ export const jobExtra = {
             "Sviluppare competenze di risk-based auditing e fraud investigation",
             "Imparare a usare l'AI per analisi continua dei dati di audit",
             "Costruire competenze normative su ESG reporting e AI Act"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     credit_collector: {
@@ -842,6 +1019,9 @@ export const jobExtra = {
             "Sviluppare competenze legali per la gestione di procedure giudiziali",
             "Imparare a supervisionare sistemi AI di sollecito automatico",
             "Spostarsi verso ruoli di credit risk management"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     office_manager: {
@@ -856,6 +1036,9 @@ export const jobExtra = {
             "Sviluppare competenze di project management per eventi aziendali",
             "Imparare a gestire strumenti digitali di office automation",
             "Costruire competenze di comunicazione interna e supporto al management"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     impiegato_amm: {
@@ -870,6 +1053,9 @@ export const jobExtra = {
             "Sviluppare competenze digitali avanzate su ERP e software gestionali",
             "Imparare a gestire e supervisionare processi automatizzati",
             "Costruire competenze relazionali per i processi con componente umana"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ceo: {
@@ -884,6 +1070,9 @@ export const jobExtra = {
             "Sviluppare competenze di gestione di team in ambienti di trasformazione AI",
             "Usare l'AI come strumento di supporto decisionale, mantenendo il giudizio finale",
             "Costruire competenze di stakeholder management con board, investitori e mercato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     executive_assistant: {
@@ -898,6 +1087,9 @@ export const jobExtra = {
             "Sviluppare competenze di project management e coordinamento interfunzionale",
             "Imparare a usare l'AI per automatizzare scheduling e travel",
             "Costruire competenze di comunicazione executive e gestione della riservatezza"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     data_entry: {
@@ -912,6 +1104,9 @@ export const jobExtra = {
             "Sviluppare competenze di analisi dati con Excel/Power BI avanzato",
             "Imparare a configurare e supervisionare strumenti di automazione RPA",
             "Costruire expertise in un dominio specifico per uscire dal puro inserimento dati"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     production_planner: {
@@ -926,6 +1121,9 @@ export const jobExtra = {
             "Sviluppare competenze su sistemi APS avanzati e digital twin della produzione",
             "Imparare a interpretare e ottimizzare output di pianificazione AI",
             "Costruire competenze di coordinamento interfunzionale tra operations e vendite"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     plant_manager: {
@@ -940,6 +1138,9 @@ export const jobExtra = {
             "Sviluppare expertise in Industry 4.0 e digitalizzazione della produzione",
             "Usare l'AI per monitoring e analytics, concentrandosi sulle decisioni operative",
             "Costruire competenze di lean manufacturing e continuous improvement"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     automation_engineer: {
@@ -954,6 +1155,9 @@ export const jobExtra = {
             "Sviluppare competenze di AI per manutenzione predittiva e visione artificiale",
             "Imparare a progettare sistemi di automazione con AI integrata",
             "Costruire competenze trasversali tra automazione industriale e IT"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     qa_manager: {
@@ -968,6 +1172,9 @@ export const jobExtra = {
             "Sviluppare competenze di supplier quality management avanzato",
             "Imparare a usare l'AI per controllo qualità predittivo",
             "Costruire expertise normativa su ISO 9001, IATF, FDA e standard di settore"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     buyer: {
@@ -982,6 +1189,9 @@ export const jobExtra = {
             "Sviluppare competenze di supplier development e partnership strategica",
             "Imparare a usare l'AI per market intelligence e analisi prezzi",
             "Costruire competenze di supply risk management su fornitori critici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     informatore_scientifico: {
@@ -996,6 +1206,9 @@ export const jobExtra = {
             "Sviluppare competenze di medical education e supporto ai KOL",
             "Usare l'AI per preparazione scientifica, concentrandosi sulla relazione medica",
             "Costruire una rete consolidata di medici e specialisti nel proprio territorio"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     regulatory_affairs: {
@@ -1010,6 +1223,9 @@ export const jobExtra = {
             "Sviluppare competenze di regulatory strategy per nuovi mercati",
             "Imparare a usare l'AI per ricerca normativa e redazione standard",
             "Costruire competenze di dialogo con EMA, AIFA e autorità internazionali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     rd_specialist: {
@@ -1024,6 +1240,9 @@ export const jobExtra = {
             "Sviluppare competenze di AI-assisted research e bioinformatica",
             "Imparare a usare strumenti AI per accelerare analisi e sintesi bibliografica",
             "Costruire una rete di collaborazioni accademiche e industriali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     receptionist: {
@@ -1038,6 +1257,9 @@ export const jobExtra = {
             "Sviluppare competenze di office management e supporto amministrativo allargato",
             "Imparare a gestire strumenti di visitor management digitale",
             "Costruire competenze di comunicazione professionale multilingue"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ux_ui_designer: {
@@ -1052,6 +1274,9 @@ export const jobExtra = {
             "Sviluppare competenze di design system e accessibilità avanzata",
             "Usare l'AI per wireframing rapido, concentrandosi sulla ricerca utente",
             "Costruire competenze trasversali su psicologia cognitiva e comportamentale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     video_editor: {
@@ -1066,6 +1291,9 @@ export const jobExtra = {
             "Sviluppare competenze di direzione creativa per produzioni complesse",
             "Usare l'AI per tagli standard, concentrandosi sulla narrativa visiva",
             "Costruire un portfolio distintivo con lavori ad alto impatto creativo"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     art_director: {
@@ -1080,6 +1308,9 @@ export const jobExtra = {
             "Sviluppare capacità di guida creativa dei team e dei freelance",
             "Usare l'AI per la produzione esecutiva, liberando tempo per la visione",
             "Costruire competenze trasversali tra brand strategy e comunicazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     fotografo: {
@@ -1094,6 +1325,9 @@ export const jobExtra = {
             "Sviluppare uno stile fotografico personale e riconoscibile",
             "Usare l'AI per ritocco e varianti standard, risparmiando tempo creativo",
             "Costruire competenze di direzione fotografica per campagne complesse"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     illustratore: {
@@ -1108,6 +1342,9 @@ export const jobExtra = {
             "Specializzarsi in character design narrativo e world building visivo",
             "Usare l'AI per varianti e adattamenti, concentrandosi sulla creazione originale",
             "Costruire una presenza artistica personale riconoscibile e fedele"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sound_designer: {
@@ -1122,6 +1359,9 @@ export const jobExtra = {
             "Sviluppare competenze di audio branding e identità sonora aziendale",
             "Usare l'AI per editing di base, concentrandosi sulla creazione originale",
             "Costruire competenze trasversali tra musica, game audio e post-produzione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     paralegal: {
@@ -1136,6 +1376,9 @@ export const jobExtra = {
             "Sviluppare competenze di consulenza diretta al cliente",
             "Imparare a validare e correggere documenti generati da AI legale",
             "Concentrarsi su aree legali con forte componente di giudizio umano"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     infermiere: {
@@ -1150,6 +1393,9 @@ export const jobExtra = {
             "Usare l'AI per documentazione e monitoraggio, risparmiando tempo clinico",
             "Sviluppare competenze in aree di alta specializzazione clinica",
             "Diventare punto di riferimento per il supporto emotivo dei pazienti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cost_controller: {
@@ -1164,6 +1410,9 @@ export const jobExtra = {
             "Sviluppare competenze di analisi predittiva dei costi",
             "Imparare a usare l'AI per reportistica automatica, liberando tempo",
             "Offrire consulenza su efficientamento dei processi di costo"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     project_planner: {
@@ -1178,6 +1427,9 @@ export const jobExtra = {
             "Sviluppare competenze di problem solving su progetti ad alto rischio",
             "Imparare a usare l'AI per pianificazione automatica, liberando tempo",
             "Concentrarsi su progetti multi-team con forte coordinamento umano"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cost_estimator: {
@@ -1192,6 +1444,9 @@ export const jobExtra = {
             "Sviluppare competenze su progetti innovativi senza precedenti storici",
             "Imparare a validare le stime generate da modelli AI",
             "Offrire consulenza strategica su pianificazione costi a lungo termine"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     project_controller: {
@@ -1206,6 +1461,9 @@ export const jobExtra = {
             "Sviluppare competenze di giudizio su deviazioni e rischi critici",
             "Imparare a usare l'AI per controllo dati automatico, liberando tempo",
             "Offrire consulenza su governance finanziaria di progetto"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     project_manager: {
@@ -1220,6 +1478,9 @@ export const jobExtra = {
             "Sviluppare competenze di leadership e gestione del cambiamento",
             "Usare l'AI per reportistica e tracking, liberando tempo per decisioni strategiche",
             "Costruire expertise di dominio specifica (settore, normativa, tecnologia)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     controller_gestione: {
@@ -1234,6 +1495,9 @@ export const jobExtra = {
             "Sviluppare competenze di forecasting avanzato e scenario planning",
             "Imparare a interpretare e validare report generati dall'AI",
             "Costruire competenze di comunicazione con il top management"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     tax_advisor: {
@@ -1248,6 +1512,9 @@ export const jobExtra = {
             "Sviluppare competenze di gestione contenziosi tributari",
             "Usare l'AI per compliance standard, liberando tempo per consulenza",
             "Costruire una nicchia di expertise normativa molto specifica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     management_consultant: {
@@ -1262,6 +1529,9 @@ export const jobExtra = {
             "Sviluppare competenze di facilitazione e change management",
             "Usare l'AI per ricerca e benchmark, concentrandosi sulla sintesi strategica",
             "Costruire una rete di relazioni e reputazione personale nel settore"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     financial_analyst: {
@@ -1276,6 +1546,9 @@ export const jobExtra = {
             "Sviluppare competenze di comunicazione e storytelling con i dati",
             "Usare l'AI per modelli standard, concentrandosi sull'interpretazione",
             "Costruire competenze di settore verticale specifiche"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     risk_manager: {
@@ -1290,6 +1563,9 @@ export const jobExtra = {
             "Sviluppare competenze normative su rischi emergenti (cyber, climatici, AI)",
             "Usare l'AI per monitoraggio continuo, concentrandosi su decisioni critiche",
             "Costruire competenze di comunicazione del rischio al board"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     legal_counsel: {
@@ -1304,6 +1580,9 @@ export const jobExtra = {
             "Sviluppare competenze su normative emergenti (AI Act, privacy, ESG)",
             "Usare l'AI per ricerca e revisione standard, concentrandosi sulla strategia",
             "Costruire competenze di gestione del contenzioso e mediazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     procurement_manager: {
@@ -1318,6 +1597,9 @@ export const jobExtra = {
             "Sviluppare competenze di procurement sostenibile e gestione rischio",
             "Usare l'AI per comparazione offerte, concentrandosi sulla relazione fornitori",
             "Costruire competenze di category management avanzato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     supply_chain_specialist: {
@@ -1332,6 +1614,9 @@ export const jobExtra = {
             "Sviluppare competenze di ottimizzazione strategica della rete",
             "Usare l'AI per forecasting standard, concentrandosi su scenari complessi",
             "Costruire competenze di sostenibilità e compliance internazionale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     process_engineer: {
@@ -1346,6 +1631,9 @@ export const jobExtra = {
             "Sviluppare competenze di change management e formazione interna",
             "Usare l'AI per analisi dati e mappatura, concentrandosi sulla progettazione",
             "Costruire competenze su metodologie Lean/Six Sigma avanzate"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     logistics_manager: {
@@ -1360,6 +1648,9 @@ export const jobExtra = {
             "Sviluppare competenze di negoziazione con vettori e partner internazionali",
             "Usare l'AI per scheduling e tracking, concentrandosi sull'eccezione",
             "Costruire competenze di logistica sostenibile e compliance doganale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     operations_manager: {
@@ -1374,6 +1665,9 @@ export const jobExtra = {
             "Sviluppare competenze di leadership e gestione di team multidisciplinari",
             "Usare l'AI per monitoraggio KPI, concentrandosi su decisioni strategiche",
             "Costruire competenze su trasformazione digitale dei processi operativi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     talent_acquisition: {
@@ -1388,6 +1682,9 @@ export const jobExtra = {
             "Sviluppare competenze di employer branding ed executive search",
             "Usare l'AI per screening iniziale, concentrandosi sulla relazione umana",
             "Costruire una rete professionale per il recruiting su ruoli senior"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     hr_generalist: {
@@ -1402,6 +1699,9 @@ export const jobExtra = {
             "Sviluppare competenze di consulenza interna ai manager",
             "Usare l'AI per pratiche amministrative, concentrandosi sulla relazione",
             "Costruire competenze normative su diritto del lavoro aggiornato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     hr_business_partner: {
@@ -1416,6 +1716,9 @@ export const jobExtra = {
             "Sviluppare competenze di change management e leadership development",
             "Usare l'AI per analisi dati HR, concentrandosi sulla strategia",
             "Costruire una relazione di fiducia con il business e il management"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sustainability_specialist: {
@@ -1430,6 +1733,9 @@ export const jobExtra = {
             "Sviluppare competenze normative su tassonomia UE e CSRD",
             "Usare l'AI per raccolta dati, concentrandosi sulla strategia",
             "Costruire competenze di comunicazione e stakeholder engagement"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     hse_specialist: {
@@ -1444,6 +1750,9 @@ export const jobExtra = {
             "Sviluppare competenze di formazione e cultura della sicurezza",
             "Usare l'AI per documentazione standard, concentrandosi sul campo",
             "Costruire competenze normative su rischi emergenti (chimici, ambientali)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     medical_science_liaison: {
@@ -1458,6 +1767,9 @@ export const jobExtra = {
             "Sviluppare competenze scientifiche avanzate e aggiornamento continuo",
             "Usare l'AI per sintesi di letteratura, concentrandosi sulla relazione",
             "Costruire una rete di fiducia con la comunità medico-scientifica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     clinical_research_associate: {
@@ -1472,6 +1784,9 @@ export const jobExtra = {
             "Sviluppare competenze di relazione con investigatori e centri clinici",
             "Usare l'AI per verifica documentazione, concentrandosi sul campo",
             "Costruire competenze normative su regulatory affairs avanzato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
 
@@ -1490,6 +1805,9 @@ export const jobExtra = {
             "Capacità di persuasione e retorica in aula",
             "Competenze in AI Law e regolamentazione algoritmica",
             "Costruire fiducia e relazione con clienti in momenti critici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     notaio: {
@@ -1505,6 +1823,9 @@ export const jobExtra = {
             "Specializzazione in operazioni straordinarie (M&A, trust)",
             "Competenze in diritto internazionale privato",
             "Gestione di situazioni familiari delicate"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     commercialista: {
@@ -1522,6 +1843,9 @@ export const jobExtra = {
             "Specializzazione in operazioni straordinarie (M&A, scissioni)",
             "Gestione crisi aziendali e procedure concorsuali",
             "Pianificazione patrimoniale e successoria complessa"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     consulente_del_lavoro: {
@@ -1537,6 +1861,9 @@ export const jobExtra = {
             "Gestione controversie e contenziosi del lavoro",
             "Specializzazione in welfare aziendale e benefit",
             "Conoscenza approfondita dei contratti collettivi di settore"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     magistrato: {
@@ -1553,6 +1880,9 @@ export const jobExtra = {
             "Gestione di casi ad alta complessità fattuale",
             "Competenze in diritto dell'AI e reati informatici",
             "Capacità di valutazione delle prove in contesti tecnologici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     medico_base: {
@@ -1569,6 +1899,9 @@ export const jobExtra = {
             "Specializzazione in medicina preventiva e longevità",
             "Competenze in medicina personalizzata e genomica",
             "Supervisione e interpretazione critica dei sistemi AI diagnostici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     chirurgo: {
@@ -1585,6 +1918,9 @@ export const jobExtra = {
             "Competenze in chirurgia d'urgenza e trauma",
             "Interpretazione critica dei sistemi di supporto AI",
             "Sviluppo di nuove tecniche chirurgiche"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     dentista: {
@@ -1601,6 +1937,9 @@ export const jobExtra = {
             "Competenze in odontoiatria estetica avanzata",
             "Supervisione sistemi AI di diagnosi radiologica",
             "Gestione di pazienti con patologie sistemiche"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     fisioterapista: {
@@ -1616,6 +1955,9 @@ export const jobExtra = {
             "Competenze in terapia manuale avanzata (osteopatia, PNF)",
             "Approccio biopsicosociale al dolore cronico",
             "Integrazione di wearable e biofeedback nella terapia"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     psicologo: {
@@ -1632,6 +1974,9 @@ export const jobExtra = {
             "Psicologia forense e neuropsicologia clinica",
             "Supervisione e formazione di altri terapeuti",
             "Integrazione critica degli strumenti AI nel percorso terapeutico"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     farmacista: {
@@ -1648,6 +1993,9 @@ export const jobExtra = {
             "Consulenza personalizzata per politerapi e pazienti fragili",
             "Competenze in nutraceutica e medicina integrativa",
             "Gestione farmacia come hub di salute di prossimità"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     veterinario: {
@@ -1664,6 +2012,9 @@ export const jobExtra = {
             "Medicina d'urgenza e terapia intensiva animale",
             "Competenze in diagnostica per immagini avanzata",
             "Medicina degli animali esotici o selvatici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     nutrizionista: {
@@ -1680,6 +2031,9 @@ export const jobExtra = {
             "Trattamento dei disturbi del comportamento alimentare",
             "Approccio integrato psico-nutrizionale",
             "Nutrizione sportiva di alto livello e biorisonanza"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     radiologo: {
@@ -1696,6 +2050,9 @@ export const jobExtra = {
             "Supervisione e audit dei sistemi AI diagnostici",
             "Specializzazione in imaging molecolare e ibrido (PET/CT)",
             "Competenze in ricerca e sviluppo di nuovi protocolli diagnostici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     osteopata: {
@@ -1711,6 +2068,9 @@ export const jobExtra = {
             "Specializzazione in osteopatia pediatrica e viscerale",
             "Approccio integrato corpo-mente",
             "Ricerca e pubblicazione scientifica in osteopatia"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     logopedista: {
@@ -1726,6 +2086,9 @@ export const jobExtra = {
             "Riabilitazione post-ictus e neurologica",
             "Logopedia per DSA e bambini con bisogni speciali",
             "Integrazione di tecnologie AAC nella terapia"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     oss: {
@@ -1741,6 +2104,9 @@ export const jobExtra = {
             "Competenze in cure palliative e fine vita",
             "Formazione in gestione dello stress e prevenzione burnout",
             "Coordinamento con équipe multidisciplinari"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ingegnere_civile: {
@@ -1757,6 +2123,9 @@ export const jobExtra = {
             "Competenze in BIM management e digital twin",
             "Progettazione sostenibile e materiali innovativi",
             "Gestione grandi infrastrutture e project management"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     architetto: {
@@ -1773,6 +2142,9 @@ export const jobExtra = {
             "Specializzazione in restauro e patrimonio culturale",
             "Direzione artistica e branding degli spazi",
             "Competenze in parametric design e computational architecture"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     geometra: {
@@ -1789,6 +2161,9 @@ export const jobExtra = {
             "Competenze in topografia digitale e droni",
             "BIM per il settore edilizio residenziale",
             "Gestione pratiche complesse (Superbonus, sisma-bonus)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     topografo: {
@@ -1804,6 +2179,9 @@ export const jobExtra = {
             "Competenze in GIS avanzato e analisi spaziale",
             "Rilievi subacquei e in ambienti estremi",
             "Consulenza per pianificazione territoriale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ingegnere_meccanico: {
@@ -1820,6 +2198,9 @@ export const jobExtra = {
             "Competenze in additive manufacturing (stampa 3D)",
             "Ingegneria dei sistemi e system engineering",
             "Sviluppo prodotto con metodologie agile e rapid prototyping"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     urbanista: {
@@ -1835,6 +2216,9 @@ export const jobExtra = {
             "Pianificazione per resilienza climatica",
             "Partecipazione pubblica e co-design urbano",
             "Specializzazione in rigenerazione urbana e brownfield"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ingegnere_ambientale: {
@@ -1850,6 +2234,9 @@ export const jobExtra = {
             "Competenze in carbon accounting e ESG reporting",
             "Progettazione Nature Based Solutions",
             "Gestione di procedure autorizzative complesse (AIA, VIA)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     agente_immobiliare: {
@@ -1866,6 +2253,9 @@ export const jobExtra = {
             "Competenze in home staging e marketing immobiliare avanzato",
             "Gestione portafogli di investimento immobiliare",
             "Consulenza per investitori e fondi immobiliari"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     perito_immobiliare: {
@@ -1881,6 +2271,9 @@ export const jobExtra = {
             "Perizie per contenziosi e procedure esecutive",
             "Valutazione di portafogli NPL e crediti immobiliari",
             "Competenze in analisi di investimento immobiliare"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     consulente_finanziario: {
@@ -1897,6 +2290,9 @@ export const jobExtra = {
             "Consulenza su ESG e investimenti sostenibili",
             "Gestione emotiva e behavioral finance",
             "Competenze in family office e patrimoni complessi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     agente_assicurativo: {
@@ -1912,6 +2308,9 @@ export const jobExtra = {
             "Consulenza su polizze vita e previdenza complementare",
             "Competenze in liability e D&O per aziende",
             "Gestione sinistri complessi e contenzioso"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     revisore_contabile: {
@@ -1928,6 +2327,9 @@ export const jobExtra = {
             "Audit di sistemi AI e algoritmi",
             "Consulenza su governance e internal audit avanzato",
             "Competenze in cybersecurity audit"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     giornalista: {
@@ -1944,6 +2346,9 @@ export const jobExtra = {
             "Competenze in verifica delle fonti (fact-checking AI)",
             "Specializzazione in nicchie di expertise profonda",
             "Sviluppare audience propria e personal brand editoriale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     scrittore: {
@@ -1960,6 +2365,9 @@ export const jobExtra = {
             "Scrittura ibrida uomo-AI (prompt engineering creativo)",
             "Specializzazione in generi di nicchia",
             "Costruire relazione diretta con i lettori (newsletter, community)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sceneggiatore: {
@@ -1976,6 +2384,9 @@ export const jobExtra = {
             "Competenze in regia e produzione per writer-director",
             "Specializzazione in documentario e giornalismo cinematografico",
             "Costruire IP proprie e produrre in modo indipendente"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     doppiatore: {
@@ -1991,6 +2402,9 @@ export const jobExtra = {
             "Competenze in regia del suono e sound design",
             "Sviluppare personal brand vocale riconoscibile",
             "Formazione su supervisione e direzione voci AI"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     idraulico: {
@@ -2006,6 +2420,9 @@ export const jobExtra = {
             "Competenze in domotica e building automation",
             "Installazione impianti solari termici",
             "Specializzazione in energy audit degli impianti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     elettricista: {
@@ -2021,6 +2438,9 @@ export const jobExtra = {
             "Domotica e building automation (KNX, Zigbee)",
             "Impianti elettrici per veicoli elettrici (EV charging)",
             "Progettazione illuminotecnica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     falegname: {
@@ -2036,6 +2456,9 @@ export const jobExtra = {
             "Restauro e conservazione del legno antico",
             "Utilizzo di CNC e tecnologie digitali per design personalizzato",
             "Sostenibilità e uso di materiali certificati"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     meccanico: {
@@ -2051,6 +2474,9 @@ export const jobExtra = {
             "Diagnosi avanzata sistemi ADAS e guida autonoma",
             "Competenze in bus e veicoli commerciali pesanti",
             "Gestione autofficina con software gestionali avanzati"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     chef: {
@@ -2067,6 +2493,9 @@ export const jobExtra = {
             "Competenze in fermentazione, tecniche avanzate, cucina scientifica",
             "Personal branding e presenza digitale",
             "Specializzazione in cucina vegetale, allergie, salute"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     pasticcere: {
@@ -2082,6 +2511,9 @@ export const jobExtra = {
             "Tecniche avanzate (temperaggio, isomalt, gelatina artistica)",
             "Personal branding e presenza sui social",
             "Sviluppare linee proprie e vendita diretta"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     barista: {
@@ -2098,6 +2530,9 @@ export const jobExtra = {
             "Mixologia avanzata e cocktail pairing",
             "Gestione e apertura di un locale proprio",
             "Competenze in coffee roasting e selezione origini"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     parrucchiere: {
@@ -2113,6 +2548,9 @@ export const jobExtra = {
             "Barberia di lusso e cura della barba",
             "Personal branding su Instagram/TikTok",
             "Formazione e apertura di accademia"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     estetista: {
@@ -2128,6 +2566,9 @@ export const jobExtra = {
             "Tecnologie estetiche avanzate (radiofrequenza, HIFU)",
             "Nutrizione della pelle e approccio olistico",
             "Gestione di centro estetico avanzato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     personal_trainer: {
@@ -2143,6 +2584,9 @@ export const jobExtra = {
             "Riabilitazione funzionale e movement therapy",
             "Nutrizione sportiva e supplementazione",
             "Costruire community online e programmi digitali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     vigile_urbano: {
@@ -2158,6 +2602,9 @@ export const jobExtra = {
             "Gestione emergenze e protezione civile",
             "Mediazione e risoluzione dei conflitti di comunità",
             "Competenze in cybercrime e reati digitali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     pompiere: {
@@ -2173,6 +2620,9 @@ export const jobExtra = {
             "Competenze in emergenze NBCR (nucleare, biologico, chimico, radiologico)",
             "Comandante di unità operativa",
             "Formazione e prevenzione incendi in ambienti industriali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     funzionario_pubblico: {
@@ -2188,6 +2638,9 @@ export const jobExtra = {
             "Project management per fondi PNRR ed europei",
             "Digitalizzazione dei processi pubblici",
             "Competenze in diritto amministrativo avanzato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     autista_camion: {
@@ -2203,6 +2656,9 @@ export const jobExtra = {
             "Competenze in logistica internazionale e dogane",
             "Gestione flotte e coordinamento operativo",
             "Transizione verso supervisione di veicoli autonomi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     pilota: {
@@ -2218,6 +2674,9 @@ export const jobExtra = {
             "Competenze in human factors e CRM avanzato",
             "Formazione su sistemi di automazione avanzata",
             "Percorso verso ruoli di Chief Pilot o Safety Manager"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     magazziniere: {
@@ -2233,6 +2692,9 @@ export const jobExtra = {
             "Supervisione robot AMR e sistemi automatizzati",
             "Specializzazione in logistica farmaceutica o food-grade",
             "Competenze in supply chain management"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     agronomo: {
@@ -2248,6 +2710,9 @@ export const jobExtra = {
             "Agroecologia e agricoltura biologica certificata",
             "Carbon farming e crediti di carbonio agricoli",
             "Consulenza per filiere corte e valorizzazione prodotti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     agricoltore: {
@@ -2264,6 +2729,9 @@ export const jobExtra = {
             "Diversificazione in agriturismo e vendita diretta",
             "Coltivazioni di nicchia e biologico certificato",
             "Accesso a fondi europei (PSR, PNRR Agri)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     enologo: {
@@ -2279,6 +2747,9 @@ export const jobExtra = {
             "Competenze in enoturismo e marketing del vino",
             "Consulenza per cantina boutique e cru",
             "Export e comunicazione internazionale del vino"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     allenatore: {
@@ -2295,6 +2766,9 @@ export const jobExtra = {
             "Competenze in psicologia dello sport",
             "Gestione dello spogliatoio e leadership situazionale",
             "Formazione in metodologie innovative di allenamento"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     attore: {
@@ -2311,6 +2785,9 @@ export const jobExtra = {
             "Regia e direzione artistica",
             "Produzione indipendente e content creation",
             "Competenze in motion capture e performance digitale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     regista: {
@@ -2327,6 +2804,9 @@ export const jobExtra = {
             "Specializzazione in documentario e giornalismo cinematografico",
             "Sviluppare IP proprie e produrre serie internazionali",
             "Competenze in XR e esperienze immersive"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     musicista: {
@@ -2343,6 +2823,9 @@ export const jobExtra = {
             "Competenze in live electronics e performance audiovisiva",
             "Musica per videogiochi e mondi virtuali",
             "Costruire community di fan diretta (Patreon, Bandcamp)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cantante: {
@@ -2358,6 +2841,9 @@ export const jobExtra = {
             "Songwriting e composizione propria",
             "Live performance e costruzione di fanbase",
             "Sfruttamento diritti e royalties come asset"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     assistente_sociale: {
@@ -2373,6 +2859,9 @@ export const jobExtra = {
             "Lavoro con adulti in situazione di dipendenza",
             "Progettazione di servizi di welfare di comunità",
             "Competenze in mediazione familiare e penale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     educatore_sociale: {
@@ -2388,6 +2877,9 @@ export const jobExtra = {
             "Competenze in dipendenze e riduzione del danno",
             "Coordinamento di équipe multidisciplinari",
             "Project management per progetti europei sociali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     stilista: {
@@ -2404,6 +2896,9 @@ export const jobExtra = {
             "Competenze in sustainable fashion e materiali innovativi",
             "Direzione creativa e brand building",
             "Artigianato digitale e stampanti 3D per moda"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sommelier: {
@@ -2419,6 +2914,9 @@ export const jobExtra = {
             "Enoturismo e ospitalità di lusso",
             "Competenze in wine marketing e comunicazione",
             "Specializzazione in vini naturali e biodinamici"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     criminologo: {
@@ -2434,6 +2932,9 @@ export const jobExtra = {
             "Cybercriminologia e analisi reati digitali",
             "Consulenza per enti pubblici e intelligence",
             "Ricerca accademica e pubblicazione scientifica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     psicologo_scolastico: {
@@ -2449,6 +2950,9 @@ export const jobExtra = {
             "Intervento precoce su disturbi emotivo-relazionali",
             "Competenze in mindfulness e psicologia positiva scolastica",
             "Formazione docenti e genitori"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     lobbista: {
@@ -2464,6 +2968,9 @@ export const jobExtra = {
             "Competenze in EU affairs e lobbying a Bruxelles",
             "Gestione di coalizioni multi-stakeholder",
             "Comunicazione pubblica e posizionamento politico"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     redattore: {
@@ -2479,6 +2986,9 @@ export const jobExtra = {
             "Direzione editoriale e sviluppo di brand editoriali",
             "Competenze in content strategy e audience building",
             "Specializzazione in traduzione editoriale letteraria"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     panettiere: {
@@ -2494,6 +3004,9 @@ export const jobExtra = {
             "Pani di grano antico e prodotti tipici locali",
             "Personal branding e racconto del mestiere sui social",
             "Apertura di panificio artigianale con vendita diretta"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cameriere: {
@@ -2510,6 +3023,9 @@ export const jobExtra = {
             "Formazione in sommellerie e abbinamento",
             "Gestione di banquet e catering di lusso",
             "Carriera verso maître e direttore di sala"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     medico_specialista: {
@@ -2526,6 +3042,9 @@ export const jobExtra = {
             "Comunicazione empatica con pazienti gravi",
             "Capacità decisionale in urgenza",
             "Ricerca clinica applicata"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     infermiere_specializzato: {
@@ -2542,6 +3061,9 @@ export const jobExtra = {
             "Leadership clinica",
             "Gestione crisi e urgenze",
             "Formazione colleghi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     tecnico_radiologia: {
@@ -2557,6 +3079,9 @@ export const jobExtra = {
             "Competenze in radioterapia",
             "Gestione pazienti fragili",
             "Manutenzione e calibrazione avanzata"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     biologo: {
@@ -2572,6 +3097,9 @@ export const jobExtra = {
             "Specializzazione in biologia molecolare",
             "Ricerca e pubblicazione scientifica",
             "Consulenza genetica avanzata"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ottico: {
@@ -2587,6 +3115,9 @@ export const jobExtra = {
             "Specializzazione in lenti a contatto",
             "Contatto umano e consulenza estetica",
             "Gestione patologie visive borderline"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     logopedista_pediatrico: {
@@ -2602,6 +3133,9 @@ export const jobExtra = {
             "CAA (Comunicazione Aumentativa Alternativa)",
             "Lavoro multidisciplinare",
             "Formazione genitori e insegnanti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     tecnico_laboratorio: {
@@ -2617,6 +3151,9 @@ export const jobExtra = {
             "Specializzazione in microbiologia clinica",
             "Competenze in point-of-care testing",
             "Supervisione sistemi automatizzati"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     dietista: {
@@ -2632,6 +3169,9 @@ export const jobExtra = {
             "Psicologia dell'alimentazione",
             "Nutrizione sportiva avanzata",
             "Ricerca in scienze dell'alimentazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     insegnante_scuola_primaria: {
@@ -2648,6 +3188,9 @@ export const jobExtra = {
             "Gestione BES e DSA",
             "Uso didattico degli strumenti AI",
             "Leadership educativa e mentorat"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     professore_liceo: {
@@ -2664,6 +3207,9 @@ export const jobExtra = {
             "Coaching e mentoring giovanile",
             "Uso pedagogico dell'AI in classe",
             "Specializzazione in materie STEM o umanistiche rare"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     educatore_asilo_nido: {
@@ -2679,6 +3225,9 @@ export const jobExtra = {
             "Gestione difficoltà comportamentali precoci",
             "Comunicazione con famiglie in crisi",
             "Osservazione sviluppo atipico"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     tutor_specializzato: {
@@ -2694,6 +3243,9 @@ export const jobExtra = {
             "Coaching motivazionale",
             "Tecnologie assistive avanzate",
             "Mediazione familiare scolastica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     avvocato_penalista: {
@@ -2710,6 +3262,9 @@ export const jobExtra = {
             "Psicologia forense applicata",
             "Specializzazione in criminalità economica o informatica",
             "Networking con magistratura"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     consulente_del_lavoro_senior: {
@@ -2726,6 +3281,9 @@ export const jobExtra = {
             "Gestione ristrutturazioni aziendali",
             "Consulenza su welfare aziendale",
             "Negoziazione sindacale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     mediatore_civile: {
@@ -2741,6 +3299,9 @@ export const jobExtra = {
             "Psicologia del conflitto",
             "Mediazione penale e scolastica",
             "Formazione di nuovi mediatori"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     compliance_officer: {
@@ -2757,6 +3318,9 @@ export const jobExtra = {
             "Compliance in settori regolamentati (finanza, farmaceutico)",
             "ESG e sostenibilità",
             "Gestione crisis compliance"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     notaio_digitale: {
@@ -2772,6 +3336,9 @@ export const jobExtra = {
             "Smart contract e asset digitali",
             "Successione di asset digitali (crypto, NFT)",
             "Consulenza corporate su tokenizzazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ingegnere_elettrico: {
@@ -2787,6 +3354,9 @@ export const jobExtra = {
             "Power electronics e sistemi di accumulo",
             "Normativa CEI e IEC avanzata",
             "BIM MEP e progettazione integrata"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ingegnere_informatico: {
@@ -2803,6 +3373,9 @@ export const jobExtra = {
             "Cybersecurity e zero-trust architecture",
             "Architettura cloud-native",
             "Gestione team tecnici distribuiti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ingegnere_biomedico: {
@@ -2818,6 +3391,9 @@ export const jobExtra = {
             "Regulatory Affairs MDR/FDA",
             "Wearable e digital health",
             "Ricerca clinica applicata a dispositivi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     tecnico_informatico: {
@@ -2833,6 +3409,9 @@ export const jobExtra = {
             "Cloud administration (Azure, AWS)",
             "Automazione IT (PowerShell, Ansible)",
             "Gestione infrastrutture critiche"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     geometra_catasto: {
@@ -2848,6 +3427,9 @@ export const jobExtra = {
             "BIM e modellazione 3D",
             "Efficienza energetica e certificazioni",
             "Project management edilizio"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     perito_industriale: {
@@ -2863,6 +3445,9 @@ export const jobExtra = {
             "Certificazione macchine e sicurezza",
             "CTU (Consulente Tecnico d'Ufficio)",
             "Valutazione danni e sinistri industriali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     analista_credito: {
@@ -2878,6 +3463,9 @@ export const jobExtra = {
             "ESG credit analysis",
             "Gestione portafogli NPL",
             "Relazione con imprenditori e CFO"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     consulente_fiscale: {
@@ -2894,6 +3482,9 @@ export const jobExtra = {
             "Pianificazione patrimoniale complessa",
             "Contenzioso tributario avanzato",
             "Consulenza M&A fiscale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     actuario: {
@@ -2909,6 +3500,9 @@ export const jobExtra = {
             "Modelli climatici e cat risk",
             "ESG e rischio di transizione",
             "Governance dei modelli AI"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     private_banker: {
@@ -2925,6 +3519,9 @@ export const jobExtra = {
             "Gestione family office",
             "ESG e impact investing",
             "Fiducia e networking con UHNW"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     assicuratore: {
@@ -2940,6 +3537,9 @@ export const jobExtra = {
             "Risk management aziendale",
             "Benefits e welfare aziendale",
             "Relazione con clienti in momenti critici (sinistri gravi)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     pubblicitario: {
@@ -2955,6 +3555,9 @@ export const jobExtra = {
             "Brand storytelling e narrativa",
             "Integrazione creativa AI-umano",
             "Cultural insight e creatività culturale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     ufficio_stampa: {
@@ -2970,6 +3573,9 @@ export const jobExtra = {
             "Influencer e creator relations",
             "Comunicazione istituzionale e lobbying",
             "Media training e portavoce"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     giornalista_investigativo: {
@@ -2985,6 +3591,9 @@ export const jobExtra = {
             "OSINT e tecniche investigative digitali",
             "Diritto di accesso agli atti",
             "Sicurezza operativa per giornalisti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     podcaster: {
@@ -3000,6 +3609,9 @@ export const jobExtra = {
             "Monetizzazione avanzata (membership, live)",
             "Distribuzione cross-platform",
             "Storytelling audio narrativo"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     fotografo_commerciale: {
@@ -3015,6 +3627,9 @@ export const jobExtra = {
             "Direzione creativa su set complessi",
             "Fotografia documentaria e reportage",
             "Specializzazione wedding o architettura di lusso"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     recruiter: {
@@ -3031,6 +3646,9 @@ export const jobExtra = {
             "Employer branding e candidate experience",
             "Assessment psicologici avanzati",
             "Negoziazione e gestione offerte complesse"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     hr_analytics: {
@@ -3046,6 +3664,9 @@ export const jobExtra = {
             "Compensation analytics",
             "Workforce planning strategico",
             "Comunicazione insight ai C-level"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     coach_aziendale: {
@@ -3061,6 +3682,9 @@ export const jobExtra = {
             "Coaching per C-suite e board",
             "Team coaching e facilitazione sistemica",
             "Integrazione AI nel percorso di sviluppo"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     venditore_porta_a_porta: {
@@ -3076,6 +3700,9 @@ export const jobExtra = {
             "Specializzazione B2B enterprise",
             "Account management strategico",
             "Negoziazione contratti pluriennali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     buyer_moda: {
@@ -3091,6 +3718,9 @@ export const jobExtra = {
             "Trend forecasting avanzato",
             "Mercati emergenti e sourcing globale",
             "Brand identity e selezione curatoriale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     agente_commerciale: {
@@ -3106,6 +3736,9 @@ export const jobExtra = {
             "Vendita soluzioni complesse B2B",
             "Specializzazione settoriale verticale",
             "Negoziazione contratti quadro"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     web_designer: {
@@ -3121,6 +3754,9 @@ export const jobExtra = {
             "Motion design e micro-interazioni",
             "Direzione creativa e brand design",
             "Design per accessibilità (WCAG)"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     social_media_manager: {
@@ -3137,6 +3773,9 @@ export const jobExtra = {
             "Influencer marketing e creator economy",
             "Crisis communication digitale",
             "Social commerce e conversione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     e_commerce_specialist: {
@@ -3152,6 +3791,9 @@ export const jobExtra = {
             "Internazionalizzazione e mercati esteri",
             "D2C e brand building digitale",
             "Data-driven merchandising"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     data_engineer_senior: {
@@ -3167,6 +3809,9 @@ export const jobExtra = {
             "Real-time streaming (Kafka, Flink)",
             "Data governance e compliance",
             "MLOps e feature engineering"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cybersecurity_analyst: {
@@ -3182,6 +3827,9 @@ export const jobExtra = {
             "AI security e prompt injection",
             "Cloud security e zero trust",
             "Compliance NIS2 e DORA"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     falegname_artigiano: {
@@ -3197,6 +3845,9 @@ export const jobExtra = {
             "Intaglio e tecniche decorative tradizionali",
             "Progettazione su misura con BIM",
             "Formazione e trasmissione del mestiere"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     sarto: {
@@ -3212,6 +3863,9 @@ export const jobExtra = {
             "Modellistica digitale (CLO 3D)",
             "Sostenibilità e upcycling",
             "Specializzazione su misura lusso"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     orafo: {
@@ -3227,6 +3881,9 @@ export const jobExtra = {
             "Gemologia e valutazione pietre",
             "Tecniche orafe tradizionali (cera persa, fusione)",
             "Brand e retail di nicchia"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     cuoco_pizzaiolo: {
@@ -3242,6 +3899,9 @@ export const jobExtra = {
             "Fermentazione e tecniche avanzate",
             "Gestione food cost e brigata",
             "Brand chef e comunicazione"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     pasticcere_artigiano: {
@@ -3257,6 +3917,9 @@ export const jobExtra = {
             "Innovazione con ingredienti insoliti",
             "Brand e comunicazione digitale",
             "Formazione e scuola di pasticceria"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     guida_turistica: {
@@ -3272,6 +3935,9 @@ export const jobExtra = {
             "Lingue rare",
             "Storytelling esperienziale avanzato",
             "Certificazioni per musei e siti UNESCO"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     receptionist_hotel: {
@@ -3288,6 +3954,9 @@ export const jobExtra = {
             "Guest experience di lusso",
             "Lingue rare (cinese, arabo, russo)",
             "Gestione clienti VIP e UHNW"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     travel_planner: {
@@ -3304,6 +3973,9 @@ export const jobExtra = {
             "Destinazioni di nicchia (Antartide, Bhutan)",
             "Corporate travel management",
             "Crisis management in travel"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     wedding_planner: {
@@ -3319,6 +3991,9 @@ export const jobExtra = {
             "Luxury events e clientela UHNW",
             "Sostenibilità eventi",
             "Design esperienziale avanzato"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     dirigente_pa: {
@@ -3334,6 +4009,9 @@ export const jobExtra = {
             "Project management PNRR",
             "Open government e partecipazione",
             "Leadership istituzionale complessa"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     assistente_amministrativo_pa: {
@@ -3349,6 +4027,9 @@ export const jobExtra = {
             "Gestione progetti europei",
             "Comunicazione istituzionale",
             "Specializzazione normativa settoriale"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     preparatore_atletico: {
@@ -3364,6 +4045,9 @@ export const jobExtra = {
             "Prevenzione infortuni con AI",
             "Coaching psicologico e mental training",
             "Sport di squadra ad alto livello"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     istruttore_fitness: {
@@ -3379,6 +4063,9 @@ export const jobExtra = {
             "Specializzazione (riabilitazione, anziani, preparazione gare)",
             "Personal brand e community",
             "Online coaching su scala"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     chimico: {
@@ -3394,6 +4081,9 @@ export const jobExtra = {
             "Green chemistry e sostenibilità",
             "Regulatory Affairs (REACH, ICH)",
             "Ricerca multidisciplinare biochimica-farmaceutica"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     fisico: {
@@ -3409,6 +4099,9 @@ export const jobExtra = {
             "Quantum computing",
             "Intersecazione fisica-biologia (biofisica)",
             "Trasferimento tecnologico e brevetti"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     psicologo_clinico: {
@@ -3424,6 +4117,9 @@ export const jobExtra = {
             "Psicologia forense",
             "Supervisione clinica",
             "Integrazione etica degli strumenti digitali"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     esperto_energia: {
@@ -3439,6 +4135,9 @@ export const jobExtra = {
             "Accumulo e gestione rete",
             "Finanza green e project finance",
             "Normativa energetica europea avanzata"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     geologo: {
@@ -3454,6 +4153,9 @@ export const jobExtra = {
             "Rischio sismico e microzonazione",
             "Geologia ambientale e bonifica",
             "Consulenza tecnica per contenziosi"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
     agronomo_consulente: {
@@ -3469,6 +4171,9 @@ export const jobExtra = {
             "Certificazioni biologiche e biodinamiche",
             "Carbon farming e crediti CO2",
             "Consulenza su nuove colture e vertical farming"
+        ],
+        changelog: [
+            { date: '2026-07-05', score: null, note: 'Revisione semestrale (luglio 2026) — punteggio verificato e confermato.' }
         ]
     },
 
@@ -3489,7 +4194,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1200,
-                description: 'Progetta, sviluppa e integra modelli di machine learning e AI generativa in sistemi aziendali'
+                description: 'Progetta, sviluppa e integra modelli di machine learning e AI generativa in sistemi aziendali',
+                lastUpdated: '2026-07-05'
             },
             ai_director: {
                 title: 'AI Director',
@@ -3503,7 +4209,8 @@ export const jobData = {
                 defaultHumanExtra: 25500,
                 defaultAiMonthly: 800,
                 defaultAiSetup: 3500,
-                description: 'Definisce la strategia di adozione AI aziendale, coordina team tecnici e governance dei progetti di intelligenza artificiale'
+                description: 'Definisce la strategia di adozione AI aziendale, coordina team tecnici e governance dei progetti di intelligenza artificiale',
+                lastUpdated: '2026-07-05'
             },
             data_engineer: {
                 title: 'Data Engineer',
@@ -3517,7 +4224,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Costruisce e mantiene pipeline dati, data warehouse e infrastrutture ETL per analisi e modelli AI'
+                description: 'Costruisce e mantiene pipeline dati, data warehouse e infrastrutture ETL per analisi e modelli AI',
+                lastUpdated: '2026-07-05'
             },
             backend_developer: {
                 title: 'Back-End Developer',
@@ -3531,7 +4239,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 240,
                 defaultAiSetup: 900,
-                description: 'Sviluppa logica server, API, database e integrazioni backend per applicazioni web e aziendali'
+                description: 'Sviluppa logica server, API, database e integrazioni backend per applicazioni web e aziendali',
+                lastUpdated: '2026-07-05'
             },
             frontend_developer: {
                 title: 'Front-End Developer',
@@ -3545,7 +4254,8 @@ export const jobData = {
                 defaultHumanExtra: 8760,
                 defaultAiMonthly: 200,
                 defaultAiSetup: 800,
-                description: 'Sviluppa interfacce utente, componenti web e esperienze interattive lato client'
+                description: 'Sviluppa interfacce utente, componenti web e esperienze interattive lato client',
+                lastUpdated: '2026-07-05'
             },
             fullstack_developer: {
                 title: 'Full-Stack Developer',
@@ -3559,7 +4269,8 @@ export const jobData = {
                 defaultHumanExtra: 9900,
                 defaultAiMonthly: 260,
                 defaultAiSetup: 1000,
-                description: 'Sviluppa sia il frontend che il backend di applicazioni web complete, dal database all\'interfaccia'
+                description: 'Sviluppa sia il frontend che il backend di applicazioni web complete, dal database all\'interfaccia',
+                lastUpdated: '2026-07-05'
             },
             cloud_engineer: {
                 title: 'Cloud Engineer',
@@ -3573,7 +4284,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1500,
-                description: 'Progetta, implementa e gestisce infrastrutture cloud su AWS, Azure e Google Cloud'
+                description: 'Progetta, implementa e gestisce infrastrutture cloud su AWS, Azure e Google Cloud',
+                lastUpdated: '2026-07-05'
             },
             cloud_consultant: {
                 title: 'Cloud Consultant',
@@ -3587,7 +4299,8 @@ export const jobData = {
                 defaultHumanExtra: 14400,
                 defaultAiMonthly: 400,
                 defaultAiSetup: 1800,
-                description: 'Consiglia le aziende su strategie di migrazione, ottimizzazione costi e governance dell\'infrastruttura cloud'
+                description: 'Consiglia le aziende su strategie di migrazione, ottimizzazione costi e governance dell\'infrastruttura cloud',
+                lastUpdated: '2026-07-05'
             },
             soc_analyst: {
                 title: 'SOC Analyst',
@@ -3601,7 +4314,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1500,
-                description: 'Monitora alert di sicurezza, analizza minacce e gestisce il triage iniziale degli incidenti informatici'
+                description: 'Monitora alert di sicurezza, analizza minacce e gestisce il triage iniziale degli incidenti informatici',
+                lastUpdated: '2026-07-05'
             },
             cyber_security_engineer: {
                 title: 'Cyber Security Engineer',
@@ -3615,7 +4329,8 @@ export const jobData = {
                 defaultHumanExtra: 15000,
                 defaultAiMonthly: 500,
                 defaultAiSetup: 2200,
-                description: 'Progetta architetture di sicurezza, gestisce vulnerabilità e coordina la risposta a incidenti informatici complessi'
+                description: 'Progetta architetture di sicurezza, gestisce vulnerabilità e coordina la risposta a incidenti informatici complessi',
+                lastUpdated: '2026-07-05'
             },
             data_scientist: {
                 title: 'Data Scientist',
@@ -3629,7 +4344,8 @@ export const jobData = {
                 defaultHumanExtra: 11550,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1500,
-                description: 'Analizza dati complessi, costruisce modelli statistici e di machine learning per supportare decisioni di business'
+                description: 'Analizza dati complessi, costruisce modelli statistici e di machine learning per supportare decisioni di business',
+                lastUpdated: '2026-07-05'
             },
             devops_engineer: {
                 title: 'DevOps Engineer',
@@ -3643,7 +4359,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1300,
-                description: 'Automatizza il ciclo di sviluppo software, gestisce pipeline CI/CD, containerizzazione e deployment'
+                description: 'Automatizza il ciclo di sviluppo software, gestisce pipeline CI/CD, containerizzazione e deployment',
+                lastUpdated: '2026-07-05'
             },
             solutions_consultant: {
                 title: 'Solutions Consultant / IT Architect',
@@ -3657,7 +4374,8 @@ export const jobData = {
                 defaultHumanExtra: 15000,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 2000,
-                description: 'Disegna architetture tecnologiche aziendali, valuta soluzioni software e guida l\'implementazione di sistemi complessi'
+                description: 'Disegna architetture tecnologiche aziendali, valuta soluzioni software e guida l\'implementazione di sistemi complessi',
+                lastUpdated: '2026-07-05'
             },
             scrum_master: {
                 title: 'Scrum Master / Agile Coach',
@@ -3671,7 +4389,8 @@ export const jobData = {
                 defaultHumanExtra: 12900,
                 defaultAiMonthly: 150,
                 defaultAiSetup: 600,
-                description: 'Facilita i processi Agile/Scrum, rimuove blocchi al team e guida la trasformazione organizzativa verso metodologie iterative'
+                description: 'Facilita i processi Agile/Scrum, rimuove blocchi al team e guida la trasformazione organizzativa verso metodologie iterative',
+                lastUpdated: '2026-07-05'
             },
             it_project_manager: {
                 title: 'IT Project Manager',
@@ -3685,7 +4404,8 @@ export const jobData = {
                 defaultHumanExtra: 15000,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1500,
-                description: 'Pianifica, coordina e guida progetti IT complessi, gestendo budget, scadenze, team e stakeholder'
+                description: 'Pianifica, coordina e guida progetti IT complessi, gestendo budget, scadenze, team e stakeholder',
+                lastUpdated: '2026-07-05'
             },
             bdr: {
                 title: 'Business Development Representative',
@@ -3699,7 +4419,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1200,
-                description: 'Identifica e qualifica nuove opportunità di business, contatta prospect e genera pipeline commerciale'
+                description: 'Identifica e qualifica nuove opportunità di business, contatta prospect e genera pipeline commerciale',
+                lastUpdated: '2026-07-05'
             },
             sdr: {
                 title: 'Sales Development Representative',
@@ -3713,7 +4434,8 @@ export const jobData = {
                 defaultHumanExtra: 11100,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1000,
-                description: 'Genera e qualifica lead in ingresso, gestisce il primo contatto con i prospect e fissa appuntamenti commerciali'
+                description: 'Genera e qualifica lead in ingresso, gestisce il primo contatto con i prospect e fissa appuntamenti commerciali',
+                lastUpdated: '2026-07-05'
             },
             account_manager: {
                 title: 'Account Manager',
@@ -3727,7 +4449,8 @@ export const jobData = {
                 defaultHumanExtra: 12900,
                 defaultAiMonthly: 400,
                 defaultAiSetup: 1500,
-                description: 'Gestisce il portafoglio clienti esistenti, mantiene le relazioni commerciali e identifica opportunità di upselling'
+                description: 'Gestisce il portafoglio clienti esistenti, mantiene le relazioni commerciali e identifica opportunità di upselling',
+                lastUpdated: '2026-07-05'
             },
             key_account_manager: {
                 title: 'Key Account Manager',
@@ -3741,7 +4464,8 @@ export const jobData = {
                 defaultHumanExtra: 16500,
                 defaultAiMonthly: 500,
                 defaultAiSetup: 2000,
-                description: 'Gestisce le relazioni con i clienti strategici più importanti dell\'azienda, negoziando contratti chiave e partnership di lungo periodo'
+                description: 'Gestisce le relazioni con i clienti strategici più importanti dell\'azienda, negoziando contratti chiave e partnership di lungo periodo',
+                lastUpdated: '2026-07-05'
             },
             sales_manager: {
                 title: 'Sales Manager',
@@ -3755,7 +4479,8 @@ export const jobData = {
                 defaultHumanExtra: 14100,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1800,
-                description: 'Guida e motiva il team commerciale, definisce strategie di vendita e gestisce gli obiettivi di fatturato'
+                description: 'Guida e motiva il team commerciale, definisce strategie di vendita e gestisce gli obiettivi di fatturato',
+                lastUpdated: '2026-07-05'
             },
             technical_sales: {
                 title: 'Technical Sales',
@@ -3769,7 +4494,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1500,
-                description: 'Supporta le vendite di prodotti e soluzioni tecnicamente complesse, traducendo esigenze tecniche in proposte commerciali'
+                description: 'Supporta le vendite di prodotti e soluzioni tecnicamente complesse, traducendo esigenze tecniche in proposte commerciali',
+                lastUpdated: '2026-07-05'
             },
             customer_success_manager: {
                 title: 'Customer Success Manager',
@@ -3783,7 +4509,8 @@ export const jobData = {
                 defaultHumanExtra: 12900,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1800,
-                description: 'Garantisce la soddisfazione e il successo dei clienti nel tempo, riduce il rischio di abbandono e individua opportunità di crescita degli account'
+                description: 'Garantisce la soddisfazione e il successo dei clienti nel tempo, riduce il rischio di abbandono e individua opportunità di crescita degli account',
+                lastUpdated: '2026-07-05'
             },
             store_manager: {
                 title: 'Store Manager',
@@ -3797,7 +4524,8 @@ export const jobData = {
                 defaultHumanExtra: 13350,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1200,
-                description: 'Gestisce le operazioni quotidiane del punto vendita, coordina il team, l\'inventario e l\'esperienza cliente in negozio'
+                description: 'Gestisce le operazioni quotidiane del punto vendita, coordina il team, l\'inventario e l\'esperienza cliente in negozio',
+                lastUpdated: '2026-07-05'
             },
             digital_marketing_specialist: {
                 title: 'Digital Marketing Specialist',
@@ -3811,7 +4539,8 @@ export const jobData = {
                 defaultHumanExtra: 9450,
                 defaultAiMonthly: 150,
                 defaultAiSetup: 600,
-                description: 'Pianifica ed esegue campagne di marketing digitale su più canali, gestendo advertising, analytics e ottimizzazione delle performance'
+                description: 'Pianifica ed esegue campagne di marketing digitale su più canali, gestendo advertising, analytics e ottimizzazione delle performance',
+                lastUpdated: '2026-07-05'
             },
             seo_specialist: {
                 title: 'SEO/SEM Specialist',
@@ -3825,7 +4554,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 200,
                 defaultAiSetup: 800,
-                description: 'Ottimizza la visibilità di siti web sui motori di ricerca tradizionali e generativi, gestisce campagne SEM e analisi keyword'
+                description: 'Ottimizza la visibilità di siti web sui motori di ricerca tradizionali e generativi, gestisce campagne SEM e analisi keyword',
+                lastUpdated: '2026-07-05'
             },
             growth_hacker: {
                 title: 'Growth Hacker',
@@ -3839,7 +4569,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1500,
-                description: 'Sperimenta strategie di crescita rapida combinando marketing, dati e tecnologia per acquisire e fidelizzare utenti'
+                description: 'Sperimenta strategie di crescita rapida combinando marketing, dati e tecnologia per acquisire e fidelizzare utenti',
+                lastUpdated: '2026-07-05'
             },
             content_creator: {
                 title: 'Content Creator',
@@ -3853,7 +4584,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 120,
                 defaultAiSetup: 500,
-                description: 'Crea contenuti video, foto e multimediali per social media e piattaforme digitali, con focus su formati brevi e coinvolgimento del pubblico'
+                description: 'Crea contenuti video, foto e multimediali per social media e piattaforme digitali, con focus su formati brevi e coinvolgimento del pubblico',
+                lastUpdated: '2026-07-05'
             },
             brand_manager: {
                 title: 'Brand Manager',
@@ -3867,7 +4599,8 @@ export const jobData = {
                 defaultHumanExtra: 13800,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1200,
-                description: 'Definisce e gestisce la strategia di marca, coordina campagne di posizionamento e cura la coerenza dell\'identità aziendale'
+                description: 'Definisce e gestisce la strategia di marca, coordina campagne di posizionamento e cura la coerenza dell\'identità aziendale',
+                lastUpdated: '2026-07-05'
             },
             ecommerce_manager: {
                 title: 'E-commerce Manager',
@@ -3881,7 +4614,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 400,
                 defaultAiSetup: 1800,
-                description: 'Coordina tutte le attività digitali di un negozio online: acquisizione clienti, conversione, logistica e analisi delle performance'
+                description: 'Coordina tutte le attività digitali di un negozio online: acquisizione clienti, conversione, logistica e analisi delle performance',
+                lastUpdated: '2026-07-05'
             },
             contabile: {
                 title: 'Contabile',
@@ -3895,7 +4629,8 @@ export const jobData = {
                 defaultHumanExtra: 12600,
                 defaultAiMonthly: 480,
                 defaultAiSetup: 1800,
-                description: 'Elabora fatture, riconciliazione bancaria, bilanci, dichiarazioni fiscali'
+                description: 'Elabora fatture, riconciliazione bancaria, bilanci, dichiarazioni fiscali',
+                lastUpdated: '2026-07-05'
             },
             copywriter: {
                 title: 'Copywriter',
@@ -3909,7 +4644,8 @@ export const jobData = {
                 defaultHumanExtra: 8670,
                 defaultAiMonthly: 90,
                 defaultAiSetup: 350,
-                description: 'Scrive copy per website, email marketing, social, landing pages'
+                description: 'Scrive copy per website, email marketing, social, landing pages',
+                lastUpdated: '2026-07-05'
             },
             developer: {
                 title: 'Junior Developer',
@@ -3923,7 +4659,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 240,
                 defaultAiSetup: 900,
-                description: 'Sviluppa backend/frontend, fix bug, refactoring codice'
+                description: 'Sviluppa backend/frontend, fix bug, refactoring codice',
+                lastUpdated: '2026-07-05'
             },
             social_media: {
                 title: 'Social Media Manager',
@@ -3937,7 +4674,8 @@ export const jobData = {
                 defaultHumanExtra: 5550,
                 defaultAiMonthly: 130,
                 defaultAiSetup: 450,
-                description: 'Gestisce content calendar, community, analytics, campagne paid'
+                description: 'Gestisce content calendar, community, analytics, campagne paid',
+                lastUpdated: '2026-07-05'
             },
             customer_service: {
                 title: 'Customer Service',
@@ -3951,7 +4689,8 @@ export const jobData = {
                 defaultHumanExtra: 5700,
                 defaultAiMonthly: 70,
                 defaultAiSetup: 300,
-                description: 'Risponde a clienti, risolve problemi, gestisce ticket support'
+                description: 'Risponde a clienti, risolve problemi, gestisce ticket support',
+                lastUpdated: '2026-07-05'
             },
             hr_manager: {
                 title: 'Responsabile HR',
@@ -3965,7 +4704,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1200,
-                description: 'Recruitment, onboarding, payroll, relazioni industriali'
+                description: 'Recruitment, onboarding, payroll, relazioni industriali',
+                lastUpdated: '2026-07-05'
             },
             data_analyst: {
                 title: 'Analista Dati',
@@ -3979,7 +4719,8 @@ export const jobData = {
                 defaultHumanExtra: 9300,
                 defaultAiMonthly: 520,
                 defaultAiSetup: 2000,
-                description: 'Dashboard, SQL query, analisi predittiva, reportistica'
+                description: 'Dashboard, SQL query, analisi predittiva, reportistica',
+                lastUpdated: '2026-07-05'
             },
             insegnante: {
                 title: 'Insegnante',
@@ -3993,7 +4734,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 60,
                 defaultAiSetup: 250,
-                description: 'Lezioni, valutazioni, gestione classe, supporto agli studenti'
+                description: 'Lezioni, valutazioni, gestione classe, supporto agli studenti',
+                lastUpdated: '2026-07-05'
             },
             grafico: {
                 title: 'Graphic Designer',
@@ -4007,7 +4749,8 @@ export const jobData = {
                 defaultHumanExtra: 7950,
                 defaultAiMonthly: 110,
                 defaultAiSetup: 400,
-                description: 'Loghi, brand identity, materiale grafico, social design'
+                description: 'Loghi, brand identity, materiale grafico, social design',
+                lastUpdated: '2026-07-05'
             },
             traduttore: {
                 title: 'Traduttore',
@@ -4021,7 +4764,8 @@ export const jobData = {
                 defaultHumanExtra: 8100,
                 defaultAiMonthly: 45,
                 defaultAiSetup: 150,
-                description: 'Traduzione documenti, localizzazione, sottotitoli'
+                description: 'Traduzione documenti, localizzazione, sottotitoli',
+                lastUpdated: '2026-07-05'
             },
             ux_ui_designer: {
                 title: 'UX/UI Designer',
@@ -4035,7 +4779,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 150,
                 defaultAiSetup: 600,
-                description: 'Progetta interfacce digitali, conduce user research e definisce esperienze utente coerenti e accessibili'
+                description: 'Progetta interfacce digitali, conduce user research e definisce esperienze utente coerenti e accessibili',
+                lastUpdated: '2026-07-05'
             },
             video_editor: {
                 title: 'Video Editor / Motion Designer',
@@ -4049,7 +4794,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 120,
                 defaultAiSetup: 500,
-                description: 'Monta video, crea motion graphics e dirige la post-produzione per contenuti digitali e campagne'
+                description: 'Monta video, crea motion graphics e dirige la post-produzione per contenuti digitali e campagne',
+                lastUpdated: '2026-07-05'
             },
             art_director: {
                 title: 'Art Director',
@@ -4063,7 +4809,8 @@ export const jobData = {
                 defaultHumanExtra: 12600,
                 defaultAiMonthly: 180,
                 defaultAiSetup: 700,
-                description: 'Definisce la direzione creativa visiva di campagne e brand, coordinando la produzione dei materiali'
+                description: 'Definisce la direzione creativa visiva di campagne e brand, coordinando la produzione dei materiali',
+                lastUpdated: '2026-07-05'
             },
             fotografo: {
                 title: 'Fotografo',
@@ -4077,7 +4824,8 @@ export const jobData = {
                 defaultHumanExtra: 7500,
                 defaultAiMonthly: 80,
                 defaultAiSetup: 300,
-                description: 'Realizza immagini commerciali, editoriali e di reportage per clienti e media'
+                description: 'Realizza immagini commerciali, editoriali e di reportage per clienti e media',
+                lastUpdated: '2026-07-05'
             },
             illustratore: {
                 title: 'Illustratore',
@@ -4091,7 +4839,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 70,
                 defaultAiSetup: 250,
-                description: 'Crea illustrazioni originali per editoria, advertising, brand identity e media digitali'
+                description: 'Crea illustrazioni originali per editoria, advertising, brand identity e media digitali',
+                lastUpdated: '2026-07-05'
             },
             sound_designer: {
                 title: 'Sound Designer / Audio Engineer',
@@ -4105,7 +4854,8 @@ export const jobData = {
                 defaultHumanExtra: 8100,
                 defaultAiMonthly: 100,
                 defaultAiSetup: 400,
-                description: 'Progetta paesaggi sonori, compone musiche originali e cura la post-produzione audio per film, giochi e media'
+                description: 'Progetta paesaggi sonori, compone musiche originali e cura la post-produzione audio per film, giochi e media',
+                lastUpdated: '2026-07-05'
             },
             docente_universitario: {
                 title: 'Docente Universitario / Ricercatore',
@@ -4119,7 +4869,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 80,
                 defaultAiSetup: 300,
-                description: 'Conduce ricerca scientifica, pubblica in riviste peer-reviewed e insegna a livello universitario'
+                description: 'Conduce ricerca scientifica, pubblica in riviste peer-reviewed e insegna a livello universitario',
+                lastUpdated: '2026-07-05'
             },
             formatore_aziendale: {
                 title: 'Formatore Aziendale / Corporate Trainer',
@@ -4133,7 +4884,8 @@ export const jobData = {
                 defaultHumanExtra: 10500,
                 defaultAiMonthly: 120,
                 defaultAiSetup: 500,
-                description: 'Progetta ed eroga programmi di formazione e sviluppo competenze per dipendenti aziendali'
+                description: 'Progetta ed eroga programmi di formazione e sviluppo competenze per dipendenti aziendali',
+                lastUpdated: '2026-07-05'
             },
             instructional_designer: {
                 title: 'Instructional Designer',
@@ -4147,7 +4899,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 130,
                 defaultAiSetup: 500,
-                description: 'Progetta percorsi formativi ed esperienze e-learning, definendo architettura didattica e metodi di valutazione'
+                description: 'Progetta percorsi formativi ed esperienze e-learning, definendo architettura didattica e metodi di valutazione',
+                lastUpdated: '2026-07-05'
             },
             tutor_online: {
                 title: 'Tutor / Docente Online',
@@ -4161,7 +4914,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 55,
                 defaultAiSetup: 200,
-                description: 'Supporta studenti su piattaforme e-learning, risponde a dubbi, corregge esercizi e motiva il percorso formativo'
+                description: 'Supporta studenti su piattaforme e-learning, risponde a dubbi, corregge esercizi e motiva il percorso formativo',
+                lastUpdated: '2026-07-05'
             },
             dirigente_scolastico: {
                 title: 'Dirigente Scolastico / Preside',
@@ -4175,7 +4929,8 @@ export const jobData = {
                 defaultHumanExtra: 15600,
                 defaultAiMonthly: 90,
                 defaultAiSetup: 350,
-                description: 'Dirige la scuola, gestisce il personale, cura le relazioni con famiglie e territorio, garantisce la qualità dell\'offerta formativa'
+                description: 'Dirige la scuola, gestisce il personale, cura le relazioni con famiglie e territorio, garantisce la qualità dell\'offerta formativa',
+                lastUpdated: '2026-07-05'
             },
             educatore_infanzia: {
                 title: 'Educatore (Asilo / Prima Infanzia)',
@@ -4189,7 +4944,8 @@ export const jobData = {
                 defaultHumanExtra: 6900,
                 defaultAiMonthly: 40,
                 defaultAiSetup: 150,
-                description: 'Si prende cura dello sviluppo fisico, emotivo e cognitivo di bambini in età prescolare in nidi e asili'
+                description: 'Si prende cura dello sviluppo fisico, emotivo e cognitivo di bambini in età prescolare in nidi e asili',
+                lastUpdated: '2026-07-05'
             },
             // ── TECH ──────────────────────────────────────────────
             ml_engineer: {
@@ -4204,7 +4960,8 @@ export const jobData = {
                 defaultHumanExtra: 13500,
                 defaultAiMonthly: 320,
                 defaultAiSetup: 1300,
-                description: 'Progetta, addestra e ottimizza modelli di machine learning per applicazioni produttive'
+                description: 'Progetta, addestra e ottimizza modelli di machine learning per applicazioni produttive',
+                lastUpdated: '2026-07-05'
             },
             product_owner: {
                 title: 'Product Owner',
@@ -4218,7 +4975,8 @@ export const jobData = {
                 defaultHumanExtra: 13800,
                 defaultAiMonthly: 200,
                 defaultAiSetup: 800,
-                description: 'Definisce la visione di prodotto, gestisce il backlog e coordina il team di sviluppo con gli stakeholder di business'
+                description: 'Definisce la visione di prodotto, gestisce il backlog e coordina il team di sviluppo con gli stakeholder di business',
+                lastUpdated: '2026-07-05'
             },
             sysadmin: {
                 title: 'System Administrator',
@@ -4232,7 +4990,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 1000,
-                description: 'Gestisce e mantiene server, reti e infrastrutture IT aziendali, garantendo disponibilità e sicurezza dei sistemi'
+                description: 'Gestisce e mantiene server, reti e infrastrutture IT aziendali, garantendo disponibilità e sicurezza dei sistemi',
+                lastUpdated: '2026-07-05'
             },
             qa_engineer: {
                 title: 'QA Engineer / Software Tester',
@@ -4246,7 +5005,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 180,
                 defaultAiSetup: 700,
-                description: 'Pianifica ed esegue test software per garantire qualità, identificare bug e verificare requisiti prima del rilascio'
+                description: 'Pianifica ed esegue test software per garantire qualità, identificare bug e verificare requisiti prima del rilascio',
+                lastUpdated: '2026-07-05'
             },
             network_engineer: {
                 title: 'Network Engineer',
@@ -4260,7 +5020,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Progetta, implementa e gestisce infrastrutture di rete aziendali, garantendo connettività, performance e sicurezza'
+                description: 'Progetta, implementa e gestisce infrastrutture di rete aziendali, garantendo connettività, performance e sicurezza',
+                lastUpdated: '2026-07-05'
             },
             it_consultant: {
                 title: 'IT Consultant / Business Analyst',
@@ -4274,7 +5035,8 @@ export const jobData = {
                 defaultHumanExtra: 12600,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Analizza processi e requisiti di business, traduce le esigenze aziendali in soluzioni IT e guida i progetti di trasformazione digitale'
+                description: 'Analizza processi e requisiti di business, traduce le esigenze aziendali in soluzioni IT e guida i progetti di trasformazione digitale',
+                lastUpdated: '2026-07-05'
             },
             // ── COMMERCIALE ──────────────────────────────────────
             sales_executive: {
@@ -4289,7 +5051,8 @@ export const jobData = {
                 defaultHumanExtra: 12600,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1000,
-                description: 'Gestisce il ciclo di vendita end-to-end su clienti mid-market ed enterprise: prospecting, demo, negoziazione e closing'
+                description: 'Gestisce il ciclo di vendita end-to-end su clienti mid-market ed enterprise: prospecting, demo, negoziazione e closing',
+                lastUpdated: '2026-07-05'
             },
             sales_director: {
                 title: 'Sales Director / Direttore Commerciale',
@@ -4303,7 +5066,8 @@ export const jobData = {
                 defaultHumanExtra: 22500,
                 defaultAiMonthly: 500,
                 defaultAiSetup: 2000,
-                description: 'Definisce la strategia commerciale aziendale, guida il team vendite, gestisce i key client e risponde dei risultati di fatturato'
+                description: 'Definisce la strategia commerciale aziendale, guida il team vendite, gestisce i key client e risponde dei risultati di fatturato',
+                lastUpdated: '2026-07-05'
             },
             addetto_vendite: {
                 title: 'Addetto alle Vendite / Retail',
@@ -4317,7 +5081,8 @@ export const jobData = {
                 defaultHumanExtra: 6000,
                 defaultAiMonthly: 80,
                 defaultAiSetup: 300,
-                description: 'Assiste i clienti in negozio, gestisce vendite, cassa, allestimento e operazioni quotidiane del punto vendita'
+                description: 'Assiste i clienti in negozio, gestisce vendite, cassa, allestimento e operazioni quotidiane del punto vendita',
+                lastUpdated: '2026-07-05'
             },
             commerciale_estero: {
                 title: 'Commerciale Estero / Export Manager',
@@ -4331,7 +5096,8 @@ export const jobData = {
                 defaultHumanExtra: 13800,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1000,
-                description: 'Sviluppa e gestisce i mercati esteri, costruisce reti di distributori e agenti internazionali, negozia contratti cross-border'
+                description: 'Sviluppa e gestisce i mercati esteri, costruisce reti di distributori e agenti internazionali, negozia contratti cross-border',
+                lastUpdated: '2026-07-05'
             },
             // ── MARKETING ────────────────────────────────────────
             marketing_manager: {
@@ -4346,7 +5112,8 @@ export const jobData = {
                 defaultHumanExtra: 14400,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1400,
-                description: 'Definisce e coordina la strategia di marketing, gestisce il team e i budget, supervisiona campagne e posizionamento del brand'
+                description: 'Definisce e coordina la strategia di marketing, gestisce il team e i budget, supervisiona campagne e posizionamento del brand',
+                lastUpdated: '2026-07-05'
             },
             pr_specialist: {
                 title: 'PR Specialist / Media Relations',
@@ -4360,7 +5127,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 180,
                 defaultAiSetup: 700,
-                description: 'Gestisce le relazioni con i media, produce comunicati stampa, organizza eventi stampa e presidia la reputazione del brand'
+                description: 'Gestisce le relazioni con i media, produce comunicati stampa, organizza eventi stampa e presidia la reputazione del brand',
+                lastUpdated: '2026-07-05'
             },
             // ── MANAGEMENT & FINANZA ─────────────────────────────
             cfo: {
@@ -4375,7 +5143,8 @@ export const jobData = {
                 defaultHumanExtra: 27000,
                 defaultAiMonthly: 600,
                 defaultAiSetup: 2500,
-                description: 'Supervisiona tutte le funzioni finanziarie aziendali: pianificazione, reportistica, gestione del rischio, relazioni con investitori e banche'
+                description: 'Supervisiona tutte le funzioni finanziarie aziendali: pianificazione, reportistica, gestione del rischio, relazioni con investitori e banche',
+                lastUpdated: '2026-07-05'
             },
             auditor: {
                 title: 'Auditor / Internal Auditor',
@@ -4389,7 +5158,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1200,
-                description: 'Verifica la correttezza dei processi, dei controlli interni e della conformità normativa tramite audit periodici'
+                description: 'Verifica la correttezza dei processi, dei controlli interni e della conformità normativa tramite audit periodici',
+                lastUpdated: '2026-07-05'
             },
             credit_collector: {
                 title: 'Credit Collector / Recupero Crediti',
@@ -4403,7 +5173,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 90,
                 defaultAiSetup: 350,
-                description: 'Gestisce il recupero dei crediti insoluti, monitora le scadenze, contatta i debitori e coordina le azioni di recupero'
+                description: 'Gestisce il recupero dei crediti insoluti, monitora le scadenze, contatta i debitori e coordina le azioni di recupero',
+                lastUpdated: '2026-07-05'
             },
             office_manager: {
                 title: 'Office Manager',
@@ -4417,7 +5188,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 120,
                 defaultAiSetup: 500,
-                description: 'Coordina le operazioni quotidiane dell\'ufficio, gestisce fornitori, spazi, agenda, trasferte e supporto amministrativo alla direzione'
+                description: 'Coordina le operazioni quotidiane dell\'ufficio, gestisce fornitori, spazi, agenda, trasferte e supporto amministrativo alla direzione',
+                lastUpdated: '2026-07-05'
             },
             impiegato_amm: {
                 title: 'Impiegato Amministrativo',
@@ -4431,7 +5203,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 65,
                 defaultAiSetup: 250,
-                description: 'Gestisce pratiche amministrative, archiviazione, inserimento dati, corrispondenza e supporto operativo alle funzioni aziendali'
+                description: 'Gestisce pratiche amministrative, archiviazione, inserimento dati, corrispondenza e supporto operativo alle funzioni aziendali',
+                lastUpdated: '2026-07-05'
             },
             ceo: {
                 title: 'CEO / General Manager',
@@ -4445,7 +5218,8 @@ export const jobData = {
                 defaultHumanExtra: 33000,
                 defaultAiMonthly: 800,
                 defaultAiSetup: 3500,
-                description: 'Guida l\'azienda nella definizione e nell\'esecuzione della strategia, gestisce il team di leadership e risponde dei risultati complessivi verso il board'
+                description: 'Guida l\'azienda nella definizione e nell\'esecuzione della strategia, gestisce il team di leadership e risponde dei risultati complessivi verso il board',
+                lastUpdated: '2026-07-05'
             },
             executive_assistant: {
                 title: 'Executive Assistant',
@@ -4459,7 +5233,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 120,
                 defaultAiSetup: 500,
-                description: 'Supporta il top management nella gestione di agenda, comunicazioni, trasferte, riunioni e relazioni con stakeholder interni ed esterni'
+                description: 'Supporta il top management nella gestione di agenda, comunicazioni, trasferte, riunioni e relazioni con stakeholder interni ed esterni',
+                lastUpdated: '2026-07-05'
             },
             data_entry: {
                 title: 'Data Entry Clerk',
@@ -4473,7 +5248,8 @@ export const jobData = {
                 defaultHumanExtra: 5700,
                 defaultAiMonthly: 40,
                 defaultAiSetup: 150,
-                description: 'Inserisce, verifica e aggiorna dati in database, fogli di calcolo e sistemi gestionali aziendali'
+                description: 'Inserisce, verifica e aggiorna dati in database, fogli di calcolo e sistemi gestionali aziendali',
+                lastUpdated: '2026-07-05'
             },
             // ── OPERATIONS & INGEGNERIA ──────────────────────────
             production_planner: {
@@ -4488,7 +5264,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Pianifica e ottimizza la produzione industriale, gestisce i piani di produzione, coordina materiali e capacità produttiva'
+                description: 'Pianifica e ottimizza la produzione industriale, gestisce i piani di produzione, coordina materiali e capacità produttiva',
+                lastUpdated: '2026-07-05'
             },
             plant_manager: {
                 title: 'Plant Manager / Responsabile di Stabilimento',
@@ -4502,7 +5279,8 @@ export const jobData = {
                 defaultHumanExtra: 18600,
                 defaultAiMonthly: 400,
                 defaultAiSetup: 1800,
-                description: 'Dirige le operazioni di uno stabilimento produttivo: gestisce il personale, i processi, la qualità, la sicurezza e i KPI operativi'
+                description: 'Dirige le operazioni di uno stabilimento produttivo: gestisce il personale, i processi, la qualità, la sicurezza e i KPI operativi',
+                lastUpdated: '2026-07-05'
             },
             automation_engineer: {
                 title: 'Automation Engineer',
@@ -4516,7 +5294,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 1000,
-                description: 'Progetta e implementa sistemi di automazione industriale (PLC, robot, SCADA), ottimizza i processi produttivi con tecnologie automatizzate'
+                description: 'Progetta e implementa sistemi di automazione industriale (PLC, robot, SCADA), ottimizza i processi produttivi con tecnologie automatizzate',
+                lastUpdated: '2026-07-05'
             },
             qa_manager: {
                 title: 'Quality Manager / Responsabile Qualità',
@@ -4530,7 +5309,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 260,
                 defaultAiSetup: 1000,
-                description: 'Definisce e gestisce il sistema di qualità aziendale, conduce audit interni, gestisce la conformità normativa e i rapporti con i clienti su tematiche qualitative'
+                description: 'Definisce e gestisce il sistema di qualità aziendale, conduce audit interni, gestisce la conformità normativa e i rapporti con i clienti su tematiche qualitative',
+                lastUpdated: '2026-07-05'
             },
             buyer: {
                 title: 'Buyer / Responsabile Acquisti',
@@ -4544,7 +5324,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 240,
                 defaultAiSetup: 900,
-                description: 'Seleziona e negozia con i fornitori, gestisce gli acquisti aziendali ottimizzando costi, qualità e tempi di consegna'
+                description: 'Seleziona e negozia con i fornitori, gestisce gli acquisti aziendali ottimizzando costi, qualità e tempi di consegna',
+                lastUpdated: '2026-07-05'
             },
             // ── SANITÀ & SCIENZE ─────────────────────────────────
             informatore_scientifico: {
@@ -4559,7 +5340,8 @@ export const jobData = {
                 defaultHumanExtra: 10500,
                 defaultAiMonthly: 150,
                 defaultAiSetup: 600,
-                description: 'Informa i medici sulle proprietà terapeutiche dei farmaci, promuove i prodotti dell\'azienda farmaceutica presso i professionisti sanitari'
+                description: 'Informa i medici sulle proprietà terapeutiche dei farmaci, promuove i prodotti dell\'azienda farmaceutica presso i professionisti sanitari',
+                lastUpdated: '2026-07-05'
             },
             regulatory_affairs: {
                 title: 'Regulatory Affairs Specialist',
@@ -4573,7 +5355,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 1000,
-                description: 'Gestisce le pratiche regolatori per l\'approvazione e il mantenimento di prodotti (farmaci, dispositivi medici, alimenti) presso le autorità competenti'
+                description: 'Gestisce le pratiche regolatori per l\'approvazione e il mantenimento di prodotti (farmaci, dispositivi medici, alimenti) presso le autorità competenti',
+                lastUpdated: '2026-07-05'
             },
             rd_specialist: {
                 title: 'R&D Specialist / Ricercatore',
@@ -4587,7 +5370,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 200,
                 defaultAiSetup: 800,
-                description: 'Conduce ricerche e sviluppa nuovi prodotti, processi o tecnologie attraverso attività sperimentali e analisi scientifiche'
+                description: 'Conduce ricerche e sviluppa nuovi prodotti, processi o tecnologie attraverso attività sperimentali e analisi scientifiche',
+                lastUpdated: '2026-07-05'
             },
             // ── RUOLI TRASVERSALI ────────────────────────────────
             receptionist: {
@@ -4602,7 +5386,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 80,
                 defaultAiSetup: 300,
-                description: 'Accoglie visitatori e clienti, gestisce le comunicazioni in entrata, coordina l\'agenda e fornisce supporto amministrativo di front office'
+                description: 'Accoglie visitatori e clienti, gestisce le comunicazioni in entrata, coordina l\'agenda e fornisce supporto amministrativo di front office',
+                lastUpdated: '2026-07-05'
             },
             paralegal: {
                 title: 'Paralegal / Assistente Legale',
@@ -4616,7 +5401,8 @@ export const jobData = {
                 defaultHumanExtra: 7500,
                 defaultAiMonthly: 410,
                 defaultAiSetup: 1600,
-                description: 'Ricerca giuridica, redazione documenti, contratti standard'
+                description: 'Ricerca giuridica, redazione documenti, contratti standard',
+                lastUpdated: '2026-07-05'
             },
             infermiere: {
                 title: 'Infermiere',
@@ -4630,7 +5416,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 55,
                 defaultAiSetup: 200,
-                description: 'Assistenza diretta al paziente, terapie, monitoraggio clinico'
+                description: 'Assistenza diretta al paziente, terapie, monitoraggio clinico',
+                lastUpdated: '2026-07-05'
             },
             cost_controller: {
                 title: 'Cost Controller',
@@ -4644,7 +5431,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 380,
                 defaultAiSetup: 1400,
-                description: 'Monitoraggio costi, scostamenti budget, reportistica commesse'
+                description: 'Monitoraggio costi, scostamenti budget, reportistica commesse',
+                lastUpdated: '2026-07-05'
             },
             project_planner: {
                 title: 'Project Planner',
@@ -4658,7 +5446,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1000,
-                description: 'Pianificazione attività, gestione timeline, supporto al project manager'
+                description: 'Pianificazione attività, gestione timeline, supporto al project manager',
+                lastUpdated: '2026-07-05'
             },
             cost_estimator: {
                 title: 'Cost Estimator',
@@ -4672,7 +5461,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 420,
                 defaultAiSetup: 1700,
-                description: 'Stime di costo progetti, analisi preventivi, database storici costi'
+                description: 'Stime di costo progetti, analisi preventivi, database storici costi',
+                lastUpdated: '2026-07-05'
             },
             project_controller: {
                 title: 'Project Controller',
@@ -4686,7 +5476,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 400,
                 defaultAiSetup: 1500,
-                description: 'Supervisione finanziaria progetti, WIP reconciliation, compliance budget'
+                description: 'Supervisione finanziaria progetti, WIP reconciliation, compliance budget',
+                lastUpdated: '2026-07-05'
             },
             project_manager: {
                 title: 'Project Manager',
@@ -4700,7 +5491,8 @@ export const jobData = {
                 defaultHumanExtra: 12600,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1400,
-                description: 'Pianificazione progetti, coordinamento team, gestione stakeholder e rischio'
+                description: 'Pianificazione progetti, coordinamento team, gestione stakeholder e rischio',
+                lastUpdated: '2026-07-05'
             },
             controller_gestione: {
                 title: 'Controller di Gestione',
@@ -4714,7 +5506,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1300,
-                description: 'Pianificazione e controllo di gestione, variance analysis, reportistica direzionale'
+                description: 'Pianificazione e controllo di gestione, variance analysis, reportistica direzionale',
+                lastUpdated: '2026-07-05'
             },
             tax_advisor: {
                 title: 'Fiscalista / Tax Advisor',
@@ -4728,7 +5521,8 @@ export const jobData = {
                 defaultHumanExtra: 10500,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Consulenza fiscale, dichiarazioni, pianificazione tributaria, rapporti con il fisco'
+                description: 'Consulenza fiscale, dichiarazioni, pianificazione tributaria, rapporti con il fisco',
+                lastUpdated: '2026-07-05'
             },
             management_consultant: {
                 title: 'Consulente di Direzione',
@@ -4742,7 +5536,8 @@ export const jobData = {
                 defaultHumanExtra: 14400,
                 defaultAiMonthly: 320,
                 defaultAiSetup: 1300,
-                description: 'Consulenza strategica e organizzativa, analisi di settore, gestione del cambiamento'
+                description: 'Consulenza strategica e organizzativa, analisi di settore, gestione del cambiamento',
+                lastUpdated: '2026-07-05'
             },
             financial_analyst: {
                 title: 'Financial Analyst',
@@ -4756,7 +5551,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 320,
                 defaultAiSetup: 1200,
-                description: 'Modelli finanziari, valutazioni, analisi di mercato, reportistica per investitori'
+                description: 'Modelli finanziari, valutazioni, analisi di mercato, reportistica per investitori',
+                lastUpdated: '2026-07-05'
             },
             risk_manager: {
                 title: 'Risk Manager',
@@ -4770,7 +5566,8 @@ export const jobData = {
                 defaultHumanExtra: 13200,
                 defaultAiMonthly: 350,
                 defaultAiSetup: 1400,
-                description: 'Identificazione e gestione dei rischi aziendali, compliance, reportistica al board'
+                description: 'Identificazione e gestione dei rischi aziendali, compliance, reportistica al board',
+                lastUpdated: '2026-07-05'
             },
             legal_counsel: {
                 title: 'Legal Counsel',
@@ -4784,7 +5581,8 @@ export const jobData = {
                 defaultHumanExtra: 13800,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1200,
-                description: 'Consulenza legale aziendale, revisione contratti, gestione rischio legale'
+                description: 'Consulenza legale aziendale, revisione contratti, gestione rischio legale',
+                lastUpdated: '2026-07-05'
             },
             procurement_manager: {
                 title: 'Procurement Manager',
@@ -4798,7 +5596,8 @@ export const jobData = {
                 defaultHumanExtra: 12000,
                 defaultAiMonthly: 320,
                 defaultAiSetup: 1300,
-                description: 'Gestione acquisti, negoziazione fornitori, sourcing strategico'
+                description: 'Gestione acquisti, negoziazione fornitori, sourcing strategico',
+                lastUpdated: '2026-07-05'
             },
             supply_chain_specialist: {
                 title: 'Supply Chain Specialist',
@@ -4812,7 +5611,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 300,
                 defaultAiSetup: 1200,
-                description: 'Pianificazione domanda, gestione scorte, ottimizzazione rete distributiva'
+                description: 'Pianificazione domanda, gestione scorte, ottimizzazione rete distributiva',
+                lastUpdated: '2026-07-05'
             },
             process_engineer: {
                 title: 'Process / Performance Engineer',
@@ -4826,7 +5626,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Mappatura processi, miglioramento continuo, analisi di performance operativa'
+                description: 'Mappatura processi, miglioramento continuo, analisi di performance operativa',
+                lastUpdated: '2026-07-05'
             },
             logistics_manager: {
                 title: 'Logistics Manager',
@@ -4840,7 +5641,8 @@ export const jobData = {
                 defaultHumanExtra: 11700,
                 defaultAiMonthly: 310,
                 defaultAiSetup: 1200,
-                description: 'Gestione trasporti, spedizioni, ottimizzazione rete logistica'
+                description: 'Gestione trasporti, spedizioni, ottimizzazione rete logistica',
+                lastUpdated: '2026-07-05'
             },
             operations_manager: {
                 title: 'Operations Manager',
@@ -4854,7 +5656,8 @@ export const jobData = {
                 defaultHumanExtra: 13500,
                 defaultAiMonthly: 330,
                 defaultAiSetup: 1300,
-                description: 'Gestione operazioni aziendali, ottimizzazione processi, coordinamento team'
+                description: 'Gestione operazioni aziendali, ottimizzazione processi, coordinamento team',
+                lastUpdated: '2026-07-05'
             },
             talent_acquisition: {
                 title: 'Talent Acquisition Specialist',
@@ -4868,7 +5671,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 220,
                 defaultAiSetup: 900,
-                description: 'Ricerca e selezione candidati, employer branding, gestione processi di recruiting'
+                description: 'Ricerca e selezione candidati, employer branding, gestione processi di recruiting',
+                lastUpdated: '2026-07-05'
             },
             hr_generalist: {
                 title: 'HR Generalist',
@@ -4882,7 +5686,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 200,
                 defaultAiSetup: 800,
-                description: 'Amministrazione del personale, supporto operativo HR, gestione pratiche dipendenti'
+                description: 'Amministrazione del personale, supporto operativo HR, gestione pratiche dipendenti',
+                lastUpdated: '2026-07-05'
             },
             hr_business_partner: {
                 title: 'HR Business Partner',
@@ -4896,7 +5701,8 @@ export const jobData = {
                 defaultHumanExtra: 12600,
                 defaultAiMonthly: 280,
                 defaultAiSetup: 1100,
-                description: 'Consulenza HR strategica al business, gestione talenti, change management'
+                description: 'Consulenza HR strategica al business, gestione talenti, change management',
+                lastUpdated: '2026-07-05'
             },
             sustainability_specialist: {
                 title: 'Sustainability / ESG Specialist',
@@ -4910,7 +5716,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 260,
                 defaultAiSetup: 1000,
-                description: 'Strategia di sostenibilità aziendale, reportistica ESG, compliance ambientale'
+                description: 'Strategia di sostenibilità aziendale, reportistica ESG, compliance ambientale',
+                lastUpdated: '2026-07-05'
             },
             hse_specialist: {
                 title: 'HSE Specialist',
@@ -4924,7 +5731,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 200,
                 defaultAiSetup: 800,
-                description: 'Salute, sicurezza e ambiente sul lavoro, audit, gestione emergenze'
+                description: 'Salute, sicurezza e ambiente sul lavoro, audit, gestione emergenze',
+                lastUpdated: '2026-07-05'
             },
             medical_science_liaison: {
                 title: 'Medical Science Liaison (MSL)',
@@ -4938,7 +5746,8 @@ export const jobData = {
                 defaultHumanExtra: 14400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 1000,
-                description: 'Relazione scientifica con KOL e medici, supporto scientifico al settore farmaceutico'
+                description: 'Relazione scientifica con KOL e medici, supporto scientifico al settore farmaceutico',
+                lastUpdated: '2026-07-05'
             },
             clinical_research_associate: {
                 title: 'Clinical Research Associate (CRA)',
@@ -4952,7 +5761,8 @@ export const jobData = {
                 defaultHumanExtra: 9900,
                 defaultAiMonthly: 240,
                 defaultAiSetup: 950,
-                description: 'Monitoraggio studi clinici, compliance al protocollo, relazione con centri sperimentali'
+                description: 'Monitoraggio studi clinici, compliance al protocollo, relazione con centri sperimentali',
+                lastUpdated: '2026-07-05'
             },
 
             avvocato: {
@@ -4967,7 +5777,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Analisi completa del rischio AI per gli Avvocati: quali attività legali saranno automatizzate e come evolverà la professione forense."
+                description: "Analisi completa del rischio AI per gli Avvocati: quali attività legali saranno automatizzate e come evolverà la professione forense.",
+                lastUpdated: '2026-07-05'
             },
             notaio: {
                 title: "Notaio",
@@ -4981,7 +5792,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Notaio sarà sostituito dall'AI? Analisi del rischio automazione per la professione notarile in Italia."
+                description: "Il Notaio sarà sostituito dall'AI? Analisi del rischio automazione per la professione notarile in Italia.",
+                lastUpdated: '2026-07-05'
             },
             commercialista: {
                 title: "Commercialista / Dottore Commercialista",
@@ -4995,7 +5807,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "Rischio AI per il Commercialista: analisi dei task automatizzabili e piano di sopravvivenza professionale."
+                description: "Rischio AI per il Commercialista: analisi dei task automatizzabili e piano di sopravvivenza professionale.",
+                lastUpdated: '2026-07-05'
             },
             consulente_del_lavoro: {
                 title: "Consulente del Lavoro",
@@ -5009,7 +5822,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Consulente del Lavoro sarà sostituito dall'AI? Analisi rischio automazione per questa professione."
+                description: "Il Consulente del Lavoro sarà sostituito dall'AI? Analisi rischio automazione per questa professione.",
+                lastUpdated: '2026-07-05'
             },
             magistrato: {
                 title: "Magistrato / Giudice",
@@ -5023,7 +5837,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'AI potrà sostituire il Magistrato? Analisi del rischio automazione per la magistratura italiana."
+                description: "L'AI potrà sostituire il Magistrato? Analisi del rischio automazione per la magistratura italiana.",
+                lastUpdated: '2026-07-05'
             },
             medico_base: {
                 title: "Medico di Base / MMG",
@@ -5037,7 +5852,8 @@ export const jobData = {
                 defaultHumanExtra: 13500,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Medico di Base sarà sostituito dall'AI? Analisi del rischio automazione per la medicina generale."
+                description: "Il Medico di Base sarà sostituito dall'AI? Analisi del rischio automazione per la medicina generale.",
+                lastUpdated: '2026-07-05'
             },
             chirurgo: {
                 title: "Chirurgo",
@@ -5051,7 +5867,8 @@ export const jobData = {
                 defaultHumanExtra: 25500,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'AI sostituirà il Chirurgo? Analisi del rischio automazione per la chirurgia."
+                description: "L'AI sostituirà il Chirurgo? Analisi del rischio automazione per la chirurgia.",
+                lastUpdated: '2026-07-05'
             },
             dentista: {
                 title: "Dentista / Odontoiatra",
@@ -5065,7 +5882,8 @@ export const jobData = {
                 defaultHumanExtra: 18000,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Dentista sarà sostituito dall'AI? Rischio automazione per la professione odontoiatrica."
+                description: "Il Dentista sarà sostituito dall'AI? Rischio automazione per la professione odontoiatrica.",
+                lastUpdated: '2026-07-05'
             },
             fisioterapista: {
                 title: "Fisioterapista",
@@ -5079,7 +5897,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il Fisioterapista sarà sostituito dall'AI? Analisi del rischio automazione per la fisioterapia."
+                description: "Il Fisioterapista sarà sostituito dall'AI? Analisi del rischio automazione per la fisioterapia.",
+                lastUpdated: '2026-07-05'
             },
             psicologo: {
                 title: "Psicologo / Psicoterapeuta",
@@ -5093,7 +5912,8 @@ export const jobData = {
                 defaultHumanExtra: 8700,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Lo Psicologo sarà sostituito dall'AI? Analisi del rischio automazione per psicologi e psicoterapeuti."
+                description: "Lo Psicologo sarà sostituito dall'AI? Analisi del rischio automazione per psicologi e psicoterapeuti.",
+                lastUpdated: '2026-07-05'
             },
             farmacista: {
                 title: "Farmacista",
@@ -5107,7 +5927,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Farmacista sarà sostituito dall'AI? Analisi del rischio automazione per la farmacia."
+                description: "Il Farmacista sarà sostituito dall'AI? Analisi del rischio automazione per la farmacia.",
+                lastUpdated: '2026-07-05'
             },
             veterinario: {
                 title: "Veterinario",
@@ -5121,7 +5942,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Veterinario sarà sostituito dall'AI? Analisi del rischio automazione per la professione veterinaria."
+                description: "Il Veterinario sarà sostituito dall'AI? Analisi del rischio automazione per la professione veterinaria.",
+                lastUpdated: '2026-07-05'
             },
             nutrizionista: {
                 title: "Nutrizionista / Dietista",
@@ -5135,7 +5957,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Nutrizionista sarà sostituito dall'AI? Analisi del rischio automazione per la nutrizione clinica."
+                description: "Il Nutrizionista sarà sostituito dall'AI? Analisi del rischio automazione per la nutrizione clinica.",
+                lastUpdated: '2026-07-05'
             },
             radiologo: {
                 title: "Radiologo / Medico Radiologo",
@@ -5149,7 +5972,8 @@ export const jobData = {
                 defaultHumanExtra: 22500,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Radiologo sarà sostituito dall'AI? L'imaging diagnostico è tra i settori più impattati dall'intelligenza artificiale."
+                description: "Il Radiologo sarà sostituito dall'AI? L'imaging diagnostico è tra i settori più impattati dall'intelligenza artificiale.",
+                lastUpdated: '2026-07-05'
             },
             osteopata: {
                 title: "Osteopata",
@@ -5163,7 +5987,8 @@ export const jobData = {
                 defaultHumanExtra: 8100,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'Osteopata sarà sostituito dall'AI? Analisi del rischio automazione per l'osteopatia."
+                description: "L'Osteopata sarà sostituito dall'AI? Analisi del rischio automazione per l'osteopatia.",
+                lastUpdated: '2026-07-05'
             },
             logopedista: {
                 title: "Logopedista",
@@ -5177,7 +6002,8 @@ export const jobData = {
                 defaultHumanExtra: 7500,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il Logopedista sarà sostituito dall'AI? Analisi del rischio automazione per la logopedia."
+                description: "Il Logopedista sarà sostituito dall'AI? Analisi del rischio automazione per la logopedia.",
+                lastUpdated: '2026-07-05'
             },
             oss: {
                 title: "OSS – Operatore Socio Sanitario",
@@ -5191,7 +6017,8 @@ export const jobData = {
                 defaultHumanExtra: 6000,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'OSS sarà sostituito dall'AI? Analisi del rischio automazione per gli operatori socio-sanitari."
+                description: "L'OSS sarà sostituito dall'AI? Analisi del rischio automazione per gli operatori socio-sanitari.",
+                lastUpdated: '2026-07-05'
             },
             ingegnere_civile: {
                 title: "Ingegnere Civile / Strutturale",
@@ -5205,7 +6032,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Ingegnere Civile sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria strutturale."
+                description: "L'Ingegnere Civile sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria strutturale.",
+                lastUpdated: '2026-07-05'
             },
             architetto: {
                 title: "Architetto",
@@ -5219,7 +6047,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Architetto sarà sostituito dall'AI? Analisi del rischio automazione per la professione architettonica."
+                description: "L'Architetto sarà sostituito dall'AI? Analisi del rischio automazione per la professione architettonica.",
+                lastUpdated: '2026-07-05'
             },
             geometra: {
                 title: "Geometra / Perito Edile",
@@ -5233,7 +6062,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Geometra sarà sostituito dall'AI? Analisi del rischio automazione per la professione di geometra."
+                description: "Il Geometra sarà sostituito dall'AI? Analisi del rischio automazione per la professione di geometra.",
+                lastUpdated: '2026-07-05'
             },
             topografo: {
                 title: "Topografo / Geodeta",
@@ -5247,7 +6077,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Topografo sarà sostituito dall'AI? Analisi del rischio automazione per la topografia."
+                description: "Il Topografo sarà sostituito dall'AI? Analisi del rischio automazione per la topografia.",
+                lastUpdated: '2026-07-05'
             },
             ingegnere_meccanico: {
                 title: "Ingegnere Meccanico",
@@ -5261,7 +6092,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Ingegnere Meccanico sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria meccanica."
+                description: "L'Ingegnere Meccanico sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria meccanica.",
+                lastUpdated: '2026-07-05'
             },
             urbanista: {
                 title: "Urbanista / Pianificatore Territoriale",
@@ -5275,7 +6107,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Urbanista sarà sostituito dall'AI? Analisi del rischio automazione per la pianificazione urbana."
+                description: "L'Urbanista sarà sostituito dall'AI? Analisi del rischio automazione per la pianificazione urbana.",
+                lastUpdated: '2026-07-05'
             },
             ingegnere_ambientale: {
                 title: "Ingegnere Ambientale / Ecologico",
@@ -5289,7 +6122,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Ingegnere Ambientale sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria ambientale."
+                description: "L'Ingegnere Ambientale sarà sostituito dall'AI? Analisi del rischio automazione per l'ingegneria ambientale.",
+                lastUpdated: '2026-07-05'
             },
             agente_immobiliare: {
                 title: "Agente Immobiliare",
@@ -5303,7 +6137,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "L'Agente Immobiliare sarà sostituito dall'AI? Analisi del rischio automazione per il settore immobiliare."
+                description: "L'Agente Immobiliare sarà sostituito dall'AI? Analisi del rischio automazione per il settore immobiliare.",
+                lastUpdated: '2026-07-05'
             },
             perito_immobiliare: {
                 title: "Perito Immobiliare / Valutatore",
@@ -5317,7 +6152,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "Il Perito Immobiliare sarà sostituito dall'AI? Analisi del rischio automazione per la valutazione immobiliare."
+                description: "Il Perito Immobiliare sarà sostituito dall'AI? Analisi del rischio automazione per la valutazione immobiliare.",
+                lastUpdated: '2026-07-05'
             },
             consulente_finanziario: {
                 title: "Consulente Finanziario / Financial Planner",
@@ -5331,7 +6167,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Consulente Finanziario sarà sostituito dall'AI? Analisi del rischio automazione per la consulenza finanziaria."
+                description: "Il Consulente Finanziario sarà sostituito dall'AI? Analisi del rischio automazione per la consulenza finanziaria.",
+                lastUpdated: '2026-07-05'
             },
             agente_assicurativo: {
                 title: "Agente Assicurativo",
@@ -5345,7 +6182,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "L'Agente Assicurativo sarà sostituito dall'AI? Analisi del rischio automazione per il settore assicurativo."
+                description: "L'Agente Assicurativo sarà sostituito dall'AI? Analisi del rischio automazione per il settore assicurativo.",
+                lastUpdated: '2026-07-05'
             },
             revisore_contabile: {
                 title: "Revisore Contabile / Auditor",
@@ -5359,7 +6197,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "Il Revisore Contabile sarà sostituito dall'AI? Analisi del rischio automazione per la revisione legale."
+                description: "Il Revisore Contabile sarà sostituito dall'AI? Analisi del rischio automazione per la revisione legale.",
+                lastUpdated: '2026-07-05'
             },
             giornalista: {
                 title: "Giornalista",
@@ -5373,7 +6212,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Giornalista sarà sostituito dall'AI? Analisi del rischio automazione per il giornalismo."
+                description: "Il Giornalista sarà sostituito dall'AI? Analisi del rischio automazione per il giornalismo.",
+                lastUpdated: '2026-07-05'
             },
             scrittore: {
                 title: "Scrittore / Autore",
@@ -5387,7 +6227,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Lo Scrittore sarà sostituito dall'AI? Analisi del rischio automazione per la scrittura creativa."
+                description: "Lo Scrittore sarà sostituito dall'AI? Analisi del rischio automazione per la scrittura creativa.",
+                lastUpdated: '2026-07-05'
             },
             sceneggiatore: {
                 title: "Sceneggiatore / Screenwriter",
@@ -5401,7 +6242,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Lo Sceneggiatore sarà sostituito dall'AI? Analisi del rischio automazione per la scrittura cinematografica."
+                description: "Lo Sceneggiatore sarà sostituito dall'AI? Analisi del rischio automazione per la scrittura cinematografica.",
+                lastUpdated: '2026-07-05'
             },
             doppiatore: {
                 title: "Doppiatore / Voice Actor",
@@ -5415,7 +6257,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Doppiatore sarà sostituito dall'AI? L'AI vocale è una delle aree di impatto più rapide."
+                description: "Il Doppiatore sarà sostituito dall'AI? L'AI vocale è una delle aree di impatto più rapide.",
+                lastUpdated: '2026-07-05'
             },
             idraulico: {
                 title: "Idraulico / Termoidraulico",
@@ -5429,7 +6272,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'Idraulico sarà sostituito dall'AI? Analisi del rischio automazione per la professione idraulica."
+                description: "L'Idraulico sarà sostituito dall'AI? Analisi del rischio automazione per la professione idraulica.",
+                lastUpdated: '2026-07-05'
             },
             elettricista: {
                 title: "Elettricista",
@@ -5443,7 +6287,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'Elettricista sarà sostituito dall'AI? Analisi del rischio automazione per gli impianti elettrici."
+                description: "L'Elettricista sarà sostituito dall'AI? Analisi del rischio automazione per gli impianti elettrici.",
+                lastUpdated: '2026-07-05'
             },
             falegname: {
                 title: "Falegname / Carpentiere",
@@ -5457,7 +6302,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il Falegname sarà sostituito dall'AI? Analisi del rischio automazione per la falegnameria."
+                description: "Il Falegname sarà sostituito dall'AI? Analisi del rischio automazione per la falegnameria.",
+                lastUpdated: '2026-07-05'
             },
             meccanico: {
                 title: "Meccanico Autoriparatore",
@@ -5471,7 +6317,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Meccanico sarà sostituito dall'AI? Analisi del rischio automazione per la riparazione auto."
+                description: "Il Meccanico sarà sostituito dall'AI? Analisi del rischio automazione per la riparazione auto.",
+                lastUpdated: '2026-07-05'
             },
             chef: {
                 title: "Chef / Cuoco",
@@ -5485,7 +6332,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 4500,
                 defaultAiSetup: 18000,
-                description: "Lo Chef sarà sostituito dall'AI? Analisi del rischio automazione per la professione culinaria."
+                description: "Lo Chef sarà sostituito dall'AI? Analisi del rischio automazione per la professione culinaria.",
+                lastUpdated: '2026-07-05'
             },
             pasticcere: {
                 title: "Pasticcere / Gelatiere",
@@ -5499,7 +6347,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 4200,
                 defaultAiSetup: 16000,
-                description: "Il Pasticcere sarà sostituito dall'AI? Analisi del rischio automazione per la pasticceria artigianale."
+                description: "Il Pasticcere sarà sostituito dall'AI? Analisi del rischio automazione per la pasticceria artigianale.",
+                lastUpdated: '2026-07-05'
             },
             barista: {
                 title: "Barista / Bartender",
@@ -5513,7 +6362,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Barista sarà sostituito dall'AI? Analisi del rischio automazione per la professione di barista."
+                description: "Il Barista sarà sostituito dall'AI? Analisi del rischio automazione per la professione di barista.",
+                lastUpdated: '2026-07-05'
             },
             parrucchiere: {
                 title: "Parrucchiere / Barbiere",
@@ -5527,7 +6377,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 3800,
                 defaultAiSetup: 14000,
-                description: "Il Parrucchiere sarà sostituito dall'AI? Analisi del rischio automazione per la professione."
+                description: "Il Parrucchiere sarà sostituito dall'AI? Analisi del rischio automazione per la professione.",
+                lastUpdated: '2026-07-05'
             },
             estetista: {
                 title: "Estetista / Cosmetologa",
@@ -5541,7 +6392,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 3500,
                 defaultAiSetup: 12000,
-                description: "L'Estetista sarà sostituita dall'AI? Analisi del rischio automazione per il settore estetico."
+                description: "L'Estetista sarà sostituita dall'AI? Analisi del rischio automazione per il settore estetico.",
+                lastUpdated: '2026-07-05'
             },
             personal_trainer: {
                 title: "Personal Trainer",
@@ -5555,7 +6407,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 3200,
                 defaultAiSetup: 10000,
-                description: "Il Personal Trainer sarà sostituito dall'AI? Analisi del rischio automazione per il fitness."
+                description: "Il Personal Trainer sarà sostituito dall'AI? Analisi del rischio automazione per il fitness.",
+                lastUpdated: '2026-07-05'
             },
             vigile_urbano: {
                 title: "Vigile Urbano / Agente Polizia Locale",
@@ -5569,7 +6422,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Vigile Urbano sarà sostituito dall'AI? Analisi del rischio automazione per la polizia locale."
+                description: "Il Vigile Urbano sarà sostituito dall'AI? Analisi del rischio automazione per la polizia locale.",
+                lastUpdated: '2026-07-05'
             },
             pompiere: {
                 title: "Vigile del Fuoco / Pompiere",
@@ -5583,7 +6437,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il Pompiere sarà sostituito dall'AI? Analisi del rischio automazione per i Vigili del Fuoco."
+                description: "Il Pompiere sarà sostituito dall'AI? Analisi del rischio automazione per i Vigili del Fuoco.",
+                lastUpdated: '2026-07-05'
             },
             funzionario_pubblico: {
                 title: "Funzionario Pubblico / Impiegato PA",
@@ -5597,7 +6452,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Funzionario Pubblico sarà sostituito dall'AI? Analisi del rischio automazione per la PA."
+                description: "Il Funzionario Pubblico sarà sostituito dall'AI? Analisi del rischio automazione per la PA.",
+                lastUpdated: '2026-07-05'
             },
             autista_camion: {
                 title: "Autista di Camion / Trasportatore",
@@ -5611,7 +6467,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "L'Autista di Camion sarà sostituito dall'AI? Analisi del rischio automazione per il trasporto merci."
+                description: "L'Autista di Camion sarà sostituito dall'AI? Analisi del rischio automazione per il trasporto merci.",
+                lastUpdated: '2026-07-05'
             },
             pilota: {
                 title: "Pilota di Linea / Comandante",
@@ -5625,7 +6482,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il Pilota di Linea sarà sostituito dall'AI? Analisi del rischio automazione per l'aviazione."
+                description: "Il Pilota di Linea sarà sostituito dall'AI? Analisi del rischio automazione per l'aviazione.",
+                lastUpdated: '2026-07-05'
             },
             magazziniere: {
                 title: "Magazziniere / Addetto Logistica",
@@ -5639,7 +6497,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "Il Magazziniere sarà sostituito dall'AI? Analisi del rischio automazione per la logistica di magazzino."
+                description: "Il Magazziniere sarà sostituito dall'AI? Analisi del rischio automazione per la logistica di magazzino.",
+                lastUpdated: '2026-07-05'
             },
             agronomo: {
                 title: "Agronomo / Consulente Agricolo",
@@ -5653,7 +6512,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Agronomo sarà sostituito dall'AI? Analisi del rischio automazione per la consulenza agronomica."
+                description: "L'Agronomo sarà sostituito dall'AI? Analisi del rischio automazione per la consulenza agronomica.",
+                lastUpdated: '2026-07-05'
             },
             agricoltore: {
                 title: "Agricoltore / Imprenditore Agricolo",
@@ -5667,7 +6527,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Agricoltore sarà sostituito dall'AI? Analisi del rischio automazione per l'agricoltura."
+                description: "L'Agricoltore sarà sostituito dall'AI? Analisi del rischio automazione per l'agricoltura.",
+                lastUpdated: '2026-07-05'
             },
             enologo: {
                 title: "Enologo / Tecnico Vinicolo",
@@ -5681,7 +6542,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Enologo sarà sostituito dall'AI? Analisi del rischio automazione per la professione enologica."
+                description: "L'Enologo sarà sostituito dall'AI? Analisi del rischio automazione per la professione enologica.",
+                lastUpdated: '2026-07-05'
             },
             allenatore: {
                 title: "Allenatore Sportivo / Coach",
@@ -5695,7 +6557,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 3000,
                 defaultAiSetup: 10000,
-                description: "L'Allenatore Sportivo sarà sostituito dall'AI? Analisi del rischio automazione per il coaching."
+                description: "L'Allenatore Sportivo sarà sostituito dall'AI? Analisi del rischio automazione per il coaching.",
+                lastUpdated: '2026-07-05'
             },
             attore: {
                 title: "Attore / Performer",
@@ -5709,7 +6572,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'Attore sarà sostituito dall'AI? Analisi del rischio automazione per la professione attorale."
+                description: "L'Attore sarà sostituito dall'AI? Analisi del rischio automazione per la professione attorale.",
+                lastUpdated: '2026-07-05'
             },
             regista: {
                 title: "Regista Cinematografico / TV",
@@ -5723,7 +6587,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Regista sarà sostituito dall'AI? Analisi del rischio automazione per la regia."
+                description: "Il Regista sarà sostituito dall'AI? Analisi del rischio automazione per la regia.",
+                lastUpdated: '2026-07-05'
             },
             musicista: {
                 title: "Musicista / Strumentista",
@@ -5737,7 +6602,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il Musicista sarà sostituito dall'AI? Analisi del rischio automazione per la professione musicale."
+                description: "Il Musicista sarà sostituito dall'AI? Analisi del rischio automazione per la professione musicale.",
+                lastUpdated: '2026-07-05'
             },
             cantante: {
                 title: "Cantante / Vocalist",
@@ -5751,7 +6617,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Cantante sarà sostituito dall'AI? Analisi del rischio automazione per i cantanti."
+                description: "Il Cantante sarà sostituito dall'AI? Analisi del rischio automazione per i cantanti.",
+                lastUpdated: '2026-07-05'
             },
             assistente_sociale: {
                 title: "Assistente Sociale",
@@ -5765,7 +6632,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'Assistente Sociale sarà sostituito dall'AI? Analisi del rischio automazione per il lavoro sociale."
+                description: "L'Assistente Sociale sarà sostituito dall'AI? Analisi del rischio automazione per il lavoro sociale.",
+                lastUpdated: '2026-07-05'
             },
             educatore_sociale: {
                 title: "Educatore Professionale / Sociale",
@@ -5779,7 +6647,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'Educatore Sociale sarà sostituito dall'AI? Analisi del rischio automazione per l'educazione sociale."
+                description: "L'Educatore Sociale sarà sostituito dall'AI? Analisi del rischio automazione per l'educazione sociale.",
+                lastUpdated: '2026-07-05'
             },
             stilista: {
                 title: "Stilista / Fashion Designer",
@@ -5793,7 +6662,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Lo Stilista sarà sostituito dall'AI? Analisi del rischio automazione per la moda."
+                description: "Lo Stilista sarà sostituito dall'AI? Analisi del rischio automazione per la moda.",
+                lastUpdated: '2026-07-05'
             },
             sommelier: {
                 title: "Sommelier / Enotecnico",
@@ -5807,7 +6677,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Sommelier sarà sostituito dall'AI? Analisi del rischio automazione per la professione del vino."
+                description: "Il Sommelier sarà sostituito dall'AI? Analisi del rischio automazione per la professione del vino.",
+                lastUpdated: '2026-07-05'
             },
             criminologo: {
                 title: "Criminologo / Analista Forense",
@@ -5821,7 +6692,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Criminologo sarà sostituito dall'AI? Analisi del rischio automazione per la criminologia."
+                description: "Il Criminologo sarà sostituito dall'AI? Analisi del rischio automazione per la criminologia.",
+                lastUpdated: '2026-07-05'
             },
             psicologo_scolastico: {
                 title: "Psicologo Scolastico",
@@ -5835,7 +6707,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Lo Psicologo Scolastico sarà sostituito dall'AI? Analisi del rischio automazione."
+                description: "Lo Psicologo Scolastico sarà sostituito dall'AI? Analisi del rischio automazione.",
+                lastUpdated: '2026-07-05'
             },
             lobbista: {
                 title: "Lobbista / Public Affairs Manager",
@@ -5849,7 +6722,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Lobbista sarà sostituito dall'AI? Analisi del rischio automazione per il public affairs."
+                description: "Il Lobbista sarà sostituito dall'AI? Analisi del rischio automazione per il public affairs.",
+                lastUpdated: '2026-07-05'
             },
             redattore: {
                 title: "Redattore / Editor",
@@ -5863,7 +6737,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il Redattore sarà sostituito dall'AI? Analisi del rischio automazione per l'editing."
+                description: "Il Redattore sarà sostituito dall'AI? Analisi del rischio automazione per l'editing.",
+                lastUpdated: '2026-07-05'
             },
             panettiere: {
                 title: "Panettiere / Fornaio",
@@ -5877,7 +6752,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Panettiere sarà sostituito dall'AI? Analisi del rischio automazione per la panificazione."
+                description: "Il Panettiere sarà sostituito dall'AI? Analisi del rischio automazione per la panificazione.",
+                lastUpdated: '2026-07-05'
             },
             cameriere: {
                 title: "Cameriere / Personale di Sala",
@@ -5891,7 +6767,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il Cameriere sarà sostituito dall'AI? Analisi del rischio automazione per la ristorazione."
+                description: "Il Cameriere sarà sostituito dall'AI? Analisi del rischio automazione per la ristorazione.",
+                lastUpdated: '2026-07-05'
             },
             medico_specialista: {
                 title: "Medico Specialista",
@@ -5905,7 +6782,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il medico specialista sarà sostituito dall'AI? Analisi del rischio automazione per internisti, cardiologi, neurologi e altre specializzazioni mediche."
+                description: "Il medico specialista sarà sostituito dall'AI? Analisi del rischio automazione per internisti, cardiologi, neurologi e altre specializzazioni mediche.",
+                lastUpdated: '2026-07-05'
             },
             infermiere_specializzato: {
                 title: "Infermiere Specializzato",
@@ -5919,7 +6797,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Rischio AI per infermieri specializzati in terapia intensiva, oncologia, pediatria. Analisi task e piano di carriera."
+                description: "Rischio AI per infermieri specializzati in terapia intensiva, oncologia, pediatria. Analisi task e piano di carriera.",
+                lastUpdated: '2026-07-05'
             },
             tecnico_radiologia: {
                 title: "Tecnico di Radiologia",
@@ -5933,7 +6812,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il tecnico di radiologia rischierà il posto con l'AI? Analisi completa del rischio automazione per TSRM."
+                description: "Il tecnico di radiologia rischierà il posto con l'AI? Analisi completa del rischio automazione per TSRM.",
+                lastUpdated: '2026-07-05'
             },
             biologo: {
                 title: "Biologo",
@@ -5947,7 +6827,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Rischio AI per biologi: analisi di laboratorio, ricerca e consulenza nutrizionale. Chi sopravvive all'automazione?"
+                description: "Rischio AI per biologi: analisi di laboratorio, ricerca e consulenza nutrizionale. Chi sopravvive all'automazione?",
+                lastUpdated: '2026-07-05'
             },
             ottico: {
                 title: "Ottico Optometrista",
@@ -5961,7 +6842,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'ottico sarà sostituito dall'AI? Rischio automazione per optometristi e ottici in Italia."
+                description: "L'ottico sarà sostituito dall'AI? Rischio automazione per optometristi e ottici in Italia.",
+                lastUpdated: '2026-07-05'
             },
             logopedista_pediatrico: {
                 title: "Logopedista Pediatrico",
@@ -5975,7 +6857,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Rischio AI per logopedisti specializzati in età evolutiva: balbuzie, DSA, autismo. Analisi completa."
+                description: "Rischio AI per logopedisti specializzati in età evolutiva: balbuzie, DSA, autismo. Analisi completa.",
+                lastUpdated: '2026-07-05'
             },
             tecnico_laboratorio: {
                 title: "Tecnico di Laboratorio",
@@ -5989,7 +6872,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il tecnico di laboratorio clinico sarà automatizzato dall'AI? Analisi del rischio per analisti clinici e biomedici."
+                description: "Il tecnico di laboratorio clinico sarà automatizzato dall'AI? Analisi del rischio per analisti clinici e biomedici.",
+                lastUpdated: '2026-07-05'
             },
             dietista: {
                 title: "Dietista",
@@ -6003,7 +6887,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Dietista e nutrizionista: differenze, rischio AI e futuro della professione. Chi rischia di più tra le due figure?"
+                description: "Dietista e nutrizionista: differenze, rischio AI e futuro della professione. Chi rischia di più tra le due figure?",
+                lastUpdated: '2026-07-05'
             },
             insegnante_scuola_primaria: {
                 title: "Insegnante Scuola Primaria",
@@ -6017,7 +6902,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 2500,
                 defaultAiSetup: 7000,
-                description: "L'insegnante di scuola primaria sarà sostituito dall'AI? Analisi del rischio per maestri e maestre d'Italia."
+                description: "L'insegnante di scuola primaria sarà sostituito dall'AI? Analisi del rischio per maestri e maestre d'Italia.",
+                lastUpdated: '2026-07-05'
             },
             professore_liceo: {
                 title: "Professore di Liceo",
@@ -6031,7 +6917,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 2800,
                 defaultAiSetup: 8000,
-                description: "Il professore di liceo sarà sostituito dall'AI? Rischio automazione per docenti di italiano, matematica, storia, scienze."
+                description: "Il professore di liceo sarà sostituito dall'AI? Rischio automazione per docenti di italiano, matematica, storia, scienze.",
+                lastUpdated: '2026-07-05'
             },
             educatore_asilo_nido: {
                 title: "Educatore Asilo Nido",
@@ -6045,7 +6932,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 3000,
                 defaultAiSetup: 9000,
-                description: "L'educatore di asilo nido rischia l'automazione? Analisi del futuro per chi lavora con i bambini 0-3 anni."
+                description: "L'educatore di asilo nido rischia l'automazione? Analisi del futuro per chi lavora con i bambini 0-3 anni.",
+                lastUpdated: '2026-07-05'
             },
             tutor_specializzato: {
                 title: "Tutor Specializzato DSA",
@@ -6059,7 +6947,8 @@ export const jobData = {
                 defaultHumanExtra: 7200,
                 defaultAiMonthly: 2200,
                 defaultAiSetup: 6000,
-                description: "Il tutor per DSA e bisogni educativi speciali sarà sostituito dall'AI? Rischio e opportunità per tutor e mediatori didattici."
+                description: "Il tutor per DSA e bisogni educativi speciali sarà sostituito dall'AI? Rischio e opportunità per tutor e mediatori didattici.",
+                lastUpdated: '2026-07-05'
             },
             avvocato_penalista: {
                 title: "Avvocato Penalista",
@@ -6073,7 +6962,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il penalista è a rischio AI? Analisi del futuro della difesa penale in Italia nell'era dell'intelligenza artificiale."
+                description: "Il penalista è a rischio AI? Analisi del futuro della difesa penale in Italia nell'era dell'intelligenza artificiale.",
+                lastUpdated: '2026-07-05'
             },
             consulente_del_lavoro_senior: {
                 title: "Consulente del Lavoro Senior",
@@ -6087,7 +6977,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il consulente del lavoro senior rischia l'AI? Analisi approfondita di chi gestisce paghe, contratti e vertenze."
+                description: "Il consulente del lavoro senior rischia l'AI? Analisi approfondita di chi gestisce paghe, contratti e vertenze.",
+                lastUpdated: '2026-07-05'
             },
             mediatore_civile: {
                 title: "Mediatore Civile",
@@ -6101,7 +6992,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "La mediazione civile sarà automatizzata dall'AI? Analisi del rischio per mediatori professionali in Italia."
+                description: "La mediazione civile sarà automatizzata dall'AI? Analisi del rischio per mediatori professionali in Italia.",
+                lastUpdated: '2026-07-05'
             },
             compliance_officer: {
                 title: "Compliance Officer",
@@ -6115,7 +7007,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il compliance officer sarà sostituito dall'AI? Analisi del rischio per chi si occupa di conformità aziendale."
+                description: "Il compliance officer sarà sostituito dall'AI? Analisi del rischio per chi si occupa di conformità aziendale.",
+                lastUpdated: '2026-07-05'
             },
             notaio_digitale: {
                 title: "Notaio Digitale / Blockchain Notary",
@@ -6129,7 +7022,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Come cambierà il notariato con blockchain e firma digitale? Rischio e opportunità per i notai nell'era digitale."
+                description: "Come cambierà il notariato con blockchain e firma digitale? Rischio e opportunità per i notai nell'era digitale.",
+                lastUpdated: '2026-07-05'
             },
             ingegnere_elettrico: {
                 title: "Ingegnere Elettrico",
@@ -6143,7 +7037,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'ingegnere elettrico sarà sostituito dall'AI? Analisi del rischio per elettrotecnici e ingegneri elettrici in Italia."
+                description: "L'ingegnere elettrico sarà sostituito dall'AI? Analisi del rischio per elettrotecnici e ingegneri elettrici in Italia.",
+                lastUpdated: '2026-07-05'
             },
             ingegnere_informatico: {
                 title: "Ingegnere Informatico",
@@ -6157,7 +7052,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'ingegnere informatico rischia l'AI? Analisi del futuro per chi progetta sistemi software e hardware complessi."
+                description: "L'ingegnere informatico rischia l'AI? Analisi del futuro per chi progetta sistemi software e hardware complessi.",
+                lastUpdated: '2026-07-05'
             },
             ingegnere_biomedico: {
                 title: "Ingegnere Biomedico",
@@ -6171,7 +7067,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Ingegnere biomedico: rischio AI e futuro professionale. Chi progetta dispositivi medici nell'era dell'intelligenza artificiale."
+                description: "Ingegnere biomedico: rischio AI e futuro professionale. Chi progetta dispositivi medici nell'era dell'intelligenza artificiale.",
+                lastUpdated: '2026-07-05'
             },
             tecnico_informatico: {
                 title: "Tecnico Informatico / IT Support",
@@ -6185,7 +7082,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il tecnico informatico di supporto sarà sostituito dall'AI? Analisi del rischio per helpdesk e IT support specialist."
+                description: "Il tecnico informatico di supporto sarà sostituito dall'AI? Analisi del rischio per helpdesk e IT support specialist.",
+                lastUpdated: '2026-07-05'
             },
             geometra_catasto: {
                 title: "Geometra Catastale",
@@ -6199,7 +7097,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il geometra catastale sarà automatizzato dall'AI? Rischio elevato per chi si occupa di pratiche catastali e successioni."
+                description: "Il geometra catastale sarà automatizzato dall'AI? Rischio elevato per chi si occupa di pratiche catastali e successioni.",
+                lastUpdated: '2026-07-05'
             },
             perito_industriale: {
                 title: "Perito Industriale",
@@ -6213,7 +7112,8 @@ export const jobData = {
                 defaultHumanExtra: 10800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il perito industriale rischia la sostituzione AI? Analisi del futuro per periti meccanici, elettrici e chimici."
+                description: "Il perito industriale rischia la sostituzione AI? Analisi del futuro per periti meccanici, elettrici e chimici.",
+                lastUpdated: '2026-07-05'
             },
             analista_credito: {
                 title: "Analista del Credito",
@@ -6227,7 +7127,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "L'analista del credito bancario sarà sostituito dall'AI? Rischio molto elevato per chi valuta affidabilità e rating aziendali."
+                description: "L'analista del credito bancario sarà sostituito dall'AI? Rischio molto elevato per chi valuta affidabilità e rating aziendali.",
+                lastUpdated: '2026-07-05'
             },
             consulente_fiscale: {
                 title: "Consulente Fiscale / Tax Consultant",
@@ -6241,7 +7142,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il consulente fiscale sarà sostituito dall'AI? Rischio e opportunità per chi si occupa di fiscalità d'impresa e personale."
+                description: "Il consulente fiscale sarà sostituito dall'AI? Rischio e opportunità per chi si occupa di fiscalità d'impresa e personale.",
+                lastUpdated: '2026-07-05'
             },
             actuario: {
                 title: "Attuario",
@@ -6255,7 +7157,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'attuario sarà automatizzato dall'AI? Analisi del rischio per chi costruisce modelli statistici in assicurazioni e finanza."
+                description: "L'attuario sarà automatizzato dall'AI? Analisi del rischio per chi costruisce modelli statistici in assicurazioni e finanza.",
+                lastUpdated: '2026-07-05'
             },
             private_banker: {
                 title: "Private Banker / Wealth Manager",
@@ -6269,7 +7172,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il private banker sarà sostituito dai robo-advisor AI? Analisi del futuro per chi gestisce grandi patrimoni."
+                description: "Il private banker sarà sostituito dai robo-advisor AI? Analisi del futuro per chi gestisce grandi patrimoni.",
+                lastUpdated: '2026-07-05'
             },
             assicuratore: {
                 title: "Agente di Assicurazione",
@@ -6283,7 +7187,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "L'agente assicurativo sarà sostituito dall'AI? Analisi del rischio elevato per chi vende polizze vita, auto e danni."
+                description: "L'agente assicurativo sarà sostituito dall'AI? Analisi del rischio elevato per chi vende polizze vita, auto e danni.",
+                lastUpdated: '2026-07-05'
             },
             pubblicitario: {
                 title: "Pubblicitario / Art Director",
@@ -6297,7 +7202,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il pubblicitario e art director sarà sostituito dall'AI generativa? Rischio e futuro per chi crea campagne advertising."
+                description: "Il pubblicitario e art director sarà sostituito dall'AI generativa? Rischio e futuro per chi crea campagne advertising.",
+                lastUpdated: '2026-07-05'
             },
             ufficio_stampa: {
                 title: "Addetto Ufficio Stampa / PR",
@@ -6311,7 +7217,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "L'addetto stampa e il PR manager rischiano con l'AI? Analisi del futuro per chi gestisce relazioni con i media."
+                description: "L'addetto stampa e il PR manager rischiano con l'AI? Analisi del futuro per chi gestisce relazioni con i media.",
+                lastUpdated: '2026-07-05'
             },
             giornalista_investigativo: {
                 title: "Giornalista Investigativo",
@@ -6325,7 +7232,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il giornalismo investigativo sarà sostituito dall'AI? Analisi del rischio per chi fa inchieste e giornalismo di approfondimento."
+                description: "Il giornalismo investigativo sarà sostituito dall'AI? Analisi del rischio per chi fa inchieste e giornalismo di approfondimento.",
+                lastUpdated: '2026-07-05'
             },
             podcaster: {
                 title: "Podcaster / Audio Content Creator",
@@ -6339,7 +7247,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il podcaster sarà sostituito dall'AI? Rischio e opportunità per chi crea contenuti audio in Italia."
+                description: "Il podcaster sarà sostituito dall'AI? Rischio e opportunità per chi crea contenuti audio in Italia.",
+                lastUpdated: '2026-07-05'
             },
             fotografo_commerciale: {
                 title: "Fotografo Commerciale",
@@ -6353,7 +7262,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il fotografo commerciale sarà sostituito dall'AI generativa? Rischio elevato per la fotografia di prodotto, stock e advertising."
+                description: "Il fotografo commerciale sarà sostituito dall'AI generativa? Rischio elevato per la fotografia di prodotto, stock e advertising.",
+                lastUpdated: '2026-07-05'
             },
             recruiter: {
                 title: "Recruiter / Talent Scout",
@@ -6367,7 +7277,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il recruiter sarà sostituito dall'AI? Analisi del rischio per chi seleziona personale, fa screening CV e gestisce colloqui."
+                description: "Il recruiter sarà sostituito dall'AI? Analisi del rischio per chi seleziona personale, fa screening CV e gestisce colloqui.",
+                lastUpdated: '2026-07-05'
             },
             hr_analytics: {
                 title: "HR Analytics Specialist",
@@ -6381,7 +7292,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'HR analytics specialist sarà sostituito dall'AI? Profilo emergente tra i più richiesti e tra i più a rischio di automazione."
+                description: "L'HR analytics specialist sarà sostituito dall'AI? Profilo emergente tra i più richiesti e tra i più a rischio di automazione.",
+                lastUpdated: '2026-07-05'
             },
             coach_aziendale: {
                 title: "Coach Aziendale / Executive Coach",
@@ -6395,7 +7307,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il coach aziendale sarà sostituito dall'AI? Analisi del rischio per executive coach e business coach professionisti."
+                description: "Il coach aziendale sarà sostituito dall'AI? Analisi del rischio per executive coach e business coach professionisti.",
+                lastUpdated: '2026-07-05'
             },
             venditore_porta_a_porta: {
                 title: "Venditore Porta a Porta / Field Sales",
@@ -6409,7 +7322,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il venditore porta a porta sarà sostituito dall'AI e dall'e-commerce? Analisi del rischio per la vendita diretta."
+                description: "Il venditore porta a porta sarà sostituito dall'AI e dall'e-commerce? Analisi del rischio per la vendita diretta.",
+                lastUpdated: '2026-07-05'
             },
             buyer_moda: {
                 title: "Buyer Moda / Fashion Buyer",
@@ -6423,7 +7337,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il buyer di moda sarà sostituito dall'AI? Rischio e futuro per chi seleziona collezioni e gestisce gli acquisti retail fashion."
+                description: "Il buyer di moda sarà sostituito dall'AI? Rischio e futuro per chi seleziona collezioni e gestisce gli acquisti retail fashion.",
+                lastUpdated: '2026-07-05'
             },
             agente_commerciale: {
                 title: "Agente Commerciale / Rappresentante",
@@ -6437,7 +7352,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "L'agente commerciale sarà sostituito dall'AI? Analisi del rischio per rappresentanti e agenti di commercio in Italia."
+                description: "L'agente commerciale sarà sostituito dall'AI? Analisi del rischio per rappresentanti e agenti di commercio in Italia.",
+                lastUpdated: '2026-07-05'
             },
             web_designer: {
                 title: "Web Designer",
@@ -6451,7 +7367,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il web designer sarà sostituito dall'AI? Rischio elevato per chi progetta siti web e interfacce grafiche."
+                description: "Il web designer sarà sostituito dall'AI? Rischio elevato per chi progetta siti web e interfacce grafiche.",
+                lastUpdated: '2026-07-05'
             },
             social_media_manager: {
                 title: "Social Media Manager",
@@ -6465,7 +7382,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il social media manager sarà sostituito dall'AI? Analisi del rischio per chi gestisce profili aziendali sui social."
+                description: "Il social media manager sarà sostituito dall'AI? Analisi del rischio per chi gestisce profili aziendali sui social.",
+                lastUpdated: '2026-07-05'
             },
             e_commerce_specialist: {
                 title: "E-commerce Specialist",
@@ -6479,7 +7397,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "L'e-commerce specialist sarà sostituito dall'AI? Analisi del rischio per chi gestisce negozi online e marketplace."
+                description: "L'e-commerce specialist sarà sostituito dall'AI? Analisi del rischio per chi gestisce negozi online e marketplace.",
+                lastUpdated: '2026-07-05'
             },
             data_engineer_senior: {
                 title: "Data Engineer Senior",
@@ -6493,7 +7412,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il data engineer senior sarà sostituito dall'AI? Analisi del rischio per chi costruisce pipeline dati e infrastrutture analytics."
+                description: "Il data engineer senior sarà sostituito dall'AI? Analisi del rischio per chi costruisce pipeline dati e infrastrutture analytics.",
+                lastUpdated: '2026-07-05'
             },
             cybersecurity_analyst: {
                 title: "Analista di Cybersecurity",
@@ -6507,7 +7427,8 @@ export const jobData = {
                 defaultHumanExtra: 11400,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il cybersecurity analyst sarà sostituito dall'AI? Analisi del rischio per chi protegge le aziende dagli attacchi informatici."
+                description: "Il cybersecurity analyst sarà sostituito dall'AI? Analisi del rischio per chi protegge le aziende dagli attacchi informatici.",
+                lastUpdated: '2026-07-05'
             },
             falegname_artigiano: {
                 title: "Falegname Artigiano / Ebanista",
@@ -6521,7 +7442,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Il falegname artigiano sarà sostituito dall'AI e dalla robotica? Analisi del rischio per ebanisti e mobilieri d'arte."
+                description: "Il falegname artigiano sarà sostituito dall'AI e dalla robotica? Analisi del rischio per ebanisti e mobilieri d'arte.",
+                lastUpdated: '2026-07-05'
             },
             sarto: {
                 title: "Sarto / Modellista",
@@ -6535,7 +7457,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il sarto e modellista sarà sostituito dall'AI? Analisi del rischio per chi lavora nell'alta moda e sartoria su misura."
+                description: "Il sarto e modellista sarà sostituito dall'AI? Analisi del rischio per chi lavora nell'alta moda e sartoria su misura.",
+                lastUpdated: '2026-07-05'
             },
             orafo: {
                 title: "Orafo / Gioielliere",
@@ -6549,7 +7472,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "L'orafo artigiano sarà sostituito dall'AI e dalla stampa 3D? Analisi del rischio per gioiellieri e orafi italiani."
+                description: "L'orafo artigiano sarà sostituito dall'AI e dalla stampa 3D? Analisi del rischio per gioiellieri e orafi italiani.",
+                lastUpdated: '2026-07-05'
             },
             cuoco_pizzaiolo: {
                 title: "Cuoco / Pizzaiolo",
@@ -6563,7 +7487,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 4200,
                 defaultAiSetup: 16000,
-                description: "Il cuoco e il pizzaiolo saranno sostituiti dai robot? Analisi del rischio per chef e pizzaioli in Italia."
+                description: "Il cuoco e il pizzaiolo saranno sostituiti dai robot? Analisi del rischio per chef e pizzaioli in Italia.",
+                lastUpdated: '2026-07-05'
             },
             pasticcere_artigiano: {
                 title: "Pasticcere Artigiano",
@@ -6577,7 +7502,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 4000,
                 defaultAiSetup: 15000,
-                description: "Il pasticcere artigiano sarà sostituito dai robot e dall'AI? Analisi del futuro per chi lavora nella pasticceria di alta qualità."
+                description: "Il pasticcere artigiano sarà sostituito dai robot e dall'AI? Analisi del futuro per chi lavora nella pasticceria di alta qualità.",
+                lastUpdated: '2026-07-05'
             },
             guida_turistica: {
                 title: "Guida Turistica",
@@ -6591,7 +7517,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "La guida turistica sarà sostituita dall'AI e dalle audioguide intelligenti? Analisi del rischio per guide autorizzate in Italia."
+                description: "La guida turistica sarà sostituita dall'AI e dalle audioguide intelligenti? Analisi del rischio per guide autorizzate in Italia.",
+                lastUpdated: '2026-07-05'
             },
             receptionist_hotel: {
                 title: "Receptionist Hotel / Front Office",
@@ -6605,7 +7532,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "Il receptionist di hotel sarà sostituito dall'AI e dai check-in automatici? Rischio elevato per il front office alberghiero."
+                description: "Il receptionist di hotel sarà sostituito dall'AI e dai check-in automatici? Rischio elevato per il front office alberghiero.",
+                lastUpdated: '2026-07-05'
             },
             travel_planner: {
                 title: "Travel Planner / Agente di Viaggio",
@@ -6619,7 +7547,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 450,
                 defaultAiSetup: 1500,
-                description: "L'agente di viaggio sarà sostituito dall'AI? Analisi del rischio per chi pianifica viaggi e vacanze su misura."
+                description: "L'agente di viaggio sarà sostituito dall'AI? Analisi del rischio per chi pianifica viaggi e vacanze su misura.",
+                lastUpdated: '2026-07-05'
             },
             wedding_planner: {
                 title: "Wedding Planner / Event Manager",
@@ -6633,7 +7562,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 2800,
                 defaultAiSetup: 8000,
-                description: "Il wedding planner sarà sostituito dall'AI? Analisi del rischio per organizzatori di matrimoni ed eventi in Italia."
+                description: "Il wedding planner sarà sostituito dall'AI? Analisi del rischio per organizzatori di matrimoni ed eventi in Italia.",
+                lastUpdated: '2026-07-05'
             },
             dirigente_pa: {
                 title: "Dirigente Pubblica Amministrazione",
@@ -6647,7 +7577,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il dirigente della Pubblica Amministrazione rischia l'AI? Analisi del rischio per chi guida enti locali, ministeri e aziende pubbliche."
+                description: "Il dirigente della Pubblica Amministrazione rischia l'AI? Analisi del rischio per chi guida enti locali, ministeri e aziende pubbliche.",
+                lastUpdated: '2026-07-05'
             },
             assistente_amministrativo_pa: {
                 title: "Assistente Amministrativo PA",
@@ -6661,7 +7592,8 @@ export const jobData = {
                 defaultHumanExtra: 8400,
                 defaultAiMonthly: 250,
                 defaultAiSetup: 800,
-                description: "L'assistente amministrativo della PA sarà automatizzato dall'AI? Rischio molto elevato per i ruoli impiegatizi nell'ente pubblico."
+                description: "L'assistente amministrativo della PA sarà automatizzato dall'AI? Rischio molto elevato per i ruoli impiegatizi nell'ente pubblico.",
+                lastUpdated: '2026-07-05'
             },
             preparatore_atletico: {
                 title: "Preparatore Atletico",
@@ -6675,7 +7607,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il preparatore atletico sarà sostituito dall'AI e dai wearable? Analisi del rischio per chi allena atleti professionisti."
+                description: "Il preparatore atletico sarà sostituito dall'AI e dai wearable? Analisi del rischio per chi allena atleti professionisti.",
+                lastUpdated: '2026-07-05'
             },
             istruttore_fitness: {
                 title: "Istruttore Fitness / Personal Trainer Online",
@@ -6689,7 +7622,8 @@ export const jobData = {
                 defaultHumanExtra: 6600,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'istruttore di fitness e il personal trainer online saranno sostituiti dall'AI? Analisi del rischio per chi lavora in palestra."
+                description: "L'istruttore di fitness e il personal trainer online saranno sostituiti dall'AI? Analisi del rischio per chi lavora in palestra.",
+                lastUpdated: '2026-07-05'
             },
             chimico: {
                 title: "Chimico / Ricercatore Chimico",
@@ -6703,7 +7637,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il chimico sarà sostituito dall'AI? Analisi del rischio per chi lavora in laboratorio, R&D farmaceutico e controllo qualità."
+                description: "Il chimico sarà sostituito dall'AI? Analisi del rischio per chi lavora in laboratorio, R&D farmaceutico e controllo qualità.",
+                lastUpdated: '2026-07-05'
             },
             fisico: {
                 title: "Fisico / Ricercatore di Fisica",
@@ -6717,7 +7652,8 @@ export const jobData = {
                 defaultHumanExtra: 10200,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il fisico sarà sostituito dall'AI? Analisi del rischio per ricercatori di fisica teorica, sperimentale e applicata."
+                description: "Il fisico sarà sostituito dall'AI? Analisi del rischio per ricercatori di fisica teorica, sperimentale e applicata.",
+                lastUpdated: '2026-07-05'
             },
             psicologo_clinico: {
                 title: "Psicologo Clinico",
@@ -6731,7 +7667,8 @@ export const jobData = {
                 defaultHumanExtra: 9600,
                 defaultAiMonthly: 1800,
                 defaultAiSetup: 4000,
-                description: "Lo psicologo clinico sarà sostituito dall'AI e dai chatbot terapeutici? Analisi del rischio per chi esercita la psicoterapia."
+                description: "Lo psicologo clinico sarà sostituito dall'AI e dai chatbot terapeutici? Analisi del rischio per chi esercita la psicoterapia.",
+                lastUpdated: '2026-07-05'
             },
             esperto_energia: {
                 title: "Esperto di Energia / Energy Manager",
@@ -6745,7 +7682,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'energy manager sarà sostituito dall'AI? Analisi del rischio per chi gestisce efficienza energetica e transizione verde."
+                description: "L'energy manager sarà sostituito dall'AI? Analisi del rischio per chi gestisce efficienza energetica e transizione verde.",
+                lastUpdated: '2026-07-05'
             },
             geologo: {
                 title: "Geologo",
@@ -6759,7 +7697,8 @@ export const jobData = {
                 defaultHumanExtra: 9000,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "Il geologo sarà sostituito dall'AI? Analisi del rischio per geologi ambientali, di progetto e di rischio idrogeologico."
+                description: "Il geologo sarà sostituito dall'AI? Analisi del rischio per geologi ambientali, di progetto e di rischio idrogeologico.",
+                lastUpdated: '2026-07-05'
             },
             agronomo_consulente: {
                 title: "Agronomo Consulente",
@@ -6773,7 +7712,8 @@ export const jobData = {
                 defaultHumanExtra: 7800,
                 defaultAiMonthly: 900,
                 defaultAiSetup: 2500,
-                description: "L'agronomo consulente sarà sostituito dall'AI e dall'agricoltura di precisione? Analisi del rischio per agronomi liberi professionisti."
+                description: "L'agronomo consulente sarà sostituito dall'AI e dall'agricoltura di precisione? Analisi del rischio per agronomi liberi professionisti.",
+                lastUpdated: '2026-07-05'
             },
 
 };
