@@ -1038,7 +1038,7 @@
                 <div class="cost-display">
                     <div class="cost-label" data-i18n="cost_annual_total">Costo annuale totale</div>
                     <div class="cost-value" id="humanTotal">€44.600</div>
-                    <div class="cost-accuracy" id="humanAccuracyText">📊 Accuratezza: 88% | 🚫 Errori: 10-12%</div>
+                    <div class="cost-accuracy" id="humanAccuracyText">📊 Precisione nel task: 88% | 🚫 Errori stimati: 10-12%</div>
                 </div>
 
                 <div style="background: #f0f9ff; border: 1px solid #bfdbfe; padding: 1rem; border-radius: 6px; margin-top: 1rem; font-size: 0.85rem; color: #1e40af;">
@@ -1068,7 +1068,7 @@
                 <div class="cost-display">
                     <div class="cost-label" data-i18n="cost_annual_total">Costo annuale totale</div>
                     <div class="cost-value" id="aiTotal">€6.300</div>
-                    <div class="cost-accuracy" id="aiAccuracyText">✅ Accuratezza: 99.2% | ✓ Errori: <0.8%</div>
+                    <div class="cost-accuracy" id="aiAccuracyText">✅ Precisione nel task: 99.2% | ✓ Errori stimati: <0.8%</div>
                 </div>
 
                 <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 1rem; border-radius: 6px; margin-top: 1rem; font-size: 0.85rem; color: #166534;">
@@ -1076,6 +1076,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Nota precisione -->
+        <p style="font-size:0.78rem;color:#6b7280;text-align:center;margin:0.5rem 0 1.5rem;padding:0 1rem;">
+          ℹ️ I valori di "precisione nel task" sono stime medie da benchmark pubblici (McKinsey Global Institute 2023, Stanford AI Index 2024) e variano per contesto aziendale, settore e qualità dell'implementazione. Non rappresentano l'accuratezza predittiva di JobRiskAI.
+        </p>
 
         <!-- RESULTS -->
         <div class="results-section">
@@ -1218,7 +1223,7 @@
                 <h3 data-i18n="insights_title">Cosa significa in pratica</h3>
                 <ul>
                     <li id="insightYear">Entro il 2029, sarà quasi impossibile competere come contabile tradizionale</li>
-                    <li id="insightAccuracy">L'AI non solo costa molto meno, ma fa meno errori (99.2% vs 88%)</li>
+                    <li id="insightAccuracy">Nei task ripetitivi l'AI tende a fare meno errori — stima da benchmark pubblici (McKinsey, Stanford AI Index)</li>
                     <li id="insightSurvival">Per sopravvivere: specializzarsi in consulenza, analisi strategica, compliance</li>
                     <li data-i18n="insight_hybrid">Lo scenario ibrido (AI + senior) è il più realistico per studi professionali</li>
                     <li data-i18n="insight_breakeven">Break-even dell'AI: circa 6-8 settimane. Dopo: profitto puro</li>
