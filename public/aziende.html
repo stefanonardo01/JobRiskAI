@@ -977,5 +977,20 @@ function toggleFaq(btn) {
   if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
 }
 </script>
+
+<!-- COOKIE CONSENT BANNER -->
+<div id="cookieBanner" role="dialog" aria-label="Consenso cookie" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#1a1a2e; color:#e5e7eb; padding:1.25rem; box-shadow:0 -4px 20px rgba(0,0,0,0.3); z-index:9999; font-size:0.9rem; line-height:1.5;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between;">
+        <p style="margin:0; flex:1; min-width:250px;">
+            🍪 Usiamo cookie per mostrare pubblicità personalizzata tramite Google AdSense. Puoi accettare o rifiutare il loro utilizzo. Leggi la <a href="/privacy-policy" style="color:#a5b4fc;">Privacy Policy</a> per saperne di più.
+        </p>
+        <div style="display:flex; gap:0.75rem; flex-shrink:0;">
+            <button id="cookieReject" style="background:transparent; border:1px solid #6b7280; color:#e5e7eb; padding:0.6rem 1.2rem; border-radius:6px; cursor:pointer; font-size:0.9rem;">Rifiuta</button>
+            <button id="cookieAccept" style="background:#6366f1; border:none; color:white; padding:0.6rem 1.2rem; border-radius:6px; cursor:pointer; font-size:0.9rem; font-weight:600;">Accetta</button>
+        </div>
+    </div>
+</div>
+
+<script src="/cookie-consent.js"></script>
 </body>
 </html>
