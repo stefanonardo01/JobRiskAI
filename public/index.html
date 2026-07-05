@@ -371,18 +371,54 @@
       <a href="#faq" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_faq">FAQ</a>
       <a href="#contatti" class="hover:text-[var(--ink-0)] transition-colors" data-i18n="home_nav_contact">Contatti</a>
     </div>
-    <button onclick="openStartModal()" class="btn-primary text-[13px] font-semibold text-white px-4 py-2 rounded-full" data-i18n="home_cta_try">
-      Prova gratis
-    </button>
-    <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent; color:var(--ink-1); border:1px solid var(--border-soft); border-radius:8px; padding:0.3rem 0.45rem; font-size:0.8rem; cursor:pointer; font-family:inherit; outline:none;">
-      <option value="it">🇮🇹 IT</option>
-      <option value="en">🇬🇧 EN</option>
-      <option value="es">🇪🇸 ES</option>
-      <option value="de">🇩🇪 DE</option>
-      <option value="fr">🇫🇷 FR</option>
-    </select>
+    <div class="flex items-center gap-2">
+      <button onclick="openStartModal()" class="btn-primary text-[13px] font-semibold text-white px-4 py-2 rounded-full" data-i18n="home_cta_try">
+        Prova gratis
+      </button>
+      <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent; color:var(--ink-1); border:1px solid var(--border-soft); border-radius:8px; padding:0.3rem 0.45rem; font-size:0.8rem; cursor:pointer; font-family:inherit; outline:none;">
+        <option value="it">🇮🇹 IT</option>
+        <option value="en">🇬🇧 EN</option>
+        <option value="es">🇪🇸 ES</option>
+        <option value="de">🇩🇪 DE</option>
+        <option value="fr">🇫🇷 FR</option>
+      </select>
+      <!-- Hamburger — solo mobile -->
+      <button id="mobileMenuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full hover:bg-[var(--sand-lt)] transition-colors" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()">
+        <span class="block w-5 h-0.5 bg-[var(--ink-1)] mb-1 transition-all" id="hbLine1"></span>
+        <span class="block w-5 h-0.5 bg-[var(--ink-1)] mb-1 transition-all" id="hbLine2"></span>
+        <span class="block w-5 h-0.5 bg-[var(--ink-1)] transition-all" id="hbLine3"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu dropdown -->
+  <div id="mobileMenu" class="md:hidden hidden" style="background:rgba(255,255,255,0.97); backdrop-filter:blur(14px); border-top:1px solid var(--border-soft); border-radius:0 0 1.25rem 1.25rem; padding:1rem 1.25rem 1.25rem; display:none;">
+    <nav style="display:flex; flex-direction:column; gap:0.25rem;">
+      <a href="#funzionalita" onclick="closeMobileMenu()" data-i18n="home_nav_features" style="display:block; padding:0.75rem 1rem; border-radius:0.75rem; color:var(--ink-1); font-size:0.95rem; font-weight:500; text-decoration:none; transition:background 0.15s;" onmouseover="this.style.background='var(--sand-lt)'" onmouseout="this.style.background=''">Funzionalità</a>
+      <a href="#come-funziona" onclick="closeMobileMenu()" data-i18n="home_nav_how" style="display:block; padding:0.75rem 1rem; border-radius:0.75rem; color:var(--ink-1); font-size:0.95rem; font-weight:500; text-decoration:none; transition:background 0.15s;" onmouseover="this.style.background='var(--sand-lt)'" onmouseout="this.style.background=''">Come funziona</a>
+      <a href="/classifica" onclick="closeMobileMenu()" data-i18n="home_nav_ranking" style="display:block; padding:0.75rem 1rem; border-radius:0.75rem; color:var(--ink-1); font-size:0.95rem; font-weight:500; text-decoration:none; transition:background 0.15s;" onmouseover="this.style.background='var(--sand-lt)'" onmouseout="this.style.background=''">Classifica</a>
+      <a href="#faq" onclick="closeMobileMenu()" data-i18n="home_nav_faq" style="display:block; padding:0.75rem 1rem; border-radius:0.75rem; color:var(--ink-1); font-size:0.95rem; font-weight:500; text-decoration:none; transition:background 0.15s;" onmouseover="this.style.background='var(--sand-lt)'" onmouseout="this.style.background=''">FAQ</a>
+      <a href="#contatti" onclick="closeMobileMenu()" data-i18n="home_nav_contact" style="display:block; padding:0.75rem 1rem; border-radius:0.75rem; color:var(--ink-1); font-size:0.95rem; font-weight:500; text-decoration:none; transition:background 0.15s;" onmouseover="this.style.background='var(--sand-lt)'" onmouseout="this.style.background=''">Contatti</a>
+    </nav>
   </div>
 </nav>
+<script>
+function toggleMobileMenu() {
+  var menu = document.getElementById('mobileMenu');
+  var btn = document.getElementById('mobileMenuBtn');
+  var isOpen = menu.style.display === 'block';
+  menu.style.display = isOpen ? 'none' : 'block';
+  btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+}
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').style.display = 'none';
+  document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'false');
+}
+// Chiudi menu cliccando fuori
+document.addEventListener('click', function(e) {
+  var nav = document.querySelector('nav.fixed');
+  if (nav && !nav.contains(e.target)) closeMobileMenu();
+});
+</script>
 
 <section class="relative pt-36 pb-16 px-6 grad-bg overflow-hidden">
   <div class="max-w-4xl mx-auto text-center relative fade-up" id="hero-top">

@@ -1105,3 +1105,68 @@
     .hero-stat { padding: 0.5rem 1.1rem; }
     .hero-stat-value { font-size: 1.2rem; }
 }
+
+/* ===== MOBILE UX — touch targets e navigazione ===== */
+@media (max-width: 640px) {
+    /* Header nav link touch target 44px minimo */
+    .header-content a[href] {
+        min-height: 44px;
+        padding-top: 0.65rem !important;
+        padding-bottom: 0.65rem !important;
+        font-size: 0.82rem !important;
+    }
+
+    /* Header: gap ridotto su mobile */
+    .header-content {
+        gap: 0.4rem;
+    }
+
+    /* Nascondi elementi secondari per dare spazio */
+    .header-content .lang-selector { display: none; }
+    .header-content .header-info { display: none; }
+    .mobile-hide { display: none !important; }
+
+    /* Category tabs — scroll orizzontale */
+    .category-tabs {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 0.4rem !important;
+        padding-bottom: 0.5rem;
+    }
+    .category-tabs::-webkit-scrollbar { display: none; }
+
+    .category-tab {
+        flex-shrink: 0;
+        min-height: 40px;
+        font-size: 0.8rem !important;
+        padding: 0.5rem 0.85rem !important;
+        white-space: nowrap;
+    }
+
+    /* Job card grid: 2 colonne su mobile */
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.6rem !important;
+    }
+
+    .job-card {
+        padding: 0.9rem 0.6rem;
+    }
+
+    .job-card-icon { font-size: 1.5rem; margin-bottom: 0.35rem; }
+    .job-card-title { font-size: 0.82rem; }
+
+    /* Comparison table: scroll orizzontale */
+    .comparison-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    /* Calculator section: stacked */
+    .calculator-section { grid-template-columns: 1fr !important; gap: 1rem !important; }
+
+    /* Form group padding ridotto */
+    .calculator-card { padding: 1.25rem; }
+
+    /* Cookie banner: font più piccolo */
+    #cookieBanner { font-size: 0.82rem !important; padding: 1rem !important; }
+}
