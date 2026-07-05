@@ -6,6 +6,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { jobUpskilling } from './upskilling-data.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT      = join(__dirname, '..');
@@ -109,6 +110,66 @@ function riskLabel(pct) {
   return 'Basso rischio';
 }
 
+// ── Rendering sezione upskilling ricca ────────────────────
+function renderUpskillingCard(title, up) {
+  const urgencyColors = {
+    urgente: { bg: '#fee2e2', text: '#991b1b', border: '#fecaca' },
+    alta:    { bg: '#fff7ed', text: '#9a3412', border: '#fed7aa' },
+    media:   { bg: '#fefce8', text: '#854d0e', border: '#fde68a' },
+  };
+  const uc = urgencyColors[up.urgency] || urgencyColors.media;
+
+  const skillsHtml = up.skills.map((skill, i) => {
+    const coursesHtml = skill.courses.map(c => `
+      <a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer"
+         style="display:flex;align-items:center;gap:0.75rem;padding:0.6rem 0.9rem;background:#f8f9ff;border:1px solid #e0e7ff;border-radius:10px;text-decoration:none;color:#0f172a;transition:all 0.15s;"
+         onmouseover="this.style.borderColor='#6366f1';this.style.background='#eef2ff'"
+         onmouseout="this.style.borderColor='#e0e7ff';this.style.background='#f8f9ff'">
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:0.85rem;font-weight:600;color:#0f172a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(c.name)}</div>
+          <div style="font-size:0.74rem;color:#64748b;margin-top:0.1rem;">${esc(c.provider)}${c.duration ? ' · ' + esc(c.duration) : ''}</div>
+        </div>
+        <div style="display:flex;gap:0.3rem;flex-shrink:0;align-items:center;">
+          ${c.free  ? '<span style="font-size:0.67rem;font-weight:700;background:#dcfce7;color:#166534;padding:0.15rem 0.45rem;border-radius:999px;white-space:nowrap;">Gratuito</span>' : ''}
+          ${c.cert  ? '<span style="font-size:0.67rem;font-weight:700;background:#e0e7ff;color:#4338ca;padding:0.15rem 0.45rem;border-radius:999px;white-space:nowrap;">Certificato</span>' : ''}
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </div>
+      </a>`).join('');
+
+    const isLast = i === up.skills.length - 1;
+    return `
+    <div style="margin-bottom:${isLast ? '0.5rem' : '1.5rem'};${isLast ? '' : 'padding-bottom:1.5rem;border-bottom:1px solid #f1f5f9;'}">
+      <div style="display:flex;align-items:flex-start;gap:0.75rem;margin-bottom:0.75rem;">
+        <span style="width:24px;height:24px;border-radius:50%;background:#6366f1;color:white;font-size:0.72rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:0.15rem;">${i + 1}</span>
+        <div>
+          <div style="font-weight:700;font-size:0.95rem;color:#0f172a;">${esc(skill.name)}</div>
+          <div style="font-size:0.82rem;color:#64748b;margin-top:0.2rem;line-height:1.4;">${esc(skill.why)}</div>
+        </div>
+      </div>
+      <div style="margin-left:2.25rem;display:flex;flex-direction:column;gap:0.45rem;">
+        ${coursesHtml}
+      </div>
+    </div>`;
+  }).join('');
+
+  return `
+  <!-- Piano di upskilling specifico -->
+  <div class="prof-card" style="border-left:3px solid #6366f1;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+      <h2 style="margin:0;">🎯 Piano di upskilling per il ${esc(title)}</h2>
+      <div style="display:flex;gap:0.4rem;align-items:center;flex-wrap:wrap;">
+        <span style="font-size:0.72rem;font-weight:700;color:#1e40af;background:#dbeafe;border:1px solid #bfdbfe;padding:0.2rem 0.65rem;border-radius:999px;">⏱ ${esc(up.timeline)}</span>
+        <span style="font-size:0.72rem;font-weight:700;color:${uc.text};background:${uc.bg};border:1px solid ${uc.border};padding:0.2rem 0.65rem;border-radius:999px;">Priorità ${esc(up.urgency)}</span>
+      </div>
+    </div>
+    ${skillsHtml}
+    <p style="font-size:0.76rem;color:#94a3b8;margin-top:1.25rem;margin-bottom:0;line-height:1.5;">
+      🔬 I link portano a risorse esterne — verifica disponibilità e prezzi al momento dell'iscrizione. ·
+      <a href="/metodologia" style="color:#6366f1;text-decoration:none;">Come calcoliamo il rischio →</a>
+    </p>
+  </div>`;
+}
+
 // ── Genera pagina singola professione ─────────────────────
 function buildProfessionPage(key) {
   const d   = jobData[key];
@@ -129,6 +190,7 @@ function buildProfessionPage(key) {
   const tasks      = ex?.tasks        || [];
   const survival   = ex?.survivalPlan || [];
   const changelog  = ex?.changelog    || [];
+  const upskilling = jobUpskilling[key] || null;
 
   // ── Data ultimo aggiornamento ──────────────────────────────
   const rawDate    = d.lastUpdated || '2026-07-05';
@@ -172,9 +234,11 @@ function buildProfessionPage(key) {
     },
     {
       q: `Come può un ${title} ridurre il rischio di sostituzione AI?`,
-      a: survival.length > 0
-        ? `Per ridurre il rischio AI come ${title}: ${survival.slice(0, 3).join('; ')}.`
-        : `Per ridurre il rischio, il ${title} dovrebbe sviluppare competenze di giudizio strategico, relazione con i clienti e specializzazione di dominio difficilmente automatizzabili.`,
+      a: upskilling
+        ? `Per ridurre il rischio AI, il ${title} dovrebbe sviluppare: ${upskilling.skills.slice(0, 3).map(s => s.name).join(', ')}. Timeline consigliata: ${upskilling.timeline}.`
+        : survival.length > 0
+          ? `Per ridurre il rischio AI come ${title}: ${survival.slice(0, 3).join('; ')}.`
+          : `Per ridurre il rischio, il ${title} dovrebbe sviluppare competenze di giudizio strategico, relazione con i clienti e specializzazione di dominio difficilmente automatizzabili.`,
     },
     {
       q: `Quanto costa un agente AI rispetto a un ${title}?`,
@@ -344,12 +408,16 @@ function buildProfessionPage(key) {
         ${taskRows}
       </div>` : ''}
 
-      ${survival.length > 0 ? `
-      <!-- Piano di sopravvivenza -->
+      ${upskilling
+        ? renderUpskillingCard(title, upskilling)
+        : survival.length > 0
+          ? `<!-- Piano di sopravvivenza (legacy) -->
       <div class="prof-card" style="border-left:3px solid var(--success);">
         <h2>🛡️ Piano di sopravvivenza per il ${esc(title)}</h2>
         <ul style="list-style:none;padding:0;margin:0;">${survivalItems}</ul>
-      </div>` : ''}
+      </div>`
+          : ''
+      }
 
       ${humanTotal > 0 && aiAnnual > 0 ? `
       <!-- Confronto costi -->
