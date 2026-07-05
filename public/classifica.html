@@ -81,11 +81,7 @@
     .sh-drawer-inner a { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; border-radius: 10px; color: #374151; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: background 0.15s; min-height: 48px; }
     .sh-drawer-inner a:hover { background: #f3f4f6; }
     .sh-drawer-inner a.sh-cta { background: var(--primary,#6366f1); color: white; margin-top: 0.5rem; }
-    @media (max-width: 768px) {
-      .sh { padding: 0 1rem; }
-      .sh-links { display: none !important; }
-      .sh-burger { display: flex !important; }
-    }
+    @media (max-width: 768px) { .sh { padding: 0 1rem; } .sh-links { display: none !important; } .sh-burger { display: flex !important; } }
   </style>
 </head>
 <body>
@@ -104,11 +100,11 @@
         <a href="/chi-siamo">👥 Chi Siamo</a>
         <div class="sh-lang">
           <select id="langSelect" aria-label="Lingua">
-            <option value="it">🇮🇹 IT</option>
-            <option value="en">🇬🇧 EN</option>
-            <option value="es">🇪🇸 ES</option>
-            <option value="de">🇩🇪 DE</option>
-            <option value="fr">🇫🇷 FR</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="fr">🇫🇷 Français</option>
           </select>
         </div>
       </nav>
@@ -130,17 +126,8 @@
     </div>
   </div>
   <script>
-    function toggleShDrawer() {
-      var d = document.getElementById('shDrawer');
-      var b = document.getElementById('shBurger');
-      var open = d.style.display === 'block';
-      d.style.display = open ? 'none' : 'block';
-      b.setAttribute('aria-expanded', open ? 'false' : 'true');
-    }
-    function closeShDrawer() {
-      document.getElementById('shDrawer').style.display = 'none';
-      document.getElementById('shBurger').setAttribute('aria-expanded', 'false');
-    }
+    function toggleShDrawer(){var d=document.getElementById("shDrawer"),b=document.getElementById("shBurger"),o=d.style.display==="block";d.style.display=o?"none":"block";b.setAttribute("aria-expanded",o?"false":"true");}
+    function closeShDrawer(){document.getElementById("shDrawer").style.display="none";document.getElementById("shBurger").setAttribute("aria-expanded","false");}
   </script>
 
   <main role="main">
@@ -4268,7 +4255,7 @@
         <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
         <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
         <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
-        <a href="/chi-siamo#contatti" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
+        <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
       </nav>
     </div>
   </footer>
