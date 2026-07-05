@@ -130,13 +130,16 @@
       <p>JobRiskAI traduce questi dati in strumenti concreti e gratuiti: un calcolatore di rischio per professione, una classifica comparativa e un analizzatore di CV che restituisce un punteggio personale di esposizione all'automazione.</p>
 
       <h2>Metodologia di calcolo</h2>
-      <p>Il punteggio di rischio (0–100) assegnato a ciascuna professione è calcolato su tre dimensioni principali:</p>
+      <p>Il punteggio di rischio (0–100) è il risultato di un modello quantitativo con <strong>cinque dimensioni</strong> e pesi espliciti, ispirato al framework Frey &amp; Osborne (Oxford Martin School) e alle estensioni OECD e McKinsey, adattato al contesto italiano con dati ISTAT ed Eurostat.</p>
       <ul>
-        <li><strong>Automabilità dei task</strong> — percentuale dei compiti lavorativi tipici della professione che un sistema AI può già eseguire con performance paragonabile o superiore all'umano, basata su framework come O*NET (US Dept. of Labor) e studi Oxford Martin School.</li>
-        <li><strong>Rapporto costo umano / costo AI</strong> — confronto tra il costo annuo di un lavoratore tipico (stipendio + oneri) e il costo mensile di soluzioni AI SaaS equivalenti (moltiplicato per 12). Un rapporto elevato accelera il rischio economico di sostituzione.</li>
-        <li><strong>Velocità di adozione nel settore</strong> — indice settoriale che pesa la maturità delle soluzioni AI disponibili per quel dominio e la velocità di adozione storica nel comparto.</li>
+        <li><strong>D1 — Ripetitività dei task</strong> (peso 30%) — quota di compiti strutturati e codificabili nel ruolo. <em>Aumenta il rischio.</em></li>
+        <li><strong>D2 — Giudizio richiesto</strong> (peso 25%) — grado di valutazione critica, decisioni ad alto impatto e responsabilità legale/etica individuale. <em>Riduce il rischio.</em></li>
+        <li><strong>D3 — Dipendenza interpersonale</strong> (peso 20%) — intensità di interazioni non standardizzate: negoziazione, empatia, cura fisica, leadership. <em>Riduce il rischio.</em></li>
+        <li><strong>D4 — Specializzazione di dominio</strong> (peso 15%) — profondità dell'expertise verticale e requisiti normativi o abilitativi specifici del settore. <em>Riduce il rischio.</em></li>
+        <li><strong>D5 — Disponibilità di tool AI</strong> (peso 10%) — maturità commerciale degli strumenti AI già disponibili per automatizzare i task centrali del ruolo. <em>Aumenta il rischio.</em></li>
       </ul>
-      <p>L'<strong>anno critico</strong> — il momento stimato in cui la sostituzione diventa economicamente conveniente per la maggioranza delle aziende — è calcolato combinando il punteggio di rischio con il ritmo corrente di miglioramento dei modelli AI e un fattore paese (indice di adozione AI locale).</p>
+      <p>Le dimensioni D2, D3 e D4 sono fattori protettivi e vengono invertite nella somma ponderata finale. L'<strong>anno critico</strong> è derivato dal punteggio di rischio combinato con il ritmo di miglioramento dei modelli AI e i dati di adozione settoriale.</p>
+      <p><a href="/metodologia" style="color:#4f46e5;font-weight:600;">Leggi la metodologia completa con formula e esempio numerico →</a></p>
 
       <h2>Fonti e riferimenti</h2>
       <ul class="source-list">
