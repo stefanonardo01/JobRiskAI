@@ -383,11 +383,16 @@
         <option value="fr">🇫🇷 FR</option>
       </select>
       <!-- Hamburger — solo mobile -->
-      <button id="mobileMenuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-full hover:bg-[var(--sand-lt)] transition-colors" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()">
-        <span class="block w-5 h-0.5 bg-[var(--ink-1)] mb-1 transition-all" id="hbLine1"></span>
-        <span class="block w-5 h-0.5 bg-[var(--ink-1)] mb-1 transition-all" id="hbLine2"></span>
-        <span class="block w-5 h-0.5 bg-[var(--ink-1)] transition-all" id="hbLine3"></span>
+      <button id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu()" style="display:none; flex-direction:column; justify-content:center; align-items:center; width:40px; height:40px; border:none; background:transparent; cursor:pointer; border-radius:50%; padding:0; flex-shrink:0;">
+        <span style="display:block; width:20px; height:2px; background:var(--ink-1,#1a1a2e); margin-bottom:5px; border-radius:2px;"></span>
+        <span style="display:block; width:20px; height:2px; background:var(--ink-1,#1a1a2e); margin-bottom:5px; border-radius:2px;"></span>
+        <span style="display:block; width:20px; height:2px; background:var(--ink-1,#1a1a2e); border-radius:2px;"></span>
       </button>
+      <style>
+        @media (max-width: 767px) {
+          #mobileMenuBtn { display: flex !important; }
+        }
+      </style>
     </div>
   </div>
   <!-- Mobile menu dropdown -->
