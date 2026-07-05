@@ -105,6 +105,14 @@
         },
         {
           "@type": "Question",
+          "name": "I risultati dell'analisi vengono usati per migliorare il modello di scoring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Non raccogliamo né conserviamo alcun dato aggregato derivato dall'analisi CV — né punteggi, né settori, né competenze rilevate, nemmeno in forma anonima. I risultati vengono usati esclusivamente per mostrare la risposta all'utente nella sessione corrente. Il modello di scoring delle 235 professioni è aggiornato manualmente sulla base di ricerca pubblica, non dai dati degli utenti."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Quali formati di CV sono accettati?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -651,6 +659,55 @@
 
         </div>
     </main>
+
+    <!-- FAQ Privacy visibile -->
+    <section aria-label="Domande sulla privacy" style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:3rem 1.5rem;">
+      <div style="max-width:700px;margin:0 auto;">
+        <h2 style="font-size:1.15rem;font-weight:700;color:#0f172a;margin:0 0 1.5rem;text-align:center;">🔒 Privacy &amp; dati — domande frequenti</h2>
+
+        <details style="border:1px solid #e2e8f0;border-radius:12px;background:white;margin-bottom:0.75rem;overflow:hidden;">
+          <summary style="padding:1rem 1.25rem;cursor:pointer;font-weight:600;font-size:0.92rem;color:#0f172a;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:0.5rem;">
+            Il mio CV viene salvato sui vostri server?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0;transition:transform 0.2s;"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div style="padding:0 1.25rem 1rem;font-size:0.88rem;color:#475569;line-height:1.65;border-top:1px solid #f1f5f9;">
+            No. Il file PDF rimane nel tuo browser: il testo viene estratto localmente tramite PDF.js, senza essere inviato ai nostri server. Solo il testo estratto viene trasmesso all'API Google Gemini per produrre l'analisi, e nemmeno questo testo viene da noi archiviato. Ogni sessione è stateless e completamente anonima.
+          </div>
+        </details>
+
+        <details style="border:1px solid #e2e8f0;border-radius:12px;background:white;margin-bottom:0.75rem;overflow:hidden;">
+          <summary style="padding:1rem 1.25rem;cursor:pointer;font-weight:600;font-size:0.92rem;color:#0f172a;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:0.5rem;">
+            I risultati dell'analisi vengono usati per addestrare o migliorare il modello?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0;transition:transform 0.2s;"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div style="padding:0 1.25rem 1rem;font-size:0.88rem;color:#475569;line-height:1.65;border-top:1px solid #f1f5f9;">
+            <strong style="color:#166534;">No. Non raccogliamo né conserviamo alcun dato aggregato dall'analisi CV.</strong> Non registriamo punteggi, settori professionali, competenze rilevate, né alcuna altra metrica — nemmeno in forma anonima. I risultati esistono solo nella tua sessione corrente e scompaiono alla chiusura della pagina.
+            <br><br>
+            Il modello di scoring delle 235 professioni sul sito si basa su ricerca pubblica e dati di mercato del lavoro, aggiornati manualmente: non viene modificato dai dati degli utenti. Se in futuro dovessimo cambiare questa politica, aggiorneremo l'informativa con congruo preavviso. → <a href="/privacy-policy#cv-dati-aggregati" style="color:#6366f1;font-weight:600;">Leggi la sezione completa nella Privacy Policy</a>
+          </div>
+        </details>
+
+        <details style="border:1px solid #e2e8f0;border-radius:12px;background:white;margin-bottom:0.75rem;overflow:hidden;">
+          <summary style="padding:1rem 1.25rem;cursor:pointer;font-weight:600;font-size:0.92rem;color:#0f172a;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:0.5rem;">
+            Google Gemini vede il contenuto del mio CV?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0;transition:transform 0.2s;"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div style="padding:0 1.25rem 1rem;font-size:0.88rem;color:#475569;line-height:1.65;border-top:1px solid #f1f5f9;">
+            Sì: il testo del CV viene inviato alle API di Google Gemini per eseguire l'analisi. Google gestisce questi dati secondo le proprie politiche (<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener" style="color:#6366f1;">Google Gemini API Terms</a>). Noi non riceviamo né archiviamo i dati che Google elabora internamente. Se preferisci non condividere dati sensibili, ti consigliamo di anonimizzare nome, cognome e recapiti nel PDF prima di caricarlo.
+          </div>
+        </details>
+
+        <details style="border:1px solid #e2e8f0;border-radius:12px;background:white;overflow:hidden;">
+          <summary style="padding:1rem 1.25rem;cursor:pointer;font-weight:600;font-size:0.92rem;color:#0f172a;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:0.5rem;">
+            Quali formati sono accettati?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round" style="flex-shrink:0;transition:transform 0.2s;"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div style="padding:0 1.25rem 1rem;font-size:0.88rem;color:#475569;line-height:1.65;border-top:1px solid #f1f5f9;">
+            Solo PDF (max 10 MB, fino a 10 pagine) con testo selezionabile. I CV scansionati come immagine senza OCR non possono essere analizzati. Per i migliori risultati, usa un CV con almeno 200 parole di testo.
+          </div>
+        </details>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>

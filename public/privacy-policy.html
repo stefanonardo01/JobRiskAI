@@ -144,6 +144,18 @@
         </tbody>
       </table>
 
+      <h2 id="cv-dati-aggregati">2b. CV Analyzer — dati aggregati e miglioramento del modello</h2>
+      <p>Questa sezione risponde a una domanda che ci viene posta frequentemente: <strong>i risultati dell'analisi CV vengono usati per addestrare o migliorare il modello di scoring di JobRiskAI?</strong></p>
+      <p><strong>No. Non raccogliamo né conserviamo alcun dato aggregato derivato dall'analisi CV.</strong> Nello specifico:</p>
+      <ul>
+        <li>Il testo del CV viene estratto localmente nel browser tramite PDF.js e non viene mai scritto su un nostro server.</li>
+        <li>Il testo estratto viene inviato alle API di Google Gemini esclusivamente per produrre il risultato della singola sessione. Non viene archiviato, indicizzato o associato ad alcun identificatore utente dalla nostra parte.</li>
+        <li>Non registriamo i punteggi restituiti, le competenze rilevate, i settori professionali analizzati, né alcuna altra metrica derivata dall'analisi — nemmeno in forma anonima o aggregata.</li>
+        <li>Non utilizziamo i risultati dell'analisi per aggiornare, affinare o riaddestrare il modello di scoring delle 235 professioni presente sul sito. Quel modello si basa su ricerca pubblica e dati di mercato del lavoro, aggiornati manualmente.</li>
+        <li>Le API di Google Gemini sono soggette alle proprie politiche sulla privacy (<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google Gemini API Terms</a>). Consulta tali politiche per sapere come Google gestisce i dati trasmessi alle proprie API.</li>
+      </ul>
+      <p>Se in futuro dovessimo introdurre qualsiasi forma di raccolta — anche anonima e aggregata — di dati derivati dall'analisi CV, aggiorneremo questa informativa con congruo preavviso e, ove richiesto dal GDPR, chiederemo il tuo consenso esplicito.</p>
+
       <h2>3. Cookie</h2>
       <p>Utilizziamo le seguenti categorie di cookie:</p>
       <ul>
