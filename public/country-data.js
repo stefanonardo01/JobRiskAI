@@ -385,3 +385,32 @@ export function adjustTargetYear(baseYear, countryCode) {
     const c = getCountry(countryCode);
     return baseYear + c.criticalYearOffset;
 }
+
+// ── Valute disponibili per il selettore di visualizzazione ───────────────
+// rateFromEUR: quante unità di questa valuta corrispondono a 1 EUR
+// (tassi approssimativi medi 2024-2025)
+export const CURRENCIES = [
+    { code: 'EUR', symbol: '€', label: 'Euro',            position: 'before', rateFromEUR: 1.00 },
+    { code: 'USD', symbol: '$', label: 'US Dollar',       position: 'before', rateFromEUR: 1.08 },
+    { code: 'GBP', symbol: '£', label: 'British Pound',   position: 'before', rateFromEUR: 0.86 },
+    { code: 'CHF', symbol: 'CHF', label: 'Swiss Franc',   position: 'after',  rateFromEUR: 0.96 },
+    { code: 'CAD', symbol: 'C$', label: 'Canadian Dollar',position: 'before', rateFromEUR: 1.47 },
+    { code: 'AUD', symbol: 'A$', label: 'Australian Dollar',position:'before', rateFromEUR: 1.65 },
+    { code: 'JPY', symbol: '¥',  label: 'Japanese Yen',   position: 'before', rateFromEUR: 162  },
+    { code: 'INR', symbol: '₹',  label: 'Indian Rupee',   position: 'before', rateFromEUR: 90   },
+    { code: 'BRL', symbol: 'R$', label: 'Brazilian Real', position: 'before', rateFromEUR: 5.90 },
+    { code: 'AED', symbol: 'AED',label: 'UAE Dirham',     position: 'after',  rateFromEUR: 3.97 },
+    { code: 'SGD', symbol: 'S$', label: 'Singapore Dollar',position:'before', rateFromEUR: 1.46 },
+    { code: 'PLN', symbol: 'zł', label: 'Polish Zloty',   position: 'after',  rateFromEUR: 4.30 },
+];
+
+// Tasso di cambio del paese verso EUR (1 unità locale = X EUR)
+// Usato per convertire i valori già scalati in valuta locale → EUR → display currency
+export const COUNTRY_EUR_RATES = {
+    it: 1.00, de: 1.00, fr: 1.00, es: 1.00, pt: 1.00, nl: 1.00, be: 1.00,
+    at: 1.00, gr: 1.00, ie: 1.00, fi: 1.00, sk: 1.00,
+    pl: 1/4.30, ro: 1/4.97, cz: 1/25.3,
+    gb: 1/0.86, ch: 1/0.96, se: 1/11.3, dk: 1/7.46, no: 1/11.5,
+    us: 1/1.08, ca: 1/1.47, mx: 1/19.0, br: 1/5.90,
+    au: 1/1.65, sg: 1/1.46, jp: 1/162, in: 1/90, ae: 1/3.97,
+};

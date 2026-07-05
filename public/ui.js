@@ -6,7 +6,7 @@ import { translations, jobTranslations } from './translations.js';
 import { jobExtra, jobData }             from './jobs.js';
 import { computeMetrics, getRiskLevel, getRiskIcon } from './calculator.js';
 import { applyJobCount }                from './job-count.js';
-import { COUNTRIES, getCountry, scaleSalary, adjustTargetYear } from './country-data.js';
+import { COUNTRIES, getCountry, scaleSalary, adjustTargetYear, CURRENCIES, COUNTRY_EUR_RATES } from './country-data.js';
 
 // ── Stato globale del modulo ──────────────────────────────
 let currentJob  = 'developer';
@@ -42,11 +42,25 @@ function fmt(lang) { return LOCALE_MAP[lang] || 'it-IT'; }
 
 // Valuta corrente — aggiornata da selectCountry()
 let currentCurrency = getCountry(currentCountry).currency;
+// Valuta di visualizzazione — override opzionale del selettore valuta
+let displayCurrency = null; // null = usa valuta del paese
+
 function fmtCurrency(value, numFmt) {
-    const n = Math.round(value).toLocaleString(numFmt);
-    return currentCurrency.position === 'before'
-        ? currentCurrency.symbol + n
-        : n + ' ' + currentCurrency.symbol;
+    let displayValue = value;
+    let cur = currentCurrency;
+
+    if (displayCurrency && displayCurrency.code !== currentCurrency.code) {
+        // Converti: valore locale → EUR → valuta display
+        const toEurRate = COUNTRY_EUR_RATES[currentCountry] ?? 1;
+        const fromEurRate = displayCurrency.rateFromEUR;
+        displayValue = value * toEurRate * fromEurRate;
+        cur = displayCurrency;
+    }
+
+    const n = Math.round(displayValue).toLocaleString(numFmt);
+    return cur.position === 'before'
+        ? cur.symbol + n
+        : n + ' ' + cur.symbol;
 }
 
 // ── Render: schede job ────────────────────────────────────
@@ -422,6 +436,19 @@ if (countrySelect) {
     countrySelect.value = currentCountry;
     countrySelect.addEventListener('change', function () {
         selectCountry(this.value);
+        // Resetta display currency alla valuta nativa del nuovo paese
+        displayCurrency = null;
+        const currSel = document.getElementById('currencySelect');
+        if (currSel) currSel.value = '';
+    });
+}
+
+const currencySelect = document.getElementById('currencySelect');
+if (currencySelect) {
+    currencySelect.addEventListener('change', function () {
+        const code = this.value;
+        displayCurrency = code ? (CURRENCIES.find(c => c.code === code) ?? null) : null;
+        calculateAll();
     });
 }
 
