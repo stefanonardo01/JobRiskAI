@@ -1145,18 +1145,50 @@
         white-space: nowrap;
     }
 
-    /* Job card grid: 2 colonne su mobile */
+    /* Job card: lista verticale su mobile */
     .job-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 0.6rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.4rem !important;
     }
 
     .job-card {
-        padding: 0.9rem 0.6rem;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        text-align: left !important;
+        padding: 0.6rem 0.85rem !important;
+        gap: 0.75rem;
+        min-height: 48px;
     }
 
-    .job-card-icon { font-size: 1.5rem; margin-bottom: 0.35rem; }
-    .job-card-title { font-size: 0.82rem; }
+    .job-card-icon {
+        font-size: 1.3rem !important;
+        margin-bottom: 0 !important;
+        flex-shrink: 0;
+        width: 1.6rem;
+        text-align: center;
+    }
+
+    .job-card-title {
+        font-size: 0.88rem !important;
+        flex: 1;
+        margin-bottom: 0 !important;
+    }
+
+    .job-card-status {
+        font-size: 0.7rem !important;
+        flex-shrink: 0;
+    }
+
+    .job-card.active::before {
+        content: '✓' !important;
+        display: inline !important;
+        font-size: 0.9rem !important;
+        margin-bottom: 0 !important;
+        margin-right: 0.4rem;
+        flex-shrink: 0;
+    }
 
     /* Comparison table: scroll orizzontale */
     .comparison-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
