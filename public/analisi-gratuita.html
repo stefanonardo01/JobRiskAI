@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied', 'analytics_storage': 'denied',
+      'ad_user_data': 'denied', 'ad_personalization': 'denied', 'wait_for_update': 2000
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJT8W9JTQ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNJT8W9JTQ');</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisi AI Gratuita — Fino a 5 Ruoli Aziendali | JobRiskAI</title>
+  <meta name="description" content="Carica un CSV o inserisci fino a 5 ruoli della tua azienda. Ricevi punteggio di rischio AI, risparmio stimato e priorità di intervento — gratuito, senza registrazione.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.jobriskai.it/analisi-gratuita">
+  <meta property="og:title" content="Analisi AI Gratuita per Aziende — 5 Ruoli | JobRiskAI">
+  <meta property="og:description" content="Inserisci i titoli dei ruoli del tuo team e scopri in 30 secondi il rischio AI, il risparmio stimato e la priorità di intervento.">
+  <meta property="og:url" content="https://www.jobriskai.it/analisi-gratuita">
+  <meta property="og:image" content="https://www.jobriskai.it/og-image.png">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9ff; color: #0f172a; line-height: 1.6; }
+
+    /* ── Nav ── */
+    .sh { background: rgba(255,255,255,0.95); border-bottom: 1px solid #e2e8f0; padding: 0 2rem; position: sticky; top: 0; z-index: 200; backdrop-filter: blur(14px); height: 60px; display: flex; align-items: center; }
+    .sh-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .sh-links { display: flex; align-items: center; gap: 0.4rem; }
+    .sh-links a { display: inline-flex; align-items: center; gap: 0.35rem; color: #6366f1; text-decoration: none; font-weight: 600; font-size: 0.82rem; background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 0.5rem 0.8rem; white-space: nowrap; min-height: 44px; transition: background 0.15s; }
+    .sh-links a:hover { background: rgba(99,102,241,0.14); }
+    .sh-links a.sh-cta { background: linear-gradient(135deg,#6366f1,#4338ca); color: white; border-color: #6366f1; }
+    .sh-links a.sh-cta:hover { opacity: 0.9; }
+    .sh-burger { display: none; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; border-radius: 8px; flex-shrink: 0; }
+    .sh-burger span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; margin: 3px 0; }
+    .sh-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 199; }
+    .sh-drawer-inner { background: white; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
+    .sh-drawer-inner a { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; border-radius: 10px; color: #374151; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: background 0.15s; min-height: 48px; }
+    .sh-drawer-inner a:hover { background: #f3f4f6; }
+    .sh-drawer-inner a.sh-cta { background: #6366f1; color: white; margin-top: 0.5rem; }
+    @media (max-width: 768px) { .sh { padding: 0 1rem; } .sh-links { display: none; } .sh-burger { display: flex; } }
+
+    /* ── Hero ── */
+    .hero { padding: 4rem 2rem 3rem; background: linear-gradient(160deg, #eef2ff 0%, #f8f9ff 55%, #eff6ff 100%); text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content:''; position:absolute; top:-80px; left:50%; transform:translateX(-50%); width:700px; height:600px; background:radial-gradient(circle,rgba(99,102,241,0.08) 0%,transparent 70%); pointer-events:none; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; color: #6366f1; background: #eef2ff; border: 1.5px solid rgba(99,102,241,0.3); border-radius: 999px; padding: 0.3rem 1rem; margin-bottom: 1.25rem; }
+    .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4.5vw, 2.9rem); font-weight: 700; line-height: 1.2; color: #0f172a; margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+    .hero h1 em { font-style: normal; color: #6366f1; }
+    .hero-sub { font-size: 1.05rem; color: #475569; max-width: 560px; margin: 0 auto 2rem; line-height: 1.75; }
+    .hero-pills { display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .hero-pill { display: inline-flex; align-items: center; gap: 0.4rem; background: white; border: 1.5px solid #e2e8f0; border-radius: 999px; padding: 0.45rem 1rem; font-size: 0.83rem; font-weight: 600; color: #475569; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+
+    /* ── Steps bar ── */
+    .steps-bar { display: flex; justify-content: center; gap: 0; margin-bottom: 2.5rem; flex-wrap: nowrap; }
+    .step-pill { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.3rem; background: white; border: 1.5px solid #e2e8f0; font-size: 0.82rem; font-weight: 600; color: #94a3b8; transition: all 0.2s; }
+    .step-pill:first-child { border-radius: 999px 0 0 999px; border-right: none; }
+    .step-pill:not(:first-child):not(:last-child) { border-right: none; }
+    .step-pill:last-child { border-radius: 0 999px 999px 0; }
+    .step-pill.active { background: #6366f1; border-color: #6366f1; color: white; }
+    .step-pill.done { background: #dcfce7; border-color: #86efac; color: #166534; }
+    .step-num { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.25); font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-pill:not(.active) .step-num { background: #f1f5f9; color: #64748b; }
+    .step-pill.done .step-num { background: rgba(255,255,255,0.5); color: #166534; }
+
+    /* ── Main card ── */
+    .main-card { background: white; border: 1.5px solid #e2e8f0; border-radius: 20px; box-shadow: 0 8px 40px rgba(0,0,0,0.07); overflow: hidden; }
+    .card-tabs { display: flex; border-bottom: 1.5px solid #e2e8f0; }
+    .card-tab { flex: 1; padding: 1rem; font-size: 0.9rem; font-weight: 600; color: #64748b; background: #f8f9ff; border: none; cursor: pointer; transition: all 0.15s; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .card-tab:first-child { border-right: 1px solid #e2e8f0; }
+    .card-tab.active { background: white; color: #6366f1; box-shadow: inset 0 -2px 0 #6366f1; }
+    .card-tab:hover:not(.active) { background: #f0f4ff; color: #6366f1; }
+    .card-body { padding: 2rem; }
+
+    /* ── Manual entry ── */
+    .entry-header { display: grid; grid-template-columns: 28px 1fr 190px; gap: 0.75rem; align-items: center; margin-bottom: 0.6rem; padding: 0 0.25rem; }
+    .entry-header span { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #94a3b8; }
+    .entry-row { display: grid; grid-template-columns: 28px 1fr 190px; gap: 0.75rem; align-items: center; margin-bottom: 0.65rem; }
+    .entry-num { width: 28px; height: 28px; border-radius: 50%; background: #f0f4ff; color: #6366f1; font-size: 0.78rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .entry-input { padding: 0.65rem 0.9rem; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 0.88rem; font-family: 'Inter', sans-serif; color: #0f172a; outline: none; width: 100%; transition: border-color 0.15s, box-shadow 0.15s; }
+    .entry-input:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99,102,241,0.12); }
+    .entry-input.err { border-color: #ef4444; }
+    .entry-input::placeholder { color: #c7d2fe; }
+
+    /* ── CSV drop zone ── */
+    .drop-zone { border: 2px dashed #c7d2fe; border-radius: 16px; padding: 2.5rem 2rem; text-align: center; cursor: pointer; transition: all 0.2s; background: #f8f9ff; }
+    .drop-zone:hover, .drop-zone.drag-over { border-color: #6366f1; background: #eef2ff; }
+    .dz-icon { font-size: 2.5rem; margin-bottom: 0.6rem; }
+    .drop-zone h3 { font-size: 1rem; font-weight: 700; color: #0f172a; margin-bottom: 0.35rem; }
+    .drop-zone p { font-size: 0.85rem; color: #64748b; margin-bottom: 1rem; }
+    .dz-btn { display: inline-flex; align-items: center; gap: 0.4rem; background: #6366f1; color: white; font-weight: 700; font-size: 0.85rem; padding: 0.55rem 1.25rem; border-radius: 999px; border: none; cursor: pointer; transition: opacity 0.15s; }
+    .dz-btn:hover { opacity: 0.88; }
+    .csv-help { margin-top: 1.25rem; background: #f8f9ff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 0.9rem 1.1rem; text-align: left; }
+    .csv-help summary { font-size: 0.82rem; font-weight: 600; color: #6366f1; cursor: pointer; user-select: none; }
+    .csv-help pre { font-size: 0.76rem; color: #475569; margin-top: 0.6rem; line-height: 1.7; font-family: 'Courier New', monospace; white-space: pre-wrap; }
+    .csv-preview { margin-top: 1.25rem; }
+    .csv-preview-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+    .csv-preview-head span { font-size: 0.82rem; font-weight: 700; color: #0f172a; }
+    .csv-clear { font-size: 0.78rem; color: #ef4444; cursor: pointer; background: none; border: none; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 6px; }
+    .csv-clear:hover { background: #fee2e2; }
+    .csv-chip { display: inline-flex; align-items: center; gap: 0.35rem; background: #dcfce7; color: #166534; font-size: 0.76rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 999px; margin: 0.2rem 0.15rem; }
+    .csv-chip.warn { background: #fef9c3; color: #854d0e; }
+
+    /* ── Actions bar ── */
+    .actions-bar { padding: 1.25rem 2rem; border-top: 1.5px solid #e2e8f0; background: #f8f9ff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .limit-info { display: flex; align-items: center; gap: 0.6rem; }
+    .limit-bar { width: 72px; height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
+    .limit-fill { height: 100%; border-radius: 3px; background: #6366f1; transition: width 0.3s; }
+    .limit-text { font-size: 0.78rem; color: #64748b; font-weight: 600; }
+    .limit-plan { font-size: 0.72rem; color: #94a3b8; background: #f1f5f9; border-radius: 999px; padding: 0.1rem 0.5rem; }
+    .btn-analyze { display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #6366f1, #4338ca); color: white; font-weight: 700; font-size: 0.95rem; padding: 0.8rem 2rem; border-radius: 999px; border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(99,102,241,0.3); transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s; }
+    .btn-analyze:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 6px 22px rgba(99,102,241,0.4); }
+    .btn-analyze:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    /* ── Error box ── */
+    .err-box { display: none; background: #fee2e2; border: 1px solid #fecaca; border-radius: 10px; padding: 0.8rem 1rem; font-size: 0.84rem; color: #991b1b; margin-top: 1rem; gap: 0.5rem; align-items: flex-start; }
+    .err-box.show { display: flex; }
+    .err-box::before { content: '⚠'; flex-shrink: 0; }
+
+    /* ── Processing ── */
+    #processingPanel { display: none; text-align: center; padding: 3.5rem 2rem; }
+    #processingPanel.show { display: block; }
+    .proc-spinner { width: 48px; height: 48px; border: 4px solid #e2e8f0; border-top-color: #6366f1; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 1.5rem; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .proc-title { font-size: 1.05rem; font-weight: 700; color: #0f172a; margin-bottom: 1.25rem; }
+    .proc-step { font-size: 0.88rem; color: #475569; margin-top: 0.5rem; transition: opacity 0.3s, color 0.3s; }
+    .proc-step.dim { opacity: 0.3; }
+    .proc-step.ok { color: #16a34a; font-weight: 600; opacity: 1; }
+
+    /* ── Results ── */
+    #resultsSection { display: none; }
+    #resultsSection.show { display: block; }
+    .results-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+    .results-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: #0f172a; }
+    .results-meta { font-size: 0.82rem; color: #94a3b8; margin-top: 0.2rem; }
+    .results-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-reset { display: inline-flex; align-items: center; gap: 0.4rem; background: #f1f5f9; color: #475569; font-weight: 600; font-size: 0.85rem; padding: 0.6rem 1.2rem; border-radius: 999px; border: 1.5px solid #e2e8f0; cursor: pointer; transition: background 0.15s; }
+    .btn-reset:hover { background: #e2e8f0; }
+    .btn-pdf { display: inline-flex; align-items: center; gap: 0.4rem; background: white; color: #6366f1; font-weight: 700; font-size: 0.85rem; padding: 0.6rem 1.25rem; border-radius: 999px; border: 2px solid #6366f1; cursor: pointer; transition: background 0.15s; }
+    .btn-pdf:hover { background: #eef2ff; }
+
+    /* ── Summary cards ── */
+    .summary-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .sc { background: white; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 1.25rem; text-align: center; }
+    .sc-val { font-family: 'Space Grotesk', sans-serif; font-size: 1.85rem; font-weight: 700; line-height: 1; margin-bottom: 0.35rem; }
+    .sc-label { font-size: 0.76rem; color: #64748b; line-height: 1.3; }
+
+    /* ── Results table ── */
+    .tbl-wrap { background: white; border: 1.5px solid #e2e8f0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table.rtbl { width: 100%; border-collapse: collapse; font-size: 0.87rem; min-width: 700px; }
+    table.rtbl thead { background: #f8f9ff; }
+    table.rtbl th { padding: 0.85rem 1rem; text-align: left; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #94a3b8; border-bottom: 1.5px solid #e2e8f0; white-space: nowrap; }
+    table.rtbl td { padding: 1rem; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+    table.rtbl tbody tr:last-child td { border-bottom: none; }
+    table.rtbl tbody tr:hover td { background: #fafbff; }
+    .risk-wrap { display: flex; align-items: center; gap: 0.6rem; }
+    .risk-bar { flex: 1; max-width: 70px; height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
+    .risk-fill { height: 100%; border-radius: 3px; }
+    .rf-high { background: linear-gradient(90deg,#f97316,#dc2626); }
+    .rf-mid  { background: linear-gradient(90deg,#fbbf24,#f97316); }
+    .rf-low  { background: linear-gradient(90deg,#86efac,#22c55e); }
+    .rp-high { color: #dc2626; font-weight: 700; }
+    .rp-mid  { color: #d97706; font-weight: 700; }
+    .rp-low  { color: #16a34a; font-weight: 700; }
+    .urg-badge { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 999px; }
+    .ub-high { background: #fee2e2; color: #991b1b; }
+    .ub-mid  { background: #fef9c3; color: #854d0e; }
+    .ub-low  { background: #dcfce7; color: #166534; }
+    .match-sub { font-size: 0.72rem; margin-top: 0.18rem; }
+    .ms-exact  { color: #16a34a; }
+    .ms-good   { color: #22c55e; }
+    .ms-approx { color: #d97706; }
+    .ms-generic { color: #94a3b8; font-style: italic; }
+    .green-bold { color: #16a34a; font-weight: 700; }
+    .expand-btn { background: none; border: 1px solid #e0e7ff; color: #6366f1; font-size: 0.75rem; font-weight: 600; cursor: pointer; padding: 0.25rem 0.6rem; border-radius: 6px; white-space: nowrap; transition: background 0.15s; }
+    .expand-btn:hover { background: #eef2ff; }
+    .detail-row { display: none; }
+    .detail-row.open { display: table-row; }
+    .detail-row td { background: #f8f9ff; padding: 0.8rem 1rem 1rem 3.5rem; }
+    .detail-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #94a3b8; margin-bottom: 0.6rem; }
+    .survival-list { display: flex; flex-direction: column; gap: 0.4rem; }
+    .survival-item { font-size: 0.82rem; color: #475569; display: flex; gap: 0.5rem; line-height: 1.5; }
+    .survival-item::before { content: '→'; color: #6366f1; font-weight: 700; flex-shrink: 0; margin-top: 0.05rem; }
+
+    /* ── Disclaimer ── */
+    .disclaimer { font-size: 0.74rem; color: #94a3b8; margin-top: 1rem; text-align: center; line-height: 1.6; }
+    .disclaimer a { color: #6366f1; }
+
+    /* ── Upsell ── */
+    .upsell { background: linear-gradient(135deg, #1e1b4b, #312e81); border-radius: 20px; padding: 2.5rem; color: white; text-align: center; }
+    .upsell h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .upsell p { color: rgba(255,255,255,0.75); font-size: 0.95rem; max-width: 500px; margin: 0 auto 1.75rem; line-height: 1.7; }
+    .upsell-feats { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-bottom: 2rem; }
+    .upsell-feat { display: inline-flex; align-items: center; gap: 0.35rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.82rem; font-weight: 600; }
+    .btn-upsell { display: inline-flex; align-items: center; gap: 0.5rem; background: white; color: #4338ca; font-weight: 700; font-size: 1rem; padding: 0.9rem 2.2rem; border-radius: 999px; text-decoration: none; transition: transform 0.15s; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    .btn-upsell:hover { transform: translateY(-2px); }
+
+    /* ── Footer ── */
+    footer { background: white; border-top: 1px solid #e2e8f0; padding: 1.75rem 2rem; font-size: 0.82rem; margin-top: 4rem; }
+    .footer-inner { max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+    .footer-links a { color: #6b7280; text-decoration: none; }
+    .footer-links a:hover { color: #6366f1; }
+
+    /* ── Print ── */
+    @media print {
+      .sh, .sh-drawer, .hero, .steps-section, #inputSection, #processingPanel, .upsell-section, footer,
+      .results-btns, .expand-btn, .detail-row, .disclaimer { display: none !important; }
+      body { background: white; font-size: 11pt; }
+      #resultsSection { display: block !important; padding: 0; }
+      .summary-cards { break-inside: avoid; }
+      .tbl-wrap { box-shadow: none; border: 1px solid #ccc; overflow: visible; }
+      table.rtbl { min-width: auto; }
+      .print-only { display: block !important; }
+      table.rtbl tbody tr:hover td { background: transparent; }
+    }
+    .print-only { display: none; }
+    .print-only h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .print-only p { font-size: 0.82rem; color: #64748b; }
+    .print-only hr { border: none; border-top: 1px solid #e2e8f0; margin: 1rem 0; }
+
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      .card-body { padding: 1.25rem; }
+      .entry-header { display: none; }
+      .entry-row { grid-template-columns: 28px 1fr; row-gap: 0.4rem; }
+      .entry-row .sal-input { grid-column: 2; }
+      .actions-bar { padding: 1rem; flex-direction: column; align-items: stretch; }
+      .btn-analyze { justify-content: center; }
+      .limit-info { justify-content: center; }
+      .steps-bar { display: none; }
+      table.rtbl th:nth-child(4), table.rtbl td:nth-child(4),
+      table.rtbl th:nth-child(5), table.rtbl td:nth-child(5),
+      table.rtbl th:nth-child(6), table.rtbl td:nth-child(6) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ── -->
+<header class="sh" role="banner">
+  <div class="sh-inner">
+    <a href="/" aria-label="JobRiskAI Home" style="display:inline-block;line-height:0;flex-shrink:0;">
+      <img src="/logo.png" alt="JobRiskAI" style="height:34px;width:auto;display:block;">
+    </a>
+    <nav class="sh-links" aria-label="Navigazione principale">
+      <a href="/">🏠 Home</a>
+      <a href="/calcolatore">🎯 Calcolatore</a>
+      <a href="/classifica">📊 Classifica</a>
+      <a href="/cv-analyzer">📄 Analisi CV</a>
+      <a href="/aziende">🏢 Aziende</a>
+      <a href="/blog">📖 Blog</a>
+      <a href="/chi-siamo">👥 Chi Siamo</a>
+      <a href="/aziende#calcola" class="sh-cta">Piano Business →</a>
+    </nav>
+    <button class="sh-burger" aria-label="Apri menu" aria-expanded="false" onclick="toggleShDrawer()" id="shBurger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="sh-drawer" id="shDrawer" onclick="closeShDrawer()">
+  <div class="sh-drawer-inner" onclick="event.stopPropagation()">
+    <a href="/">🏠 Home</a>
+    <a href="/calcolatore">🎯 Calcolatore</a>
+    <a href="/classifica">📊 Classifica</a>
+    <a href="/cv-analyzer">📄 Analisi CV</a>
+    <a href="/aziende">🏢 Aziende</a>
+    <a href="/blog">📖 Blog</a>
+    <a href="/chi-siamo">👥 Chi Siamo</a>
+    <a href="/aziende#calcola" class="sh-cta">Piano Business →</a>
+  </div>
+</div>
+<script>
+  function toggleShDrawer(){var d=document.getElementById("shDrawer"),b=document.getElementById("shBurger"),o=d.style.display==="block";d.style.display=o?"none":"block";b.setAttribute("aria-expanded",o?"false":"true");}
+  function closeShDrawer(){document.getElementById("shDrawer").style.display="none";document.getElementById("shBurger").setAttribute("aria-expanded","false");}
+</script>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="eyebrow">🏢 Piano Free · Analisi aziende</div>
+  <h1>Scopri il rischio AI dei tuoi <em>ruoli chiave</em> — gratis</h1>
+  <p class="hero-sub">Inserisci fino a <strong>5 titoli di ruolo</strong> (e opzionalmente lo stipendio annuo). Ottieni in 30 secondi: punteggio di rischio, stima del risparmio e priorità di intervento. Nessuna registrazione.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">⚡ Risultati in 30 secondi</span>
+    <span class="hero-pill">📊 Database 235 professioni</span>
+    <span class="hero-pill">📄 Export PDF incluso</span>
+    <span class="hero-pill">🔒 Nessun dato personale richiesto</span>
+  </div>
+</section>
+
+<!-- ── Steps ── -->
+<div class="steps-section" style="text-align:center;padding:1.5rem 2rem 0;">
+  <div class="steps-bar">
+    <div class="step-pill active" id="sp1"><span class="step-num">1</span> Inserisci i ruoli</div>
+    <div class="step-pill" id="sp2"><span class="step-num">2</span> Analisi AI</div>
+    <div class="step-pill" id="sp3"><span class="step-num">3</span> Risultati &amp; PDF</div>
+  </div>
+</div>
+
+<!-- ── Input section ── -->
+<div id="inputSection" style="max-width:880px;margin:2rem auto 0;padding:0 1rem;">
+  <div class="main-card">
+    <div class="card-tabs">
+      <button class="card-tab active" id="tabManual" onclick="switchTab('manual')">✏️ Inserimento manuale</button>
+      <button class="card-tab" id="tabCsv" onclick="switchTab('csv')">📁 Carica CSV</button>
+    </div>
+
+    <!-- Manual panel -->
+    <div id="panelManual" class="card-body">
+      <p style="font-size:0.84rem;color:#64748b;margin-bottom:1.25rem;">Inserisci fino a <strong>5 ruoli</strong>. Lo stipendio è opzionale: se assente usiamo i valori medi di settore ISTAT 2026. Non inserire nomi di dipendenti.</p>
+      <div class="entry-header">
+        <span></span><span>Titolo del ruolo *</span><span>Stipendio annuo lordo (€)</span>
+      </div>
+      <div id="manualRows"></div>
+      <div id="errManual" class="err-box"></div>
+    </div>
+
+    <!-- CSV panel -->
+    <div id="panelCsv" class="card-body" style="display:none;">
+      <div class="drop-zone" id="dropZone" onclick="document.getElementById('csvInput').click()">
+        <div class="dz-icon">📂</div>
+        <h3>Trascina qui il file CSV</h3>
+        <p>oppure clicca per selezionarlo dal computer</p>
+        <button class="dz-btn" onclick="event.stopPropagation();document.getElementById('csvInput').click()">Sfoglia file…</button>
+        <input type="file" id="csvInput" accept=".csv,.txt" style="display:none;" onchange="handleFileSelect(this)">
+      </div>
+      <details class="csv-help">
+        <summary>📋 Formato CSV accettato</summary>
+        <pre>Ruolo,Stipendio              ← intestazione opzionale
+Contabile,44600
+Impiegato Amministrativo,32000
+Customer Service,28000
+Responsabile Marketing      ← stipendio omesso: OK
+Sviluppatore Backend,42000
+
+• Separatori: virgola (,) o punto e virgola (;)
+• Massimo 5 righe di dati · File max 500 KB
+• Non includere nomi o dati personali dei dipendenti</pre>
+      </details>
+      <div id="csvPreview" style="display:none;" class="csv-preview">
+        <div class="csv-preview-head">
+          <span id="csvLabel"></span>
+          <button class="csv-clear" onclick="clearCsv()">✕ Rimuovi</button>
+        </div>
+        <div id="csvChips"></div>
+      </div>
+      <div id="errCsv" class="err-box"></div>
+    </div>
+
+    <!-- Actions bar -->
+    <div class="actions-bar">
+      <div class="limit-info">
+        <div class="limit-bar"><div class="limit-fill" id="limitFill" style="width:0%"></div></div>
+        <span class="limit-text" id="limitText">0 / 5 ruoli</span>
+        <span class="limit-plan">Piano Free</span>
+      </div>
+      <button class="btn-analyze" id="btnAnalyze" onclick="startAnalysis()" disabled>
+        ⚡ Analizza ora →
+      </button>
+    </div>
+  </div>
+
+  <!-- Processing panel (inside inputSection) -->
+  <div id="processingPanel" class="main-card" style="margin-top:0;">
+    <div class="proc-spinner"></div>
+    <div class="proc-title">Analisi in corso…</div>
+    <div class="proc-step" id="p1">⏳ Validazione dati in ingresso…</div>
+    <div class="proc-step dim" id="p2">⏳ Ricerca corrispondenze nel database 235 professioni…</div>
+    <div class="proc-step dim" id="p3">⏳ Calcolo indice di rischio AI per ciascun ruolo…</div>
+    <div class="proc-step dim" id="p4">⏳ Stima risparmio economico annuo…</div>
+  </div>
+</div>
+
+<!-- ── Results ── -->
+<div id="resultsSection" style="max-width:1100px;margin:2.5rem auto 0;padding:0 1rem;">
+
+  <!-- Print header -->
+  <div class="print-only">
+    <h2>📊 Analisi Rischio AI — Ruoli Aziendali</h2>
+    <p>Generato da JobRiskAI.it il <span id="printDate"></span> · jobriskai.it/analisi-gratuita</p>
+    <hr>
+  </div>
+
+  <div class="results-top">
+    <div>
+      <div class="results-title">📊 Risultati dell'analisi</div>
+      <div class="results-meta" id="resultsMeta"></div>
+    </div>
+    <div class="results-btns">
+      <button class="btn-reset" onclick="resetAll()">↩ Nuova analisi</button>
+      <button class="btn-pdf" onclick="window.print()">📄 Esporta PDF</button>
+    </div>
+  </div>
+
+  <div class="summary-cards" id="summaryCards"></div>
+
+  <div class="tbl-wrap">
+    <table class="rtbl">
+      <thead>
+        <tr>
+          <th>Ruolo inserito</th>
+          <th>Professione corrispondente</th>
+          <th>Rischio AI</th>
+          <th>Anno critico</th>
+          <th>Costo umano/anno</th>
+          <th>Costo AI/anno</th>
+          <th>Risparmio stimato</th>
+          <th>Urgenza</th>
+          <th style="width:80px;"></th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody"></tbody>
+    </table>
+  </div>
+
+  <p class="disclaimer">
+    ℹ️ Stime basate su dati aggregati ISTAT 2026, McKinsey Global Institute, Deloitte AI Adoption Report.
+    Non sono garanzie di risparmio effettivo — il ROI dipende da settore, struttura aziendale e implementazione.
+    <a href="/metodologia">Metodologia →</a>
+  </p>
+</div>
+
+<!-- ── Upsell ── -->
+<div id="upsellSection" style="display:none;max-width:880px;margin:3rem auto 0;padding:0 1rem;" class="upsell-section">
+  <div class="upsell">
+    <h2>Hai più di 5 ruoli da analizzare?</h2>
+    <p>Il piano Business analizza fino a 200 ruoli, genera un Executive Report PDF per il CDA con benchmark di settore, roadmap operativa a 24 mesi e aggiornamenti mensili automatici.</p>
+    <div class="upsell-feats">
+      <span class="upsell-feat">📊 Fino a 200 ruoli</span>
+      <span class="upsell-feat">📄 Executive Report PDF</span>
+      <span class="upsell-feat">🏭 Benchmark di settore</span>
+      <span class="upsell-feat">🗺️ Roadmap 24 mesi</span>
+      <span class="upsell-feat">🔄 Aggiornamenti mensili</span>
+      <span class="upsell-feat">💼 Dashboard per reparto</span>
+    </div>
+    <a href="/aziende#calcola" class="btn-upsell">Scopri il piano Business — da €199/mese →</a>
+  </div>
+</div>
+
+<div style="height:4rem;"></div>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-inner">
+    <div style="display:flex;align-items:center;gap:0.5rem;">
+      <img src="/logo.png" alt="JobRiskAI" style="height:24px;">
+      <span style="color:#9ca3af;">© 2026 JobRiskAI — Strumento gratuito di simulazione</span>
+    </div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/calcolatore">Calcolatore</a>
+      <a href="/classifica">Classifica</a>
+      <a href="/aziende">Aziende</a>
+      <a href="/metodologia" style="color:#6366f1;font-weight:600;">Metodologia</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/termini-servizio">Termini</a>
+      <a href="/chi-siamo">Chi Siamo</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Cookie banner ── -->
+<div id="cookieBanner" role="dialog" aria-label="Consenso cookie" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#e5e7eb;padding:1.25rem;box-shadow:0 -4px 20px rgba(0,0,0,0.3);z-index:9999;font-size:0.9rem;line-height:1.5;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;">
+    <p style="margin:0;flex:1;min-width:250px;">🍪 Usiamo cookie per mostrare pubblicità personalizzata tramite Google AdSense. Leggi la <a href="/privacy-policy" style="color:#a5b4fc;">Privacy Policy</a>.</p>
+    <div style="display:flex;gap:0.75rem;flex-shrink:0;">
+      <button id="cookieReject" style="background:transparent;border:1px solid #6b7280;color:#e5e7eb;padding:0.6rem 1.2rem;border-radius:6px;cursor:pointer;font-size:0.9rem;">Rifiuta</button>
+      <button id="cookieAccept" style="background:#6366f1;border:none;color:white;padding:0.6rem 1.2rem;border-radius:6px;cursor:pointer;font-size:0.9rem;font-weight:600;">Accetta</button>
+    </div>
+  </div>
+</div>
+<script src="/cookie-consent.js"></script>
+
+<!-- ── Main logic (ES module — imports jobs.js) ── -->
+<script type="module">
+import { jobData } from '/jobs.js';
+
+// ── Constants ─────────────────────────────────────────────
+const MAX = 5;
+const MAX_FILE_BYTES = 500 * 1024;
+
+// Keyword fallback rules for unmatched professions
+// Each rule: kw[] (normalized keywords), risk (0–1), year, label, monthly AI cost multiplier
+const KW_RULES = [
+  { kw:['data entry','inserimento dati','dataentry','data-entry'],        risk:0.90, year:2027, label:'Data Entry',              aiM:150, aiS:500  },
+  { kw:['archivista','archivio','file clerk'],                            risk:0.86, year:2028, label:'Archivista',              aiM:150, aiS:500  },
+  { kw:['contabile','contabilita','accounting','fatturazione','billing','tesoreria'], risk:0.83, year:2029, label:'Contabile', aiM:480, aiS:1800 },
+  { kw:['amministrativo','amministrazione','back office','backoffice','segreteria','segretario','segretaria','impiegato'], risk:0.78, year:2029, label:'Impiegato Amministrativo', aiM:280, aiS:1100 },
+  { kw:['customer service','supporto clienti','assistenza clienti','help desk','helpdesk','call center','operatore'], risk:0.78, year:2029, label:'Customer Service', aiM:95, aiS:500 },
+  { kw:['magazziniere','magazzino','picking','stoccaggio','logistica operativa'], risk:0.72, year:2030, label:'Magazziniere', aiM:200, aiS:800 },
+  { kw:['receptionist','reception','front desk','portineria'],            risk:0.68, year:2030, label:'Receptionist',           aiM:150, aiS:600  },
+  { kw:['traduttore','traduzione','interprete','translator'],             risk:0.76, year:2028, label:'Traduttore',             aiM:200, aiS:800  },
+  { kw:['payroll','paghe','buste paga','cedolini'],                       risk:0.80, year:2029, label:'Addetto Paghe',          aiM:300, aiS:1200 },
+  { kw:['analista dati','data analyst','business analyst','business intelligence','bi analyst'], risk:0.62, year:2031, label:'Analista Dati', aiM:250, aiS:1000 },
+  { kw:['analista','analyst'],                                            risk:0.58, year:2032, label:'Analista',              aiM:200, aiS:900  },
+  { kw:['commerciale','agente commerciale','agente di vendita','sales representative'], risk:0.55, year:2032, label:'Commerciale', aiM:200, aiS:800 },
+  { kw:['sales','vendite'],                                               risk:0.52, year:2032, label:'Sales',                 aiM:200, aiS:800  },
+  { kw:['marketing','comunicazione','social media','content creator'],    risk:0.50, year:2033, label:'Marketing',             aiM:250, aiS:1000 },
+  { kw:['recruiter','recruitment','talent acquisition','selezione del personale','headhunter'], risk:0.52, year:2032, label:'Recruiter', aiM:200, aiS:900 },
+  { kw:['hr','risorse umane','human resources'],                          risk:0.48, year:2033, label:'HR Manager',            aiM:250, aiS:1000 },
+  { kw:['sviluppatore','developer','programmatore','software engineer','frontend','backend','fullstack'], risk:0.40, year:2034, label:'Sviluppatore', aiM:300, aiS:1200 },
+  { kw:['designer','ux','ui','grafico','graphic designer','web designer'], risk:0.35, year:2035, label:'Designer',            aiM:250, aiS:1000 },
+  { kw:['project manager','scrum master','agile coach','product owner'],  risk:0.38, year:2035, label:'Project Manager',      aiM:250, aiS:1000 },
+  { kw:['consulente','consultant','advisor'],                             risk:0.45, year:2033, label:'Consulente',           aiM:250, aiS:1000 },
+  { kw:['manager','responsabile','coordinatore','team leader','capo'],    risk:0.40, year:2034, label:'Manager',              aiM:300, aiS:1200 },
+  { kw:['direttore','director','head of'],                                risk:0.28, year:2036, label:'Direttore',            aiM:400, aiS:1800 },
+  { kw:['ceo','cto','cfo','coo','chief','amministratore delegato'],       risk:0.15, year:2040, label:'C-Suite',              aiM:600, aiS:2500 },
+  { kw:['avvocato','legale','giuridico','notaio','giurista'],             risk:0.32, year:2035, label:'Legale',               aiM:300, aiS:1200 },
+  { kw:['medico','dottore','infermiere','sanitario','clinico','farmacista'], risk:0.22, year:2038, label:'Sanitario',          aiM:300, aiS:1200 },
+  { kw:['psicologo','terapeuta','counselor','terapista'],                 risk:0.18, year:2040, label:'Psicologo',            aiM:200, aiS:900  },
+  { kw:['insegnante','docente','professore','formatore','trainer','tutor'], risk:0.30, year:2036, label:'Formatore',          aiM:200, aiS:900  },
+  { kw:['ingegnere','engineer','tecnico specializzato'],                  risk:0.38, year:2034, label:'Ingegnere',            aiM:280, aiS:1100 },
+  { kw:['chef','cuoco','pasticcere','panettiere'],                        risk:0.25, year:2038, label:'Chef / Cuoco',         aiM:200, aiS:800  },
+  { kw:['artigiano','falegname','idraulico','elettricista','muratore'],   risk:0.28, year:2037, label:'Artigiano',            aiM:200, aiS:800  },
+  { kw:['logistica','supply chain','spedizioni'],                         risk:0.60, year:2031, label:'Logistica',            aiM:200, aiS:900  },
+  { kw:['acquisti','procurement','buyer'],                                risk:0.58, year:2031, label:'Acquisti',             aiM:220, aiS:900  },
+  { kw:['qualita','quality','controllo qualita'],                         risk:0.50, year:2032, label:'Controllo Qualità',    aiM:220, aiS:900  },
+];
+
+const GENERIC_SURVIVAL = [
+  'Sviluppare competenze di supervisione e validazione degli output AI',
+  'Acquisire capacità di collaborazione uomo-AI nel proprio dominio lavorativo',
+  'Specializzarsi nelle attività non automatizzabili: giudizio critico, relazioni interpersonali, creatività',
+];
+
+// ── State ─────────────────────────────────────────────────
+let activeTab = 'manual';
+let csvRows = [];
+
+// ── String utils ──────────────────────────────────────────
+function norm(s) {
+  return (s||'').toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g,'')
+    .replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
+}
+
+function fmtEur(n) {
+  return '€ ' + Math.round(n).toLocaleString('it-IT');
+}
+
+function fmtDate() {
+  return new Date().toLocaleDateString('it-IT',{day:'2-digit',month:'long',year:'numeric'});
+}
+
+// ── Fuzzy job matcher ─────────────────────────────────────
+function matchJob(input) {
+  const inp = norm(input);
+  const inpW = inp.split(' ').filter(w => w.length >= 3);
+  let best = null, bestScore = -1;
+
+  for (const [key, job] of Object.entries(jobData)) {
+    const jn = norm(job.title);
+    const jW = jn.split(' ').filter(w => w.length >= 3);
+    let score = 0;
+
+    if (jn === inp) {
+      score = 1.0;
+    } else if (jn.startsWith(inp) || inp.startsWith(jn)) {
+      score = 0.92;
+    } else if (jn.includes(inp) || inp.includes(jn)) {
+      score = 0.85;
+    } else if (inpW.length > 0) {
+      const fwd = inpW.filter(w => jW.some(jw => jw===w || jw.startsWith(w) || w.startsWith(jw))).length;
+      const rev = jW.filter(jw => inpW.some(w => w===jw || w.startsWith(jw) || jw.startsWith(w))).length;
+      const s1 = fwd / inpW.length;
+      const s2 = jW.length > 0 ? rev / jW.length : 0;
+      score = Math.max(s1, s2) * 0.75;
+    }
+
+    if (score > bestScore) { bestScore = score; best = { key, job, score }; }
+  }
+
+  if (bestScore >= 0.30) {
+    return { ...best, mtype: bestScore >= 0.85 ? 'exact' : bestScore >= 0.60 ? 'good' : 'approx' };
+  }
+  return null;
+}
+
+function keywordFallback(input) {
+  const inp = norm(input);
+  const inpW = inp.split(' ');
+  for (const rule of KW_RULES) {
+    if (rule.kw.some(k => {
+      const kn = norm(k);
+      return inp.includes(kn) || kn.includes(inp) ||
+             inpW.some(w => w.length >= 4 && kn.includes(w));
+    })) return rule;
+  }
+  return { risk:0.55, year:2033, label:'Professione generica', aiM:200, aiS:900 };
+}
+
+// ── Build manual rows ─────────────────────────────────────
+function buildManualRows() {
+  const c = document.getElementById('manualRows');
+  c.innerHTML = '';
+  const placeholders = ['es. Contabile','es. Customer Service','es. Responsabile HR','es. Sviluppatore Backend','Titolo del ruolo…'];
+  for (let i = 0; i < MAX; i++) {
+    const div = document.createElement('div');
+    div.className = 'entry-row';
+    div.innerHTML = `
+      <div class="entry-num">${i+1}</div>
+      <input class="entry-input" id="r${i}" type="text" placeholder="${placeholders[i]}"
+        autocomplete="off" spellcheck="false" oninput="updateBar()">
+      <input class="entry-input sal-input" id="s${i}" type="number" placeholder="es. 34.000"
+        min="1" max="9999999" step="100" oninput="updateBar()" style="font-size:0.84rem;">
+    `;
+    c.appendChild(div);
+  }
+}
+
+function getManualRoles() {
+  const rows = [];
+  for (let i = 0; i < MAX; i++) {
+    const r = (document.getElementById(`r${i}`)?.value||'').trim();
+    const sv = document.getElementById(`s${i}`)?.value||'';
+    const sal = sv ? parseFloat(sv) : null;
+    if (r) rows.push({ role:r, salary:sal });
+  }
+  return rows;
+}
+
+// ── Limit bar ─────────────────────────────────────────────
+window.updateBar = function() {
+  const rows = activeTab === 'manual' ? getManualRoles() : csvRows;
+  const n = rows.length;
+  document.getElementById('limitFill').style.width = `${(n/MAX)*100}%`;
+  document.getElementById('limitText').textContent = `${n} / ${MAX} ruoli`;
+  document.getElementById('btnAnalyze').disabled = n === 0;
+};
+
+// ── Tab switching ─────────────────────────────────────────
+window.switchTab = function(tab) {
+  activeTab = tab;
+  document.getElementById('tabManual').classList.toggle('active', tab==='manual');
+  document.getElementById('tabCsv').classList.toggle('active', tab==='csv');
+  document.getElementById('panelManual').style.display = tab==='manual' ? '' : 'none';
+  document.getElementById('panelCsv').style.display = tab==='csv' ? '' : 'none';
+  updateBar();
+};
+
+// ── CSV ───────────────────────────────────────────────────
+function parseCSV(text) {
+  const lines = text.split(/\r?\n/).map(l=>l.trim()).filter(l=>l);
+  if (!lines.length) return { rows:[], warnings:['File CSV vuoto.'] };
+
+  const sep = lines[0].includes(';') ? ';' : ',';
+  const firstCols = lines[0].split(sep).map(c=>c.trim().replace(/"/g,''));
+  const isHeader = !!(firstCols[0].match(/ruolo|titolo|role|posizione|job|nome/i) ||
+                    (isNaN(parseFloat(firstCols[0])) && isNaN(parseFloat(firstCols[1]))));
+  const data = isHeader ? lines.slice(1) : lines;
+
+  const rows=[], warnings=[];
+  for (let i=0; i<data.length; i++) {
+    if (rows.length >= MAX) { warnings.push(`Righe ${i+1+(isHeader?1:0)}+: ignorate (limite ${MAX} ruoli)`); break; }
+    const cols = data[i].split(sep).map(c=>c.trim().replace(/^"|"$/g,''));
+    const role = cols[0]||'';
+    if (!role) { warnings.push(`Riga ${i+1+(isHeader?1:0)}: ruolo mancante, ignorata`); continue; }
+    if (role.length > 120) { warnings.push(`Riga ${i+1+(isHeader?1:0)}: titolo troppo lungo, troncato`); }
+    const salStr = cols[1] ? cols[1].replace(/[€\s.]/g,'').replace(',','.') : '';
+    const sal = salStr ? parseFloat(salStr) : null;
+    if (sal !== null && (isNaN(sal)||sal<=0||sal>9999999)) {
+      warnings.push(`Riga ${i+1+(isHeader?1:0)}: stipendio non valido ("${cols[1]}"), ignorato`);
+      rows.push({ role:role.slice(0,120), salary:null });
+    } else {
+      rows.push({ role:role.slice(0,120), salary:sal });
+    }
+  }
+  return { rows, warnings };
+}
+
+window.handleFileSelect = function(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const errEl = document.getElementById('errCsv');
+  errEl.classList.remove('show');
+
+  if (file.size > MAX_FILE_BYTES) {
+    showErr(errEl, `File troppo grande (${Math.round(file.size/1024)} KB). Il limite è 500 KB.`); return;
+  }
+  if (!/\.(csv|txt)$/i.test(file.name)) {
+    showErr(errEl, 'Formato non supportato. Carica un file .csv o .txt.'); return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = e => {
+    const { rows, warnings } = parseCSV(e.target.result);
+    if (rows.length === 0) {
+      showErr(errEl, 'Nessun ruolo valido trovato nel file. Controlla il formato CSV.'); return;
+    }
+    csvRows = rows;
+    renderCsvPreview(rows, warnings);
+    updateBar();
+  };
+  reader.readAsText(file, 'UTF-8');
+};
+
+function renderCsvPreview(rows, warnings) {
+  document.getElementById('csvPreview').style.display = 'block';
+  document.getElementById('csvLabel').textContent = `${rows.length} ruolo${rows.length!==1?'i':''} rilevato${rows.length!==1?'i':''}`;
+  document.getElementById('csvChips').innerHTML =
+    rows.map(r=>`<span class="csv-chip">✓ ${r.role}${r.salary?' · '+fmtEur(r.salary):''}</span>`).join('') +
+    warnings.map(w=>`<span class="csv-chip warn">⚠ ${w}</span>`).join('');
+}
+
+window.clearCsv = function() {
+  csvRows = [];
+  document.getElementById('csvPreview').style.display = 'none';
+  document.getElementById('csvInput').value = '';
+  updateBar();
+};
+
+// Drag & drop
+const dz = document.getElementById('dropZone');
+['dragover','dragenter'].forEach(ev => dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.add('drag-over'); }));
+['dragleave','dragend'].forEach(ev => dz.addEventListener(ev, () => dz.classList.remove('drag-over')));
+dz.addEventListener('drop', e => {
+  e.preventDefault(); dz.classList.remove('drag-over');
+  const f = e.dataTransfer.files[0];
+  if (f) {
+    try { const dt=new DataTransfer(); dt.items.add(f); document.getElementById('csvInput').files=dt.files; } catch(_){}
+    handleFileSelect({ files:[f] });
+  }
+});
+
+// ── Validation (mirrors server-side rules) ────────────────
+function validate(rows) {
+  // Rule 1: at least 1 row
+  if (rows.length === 0) return 'Inserisci almeno un ruolo prima di procedere.';
+  // Rule 2: max MAX rows (plan limit)
+  if (rows.length > MAX) return `Piano Free: massimo ${MAX} ruoli per analisi. Rimuovi le righe in eccesso.`;
+  // Rule 3: each role valid
+  for (const { role, salary } of rows) {
+    if (!role || role.length < 2) return `Titolo del ruolo troppo breve: "${role}" (minimo 2 caratteri).`;
+    if (role.length > 120) return `Titolo troppo lungo: "${role.slice(0,30)}…" (massimo 120 caratteri).`;
+    if (salary !== null && (isNaN(salary)||salary <= 0||salary > 9999999))
+      return `Stipendio non valido per "${role}": deve essere un valore tra €1 e €9.999.999.`;
+  }
+  return null; // valid
+}
+
+// ── Error helper ──────────────────────────────────────────
+function showErr(el, msg) { el.textContent = msg; el.classList.add('show'); }
+
+// ── Start analysis ────────────────────────────────────────
+window.startAnalysis = async function() {
+  const errManual = document.getElementById('errManual');
+  const errCsv = document.getElementById('errCsv');
+  errManual.classList.remove('show');
+  errCsv.classList.remove('show');
+
+  const rows = activeTab === 'manual' ? getManualRoles() : csvRows;
+  const err = validate(rows);
+  if (err) { showErr(activeTab==='manual' ? errManual : errCsv, err); return; }
+
+  // Switch to processing view
+  document.getElementById('inputSection').style.display = 'none';
+  const proc = document.getElementById('processingPanel');
+  proc.style.display = 'block';
+  setStepActive(2);
+
+  // Animated processing steps (simulates server-side processing pipeline)
+  await wait(550);  stepOk('p1');
+  await wait(700);  stepOn('p2');
+  await wait(750);  stepOk('p2');
+  await wait(550);  stepOn('p3');
+  await wait(600);  stepOk('p3');
+  await wait(450);  stepOn('p4');
+  await wait(500);  stepOk('p4');
+  await wait(250);
+
+  // Compute
+  const results = rows.map(({role,salary}) => compute(role, salary));
+
+  proc.style.display = 'none';
+  renderResults(results);
+  setStepActive(3);
+};
+
+const wait = ms => new Promise(r=>setTimeout(r,ms));
+function stepOk(id) {
+  const el=document.getElementById(id);
+  el.textContent = '✅ '+el.textContent.replace(/^[⏳✅]\s*/,'');
+  el.classList.add('ok'); el.classList.remove('dim');
+}
+function stepOn(id) { document.getElementById(id).classList.remove('dim'); }
+
+function setStepActive(n) {
+  [1,2,3].forEach(i => {
+    const el=document.getElementById(`sp${i}`);
+    el.classList.toggle('active', i===n);
+    el.classList.toggle('done', i<n);
+  });
+}
+
+// ── Core computation ──────────────────────────────────────
+function compute(role, inputSalary) {
+  const match = matchJob(role);
+  let risk, year, humanTotal, aiAnnual, matchLabel, mtype, icon, survival;
+
+  if (match) {
+    const j = match.job;
+    risk   = j.riskFactor;
+    year   = j.targetYear;
+    icon   = j.icon || '💼';
+    matchLabel = j.title;
+    mtype  = match.mtype;
+
+    const baseSalary = j.defaultHumanSalary + j.defaultHumanExtra;
+    humanTotal = inputSalary !== null
+      ? inputSalary + Math.round(inputSalary * 0.30)   // +30% oneri sociali stimati
+      : baseSalary;
+    aiAnnual = j.defaultAiMonthly * 12 + j.defaultAiSetup;
+
+    survival = [
+      j.survivalNote ? `Strategia chiave: ${j.survivalNote}` : null,
+      ...GENERIC_SURVIVAL
+    ].filter(Boolean).slice(0,3);
+  } else {
+    const fb = keywordFallback(role);
+    risk   = fb.risk;
+    year   = fb.year;
+    icon   = '💼';
+    matchLabel = fb.label;
+    mtype  = 'generic';
+
+    const base = inputSalary !== null ? inputSalary : 32000;
+    humanTotal = base + Math.round(base * 0.30);
+    aiAnnual = fb.aiM * 12 + fb.aiS;
+    survival = GENERIC_SURVIVAL;
+  }
+
+  const saving = Math.max(0, humanTotal - aiAnnual);
+  return { role, risk, year, humanTotal, aiAnnual, saving, matchLabel, mtype, icon, survival };
+}
+
+// ── Render results ────────────────────────────────────────
+function renderResults(results) {
+  // Print date
+  document.getElementById('printDate').textContent = fmtDate();
+
+  const avgRisk = Math.round(results.reduce((s,r)=>s+r.risk,0)/results.length*100);
+  const totalSaving = results.reduce((s,r)=>s+r.saving,0);
+  const highCount = results.filter(r=>r.risk>=0.65).length;
+  const minYear = Math.min(...results.map(r=>r.year));
+
+  document.getElementById('resultsMeta').textContent =
+    `${results.length} ruolo${results.length!==1?'i':''} analizzato${results.length!==1?'i':''} · ${new Date().toLocaleDateString('it-IT')}`;
+
+  // Summary cards
+  const rc = avgRisk>=65?'#dc2626':avgRisk>=40?'#d97706':'#16a34a';
+  document.getElementById('summaryCards').innerHTML = `
+    <div class="sc"><div class="sc-val" style="color:${rc}">${avgRisk}%</div><div class="sc-label">Rischio AI medio</div></div>
+    <div class="sc"><div class="sc-val" style="color:#dc2626">${highCount}</div><div class="sc-label">Ruoli ad alta priorità (≥65%)</div></div>
+    <div class="sc"><div class="sc-val" style="color:#16a34a">${fmtEur(totalSaving)}</div><div class="sc-label">Risparmio potenziale annuo</div></div>
+    <div class="sc"><div class="sc-val" style="color:#6366f1">${minYear}</div><div class="sc-label">Anno critico più vicino</div></div>
+  `;
+
+  // Table
+  const tbody = document.getElementById('resultsBody');
+  tbody.innerHTML = '';
+  results.forEach((r, i) => {
+    const pct = Math.round(r.risk*100);
+    const tier = pct>=65?'high':pct>=40?'mid':'low';
+    const urg = pct>=65?'Alta':pct>=40?'Media':'Bassa';
+    const urgEmoji = pct>=65?'🔴':pct>=40?'🟡':'🟢';
+
+    const matchSubClass = r.mtype==='exact'?'ms-exact':r.mtype==='good'?'ms-good':r.mtype==='approx'?'ms-approx':'ms-generic';
+    const matchSubText = r.mtype==='exact'?'✓ Corrispondenza diretta'
+      :r.mtype==='good'?'≈ Corrispondenza alta'
+      :r.mtype==='approx'?'~ Corrispondenza approssimativa'
+      :'Analisi per categoria (generica)';
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${escH(r.role)}</strong></td>
+      <td>
+        <span>${r.icon} ${escH(r.matchLabel)}</span>
+        <div class="match-sub ${matchSubClass}">${matchSubText}</div>
+      </td>
+      <td>
+        <div class="risk-wrap">
+          <div class="risk-bar"><div class="risk-fill rf-${tier}" style="width:${pct}%"></div></div>
+          <span class="rp-${tier}">${pct}%</span>
+        </div>
+      </td>
+      <td style="font-weight:600;color:#475569;">${r.year}</td>
+      <td>${fmtEur(r.humanTotal)}</td>
+      <td style="color:#6366f1;">${fmtEur(r.aiAnnual)}</td>
+      <td><span class="green-bold">${fmtEur(r.saving)}</span></td>
+      <td><span class="urg-badge ub-${tier}">${urgEmoji} ${urg}</span></td>
+      <td><button class="expand-btn" data-i="${i}" onclick="toggleDetail(${i})">Consigli ↓</button></td>
+    `;
+    tbody.appendChild(tr);
+
+    const det = document.createElement('tr');
+    det.className = 'detail-row';
+    det.id = `det${i}`;
+    det.innerHTML = `
+      <td colspan="9">
+        <div class="detail-label">Piano di adattamento — ${escH(r.matchLabel)}</div>
+        <div class="survival-list">
+          ${r.survival.map(s=>`<div class="survival-item">${escH(s)}</div>`).join('')}
+        </div>
+      </td>
+    `;
+    tbody.appendChild(det);
+  });
+
+  document.getElementById('resultsSection').classList.add('show');
+  document.getElementById('upsellSection').style.display = 'block';
+  document.getElementById('resultsSection').scrollIntoView({ behavior:'smooth', block:'start' });
+}
+
+window.toggleDetail = function(i) {
+  const row = document.getElementById(`det${i}`);
+  const open = row.classList.toggle('open');
+  const btn = document.querySelector(`button[data-i="${i}"]`);
+  if (btn) btn.textContent = open ? 'Chiudi ↑' : 'Consigli ↓';
+};
+
+// ── Reset ─────────────────────────────────────────────────
+window.resetAll = function() {
+  document.getElementById('resultsSection').classList.remove('show');
+  document.getElementById('upsellSection').style.display = 'none';
+  document.getElementById('inputSection').style.display = 'block';
+  document.getElementById('processingPanel').style.display = 'none';
+  csvRows = [];
+
+  for (let i=0;i<MAX;i++) {
+    const ri=document.getElementById(`r${i}`); if(ri)ri.value='';
+    const si=document.getElementById(`s${i}`); if(si)si.value='';
+  }
+  clearCsv();
+  ['p1','p2','p3','p4'].forEach((id,idx) => {
+    const el=document.getElementById(id);
+    const msgs=['Validazione dati in ingresso…','Ricerca corrispondenze nel database 235 professioni…','Calcolo indice di rischio AI per ciascun ruolo…','Stima risparmio economico annuo…'];
+    el.textContent='⏳ '+msgs[idx];
+    el.classList.remove('ok');
+    el.classList.toggle('dim', idx>0);
+  });
+  document.getElementById('errManual').classList.remove('show');
+  document.getElementById('errCsv').classList.remove('show');
+  updateBar();
+  setStepActive(1);
+  window.scrollTo({top:0,behavior:'smooth'});
+};
+
+// ── Escape HTML ───────────────────────────────────────────
+function escH(s) {
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Init ──────────────────────────────────────────────────
+buildManualRows();
+updateBar();
+</script>
+</body>
+</html>
