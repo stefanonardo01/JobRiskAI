@@ -692,12 +692,14 @@ function buildProfessionPage(key) {
   <footer>
     <div class="footer-content">
       <p class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 235 professioni italiane</p>
-      <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica" style="color:var(--text-secondary);">Classifica completa</a> · <a href="/calcolatore" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
-      <nav aria-label="Footer links" style="margin-top:0.5rem;">
-        <a href="/metodologia" style="color:#6366f1; font-size:0.8rem; margin-right:1rem; font-weight:600;">Metodologia</a>
-        <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
-        <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
-        <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
+      <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/classifica" style="color:var(--text-secondary);">Classifica</a> · <a href="/calcolatore" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/confronta" style="color:var(--text-secondary);">Confronta</a> · <a href="/dati" style="color:var(--text-secondary);">Dati</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
+      <nav aria-label="Footer links" style="margin-top:0.5rem; display:flex; flex-wrap:wrap; gap:0.25rem 1rem;">
+        <a href="/blog" style="color:var(--text-secondary); font-size:0.8rem;">Blog</a>
+        <a href="/glossario" style="color:var(--text-secondary); font-size:0.8rem;">Glossario</a>
+        <a href="/metodologia" style="color:#6366f1; font-size:0.8rem; font-weight:600;">Metodologia</a>
+        <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem;">Chi Siamo</a>
+        <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem;">Privacy Policy</a>
+        <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem;">Termini</a>
         <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
       </nav>
     </div>
@@ -976,12 +978,14 @@ function buildClassificaPage() {
   <footer>
     <div class="footer-content">
       <p data-i18n="cla_footer" class="footer-text">JobRiskAI · Analisi gratuita del rischio AI per 235 professioni</p>
-      <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI</p>
-      <nav aria-label="Footer links" style="margin-top:0.5rem;">
-        <a href="/metodologia" style="color:#6366f1; font-size:0.8rem; margin-right:1rem; font-weight:600;">Metodologia</a>
-        <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Privacy Policy</a>
-        <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Termini di Servizio</a>
-        <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem; margin-right:1rem;">Chi Siamo</a>
+      <p class="footer-text" style="font-size:0.8rem;">© 2026 JobRiskAI · <a href="/confronta" style="color:var(--text-secondary);">Confronta</a> · <a href="/dati" style="color:var(--text-secondary);">Dati</a> · <a href="/calcolatore" style="color:var(--text-secondary);">Calcolatore</a> · <a href="/cv-analyzer" style="color:var(--text-secondary);">Analisi CV</a></p>
+      <nav aria-label="Footer links" style="margin-top:0.5rem; display:flex; flex-wrap:wrap; gap:0.25rem 1rem;">
+        <a href="/blog" style="color:var(--text-secondary); font-size:0.8rem;">Blog</a>
+        <a href="/glossario" style="color:var(--text-secondary); font-size:0.8rem;">Glossario</a>
+        <a href="/metodologia" style="color:#6366f1; font-size:0.8rem; font-weight:600;">Metodologia</a>
+        <a href="/chi-siamo" style="color:var(--text-secondary); font-size:0.8rem;">Chi Siamo</a>
+        <a href="/privacy-policy" style="color:var(--text-secondary); font-size:0.8rem;">Privacy Policy</a>
+        <a href="/termini-servizio" style="color:var(--text-secondary); font-size:0.8rem;">Termini</a>
         <a href="mailto:hello@jobriskai.it" style="color:var(--text-secondary); font-size:0.8rem;">Contatti</a>
       </nav>
     </div>
