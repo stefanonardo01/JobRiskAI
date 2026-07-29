@@ -468,8 +468,8 @@ document.addEventListener('click', function(e) {
       <a href="/cv-analyzer" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px">
         📄 <span data-i18n="home_cta_cv">Analizza il tuo CV</span>
       </a>
-      <a href="/classifica" class="btn-ghost border border-[var(--border)] bg-white text-[var(--ink-1)] font-medium text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px">
-        📋 <span data-i18n="home_cta_calc">Sfoglia tutte le professioni</span>
+      <a href="/classifica" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px;background:linear-gradient(135deg,#0ea5e9,#2563eb);">
+        📋 <span data-i18n="home_cta_calc">Sfoglia le 235 professioni</span>
       </a>
     </div>
 
@@ -700,62 +700,28 @@ document.addEventListener('click', function(e) {
   </div>
 </section>
 
-<section id="funzionalita" class="px-6 py-20 max-w-6xl mx-auto">
-  <div class="max-w-xl mb-12 fade-up">
-    <p class="text-[13px] font-semibold text-[var(--indigo-dk)] tracking-wide uppercase mb-3" data-i18n="home_features_label">Funzionalità</p>
-    <h2 class="font-display text-[2rem] font-semibold tracking-tight mb-3 text-[var(--ink-0)]" data-i18n="home_features_h2">Tutto quello che serve per leggere il rischio AI</h2>
-    <p class="text-[var(--ink-2)] text-[15.5px] leading-relaxed" data-i18n="home_features_sub">Sei strumenti, un'unica analisi coerente — dal singolo ruolo al confronto tra carriere.</p>
-  </div>
+<section id="funzionalita" class="px-6 py-16 max-w-5xl mx-auto">
+  <div class="grid sm:grid-cols-2 gap-6">
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-    <div class="card p-6 fade-up hover:shadow-soft transition-shadow">
-      <div class="w-11 h-11 rounded-xl bg-[#EEF0FF] flex items-center justify-center mb-4">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-dk)" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="6" width="3" height="12"/></svg>
+    <!-- CV Analyzer card -->
+    <a href="/cv-analyzer" class="card p-8 fade-up hover:shadow-soft transition-all group border-2 border-transparent hover:border-[var(--indigo)] block text-left" style="text-decoration:none;">
+      <div class="w-14 h-14 rounded-2xl bg-[#EEF0FF] flex items-center justify-center mb-5 group-hover:bg-[var(--indigo)] transition-colors">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-dk)" stroke-width="2" class="group-hover:stroke-white transition-colors"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
       </div>
-      <h3 class="font-display font-semibold text-[16px] mb-2" data-i18n="home_feat1_h3">Analisi del rischio AI</h3>
-      <p class="text-[var(--ink-2)] text-[14px] leading-relaxed" data-i18n="home_feat1_p">Un punteggio da 0 a 100 basato su ripetitività dei compiti, giudizio richiesto e disponibilità di strumenti AI nel settore.</p>
-    </div>
+      <h2 class="font-display font-semibold text-[1.25rem] mb-3 text-[var(--ink-0)]">Analizza il tuo CV</h2>
+      <p class="text-[var(--ink-2)] text-[14.5px] leading-relaxed mb-5">Carica il tuo CV in PDF. In 30 secondi scopri quale parte del tuo lavoro è a rischio AI, cosa puoi fare per proteggerti e quali competenze sviluppare — analisi personalizzata, nessuna registrazione.</p>
+      <span class="inline-flex items-center gap-1 text-[var(--indigo-dk)] font-semibold text-[14px] group-hover:gap-2 transition-all">Inizia l'analisi gratis <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
-    <div class="card p-6 fade-up hover:shadow-soft transition-shadow">
-      <div class="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+    <!-- Classifica card -->
+    <a href="/classifica" class="card p-8 fade-up hover:shadow-soft transition-all group border-2 border-transparent hover:border-[#2563eb] block text-left" style="text-decoration:none;">
+      <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-5 group-hover:bg-[#2563eb] transition-colors">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" class="group-hover:stroke-white transition-colors"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="6" width="3" height="12"/></svg>
       </div>
-      <h3 class="font-display font-semibold text-[16px] mb-2" data-i18n="home_feat2_h3">Dashboard interattiva</h3>
-      <p class="text-[var(--ink-2)] text-[14px] leading-relaxed" data-i18n="home_feat2_p">Modifica stipendio, costi AI e setup in tempo reale e osserva l'impatto su ROI e punto di pareggio.</p>
-    </div>
-
-    <div class="card p-6 fade-up hover:shadow-soft transition-shadow">
-      <div class="w-11 h-11 rounded-xl bg-green-50 flex items-center justify-center mb-4">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
-      </div>
-      <h3 class="font-display font-semibold text-[16px] mb-2" data-i18n="home_feat3_h3">Report PDF</h3>
-      <p class="text-[var(--ink-2)] text-[14px] leading-relaxed" data-i18n="home_feat3_p">Esporta l'analisi completa — punteggio, competenze mancanti e ruoli consigliati — in un documento pronto da condividere.</p>
-    </div>
-
-    <div class="card p-6 fade-up hover:shadow-soft transition-shadow">
-      <div class="w-11 h-11 rounded-xl bg-pink-50 flex items-center justify-center mb-4">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#db2777" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg>
-      </div>
-      <h3 class="font-display font-semibold text-[16px] mb-2" data-i18n="home_feat4_h3">Trend di mercato</h3>
-      <p class="text-[var(--ink-2)] text-[14px] leading-relaxed" data-i18n="home_feat4_p">Segui come cambia il punto critico stimato di ogni professione man mano che l'AI matura, anno per anno.</p>
-    </div>
-
-    <div class="card p-6 fade-up hover:shadow-soft transition-shadow">
-      <div class="w-11 h-11 rounded-xl bg-amber-50 flex items-center justify-center mb-4">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><circle cx="18" cy="7" r="3" stroke-dasharray="2 2"/></svg>
-      </div>
-      <h3 class="font-display font-semibold text-[16px] mb-2" data-i18n="home_feat5_h3">Benchmark professionale</h3>
-      <p class="text-[var(--ink-2)] text-[14px] leading-relaxed" data-i18n="home_feat5_p">Confronta due ruoli fianco a fianco su rischio, costo e accuratezza per orientare una transizione di carriera.</p>
-    </div>
-
-    <div class="card p-6 fade-up hover:shadow-soft transition-shadow">
-      <div class="w-11 h-11 rounded-xl bg-red-50 flex items-center justify-center mb-4">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2v10l7 4"/></svg>
-      </div>
-      <h3 class="font-display font-semibold text-[16px] mb-2" data-i18n="home_feat6_h3">Monitoraggio continuo</h3>
-      <p class="text-[var(--ink-2)] text-[14px] leading-relaxed" data-i18n="home_feat6_p">I dati di mercato e i prezzi degli strumenti AI vengono aggiornati periodicamente, senza azioni da parte tua.</p>
-    </div>
+      <h2 class="font-display font-semibold text-[1.25rem] mb-3 text-[var(--ink-0)]">Classifica delle 235 professioni</h2>
+      <p class="text-[var(--ink-2)] text-[14.5px] leading-relaxed mb-5">Esplora il rischio AI per 235 professioni italiane ordinate per punteggio. Filtra per settore, scopri l'anno critico stimato per ogni ruolo e cosa fare per rendersi meno sostituibili.</p>
+      <span class="inline-flex items-center gap-1 text-[#2563eb] font-semibold text-[14px] group-hover:gap-2 transition-all">Esplora la classifica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
   </div>
 </section>
