@@ -3,6 +3,11 @@
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/aziende", "destination": "/", "permanent": true },
+    { "source": "/aziende/:path*", "destination": "/", "permanent": true },
+    { "source": "/analisi-gratuita", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*).html",
