@@ -66,6 +66,52 @@
     .callout-red { background:#fef2f2; border-left:4px solid #ef4444; border-radius:0 12px 12px 0; padding:1rem 1.25rem; margin:1.5rem 0; }
     .callout-red p { margin:0; font-size:0.93rem; color:#7f1d1d; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Il problema del \"rilascio responsabile\"",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ogni grande lab AI ha una policy di \"responsible release\" — linee guida interne che definiscono quando un modello può essere reso pubblico. In teoria. In pratica, queste decisioni avvengono in un contesto di pressione competitiva intensa: se OpenAI rilascia GPT-5 e Anthropic aspetta altri tre mesi per fare test di sicurezza aggiuntivi, Anthropic perde quote di mercato, clienti enterprise, talenti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa sono le \"capacità pericolose\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I lab usano framework di valutazione chiamati \"red team evaluation\" per testare se un modello può essere usato per scopi dannosi. Le categorie principali sono quattro:"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le dimissioni di massa da OpenAI: cosa è successo davvero",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nel 2024, una serie di dimissioni eccellenti da OpenAI — tra cui Ilya Sutskever (cofondatore), Jan Leike (capo del team di alignment) e altri ricercatori di sicurezza — ha sollevato domande pubbliche sulla direzione dell'azienda. Jan Leike ha lasciato con un post esplicito: \"la cultura della sicurezza e i processi hanno ceduto il passo alla spedizione del prodotto\"."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Anthropic e il \"Constitutional AI\": un approccio diverso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anthropic, fondata proprio da ex-OpenAI preoccupati per la sicurezza, ha sviluppato l'approccio Constitutional AI: i modelli vengono addestrati a rispettare un set di principi espliciti e a valutare le proprie risposte rispetto a questi principi. È più trasparente e verificabile rispetto al semplice RLHF (reinforcement learning from human feedback) usato da altri."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I modelli open source: un rischio diverso",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mentre i modelli dei grandi lab sono chiusi (i pesi non sono pubblici), Meta con Llama e altri attori hanno rilasciato modelli open source di capacità crescente. Llama 3, Mistral, DeepSeek: chiunque può scaricarli, modificarli, rimuovere i guardrail di sicurezza e usarli senza limitazioni."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header role="banner">
@@ -157,6 +203,45 @@
 
       </article>
 
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/ml-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">ML Engineer</div>
+              <div style="font-size:0.78rem;color:#10b981;">32% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ai-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">AI Engineer</div>
+              <div style="font-size:0.78rem;color:#10b981;">22% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ai-director" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">AI Director</div>
+              <div style="font-size:0.78rem;color:#10b981;">10% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/data-scientist" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Data Scientist</div>
+              <div style="font-size:0.78rem;color:#10b981;">35% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <p style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
         <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>

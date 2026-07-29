@@ -60,6 +60,44 @@
     .author-bio { background:var(--surface-1,#f8fafc); border-radius:12px; padding:1.25rem; margin:2.5rem 0; display:flex; gap:1rem; align-items:flex-start; }
     .author-avatar { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.1rem; flex-shrink:0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "La rivoluzione nel calcio",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oggi nel calcio europeo, sistemi come StatsBomb e Second Spectrum tracciano ogni movimento di ogni giocatore 25 volte al secondo, generando terabyte di dati per partita. L'AI elabora questi dati per identificare pattern tattici, prevedere gli infortuni, valutare i giocatori e ottimizzare le rotazioni. Tutte le grandi squadre di Serie A hanno ora un dipartimento di analisi dati dedicato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Prevenzione degli infortuni con AI",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I modelli AI analizzano carico di allenamento, dati biometrici, pattern di movimento e storia degli infortuni per calcolare la probabilità di infortuni muscolari. Alcune squadre NBA dichiarano di aver ridotto gli infortuni del 20-30%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AI per l'atleta amatoriale",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "App come Hudl Technique analizzano la tecnica di nuoto da un video su smartphone. Whoop e Garmin usano AI per ottimizzare carichi di allenamento e recupero. Strava analizza i tuoi dati e confronta le tue performance con atleti simili."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Scouting AI e mercato calciatori",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'AI ha trasformato il mercato calciatori: le squadre analizzano sistematicamente migliaia di giocatori in campionati minori di tutto il mondo. Brentford FC è diventato famoso per aver costruito una squadra competitiva a costi bassi grazie a un approccio quasi interamente basato sui dati."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
@@ -101,6 +139,45 @@
       <h2>Scouting AI e mercato calciatori</h2>
       <p>L'AI ha trasformato il mercato calciatori: le squadre analizzano sistematicamente migliaia di giocatori in campionati minori di tutto il mondo. Brentford FC è diventato famoso per aver costruito una squadra competitiva a costi bassi grazie a un approccio quasi interamente basato sui dati.</p>
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/personal-trainer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Personal Trainer</div>
+              <div style="font-size:0.78rem;color:#10b981;">35% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/allenatore" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Allenatore</div>
+              <div style="font-size:0.78rem;color:#10b981;">28% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/preparatore-atletico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Preparatore Atletico</div>
+              <div style="font-size:0.78rem;color:#10b981;">30% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/istruttore-fitness" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Istruttore Fitness</div>
+              <div style="font-size:0.78rem;color:#10b981;">38% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <h3>Scopri il rischio AI per la tua professione</h3>
         <p>Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione.</p>

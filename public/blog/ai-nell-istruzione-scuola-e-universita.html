@@ -60,6 +60,44 @@
     .author-bio { background:var(--surface-1,#f8fafc); border-radius:12px; padding:1.25rem; margin:2.5rem 0; display:flex; gap:1rem; align-items:flex-start; }
     .author-avatar { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.1rem; flex-shrink:0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Il problema del plagio AI nelle università",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dal lancio di ChatGPT, le università di tutto il mondo hanno segnalato un'impennata dei casi di plagio. Ma rilevare i testi generati dall'AI è difficile: strumenti come GPTZero o Turnitin hanno tassi di falsi positivi elevati. In Italia, alcune università hanno già aggiornato i regolamenti, ma il dibattito su cosa sia \"lecito\" è ancora aperto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I tutor AI: personalizzazione dell'apprendimento",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La promessa più interessante dell'AI in educazione è la personalizzazione radicale. Sistemi come Khan Academy's Khanmigo adattano il ritmo e le spiegazioni alle lacune di ogni studente. Studi mostrano che studenti con accesso a tutor AI migliorano le performance in media del 20-30%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa cambia per gli insegnanti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gli insegnanti non vengono sostituiti dall'AI — ma il loro ruolo si trasforma. L'AI può correggere compiti ripetitivi, generare esercizi personalizzati e identificare studenti a rischio. In alcune scuole pilota in Svezia e Finlandia, l'AI ha ridotto il carico amministrativo degli insegnanti del 40%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il divario digitale e il rischio di disuguaglianza",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il rischio maggiore è che l'AI in educazione amplifichi le disuguaglianze esistenti. Gli studenti in scuole ben equipaggiate avranno accesso a strumenti avanzati, mentre altri resteranno indietro. Senza politiche pubbliche, l'AI potrebbe trasformare l'istruzione in un lusso."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
@@ -101,6 +139,45 @@
       <h2>Il divario digitale e il rischio di disuguaglianza</h2>
       <p>Il rischio maggiore è che l'AI in educazione amplifichi le disuguaglianze esistenti. Gli studenti in scuole ben equipaggiate avranno accesso a strumenti avanzati, mentre altri resteranno indietro. Senza politiche pubbliche, l'AI potrebbe trasformare l'istruzione in un lusso.</p>
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/insegnante" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Insegnante</div>
+              <div style="font-size:0.78rem;color:#10b981;">22% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/docente-universitario" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Docente Universitario</div>
+              <div style="font-size:0.78rem;color:#10b981;">20% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/formatore-aziendale" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Formatore Aziendale</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">45% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/tutor-online" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Tutor Online</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">58% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <h3>Scopri il rischio AI per la tua professione</h3>
         <p>Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione.</p>

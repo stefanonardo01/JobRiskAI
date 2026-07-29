@@ -60,6 +60,44 @@
     .author-bio { background:var(--surface-1,#f8fafc); border-radius:12px; padding:1.25rem; margin:2.5rem 0; display:flex; gap:1rem; align-items:flex-start; }
     .author-avatar { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.1rem; flex-shrink:0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "La rivoluzione dell'arte generativa AI",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strumenti come Midjourney, Stable Diffusion e DALL-E hanno reso accessibile a chiunque la creazione di immagini di qualità professionale. Il mercato di Shutterstock e Getty Images ha visto un crollo nelle vendite di stock photo proprio mentre questi siti integrano AI generativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il problema del copyright",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I modelli di arte AI sono stati addestrati su miliardi di immagini prese da internet, molte protette da copyright. Artisti come Sarah Andersen hanno fatto causa a Stability AI e Midjourney, accusandoli di aver usato il loro lavoro senza consenso. Il caso è ancora in corso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come gli artisti si stanno adattando?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alcuni si sono opposti frontalmente. Altri usano l'AI come copilota creativo per velocizzare parti del flusso di lavoro. Glaze è uno strumento gratuito dell'Università di Chicago che modifica impercettibilmente le immagini online, rendendo difficile per i modelli AI imparare il tuo stile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il futuro: mercati separati",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lo scenario più probabile è la biforcazione del mercato: arte AI per tutto ciò che ha bisogno di velocità (banner pubblicitari, illustrazioni veloci, social) e arte umana per autenticità, storia e connessione emotiva profonda."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
@@ -101,6 +139,45 @@
       <h2>Il futuro: mercati separati</h2>
       <p>Lo scenario più probabile è la biforcazione del mercato: arte AI per tutto ciò che ha bisogno di velocità (banner pubblicitari, illustrazioni veloci, social) e arte umana per autenticità, storia e connessione emotiva profonda.</p>
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/grafico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Grafico</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">62% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/illustratore" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Illustratore</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">68% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ux-ui-designer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">UX/UI Designer</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">45% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/art-director" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Art Director</div>
+              <div style="font-size:0.78rem;color:#10b981;">38% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <h3>Scopri il rischio AI per la tua professione</h3>
         <p>Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione.</p>

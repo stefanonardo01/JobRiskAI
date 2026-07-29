@@ -57,6 +57,44 @@
     .callout-green { background:#f0fdf4; border-left:4px solid #22c55e; border-radius:0 12px 12px 0; padding:1rem 1.25rem; margin:1.5rem 0; }
     .callout-green p { margin:0; font-size:0.93rem; color:#15803d; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Il problema: il GPS è fragile",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il GPS è uno dei sistemi più critici dell'infrastruttura globale moderna, e uno dei più vulnerabili. I segnali provengono da satelliti a 20.000 km di distanza — e arrivano a terra con una potenza così bassa che un jammer economico può disturbarli in un raggio di chilometri. In Ucraina, i jammer russi hanno reso inutilizzabili i GPS di droni e missili in intere regioni. In Medio Oriente, il GPS spo"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come l'AI risolve la navigazione senza satelliti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il campo si chiama \"navigation denied environments\" e ha visto un'esplosione di ricerca negli ultimi 5 anni, quasi interamente guidata da AI. Le tecniche principali:"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Applicazioni civili: veicoli autonomi e droni di consegna",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I veicoli autonomi Level 4 e Level 5 (completamente autonomi) richiedono una navigazione affidabile anche quando il GPS fallisce. Waymo e Cruise usano già sistemi ibridi che integrano GPS con mappe HD, LiDAR-SLAM e vision AI. La mappa HD è pre-computata con una risoluzione centimetrica — il veicolo si \"localizza\" su questa mappa usando i sensori in tempo reale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Impatto sul lavoro: le professioni che cambiano",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La navigazione autonoma affidabile accelera l'automazione in settori specifici. I piloti di droni per ispezione di infrastrutture, fotografia aerea e consegna stanno già vedendo i primi sistemi completamente autonomi competere con i loro servizi. I conducenti di veicoli industriali in magazzini, porti e miniere sono i più esposti — ambienti chiusi dove il GPS è già inutilizzabile e i sistemi AI-SL"
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header role="banner">
@@ -121,6 +159,37 @@
         <p>D'altro canto, cresce la domanda di ingegneri di sistemi embedded specializzati in sensor fusion, ricercatori di computer vision e specialisti di robotica autonoma. È uno dei settori con il più alto tasso di crescita della domanda di lavoro qualificato in Italia e in Europa.</p>
 
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/pilota" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Pilota</div>
+              <div style="font-size:0.78rem;color:#10b981;">22% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ingegnere-elettrico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Ingegnere Elettrico</div>
+              <div style="font-size:0.78rem;color:#10b981;">30% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ingegnere-informatico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Ingegnere Informatico</div>
+              <div style="font-size:0.78rem;color:#10b981;">38% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <p style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
         <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>

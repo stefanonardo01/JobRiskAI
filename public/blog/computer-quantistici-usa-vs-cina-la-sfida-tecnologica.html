@@ -57,6 +57,52 @@
     .callout-green { background:#f0fdf4; border-left:4px solid #22c55e; border-radius:0 12px 12px 0; padding:1rem 1.25rem; margin:1.5rem 0; }
     .callout-green p { margin:0; font-size:0.93rem; color:#15803d; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Perché il quantum computing è diverso da tutto il resto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un computer classico lavora con bit: ogni bit è 0 oppure 1. Un computer quantistico usa qubit — unità che possono essere 0, 1 o entrambi contemporaneamente (sovrapposizione), e che possono essere entangled tra loro. Il risultato è una capacità di calcolo parallelo che scala esponenzialmente: un sistema a 300 qubit può rappresentare più stati simultaneamente degli atomi nell'universo osservabile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dove sono USA e Cina nel 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "USA: IBM ha annunciato processori quantistici oltre i 1.000 qubit fisici con il sistema Heron. Google ha dimostrato nel 2024 con Willow la capacità di completare un calcolo in 5 minuti che al più potente supercomputer classico richiederebbe 10 settilioni di anni. Microsoft sta perseguendo un approccio diverso con i qubit topologici, potenzialmente più stabili. Il governo federale ha investito oltr"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q-Day: quando succede davvero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il \"Q-Day\" — il giorno in cui un computer quantistico romperà la crittografia RSA-2048 che protegge la maggior parte di internet — è l'evento più atteso (e temuto) nel mondo della sicurezza informatica. Le stime variano enormemente: da 5 anni (ottimisti) a 20+ anni (scettici). La CISA americana raccomanda alle organizzazioni critiche di iniziare la transizione alla crittografia post-quantistica ad"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Impatti economici: chi guadagna, chi rischia",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I settori che beneficeranno prima del quantum computing commerciale sono farmaceutica e biotech (simulazione molecolare per scoperta di farmaci), finanza (ottimizzazione di portafogli, pricing di derivati complessi), logistica (ottimizzazione di supply chain globali), chimica e materiali (progettazione di batterie, superconduttori, fertilizzanti più efficienti)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa significa per il lavoro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il quantum computing non sostituirà il lavoro umano nei prossimi anni nel modo in cui lo fa l'AI generativa oggi. Il suo impatto sarà più simile a quello dei supercomputer: amplifica le capacità di specifici team di ricerca e ingegneria. I profili più richiesti sono fisici quantistici, ingegneri di sistemi criogenici, esperti di correzione degli errori quantistici e, in crescita rapida, sviluppato"
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header role="banner">
@@ -122,6 +168,45 @@
         <p>Per la maggior parte dei professionisti, l'impatto sarà indiretto: i risultati del quantum computing (nuovi farmaci, nuovi materiali, nuovi algoritmi) cambieranno i settori in cui lavorano, ma il computing quantistico in sé resterà una tecnologia di nicchia per esperti almeno per il prossimo decennio.</p>
 
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/fisico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Fisico</div>
+              <div style="font-size:0.78rem;color:#10b981;">20% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/chimico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Chimico</div>
+              <div style="font-size:0.78rem;color:#10b981;">28% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ingegnere-informatico" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Ingegnere Informatico</div>
+              <div style="font-size:0.78rem;color:#10b981;">38% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ml-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">ML Engineer</div>
+              <div style="font-size:0.78rem;color:#10b981;">32% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <p style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
         <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>

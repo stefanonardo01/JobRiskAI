@@ -60,6 +60,44 @@
     .author-bio { background:var(--surface-1,#f8fafc); border-radius:12px; padding:1.25rem; margin:2.5rem 0; display:flex; gap:1rem; align-items:flex-start; }
     .author-avatar { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.1rem; flex-shrink:0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come gli hacker usano l'AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I cybercriminali usano AI per generare email di phishing personalizzate, automatizzare la ricerca di vulnerabilità, creare malware adattivo e orchestrare attacchi coordinati. Il costo medio di una violazione dei dati nel 2025 ha superato i 4,5 milioni di dollari, e in Italia gli attacchi alle PMI sono aumentati del 65%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le PMI: bersagli preferiti",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le piccole e medie imprese italiane hanno dati di valore ma spesso mancano di risorse per la sicurezza. Il 60% delle PMI italiane che subisce un attacco ransomware grave chiude entro sei mesi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AI difensiva: come funziona",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I sistemi di AI difensiva monitorano continuamente il comportamento della rete, identificando anomalie che potrebbero indicare un attacco. A differenza degli antivirus tradizionali, l'AI può rilevare minacce zero-day — attacchi mai visti prima. Sistemi come Darktrace o CrowdStrike Falcon creano un \"profilo normale\" di ogni utente e segnalano deviazioni sospette."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa può fare una PMI italiana oggi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "💼 SOC Analyst 42% — Rischio medio 💼 Cyber Security Engineer 30% — Basso rischio 💼 Network Engineer 48% — Rischio medio Scopri il rischio AI per la tua professione Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
@@ -106,6 +144,45 @@
         <li><strong>Backup regola 3-2-1</strong>: protezione essenziale dal ransomware</li>
       </ul>
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/cybersecurity-analyst" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Cybersecurity Analyst</div>
+              <div style="font-size:0.78rem;color:#10b981;">35% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/soc-analyst" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">SOC Analyst</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">42% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/cyber-security-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Cyber Security Engineer</div>
+              <div style="font-size:0.78rem;color:#10b981;">30% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/network-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Network Engineer</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">48% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <h3>Scopri il rischio AI per la tua professione</h3>
         <p>Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione.</p>

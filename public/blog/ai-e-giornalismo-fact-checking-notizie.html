@@ -60,6 +60,44 @@
     .author-bio { background:var(--surface-1,#f8fafc); border-radius:12px; padding:1.25rem; margin:2.5rem 0; display:flex; gap:1rem; align-items:flex-start; }
     .author-avatar { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:1.1rem; flex-shrink:0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Il giornalismo automatizzato: già realtà",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reuters, Associated Press e Bloomberg generano decine di migliaia di articoli all'anno con AI: resoconti finanziari trimestrali, tabellini sportivi, bollettini meteo, risultati elettorali. In Italia, alcune testate regionali usano AI per comunicati di cronaca locale e report su bandi pubblici."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AI per il fact-checking",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'AI sta diventando uno strumento fondamentale per i fact-checker. Sistemi come ClaimBuster identificano automaticamente affermazioni verificabili in discorsi politici. Full Fact nel UK monitora le dichiarazioni dei politici in tempo reale durante le trasmissioni live. In Italia, Pagella Politica sperimenta con AI per accelerare la verifica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il problema speculare: l'AI che crea fake news",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La stessa AI usata per il fact-checking può creare disinformazione su scala industriale: articoli falsi convincenti, profili social credibili, commenti che sembrano di persone reali. I deepfake completano il quadro di un ecosistema dell'informazione sotto attacco."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come difendersi dalla disinformazione AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "💼 Giornalista Investigativo 30% — Basso rischio 💼 Copywriter 72% — Alto rischio 💼 Redattore 75% — Alto rischio Scopri il rischio AI per la tua professione Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
@@ -106,6 +144,45 @@
         <li>Segui fact-checker italiani: Pagella Politica, Open, Facta</li>
       </ul>
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/giornalista" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Giornalista</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">58% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/giornalista-investigativo" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Giornalista Investigativo</div>
+              <div style="font-size:0.78rem;color:#10b981;">30% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/copywriter" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Copywriter</div>
+              <div style="font-size:0.78rem;color:#ef4444;">72% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/redattore" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Redattore</div>
+              <div style="font-size:0.78rem;color:#ef4444;">75% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <h3>Scopri il rischio AI per la tua professione</h3>
         <p>Analizza gratis 235 professioni e ottieni una valutazione dettagliata del rischio di automazione.</p>

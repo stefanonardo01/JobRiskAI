@@ -57,6 +57,52 @@
     .callout-green { background:#f0fdf4; border-left:4px solid #22c55e; border-radius:0 12px 12px 0; padding:1rem 1.25rem; margin:1.5rem 0; }
     .callout-green p { margin:0; font-size:0.93rem; color:#15803d; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Il problema energetico dell'AI e perché il quantum potrebbe risolverlo",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Addestrare un grande modello linguistico come GPT-4 o Claude 3 consuma una quantità di energia equivalente al consumo annuale di centinaia di famiglie. Il data center che ospita questi calcoli richiede enormi quantità di acqua per il raffreddamento e gigawatt di energia elettrica. Questo non è sostenibile alla scala a cui l'AI sta crescendo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quantum Machine Learning: realtà o hype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il campo del Quantum Machine Learning (QML) esiste dal 2016, ma ha prodotto risultati controversi. L'entusiasmo iniziale si è scontrato con la realtà dei computer quantistici attuali — rumorosi, soggetti a errori, con pochi qubit utilizzabili. Molti dei presunti vantaggi teorici del QML si riducono o spariscono quando si tiene conto del rumore."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Crittografia AI e sicurezza post-quantistica",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uno degli impatti più imminenti della combinazione quantum+AI è sulla sicurezza. I modelli AI sono già usati per identificare vulnerabilità nei sistemi crittografici classici. I computer quantistici potrebbero rompere la crittografia stessa. La combinazione delle due tecnologie in mani avverse è uno degli scenari più preoccupanti per i team di sicurezza informatica governativi e aziendali."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Timeline realistica: quando arriva davvero l'AI quantistica",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per task generali, il quantum advantage sull'AI classica è almeno a 10-15 anni di distanza. Il problema principale è la \"fault tolerance\" — costruire qubit logici affidabili da qubit fisici rumorosi richiede rapporti di 1.000:1 o più. Con i processori attuali da 1.000-2.000 qubit fisici, si ottengono pochi qubit logici sufficientemente stabili per calcoli profondi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le professioni del quantum+AI: chi serve davvero",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le aziende che lavorano all'intersezione quantum+AI cercano profili rarissimi: fisici con background in information theory, ingegneri che capiscono sia hardware quantistico che architetture di reti neurali, matematici specializzati in algebra lineare quantistica. Gli stipendi per questi profili sono tra i più alti nell'industria tech — con una domanda che supera di 20:1 l'offerta nel 2026."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header role="banner">
@@ -122,6 +168,45 @@
         <p>Per chi lavora in AI senza background quantistico, il messaggio pratico è: la combinazione cambierà gli strumenti che userete, non necessariamente il vostro lavoro direttamente. Come l'avvento delle GPU ha cambiato il deep learning senza che ogni data scientist dovesse diventare un ingegnere hardware.</p>
 
       </article>
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/data-scientist" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Data Scientist</div>
+              <div style="font-size:0.78rem;color:#10b981;">35% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ml-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">ML Engineer</div>
+              <div style="font-size:0.78rem;color:#10b981;">32% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/ai-engineer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">AI Engineer</div>
+              <div style="font-size:0.78rem;color:#10b981;">22% — Basso rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/backend-developer" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Backend Developer</div>
+              <div style="font-size:0.78rem;color:#f59e0b;">45% — Rischio medio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <p style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
         <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>

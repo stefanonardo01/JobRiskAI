@@ -81,6 +81,52 @@
     .blog-article a { color:var(--primary,#6366f1); }
     .blog-cta { background:linear-gradient(135deg,rgba(99,102,241,0.08),rgba(59,130,246,0.04)); border:1px solid rgba(99,102,241,0.2); border-radius:16px; padding:1.5rem; text-align:center; margin:2.5rem 0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come abbiamo calcolato il rischio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il punteggio di rischio AI di JobRiskAI è basato su tre dimensioni principali: la ripetitività dei task (quanto le attività sono strutturate e prevedibili), il rapporto costo (quando un agente AI diventa economicamente preferibile a un professionista umano) e la velocità di adozione tecnologica nel settore. Il risultato è un punteggio da 0 a 100 e un anno critico stimato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le 20 professioni più a rischio",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Home Blog — AI e Lavoro 📖 Tutti gli articoli 🇮🇹 IT 🇬🇧 EN 🇪🇸 ES 🇩🇪 DE 🇫🇷 FR JobRiskAI › Blog › Analisi Analisi Le 20 professioni più a rischio AI in Italia nel 2026 L'intelligenza artificiale non è una minaccia futura: sta già trasformando il mercato del lavoro italiano adesso. Alcune professioni hanno un rischio di sostituzione superiore all'80% entro il 2030. Ecco i dati."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa accomuna i lavori più a rischio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Guardando la lista emergono tre pattern chiari:"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il rischio non è zero per nessuno",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anche le professioni con basso rischio (infermiere 12%, psicologo 18%, idraulico 18%) subiranno trasformazioni. La differenza è che per questi ruoli l'AI sarà un assistente, non un sostituto. Per i ruoli ad alto rischio, invece, l'AI diventerà la soluzione principale e l'umano passerà a supervisore — o verrà eliminato del tutto dal processo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa fare se sei in una professione ad alto rischio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La risposta non è \"cambiare lavoro\" ma spostarsi verso i task ad alto valore aggiunto della propria professione. Un contabile che abbandona la contabilità ordinaria (già automatizzata) per fare consulenza fiscale strategica ha un rischio che scende da 85% a circa 28%. La professione resta, cambia la parte che fai."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header role="banner">
@@ -285,6 +331,45 @@
     
       </article>
 
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/data-entry" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Data Entry Clerk</div>
+              <div style="font-size:0.78rem;color:#ef4444;">92% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/contabile" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Contabile</div>
+              <div style="font-size:0.78rem;color:#ef4444;">85% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/customer-service" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Customer Service</div>
+              <div style="font-size:0.78rem;color:#ef4444;">80% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/impiegato-amm" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Impiegato Amministrativo</div>
+              <div style="font-size:0.78rem;color:#ef4444;">80% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <p data-i18n="blog_cta_title" style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
         <p data-i18n="blog_cta_sub" style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>

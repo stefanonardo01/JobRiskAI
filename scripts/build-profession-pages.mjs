@@ -78,6 +78,100 @@ function categoryOf(key) {
   return 'Altro';
 }
 
+// ── Articoli blog correlati per categoria ─────────────────
+const CATEGORY_ARTICLES = {
+  'Tech & AI': [
+    { url: '/blog/computer-quantistici-e-ai-cosa-cambia', label: '🔬 Computer quantistici e AI: cosa cambia davvero' },
+    { url: '/blog/ai-e-cybersecurity-per-le-pmi', label: '🛡️ AI e Cybersecurity: attacchi automatizzati e difese' },
+    { url: '/blog/progettazione-ingegneristica-con-ai-dal-cad-al-generativo', label: '⚙️ Progettazione ingegneristica con AI: dal CAD al generativo' },
+  ],
+  'Commerciale': [
+    { url: '/blog/ai-e-ecommerce-personalizzazione', label: '🛒 AI nell\'E-commerce: come Amazon sa cosa vuoi comprare' },
+    { url: '/blog/ai-per-freelance-e-liberi-professionisti', label: '💼 AI per Freelance: strumenti che moltiplicano la produttività' },
+    { url: '/blog/ai-nel-settore-immobiliare', label: '🏠 AI nel Settore Immobiliare: valutazioni automatiche e agenti' },
+  ],
+  'Marketing': [
+    { url: '/blog/ai-e-arte-generativa-copyright-e-creativita', label: '🎨 AI e Arte Generativa: Midjourney sta uccidendo gli artisti?' },
+    { url: '/blog/ai-e-musica-composizione-generativa', label: '🎵 AI e Musica: Suno e Udio stanno uccidendo la musica?' },
+    { url: '/blog/deepfake-disinformazione-ai-come-riconoscerli', label: '🎭 Deepfake e Disinformazione: come riconoscerli' },
+  ],
+  'Management & Finanza': [
+    { url: '/blog/ai-e-finanza-personale-investimenti-automatici', label: '💰 AI e Finanza: i robo-advisor battono i consulenti umani?' },
+    { url: '/blog/ai-nel-settore-assicurativo-rischi-e-opportunita', label: '📋 AI nel Settore Assicurativo: come gli algoritmi decidono le polizze' },
+    { url: '/blog/ai-e-hr-gestione-del-personale', label: '👔 AI nelle Risorse Umane: come gli algoritmi assumono e valutano' },
+  ],
+  'Operations': [
+    { url: '/blog/robot-umanoidi-e-ai-il-futuro-del-lavoro-fisico', label: '🤖 Robot Umanoidi e AI: il futuro del lavoro fisico' },
+    { url: '/blog/ai-e-trasporti-guida-autonoma-2026', label: '🚗 Guida Autonoma 2026: Tesla, Waymo e il ritardo' },
+    { url: '/blog/ai-e-lavoro-da-remoto-futuro-dello-smart-working', label: '🏠 AI e Smart Working: il futuro del lavoro da remoto' },
+  ],
+  'HR': [
+    { url: '/blog/ai-e-hr-gestione-del-personale', label: '👔 AI nelle Risorse Umane: algoritmi di selezione e valutazione' },
+    { url: '/blog/ai-per-freelance-e-liberi-professionisti', label: '💼 AI per Freelance: opportunità e minacce' },
+    { url: '/blog/reddito-universale-e-ai-scenari-per-il-futuro-del-lavoro', label: '🌐 Reddito Universale e AI: scenari per il futuro del lavoro' },
+  ],
+  'Sanità': [
+    { url: '/blog/chirurgia-assistita-da-ai-il-futuro-della-sala-operatoria', label: '🏥 Chirurgia Assistita da AI: il futuro della sala operatoria' },
+    { url: '/blog/prevenzione-malattie-con-ai-diagnosi-predittiva', label: '🔬 Prevenzione Malattie con AI: diagnosi predittiva' },
+    { url: '/blog/ai-e-salute-mentale-terapia-digitale', label: '🧠 AI e Salute Mentale: i chatbot terapeutici funzionano?' },
+  ],
+  'Creatività': [
+    { url: '/blog/ai-e-arte-generativa-copyright-e-creativita', label: '🎨 AI e Arte Generativa: copyright e creatività' },
+    { url: '/blog/ai-e-musica-composizione-generativa', label: '🎵 AI e Musica: composizione generativa e futuro degli artisti' },
+    { url: '/blog/deepfake-disinformazione-ai-come-riconoscerli', label: '🎭 Deepfake e Disinformazione: come riconoscerli' },
+  ],
+  'Istruzione': [
+    { url: '/blog/ai-nell-istruzione-scuola-e-universita', label: '📚 AI nell\'Istruzione: come ChatGPT sta cambiando scuola e università' },
+    { url: '/blog/ai-per-freelance-e-liberi-professionisti', label: '💼 AI per Professionisti: strumenti e strategie' },
+    { url: '/blog/reddito-universale-e-ai-scenari-per-il-futuro-del-lavoro', label: '🌐 Reddito Universale e AI: scenari per il futuro' },
+  ],
+  'Legale & PA': [
+    { url: '/blog/ai-e-privacy-gdpr-intelligenza-artificiale', label: '🔒 AI e Privacy: cosa cambia con il GDPR e l\'AI Act' },
+    { url: '/blog/avvocato-rischio-ai-2026', label: '⚖️ Avvocato e AI: rischio 42% — i task già automatizzati' },
+    { url: '/blog/modelli-ai-pericolosi-il-dibattito-sulla-sicurezza', label: '⚠️ Modelli AI Pericolosi: il dibattito sulla sicurezza' },
+  ],
+  'Ingegneria': [
+    { url: '/blog/progettazione-ingegneristica-con-ai-dal-cad-al-generativo', label: '⚙️ Progettazione Ingegneristica con AI: dal CAD al generativo' },
+    { url: '/blog/computer-quantistici-e-ai-cosa-cambia', label: '🔬 Computer Quantistici e AI: cosa cambia' },
+    { url: '/blog/robot-umanoidi-e-ai-il-futuro-del-lavoro-fisico', label: '🤖 Robot Umanoidi e AI: il futuro del lavoro fisico' },
+  ],
+  'Artigianato': [
+    { url: '/blog/robot-umanoidi-e-ai-il-futuro-del-lavoro-fisico', label: '🤖 Robot Umanoidi e AI: il futuro del lavoro fisico' },
+    { url: '/blog/reddito-universale-e-ai-scenari-per-il-futuro-del-lavoro', label: '🌐 Reddito Universale e AI: scenari per il futuro del lavoro' },
+    { url: '/blog/come-difendere-il-lavoro-dallai', label: '🛡️ Come difendere il tuo lavoro dall\'AI' },
+  ],
+  'Ristorazione': [
+    { url: '/blog/ai-e-alimentazione-nutrizione-personalizzata', label: '🍽️ AI e Nutrizione: diete personalizzate e microbioma' },
+    { url: '/blog/robot-umanoidi-e-ai-il-futuro-del-lavoro-fisico', label: '🤖 Robot Umanoidi e AI: il futuro del lavoro fisico' },
+    { url: '/blog/reddito-universale-e-ai-scenari-per-il-futuro-del-lavoro', label: '🌐 Reddito Universale e AI: scenari futuri' },
+  ],
+  'Servizi & Turismo': [
+    { url: '/blog/ai-nel-turismo-e-viaggi', label: '✈️ AI nel Turismo: chatbot di viaggio e prezzi dinamici' },
+    { url: '/blog/ai-nello-sport-analisi-delle-performance', label: '⚽ AI nello Sport: algoritmi, tattiche e scouting' },
+    { url: '/blog/ai-per-freelance-e-liberi-professionisti', label: '💼 AI per Professionisti: strumenti che moltiplicano la produttività' },
+  ],
+  'Agricoltura & Ambiente': [
+    { url: '/blog/ai-e-agricoltura-precision-farming', label: '🌾 AI e Agricoltura: il Precision Farming che salva i raccolti' },
+    { url: '/blog/ai-e-cambiamenti-climatici-soluzioni-o-problema', label: '🌍 AI e Cambiamenti Climatici: soluzione o problema?' },
+    { url: '/blog/ricerca-scientifica-con-ai-laboratori-del-futuro', label: '🔬 Ricerca Scientifica con AI: i laboratori del futuro' },
+  ],
+  'Ricerca & Scienza': [
+    { url: '/blog/ricerca-scientifica-con-ai-laboratori-del-futuro', label: '🔬 Ricerca Scientifica con AI: i laboratori del futuro' },
+    { url: '/blog/computer-quantistici-e-ai-cosa-cambia', label: '💻 Computer Quantistici e AI: cosa cambia' },
+    { url: '/blog/ai-e-cambiamenti-climatici-soluzioni-o-problema', label: '🌍 AI e Cambiamenti Climatici: soluzione o problema?' },
+  ],
+  'Media & Spettacolo': [
+    { url: '/blog/ai-e-musica-composizione-generativa', label: '🎵 AI e Musica: Suno e Udio stanno uccidendo gli artisti?' },
+    { url: '/blog/ai-e-arte-generativa-copyright-e-creativita', label: '🎨 AI e Arte Generativa: copyright e creatività' },
+    { url: '/blog/ai-e-giornalismo-fact-checking-notizie', label: '📰 AI e Giornalismo: fact-checking e futuro dell\'informazione' },
+  ],
+  'default': [
+    { url: '/blog/le-20-professioni-piu-a-rischio-ai', label: '🔴 Le 20 professioni più a rischio AI in Italia' },
+    { url: '/blog/come-difendere-il-lavoro-dallai', label: '🛡️ Come difendere il tuo lavoro dall\'AI' },
+    { url: '/blog/competenze-che-lai-non-sostituira', label: '💡 Le competenze che l\'AI non sostituirà mai' },
+  ],
+};
+
 function relatedJobs(key, max = 4) {
   const cat = categoryOf(key);
   return (CATEGORIES[cat] || [])
@@ -401,6 +495,26 @@ function buildProfessionPage(key) {
         ${d.survivalNote ? `<p style="color:var(--text-secondary);font-size:0.88rem;font-style:italic;max-width:520px;margin:0 auto;">💡 ${esc(d.survivalNote.charAt(0).toUpperCase() + d.survivalNote.slice(1))}.</p>` : ''}
       </div>
 
+      <!-- Paragrafo descrittivo unico per SEO -->
+      <div class="prof-card" style="border-left:3px solid #e5e7eb;">
+        <h2>📊 Analisi del rischio AI per il ${esc(title)}</h2>
+        <p style="font-size:0.94rem;color:var(--text-primary);line-height:1.75;margin-bottom:0.75rem;">
+          Il <strong>${esc(title)}</strong> è una professione nel settore <strong>${esc(cat)}</strong> con un rischio di automazione AI del <strong style="color:${riskColor(pct)};">${pct}%</strong> — ${pct >= 70 ? 'tra i più alti nel panorama lavorativo italiano' : pct >= 40 ? 'nella fascia media di rischio nel panorama lavorativo italiano' : 'tra i più bassi nel panorama lavorativo italiano'}.
+          L'anno critico stimato è il <strong>${year}</strong>, ovvero il momento in cui i sistemi AI potrebbero essere in grado di svolgere la maggior parte dei task del ruolo in modo economicamente conveniente per le aziende.
+        </p>
+        <p style="font-size:0.94rem;color:var(--text-primary);line-height:1.75;margin-bottom:0.75rem;">
+          ${pct >= 70
+            ? `Questo livello di rischio elevato è determinato dall'alto grado di automazione già possibile con i sistemi AI attuali. I task più ripetitivi e strutturati del ruolo sono già parzialmente automatizzabili, e la tecnologia è in rapida evoluzione. Per i ${esc(title)}i che vogliono proteggere la propria carriera, è fondamentale sviluppare competenze ad alto valore aggiunto che l'AI non può replicare.`
+            : pct >= 40
+            ? `Questo livello di rischio intermedio riflette una realtà complessa: alcune attività del ${esc(title)} sono già parzialmente automatizzabili dall'AI, mentre altre — quelle che richiedono giudizio, relazione umana e creatività — restano fuori dalla portata dei sistemi attuali. Il rischio è reale ma gestibile con le giuste strategie di adattamento.`
+            : `Questo basso livello di rischio indica che il ${esc(title)} svolge attività che richiedono capacità difficilmente replicabili dall'AI: giudizio contestuale complesso, relazioni umane profonde, responsabilità legale o etica, e competenze fisiche o sensoriali specializzate. La professione è relativamente protetta nel breve e medio termine.`
+          }
+        </p>
+        ${humanTotal > 0 && aiAnnual > 0 ? `<p style="font-size:0.94rem;color:var(--text-primary);line-height:1.75;margin-bottom:0;">
+          Dal punto di vista economico, il costo annuale di un <strong>${esc(title)}</strong> (stipendio + contributi) è di circa <strong>€${humanTotal.toLocaleString('it')}</strong>, rispetto a <strong style="color:var(--success);">€${aiAnnual.toLocaleString('it')}</strong> per un agente AI equivalente — un risparmio potenziale del <strong>${savingPct}%</strong> per le aziende. Questo differenziale di costo è uno dei principali driver dell'adozione AI nel settore ${esc(cat)}.
+        </p>` : ''}
+      </div>
+
       ${tasks.length > 0 ? `
       <!-- Analisi task -->
       <div class="prof-card">
@@ -471,13 +585,13 @@ function buildProfessionPage(key) {
         <div class="prof-related">${relatedCards}</div>
       </div>` : ''}
 
-      <!-- Articoli correlati -->
+      <!-- Articoli correlati dinamici per categoria -->
       <div class="prof-card">
         <h2>📖 Approfondisci — Articoli correlati</h2>
         <div style="display:flex;flex-direction:column;gap:0.6rem;">
-          <a href="/blog/le-20-professioni-piu-a-rischio-ai" style="display:block;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);font-size:0.9rem;font-weight:500;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--primary)';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">🔴 Le 20 professioni più a rischio AI in Italia</a>
-          <a href="/blog/come-difendere-il-lavoro-dallai" style="display:block;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);font-size:0.9rem;font-weight:500;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--primary)';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">🛡️ Come difendere il tuo lavoro dall'AI</a>
-          <a href="/blog/competenze-che-lai-non-sostituira" style="display:block;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);font-size:0.9rem;font-weight:500;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--primary)';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">💡 Le competenze che l'AI non sostituirà mai</a>
+          ${(CATEGORY_ARTICLES[cat] || CATEGORY_ARTICLES['default']).map(a =>
+            `<a href="${esc(a.url)}" style="display:block;padding:0.75rem 1rem;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text-primary);font-size:0.9rem;font-weight:500;transition:all 0.15s;" onmouseover="this.style.borderColor='var(--primary)';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border)';this.style.background=''">${esc(a.label)}</a>`
+          ).join('\n          ')}
         </div>
       </div>
 

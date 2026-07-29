@@ -81,6 +81,44 @@
     .blog-article a { color:var(--primary,#6366f1); }
     .blog-cta { background:linear-gradient(135deg,rgba(99,102,241,0.08),rgba(59,130,246,0.04)); border:1px solid rgba(99,102,241,0.2); border-radius:16px; padding:1.5rem; text-align:center; margin:2.5rem 0; }
   </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Cosa dicono davvero i dati?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le stime variano enormemente — e non per incompetenza dei ricercatori, ma perché dipendono dalle assunzioni di partenza:"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'Italia ha un problema strutturale specifico",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il mercato del lavoro italiano è esposto all'automazione più della media europea per due motivi:"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I lavori che verranno creati dall'AI in Italia",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ogni rivoluzione tecnologica distrugge e crea lavoro. L'AI non è diversa. Le aree di creazione occupazionale:"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La vera domanda: chi ne pagherà il costo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La transizione non sarà indolore. I lavoratori a basse qualifiche nei ruoli ad alto rischio non possono \"riqualificarsi\" facilmente — specialmente se hanno 50 anni, un mutuo, e nessuna rete di sicurezza. Il costo sociale della transizione dipenderà dalle politiche pubbliche: sussidi di riqualificazione, reddito di transizione, investimento in formazione continua."
+      }
+    }
+  ]
+}</script>
 </head>
 <body>
   <header role="banner">
@@ -160,6 +198,45 @@
     
       </article>
 
+      
+      <!-- Professioni correlate -->
+      <div style="margin:2.5rem 0;padding:1.5rem;background:var(--surface-1,#f8fafc);border:1px solid var(--border-color,#e5e7eb);border-radius:16px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;margin:0 0 1rem;color:var(--ink-0,#1f2937);">🔍 Professioni a rischio AI correlate</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.6rem;">
+          <a href="/professione/contabile" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Contabile</div>
+              <div style="font-size:0.78rem;color:#ef4444;">85% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/data-entry" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Data Entry Clerk</div>
+              <div style="font-size:0.78rem;color:#ef4444;">92% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/impiegato-amm" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Impiegato Amministrativo</div>
+              <div style="font-size:0.78rem;color:#ef4444;">80% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          <a href="/professione/customer-service" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem 1rem;border:1px solid var(--border,#e5e7eb);border-radius:10px;text-decoration:none;color:var(--text-primary,#1f2937);font-size:0.9rem;transition:all 0.15s;" onmouseover="this.style.borderColor='#6366f1';this.style.background='rgba(99,102,241,0.04)'" onmouseout="this.style.borderColor='var(--border,#e5e7eb)';this.style.background=''">
+            <span style="font-size:1.1rem;">💼</span>
+            <div style="flex:1;">
+              <div style="font-weight:600;">Customer Service</div>
+              <div style="font-size:0.78rem;color:#ef4444;">80% — Alto rischio</div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
       <div class="blog-cta">
         <p data-i18n="blog_cta_title" style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
         <p data-i18n="blog_cta_sub" style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:1.25rem;">Scoprilo gratis in meno di un minuto — cerca la tua professione o analizza il tuo CV.</p>
