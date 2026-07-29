@@ -352,6 +352,37 @@ function buildProfessionPage(key) {
     })),
   }, null, 2);
 
+  // Occupation schema
+  const occupationJsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Occupation',
+    'name': title,
+    'description': d.description || `Analisi del rischio di automazione AI per la professione di ${title} in Italia.`,
+    'occupationLocation': { '@type': 'Country', 'name': 'Italia' },
+    'estimatedSalary': humanTotal > 0 ? {
+      '@type': 'MonetaryAmountDistribution',
+      'name': 'Retribuzione annua lorda',
+      'currency': 'EUR',
+      'duration': 'P1Y',
+      'median': humanTotal,
+    } : undefined,
+    'occupationalCategory': cat,
+    'skills': survival.slice(0, 5).join(', ') || 'Competenze professionali avanzate',
+    'mainEntityOfPage': `https://www.jobriskai.it/professione/${sl}`,
+  }, null, 2);
+
+  // Speakable schema
+  const speakableJsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    'name': `${title}: rischio AI ${pct}% — JobRiskAI`,
+    'url': `https://www.jobriskai.it/professione/${sl}`,
+    'speakable': {
+      '@type': 'SpeakableSpecification',
+      'cssSelector': ['.prof-hero', '.prof-speakable'],
+    },
+  }, null, 2);
+
   const breadcrumbJsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -399,6 +430,27 @@ function buildProfessionPage(key) {
   <meta name="description" content="Il ${esc(title)} sarà sostituito dall'AI? Rischio automazione ${pct}%, anno critico ${year}. Scopri le competenze da sviluppare e il confronto costi con un agente AI. Analisi gratuita su JobRiskAI.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" hreflang="it" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" hreflang="en" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" hreflang="es" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" hreflang="de" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" hreflang="fr" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" hreflang="x-default" href="https://www.jobriskai.it/professione/${sl}">
+  <link rel="alternate" type="text/plain" href="https://www.jobriskai.it/llms.txt" title="LLM-readable site description">
+  <!-- AI citation meta tags -->
+  <meta name="citation_title" content="${esc(title)}: rischio AI ${pct}% — Analisi JobRiskAI 2026">
+  <meta name="citation_author" content="JobRiskAI">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_online_date" content="${d.lastUpdated || '2026-07-29'}">
+  <meta name="citation_language" content="it">
+  <meta name="dc.title" content="${esc(title)}: rischio di sostituzione AI ${pct}%, anno critico ${year}">
+  <meta name="dc.creator" content="JobRiskAI">
+  <meta name="dc.subject" content="rischio AI, automazione, ${esc(title)}, futuro del lavoro, ${esc(cat)}">
+  <meta name="dc.description" content="Il ${esc(title)} ha un rischio di sostituzione AI del ${pct}% con anno critico ${year}. Analisi dei task automatizzabili, piano upskilling e confronto costi umano vs agente AI.">
+  <meta name="dc.date" content="${d.lastUpdated || '2026-07-29'}">
+  <meta name="dc.type" content="Text">
+  <meta name="dc.identifier" content="https://www.jobriskai.it/professione/${sl}">
+  <meta name="dc.language" content="it">
   <meta property="og:title" content="${esc(title)}: rischio AI ${pct}% | JobRiskAI">
   <meta property="og:description" content="Il ${esc(title)} sarà sostituito dall'AI? Rischio ${pct}%, anno critico ${year}. Piano di sopravvivenza e confronto costi gratuito.">
   <meta property="og:type" content="article">
@@ -409,6 +461,8 @@ function buildProfessionPage(key) {
   <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
   <script type="application/ld+json">${faqJsonLd}</script>
   <script type="application/ld+json">${breadcrumbJsonLd}</script>
+  <script type="application/ld+json">${occupationJsonLd}</script>
+  <script type="application/ld+json">${speakableJsonLd}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -496,7 +550,7 @@ function buildProfessionPage(key) {
       </div>
 
       <!-- Paragrafo descrittivo unico per SEO -->
-      <div class="prof-card" style="border-left:3px solid #e5e7eb;">
+      <div class="prof-card prof-speakable" style="border-left:3px solid #e5e7eb;">
         <h2>📊 Analisi del rischio AI per il ${esc(title)}</h2>
         <p style="font-size:0.94rem;color:var(--text-primary);line-height:1.75;margin-bottom:0.75rem;">
           Il <strong>${esc(title)}</strong> è una professione nel settore <strong>${esc(cat)}</strong> con un rischio di automazione AI del <strong style="color:${riskColor(pct)};">${pct}%</strong> — ${pct >= 70 ? 'tra i più alti nel panorama lavorativo italiano' : pct >= 40 ? 'nella fascia media di rischio nel panorama lavorativo italiano' : 'tra i più bassi nel panorama lavorativo italiano'}.
@@ -720,6 +774,7 @@ function buildClassificaPage() {
   <meta property="og:site_name" content="JobRiskAI">
   <script type="application/ld+json">${faqJsonLd}</script>
   <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'JobRiskAI', item: 'https://www.jobriskai.it/' }, { '@type': 'ListItem', position: 2, name: 'Classifica professioni a rischio AI', item: 'https://www.jobriskai.it/classifica' }] })}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"I 235 lavori più a rischio AI in Italia — Classifica JobRiskAI 2026","url":"https://www.jobriskai.it/classifica","speakable":{"@type":"SpeakableSpecification","cssSelector":[".cla-hero-text",".cla-speakable"]}}</script>
   <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

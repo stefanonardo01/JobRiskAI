@@ -25,40 +25,40 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jobriskai.it/dati</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.jobriskai.it/blog</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jobriskai.it/chi-siamo</loc>
+    <loc>https://www.jobriskai.it/dati</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.jobriskai.it/metodologia</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.jobriskai.it/privacy-policy</loc>
+    <loc>https://www.jobriskai.it/chi-siamo</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.jobriskai.it/termini-servizio</loc>
+    <loc>https://www.jobriskai.it/glossario</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/agente-immobiliare-ai-proptech-futuro</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.jobriskai.it/blog/agente-immobiliare-rischio-ai</loc>
@@ -217,6 +217,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.jobriskai.it/blog/avvocato-rischio-ai-task-automatizzati</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.jobriskai.it/blog/chatgpt-vs-claude-vs-gemini-quale-usare-per-lavoro</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -253,6 +259,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.jobriskai.it/blog/commercialista-ai-2026-dichiarazioni-automatiche</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.jobriskai.it/blog/commercialista-rischio-ai-2026</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -277,6 +289,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.jobriskai.it/blog/contabile-rischio-ai-automazione-2026</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.jobriskai.it/blog/cursor-github-copilot-il-programmatore-esiste-ancora</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -295,13 +313,49 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.jobriskai.it/blog/giornalista-ai-rischio-futuro-informazione</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/grafico-designer-ai-midjourney-futuro</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/hr-manager-rischio-ai-recruiting-automatizzato</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.jobriskai.it/blog/idraulico-rischio-ai</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.jobriskai.it/blog/infermiere-rischio-ai-professione-protetta</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.jobriskai.it/blog/infermiere-rischio-ai</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/ingegnere-civile-ai-progettazione-futuro</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/insegnante-rischio-ai-futuro-scuola</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -332,6 +386,12 @@
   </url>
   <url>
     <loc>https://www.jobriskai.it/blog/le-20-professioni-piu-a-rischio-ai</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/medico-rischio-ai-diagnosi-futuro</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -368,6 +428,12 @@
   </url>
   <url>
     <loc>https://www.jobriskai.it/blog/progettazione-ingegneristica-con-ai-dal-cad-al-generativo</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jobriskai.it/blog/programmatore-era-ai-github-copilot-futuro</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

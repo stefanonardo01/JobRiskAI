@@ -1,500 +1,217 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      'ad_storage':         'denied',
-      'analytics_storage':  'denied',
-      'ad_user_data':       'denied',
-      'ad_personalization': 'denied',
-      'wait_for_update':    2000
-    });
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJT8W9JTQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HNJT8W9JTQ');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metodologia | Come calcoliamo il rischio AI per ogni professione — JobRiskAI</title>
-  <meta name="description" content="Spiegazione trasparente e verificabile di come JobRiskAI calcola il punteggio di rischio AI per 235 professioni: le 5 dimensioni, i pesi, un esempio numerico completo e le fonti citate.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.jobriskai.it/metodologia">
-  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <script type="application/ld+json">{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Metodologia — Come calcoliamo il rischio AI per 235 professioni",
-    "description": "Spiegazione trasparente delle 5 dimensioni, dei pesi percentuali e dell'esempio numerico usati da JobRiskAI per calcolare il punteggio di automazione.",
-    "url": "https://www.jobriskai.it/metodologia",
-    "publisher": { "@type": "Organization", "name": "JobRiskAI", "url": "https://www.jobriskai.it" }
-  }</script>
-  <style>
-    body { font-family: 'Inter', sans-serif; background: var(--bg, #fafaf8); color: var(--text-primary, #111827); }
-    .prose { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
-    .prose h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary, #111827); line-height: 1.2; }
-    .prose .lead { font-size: 1.05rem; color: #4b5563; line-height: 1.75; margin-bottom: 2.5rem; border-left: 3px solid #6366f1; padding-left: 1rem; }
-    .prose h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; margin: 2.75rem 0 0.75rem; color: #1f2937; }
-    .prose h3 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: #374151; }
-    .prose p { font-size: 0.95rem; line-height: 1.8; color: #374151; margin-bottom: 0.9rem; }
-    .prose ul { padding-left: 1.4rem; margin-bottom: 1rem; }
-    .prose li { font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 0.4rem; }
-    .prose a { color: #4f46e5; text-decoration: underline; }
-    .divider { border: none; border-top: 1px solid #e5e7eb; margin: 2.5rem 0; }
-
-    /* Breadcrumb */
-    .breadcrumb { font-size: 0.82rem; color: #9ca3af; margin-bottom: 1.5rem; display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap; }
-    .breadcrumb a { color: #6b7280; text-decoration: none; }
-    .breadcrumb a:hover { color: #4f46e5; }
-
-    /* Dimensioni cards */
-    .dim-grid { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
-    .dim-card { background: white; border: 1.5px solid #e5e7eb; border-radius: 14px; padding: 1.25rem 1.5rem; display: flex; gap: 1.25rem; align-items: flex-start; }
-    .dim-card:hover { border-color: #a5b4fc; box-shadow: 0 2px 12px rgba(99,102,241,0.07); }
-    .dim-badge { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 64px; }
-    .dim-badge .weight { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: #4f46e5; line-height: 1; }
-    .dim-badge .weight-label { font-size: 0.72rem; color: #9ca3af; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.1rem; }
-    .dim-body h3 { margin: 0 0 0.3rem; font-size: 0.95rem; font-weight: 700; color: #111827; }
-    .dim-body p { margin: 0; font-size: 0.87rem; color: #6b7280; line-height: 1.6; }
-    .dim-dir { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 999px; margin-top: 0.4rem; }
-    .dim-dir.risk-up { background: #fef2f2; color: #dc2626; }
-    .dim-dir.risk-down { background: #f0fdf4; color: #16a34a; }
-
-    /* Formula box */
-    .formula-box { background: linear-gradient(135deg, #f5f3ff, #eff6ff); border: 1.5px solid #c7d2fe; border-radius: 14px; padding: 1.5rem; margin: 1.75rem 0; font-family: 'Space Grotesk', monospace; }
-    .formula-box .f-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #6366f1; margin-bottom: 0.75rem; }
-    .formula-box .f-eq { font-size: 0.95rem; color: #1e1b4b; line-height: 1.8; }
-    .formula-box .f-eq span.highlight { color: #4f46e5; font-weight: 700; }
-    .formula-box .f-note { font-size: 0.8rem; color: #6b7280; margin-top: 0.75rem; font-family: 'Inter', sans-serif; }
-
-    /* Worked example */
-    .example-box { background: white; border: 1.5px solid #e5e7eb; border-radius: 16px; overflow: hidden; margin: 1.75rem 0; }
-    .example-header { background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; padding: 1.25rem 1.5rem; }
-    .example-header h3 { margin: 0 0 0.25rem; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; }
-    .example-header p { margin: 0; font-size: 0.85rem; opacity: 0.85; }
-    .example-body { padding: 1.5rem; }
-    .calc-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-bottom: 1rem; }
-    .calc-table th { text-align: left; font-weight: 700; color: #374151; border-bottom: 2px solid #e5e7eb; padding: 0.5rem 0.6rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
-    .calc-table td { padding: 0.6rem 0.6rem; border-bottom: 1px solid #f3f4f6; color: #374151; vertical-align: middle; }
-    .calc-table tr:last-child td { border-bottom: none; }
-    .calc-table .contrib { font-family: 'Space Grotesk', sans-serif; font-weight: 600; color: #4f46e5; }
-    .calc-table .score-val { font-family: 'Space Grotesk', sans-serif; font-weight: 600; }
-    .total-row td { background: #f9fafb; font-weight: 700; border-top: 2px solid #e5e7eb !important; }
-    .result-chip { display: inline-flex; align-items: center; gap: 0.5rem; background: #fef2f2; color: #dc2626; border: 1.5px solid #fca5a5; border-radius: 999px; padding: 0.5rem 1.25rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; margin-top: 0.5rem; }
-
-    /* Score bar */
-    .score-bar-wrap { display: flex; align-items: center; gap: 0.6rem; }
-    .score-bar { height: 6px; background: #e5e7eb; border-radius: 999px; flex: 1; max-width: 80px; overflow: hidden; }
-    .score-bar-fill { height: 100%; border-radius: 999px; background: #4f46e5; }
-
-    /* Sources */
-    .sources-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
-    .sources-list li { background: white; border: 1.5px solid #e5e7eb; border-radius: 12px; padding: 1rem 1.25rem; font-size: 0.88rem; }
-    .sources-list li:hover { border-color: #a5b4fc; }
-    .sources-list .src-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #9ca3af; margin-bottom: 0.2rem; }
-    .sources-list .src-title { font-weight: 600; color: #111827; margin-bottom: 0.2rem; }
-    .sources-list .src-link a { color: #4f46e5; font-size: 0.82rem; word-break: break-all; }
-
-    /* CTA block */
-    .cta-block { background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(124,58,237,0.04)); border: 1.5px solid #c7d2fe; border-radius: 16px; padding: 2rem 1.5rem; text-align: center; margin: 2.5rem 0; }
-    .cta-block h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 0.5rem; color: #1e1b4b; }
-    .cta-block p { font-size: 0.9rem; color: #4b5563; margin: 0 0 1.25rem; }
-    .cta-block a { display: inline-flex; align-items: center; gap: 0.5rem; background: #4f46e5; color: white; padding: 0.65rem 1.5rem; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.15s; }
-    .cta-block a:hover { background: #4338ca; }
-    .cta-block .cta-ghost { background: transparent; color: #4f46e5; border: 1.5px solid #6366f1; margin-left: 0.75rem; }
-    .cta-block .cta-ghost:hover { background: rgba(99,102,241,0.08); }
-
-    @media (max-width: 640px) {
-      .prose h1 { font-size: 1.6rem; }
-      .dim-card { flex-direction: column; gap: 0.75rem; }
-      .dim-badge { flex-direction: row; gap: 0.5rem; align-items: center; }
-      .calc-table { font-size: 0.8rem; }
-      .cta-block .cta-ghost { margin-left: 0; margin-top: 0.5rem; }
-      .cta-block { display: flex; flex-direction: column; align-items: center; }
-    }
-  </style>
-  <style>
-    .sh { background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--border,#E7E0D2); padding: 0 2rem; position: sticky; top: 0; z-index: 200; backdrop-filter: blur(14px); height: 60px; display: flex; align-items: center; }
-    .sh-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-    .sh-links { display: flex; align-items: center; gap: 0.4rem; }
-    .sh-links a { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--primary,#6366f1); text-decoration: none; font-weight: 600; font-size: 0.82rem; background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 0.5rem 0.8rem; white-space: nowrap; min-height: 44px; transition: background 0.15s; }
-    .sh-links a:hover { background: rgba(99,102,241,0.14); }
-    .sh-burger { display: none; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; border-radius: 8px; flex-shrink: 0; }
-    .sh-burger span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; margin: 3px 0; }
-    .sh-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 199; }
-    .sh-drawer-inner { background: white; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
-    .sh-drawer-inner a { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; border-radius: 10px; color: #374151; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: background 0.15s; min-height: 48px; }
-    .sh-drawer-inner a:hover { background: #f3f4f6; }
-    .sh-drawer-inner a.sh-cta { background: var(--primary,#6366f1); color: white; margin-top: 0.5rem; }
-    @media (max-width: 768px) { .sh { padding: 0 1rem; } .sh-links { display: none; } .sh-burger { display: flex; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metodologia di calcolo del rischio AI | JobRiskAI</title>
+<meta name="description" content="Come JobRiskAI calcola il rischio di sostituzione AI per 235 professioni italiane: le 5 dimensioni, i pesi, le fonti dati e la formula del punteggio 0–100%.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://www.jobriskai.it/metodologia">
+<link rel="alternate" type="text/plain" href="https://www.jobriskai.it/llms.txt">
+<meta name="citation_title" content="Metodologia di calcolo del rischio AI per professioni — JobRiskAI 2026">
+<meta name="citation_author" content="JobRiskAI">
+<meta name="citation_publication_date" content="2026">
+<meta name="dc.title" content="Metodologia JobRiskAI — Calcolo rischio di automazione AI per professioni italiane">
+<meta name="dc.creator" content="JobRiskAI">
+<meta name="dc.type" content="Text">
+<meta name="dc.identifier" content="https://www.jobriskai.it/metodologia">
+<meta property="og:title" content="Metodologia JobRiskAI — Come calcoliamo il rischio AI per 235 professioni">
+<meta property="og:description" content="Le 5 dimensioni di analisi, i pesi, le fonti dati (ISTAT, OECD, Oxford, MIT) e la formula completa del punteggio di rischio AI.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.jobriskai.it/metodologia">
+<meta property="og:image" content="https://www.jobriskai.it/og-image.png">
+<link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Metodologia di calcolo del rischio di sostituzione AI per professioni italiane",
+  "description": "Descrizione della metodologia multidimensionale usata da JobRiskAI per calcolare il rischio di automazione AI per 235 professioni italiane, con fonti, pesi e formula.",
+  "author": {"@type": "Organization", "name": "JobRiskAI", "url": "https://www.jobriskai.it"},
+  "publisher": {"@type": "Organization", "name": "JobRiskAI", "url": "https://www.jobriskai.it"},
+  "datePublished": "2025-01-01",
+  "dateModified": "2026-07-29",
+  "inLanguage": "it",
+  "url": "https://www.jobriskai.it/metodologia",
+  "about": ["Automazione del lavoro", "Intelligenza artificiale", "Rischio occupazionale", "Professioni italiane"]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.jobriskai.it"},
+    {"@type":"ListItem","position":2,"name":"Metodologia","item":"https://www.jobriskai.it/metodologia"}
+  ]
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .met-shell { max-width: 800px; margin: 3rem auto 5rem; padding: 0 1.5rem; }
+  .met-hero { text-align: center; margin-bottom: 3rem; }
+  .met-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.6rem,4vw,2.3rem); font-weight:800; color:var(--ink-0); margin-bottom:0.75rem; }
+  .met-hero p { font-size:1.05rem; color:var(--ink-2); max-width:600px; margin:0 auto; line-height:1.65; }
+  .dim-card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:1.5rem; margin-bottom:1rem; display:flex; gap:1.25rem; align-items:flex-start; }
+  .dim-icon { font-size:2rem; flex-shrink:0; width:3rem; text-align:center; }
+  .dim-body h3 { font-family:'Space Grotesk',sans-serif; font-size:1.05rem; font-weight:700; color:#111827; margin:0 0 0.3rem; }
+  .dim-body .weight { display:inline-block; background:#f5f3ff; color:#7c3aed; font-size:0.8rem; font-weight:700; padding:0.15rem 0.55rem; border-radius:6px; margin-bottom:0.5rem; }
+  .dim-body p { font-size:0.9rem; color:#4b5563; line-height:1.65; margin:0; }
+  .formula-box { background:#111827; color:#f9fafb; border-radius:14px; padding:1.75rem; margin:2rem 0; font-family:'Space Grotesk',sans-serif; }
+  .formula-box h3 { color:#a78bfa; margin:0 0 1rem; font-size:1rem; }
+  .formula { font-size:0.95rem; line-height:2; }
+  .formula .var { color:#60a5fa; }
+  .formula .op { color:#f472b6; }
+  .sources-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:1rem; margin-top:1.5rem; }
+  .source-card { background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:1rem; }
+  .source-card h4 { font-size:0.9rem; font-weight:700; color:#111827; margin:0 0 0.3rem; }
+  .source-card p { font-size:0.82rem; color:#6b7280; margin:0; line-height:1.5; }
+  h2 { font-family:'Space Grotesk',sans-serif; font-size:1.3rem; font-weight:700; color:#111827; margin:2.5rem 0 1rem; }
+  p { font-size:0.95rem; color:#374151; line-height:1.75; margin-bottom:1rem; }
+  .note { background:#fffbeb; border:1px solid #fde68a; border-radius:10px; padding:1rem 1.25rem; font-size:0.88rem; color:#78350f; line-height:1.6; margin:1.5rem 0; }
+</style>
 </head>
 <body>
-  <header class="sh" role="banner">
-    <div class="sh-inner">
-      <a href="/" aria-label="JobRiskAI Home" style="display:inline-block;line-height:0;flex-shrink:0;">
-        <img src="/logo.png" alt="JobRiskAI" style="height:34px;width:auto;display:block;">
-      </a>
-      <nav class="sh-links" aria-label="Navigazione principale">
-        <a href="/">🏠 Home</a>
-        <a href="/calcolatore">🎯 Calcolatore</a>
-        <a href="/classifica">📊 Classifica</a>
-        <a href="/cv-analyzer">📄 Analisi CV</a>
-        <a href="/blog">📖 Blog</a>
-        <a href="/chi-siamo">👥 Chi Siamo</a>
-      </nav>
-      <button class="sh-burger" aria-label="Apri menu" aria-expanded="false" onclick="toggleShDrawer()" id="shBurger">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-  <div class="sh-drawer" id="shDrawer" onclick="closeShDrawer()">
-    <div class="sh-drawer-inner" onclick="event.stopPropagation()">
-      <a href="/">🏠 Home</a>
-      <a href="/calcolatore">🎯 Calcolatore</a>
-      <a href="/classifica">📊 Classifica</a>
-      <a href="/cv-analyzer">📄 Analisi CV</a>
-      <a href="/blog">📖 Blog</a>
-      <a href="/chi-siamo">👥 Chi Siamo</a>
-      <a href="/cv-analyzer" class="sh-cta">📄 Analizza il tuo CV →</a>
+<header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
+  <a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+    <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem;color:var(--ink-0);">← JobRiskAI</span>
+  </a>
+  <span style="font-size:0.85rem;color:var(--ink-2);font-weight:500;">Metodologia</span>
+</header>
+
+<main>
+<div class="met-shell">
+  <nav style="font-size:0.82rem;color:var(--ink-2);margin-bottom:1.5rem;">
+    <a href="/" style="color:var(--ink-2);text-decoration:none;">Home</a>
+    <span style="margin:0 0.4rem;">›</span>
+    <span style="color:var(--ink-0);">Metodologia</span>
+  </nav>
+
+  <div class="met-hero">
+    <h1>📐 Come calcoliamo il rischio AI</h1>
+    <p>La metodologia completa di JobRiskAI: le 5 dimensioni di analisi, i pesi, le fonti dati e la formula del punteggio di rischio per 235 professioni italiane.</p>
+  </div>
+
+  <h2>Il modello a 5 dimensioni</h2>
+  <p>Il punteggio di rischio AI (0–100%) non è basato su un singolo indicatore ma su una <strong>valutazione multidimensionale</strong> che combina 5 fattori con pesi differenti, calibrati sulla letteratura accademica sull'automazione del lavoro (Oxford, MIT, OECD).</p>
+
+  <div class="dim-card">
+    <div class="dim-icon">🔁</div>
+    <div class="dim-body">
+      <h3>1. Ripetitività e standardizzabilità dei task</h3>
+      <span class="weight">Peso: 30%</span>
+      <p>Quanto i compiti principali della professione sono standardizzabili, basati su regole definite e ripetibili senza variazione significativa. Task altamente ripetitivi e strutturati (data entry, riconciliazione bancaria, refertazione standard) generano un punteggio alto. Task variabili e contestuali (diagnosi complessa, negoziazione) generano un punteggio basso. Basato sulla tassonomia O*NET delle attività lavorative, adattata al mercato italiano.</p>
     </div>
   </div>
-  <script>
-    function toggleShDrawer(){var d=document.getElementById('shDrawer'),b=document.getElementById('shBurger'),o=d.style.display==='block';d.style.display=o?'none':'block';b.setAttribute('aria-expanded',o?'false':'true');}
-    function closeShDrawer(){document.getElementById('shDrawer').style.display='none';document.getElementById('shBurger').setAttribute('aria-expanded','false');}
-  </script>
 
-  <main>
-    <div class="prose">
-
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">JobRiskAI</a>
-        <span>›</span>
-        <span style="color:#374151;">Metodologia</span>
-      </nav>
-
-      <h1>Come calcoliamo il punteggio di rischio AI</h1>
-      <p class="lead">Il punteggio di automazione assegnato a ogni professione non è un'opinione: è il risultato di un modello quantitativo con cinque dimensioni misurabili, pesi espliciti e fonti citabili. Questa pagina spiega tutto — in modo che chiunque possa verificarlo.</p>
-
-      <!-- ── Overview ── -->
-      <h2>Panoramica del modello</h2>
-      <p>JobRiskAI calcola un <strong>punteggio di rischio AI</strong> da 0 a 100 per ciascuna delle 235 professioni coperte. Il punteggio misura la probabilità che i compiti centrali di un ruolo vengano automatizzati da sistemi di intelligenza artificiale entro un orizzonte temporale di 5–10 anni.</p>
-      <p>Il modello è ispirato al framework di Frey &amp; Osborne (Oxford Martin School, 2013) e alle successive estensioni OECD e McKinsey, adattato al contesto italiano con dati salariali ISTAT e indici di adozione AI Eurostat. Non è un modello di machine learning autonomo: è un sistema di scoring trasparente con pesi fissi e audit trail.</p>
-
-      <!-- ── Le 5 dimensioni ── -->
-      <h2>Le 5 dimensioni di valutazione</h2>
-      <p>Ogni professione è valutata lungo cinque assi. Tre di essi aumentano il rischio (punteggio più alto = più a rischio), due lo riducono (punteggio più alto = più protetto).</p>
-
-      <div class="dim-grid">
-
-        <div class="dim-card">
-          <div class="dim-badge">
-            <div class="weight">30%</div>
-            <div class="weight-label">peso</div>
-          </div>
-          <div class="dim-body">
-            <h3>D1 — Ripetitività dei task</h3>
-            <p>Percentuale dei compiti tipici del ruolo che sono strutturati, codificabili e non richiedono adattamento contestuale continuo. I dati di base provengono da O*NET (US Dept. of Labor) e dal database di attività lavorative Eurostat ESCO. Task ad alta ripetitività (es. inserimento dati, riconciliazione bancaria) sono già automatizzabili oggi.</p>
-            <span class="dim-dir risk-up">↑ Alto punteggio = rischio più alto</span>
-          </div>
-        </div>
-
-        <div class="dim-card">
-          <div class="dim-badge">
-            <div class="weight">25%</div>
-            <div class="weight-label">peso</div>
-          </div>
-          <div class="dim-body">
-            <h3>D2 — Giudizio richiesto</h3>
-            <p>Grado in cui il ruolo richiede valutazione critica in situazioni ambigue, presa di decisioni ad alto impatto in contesti non strutturati, o responsabilità legale/etica individuale. Un chirurgo o un giudice hanno punteggio molto alto su questa dimensione. Un data entry operator quasi zero. Fonte principale: classificazione ISCO-08 (ILO) livelli di skill.</p>
-            <span class="dim-dir risk-down">↑ Alto punteggio = rischio più basso</span>
-          </div>
-        </div>
-
-        <div class="dim-card">
-          <div class="dim-badge">
-            <div class="weight">20%</div>
-            <div class="weight-label">peso</div>
-          </div>
-          <div class="dim-body">
-            <h3>D3 — Dipendenza interpersonale</h3>
-            <p>Intensità delle interazioni umane non standardizzate richieste dal ruolo: negoziazione, empatia, gestione emotiva, leadership, cura fisica diretta. L'AI può simulare alcune interazioni, ma non replicare la fiducia relazionale o il tocco fisico. Questa dimensione pesa particolarmente per professioni sanitarie, educative e di management.</p>
-            <span class="dim-dir risk-down">↑ Alto punteggio = rischio più basso</span>
-          </div>
-        </div>
-
-        <div class="dim-card">
-          <div class="dim-badge">
-            <div class="weight">15%</div>
-            <div class="weight-label">peso</div>
-          </div>
-          <div class="dim-body">
-            <h3>D4 — Specializzazione di dominio</h3>
-            <p>Profondità della conoscenza tacita, dell'expertise verticale e dei requisiti normativi/abilitativi specifici del settore. Professioni con abilitazioni obbligatorie (medici, avvocati, ingegneri) o con expertise acquisita in anni difficile da replicare partono con un vantaggio strutturale rispetto all'automazione. Calcolato su base ISTAT CP2011 e requisiti formativi MIUR.</p>
-            <span class="dim-dir risk-down">↑ Alto punteggio = rischio più basso</span>
-          </div>
-        </div>
-
-        <div class="dim-card">
-          <div class="dim-badge">
-            <div class="weight">10%</div>
-            <div class="weight-label">peso</div>
-          </div>
-          <div class="dim-body">
-            <h3>D5 — Disponibilità di tool AI</h3>
-            <p>Maturità commerciale degli strumenti AI già disponibili per automatizzare i task centrali del ruolo. Un contabile oggi ha già accesso a software come QuickBooks AI, Dext, Fiskl. Un assistente sociale no. Questa dimensione misura la prontezza del mercato — non solo la potenzialità teorica — e viene aggiornata ogni sei mesi sulla base di benchmark indipendenti (Stanford AI Index, Gartner Hype Cycle).</p>
-            <span class="dim-dir risk-up">↑ Alto punteggio = rischio più alto</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- ── Formula ── -->
-      <h2>La formula</h2>
-      <p>Le dimensioni D2, D3 e D4 sono <em>fattori protettivi</em>: vengono invertiti (100 − punteggio) prima di entrare nella somma ponderata, così che un alto giudizio richiesto abbassa il rischio complessivo.</p>
-
-      <div class="formula-box">
-        <div class="f-title">Formula di calcolo — RiskScore (0–100)</div>
-        <div class="f-eq">
-          RiskScore =<br>
-          &nbsp;&nbsp;<span class="highlight">D1</span> × 0.30<br>
-          + (100 − <span class="highlight">D2</span>) × 0.25<br>
-          + (100 − <span class="highlight">D3</span>) × 0.20<br>
-          + (100 − <span class="highlight">D4</span>) × 0.15<br>
-          + <span class="highlight">D5</span> × 0.10
-        </div>
-        <div class="f-note">Dove ogni dimensione D1–D5 è un punteggio da 0 a 100. Il risultato viene arrotondato all'intero più vicino e, dove necessario, calibrato empiricamente su dati di benchmark del settore.</div>
-      </div>
-
-      <!-- ── Esempio numerico ── -->
-      <h2>Esempio numerico — Contabile (85%)</h2>
-      <p>Usiamo il <strong>Contabile</strong> come esempio: rientra nella categoria Management &amp; Finanza, con punteggio di rischio 85 e anno critico stimato 2029. Ecco il calcolo dimensione per dimensione.</p>
-
-      <div class="example-box">
-        <div class="example-header">
-          <h3>📊 Contabile — Calcolo del RiskScore</h3>
-          <p>Categoria: Management &amp; Finanza · Anno critico: 2029</p>
-        </div>
-        <div class="example-body">
-          <table class="calc-table">
-            <thead>
-              <tr>
-                <th>Dimensione</th>
-                <th>Punteggio grezzo</th>
-                <th>Nel calcolo</th>
-                <th>Peso</th>
-                <th>Contributo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>D1</strong> Ripetitività task</td>
-                <td>
-                  <div class="score-bar-wrap">
-                    <span class="score-val">90</span>
-                    <div class="score-bar"><div class="score-bar-fill" style="width:90%;background:#dc2626;"></div></div>
-                  </div>
-                </td>
-                <td style="color:#6b7280;font-size:0.82rem;">90 (diretto)</td>
-                <td>×30%</td>
-                <td class="contrib">= 27.0</td>
-              </tr>
-              <tr>
-                <td><strong>D2</strong> Giudizio richiesto</td>
-                <td>
-                  <div class="score-bar-wrap">
-                    <span class="score-val">20</span>
-                    <div class="score-bar"><div class="score-bar-fill" style="width:20%;background:#4f46e5;"></div></div>
-                  </div>
-                </td>
-                <td style="color:#6b7280;font-size:0.82rem;">100−20 = <strong>80</strong> (invertito)</td>
-                <td>×25%</td>
-                <td class="contrib">= 20.0</td>
-              </tr>
-              <tr>
-                <td><strong>D3</strong> Dipendenza interpersonale</td>
-                <td>
-                  <div class="score-bar-wrap">
-                    <span class="score-val">15</span>
-                    <div class="score-bar"><div class="score-bar-fill" style="width:15%;background:#4f46e5;"></div></div>
-                  </div>
-                </td>
-                <td style="color:#6b7280;font-size:0.82rem;">100−15 = <strong>85</strong> (invertito)</td>
-                <td>×20%</td>
-                <td class="contrib">= 17.0</td>
-              </tr>
-              <tr>
-                <td><strong>D4</strong> Specializzazione di dominio</td>
-                <td>
-                  <div class="score-bar-wrap">
-                    <span class="score-val">30</span>
-                    <div class="score-bar"><div class="score-bar-fill" style="width:30%;background:#4f46e5;"></div></div>
-                  </div>
-                </td>
-                <td style="color:#6b7280;font-size:0.82rem;">100−30 = <strong>70</strong> (invertito)</td>
-                <td>×15%</td>
-                <td class="contrib">= 10.5</td>
-              </tr>
-              <tr>
-                <td><strong>D5</strong> Disponibilità tool AI</td>
-                <td>
-                  <div class="score-bar-wrap">
-                    <span class="score-val">100</span>
-                    <div class="score-bar"><div class="score-bar-fill" style="width:100%;background:#dc2626;"></div></div>
-                  </div>
-                </td>
-                <td style="color:#6b7280;font-size:0.82rem;">100 (diretto)</td>
-                <td>×10%</td>
-                <td class="contrib">= 10.0</td>
-              </tr>
-              <tr class="total-row">
-                <td colspan="4" style="text-align:right;color:#374151;">RiskScore totale</td>
-                <td class="contrib" style="font-size:1rem;">= 84.5</td>
-              </tr>
-            </tbody>
-          </table>
-          <div>
-            <span class="result-chip">🔴 RiskScore finale: <strong>85%</strong></span>
-            <p style="margin-top:0.75rem;font-size:0.85rem;color:#6b7280;">Il valore 84.5 viene arrotondato a 85. Il Contabile ottiene punteggi molto alti su Ripetitività (90: inserimento fatture, riconciliazioni, dichiarazioni standard) e Disponibilità tool AI (100: QuickBooks AI, Dext, Fiskl sono già sul mercato). Il Giudizio richiesto è basso (20), il che amplifica il contributo di rischio di questa dimensione. L'unico fattore protettivo rilevante è la parziale Specializzazione normativa (D4=30, ma ancora bassa).</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ── Anno critico ── -->
-      <h2>Come si calcola l'Anno critico</h2>
-      <p>L'<strong>anno critico</strong> è il momento stimato in cui l'adozione di AI diventa economicamente conveniente per la maggioranza delle aziende del settore. Non è l'anno in cui la professione "scompare", ma il punto di inflazione economica.</p>
-      <p>Si calcola a partire da tre fattori:</p>
-      <ul>
-        <li><strong>Rapporto costo umano / costo AI:</strong> stipendio annuo lordo + contributi vs. costo annualizzato di agenti AI SaaS equivalenti. Quando il rapporto supera 3:1, la pressione economica è forte. Dati salariali: ISTAT Indagine sulle retribuzioni 2024.</li>
-        <li><strong>Velocità di miglioramento AI nel dominio:</strong> basata sull'andamento storico dei benchmark AI per settore (Stanford AI Index, MMLU, HumanEval). Il modello usa una curva logistica con parametri calibrati per dominio.</li>
-        <li><strong>Fattore paese:</strong> indice composito che pesa l'adozione AI locale (Eurostat DESI 2024), la rigidità del mercato del lavoro (OCSE EPL index) e il framework regolatorio (EU AI Act readiness). Per l'Italia l'indice è 0.78 vs. 1.00 per gli USA — le stesse professioni hanno anno critico mediamente 2–3 anni più tardi in Italia rispetto agli Stati Uniti.</li>
-      </ul>
-
-      <!-- ── Aggiornamenti ── -->
-      <h2>Frequenza di aggiornamento</h2>
-      <p>Il dataset delle 235 professioni viene revisionato ogni sei mesi. La dimensione D5 (disponibilità tool AI) viene aggiornata più frequentemente — ogni trimestre — perché il mercato degli strumenti AI evolve rapidamente. L'ultima revisione completa del dataset è stata completata nel <strong>primo semestre 2026</strong>.</p>
-      <p>Le stime salariali si basano su ISTAT 2024 e Eurostat 2024. Per paesi extra-UE (USA, Canada, Australia, ecc.) le fonti sono Bureau of Labor Statistics (BLS) e OECD Employment Database.</p>
-
-      <hr class="divider">
-
-      <!-- ── Fonti ── -->
-      <h2 id="fonti">Fonti — link diretti</h2>
-      <p>Ogni report citato è liberamente accessibile. Di seguito i link diretti alla pubblicazione originale.</p>
-
-      <ul class="sources-list">
-
-        <li>
-          <div class="src-label">Oxford Martin School · 2013</div>
-          <div class="src-title">Frey, C.B. &amp; Osborne, M.A. — <em>The Future of Employment: How susceptible are jobs to computerisation?</em></div>
-          <div class="src-link"><a href="https://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf" target="_blank" rel="noopener noreferrer">oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">McKinsey Global Institute · 2023</div>
-          <div class="src-title"><em>The Economic Potential of Generative AI: The Next Productivity Frontier</em></div>
-          <div class="src-link"><a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai" target="_blank" rel="noopener noreferrer">mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">Deloitte · 2024</div>
-          <div class="src-title"><em>State of Generative AI in the Enterprise — Q4 2024</em></div>
-          <div class="src-link"><a href="https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies/state-of-generative-ai-in-enterprise.html" target="_blank" rel="noopener noreferrer">deloitte.com/us/en/insights/focus/cognitive-technologies/state-of-generative-ai-in-enterprise.html</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">ISTAT · 2024</div>
-          <div class="src-title"><em>Indagine sulle retribuzioni lorde contrattuali — Serie storica per settore e qualifica</em></div>
-          <div class="src-link"><a href="https://www.istat.it/it/lavoro-e-retribuzioni/retribuzioni-e-costo-del-lavoro" target="_blank" rel="noopener noreferrer">istat.it/it/lavoro-e-retribuzioni/retribuzioni-e-costo-del-lavoro</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">Stanford University HAI · 2024</div>
-          <div class="src-title"><em>AI Index Report 2024 — Measuring trends in artificial intelligence</em></div>
-          <div class="src-link"><a href="https://aiindex.stanford.edu/report/" target="_blank" rel="noopener noreferrer">aiindex.stanford.edu/report/</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">OECD · 2023</div>
-          <div class="src-title"><em>OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market</em></div>
-          <div class="src-link"><a href="https://www.oecd.org/employment/oecd-employment-outlook-19991266.htm" target="_blank" rel="noopener noreferrer">oecd.org/employment/oecd-employment-outlook-19991266.htm</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">Eurostat · 2024</div>
-          <div class="src-title"><em>Digital Economy and Society Index (DESI) — AI adoption by businesses</em></div>
-          <div class="src-link"><a href="https://digital-strategy.ec.europa.eu/en/policies/desi" target="_blank" rel="noopener noreferrer">digital-strategy.ec.europa.eu/en/policies/desi</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">O*NET / US Dept. of Labor · aggiornamento continuo</div>
-          <div class="src-title"><em>Occupational Information Network — Task and activity ratings by occupation</em></div>
-          <div class="src-link"><a href="https://www.onetonline.org/" target="_blank" rel="noopener noreferrer">onetonline.org</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">ILO / ISCO · 2008</div>
-          <div class="src-title"><em>International Standard Classification of Occupations (ISCO-08) — Skill level definitions</em></div>
-          <div class="src-link"><a href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/" target="_blank" rel="noopener noreferrer">ilo.org/public/english/bureau/stat/isco/isco08/</a></div>
-        </li>
-
-        <li>
-          <div class="src-label">European Commission / ESCO · 2024</div>
-          <div class="src-title"><em>European Skills, Competences, Qualifications and Occupations (ESCO) — Occupations taxonomy v1.2</em></div>
-          <div class="src-link"><a href="https://esco.ec.europa.eu/en/classification/occupation_main" target="_blank" rel="noopener noreferrer">esco.ec.europa.eu/en/classification/occupation_main</a></div>
-        </li>
-
-      </ul>
-
-      <hr class="divider">
-
-      <!-- ── Limiti ── -->
-      <h2>Limiti del modello</h2>
-      <p>Nessun modello è perfetto. Questi sono i limiti che riconosciamo esplicitamente:</p>
-      <ul>
-        <li><strong>I punteggi sono medie di categoria.</strong> Il rischio effettivo per un singolo professionista dipende dall'azienda, dalla seniority, dalla rete relazionale e dalla specializzazione verticale individuale — variabili che non si possono misurare in modo automatizzato.</li>
-        <li><strong>L'anno critico è una stima, non una certezza.</strong> Il ritmo di adozione AI può accelerare o rallentare in base a fattori regolatori, economici e tecnologici imprevedibili.</li>
-        <li><strong>La dimensione D5 invecchia rapidamente.</strong> Il mercato degli strumenti AI cambia ogni trimestre. Aggiorniamo il dataset, ma potrebbe esserci un gap temporaneo tra la realtà di mercato e i nostri dati.</li>
-        <li><strong>Il modello copre il mercato del lavoro italiano.</strong> I punteggi base si riferiscono all'Italia. Il calcolo per altri paesi applica un fattore di scala, ma non ridefinisce i punteggi dimensionali da zero per ogni paese.</li>
-      </ul>
-
-      <!-- ── CTA ── -->
-      <div class="cta-block">
-        <h3>Verifica il punteggio della tua professione</h3>
-        <p>Applica la metodologia al tuo lavoro — con confronto per paese, stima dei costi e piano di sopravvivenza personalizzato.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;">
-          <a href="/calcolatore">🎯 Vai al Calcolatore</a>
-          <a href="/classifica" class="cta-ghost">📊 Vedi la Classifica completa</a>
-        </div>
-      </div>
-
-      <p style="font-size:0.82rem; color:#9ca3af; text-align:center;">Ultima revisione del dataset: primo semestre 2026 · <a href="/chi-siamo">Chi Siamo</a> · <a href="/privacy-policy">Privacy Policy</a></p>
-
+  <div class="dim-card">
+    <div class="dim-icon">🧠</div>
+    <div class="dim-body">
+      <h3>2. Giudizio e creatività richiesti</h3>
+      <span class="weight">Peso: 25%</span>
+      <p>Il grado di decisioni soggettive complesse, creatività non standardizzabile e pensiero strategico richiesto. Professioni che richiedono giudizio etico, innovazione radicale o strategia in contesti di alta incertezza hanno un punteggio basso (protette). Professioni che applicano regole a dati strutturati hanno un punteggio alto. Valutato su scala qualitativa con 5 livelli, con riferimento alle ricerche di Frey & Osborne (Oxford, 2013) aggiornate al contesto italiano 2026.</p>
     </div>
-  </main>
+  </div>
 
-  <footer style="border-top: 1px solid var(--border, #e5e7eb); padding: 2rem 1.5rem; margin-top: 2rem;">
-    <div style="max-width: 780px; margin: 0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem;">
-      <div style="display:flex; align-items:center; gap:0.5rem;">
-        <img src="/logo.png" alt="JobRiskAI" style="height:24px; width:auto;">
-        <span style="font-size:0.82rem; color:#6b7280;">© 2026</span>
-      </div>
-      <div style="display:flex; flex-wrap:wrap; gap:1.25rem; font-size:0.82rem;">
-        <a href="/metodologia" style="color:#4f46e5; text-decoration:none; font-weight:600;">Metodologia</a>
-        <a href="/privacy-policy" style="color:#6b7280; text-decoration:none;">Privacy Policy</a>
-        <a href="/termini-servizio" style="color:#6b7280; text-decoration:none;">Termini di Servizio</a>
-        <a href="/chi-siamo" style="color:#6b7280; text-decoration:none;">Chi Siamo</a>
-        <a href="/chi-siamo#contatti" style="color:#6b7280; text-decoration:none;">Contatti</a>
-      </div>
+  <div class="dim-card">
+    <div class="dim-icon">🤝</div>
+    <div class="dim-body">
+      <h3>3. Dipendenza interpersonale e relazionale</h3>
+      <span class="weight">Peso: 20%</span>
+      <p>Quanto la professione richiede relazione umana diretta e autentica come parte integrante del servizio (non come accessorio). Professioni dove la connessione umana è il prodotto stesso (cura, educazione, terapia, counseling) hanno punteggio basso. Professioni dove la relazione è un vettore di transazione automatizzabile hanno punteggio alto. Distinto dalla semplice "presenza fisica" — un cassiere di banca è a contatto con persone ma il suo task è automatizzabile; uno psicologo no.</p>
     </div>
-  </footer>
+  </div>
+
+  <div class="dim-card">
+    <div class="dim-icon">🎓</div>
+    <div class="dim-body">
+      <h3>4. Specializzazione e barriere all'entrata</h3>
+      <span class="weight">Peso: 15%</span>
+      <p>La profondità di expertise accumulata, le barriere all'entrata legali o pratiche (albi professionali, anni di formazione, esperienze non replicabili) e la difficoltà di replicare il know-how tacito con sistemi AI. Include barriere legali (responsabilità penale del professionista umano), barriere di esperienza (know-how che si acquisisce solo sul campo per anni) e barriere di reputazione (brand personale insostituibile).</p>
+    </div>
+  </div>
+
+  <div class="dim-card">
+    <div class="dim-icon">🤖</div>
+    <div class="dim-body">
+      <h3>5. Disponibilità attuale di strumenti AI</h3>
+      <span class="weight">Peso: 10%</span>
+      <p>L'esistenza, la maturità e l'accessibilità economica di soluzioni AI già commerciali e in grado di svolgere i task principali della professione. Professioni per cui esistono già soluzioni AI mature, economiche e adottabili dalle aziende senza grandi barriere hanno punteggio alto. Professioni per cui l'AI è ancora in fase di ricerca o richiede investimenti proibitivi hanno punteggio basso. Monitorato trimestralmente.</p>
+    </div>
+  </div>
+
+  <div class="formula-box">
+    <h3>Formula del punteggio di rischio</h3>
+    <div class="formula">
+      <span class="var">Rischio</span> <span class="op">=</span> (<span class="var">Ripetitività</span> <span class="op">×</span> 0.30) <span class="op">+</span> (<span class="var">Giudizio_inv</span> <span class="op">×</span> 0.25) <span class="op">+</span> (<span class="var">Relazione_inv</span> <span class="op">×</span> 0.20) <span class="op">+</span> (<span class="var">Specializzazione_inv</span> <span class="op">×</span> 0.15) <span class="op">+</span> (<span class="var">AI_tools</span> <span class="op">×</span> 0.10)
+    </div>
+    <p style="font-size:0.82rem;color:#9ca3af;margin-top:1rem;">Dove i suffissi _inv indicano valori invertiti (alta specializzazione = basso rischio). Tutti i valori sono normalizzati su scala 0–1 prima dell'aggregazione. Il risultato finale è moltiplicato per 100 e arrotondato all'intero più vicino.</p>
+  </div>
+
+  <h2>Il calcolo dell'anno critico</h2>
+  <p>L'anno critico non è la data in cui tutti i professionisti di quel ruolo perderanno il lavoro. È la stima dell'anno in cui i sistemi AI raggiungeranno la capacità di svolgere <strong>oltre il 50% dei task principali</strong> della professione in modo <strong>economicamente conveniente</strong> per le organizzazioni che potrebbero adottarli.</p>
+  <p>Il calcolo combina: (1) la curva di apprendimento dei modelli AI nella categoria di task rilevante, (2) il trend di riduzione dei costi dell'AI computing, (3) il ritmo di adozione storico di tecnologie analoghe nei settori economici pertinenti, (4) le barriere normative e regolamentari specifiche del mercato italiano.</p>
+
+  <div class="note">⚠️ <strong>Nota importante:</strong> L'anno critico è una stima basata su tendenze attuali, non una previsione certa. Cambiamenti normativi, breakthrough tecnologici o crisi economiche possono anticipare o posticipare significativamente questa stima. Aggiorniamo le stime trimestralmente sulla base dei nuovi sviluppi.</div>
+
+  <h2>Il confronto economico: umano vs agente AI</h2>
+  <p>Per ogni professione calcoliamo il <strong>costo annuo totale</strong> del professionista umano (stipendio lordo + contributi previdenziali a carico azienda + costi accessori medi, basati su dati ISTAT e Glassdoor Italia 2025) e il <strong>costo annuo equivalente</strong> dell'agente AI più adatto al ruolo (abbonamento mensile × 12 + costo di setup e integrazione stimato), basato sui listini pubblici 2026 dei principali provider (OpenAI, Anthropic, Google, Salesforce, Microsoft, e fornitori verticali di settore).</p>
+
+  <h2>Fonti dati</h2>
+  <div class="sources-grid">
+    <div class="source-card">
+      <h4>📊 ISTAT</h4>
+      <p>Dati occupazionali e retributivi italiani per professione. Classificazione CP2011 delle professioni. Rilevazione 2024-2025.</p>
+    </div>
+    <div class="source-card">
+      <h4>🌍 OECD</h4>
+      <p>Skills Outlook, Employment Outlook e studi sull'impatto dell'AI sul mercato del lavoro nei paesi OCSE.</p>
+    </div>
+    <div class="source-card">
+      <h4>🎓 Oxford (Frey & Osborne)</h4>
+      <p>"The Future of Employment" (2013, aggiornato 2023): la tassonomia di automatizzabilità dei task lavorativi adattata al contesto italiano.</p>
+    </div>
+    <div class="source-card">
+      <h4>🔬 MIT Work of the Future</h4>
+      <p>Ricerche sul cambiamento tecnologico e il mercato del lavoro, con focus sulla complementarietà AI-lavoro umano.</p>
+    </div>
+    <div class="source-card">
+      <h4>💼 Glassdoor Italia / Indeed / Talent.com</h4>
+      <p>Retribuzioni medie per professione e area geografica nel mercato del lavoro italiano. Aggiornamento semestrale.</p>
+    </div>
+    <div class="source-card">
+      <h4>📰 Letteratura accademica</h4>
+      <p>Acemoglu & Restrepo (2022), Brynjolfsson & McAfee, Autor (2022): impatto dell'automazione sull'occupazione.</p>
+    </div>
+  </div>
+
+  <h2>Trasparenza e limiti</h2>
+  <p>Il modello di JobRiskAI è una semplificazione di un fenomeno complesso. I principali limiti da tenere presenti:</p>
+  <ul style="font-size:0.95rem;color:#374151;line-height:1.75;margin:0 0 1rem 1.25rem;">
+    <li><strong>Aggregazione per professione</strong>: i punteggi sono medie per categoria professionale; la varianza interna può essere alta (es. un contabile specializzato in M&A ha un rischio molto diverso da un contabile di back-office).</li>
+    <li><strong>Contesto geografico</strong>: i dati sono calibrati sul mercato italiano. In altri paesi i punteggi possono differire per ragioni normative, culturali ed economiche.</li>
+    <li><strong>Velocità del cambiamento</strong>: l'AI evolve velocemente; aggiorniamo il dataset trimestralmente ma alcune stime potrebbero invecchiare rapidamente.</li>
+    <li><strong>Non è una profezia</strong>: un rischio del 70% non significa che il 70% dei lavoratori del settore perderà il lavoro — significa che il 70% dei task è potenzialmente automatizzabile. I ruoli si trasformano, non solo scompaiono.</li>
+  </ul>
+  <p>Per citare questa metodologia: <em>"Metodologia JobRiskAI 2026, jobriskai.it/metodologia — Analisi multidimensionale del rischio di automazione AI per 235 professioni italiane."</em></p>
+
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="/dati" style="display:inline-block;background:#7c3aed;color:#fff;padding:0.75rem 2rem;border-radius:10px;text-decoration:none;font-weight:700;font-size:0.95rem;margin-right:0.75rem;">Esplora il dataset →</a>
+    <a href="/calcolatore" style="display:inline-block;background:transparent;color:#7c3aed;border:2px solid #7c3aed;padding:0.75rem 2rem;border-radius:10px;text-decoration:none;font-weight:700;font-size:0.95rem;">Calcola il tuo rischio</a>
+  </div>
+</div>
+</main>
+
+<footer style="border-top:1px solid var(--border-color,#e5e7eb);padding:2rem 1.5rem;margin-top:4rem;text-align:center;">
+  <a href="/" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:var(--ink-0);text-decoration:none;">JobRiskAI</a>
+  <div style="margin-top:0.75rem;font-size:0.85rem;color:var(--ink-2);">
+    <a href="/blog" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Blog</a>
+    <a href="/classifica" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Classifica</a>
+    <a href="/dati" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Dataset</a>
+    <a href="/metodologia" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Metodologia</a>
+    <a href="/chi-siamo" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Chi siamo</a>
+  </div>
+  <p style="margin-top:1rem;font-size:0.8rem;color:var(--ink-2);">© 2026 JobRiskAI. Dati aggiornati al 2026.</p>
+</footer>
+<script src="/page-i18n.js" type="module"></script>
 </body>
 </html>

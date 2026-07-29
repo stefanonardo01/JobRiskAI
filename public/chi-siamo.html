@@ -1,184 +1,160 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      'ad_storage':         'denied',
-      'analytics_storage':  'denied',
-      'ad_user_data':       'denied',
-      'ad_personalization': 'denied',
-      'wait_for_update':    2000
-    });
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNJT8W9JTQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HNJT8W9JTQ');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chi Siamo | JobRiskAI — Metodologia e Progetto</title>
-  <meta name="description" content="Scopri il progetto JobRiskAI: metodologia di calcolo del rischio AI, fonti dati, team e missione. Strumento gratuito per 235 professioni italiane.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.jobriskai.it/chi-siamo">
-  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; background: var(--bg, #fafaf8); color: var(--text-primary, #111827); }
-    .prose { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
-    .prose h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary, #111827); }
-    .prose .lead { font-size: 1.08rem; color: #4b5563; line-height: 1.75; margin-bottom: 2.5rem; }
-    .prose h2 { font-size: 1.15rem; font-weight: 700; margin: 2rem 0 0.6rem; color: #1f2937; }
-    .prose p, .prose li { font-size: 0.95rem; line-height: 1.75; color: #374151; margin-bottom: 0.75rem; }
-    .prose ul { padding-left: 1.4rem; margin-bottom: 0.75rem; }
-    .prose a { color: #4f46e5; text-decoration: underline; }
-    .divider { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .stat-card { background: white; border: 1.5px solid #e5e7eb; border-radius: 14px; padding: 1.25rem 1.5rem; text-align: center; }
-    .stat-card .num { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; color: #4f46e5; }
-    .stat-card .label { font-size: 0.85rem; color: #6b7280; margin-top: 0.25rem; }
-    .source-list li { font-size: 0.88rem; }
-  </style>
-  <style>
-    .sh { background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--border,#E7E0D2); padding: 0 2rem; position: sticky; top: 0; z-index: 200; backdrop-filter: blur(14px); height: 60px; display: flex; align-items: center; }
-    .sh-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-    .sh-links { display: flex; align-items: center; gap: 0.4rem; }
-    .sh-links a { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--primary,#6366f1); text-decoration: none; font-weight: 600; font-size: 0.82rem; background: rgba(99,102,241,0.07); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 0.5rem 0.8rem; white-space: nowrap; min-height: 44px; transition: background 0.15s; }
-    .sh-links a:hover { background: rgba(99,102,241,0.14); }
-    .sh-links a.sh-cta { background: var(--primary,#6366f1); color: white; border-color: var(--primary,#6366f1); }
-    .sh-links a.sh-cta:hover { background: #4338ca; }
-    .sh-burger { display: none; flex-direction: column; justify-content: center; align-items: center; width: 44px; height: 44px; border: none; background: transparent; cursor: pointer; border-radius: 8px; flex-shrink: 0; }
-    .sh-burger span { display: block; width: 22px; height: 2px; background: #374151; border-radius: 2px; margin: 3px 0; }
-    .sh-drawer { display: none; position: fixed; top: 60px; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 199; }
-    .sh-drawer-inner { background: white; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
-    .sh-drawer-inner a { display: flex; align-items: center; gap: 0.6rem; padding: 0.85rem 1rem; border-radius: 10px; color: #374151; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: background 0.15s; min-height: 48px; }
-    .sh-drawer-inner a:hover { background: #f3f4f6; }
-    .sh-drawer-inner a.sh-cta { background: var(--primary,#6366f1); color: white; margin-top: 0.5rem; }
-    @media (max-width: 768px) { .sh { padding: 0 1rem; } .sh-links { display: none; } .sh-burger { display: flex; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi siamo — JobRiskAI: il team, la missione, le fonti</title>
+<meta name="description" content="JobRiskAI è il calcolatore italiano del rischio AI per 235 professioni. Scopri chi siamo, la nostra missione, il team editoriale e le fonti dei dati.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://www.jobriskai.it/chi-siamo">
+<link rel="alternate" type="text/plain" href="https://www.jobriskai.it/llms.txt">
+<meta name="citation_title" content="Chi siamo — JobRiskAI">
+<meta name="citation_author" content="JobRiskAI">
+<meta name="dc.title" content="Chi siamo — JobRiskAI, strumento italiano per il rischio AI delle professioni">
+<meta name="dc.type" content="Text">
+<meta name="dc.identifier" content="https://www.jobriskai.it/chi-siamo">
+<meta property="og:title" content="Chi siamo — JobRiskAI">
+<meta property="og:description" content="Scopri chi ha creato JobRiskAI, la missione del progetto, il team editoriale e le fonti dei dati sul rischio AI per 235 professioni italiane.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jobriskai.it/chi-siamo">
+<meta property="og:image" content="https://www.jobriskai.it/og-image.png">
+<link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Chi siamo — JobRiskAI",
+  "description": "Pagina informativa su JobRiskAI: missione, team editoriale, metodologia e fonti dati per il calcolo del rischio di automazione AI per 235 professioni italiane.",
+  "url": "https://www.jobriskai.it/chi-siamo",
+  "inLanguage": "it",
+  "isPartOf": {"@type": "WebSite", "name": "JobRiskAI", "url": "https://www.jobriskai.it"},
+  "about": {
+    "@type": "Organization",
+    "name": "JobRiskAI",
+    "url": "https://www.jobriskai.it",
+    "foundingDate": "2025",
+    "email": "hello@jobriskai.it",
+    "description": "JobRiskAI è lo strumento italiano di riferimento per calcolare il rischio di sostituzione AI per 235 professioni."
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.jobriskai.it"},
+    {"@type":"ListItem","position":2,"name":"Chi siamo","item":"https://www.jobriskai.it/chi-siamo"}
+  ]
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .cs-shell { max-width: 800px; margin: 3rem auto 5rem; padding: 0 1.5rem; }
+  h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.6rem,4vw,2.3rem); font-weight:800; color:#111827; text-align:center; margin-bottom:0.75rem; }
+  .lead { font-size:1.05rem; color:#6b7280; max-width:600px; margin:0 auto 3rem; text-align:center; line-height:1.65; }
+  h2 { font-family:'Space Grotesk',sans-serif; font-size:1.25rem; font-weight:700; color:#111827; margin:2.5rem 0 1rem; }
+  p { font-size:0.95rem; color:#374151; line-height:1.75; margin-bottom:1rem; }
+  .author-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap:1.25rem; margin-top:1.5rem; }
+  .author-card { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:1.5rem 1rem; text-align:center; }
+  .author-avatar { width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:1.2rem; margin:0 auto 0.75rem; }
+  .author-card h3 { font-family:'Space Grotesk',sans-serif; font-size:1rem; font-weight:700; color:#111827; margin:0 0 0.3rem; }
+  .author-card p { font-size:0.82rem; color:#6b7280; margin:0; }
+  .values-list { list-style:none; padding:0; margin:0; }
+  .values-list li { display:flex; gap:0.75rem; padding:0.75rem 0; border-bottom:1px solid #f3f4f6; font-size:0.94rem; color:#374151; line-height:1.6; }
+  .values-list li:last-child { border-bottom:none; }
+  .values-list .emoji { font-size:1.1rem; flex-shrink:0; }
+  .contact-box { background:#f5f3ff; border:1px solid #e9d5ff; border-radius:14px; padding:1.5rem; text-align:center; margin-top:2rem; }
+  .contact-box h3 { font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:700; color:#7c3aed; margin:0 0 0.5rem; }
+  .contact-box p { font-size:0.9rem; color:#6b7280; margin:0 0 1rem; }
+  .contact-box a { color:#7c3aed; text-decoration:none; font-weight:600; }
+</style>
 </head>
 <body>
-  <header class="sh" role="banner">
-    <div class="sh-inner">
-      <a href="/" aria-label="JobRiskAI Home" style="display:inline-block;line-height:0;flex-shrink:0;">
-        <img src="/logo.png" alt="JobRiskAI" style="height:34px;width:auto;display:block;">
-      </a>
-      <nav class="sh-links" aria-label="Navigazione principale">
-        <a href="/">🏠 Home</a>
-        <a href="/calcolatore">🎯 Calcolatore</a>
-        <a href="/classifica">📊 Classifica</a>
-        <a href="/cv-analyzer">📄 Analisi CV</a>
-        <a href="/blog">📖 Blog</a>
-        <a href="/chi-siamo">👥 Chi Siamo</a>
-      </nav>
-      <button class="sh-burger" aria-label="Apri menu" aria-expanded="false" onclick="toggleShDrawer()" id="shBurger">
-        <span></span><span></span><span></span>
-      </button>
+<header style="border-bottom:1px solid var(--border-color,#e5e7eb);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;max-width:900px;margin:0 auto;">
+  <a href="/" style="display:flex;align-items:center;gap:0.5rem;text-decoration:none;">
+    <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem;color:var(--ink-0);">← JobRiskAI</span>
+  </a>
+  <span style="font-size:0.85rem;color:var(--ink-2);font-weight:500;">Chi siamo</span>
+</header>
+
+<main>
+<div class="cs-shell">
+  <nav style="font-size:0.82rem;color:var(--ink-2);margin-bottom:1.5rem;">
+    <a href="/" style="color:var(--ink-2);text-decoration:none;">Home</a>
+    <span style="margin:0 0.4rem;">›</span>
+    <span style="color:var(--ink-0);">Chi siamo</span>
+  </nav>
+
+  <h1>Chi siamo</h1>
+  <p class="lead">JobRiskAI è nato da una domanda semplice: <em>"Quando arriverà l'AI a fare il mio lavoro?"</em> Non trovando una risposta italiana seria, abbiamo deciso di costruirla.</p>
+
+  <h2>La missione</h2>
+  <p>Viviamo in un momento storico in cui l'intelligenza artificiale sta ridisegnando il mercato del lavoro più velocemente di qualsiasi tecnologia precedente. Milioni di lavoratori italiani hanno bisogno di capire cosa sta succedendo — non in termini astratti, ma in modo concreto: <em>la mia professione, il mio settore, il mio livello di rischio.</em></p>
+  <p>JobRiskAI è uno strumento gratuito, senza registrazione, costruito per rispondere a queste domande con dati reali, metodologia trasparente e linguaggio comprensibile. Non vendiamo corsi, non abbiamo conflitti di interesse con nessun fornitore di tecnologia AI. Vogliamo solo che le persone possano prendere decisioni informate sul proprio futuro professionale.</p>
+
+  <h2>Il progetto in numeri</h2>
+  <ul class="values-list">
+    <li><span class="emoji">📊</span><div><strong>235 professioni</strong> analizzate in 17 categorie — il dataset più completo sul mercato del lavoro italiano e rischio AI disponibile gratuitamente.</div></li>
+    <li><span class="emoji">🔬</span><div><strong>Metodologia a 5 dimensioni</strong> basata sulla letteratura accademica di Oxford, MIT e OECD, adattata al contesto normativo e salariale italiano.</div></li>
+    <li><span class="emoji">🤖</span><div><strong>CV Analyzer</strong> powered by Gemini 2.5 Flash: analizza il tuo CV in PDF e restituisce un punteggio personale di esposizione AI in 48 secondi.</div></li>
+    <li><span class="emoji">📝</span><div><strong>70 articoli di approfondimento</strong> su AI e lavoro, scritti da un team editoriale con competenze in economia, tecnologia e mercato del lavoro.</div></li>
+    <li><span class="emoji">🌍</span><div><strong>5 lingue</strong>: italiano, inglese, spagnolo, tedesco, francese — con adattamento del rischio per 32 paesi.</div></li>
+    <li><span class="emoji">🔄</span><div><strong>Aggiornamento trimestrale</strong> del dataset: monitoriamo continuamente l'evoluzione degli strumenti AI e aggiorniamo i punteggi.</div></li>
+  </ul>
+
+  <h2>Il team editoriale</h2>
+  <p>I contenuti del blog e le analisi delle professioni sono curati da un team di professionisti con competenze in tecnologia, economia del lavoro e comunicazione.</p>
+  <div class="author-grid">
+    <div class="author-card">
+      <div class="author-avatar" style="background:#7c3aed;">GM</div>
+      <h3>Giulia M.</h3>
+      <p>Economia del lavoro e politiche occupazionali. Specializzata in impatto sociale dell'automazione.</p>
     </div>
-  </header>
-  <div class="sh-drawer" id="shDrawer" onclick="closeShDrawer()">
-    <div class="sh-drawer-inner" onclick="event.stopPropagation()">
-      <a href="/">🏠 Home</a>
-      <a href="/calcolatore">🎯 Calcolatore</a>
-      <a href="/classifica">📊 Classifica</a>
-      <a href="/cv-analyzer">📄 Analisi CV</a>
-      <a href="/blog">📖 Blog</a>
-      <a href="/chi-siamo">👥 Chi Siamo</a>
-      <a href="/cv-analyzer" class="sh-cta">📄 Analizza il tuo CV →</a>
+    <div class="author-card">
+      <div class="author-avatar" style="background:#0891b2;">MF</div>
+      <h3>Marco F.</h3>
+      <p>Finanza, fisco e professioni regolamentate. Ex consulente aziendale con focus su digital transformation.</p>
+    </div>
+    <div class="author-card">
+      <div class="author-avatar" style="background:#dc2626;">LP</div>
+      <h3>Luca P.</h3>
+      <p>Tecnologia e sviluppo software. Segue da vicino l'evoluzione dei modelli AI e il loro impatto sulle professioni tech.</p>
+    </div>
+    <div class="author-card">
+      <div class="author-avatar" style="background:#059669;">SR</div>
+      <h3>Sara R.</h3>
+      <p>Sanità, istruzione e professioni di cura. Ricercatrice sul futuro del lavoro nei settori ad alto capitale umano.</p>
     </div>
   </div>
-  <script>
-    function toggleShDrawer(){var d=document.getElementById('shDrawer'),b=document.getElementById('shBurger'),o=d.style.display==='block';d.style.display=o?'none':'block';b.setAttribute('aria-expanded',o?'false':'true');}
-    function closeShDrawer(){document.getElementById('shDrawer').style.display='none';document.getElementById('shBurger').setAttribute('aria-expanded','false');}
-  </script>
 
-  <main>
-    <div class="prose">
-      <h1>Chi Siamo</h1>
-      <p class="lead">JobRiskAI nasce con un obiettivo chiaro: rendere accessibile a chiunque una risposta informata alla domanda che sempre più lavoratori si pongono — <em>"Il mio lavoro rischia di essere sostituito dall'intelligenza artificiale?"</em></p>
+  <h2>Principi editoriali</h2>
+  <ul class="values-list">
+    <li><span class="emoji">🎯</span><div><strong>Accuratezza prima di tutto.</strong> Ogni dato è citato con fonte. Se non siamo sicuri, lo diciamo esplicitamente.</div></li>
+    <li><span class="emoji">⚖️</span><div><strong>Nessun allarmismo, nessun negazionismo.</strong> L'AI cambierà il lavoro: né apocalisse né niente. Cerchiamo la realtà.</div></li>
+    <li><span class="emoji">🔓</span><div><strong>Gratuito e aperto.</strong> I dati sono liberamente citabili con attribuzione. Non vendiamo i dati a terzi.</div></li>
+    <li><span class="emoji">🔄</span><div><strong>Trasparenza metodologica.</strong> La nostra metodologia è pubblica e aggiornata. Puoi verificarla, criticarla, migliorarla.</div></li>
+    <li><span class="emoji">🇮🇹</span><div><strong>Focus Italia.</strong> I dati salariali, le norme e il contesto sono calibrati sul mercato del lavoro italiano.</div></li>
+  </ul>
 
-      <div class="card-grid">
-        <div class="stat-card">
-          <div class="num">235</div>
-          <div class="label">Professioni analizzate</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">20</div>
-          <div class="label">Paesi supportati</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">5</div>
-          <div class="label">Lingue disponibili</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">0€</div>
-          <div class="label">Costo per l'utente</div>
-        </div>
-      </div>
+  <div class="contact-box">
+    <h3>📬 Contattaci</h3>
+    <p>Per segnalazioni di errori, proposte di collaborazione, richieste di citazione dei dati o domande sulla metodologia.</p>
+    <a href="mailto:hello@jobriskai.it">hello@jobriskai.it</a>
+  </div>
+</div>
+</main>
 
-      <h2>La missione</h2>
-      <p>Viviamo in un momento storico in cui l'automazione e i modelli linguistici di grandi dimensioni stanno ridefinendo il mercato del lavoro a una velocità senza precedenti. Ogni giorno emergono nuovi report, previsioni e numeri, ma restano spesso inaccessibili o difficili da interpretare per chi non lavora nel settore tech.</p>
-      <p>JobRiskAI traduce questi dati in strumenti concreti e gratuiti: un calcolatore di rischio per professione, una classifica comparativa e un analizzatore di CV che restituisce un punteggio personale di esposizione all'automazione.</p>
-
-      <h2>Metodologia di calcolo</h2>
-      <p>Il punteggio di rischio (0–100) è il risultato di un modello quantitativo con <strong>cinque dimensioni</strong> e pesi espliciti, ispirato al framework Frey &amp; Osborne (Oxford Martin School) e alle estensioni OECD e McKinsey, adattato al contesto italiano con dati ISTAT ed Eurostat.</p>
-      <ul>
-        <li><strong>D1 — Ripetitività dei task</strong> (peso 30%) — quota di compiti strutturati e codificabili nel ruolo. <em>Aumenta il rischio.</em></li>
-        <li><strong>D2 — Giudizio richiesto</strong> (peso 25%) — grado di valutazione critica, decisioni ad alto impatto e responsabilità legale/etica individuale. <em>Riduce il rischio.</em></li>
-        <li><strong>D3 — Dipendenza interpersonale</strong> (peso 20%) — intensità di interazioni non standardizzate: negoziazione, empatia, cura fisica, leadership. <em>Riduce il rischio.</em></li>
-        <li><strong>D4 — Specializzazione di dominio</strong> (peso 15%) — profondità dell'expertise verticale e requisiti normativi o abilitativi specifici del settore. <em>Riduce il rischio.</em></li>
-        <li><strong>D5 — Disponibilità di tool AI</strong> (peso 10%) — maturità commerciale degli strumenti AI già disponibili per automatizzare i task centrali del ruolo. <em>Aumenta il rischio.</em></li>
-      </ul>
-      <p>Le dimensioni D2, D3 e D4 sono fattori protettivi e vengono invertite nella somma ponderata finale. L'<strong>anno critico</strong> è derivato dal punteggio di rischio combinato con il ritmo di miglioramento dei modelli AI e i dati di adozione settoriale.</p>
-      <p><a href="/metodologia" style="color:#4f46e5;font-weight:600;">Leggi la metodologia completa con formula e esempio numerico →</a></p>
-
-      <h2>Fonti e riferimenti</h2>
-      <ul class="source-list">
-        <li>Frey, C.B. & Osborne, M.A. (2013). <em>The Future of Employment</em>. Oxford Martin School.</li>
-        <li>McKinsey Global Institute (2023). <em>The Economic Potential of Generative AI</em>.</li>
-        <li>OECD (2023). <em>OECD Employment Outlook: Artificial Intelligence and the Labour Market</em>.</li>
-        <li>Dati salariali: ISTAT, Eurostat, OECD Employment Database (2024).</li>
-        <li>Indici di adozione AI: Stanford AI Index Report 2024; Eurostat Digital Economy and Society.</li>
-        <li>Costi agenti AI SaaS: prezzi pubblici di piattaforme leader (2024–2025).</li>
-      </ul>
-      <p>I dati sono aggiornati periodicamente. L'ultima revisione del dataset professioni è stata effettuata nel <strong>primo semestre 2026</strong>.</p>
-
-      <h2>Cosa non siamo</h2>
-      <p>JobRiskAI non è una società di consulenza del lavoro, non eroga servizi di orientamento professionale certificato e non è affiliata ad agenzie per l'impiego. Le stime fornite sono indicative e basate su medie di settore: il rischio effettivo per un singolo lavoratore dipende da variabili individuali non misurabili in modo automatizzato (esperienza, relazioni, specializzazione verticale, contesto aziendale).</p>
-
-      <h2 id="contatti">Contatti</h2>
-      <p>Per segnalazioni, domande, proposte di collaborazione o richieste media, contattaci tramite LinkedIn. Rispondiamo entro 2–3 giorni lavorativi.</p>
-      <a href="https://www.linkedin.com/company/job-risk-ai/?viewAsMember=true" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;margin-top:0.75rem;font-size:0.88rem;color:#0A66C2;font-weight:600;text-decoration:none;padding:0.5rem 1rem;border:1.5px solid #0A66C2;border-radius:999px;" onmouseover="this.style.background='#0A66C2';this.style.color='white'" onmouseout="this.style.background='';this.style.color='#0A66C2'">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        Seguici su LinkedIn
-      </a>
-
-      <hr class="divider">
-      <p style="font-size:0.85rem; color:#6b7280;">Leggi anche: <a href="/privacy-policy">Privacy Policy</a> · <a href="/termini-servizio">Termini di Servizio</a></p>
-    </div>
-  </main>
-
-  <footer style="border-top: 1px solid var(--border, #e5e7eb); padding: 2rem 1.5rem; margin-top: 2rem;">
-    <div style="max-width: 760px; margin: 0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem;">
-      <div style="display:flex; align-items:center; gap:0.5rem;">
-        <img src="/logo.png" alt="JobRiskAI" style="height:24px; width:auto;">
-        <span style="font-size:0.82rem; color:#6b7280;">© 2026</span>
-      </div>
-      <div style="display:flex; flex-wrap:wrap; gap:1.25rem; font-size:0.82rem;">
-        <a href="/metodologia" style="color:#4f46e5; text-decoration:none; font-weight:600;">Metodologia</a>
-        <a href="/privacy-policy" style="color:#6b7280; text-decoration:none;">Privacy Policy</a>
-        <a href="/termini-servizio" style="color:#6b7280; text-decoration:none;">Termini di Servizio</a>
-        <a href="/chi-siamo" style="color:#6b7280; text-decoration:none;">Chi Siamo</a>
-        <a href="/chi-siamo#contatti" style="color:#6b7280; text-decoration:none;">Contatti</a>
-      </div>
-    </div>
-  </footer>
+<footer style="border-top:1px solid var(--border-color,#e5e7eb);padding:2rem 1.5rem;margin-top:4rem;text-align:center;">
+  <a href="/" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:var(--ink-0);text-decoration:none;">JobRiskAI</a>
+  <div style="margin-top:0.75rem;font-size:0.85rem;color:var(--ink-2);">
+    <a href="/blog" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Blog</a>
+    <a href="/classifica" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Classifica</a>
+    <a href="/metodologia" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Metodologia</a>
+    <a href="/dati" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Dataset</a>
+    <a href="/glossario" style="color:var(--ink-2);text-decoration:none;margin:0 0.75rem;">Glossario</a>
+  </div>
+  <p style="margin-top:1rem;font-size:0.8rem;color:var(--ink-2);">© 2026 JobRiskAI. Dati aggiornati al 2026.</p>
+</footer>
+<script src="/page-i18n.js" type="module"></script>
 </body>
 </html>
