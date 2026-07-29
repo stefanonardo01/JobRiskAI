@@ -214,6 +214,17 @@
     </div>
   </div>
 
+
+  <h2>Il dibattito accademico: limiti di Frey & Osborne</h2>
+  <p>La metodologia di JobRiskAI si ispira alla tassonomia di Frey &amp; Osborne (Oxford, 2013), ma ne riconosce esplicitamente i limiti documentati dalla letteratura successiva:</p>
+  <ul style="font-size:0.95rem;color:#374151;line-height:1.75;margin:0 0 1rem 1.25rem;">
+    <li><strong>Stima iniziale sovradimensionata:</strong> Frey &amp; Osborne stimarono il 47% dei lavori USA ad alto rischio. La revisione OECD (Arntz, Gregory &amp; Zierahn, 2016) corresse questa stima al 9%, analizzando i task individuali invece delle professioni aggregate — un approccio più preciso che JobRiskAI adotta.</li>
+    <li><strong>Analisi per professione vs analisi per task:</strong> classificare un intero lavoro come "a rischio" ignora che ogni professione è composta da task eterogenei. Un medico ha task ad alto rischio (refertazione standard) e task a rischio quasi zero (diagnosi di casi complessi). JobRiskAI calcola il rischio come <em>media ponderata dei task principali</em>, non come etichetta binaria.</li>
+    <li><strong>Barriere tecnologiche vs economiche:</strong> Frey &amp; Osborne misuravano la fattibilità tecnica. JobRiskAI considera anche la convenienza economica dell'automazione: un task può essere tecnicamente automatizzabile ma economicamente non conveniente da automatizzare nel mercato italiano 2026.</li>
+    <li><strong>Adozione contestuale:</strong> la letteratura post-2020 (Acemoglu &amp; Restrepo 2022, Autor 2022) sottolinea che l'AI crea nuovi task mentre ne elimina altri. Il nostro "anno critico" misura il punto di inflection per la professione nella sua forma attuale, non la scomparsa del professionista.</li>
+  </ul>
+  <div class="note">📚 <strong>Per approfondire:</strong> Arntz, M., Gregory, T., &amp; Zierahn, U. (2016). <em>The Risk of Automation for Jobs in OECD Countries</em>. OECD Social, Employment and Migration Working Papers. Acemoglu, D., &amp; Restrepo, P. (2022). <em>Tasks, Automation, and the Rise in U.S. Wage Inequality</em>. Econometrica.</div>
+
   <h2>Trasparenza e limiti</h2>
   <p>Il modello di JobRiskAI è una semplificazione di un fenomeno complesso. I principali limiti da tenere presenti:</p>
   <ul style="font-size:0.95rem;color:#374151;line-height:1.75;margin:0 0 1rem 1.25rem;">

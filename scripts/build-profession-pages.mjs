@@ -544,7 +544,7 @@ function buildProfessionPage(key) {
       <div class="prof-hero">
         <div style="font-size:2.5rem;margin-bottom:0.75rem;">${d.icon || '💼'}</div>
         <h1 style="font-family:'Space Grotesk',sans-serif;font-size:1.9rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;line-height:1.2;">
-          Il ${esc(title)} sarà sostituito dall'AI?
+          Rischio AI per il ${esc(title)}
         </h1>
         <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:1.5rem;">${esc(d.description || '')}</p>
 
@@ -574,6 +574,9 @@ function buildProfessionPage(key) {
         </div>
 
         ${d.survivalNote ? `<p style="color:var(--text-secondary);font-size:0.88rem;font-style:italic;max-width:520px;margin:0 auto;">💡 ${esc(d.survivalNote.charAt(0).toUpperCase() + d.survivalNote.slice(1))}.</p>` : ''}
+        <div style="margin-top:1.25rem;padding:0.7rem 1rem;background:rgba(99,102,241,0.06);border:1px solid rgba(99,102,241,0.18);border-radius:10px;font-size:0.78rem;color:#4b5563;line-height:1.5;max-width:500px;margin-left:auto;margin-right:auto;">
+          ℹ️ <strong>Il punteggio indica la quota di task automatizzabili</strong>, non la probabilità personale di perdere il lavoro. I ruoli si trasformano, non solo scompaiono. <a href="/metodologia" style="color:#6366f1;font-weight:600;text-decoration:none;">Leggi la metodologia →</a>
+        </div>
       </div>
 
       <!-- Paragrafo descrittivo unico per SEO -->
