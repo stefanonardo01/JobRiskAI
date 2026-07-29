@@ -697,6 +697,21 @@ function buildClassificaPage() {
   <meta name="description" content="Classifica completa dei 235 lavori italiani per rischio di sostituzione AI. Dal Data Entry Clerk (92%) al CEO (8%). Scopri dove si colloca la tua professione e quando l'AI arriverà.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://www.jobriskai.it/classifica">
+  <link rel="alternate" type="text/plain" href="https://www.jobriskai.it/llms.txt" title="LLM-readable site description">
+  <!-- AI citation meta tags -->
+  <meta name="citation_title" content="Classifica 235 professioni per rischio AI — JobRiskAI 2026">
+  <meta name="citation_author" content="JobRiskAI">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_online_date" content="2026-07-29">
+  <meta name="citation_language" content="it">
+  <meta name="dc.title" content="I 235 lavori più a rischio AI in Italia — Classifica JobRiskAI 2026">
+  <meta name="dc.creator" content="JobRiskAI">
+  <meta name="dc.subject" content="classifica rischio AI, lavori a rischio automazione, professioni italiane, futuro del lavoro 2026">
+  <meta name="dc.description" content="Classifica completa di 235 professioni italiane ordinate per rischio di sostituzione AI. Dal Data Entry Clerk (92%) al CEO (8%). Anno critico, costi e confronto per ogni ruolo.">
+  <meta name="dc.date" content="2026-07-29">
+  <meta name="dc.type" content="Dataset">
+  <meta name="dc.identifier" content="https://www.jobriskai.it/classifica">
+  <meta name="dc.language" content="it">
   <meta property="og:title" content="I 235 lavori più a rischio AI in Italia [2026] | JobRiskAI">
   <meta property="og:description" content="Classifica completa: dal Data Entry Clerk (92%) al CEO (8%). Scopri il rischio AI di ogni professione italiana.">
   <meta property="og:type" content="article">
