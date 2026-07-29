@@ -634,7 +634,6 @@ function buildClassificaPage() {
         <a href="/calcolatore">🎯 Calcolatore</a>
         <a href="/classifica">📊 Classifica</a>
         <a href="/cv-analyzer">📄 Analisi CV</a>
-        <a href="/aziende">🏢 Aziende</a>
         <a href="/blog">📖 Blog</a>
         <a href="/chi-siamo">👥 Chi Siamo</a>
         <div class="sh-lang">
@@ -658,7 +657,6 @@ function buildClassificaPage() {
       <a href="/calcolatore">🎯 Calcolatore</a>
       <a href="/classifica">📊 Classifica</a>
       <a href="/cv-analyzer">📄 Analisi CV</a>
-      <a href="/aziende">🏢 Aziende</a>
       <a href="/blog">📖 Blog</a>
       <a href="/chi-siamo">👥 Chi Siamo</a>
       <a href="/cv-analyzer" class="sh-cta">📄 Analizza il tuo CV →</a>
