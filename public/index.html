@@ -437,11 +437,23 @@ document.addEventListener('click', function(e) {
     </h1>
 
     <p class="text-[var(--ink-2)] text-[17px] leading-relaxed max-w-[560px] mx-auto mb-8">
-      <span data-i18n="home_hero_p">L'AI sta già cambiando migliaia di professioni. Cerca la tua o carica il CV — ti diciamo quanto sei esposto e cosa puoi fare adesso.</span>
+      Carica il tuo CV — ti diciamo quali task sono a rischio AI, cosa puoi fare per proteggerti e quali competenze sviluppare. <strong>Gratis, senza registrazione, in 30 secondi.</strong>
     </p>
 
-    <!-- Hero search bar -->
-    <div class="relative max-w-[520px] mx-auto mb-5" id="hero-search-wrap">
+    <!-- CV Analyzer — CTA primario -->
+    <div class="mb-4">
+      <a href="/cv-analyzer" class="btn-primary text-white font-bold text-[16px] px-8 py-4 rounded-2xl inline-flex items-center gap-3 shadow-lg hover:scale-[1.02] transition-transform" style="min-height:52px;box-shadow:0 8px 24px rgba(99,102,241,0.35);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+        Analizza il tuo CV gratis →
+      </a>
+    </div>
+    <p class="text-[12px] text-[var(--ink-3)] mb-8">
+      🔒 Elaborato nel browser · nessun dato salvato · risultato in ~30 secondi
+    </p>
+
+    <!-- Alternativa: cerca professione -->
+    <div class="relative max-w-[480px] mx-auto mb-3" id="hero-search-wrap">
+      <p class="text-[12px] font-semibold text-[var(--ink-3)] uppercase tracking-widest mb-3">o cerca direttamente la tua professione</p>
       <div class="flex items-stretch bg-white border-2 border-[var(--border)] rounded-2xl shadow-lift overflow-visible focus-within:border-[var(--indigo-dk)] transition-colors">
         <input
           id="heroSearch"
@@ -450,12 +462,12 @@ document.addEventListener('click', function(e) {
           spellcheck="false"
           data-i18n-placeholder="home_search_placeholder"
           placeholder="Scrivi la tua professione..."
-          class="flex-1 bg-transparent text-[15.5px] text-[var(--ink-0)] placeholder-[var(--ink-3)] px-5 py-4 outline-none min-w-0"
+          class="flex-1 bg-transparent text-[15px] text-[var(--ink-0)] placeholder-[var(--ink-3)] px-5 py-3.5 outline-none min-w-0"
         >
         <button
           id="heroSearchBtn"
           type="button"
-          class="btn-primary shrink-0 text-white font-semibold text-[14px] px-5 py-3 m-1.5 rounded-xl"
+          class="btn-primary shrink-0 text-white font-semibold text-[13.5px] px-4 py-2.5 m-1.5 rounded-xl"
         >
           <span data-i18n="home_search_btn">Scopri il rischio</span>
         </button>
@@ -463,15 +475,9 @@ document.addEventListener('click', function(e) {
       <!-- Autocomplete dropdown -->
       <ul id="heroSearchDropdown" class="hidden absolute left-0 right-0 top-[calc(100%+6px)] bg-white border border-[var(--border)] rounded-2xl shadow-lift z-50 overflow-hidden max-h-[280px] overflow-y-auto text-left"></ul>
     </div>
-
-    <div class="flex flex-wrap items-center justify-center gap-3">
-      <a href="/cv-analyzer" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px">
-        📄 <span data-i18n="home_cta_cv">Analizza il tuo CV</span>
-      </a>
-      <a href="/classifica" class="btn-primary text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-full inline-flex items-center gap-2" style="min-height:44px;background:linear-gradient(135deg,#0ea5e9,#2563eb);">
-        📋 <span data-i18n="home_cta_calc">Sfoglia le 235 professioni</span>
-      </a>
-    </div>
+    <p class="text-[13px] text-[var(--ink-3)] mb-2">
+      <a href="/classifica" class="text-[var(--indigo-dk)] font-medium hover:underline">Sfoglia la classifica delle 235 professioni →</a>
+    </p>
 
     <!-- Esempi reali: social proof / curiosity trigger -->
     <div class="mt-10 pt-7 border-t border-[var(--border-soft)]">
@@ -701,26 +707,46 @@ document.addEventListener('click', function(e) {
 </section>
 
 <section id="funzionalita" class="px-6 py-16 max-w-5xl mx-auto">
-  <div class="grid sm:grid-cols-2 gap-6">
+  <div class="flex flex-col gap-5">
 
-    <!-- CV Analyzer card -->
-    <a href="/cv-analyzer" class="card p-8 fade-up hover:shadow-soft transition-all group border-2 border-transparent hover:border-[var(--indigo)] block text-left" style="text-decoration:none;">
-      <div class="w-14 h-14 rounded-2xl bg-[#EEF0FF] flex items-center justify-center mb-5 group-hover:bg-[var(--indigo)] transition-colors">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-dk)" stroke-width="2" class="group-hover:stroke-white transition-colors"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+    <!-- CV Analyzer — card primaria, larghezza piena -->
+    <a href="/cv-analyzer" class="fade-up hover:shadow-soft transition-all group border-2 border-[var(--indigo)] block text-left rounded-2xl overflow-hidden" style="text-decoration:none;background:linear-gradient(135deg,#f5f3ff 0%,#eef2ff 100%);">
+      <div class="flex flex-col sm:flex-row sm:items-center gap-6 p-8">
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-2 bg-[var(--indigo)] text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">✨ Funzione principale</div>
+          <h2 class="font-display font-semibold text-[1.4rem] mb-3 text-[var(--ink-0)]">Analizza il tuo CV con l'AI</h2>
+          <p class="text-[var(--ink-2)] text-[15px] leading-relaxed mb-5">Carica il tuo CV in PDF. L'AI legge i tuoi task reali e ti dice quali sono a rischio automazione, con un punteggio personalizzato e un piano d'azione concreto. Nessun altro sito lo fa in questo modo — analisi nel browser, zero dati salvati.</p>
+          <div class="flex flex-wrap gap-3 mb-5 text-[12.5px] text-[var(--ink-2)]">
+            <span class="flex items-center gap-1.5"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Gratis, nessuna registrazione</span>
+            <span class="flex items-center gap-1.5"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Risultato in ~30 secondi</span>
+            <span class="flex items-center gap-1.5"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CV elaborato solo nel tuo browser</span>
+          </div>
+          <span class="inline-flex items-center gap-2 bg-[var(--indigo)] text-white font-bold text-[14.5px] px-6 py-3 rounded-xl group-hover:bg-[var(--indigo-dk)] transition-colors">
+            Analizza il tuo CV gratis
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+        <div class="hidden sm:flex flex-col items-center justify-center w-40 shrink-0 text-center">
+          <div class="w-20 h-20 rounded-2xl bg-white shadow-md flex items-center justify-center mb-3">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-dk)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg>
+          </div>
+          <p class="text-[12px] text-[var(--ink-3)] font-medium">Supporta PDF<br>fino a 10MB</p>
+        </div>
       </div>
-      <h2 class="font-display font-semibold text-[1.25rem] mb-3 text-[var(--ink-0)]">Analizza il tuo CV</h2>
-      <p class="text-[var(--ink-2)] text-[14.5px] leading-relaxed mb-5">Carica il tuo CV in PDF. In 30 secondi scopri quale parte del tuo lavoro è a rischio AI, cosa puoi fare per proteggerti e quali competenze sviluppare — analisi personalizzata, nessuna registrazione.</p>
-      <span class="inline-flex items-center gap-1 text-[var(--indigo-dk)] font-semibold text-[14px] group-hover:gap-2 transition-all">Inizia l'analisi gratis <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
     </a>
 
-    <!-- Classifica card -->
-    <a href="/classifica" class="card p-8 fade-up hover:shadow-soft transition-all group border-2 border-transparent hover:border-[#2563eb] block text-left" style="text-decoration:none;">
-      <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-5 group-hover:bg-[#2563eb] transition-colors">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" class="group-hover:stroke-white transition-colors"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="6" width="3" height="12"/></svg>
+    <!-- Classifica — card secondaria -->
+    <a href="/classifica" class="card p-6 fade-up hover:shadow-soft transition-all group border border-[var(--border)] hover:border-[#2563eb] block text-left" style="text-decoration:none;">
+      <div class="flex items-center gap-5">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-[#2563eb] transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" class="group-hover:stroke-white transition-colors"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="6" width="3" height="12"/></svg>
+        </div>
+        <div class="flex-1 min-w-0">
+          <h2 class="font-display font-semibold text-[1.05rem] mb-1 text-[var(--ink-0)]">Classifica delle 235 professioni</h2>
+          <p class="text-[var(--ink-2)] text-[13.5px] leading-relaxed">Esplora il rischio AI per settore, filtra per categoria e scopri l'anno critico stimato per ogni ruolo.</p>
+        </div>
+        <span class="shrink-0 inline-flex items-center gap-1 text-[#2563eb] font-semibold text-[13px] group-hover:gap-2 transition-all whitespace-nowrap">Vedi classifica <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
       </div>
-      <h2 class="font-display font-semibold text-[1.25rem] mb-3 text-[var(--ink-0)]">Classifica delle 235 professioni</h2>
-      <p class="text-[var(--ink-2)] text-[14.5px] leading-relaxed mb-5">Esplora il rischio AI per 235 professioni italiane ordinate per punteggio. Filtra per settore, scopri l'anno critico stimato per ogni ruolo e cosa fare per rendersi meno sostituibili.</p>
-      <span class="inline-flex items-center gap-1 text-[#2563eb] font-semibold text-[14px] group-hover:gap-2 transition-all">Esplora la classifica <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
     </a>
 
   </div>
