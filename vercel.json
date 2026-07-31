@@ -14,7 +14,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-cache, must-revalidate"
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
         }
       ]
     },
@@ -23,7 +23,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-cache, must-revalidate"
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
         }
       ]
     },

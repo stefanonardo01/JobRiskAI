@@ -3,10 +3,11 @@
 // Genera anche public/classifica.html — ranking completo per backlink.
 // Eseguire con: node scripts/build-profession-pages.mjs
 
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, promises as fsPromises } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { jobUpskilling } from './upskilling-data.mjs';
+import { PILL_NAV } from './shared-nav.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT      = join(__dirname, '..');
@@ -465,7 +466,9 @@ function buildProfessionPage(key) {
   <script type="application/ld+json">${speakableJsonLd}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/styles.css">
   <style>
     .prof-shell { max-width: 760px; margin: 3rem auto 5rem; padding: 0 1.5rem; }
@@ -491,43 +494,7 @@ function buildProfessionPage(key) {
 </head>
 <body>
   
-<nav id="site-nav" aria-label="Navigazione principale" style="position:fixed;top:1rem;left:0;right:0;z-index:1000;padding:0 1rem;">
-  <div style="max-width:64rem;margin:0 auto;background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid #EFE9DC;border-radius:999px;box-shadow:0 1px 2px rgba(28,26,23,.04),0 12px 32px -12px rgba(28,26,23,.10);padding:.5rem .75rem;display:flex;align-items:center;justify-content:space-between;">
-    <a href="/" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.94rem;letter-spacing:-.01em;padding-left:.5rem;white-space:nowrap;text-decoration:none;background:linear-gradient(135deg,#4338ca,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">JobRiskAI</a>
-    <div id="pill-links" style="display:flex;align-items:center;font-size:.8rem;color:#4A463E;font-weight:500;gap:.15rem;">
-      <a href="/classifica" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Classifica</a>
-      <a href="/calcolatore" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Calcolatore</a>
-      <a href="/confronta" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Confronta</a>
-      <a href="/blog" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Blog</a>
-      <a href="/dati" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Dati</a>
-      <a href="/chi-siamo" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Chi Siamo</a>
-    </div>
-    <div style="display:flex;align-items:center;gap:.5rem;">
-      <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:#4A463E;border:1px solid #EFE9DC;border-radius:8px;padding:.3rem .4rem;font-size:.8rem;cursor:pointer;outline:none;">
-        <option value="it">IT</option><option value="en">EN</option><option value="es">ES</option><option value="de">DE</option><option value="fr">FR</option>
-      </select>
-      <button id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" onclick="togglePillMenu()" style="display:none;flex-direction:column;justify-content:center;align-items:center;width:40px;height:40px;border:none;background:transparent;cursor:pointer;border-radius:50%;padding:0;flex-shrink:0;">
-        <span style="display:block;width:20px;height:2px;background:#4A463E;margin-bottom:5px;border-radius:2px;"></span>
-        <span style="display:block;width:20px;height:2px;background:#4A463E;margin-bottom:5px;border-radius:2px;"></span>
-        <span style="display:block;width:20px;height:2px;background:#4A463E;border-radius:2px;"></span>
-      </button>
-    </div>
-  </div>
-  <div id="mobileMenu" style="display:none;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-radius:0 0 1.25rem 1.25rem;padding:1rem 1.25rem 1.25rem;margin:0 .5rem;border:1px solid #EFE9DC;border-top:none;">
-    <nav style="display:flex;flex-direction:column;gap:.25rem;">
-      <a href="/" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Home</a>
-      <a href="/classifica" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Classifica</a>
-      <a href="/calcolatore" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Calcolatore</a>
-      <a href="/confronta" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Confronta</a>
-      <a href="/blog" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Blog</a>
-      <a href="/dati" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Dati</a>
-      <a href="/chi-siamo" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Chi Siamo</a>
-    </nav>
-  </div>
-</nav>
-<style>@media(max-width:767px){#pill-links{display:none!important}#mobileMenuBtn{display:flex!important}}</style>
-<script>function togglePillMenu(){var m=document.getElementById('mobileMenu'),b=document.getElementById('mobileMenuBtn'),o=m.style.display==='block';m.style.display=o?'none':'block';b.setAttribute('aria-expanded',o?'false':'true');}document.addEventListener('click',function(e){var n=document.getElementById('site-nav');if(n&&!n.contains(e.target)){document.getElementById('mobileMenu').style.display='none';var b=document.getElementById('mobileMenuBtn');if(b)b.setAttribute('aria-expanded','false');}});</script>
-<div style="height:5rem;"></div>
+${PILL_NAV}
   <main role="main">
     <div class="prof-shell">
 
@@ -744,24 +711,7 @@ function buildClassificaPage() {
     .map(([key, d]) => ({ key, ...d, pct: Math.round(d.riskFactor * 100), cat: categoryOf(key) }))
     .sort((a, b) => b.pct - a.pct);
 
-  const rows = sorted.map((d, i) => `
-    <tr>
-      <td style="font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem;">${i + 1}</td>
-      <td style="padding:0.75rem 0.5rem;">
-        <a href="/professione/${slug(d.key)}" style="display:flex;align-items:center;gap:0.6rem;text-decoration:none;color:var(--text-primary);">
-          <span style="font-size:1.2rem;">${d.icon || '💼'}</span>
-          <span style="font-weight:600;font-size:0.92rem;">${esc(d.title)}</span>
-        </a>
-      </td>
-      <td style="padding:0.75rem 0.5rem;font-size:0.82rem;color:var(--text-secondary);">${esc(d.cat)}</td>
-      <td class="risk-cell" data-base-risk="${d.pct}" style="padding:0.75rem 0.5rem;">
-        <div style="display:flex;align-items:center;gap:0.5rem;">
-          <div style="width:60px;height:6px;background:var(--border);border-radius:999px;overflow:hidden;"><div class="risk-bar" style="width:${d.pct}%;height:100%;background:${riskColor(d.pct)};border-radius:999px;"></div></div>
-          <span class="risk-pct" style="font-weight:700;font-size:0.9rem;color:${riskColor(d.pct)};">${d.pct}%</span>
-        </div>
-      </td>
-      <td class="year-cell" data-base-year="${d.targetYear}" style="padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary);">${d.targetYear}</td>
-    </tr>`).join('');
+  const rows = sorted.map((d, i) => `<tr><td class="td-rank">${i + 1}</td><td class="td-prof"><a href="/professione/${slug(d.key)}"><span class="icon">${d.icon || '💼'}</span><span class="name">${esc(d.title)}</span></a></td><td class="td-cat hide-mobile">${esc(d.cat)}</td><td class="risk-cell td-risk" data-base-risk="${d.pct}"><div class="td-risk-inner"><div class="td-risk-bar-wrap"><div class="risk-bar" style="width:${d.pct}%;background:${riskColor(d.pct)};"></div></div><span class="risk-pct" style="color:${riskColor(d.pct)};">${d.pct}%</span></div></td><td class="year-cell td-year" data-base-year="${d.targetYear}">${d.targetYear}</td></tr>`).join('\n');
 
   const faqJsonLd = JSON.stringify({
     '@context': 'https://schema.org',
@@ -810,7 +760,9 @@ function buildClassificaPage() {
   <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/styles.css">
   <style>
     .cla-shell { max-width: 900px; margin: 3rem auto 5rem; padding: 0 1.5rem; }
@@ -821,6 +773,19 @@ function buildClassificaPage() {
     .filter-btn { background: white; border: 1px solid var(--border); border-radius: 999px; padding: 0.4rem 0.9rem; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.15s; color: var(--text-secondary); }
     .filter-btn.active, .filter-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
     @media (max-width: 600px) { .hide-mobile { display: none; } }
+    /* Row cell utility classes — evitano stili inline ripetuti 235× */
+    .td-rank { font-weight:600;color:var(--text-secondary);font-size:0.85rem;padding:0.75rem 0.5rem; }
+    .td-prof { padding:0.75rem 0.5rem; }
+    .td-prof a { display:flex;align-items:center;gap:0.6rem;text-decoration:none;color:var(--text-primary); }
+    .td-prof .icon { font-size:1.2rem; }
+    .td-prof .name { font-weight:600;font-size:0.92rem; }
+    .td-cat { padding:0.75rem 0.5rem;font-size:0.82rem;color:var(--text-secondary); }
+    .td-risk { padding:0.75rem 0.5rem; }
+    .td-risk-inner { display:flex;align-items:center;gap:0.5rem; }
+    .td-risk-bar-wrap { width:60px;height:6px;background:var(--border);border-radius:999px;overflow:hidden; }
+    .risk-bar { height:100%;border-radius:999px; }
+    .risk-pct { font-weight:700;font-size:0.9rem; }
+    .td-year { padding:0.75rem 0.5rem;font-size:0.88rem;color:var(--text-secondary); }
     .sh { background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--border,#E7E0D2); padding: 0 2rem; position: sticky; top: 0; z-index: 200; backdrop-filter: blur(14px); height: 60px; display: flex; align-items: center; }
     .sh-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
     .sh-links { display: flex; align-items: center; gap: 0.4rem; }
@@ -841,43 +806,7 @@ function buildClassificaPage() {
 </head>
 <body>
   
-<nav id="site-nav" aria-label="Navigazione principale" style="position:fixed;top:1rem;left:0;right:0;z-index:1000;padding:0 1rem;">
-  <div style="max-width:64rem;margin:0 auto;background:rgba(255,255,255,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid #EFE9DC;border-radius:999px;box-shadow:0 1px 2px rgba(28,26,23,.04),0 12px 32px -12px rgba(28,26,23,.10);padding:.5rem .75rem;display:flex;align-items:center;justify-content:space-between;">
-    <a href="/" style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.94rem;letter-spacing:-.01em;padding-left:.5rem;white-space:nowrap;text-decoration:none;background:linear-gradient(135deg,#4338ca,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">JobRiskAI</a>
-    <div id="pill-links" style="display:flex;align-items:center;font-size:.8rem;color:#4A463E;font-weight:500;gap:.15rem;">
-      <a href="/classifica" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Classifica</a>
-      <a href="/calcolatore" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Calcolatore</a>
-      <a href="/confronta" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Confronta</a>
-      <a href="/blog" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Blog</a>
-      <a href="/dati" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Dati</a>
-      <a href="/chi-siamo" style="color:#4A463E;text-decoration:none;padding:.35rem .75rem;border-radius:999px;white-space:nowrap;">Chi Siamo</a>
-    </div>
-    <div style="display:flex;align-items:center;gap:.5rem;">
-      <select id="langSelect" aria-label="Seleziona lingua" style="background:transparent;color:#4A463E;border:1px solid #EFE9DC;border-radius:8px;padding:.3rem .4rem;font-size:.8rem;cursor:pointer;outline:none;">
-        <option value="it">IT</option><option value="en">EN</option><option value="es">ES</option><option value="de">DE</option><option value="fr">FR</option>
-      </select>
-      <button id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" onclick="togglePillMenu()" style="display:none;flex-direction:column;justify-content:center;align-items:center;width:40px;height:40px;border:none;background:transparent;cursor:pointer;border-radius:50%;padding:0;flex-shrink:0;">
-        <span style="display:block;width:20px;height:2px;background:#4A463E;margin-bottom:5px;border-radius:2px;"></span>
-        <span style="display:block;width:20px;height:2px;background:#4A463E;margin-bottom:5px;border-radius:2px;"></span>
-        <span style="display:block;width:20px;height:2px;background:#4A463E;border-radius:2px;"></span>
-      </button>
-    </div>
-  </div>
-  <div id="mobileMenu" style="display:none;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-radius:0 0 1.25rem 1.25rem;padding:1rem 1.25rem 1.25rem;margin:0 .5rem;border:1px solid #EFE9DC;border-top:none;">
-    <nav style="display:flex;flex-direction:column;gap:.25rem;">
-      <a href="/" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Home</a>
-      <a href="/classifica" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Classifica</a>
-      <a href="/calcolatore" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Calcolatore</a>
-      <a href="/confronta" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Confronta</a>
-      <a href="/blog" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Blog</a>
-      <a href="/dati" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Dati</a>
-      <a href="/chi-siamo" style="display:block;padding:.75rem 1rem;border-radius:.75rem;color:#4A463E;font-size:.95rem;font-weight:500;text-decoration:none;">Chi Siamo</a>
-    </nav>
-  </div>
-</nav>
-<style>@media(max-width:767px){#pill-links{display:none!important}#mobileMenuBtn{display:flex!important}}</style>
-<script>function togglePillMenu(){var m=document.getElementById('mobileMenu'),b=document.getElementById('mobileMenuBtn'),o=m.style.display==='block';m.style.display=o?'none':'block';b.setAttribute('aria-expanded',o?'false':'true');}document.addEventListener('click',function(e){var n=document.getElementById('site-nav');if(n&&!n.contains(e.target)){document.getElementById('mobileMenu').style.display='none';var b=document.getElementById('mobileMenuBtn');if(b)b.setAttribute('aria-expanded','false');}});</script>
-<div style="height:5rem;"></div>
+${PILL_NAV}
   <main role="main">
     <div class="cla-shell">
 
@@ -1108,26 +1037,32 @@ function buildClassificaPage() {
 }
 
 // ── Main ───────────────────────────────────────────────────
-const outDir = join(ROOT, 'public/professione');
-mkdirSync(outDir, { recursive: true });
+(async () => {
+  const outDir = join(ROOT, 'public/professione');
+  mkdirSync(outDir, { recursive: true });
 
-let generated = 0;
-const urls = [];
+  const urls = [];
 
-for (const key of Object.keys(jobData)) {
-  const html = buildProfessionPage(key);
-  if (!html) { console.warn(`Skip ${key} (no data)`); continue; }
-  const sl   = slug(key);
-  writeFileSync(join(outDir, `${sl}.html`), html, 'utf8');
-  urls.push(`https://www.jobriskai.it/professione/${sl}`);
-  generated++;
-}
+  // Genera tutte le pagine in parallelo per build più veloce
+  const keys = Object.keys(jobData);
+  const writePromises = keys.map(async (key) => {
+    const html = buildProfessionPage(key);
+    if (!html) { console.warn(`Skip ${key} (no data)`); return null; }
+    const sl = slug(key);
+    await fsPromises.writeFile(join(outDir, `${sl}.html`), html, 'utf8');
+    return `https://www.jobriskai.it/professione/${sl}`;
+  });
 
-writeFileSync(join(ROOT, 'public/classifica.html'), buildClassificaPage(), 'utf8');
-urls.push('https://www.jobriskai.it/classifica');
+  const results = await Promise.all(writePromises);
+  const profUrls = results.filter(Boolean);
+  urls.push(...profUrls);
 
-// Scrivi urls.json per il sitemap
-writeFileSync(join(ROOT, 'scripts/generated-urls.json'), JSON.stringify(urls, null, 2), 'utf8');
+  writeFileSync(join(ROOT, 'public/classifica.html'), buildClassificaPage(), 'utf8');
+  urls.push('https://www.jobriskai.it/classifica');
 
-console.log(`✅ Generati ${generated} pagine professione + classifica.html`);
-console.log(`📝 URL salvati in scripts/generated-urls.json`);
+  // Scrivi urls.json per il sitemap
+  writeFileSync(join(ROOT, 'scripts/generated-urls.json'), JSON.stringify(urls, null, 2), 'utf8');
+
+  console.log(`✅ Generati ${profUrls.length} pagine professione + classifica.html`);
+  console.log(`📝 URL salvati in scripts/generated-urls.json`);
+})();

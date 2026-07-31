@@ -1,3 +1,7 @@
+/* Garantisce font-display:swap per tutti i web font caricati */
+@font-face { font-family: 'Inter'; font-display: swap; src: local('Inter'); }
+@font-face { font-family: 'Space Grotesk'; font-display: swap; src: local('Space Grotesk'); }
+
         * {
             margin: 0;
             padding: 0;
