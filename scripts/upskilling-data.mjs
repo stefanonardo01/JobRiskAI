@@ -60,7 +60,7 @@ export const jobUpskilling = {
         why: 'La contabilità di base è già automatizzata nei principali ERP; essere l\'esperto del software è l\'unico modo per restare rilevanti.',
         courses: [
           { name: 'SAP S/4HANA Finance Fundamentals', provider: 'SAP Learning Hub', url: 'https://learning.sap.com/learning-journeys/explore-the-basics-of-sap-s-4hana', free: true, cert: true, duration: '20 ore' },
-          { name: 'Odoo Accounting Functional Training', provider: 'Odoo eLearning', url: 'https://www.odoo.com/slides/accounting-19', free: true, cert: true, duration: '15 ore' },
+          { name: 'Odoo Accounting Functional Training', provider: 'Odoo eLearning', url: 'https://www.odoo.com/slides/odoo-academy-accounting-458', free: true, cert: true, duration: '15 ore' },
         ],
       },
       {
@@ -220,7 +220,7 @@ export const jobUpskilling = {
         name: 'Post-editing di Machine Translation (MTPE)',
         why: 'Il mercato si è già trasformato: agenzie e clienti pagano per correggere output AI velocemente, non per tradurre da zero.',
         courses: [
-          { name: 'Machine Translation & Post-Editing', provider: 'Udemy', url: 'https://www.udemy.com/course/machine-translation-and-post-editing/', free: false, cert: true, duration: '6 ore' },
+          { name: 'Machine Translation & Post-Editing', provider: 'Udemy', url: 'https://www.udemy.com/course/machine-translation-post-editing-mtpe-for-beginners/', free: false, cert: true, duration: '6 ore' },
           { name: 'MOOC Translation in the Digital Age', provider: 'University of Geneva – Coursera', url: 'https://www.coursera.org/learn/translation', free: false, cert: true, duration: '5 settimane' },
         ],
       },
@@ -261,7 +261,7 @@ export const jobUpskilling = {
         why: 'Amazon, DHL e GLS stanno installando robot AMR in tutti i magazzini: chi sa affiancarli e mantenerli vale il doppio.',
         courses: [
           { name: 'Collaborative Robotics Fundamentals', provider: 'Universal Robots Academy', url: 'https://www.universal-robots.com/academy/', free: true, cert: true, duration: '6 ore' },
-          { name: 'Automation & Robotics in Supply Chain', provider: 'MITx – edX', url: 'https://www.edx.org/course/supply-chain-technology-and-systems', free: false, cert: true, duration: '6 settimane' },
+          { name: 'Automation & Robotics in Supply Chain', provider: 'MITx – edX', url: 'https://www.edx.org/learn/supply-chain-management/massachusetts-institute-of-technology-supply-chain-technology-and-systems', free: false, cert: true, duration: '6 settimane' },
         ],
       },
       {
@@ -284,7 +284,7 @@ export const jobUpskilling = {
         why: 'Ottimizzare i processi di picking, packing e slotting con metodi Lean riduce i costi del 15-30% e rende il profilo indispensabile.',
         courses: [
           { name: 'Lean Six Sigma Yellow Belt', provider: 'Coursera Project Network', url: 'https://www.coursera.org/learn/six-sigma-and-the-organization', free: false, cert: true, duration: '3 settimane' },
-          { name: 'Supply Chain Fundamentals', provider: 'MITx – edX', url: 'https://www.edx.org/course/supply-chain-fundamentals', free: false, cert: true, duration: '10 settimane' },
+          { name: 'Supply Chain Fundamentals', provider: 'MITx – edX', url: 'https://www.edx.org/learn/supply-chain-design/massachusetts-institute-of-technology-supply-chain-fundamentals', free: false, cert: true, duration: '10 settimane' },
         ],
       },
     ],
@@ -347,7 +347,7 @@ export const jobUpskilling = {
         name: 'Architetture LLM e integrazione AI nelle applicazioni',
         why: 'Saper integrare API OpenAI/Anthropic/Gemini in prodotti software è la skill più richiesta e meglio pagata del momento.',
         courses: [
-          { name: 'LangChain for LLM Application Development', provider: 'DeepLearning.AI', url: 'https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/', free: true, cert: false, duration: '3 ore' },
+          { name: 'LangChain for LLM Application Development', provider: 'DeepLearning.AI', url: 'https://www.deeplearning.ai/courses/langchain', free: true, cert: false, duration: '3 ore' },
           { name: 'Building Systems with the ChatGPT API', provider: 'DeepLearning.AI', url: 'https://www.deeplearning.ai/short-courses/building-systems-with-chatgpt/', free: true, cert: false, duration: '2 ore' },
           { name: 'Developing AI Applications on Azure', provider: 'Microsoft Learn', url: 'https://learn.microsoft.com/it-it/training/paths/develop-ai-solutions-azure-openai/', free: true, cert: false, duration: '6 ore' },
         ],
@@ -451,7 +451,7 @@ export const jobUpskilling = {
         name: 'Supervisione e teleoperazione veicoli autonomi',
         why: 'I truck autonomi di Waymo/Aurora/Torc richiedono operatori remoti per zone urbane, emergenze e trasporti eccezionali.',
         courses: [
-          { name: 'Autonomous Vehicles – Technology & Ethics', provider: 'TU Delft – edX', url: 'https://www.edx.org/course/autonomous-vehicles-and-autonomous-driving', free: false, cert: true, duration: '8 settimane' },
+          { name: 'Autonomous Vehicles – Technology & Ethics', provider: 'TU Delft – edX', url: 'https://www.edx.org/course/self-driving-cars-with-duckietown', free: false, cert: true, duration: '8 settimane' },
           { name: 'Fleet Management & Telematics', provider: 'LinkedIn Learning', url: 'https://www.linkedin.com/learning/topics/fleet-management', free: false, cert: false, duration: '3 ore' },
         ],
       },
@@ -474,7 +474,7 @@ export const jobUpskilling = {
         name: 'Eco-driving e veicoli elettrici pesanti (BEV/HEV)',
         why: 'La transizione ai truck elettrici (Mercedes eActros, Volvo FH Electric) richiede nuove competenze di ricarica, range management e manutenzione.',
         courses: [
-          { name: 'Electric Vehicle Technology – Fundamentals', provider: 'IEEE – edX', url: 'https://www.edx.org/course/electric-vehicles-and-mobility', free: false, cert: true, duration: '5 settimane' },
+          { name: 'Electric Vehicle Technology – Fundamentals', provider: 'IEEE – edX', url: 'https://www.edx.org/learn/engineering/delft-university-of-technology-electric-cars-policy', free: false, cert: true, duration: '5 settimane' },
           { name: 'Eco Driving Professional', provider: 'ACI – Automobile Club d\'Italia', url: 'https://www.aci.it/laci/scuola-guida-sicura/guida-sicura-on-road/eco-driving.html', free: false, cert: true, duration: '1 giorno' },
         ],
       },
