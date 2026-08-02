@@ -59,7 +59,7 @@ export const jobUpskilling = {
         name: 'Software ERP e contabilità digitale (Zucchetti, SAP, Odoo)',
         why: 'La contabilità di base è già automatizzata nei principali ERP; essere l\'esperto del software è l\'unico modo per restare rilevanti.',
         courses: [
-          { name: 'SAP S/4HANA Finance Fundamentals', provider: 'SAP Learning Hub', url: 'https://learning.sap.com/learning-journeys/explore-the-basics-of-sap-s-4hana', free: true, cert: true, duration: '20 ore' },
+          { name: 'SAP S/4HANA Finance Fundamentals', provider: 'SAP Learning Hub', url: 'https://learning.sap.com/learning-journeys/overview-of-financials-in-sap-s-4hana', free: true, cert: true, duration: '20 ore' },
           { name: 'Odoo Accounting Functional Training', provider: 'Odoo eLearning', url: 'https://www.odoo.com/slides/odoo-academy-accounting-458', free: true, cert: true, duration: '15 ore' },
         ],
       },
@@ -107,8 +107,8 @@ export const jobUpskilling = {
         name: 'CRM avanzato (Salesforce, HubSpot, Zendesk)',
         why: 'Saper configurare, segmentare e analizzare dati CRM trasforma un operatore in un profilo difficilmente sostituibile.',
         courses: [
-          { name: 'Salesforce Service Cloud Consultant', provider: 'Salesforce Trailhead', url: 'https://trailhead.salesforce.com/en/credentials/servicecloudconsultant', free: true, cert: true, duration: '60 ore' },
-          { name: 'HubSpot Service Hub Certification', provider: 'HubSpot Academy', url: 'https://academy.hubspot.com/courses/service-hub', free: true, cert: true, duration: '4 ore' },
+          { name: 'Salesforce Service Cloud Consultant', provider: 'Salesforce Trailhead', url: 'https://trailhead.salesforce.com/credentials/servicecloudconsultant', free: true, cert: true, duration: '60 ore' },
+          { name: 'HubSpot Service Hub Certification', provider: 'HubSpot Academy', url: 'https://academy.hubspot.com/courses/hubspot-service-software', free: true, cert: true, duration: '4 ore' },
           { name: 'Zendesk Customer Service Professional', provider: 'Zendesk Training', url: 'https://training.zendesk.com/page/zendesk-certifications', free: false, cert: true, duration: '8 ore' },
         ],
       },
@@ -228,8 +228,8 @@ export const jobUpskilling = {
         name: 'Localizzazione software e UI (CAT tools)',
         why: 'SDL Trados, MemoQ e Phrase (ex-Memsource) sono standard industriali; chi li padroneggia lavora su volumi che l\'AI da sola non può gestire end-to-end.',
         courses: [
-          { name: 'SDL Trados Studio Essentials', provider: 'RWS – Trados Academy', url: 'https://www.rws.com/localization/products/trados/training/', free: false, cert: true, duration: '16 ore' },
-          { name: 'MemoQ Certified Translator Training', provider: 'MemoQ Academy', url: 'https://www.memoq.com/memoq-training', free: false, cert: true, duration: '8 ore' },
+          { name: 'SDL Trados Studio Essentials', provider: 'RWS – Trados Academy', url: 'https://www.trados.com/training/certification/', free: false, cert: true, duration: '16 ore' },
+          { name: 'MemoQ Certified Translator Training', provider: 'MemoQ Academy', url: 'https://academy.memoq.com/', free: false, cert: true, duration: '8 ore' },
         ],
       },
       {
@@ -268,7 +268,7 @@ export const jobUpskilling = {
         name: 'WMS (Warehouse Management System) avanzato',
         why: 'SAP Extended Warehouse Management e Manhattan WMS gestiscono milioni di movimenti al giorno; servirà sempre qualcuno che li configuri e supervisioni.',
         courses: [
-          { name: 'SAP Extended Warehouse Management (EWM)', provider: 'SAP Learning Hub', url: 'https://learning.sap.com/learning-journeys/shipping-and-receiving-using-sap-extended-warehouse-management', free: true, cert: true, duration: '20 ore' },
+          { name: 'SAP Extended Warehouse Management (EWM)', provider: 'SAP Learning Hub', url: 'https://learning.sap.com/learning-journeys/implementing-extended-warehouse-management-in-sap-s-4hana-cloud', free: true, cert: true, duration: '20 ore' },
           { name: 'Warehouse Management Fundamentals', provider: 'APICS / ASCM – Coursera', url: 'https://www.coursera.org/learn/supply-chain-logistics', free: false, cert: true, duration: '4 settimane' },
         ],
       },
@@ -419,7 +419,7 @@ export const jobUpskilling = {
         name: 'Audit Analytics e data analysis per revisione',
         why: 'Con AI che analizza il 100% delle transazioni anziché campioni, il revisore deve saper interpretare output statistici complessi.',
         courses: [
-          { name: 'Audit Analytics – CPA Review', provider: 'AICPA – CPA Exam Prep', url: 'https://www.aicpa.org/professional-insights/download/audit-analytics-and-continuous-audit', free: false, cert: true, duration: '16 ore' },
+          { name: 'Audit Analytics – CPA Review', provider: 'AICPA – CPA Exam Prep', url: 'https://www.aicpa-cima.com/resources/download/audit-analytics-and-continuous-audit-looking-toward-the-future', free: false, cert: true, duration: '16 ore' },
           { name: 'Data Analytics for Accounting', provider: 'University of Illinois – Coursera', url: 'https://www.coursera.org/specializations/data-analytics-accountancy', free: false, cert: true, duration: '6 mesi' },
         ],
       },
@@ -427,8 +427,8 @@ export const jobUpskilling = {
         name: 'ESG Reporting e assurance (GRI, CSRD)',
         why: 'La Direttiva CSRD (obbligatoria per le PMI dal 2026) richiede revisori specializzati in sostenibilità: un mercato nuovo da zero.',
         courses: [
-          { name: 'Sustainability Reporting – GRI Standards', provider: 'GRI Academy', url: 'https://www.globalreporting.org/capacity-building/gri-academy/', free: false, cert: true, duration: '3 giorni' },
-          { name: 'CSRD & ESG Assurance', provider: 'ICAEW – Sustainability', url: 'https://www.icaew.com/learning-and-development/courses/sustainability-courses', free: false, cert: true, duration: '16 ore' },
+          { name: 'Sustainability Reporting – GRI Standards', provider: 'GRI Academy', url: 'https://www.globalreporting.org/academy/courses', free: false, cert: true, duration: '3 giorni' },
+          { name: 'CSRD & ESG Assurance', provider: 'ICAEW – Sustainability', url: 'https://www.icaew.com/learning-and-development/academy/cpd-course-catalogue/sustainability', free: false, cert: true, duration: '16 ore' },
         ],
       },
       {
@@ -546,7 +546,7 @@ export const jobUpskilling = {
         name: 'ESG e reporting di sostenibilità (CSRD)',
         why: 'Dal 2026, migliaia di PMI italiane dovranno redigere report di sostenibilità: chi già conosce CSRD è avvantaggiato di anni.',
         courses: [
-          { name: 'CSRD & Sustainability Reporting for SMEs', provider: 'GRI Academy', url: 'https://www.globalreporting.org/capacity-building/gri-academy/', free: false, cert: true, duration: '2 giorni' },
+          { name: 'CSRD & Sustainability Reporting for SMEs', provider: 'GRI Academy', url: 'https://www.globalreporting.org/academy/courses', free: false, cert: true, duration: '2 giorni' },
           { name: 'ESG Investing Foundations', provider: 'CFA Institute', url: 'https://www.cfainstitute.org/en/programs/esg-investing', free: false, cert: true, duration: '3 mesi' },
         ],
       },
@@ -634,8 +634,8 @@ export const jobUpskilling = {
         name: 'AI Project Management Tools (Asana AI, Monday.com, Notion AI)',
         why: 'Saper configurare workspace AI per tracking automatico, risk prediction e reporting riduce il lavoro di reporting dell\'80%.',
         courses: [
-          { name: 'Asana Academy – Advanced Workflows', provider: 'Asana Academy', url: 'https://academy.asana.com/path/asana-foundations-skill-badge', free: true, cert: true, duration: '3 ore' },
-          { name: 'Monday.com – Automation & AI Features', provider: 'Monday.com Learning', url: 'https://monday.com/helpcenter/how-to-use-monday-ai/', free: true, cert: false, duration: 'Auto-paced' },
+          { name: 'Asana Academy – Advanced Workflows', provider: 'Asana Academy', url: 'https://academy.asana.com/asana-foundations-skill-badge', free: true, cert: true, duration: '3 ore' },
+          { name: 'Monday.com – Automation & AI Features', provider: 'Monday.com Learning', url: 'https://support.monday.com/hc/en-us/articles/11512670770834-Get-started-with-monday-AI', free: true, cert: false, duration: 'Auto-paced' },
         ],
       },
       {
@@ -707,7 +707,7 @@ export const jobUpskilling = {
         why: 'Dal 2025 la Direttiva UE sull\'accessibilità è obbligatoria per i servizi digitali pubblici e privati: pochissimi frontend la sanno applicare.',
         courses: [
           { name: 'Web Accessibility (WCAG 2.1)', provider: 'Google – Udacity', url: 'https://www.udacity.com/course/web-accessibility--ud891', free: true, cert: false, duration: '2 settimane' },
-          { name: 'Accessibility in JavaScript Applications', provider: 'Frontend Masters', url: 'https://frontendmasters.com/courses/javascript-accessibility/', free: false, cert: false, duration: '4 ore' },
+          { name: 'Accessibility in JavaScript Applications', provider: 'Frontend Masters', url: 'https://frontendmasters.com/courses/react-accessibility/', free: false, cert: false, duration: '4 ore' },
         ],
       },
       {
@@ -738,7 +738,7 @@ export const jobUpskilling = {
         name: 'AI-powered prospecting (Clay, Apollo, Outreach AI)',
         why: 'L\'outreach manuale è già automatizzato dai tool AI; il valore umano è nella strategia di segmentazione e nella personalizzazione profonda.',
         courses: [
-          { name: 'HubSpot Sales Software Certification', provider: 'HubSpot Academy', url: 'https://academy.hubspot.com/courses/sales-software', free: true, cert: true, duration: '4 ore' },
+          { name: 'HubSpot Sales Software Certification', provider: 'HubSpot Academy', url: 'https://academy.hubspot.com/courses/hubspot-sales-hub-software', free: true, cert: true, duration: '4 ore' },
           { name: 'Sales Operations Professional Certificate', provider: 'Salesforce – Coursera', url: 'https://www.coursera.org/professional-certificates/salesforce-sales-operations', free: false, cert: true, duration: '4 mesi' },
         ],
       },
@@ -755,7 +755,7 @@ export const jobUpskilling = {
         why: 'Evolvere in RevOps – che allinea sales, marketing e CS su dati condivisi – è il percorso di crescita più protetto dall\'automazione.',
         courses: [
           { name: 'Revenue Operations Certification', provider: 'HubSpot Academy', url: 'https://academy.hubspot.com/courses/revenue-operations', free: true, cert: true, duration: '4 ore' },
-          { name: 'Salesforce CRM Analytics', provider: 'Salesforce Trailhead', url: 'https://trailhead.salesforce.com/content/learn/trails/build-reports-dashboards-for-sales-managers', free: true, cert: false, duration: '8 ore' },
+          { name: 'Salesforce CRM Analytics', provider: 'Salesforce Trailhead', url: 'https://trailhead.salesforce.com/content/learn/projects/create-reports-and-dashboards-for-sales-and-marketing-managers', free: true, cert: false, duration: '8 ore' },
         ],
       },
       {
