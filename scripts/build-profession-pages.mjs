@@ -82,20 +82,20 @@ const amzSearch = (q, title, author, desc) => ({ asin: null, title, author, desc
 
 const BOOKS_UNIVERSAL = [
   amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione'),
-  amzSearch('seconda era macchine Brynjolfsson', 'La seconda era delle macchine', 'Brynjolfsson & McAfee', 'Lavoro, progresso e prosperità nell\'era della tecnologia'),
+  amz('8807172887', 'La nuova rivoluzione delle macchine', 'Brynjolfsson & McAfee', 'Lavoro, progresso e prosperità nell\'era della tecnologia'),
 ];
 
 const BOOKS_BY_CAT = {
-  'Tech & AI':            [amzSearch('intelligenza artificiale guida Melanie Mitchell', 'Intelligenza Artificiale: Una Guida per Esseri Umani', 'Melanie Mitchell', 'Capire davvero l\'AI e i suoi limiti reali')],
-  'Management & Finanza': [amzSearch('potere e progresso Acemoglu tecnologia prosperità', 'Potere e Progresso', 'Daron Acemoglu & Simon Johnson', 'Come la tecnologia crea e distrugge prosperità')],
-  'Sanità':               [amzSearch('deep medicine Eric Topol AI medicina', 'Deep Medicine', 'Eric Topol', 'Come l\'AI sta trasformando la medicina e il ruolo del medico')],
-  'Legale & PA':          [amzSearch('fine delle professioni Susskind futuro esperti', 'La fine delle professioni', 'Susskind & Susskind', 'Il futuro degli esperti nell\'era della tecnologia')],
-  'HR':                   [amzSearch('work rules Laszlo Bock Google', 'Work Rules!', 'Laszlo Bock', 'Lezioni da Google su come creare e gestire team straordinari')],
-  'Creatività':           [amzSearch('rubare come un artista Austin Kleon', 'Rubare come un artista', 'Austin Kleon', 'Come la creatività umana resiste all\'automazione')],
-  'Istruzione':           [amzSearch('homo deus Harari futuro umanità', 'Homo Deus', 'Yuval Noah Harari', 'Una breve storia del futuro dell\'intelligenza')],
-  'Ingegneria':           [amzSearch('quarta rivoluzione industriale Schwab', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0 e il futuro delle professioni tecniche')],
-  'Marketing':            [amzSearch('marketing 5.0 Kotler tecnologia umanità', 'Marketing 5.0', 'Philip Kotler', 'Tecnologia per l\'umanità: AI e marketing nel futuro')],
-  'Commerciale':          [amzSearch('vendere è umano Daniel Pink', 'Vendere è umano', 'Daniel H. Pink', 'L\'arte sorprendente di convincere, influenzare e persuadere')],
+  'Tech & AI':            [amz('8806253301', 'L\'Intelligenza Artificiale: Guida per Esseri Umani Pensanti', 'Melanie Mitchell', 'Capire davvero l\'AI e i suoi limiti reali')],
+  'Management & Finanza': [amz('8842832847', 'Potere e Progresso', 'Daron Acemoglu & Simon Johnson', 'Come la tecnologia crea e distrugge prosperità e lavoro')],
+  'Sanità':               [amz('8845298752', 'Homo Deus', 'Yuval Noah Harari', 'Come la biologia e l\'AI ridisegneranno il futuro della medicina e della salute')],
+  'Legale & PA':          [amz('8849874634', 'Il futuro delle professioni', 'Richard & Daniel Susskind', 'Come la tecnologia trasformerà il lavoro dei professionisti')],
+  'HR':                   [amz('1455554790', 'Work Rules!', 'Laszlo Bock', 'Lezioni da Google su come creare e gestire team straordinari')],
+  'Creatività':           [amz('886731033X', 'Ruba come un artista', 'Austin Kleon', 'Come la creatività umana resiste all\'automazione')],
+  'Istruzione':           [amz('8830104868', 'Un mondo senza lavoro', 'Daniel Susskind', 'Come rispondere alla disoccupazione tecnologica — indispensabile per chi forma le nuove generazioni')],
+  'Ingegneria':           [amz('8891743003', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0 e il futuro delle professioni tecniche')],
+  'Marketing':            [amz('883600556X', 'Marketing 5.0', 'Philip Kotler', 'Tecnologia per l\'umanità: AI e marketing nel futuro')],
+  'Commerciale':          [amz('8850236794', 'Venditi bene', 'Daniel H. Pink', 'L\'arte sorprendente di convincere, influenzare e persuadere')],
 };
 
 function renderBooksSection(cat) {

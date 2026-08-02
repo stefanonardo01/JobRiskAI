@@ -9,8 +9,8 @@ import { fileURLToPath } from 'url';
 const AMAZON_TAG = 'jobriskai-21';
 const BLOG_BOOKS = [
   { asin: '8845297055', url: null, title: '21 Lezioni per il XXI Secolo', author: 'Yuval Noah Harari', desc: 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione' },
-  { asin: null, url: `https://www.amazon.it/s?k=${encodeURIComponent('seconda era macchine Brynjolfsson')}&tag=${AMAZON_TAG}`, title: 'La seconda era delle macchine', author: 'Brynjolfsson & McAfee', desc: 'Lavoro, progresso e prosperità nell\'era della tecnologia' },
-  { asin: null, url: `https://www.amazon.it/s?k=${encodeURIComponent('marketing 5.0 Kotler')}&tag=${AMAZON_TAG}`, title: 'Marketing 5.0', author: 'Philip Kotler', desc: 'Come AI e tecnologia stanno ridisegnando ogni professione' },
+  { asin: '8807172887', url: null, title: 'La nuova rivoluzione delle macchine', author: 'Brynjolfsson & McAfee', desc: 'Lavoro, progresso e prosperità nell\'era della tecnologia' },
+  { asin: '8842832847', url: null, title: 'Potere e Progresso', author: 'Daron Acemoglu & Simon Johnson', desc: 'Come la tecnologia crea e distrugge prosperità e lavoro' },
 ];
 
 function renderBlogBooks() {

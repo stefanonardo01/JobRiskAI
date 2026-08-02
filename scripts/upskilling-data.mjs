@@ -28,14 +28,14 @@ export const jobUpskilling = {
         why: 'Chi sa programmare bot di automazione rimane indispensabile mentre i bot sostituiscono i data-entry manuali.',
         courses: [
           { name: 'UiPath RPA Developer Foundation', provider: 'UiPath Academy', url: 'https://academy.uipath.com/learning-plans/rpa-developer-foundation', free: true, cert: true, duration: '40 ore' },
-          { name: 'Automation Anywhere Essentials', provider: 'Automation Anywhere University', url: 'https://university.automationanywhere.com/', free: true, cert: true, duration: '20 ore' },
+          { name: 'Automation Anywhere Essentials', provider: 'Automation Anywhere University', url: 'https://upskill.automationanywhere.com/path/automation-anywhere-rpa-essentials-for-students-automation-360', free: true, cert: true, duration: '20 ore' },
         ],
       },
       {
         name: 'Data Quality & Governance',
         why: 'Verificare, pulire e certificare i dati prodotti dall\'AI è un ruolo emergente che nessun software fa da solo.',
         courses: [
-          { name: 'Data Quality Fundamentals', provider: 'DAMA International – Udemy', url: 'https://www.udemy.com/course/data-quality-fundamentals/', free: false, cert: true, duration: '8 ore' },
+          { name: 'Data Quality Fundamentals', provider: 'DAMA International – Udemy', url: 'https://www.udemy.com/course/data-quality-management-masterclass-the-complete-course/', free: false, cert: true, duration: '8 ore' },
           { name: 'Google Data Analytics Certificate', provider: 'Google – Coursera', url: 'https://www.coursera.org/professional-certificates/google-data-analytics', free: false, cert: true, duration: '6 mesi' },
         ],
       },
@@ -99,7 +99,7 @@ export const jobUpskilling = {
         name: 'Gestione escalation complesse e clienti difficili',
         why: 'I chatbot AI gestiscono il Tier-1; gli umani servono per escalation emotive, frodi, eccezioni di policy — il segmento che cresce.',
         courses: [
-          { name: 'De-escalation & Conflict Resolution', provider: 'LinkedIn Learning', url: 'https://www.linkedin.com/learning/conflict-resolution-foundations-2', free: false, cert: true, duration: '1 ora' },
+          { name: 'De-escalation & Conflict Resolution', provider: 'LinkedIn Learning', url: 'https://www.linkedin.com/learning/conflict-resolution-foundations-4', free: false, cert: true, duration: '1 ora' },
           { name: 'Customer Experience (CX) Fundamentals', provider: 'CX University – free', url: 'https://cxuniversity.com/courses/', free: true, cert: true, duration: '5 ore' },
         ],
       },
@@ -109,7 +109,7 @@ export const jobUpskilling = {
         courses: [
           { name: 'Salesforce Service Cloud Consultant', provider: 'Salesforce Trailhead', url: 'https://trailhead.salesforce.com/en/credentials/servicecloudconsultant', free: true, cert: true, duration: '60 ore' },
           { name: 'HubSpot Service Hub Certification', provider: 'HubSpot Academy', url: 'https://academy.hubspot.com/courses/service-hub', free: true, cert: true, duration: '4 ore' },
-          { name: 'Zendesk Customer Service Professional', provider: 'Zendesk Training', url: 'https://training.zendesk.com/', free: false, cert: true, duration: '8 ore' },
+          { name: 'Zendesk Customer Service Professional', provider: 'Zendesk Training', url: 'https://training.zendesk.com/page/zendesk-certifications', free: false, cert: true, duration: '8 ore' },
         ],
       },
       {
@@ -499,7 +499,7 @@ export const jobUpskilling = {
         why: 'Il testing manuale scompare per primo; chi sa costruire framework di automazione robusti ha un vantaggio strutturale.',
         courses: [
           { name: 'Playwright: End-to-End Testing (2024)', provider: 'Udemy – Bondar Academy', url: 'https://www.udemy.com/course/playwright-from-zero-to-hero/', free: false, cert: true, duration: '12 ore' },
-          { name: 'ISTQB Foundation Level (CTFL)', provider: 'ISTQB', url: 'https://www.istqb.org/certifications/certified-tester-foundation-level', free: false, cert: true, duration: '3 mesi' },
+          { name: 'ISTQB Foundation Level (CTFL)', provider: 'ISTQB', url: 'https://istqb.org/certifications/certified-tester-foundation-level', free: false, cert: true, duration: '3 mesi' },
         ],
       },
       {
@@ -514,7 +514,7 @@ export const jobUpskilling = {
         name: 'ISTQB AI Testing Specialist',
         why: 'La certificazione ISTQB CT-AI (Certified Tester AI Testing) è la credenziale emergente più richiesta dai team QA nel 2024-25.',
         courses: [
-          { name: 'ISTQB CT-AI – Certified Tester AI Testing', provider: 'ISTQB', url: 'https://www.istqb.org/certifications/ai-testing', free: false, cert: true, duration: '2 mesi' },
+          { name: 'ISTQB CT-AI – Certified Tester AI Testing', provider: 'ISTQB', url: 'https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/', free: false, cert: true, duration: '2 mesi' },
           { name: 'AI Quality Assurance Foundations', provider: 'Coursera Project Network', url: 'https://www.coursera.org/projects/ai-quality-assurance', free: false, cert: true, duration: '2 ore' },
         ],
       },
@@ -563,7 +563,7 @@ export const jobUpskilling = {
         why: 'Capire come funzionano i modelli attuariali AI (telematics, IoT, satellite) permette di vendere prodotti avanzati che i competitor non sanno spiegare.',
         courses: [
           { name: 'InsurTech Fundamentals', provider: 'University of Pennsylvania – Coursera', url: 'https://www.coursera.org/learn/wharton-insurtech', free: false, cert: true, duration: '4 settimane' },
-          { name: 'Insurance Data Science with Python', provider: 'Udemy', url: 'https://www.udemy.com/course/insurance-data-science/', free: false, cert: true, duration: '8 ore' },
+          { name: 'Insurance Data Science with Python', provider: 'Udemy', url: 'https://www.udemy.com/course/machine-learning-for-insurance-predict-claim-assess-risk/', free: false, cert: true, duration: '8 ore' },
         ],
       },
       {
@@ -602,7 +602,7 @@ export const jobUpskilling = {
         name: 'Open Banking e dati alternativi per il credito',
         why: 'PSD2 ha aperto l\'accesso ai dati di conto corrente: chi sa costruire score su flussi transazionali reali ha un vantaggio competitivo.',
         courses: [
-          { name: 'Open Banking & PSD2 Essentials', provider: 'Finastra University – Udemy', url: 'https://www.udemy.com/course/open-banking-apis/', free: false, cert: true, duration: '5 ore' },
+          { name: 'Open Banking & PSD2 Essentials', provider: 'Finastra University – Udemy', url: 'https://www.udemy.com/course/a-course-on-api-and-open-banking-gdpr-by-piyush-singh/', free: false, cert: true, duration: '5 ore' },
           { name: 'FinTech: Finance Industry Transformation', provider: 'INSEAD – Coursera', url: 'https://www.coursera.org/learn/fintech', free: false, cert: true, duration: '4 settimane' },
         ],
       },
@@ -634,7 +634,7 @@ export const jobUpskilling = {
         name: 'AI Project Management Tools (Asana AI, Monday.com, Notion AI)',
         why: 'Saper configurare workspace AI per tracking automatico, risk prediction e reporting riduce il lavoro di reporting dell\'80%.',
         courses: [
-          { name: 'Asana Academy – Advanced Workflows', provider: 'Asana Academy', url: 'https://academy.asana.com/', free: true, cert: true, duration: '3 ore' },
+          { name: 'Asana Academy – Advanced Workflows', provider: 'Asana Academy', url: 'https://academy.asana.com/path/asana-foundations-skill-badge', free: true, cert: true, duration: '3 ore' },
           { name: 'Monday.com – Automation & AI Features', provider: 'Monday.com Learning', url: 'https://monday.com/helpcenter/how-to-use-monday-ai/', free: true, cert: false, duration: 'Auto-paced' },
         ],
       },
