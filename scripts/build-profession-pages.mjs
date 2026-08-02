@@ -76,22 +76,26 @@ const CATEGORIES = {
 const AMAZON_TAG = 'jobriskai-21';
 const amz = (asin, title, author, desc) => ({ asin, title, author, desc, url: `https://www.amazon.it/dp/${asin}?tag=${AMAZON_TAG}` });
 
+// ASIN verificati su Amazon.it
+// Per libri senza ASIN certo usiamo search URL (funzionano sempre + affiliato attivo)
+const amzSearch = (q, title, author, desc) => ({ asin: null, title, author, desc, url: `https://www.amazon.it/s?k=${encodeURIComponent(q)}&tag=${AMAZON_TAG}` });
+
 const BOOKS_UNIVERSAL = [
-  amz('8858838033', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione'),
-  amz('8830104558', 'La macchina che cambia il mondo', 'Brynjolfsson & McAfee', 'La seconda era delle macchine: lavoro, progresso e prosperità'),
+  amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione'),
+  amzSearch('seconda era macchine Brynjolfsson', 'La seconda era delle macchine', 'Brynjolfsson & McAfee', 'Lavoro, progresso e prosperità nell\'era della tecnologia'),
 ];
 
 const BOOKS_BY_CAT = {
-  'Tech & AI':            [amz('8850338279', 'Intelligenza Artificiale: Una Guida per Esseri Umani Pensanti', 'Melanie Mitchell', 'Capire davvero l\'AI e i suoi limiti reali')],
-  'Management & Finanza': [amz('8815291679', 'Il mondo che verrà', 'Daron Acemoglu', 'Come la tecnologia crea e distrugge prosperità e lavoro')],
-  'Sanità':               [amz('0465040969', 'Deep Medicine', 'Eric Topol', 'Come l\'AI sta trasformando la medicina e il ruolo del medico')],
-  'Legale & PA':          [amz('8815291679', 'La fine delle professioni', 'Susskind & Susskind', 'Il futuro degli esperti nell\'era della tecnologia')],
-  'HR':                   [amz('8867232185', 'Work Rules!', 'Laszlo Bock', 'Lezioni da Google su come creare e gestire team straordinari')],
-  'Creatività':           [amz('8817148075', 'Rubare come un artista', 'Austin Kleon', 'Come la creatività umana resiste all\'automazione')],
-  'Istruzione':           [amz('8858838033', 'Homo Deus', 'Yuval Noah Harari', 'Una breve storia del futuro dell\'intelligenza e dell\'istruzione')],
-  'Ingegneria':           [amz('8850338279', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0 e il futuro delle professioni tecniche')],
-  'Marketing':            [amz('8817089079', 'Marketing 5.0', 'Philip Kotler', 'Tecnologia per l\'umanità: AI e marketing nel futuro')],
-  'Commerciale':          [amz('8817069930', 'Vendere è umano', 'Daniel H. Pink', 'L\'arte sorprendente di convincere, influenzare e persuadere')],
+  'Tech & AI':            [amzSearch('intelligenza artificiale guida Melanie Mitchell', 'Intelligenza Artificiale: Una Guida per Esseri Umani', 'Melanie Mitchell', 'Capire davvero l\'AI e i suoi limiti reali')],
+  'Management & Finanza': [amzSearch('potere e progresso Acemoglu tecnologia prosperità', 'Potere e Progresso', 'Daron Acemoglu & Simon Johnson', 'Come la tecnologia crea e distrugge prosperità')],
+  'Sanità':               [amzSearch('deep medicine Eric Topol AI medicina', 'Deep Medicine', 'Eric Topol', 'Come l\'AI sta trasformando la medicina e il ruolo del medico')],
+  'Legale & PA':          [amzSearch('fine delle professioni Susskind futuro esperti', 'La fine delle professioni', 'Susskind & Susskind', 'Il futuro degli esperti nell\'era della tecnologia')],
+  'HR':                   [amzSearch('work rules Laszlo Bock Google', 'Work Rules!', 'Laszlo Bock', 'Lezioni da Google su come creare e gestire team straordinari')],
+  'Creatività':           [amzSearch('rubare come un artista Austin Kleon', 'Rubare come un artista', 'Austin Kleon', 'Come la creatività umana resiste all\'automazione')],
+  'Istruzione':           [amzSearch('homo deus Harari futuro umanità', 'Homo Deus', 'Yuval Noah Harari', 'Una breve storia del futuro dell\'intelligenza')],
+  'Ingegneria':           [amzSearch('quarta rivoluzione industriale Schwab', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0 e il futuro delle professioni tecniche')],
+  'Marketing':            [amzSearch('marketing 5.0 Kotler tecnologia umanità', 'Marketing 5.0', 'Philip Kotler', 'Tecnologia per l\'umanità: AI e marketing nel futuro')],
+  'Commerciale':          [amzSearch('vendere è umano Daniel Pink', 'Vendere è umano', 'Daniel H. Pink', 'L\'arte sorprendente di convincere, influenzare e persuadere')],
 };
 
 function renderBooksSection(cat) {
@@ -99,7 +103,7 @@ function renderBooksSection(cat) {
   const books = [...BOOKS_UNIVERSAL, ...catBooks].slice(0, 3);
   const cards = books.map(b => `
     <a href="${b.url}" target="_blank" rel="noopener sponsored" style="display:flex;align-items:flex-start;gap:0.85rem;text-decoration:none;color:inherit;padding:0.85rem;border:1px solid var(--border);border-radius:12px;background:white;transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(99,102,241,0.12)'" onmouseout="this.style.boxShadow='none'">
-      <img src="https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg" alt="${b.title}" loading="lazy" style="flex-shrink:0;width:52px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.15);" onerror="this.style.display='none'">
+      ${b.asin ? `<img src="https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg" alt="${b.title}" loading="lazy" style="flex-shrink:0;width:52px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.15);" onerror="this.style.display='none'">` : '<div style="flex-shrink:0;width:52px;height:72px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;">📖</div>'}
       <div style="flex:1;min-width:0;">
         <div style="font-weight:600;font-size:0.88rem;color:var(--text-primary);margin-bottom:0.2rem;line-height:1.3;">${b.title}</div>
         <div style="font-size:0.78rem;color:#6366f1;font-weight:500;margin-bottom:0.35rem;">${b.author}</div>
