@@ -621,6 +621,8 @@ ${PILL_NAV}
         ${taskRows}
       </div>` : ''}
 
+      ${renderBooksSection(cat)}
+
       ${upskilling
         ? renderUpskillingCard(title, upskilling)
         : survival.length > 0
@@ -631,8 +633,6 @@ ${PILL_NAV}
       </div>`
           : ''
       }
-
-      ${renderBooksSection(cat)}
 
       ${humanTotal > 0 && aiAnnual > 0 ? `
       <!-- Confronto costi -->
