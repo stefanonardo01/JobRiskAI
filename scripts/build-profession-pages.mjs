@@ -72,6 +72,50 @@ const CATEGORIES = {
   'Media & Spettacolo':   ['giornalista','doppiatore','attore','regista','musicista','cantante'],
 };
 
+// ── Libri consigliati con link affiliati Amazon (tag: jobriskai-21) ──────────
+const AMAZON_TAG = 'jobriskai-21';
+const amz = (asin, title, author, desc) => ({ asin, title, author, desc, url: `https://www.amazon.it/dp/${asin}?tag=${AMAZON_TAG}` });
+
+const BOOKS_UNIVERSAL = [
+  amz('8858838033', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione'),
+  amz('8830104558', 'La macchina che cambia il mondo', 'Brynjolfsson & McAfee', 'La seconda era delle macchine: lavoro, progresso e prosperità'),
+];
+
+const BOOKS_BY_CAT = {
+  'Tech & AI':            [amz('8850338279', 'Intelligenza Artificiale: Una Guida per Esseri Umani Pensanti', 'Melanie Mitchell', 'Capire davvero l\'AI e i suoi limiti reali')],
+  'Management & Finanza': [amz('8815291679', 'Il mondo che verrà', 'Daron Acemoglu', 'Come la tecnologia crea e distrugge prosperità e lavoro')],
+  'Sanità':               [amz('0465040969', 'Deep Medicine', 'Eric Topol', 'Come l\'AI sta trasformando la medicina e il ruolo del medico')],
+  'Legale & PA':          [amz('8815291679', 'La fine delle professioni', 'Susskind & Susskind', 'Il futuro degli esperti nell\'era della tecnologia')],
+  'HR':                   [amz('8867232185', 'Work Rules!', 'Laszlo Bock', 'Lezioni da Google su come creare e gestire team straordinari')],
+  'Creatività':           [amz('8817148075', 'Rubare come un artista', 'Austin Kleon', 'Come la creatività umana resiste all\'automazione')],
+  'Istruzione':           [amz('8858838033', 'Homo Deus', 'Yuval Noah Harari', 'Una breve storia del futuro dell\'intelligenza e dell\'istruzione')],
+  'Ingegneria':           [amz('8850338279', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0 e il futuro delle professioni tecniche')],
+  'Marketing':            [amz('8817089079', 'Marketing 5.0', 'Philip Kotler', 'Tecnologia per l\'umanità: AI e marketing nel futuro')],
+  'Commerciale':          [amz('8817069930', 'Vendere è umano', 'Daniel H. Pink', 'L\'arte sorprendente di convincere, influenzare e persuadere')],
+};
+
+function renderBooksSection(cat) {
+  const catBooks = BOOKS_BY_CAT[cat] || [];
+  const books = [...BOOKS_UNIVERSAL, ...catBooks].slice(0, 3);
+  const cards = books.map(b => `
+    <a href="${b.url}" target="_blank" rel="noopener sponsored" style="display:flex;align-items:flex-start;gap:0.75rem;text-decoration:none;color:inherit;padding:0.85rem;border:1px solid var(--border);border-radius:12px;background:white;transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(99,102,241,0.1)'" onmouseout="this.style.boxShadow='none'">
+      <div style="flex-shrink:0;width:36px;height:36px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">📖</div>
+      <div style="flex:1;min-width:0;">
+        <div style="font-weight:600;font-size:0.88rem;color:var(--text-primary);margin-bottom:0.2rem;line-height:1.3;">${b.title}</div>
+        <div style="font-size:0.78rem;color:#6366f1;font-weight:500;margin-bottom:0.3rem;">${b.author}</div>
+        <div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.4;">${b.desc}</div>
+      </div>
+      <div style="flex-shrink:0;font-size:0.72rem;font-weight:700;color:#f59e0b;background:rgba(245,158,11,0.1);border-radius:6px;padding:0.25rem 0.5rem;white-space:nowrap;">Amazon →</div>
+    </a>`).join('');
+  return `
+  <div class="prof-card" style="background:linear-gradient(135deg,rgba(245,158,11,0.04),rgba(251,191,36,0.02));border-color:rgba(245,158,11,0.2);">
+    <h2 style="margin-bottom:1rem;">📚 Libri consigliati per affrontare il cambiamento</h2>
+    <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:1rem;">Selezionati per chi vuole capire l\'AI e prepararsi al futuro del lavoro.</p>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">${cards}</div>
+    <p style="font-size:0.72rem;color:var(--text-secondary);margin-top:0.75rem;text-align:center;">Link sponsorizzati — acquistando su Amazon supporti JobRiskAI gratuitamente.</p>
+  </div>`;
+}
+
 function categoryOf(key) {
   for (const [cat, keys] of Object.entries(CATEGORIES)) {
     if (keys.includes(key)) return cat;
@@ -602,6 +646,8 @@ ${PILL_NAV}
         </div>
         <p style="text-align:center;color:var(--text-secondary);font-size:0.88rem;">Risparmio potenziale: <strong style="color:var(--success);">€${saving.toLocaleString('it')} l'anno (${savingPct}%)</strong></p>
       </div>` : ''}
+
+      ${renderBooksSection(cat)}
 
       <!-- CTA -->
       <div style="text-align:center;margin:2.5rem 0;">
