@@ -98,14 +98,14 @@ function renderBooksSection(cat) {
   const catBooks = BOOKS_BY_CAT[cat] || [];
   const books = [...BOOKS_UNIVERSAL, ...catBooks].slice(0, 3);
   const cards = books.map(b => `
-    <a href="${b.url}" target="_blank" rel="noopener sponsored" style="display:flex;align-items:flex-start;gap:0.75rem;text-decoration:none;color:inherit;padding:0.85rem;border:1px solid var(--border);border-radius:12px;background:white;transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(99,102,241,0.1)'" onmouseout="this.style.boxShadow='none'">
-      <div style="flex-shrink:0;width:36px;height:36px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">📖</div>
+    <a href="${b.url}" target="_blank" rel="noopener sponsored" style="display:flex;align-items:flex-start;gap:0.85rem;text-decoration:none;color:inherit;padding:0.85rem;border:1px solid var(--border);border-radius:12px;background:white;transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(99,102,241,0.12)'" onmouseout="this.style.boxShadow='none'">
+      <img src="https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg" alt="${b.title}" loading="lazy" style="flex-shrink:0;width:52px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.15);" onerror="this.style.display='none'">
       <div style="flex:1;min-width:0;">
         <div style="font-weight:600;font-size:0.88rem;color:var(--text-primary);margin-bottom:0.2rem;line-height:1.3;">${b.title}</div>
-        <div style="font-size:0.78rem;color:#6366f1;font-weight:500;margin-bottom:0.3rem;">${b.author}</div>
-        <div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.4;">${b.desc}</div>
+        <div style="font-size:0.78rem;color:#6366f1;font-weight:500;margin-bottom:0.35rem;">${b.author}</div>
+        <div style="font-size:0.78rem;color:var(--text-secondary);line-height:1.4;margin-bottom:0.5rem;">${b.desc}</div>
+        <div style="display:inline-flex;align-items:center;gap:0.35rem;background:#FF9900;color:white;font-size:0.75rem;font-weight:700;padding:0.3rem 0.75rem;border-radius:6px;">📦 Vedi su Amazon</div>
       </div>
-      <div style="flex-shrink:0;font-size:0.72rem;font-weight:700;color:#f59e0b;background:rgba(245,158,11,0.1);border-radius:6px;padding:0.25rem 0.5rem;white-space:nowrap;">Amazon →</div>
     </a>`).join('');
   return `
   <div class="prof-card" style="background:linear-gradient(135deg,rgba(245,158,11,0.04),rgba(251,191,36,0.02));border-color:rgba(245,158,11,0.2);">
@@ -259,7 +259,7 @@ function renderUpskillingCard(title, up) {
   const uc = urgencyColors[up.urgency] || urgencyColors.media;
 
   const skillsHtml = up.skills.map((skill, i) => {
-    const coursesHtml = skill.courses.map(c => `
+    const coursesHtml = skill.courses.filter(c => !c.url.includes('coursera.org')).map(c => `
       <a href="${esc(c.url)}" target="_blank" rel="noopener noreferrer"
          style="display:flex;align-items:center;gap:0.75rem;padding:0.6rem 0.9rem;background:#f8f9ff;border:1px solid #e0e7ff;border-radius:10px;text-decoration:none;color:#0f172a;transition:all 0.15s;"
          onmouseover="this.style.borderColor='#6366f1';this.style.background='#eef2ff'"
@@ -628,6 +628,8 @@ ${PILL_NAV}
           : ''
       }
 
+      ${renderBooksSection(cat)}
+
       ${humanTotal > 0 && aiAnnual > 0 ? `
       <!-- Confronto costi -->
       <div class="prof-card" style="background:linear-gradient(135deg,rgba(99,102,241,0.04),rgba(59,130,246,0.02));">
@@ -646,8 +648,6 @@ ${PILL_NAV}
         </div>
         <p style="text-align:center;color:var(--text-secondary);font-size:0.88rem;">Risparmio potenziale: <strong style="color:var(--success);">€${saving.toLocaleString('it')} l'anno (${savingPct}%)</strong></p>
       </div>` : ''}
-
-      ${renderBooksSection(cat)}
 
       <!-- CTA -->
       <div style="text-align:center;margin:2.5rem 0;">

@@ -5,6 +5,34 @@ import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
+// ── Libri consigliati Amazon (tag affiliato: jobriskai-21) ──
+const AMAZON_TAG = 'jobriskai-21';
+const BLOG_BOOKS = [
+  { asin: '8858838033', title: '21 Lezioni per il XXI Secolo', author: 'Yuval Noah Harari', desc: 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione' },
+  { asin: '8830104558', title: 'La macchina che cambia il mondo', author: 'Brynjolfsson & McAfee', desc: 'La seconda era delle macchine: lavoro, progresso e prosperità' },
+  { asin: '8817089079', title: 'Marketing 5.0', author: 'Philip Kotler', desc: 'Come AI e tecnologia stanno ridisegnando ogni professione' },
+];
+
+function renderBlogBooks() {
+  const cards = BLOG_BOOKS.map(b => `
+    <a href="https://www.amazon.it/dp/${b.asin}?tag=${AMAZON_TAG}" target="_blank" rel="noopener sponsored" style="display:flex;align-items:flex-start;gap:0.85rem;text-decoration:none;color:inherit;padding:0.85rem;border:1px solid #e5e7eb;border-radius:12px;background:white;transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(99,102,241,0.12)'" onmouseout="this.style.boxShadow='none'">
+      <img src="https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg" alt="${b.title}" loading="lazy" style="flex-shrink:0;width:52px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.15);" onerror="this.style.display='none'">
+      <div style="flex:1;min-width:0;">
+        <div style="font-weight:600;font-size:0.88rem;color:#111827;margin-bottom:0.2rem;line-height:1.3;">${b.title}</div>
+        <div style="font-size:0.78rem;color:#6366f1;font-weight:500;margin-bottom:0.3rem;">${b.author}</div>
+        <div style="font-size:0.78rem;color:#6b7280;line-height:1.4;margin-bottom:0.5rem;">${b.desc}</div>
+        <div style="display:inline-flex;align-items:center;gap:0.35rem;background:#FF9900;color:white;font-size:0.75rem;font-weight:700;padding:0.3rem 0.75rem;border-radius:6px;">📦 Vedi su Amazon</div>
+      </div>
+    </a>`).join('');
+  return `
+  <div style="margin:2.5rem 0;padding:1.5rem;background:linear-gradient(135deg,rgba(245,158,11,0.05),rgba(251,191,36,0.02));border:1px solid rgba(245,158,11,0.25);border-radius:16px;">
+    <h3 style="font-size:1rem;font-weight:700;color:#111827;margin-bottom:0.4rem;">📚 Libri consigliati sull'AI e il futuro del lavoro</h3>
+    <p style="font-size:0.82rem;color:#6b7280;margin-bottom:1rem;">Selezionati per approfondire i temi di questo articolo.</p>
+    <div style="display:flex;flex-direction:column;gap:0.6rem;">${cards}</div>
+    <p style="font-size:0.7rem;color:#9ca3af;margin-top:0.75rem;">Link sponsorizzati — acquistando su Amazon supporti JobRiskAI gratuitamente.</p>
+  </div>`;
+}
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT    = join(__dirname, '..');
 const outDir  = join(ROOT, 'public/blog');
@@ -1440,6 +1468,8 @@ function buildArticle(art) {
       <article class="blog-article">
         ${art.content}
       </article>
+
+      ${renderBlogBooks()}
 
       <div class="blog-cta">
         <p data-i18n="blog_cta_title" style="font-weight:700;font-size:1.05rem;color:var(--text-primary);margin-bottom:0.4rem;">Il tuo lavoro è a rischio AI?</p>
