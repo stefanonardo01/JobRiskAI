@@ -80,27 +80,91 @@ const amz = (asin, title, author, desc) => ({ asin, title, author, desc, url: `h
 // Per libri senza ASIN certo usiamo search URL (funzionano sempre + affiliato attivo)
 const amzSearch = (q, title, author, desc) => ({ asin: null, title, author, desc, url: `https://www.amazon.it/s?k=${encodeURIComponent(q)}&tag=${AMAZON_TAG}` });
 
+// 5 libri per categoria — tutti con ASIN verificati su amazon.it
+const BOOKS_BY_CAT = {
+  'Tech & AI': [
+    amz('8806253301', 'L\'Intelligenza Artificiale', 'Melanie Mitchell', 'Capire davvero l\'AI, i suoi limiti reali e come cambierà il lavoro'),
+    amz('8804759488', 'Elon Musk', 'Walter Isaacson', 'Come un imprenditore ossessivo sta reinventando il futuro della tecnologia'),
+    amz('8804645911', 'Gli innovatori', 'Walter Isaacson', 'La storia di chi ha creato la rivoluzione digitale e cosa ci insegna'),
+    amz('8891743003', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0: come l\'AI trasforma ogni settore tecnologico'),
+    amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Come navigare l\'era dell\'AI e dell\'automazione'),
+  ],
+  'Management & Finanza': [
+    amz('8842832847', 'Potere e Progresso', 'Acemoglu & Johnson', 'Mille anni di lotta tra tecnologia e prosperità: chi guadagna davvero dall\'AI'),
+    amz('8804568402', 'O meglio o niente', 'Jim Collins', 'Perché alcune aziende fanno il salto verso l\'eccellenza e altre no'),
+    amz('8817080462', 'Da zero a uno', 'Peter Thiel', 'I segreti delle startup e come si costruisce il futuro'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Come le euristiche cognitive influenzano le decisioni finanziarie e manageriali'),
+    amz('8807172887', 'La nuova rivoluzione delle macchine', 'Brynjolfsson & McAfee', 'Automazione, lavoro e prosperità nell\'era digitale'),
+  ],
+  'Sanità': [
+    amz('8845298752', 'Homo Deus', 'Yuval Noah Harari', 'Come biologia e AI ridisegneranno il futuro della salute e della medicina'),
+    amz('8817844683', 'Intelligenza emotiva', 'Daniel Goleman', 'Le emozioni nel lavoro clinico: l\'empatia che nessuna AI può replicare'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'I bias cognitivi nella diagnosi medica e come evitarli'),
+    amz('8842832847', 'Potere e Progresso', 'Acemoglu & Johnson', 'Come la tecnologia ridisegna il sistema sanitario e i suoi professionisti'),
+    amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'AI, bioetica e futuro del paziente nel XXI secolo'),
+  ],
+  'Legale & PA': [
+    amz('8849874634', 'Il futuro delle professioni', 'Richard & Daniel Susskind', 'Come la tecnologia trasformerà avvocati, notai e consulenti'),
+    amz('8842832847', 'Potere e Progresso', 'Acemoglu & Johnson', 'Tecnologia, regolamentazione e chi controlla l\'AI'),
+    amz('8830104868', 'Un mondo senza lavoro', 'Daniel Susskind', 'Scenari e politiche per il futuro del lavoro professionale'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Ragionamento giuridico, bias e decisioni complesse'),
+    amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'AI Act, privacy e governance: le sfide legali del nostro tempo'),
+  ],
+  'HR': [
+    amz('1455554790', 'Work Rules!', 'Laszlo Bock', 'Come Google ha rivoluzionato il modo di assumere, gestire e motivare le persone'),
+    amz('B09HG2TY36', 'Drive', 'Daniel H. Pink', 'La scienza della motivazione: autonomia, padronanza e scopo'),
+    amz('881786000X', 'Lavorare con intelligenza emotiva', 'Daniel Goleman', 'Competenze emotive per HR, manager e team leader'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Come ridurre i bias nei processi di selezione e valutazione'),
+    amz('B0C7FQW26M', 'Atomic Habits', 'James Clear', 'Come costruire abitudini produttive per team e organizzazioni'),
+  ],
+  'Creatività': [
+    amz('886731033X', 'Ruba come un artista', 'Austin Kleon', 'L\'arte di trovare ispirazione e costruire un percorso creativo originale'),
+    amz('8804759488', 'Elon Musk', 'Walter Isaacson', 'Come il pensiero creativo estremo genera innovazione dirompente'),
+    amz('8817080462', 'Da zero a uno', 'Peter Thiel', 'Creatività, originalità e il coraggio di costruire qualcosa di nuovo'),
+    amz('8817844683', 'Intelligenza emotiva', 'Daniel Goleman', 'Come le emozioni alimentano il processo creativo'),
+    amz('B0C7FQW26M', 'Atomic Habits', 'James Clear', 'Come costruire routine creative che resistono all\'automazione'),
+  ],
+  'Istruzione': [
+    amz('8830104868', 'Un mondo senza lavoro', 'Daniel Susskind', 'Come preparare le nuove generazioni a un mercato del lavoro trasformato dall\'AI'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Come apprendiamo e decidiamo: fondamentale per chi insegna'),
+    amz('8845298752', 'Homo Deus', 'Yuval Noah Harari', 'Il futuro del sapere, dell\'istruzione e dell\'intelligenza umana'),
+    amz('B0C7FQW26M', 'Atomic Habits', 'James Clear', 'Come costruire abitudini di studio e apprendimento continuo'),
+    amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Cosa insegnare ai giovani nell\'era dell\'intelligenza artificiale'),
+  ],
+  'Ingegneria': [
+    amz('8891743003', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0, IoT e il futuro delle professioni tecniche'),
+    amz('8804645911', 'Gli innovatori', 'Walter Isaacson', 'Storia della rivoluzione digitale: pionieri e lezioni per gli ingegneri di oggi'),
+    amz('8807172887', 'La nuova rivoluzione delle macchine', 'Brynjolfsson & McAfee', 'Automazione e robotica: quali competenze tecniche sopravvivono'),
+    amz('8817080462', 'Da zero a uno', 'Peter Thiel', 'Pensiero ingegneristico applicato all\'innovazione radicale'),
+    amz('8806253301', 'L\'Intelligenza Artificiale', 'Melanie Mitchell', 'Come funziona davvero l\'AI: indispensabile per ogni ingegnere'),
+  ],
+  'Marketing': [
+    amz('883600556X', 'Marketing 5.0', 'Philip Kotler', 'AI, big data e tecnologia al servizio del marketing umano'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Psicologia del consumatore e bias cognitivi nel marketing'),
+    amz('8850236794', 'Venditi bene', 'Daniel H. Pink', 'Come comunicare, persuadere e influenzare nell\'era digitale'),
+    amz('886731033X', 'Ruba come un artista', 'Austin Kleon', 'Creatività applicata al content marketing e allo storytelling'),
+    amz('B0C7FQW26M', 'Atomic Habits', 'James Clear', 'Come creare abitudini d\'acquisto e fidelizzare i clienti'),
+  ],
+  'Commerciale': [
+    amz('8850236794', 'Venditi bene', 'Daniel H. Pink', 'La sorprendente scienza del persuadere e del vendere'),
+    amz('B09HG2TY36', 'Drive', 'Daniel H. Pink', 'Motivazione intrinseca: il segreto dei venditori top performer'),
+    amz('8804568402', 'O meglio o niente', 'Jim Collins', 'Eccellenza, disciplina e strategia per chi lavora nel commerciale'),
+    amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Come i bias cognitivi del cliente guidano le decisioni d\'acquisto'),
+    amz('8817080462', 'Da zero a uno', 'Peter Thiel', 'Vendere l\'innovazione: come presentare prodotti nuovi e rivoluzionari'),
+  ],
+};
+
+// Fallback per categorie non mappate
 const BOOKS_UNIVERSAL = [
   amz('8845297055', '21 Lezioni per il XXI Secolo', 'Yuval Noah Harari', 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione'),
   amz('8807172887', 'La nuova rivoluzione delle macchine', 'Brynjolfsson & McAfee', 'Lavoro, progresso e prosperità nell\'era della tecnologia'),
+  amz('8842832847', 'Potere e Progresso', 'Acemoglu & Johnson', 'Mille anni di lotta tra tecnologia e prosperità'),
+  amz('8804736127', 'Pensieri lenti e veloci', 'Daniel Kahneman', 'Come le euristiche cognitive influenzano le nostre decisioni'),
+  amz('8830104868', 'Un mondo senza lavoro', 'Daniel Susskind', 'Come rispondere alla disoccupazione tecnologica'),
 ];
 
-const BOOKS_BY_CAT = {
-  'Tech & AI':            [amz('8806253301', 'L\'Intelligenza Artificiale: Guida per Esseri Umani Pensanti', 'Melanie Mitchell', 'Capire davvero l\'AI e i suoi limiti reali')],
-  'Management & Finanza': [amz('8842832847', 'Potere e Progresso', 'Daron Acemoglu & Simon Johnson', 'Come la tecnologia crea e distrugge prosperità e lavoro')],
-  'Sanità':               [amz('8845298752', 'Homo Deus', 'Yuval Noah Harari', 'Come la biologia e l\'AI ridisegneranno il futuro della medicina e della salute')],
-  'Legale & PA':          [amz('8849874634', 'Il futuro delle professioni', 'Richard & Daniel Susskind', 'Come la tecnologia trasformerà il lavoro dei professionisti')],
-  'HR':                   [amz('1455554790', 'Work Rules!', 'Laszlo Bock', 'Lezioni da Google su come creare e gestire team straordinari')],
-  'Creatività':           [amz('886731033X', 'Ruba come un artista', 'Austin Kleon', 'Come la creatività umana resiste all\'automazione')],
-  'Istruzione':           [amz('8830104868', 'Un mondo senza lavoro', 'Daniel Susskind', 'Come rispondere alla disoccupazione tecnologica — indispensabile per chi forma le nuove generazioni')],
-  'Ingegneria':           [amz('8891743003', 'La quarta rivoluzione industriale', 'Klaus Schwab', 'Industria 4.0 e il futuro delle professioni tecniche')],
-  'Marketing':            [amz('883600556X', 'Marketing 5.0', 'Philip Kotler', 'Tecnologia per l\'umanità: AI e marketing nel futuro')],
-  'Commerciale':          [amz('8850236794', 'Venditi bene', 'Daniel H. Pink', 'L\'arte sorprendente di convincere, influenzare e persuadere')],
-};
-
 function renderBooksSection(cat) {
-  const catBooks = BOOKS_BY_CAT[cat] || [];
-  const books = [...BOOKS_UNIVERSAL, ...catBooks].slice(0, 3);
+  const books = (BOOKS_BY_CAT[cat] || BOOKS_UNIVERSAL).slice(0, 5);
   const cards = books.map(b => `
     <a href="${b.url}" target="_blank" rel="noopener sponsored" style="display:flex;align-items:flex-start;gap:0.85rem;text-decoration:none;color:inherit;padding:0.85rem;border:1px solid var(--border);border-radius:12px;background:white;transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(99,102,241,0.12)'" onmouseout="this.style.boxShadow='none'">
       ${b.asin ? `<img src="https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg" alt="${b.title}" loading="lazy" style="flex-shrink:0;width:52px;height:72px;object-fit:cover;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.15);" onerror="this.style.display='none'">` : '<div style="flex-shrink:0;width:52px;height:72px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;">📖</div>'}

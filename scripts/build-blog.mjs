@@ -11,6 +11,8 @@ const BLOG_BOOKS = [
   { asin: '8845297055', url: null, title: '21 Lezioni per il XXI Secolo', author: 'Yuval Noah Harari', desc: 'Come navigare il futuro nell\'era dell\'AI e dell\'automazione' },
   { asin: '8807172887', url: null, title: 'La nuova rivoluzione delle macchine', author: 'Brynjolfsson & McAfee', desc: 'Lavoro, progresso e prosperità nell\'era della tecnologia' },
   { asin: '8842832847', url: null, title: 'Potere e Progresso', author: 'Daron Acemoglu & Simon Johnson', desc: 'Come la tecnologia crea e distrugge prosperità e lavoro' },
+  { asin: '8804736127', url: null, title: 'Pensieri lenti e veloci', author: 'Daniel Kahneman', desc: 'Come i bias cognitivi influenzano le nostre decisioni — fondamentale nell\'era dell\'AI' },
+  { asin: '8830104868', url: null, title: 'Un mondo senza lavoro', author: 'Daniel Susskind', desc: 'Scenari e politiche per rispondere alla disoccupazione tecnologica' },
 ];
 
 function renderBlogBooks() {
